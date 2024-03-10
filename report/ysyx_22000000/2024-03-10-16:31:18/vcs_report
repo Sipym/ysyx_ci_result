@@ -1,0 +1,13 @@
+
+dut: ysyx_22000000
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+memtest test in mem pass!!
