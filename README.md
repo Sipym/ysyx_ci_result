@@ -91,7 +91,7 @@ SoC和后端团队的report返回后，同学需要按照以下步骤确认报�
 * 阅读VCS报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/vcs_report`，确认编译结果是否有错误，确认VCS流程是否存在 **`fail`**。如果VCS程序未通过，则首先需要修改代码以确保功能正确，确认控制信号寄存器是否已做初始化。
 
 ### 二、消除DC综合报告Warning/Error
-* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report`的 **`SYNTHESIS REPORT`** 部分，关注报告中的Warning和Error。清除所有的Warning和Error，根据Warning的提示相应地去修改代码，对于无法清除的Warning，需要填写该仓库下的[syn_warning.md](./syn_warning.md)，发给各自的组长，由组长反馈给支撑团队。
+* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report`的 **`RUN LOG`** 部分，关注报告中的Warning和Error。清除所有的Warning和Error，根据Warning的提示相应地去修改代码，对于无法清除的Warning，需要填写该仓库下的[syn_warning.md](./syn_warning.md)，发给各自的组长，由组长反馈给支撑团队。
 > 注意：必须要修改代码清除掉的Warning/Error类型为LINT-3、LINT-38、LINT-59、LINT-60、LINT-X4和LINT-58
 
 ### 三、确认综合后面积是否在约束范围内
@@ -99,7 +99,7 @@ SoC和后端团队的report返回后，同学需要按照以下步骤确认报�
 
 > 注意：以上面积约束大小需要根据最终综合后结果确定。
 
-* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report`的 **AREA REPORT** 部分，确认 `Total cell area` 是否满足约束范围内。
+* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report`的 **`AREA REPORT`** 部分，确认 `Total cell area` 是否满足约束范围内。
   * 如做了五级流水线的设计 **Total cell area** 超过了约束范围，请对设计进行优化，将面积优化到约束范围内。
   * 如果做了乱序多发射的设计 **Total cell area** 超过了约束范围，请分析报告，找出面积较大的模块，说明面积过大的原因，编写说明文档[area_warning.md](./area_warning.md)，没有具体格式要求，按要求说明原因即可，编写完成后发给各自的组长，再由组长反馈给支撑团队进一步评估，如果支撑团队评估后觉得不合适，则需要请设计人员进一步简化设计。
 
@@ -112,12 +112,21 @@ SoC和后端团队的report返回后，同学需要按照以下步骤确认报�
 
   在100MHz频率下，图中标记的data required time应该接近10ns，可以看到实际的data required time只有6.2189ns，约束更为严格。
 
-* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report` 的 **SYNTHESIS REPORT** 部分，查看DC综合流程在100MHz频率下是否 **PASS**。
+* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report` 的 **`STATISTICS REPORT`** 部分，查看DC综合流程在100MHz频率下是否 **PASS**。时序通过的标志为： `wns >= 0` 且 `tns >= 0`：
+
+```txt
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  100.0     153.8      0.000  0.000  0 
+
+```
 
 >注意：由于存在DC license的问题，支撑团队无法提供DC工具的使用，工程师人力及资源不足，无法提供一对一优化。因此，支撑团队只保证芯片的正确性，不辅助优化设计，有意愿追求高性能的同学可以自行优化，例如：参考开源EDA工具yosys。如果核的设计足够好，回片后是可以进行调频的。
 
 100MHz频率未通过或想要做优化的同学，可以关注报告中以下部分的关键时序路径。
-* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report` 的 **TIMING REPORT** 部分，报告中列出5条最长路径供参考，关于时序报告的格式可自行参考相关资料，例如：Vivado的时序报告。
+* 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report` 的 **`TIME REPORT`** 部分，报告中列出5条最长路径供参考，关于时序报告的格式可自行参考相关资料，例如：Vivado的时序报告。
 
 # 代码拉取时间
 支撑团队提供的CICD流程，**每隔3分钟** 都会拉取一次代码。每次拉取代码后，报告返回时间不是确定的。当次拉取的所有代码在跑完DC&VCS流程后，会将当次拉取的所有代码的报告会按照学号划分返回到github仓库ysyx_submit/report目录下。
