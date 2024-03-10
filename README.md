@@ -2,7 +2,7 @@
 
 > 注意：从这次流片班车开始，CICD的代码分支命名方式修改为当前班车接收代码的起始时间，格式为`年份+月份`，比如这次班车的分支就是`202403`。
 
-这是存放一生一芯CICD测试后返回报告的仓库。ysyx_submit中有`report`一个目录，`report`目录存放SoC和后端团队对前端代码进行功能仿真和综合后返回的报告。运行一次完整的vcs测试时间大约在40-50分钟之间，一次完整dc测试时间在0.5-2个小时不等。由于一次测试时间较长，所以我们在`report`自己学号目录下的`state`文件记录有当前核在提交队列中的位置，具体格式为：
+这是存放一生一芯CICD测试后返回报告的仓库。`report`目录存放有SoC和后端团队对前端代码进行功能仿真和综合后返回的报告。运行一次完整的vcs测试时间大约在40-50分钟之间，一次完整dc测试时间在0.5-2个小时不等。由于一次测试时间较长，所以我们在`report`自己学号目录下的`state`文件记录有当前核在提交队列中的位置，具体格式为：
 ```txt
 state: under test
 ```
@@ -14,7 +14,7 @@ state: wait [nums] duts
 
 ## CICD功能
 目前测试环境已经切换到28nm，并添加了新的功能：
-1. 支持将vcs测试中fail时的run.log添加到返回的报告中。比如跑sdram中的rtthread出错，则会在vcs_report中的`!!!!rtthread test in sdram fail!!!!`一行下添加如下结果：
+1. 支持将vcs测试中fail时的run.log添加到返回的报告中。比如跑sdram中的rtthread出错，则会在vcs_report中的`!!!!rtthread test in sdram fail!!!!`一行下添加运行log：
 ```txt
 !!!!rtthread test in sdram fail!!!!
 
@@ -64,7 +64,7 @@ Wed Mar  1 12:43:25 2023
 
 目前CICD使用 **提交仓库中的 config.toml 来配置测试任务**，`config.toml` 可配置内容见：[def_config.toml](https://github.com/oscc-soc/ci/blob/main/src/def_config.toml)，添加并修改 `config.toml` 的具体步骤如下。
 
-* 拷贝 [def_config.toml](https://github.com/oscc-soc/ci/blob/main/src/def_config.toml) 内容到自己代码提交仓库，并修改文件名为 `config.toml`。
+* 拷贝 [def_config.toml](https://github.com/oscc-soc/ci/blob/main/src/def_config.toml) 到自己代码提交仓库，并修改文件名为 `config.toml`。
 
 * 按照 `config.toml` 中的注释要求修改 `[dut]`, `[vcs]` 和 `[dc]` 下的配置选项。
 
@@ -85,7 +85,7 @@ Wed Mar  1 12:43:25 2023
 ```
 
 ## report
-SoC和后端团队的report返回后，前端的同学需要按照以下步骤确认报告内容及对代码做出相应的修改。
+SoC和后端团队的report返回后，同学需要按照以下步骤确认报告内容及对代码做出相应的修改。
 
 ### 一、确认功能正确性
 * 阅读VCS报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/vcs_report`，确认编译结果是否有错误，确认VCS流程是否存在 **`fail`**。如果VCS程序未通过，则首先需要修改代码以确保功能正确，确认控制信号寄存器是否已做初始化。
@@ -95,9 +95,9 @@ SoC和后端团队的report返回后，前端的同学需要按照以下步骤�
 > 注意：必须要修改代码清除掉的Warning/Error类型为LINT-3、LINT-38、LINT-59、LINT-60、LINT-X4和LINT-58
 
 ### 三、确认综合后面积是否在约束范围内
-前端设计的同学需要确保设计综合后的 **`Total cell area`** 在约束范围内，整个SoC面积应不超过 **2.0平方毫米**，其中共享SRAM的大小约为 **0.4平方毫米**，**所以同学们自己核的面积需要不超过1.6平方毫米**。
+同学需要确保设计综合后的 **`Total cell area`** 在约束范围内，整个SoC面积应不超过 **2.0平方毫米**，其中共享SRAM的大小约为 **0.4平方毫米**，**所以同学们自己核的面积应不超过1.6平方毫米**。
 
-> 注意：由于测试环境有110nm切换到了28nm，以上面积约束大小需要进一步讨论后确定。
+> 注意：以上面积约束大小需要根据最终综合后结果确定。
 
 * 阅读DC综合报告 `report/ysyx_学号/2024-3-xx...xx:xx:xx/dc_report`的 **AREA REPORT** 部分，确认 `Total cell area` 是否满足约束范围内。
   * 如做了五级流水线的设计 **Total cell area** 超过了约束范围，请对设计进行优化，将面积优化到约束范围内。
