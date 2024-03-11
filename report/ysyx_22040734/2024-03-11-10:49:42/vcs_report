@@ -1,0 +1,536 @@
+
+dut: ysyx_22040734
+
+################
+#vcs compile log
+################
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 1466
+  Identifier 'mtvec' has not been declared yet. If this error is not expected,
+  please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 1467
+  Identifier 'mepc' has not been declared yet. If this error is not expected, 
+  please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 1492
+  Identifier 'mstatus' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 1493
+  Identifier 'mcause' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 1669
+  Identifier 'r_64' has not been declared yet. If this error is not expected, 
+  please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 1669
+  Identifier 'partial_q' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2368
+  Identifier 'wr_mask' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2372
+  Identifier 'wr_size' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2373
+  Identifier 'rd_size' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2653
+  Identifier 'cleanEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2653
+  Identifier 'cleanCnt' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2653
+  Identifier 'wenWay1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2653
+  Identifier 'index' has not been declared yet. If this error is not expected,
+  please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'idleEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'uncacheOpEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'uncacheOpOk' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'compareEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'missEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'replaceEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2654
+  Identifier 'getdataEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2656
+  Identifier 'maskWay1_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2657
+  Identifier 'inDataWay1_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2663
+  Identifier 'maskWay1_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2664
+  Identifier 'inDataWay1_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2667
+  Identifier 'wenWay2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2670
+  Identifier 'maskWay2_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2671
+  Identifier 'inDataWay2_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2677
+  Identifier 'maskWay2_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2678
+  Identifier 'inDataWay2_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2698
+  Identifier 'reqLatch' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2760
+  Identifier 'axiWrBusy' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2809
+  Identifier 'clean_OK' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2911
+  Identifier 'replaceEnDelay' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2911
+  Identifier 'wenDelay1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2911
+  Identifier 'wenDelay2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2933
+  Identifier 'missFlag' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2933
+  Identifier 'rdBuffer' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2975
+  Identifier 'uncacheRdValid' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 2976
+  Identifier 'uncacheRdAddr' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3090
+  Identifier 'storeData' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3184
+  Identifier 'uncacheWrValid' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3203
+  Identifier 'cleanWrValid' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3207
+  Identifier 'cleanWrAddr' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3209
+  Identifier 'cleanData' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3228
+  Identifier 'uncacheWrOk' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3229
+  Identifier 'uncacheRdOk' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3407
+  Identifier 'wenWay1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3407
+  Identifier 'index' has not been declared yet. If this error is not expected,
+  please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3408
+  Identifier 'idleEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3408
+  Identifier 'compareEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3408
+  Identifier 'cacheHit' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3411
+  Identifier 'inDataWay1_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3418
+  Identifier 'inDataWay1_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3421
+  Identifier 'wenWay2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3425
+  Identifier 'inDataWay2_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3432
+  Identifier 'inDataWay2_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3452
+  Identifier 'reqLatch' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3560
+  Identifier 'getdataEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3600
+  Identifier 'missEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3600
+  Identifier 'replaceEn' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3611
+  Identifier 'missFlag' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 3611
+  Identifier 'rdBuffer' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 4103
+  Identifier 'pc_next_o' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 4630
+  Identifier 'axi_id' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 4836
+  Identifier 'axi_id' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 4838
+  Identifier 'axi_len' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 4839
+  Identifier 'axi_size' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 5354
+  Identifier 'clint_w_trans' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 5378
+  Identifier 'clint_r_trans' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22040734.v, 5651
+  Identifier 'div_resValid' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 841
+  Second declaration for identifier 'rw_valid_i' ignored
+  Identifier 'rw_valid_i' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 808]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 842
+  Second declaration for identifier 'rw_ready_o' ignored
+  Identifier 'rw_ready_o' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 809]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 843
+  Second declaration for identifier 'fetchLenth' ignored
+  Identifier 'fetchLenth' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 810]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 844
+  Second declaration for identifier 'rdLast_o' ignored
+  Identifier 'rdLast_o' previously declared as wire. [../cpu/ysyx_22040734.v, 
+  811]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 845
+  Second declaration for identifier 'rw_addr_i' ignored
+  Identifier 'rw_addr_i' previously declared as wire. [../cpu/ysyx_22040734.v,
+  812]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 846
+  Second declaration for identifier 'data_read_o' ignored
+  Identifier 'data_read_o' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 813]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 847
+  Second declaration for identifier 'dataValid_o' ignored
+  Identifier 'dataValid_o' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 814]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1080
+  Second declaration for identifier 'in_intr_ls' ignored
+  Identifier 'in_intr_ls' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 778]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1148
+  Second declaration for identifier 'dataNotOk' ignored
+  Identifier 'dataNotOk' previously declared as wire. [../cpu/ysyx_22040734.v,
+  1143]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1151
+  Second declaration for identifier 'clear_Icache' ignored
+  Identifier 'clear_Icache' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 806]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1217
+  Second declaration for identifier 'DcacheRdValid' ignored
+  Identifier 'DcacheRdValid' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1175]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1217
+  Second declaration for identifier 'DcacheWrValid' ignored
+  Identifier 'DcacheWrValid' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1184]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1218
+  Second declaration for identifier 'lsAxiRdReady' ignored
+  Identifier 'lsAxiRdReady' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1176]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1219
+  Second declaration for identifier 'lsFetchLenth' ignored
+  Identifier 'lsFetchLenth' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1177]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1220
+  Second declaration for identifier 'lsRdLast' ignored
+  Identifier 'lsRdLast' previously declared as wire. [../cpu/ysyx_22040734.v, 
+  1178]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1221
+  Second declaration for identifier 'DcacheRdAddr' ignored
+  Identifier 'DcacheRdAddr' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1179]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1221
+  Second declaration for identifier 'DcacheWrAddr' ignored
+  Identifier 'DcacheWrAddr' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1180]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1222
+  Second declaration for identifier 'lsAxiRdData' ignored
+  Identifier 'lsAxiRdData' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1181]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1223
+  Second declaration for identifier 'lsAxiRdDataVAlid' ignored
+  Identifier 'lsAxiRdDataVAlid' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1182]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1224
+  Second declaration for identifier 'lsAxiWrReady' ignored
+  Identifier 'lsAxiWrReady' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1183]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1225
+  Second declaration for identifier 'lsAxiWrData' ignored
+  Identifier 'lsAxiWrData' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1185]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1226
+  Second declaration for identifier 'lsStoreLenth' ignored
+  Identifier 'lsStoreLenth' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1186]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1227
+  Second declaration for identifier 'lsStoreMask' ignored
+  Identifier 'lsStoreMask' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1187]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1228
+  Second declaration for identifier 'lsStoreSize' ignored
+  Identifier 'lsStoreSize' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1188]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 1228
+  Second declaration for identifier 'lsLoadSize' ignored
+  Identifier 'lsLoadSize' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 1189]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 2693
+  Second declaration for identifier 'dataWay1_1' ignored
+  Identifier 'dataWay1_1' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 2658]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 2693
+  Second declaration for identifier 'dataWay1_2' ignored
+  Identifier 'dataWay1_2' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 2665]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 2693
+  Second declaration for identifier 'dataWay2_1' ignored
+  Identifier 'dataWay2_1' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 2672]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 2693
+  Second declaration for identifier 'dataWay2_2' ignored
+  Identifier 'dataWay2_2' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 2679]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 3446
+  Second declaration for identifier 'dataWay1_1' ignored
+  Identifier 'dataWay1_1' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 3412]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 3446
+  Second declaration for identifier 'dataWay1_2' ignored
+  Identifier 'dataWay1_2' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 3419]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 3446
+  Second declaration for identifier 'dataWay2_1' ignored
+  Identifier 'dataWay2_1' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 3426]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 3446
+  Second declaration for identifier 'dataWay2_2' ignored
+  Identifier 'dataWay2_2' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 3433]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 4314
+  Second declaration for identifier 'timr_int' ignored
+  Identifier 'timr_int' previously declared as wire. [../cpu/ysyx_22040734.v, 
+  4306]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 5654
+  Second declaration for identifier 'mulOut' ignored
+  Identifier 'mulOut' previously declared as wire. [../cpu/ysyx_22040734.v, 
+  5647]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22040734.v, 6054
+  Second declaration for identifier 'slv_reg_wren' ignored
+  Identifier 'slv_reg_wren' previously declared as wire. 
+  [../cpu/ysyx_22040734.v, 5957]
