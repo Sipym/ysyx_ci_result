@@ -1,0 +1,255 @@
+
+dut: ysyx_22041752
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello test in flash fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 11 10:43 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+heap: [0xfc022218 - 0xfd422218]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     4.0.4 build Oct 15 2022
+ 2006 - 2021 Copyright by rt-thread team
+Hello RISC-V!
+msh />$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    882.800 seconds;       Data structure size:  38.8Mb
+Mon Mar 11 10:58:15 2024
+======================================================
+
+hello test in mem fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 11 10:43 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+heap: [0xfc022218 - 0xfd422218]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     4.0.4 build Oct 15 2022
+ 2006 - 2021 Copyright by rt-thread team
+Hello RISC-V!
+msh />$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    882.800 seconds;       Data structure size:  38.8Mb
+Mon Mar 11 10:58:15 2024
+======================================================
+
+hello test in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 11 10:43 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+heap: [0xfc022218 - 0xfd422218]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     4.0.4 build Oct 15 2022
+ 2006 - 2021 Copyright by rt-thread team
+Hello RISC-V!
+msh />$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    882.800 seconds;       Data structure size:  38.8Mb
+Mon Mar 11 10:58:15 2024
+======================================================
+
+memtest test in flash fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 11 10:43 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+heap: [0xfc022218 - 0xfd422218]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     4.0.4 build Oct 15 2022
+ 2006 - 2021 Copyright by rt-thread team
+Hello RISC-V!
+msh />$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    882.800 seconds;       Data structure size:  38.8Mb
+Mon Mar 11 10:58:15 2024
+======================================================
+
+memtest test in mem fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 11 10:43 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+heap: [0xfc022218 - 0xfd422218]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     4.0.4 build Oct 15 2022
+ 2006 - 2021 Copyright by rt-thread team
+Hello RISC-V!
+msh />$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    882.800 seconds;       Data structure size:  38.8Mb
+Mon Mar 11 10:58:15 2024
+======================================================
+
+memtest test in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 11 10:43 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+heap: [0xfc022218 - 0xfd422218]
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     4.0.4 build Oct 15 2022
+ 2006 - 2021 Copyright by rt-thread team
+Hello RISC-V!
+msh />$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    882.800 seconds;       Data structure size:  38.8Mb
+Mon Mar 11 10:58:15 2024
+======================================================
+
+rtthread test in flash pass!!
+rtthread test in mem pass!!
+rtthread test in sdram pass!!
