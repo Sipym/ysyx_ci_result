@@ -1,0 +1,1746 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22051098
+freq: 100
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+64399.6  64399.6  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+76128  76128  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40   LVT40
+100.00  0.00 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  100.0     153.8      0.698  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22051098
+Version: R-2020.09-SP3a
+Date   : Wed Mar 13 14:21:13 2024
+****************************************
+
+Number of ports:                        22342
+Number of nets:                         94535
+Number of cells:                        77573
+Number of combinational cells:          58803
+Number of sequential cells:             17325
+Number of macros/black boxes:               0
+Number of buf/inv:                      15848
+Number of references:                      17
+
+Combinational area:              31592.735859
+Buf/Inv area:                     4772.124051
+Noncombinational area:           32806.871741
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 64399.607600
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+ysyx_22051098                     64399.6076    100.0    359.2260      0.0000  0.0000  ysyx_22051098
+arbiter                             702.3240      1.1    247.5900    454.7340  0.0000  ysyx_22051098_AXI_Arbiter_0
+clint                               782.2080      1.2    415.5480    366.6600  0.0000  ysyx_22051098_CLINT_0
+csr                                2004.6600      3.1   1033.2000    971.4600  0.0000  ysyx_22051098_CSR_0
+dcache                            22831.8299     35.5   1256.0940    519.7500  0.0000  ysyx_22051098_DCache_0
+dcache/data_arrays_0                891.5760      1.4    645.7500    245.8260  0.0000  ysyx_22051098_CacheDataArray_4
+dcache/data_arrays_1                891.5760      1.4    645.7500    245.8260  0.0000  ysyx_22051098_CacheDataArray_6
+dcache/meta_arrays_0               9602.0819     14.9   4037.9220   5564.1600  0.0000  ysyx_22051098_CacheMetaArray_4
+dcache/meta_arrays_1               9602.0819     14.9   4037.9220   5564.1600  0.0000  ysyx_22051098_CacheMetaArray_5
+dcache/replacer                      68.6700      0.1      0.0000      0.0000  0.0000  ysyx_22051098_LFSRCacheReplacer_3
+dcache/replacer/io_way_prng          68.6700      0.1      4.1580     64.5120  0.0000  ysyx_22051098_MaxPeriodFibonacciLFSR_2
+ex_stage                           5928.5520      9.2    831.7260    842.9400  0.0000  ysyx_22051098_EX_0
+ex_stage/alu                        566.1180      0.9    566.1180      0.0000  0.0000  ysyx_22051098_ALU_0
+ex_stage/divider                   1375.7940      2.1    871.0380    504.7560  0.0000  ysyx_22051098_Radix2Divider_0
+ex_stage/multiplier                1722.0420      2.7    377.6220    625.5900  0.0000  ysyx_22051098_BoothMultiplier_0
+ex_stage/multiplier/cla             473.0040      0.7      0.0000      0.0000  0.0000  ysyx_22051098_CarryLookaheadAdder_0
+ex_stage/multiplier/cla/cog           0.6300      0.0      0.6300      0.0000  0.0000  ysyx_22051098_CLA_COGen_1
+ex_stage/multiplier/cla/cog_1         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_0
+ex_stage/multiplier/cla/cog_10        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_36
+ex_stage/multiplier/cla/cog_11        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_19
+ex_stage/multiplier/cla/cog_12        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_35
+ex_stage/multiplier/cla/cog_13        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_34
+ex_stage/multiplier/cla/cog_14        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_33
+ex_stage/multiplier/cla/cog_15        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_32
+ex_stage/multiplier/cla/cog_16        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_18
+ex_stage/multiplier/cla/cog_17        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_17
+ex_stage/multiplier/cla/cog_18        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_31
+ex_stage/multiplier/cla/cog_19        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_30
+ex_stage/multiplier/cla/cog_2         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_4
+ex_stage/multiplier/cla/cog_20        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_29
+ex_stage/multiplier/cla/cog_21        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_16
+ex_stage/multiplier/cla/cog_22        1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_2
+ex_stage/multiplier/cla/cog_23        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_15
+ex_stage/multiplier/cla/cog_24        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_28
+ex_stage/multiplier/cla/cog_25        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_27
+ex_stage/multiplier/cla/cog_26        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_26
+ex_stage/multiplier/cla/cog_27        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_14
+ex_stage/multiplier/cla/cog_28        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_13
+ex_stage/multiplier/cla/cog_29        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_25
+ex_stage/multiplier/cla/cog_3         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_85
+ex_stage/multiplier/cla/cog_30        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_24
+ex_stage/multiplier/cla/cog_31        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_23
+ex_stage/multiplier/cla/cog_32        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_12
+ex_stage/multiplier/cla/cog_33        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_11
+ex_stage/multiplier/cla/cog_34        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_22
+ex_stage/multiplier/cla/cog_35        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_21
+ex_stage/multiplier/cla/cog_36        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_20
+ex_stage/multiplier/cla/cog_37        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_10
+ex_stage/multiplier/cla/cog_38        1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_6
+ex_stage/multiplier/cla/cog_39        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_9
+ex_stage/multiplier/cla/cog_4         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_41
+ex_stage/multiplier/cla/cog_40        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_8
+ex_stage/multiplier/cla/cog_41        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_7
+ex_stage/multiplier/cla/cog_42        1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_5
+ex_stage/multiplier/cla/cog_5         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_40
+ex_stage/multiplier/cla/cog_6         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_3
+ex_stage/multiplier/cla/cog_7         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_39
+ex_stage/multiplier/cla/cog_8         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_38
+ex_stage/multiplier/cla/cog_9         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_37
+ex_stage/multiplier/cla/pgg           2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_0
+ex_stage/multiplier/cla/pgg_1         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_2
+ex_stage/multiplier/cla/pgg_10        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_119
+ex_stage/multiplier/cla/pgg_100       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_29
+ex_stage/multiplier/cla/pgg_101       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_28
+ex_stage/multiplier/cla/pgg_102       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_27
+ex_stage/multiplier/cla/pgg_103       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_26
+ex_stage/multiplier/cla/pgg_104       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_25
+ex_stage/multiplier/cla/pgg_105       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_24
+ex_stage/multiplier/cla/pgg_106       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_23
+ex_stage/multiplier/cla/pgg_107       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_22
+ex_stage/multiplier/cla/pgg_108       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_21
+ex_stage/multiplier/cla/pgg_109       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_20
+ex_stage/multiplier/cla/pgg_11        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_118
+ex_stage/multiplier/cla/pgg_110       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_19
+ex_stage/multiplier/cla/pgg_111       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_18
+ex_stage/multiplier/cla/pgg_112       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_17
+ex_stage/multiplier/cla/pgg_113       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_16
+ex_stage/multiplier/cla/pgg_114       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_15
+ex_stage/multiplier/cla/pgg_115       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_14
+ex_stage/multiplier/cla/pgg_116       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_13
+ex_stage/multiplier/cla/pgg_117       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_12
+ex_stage/multiplier/cla/pgg_118       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_11
+ex_stage/multiplier/cla/pgg_119       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_10
+ex_stage/multiplier/cla/pgg_12        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_117
+ex_stage/multiplier/cla/pgg_120       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_9
+ex_stage/multiplier/cla/pgg_121       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_8
+ex_stage/multiplier/cla/pgg_122       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_7
+ex_stage/multiplier/cla/pgg_123       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_6
+ex_stage/multiplier/cla/pgg_124       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_5
+ex_stage/multiplier/cla/pgg_125       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_4
+ex_stage/multiplier/cla/pgg_126       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_3
+ex_stage/multiplier/cla/pgg_127       1.7640      0.0      1.7640      0.0000  0.0000  ysyx_22051098_CLA_PGGen_1
+ex_stage/multiplier/cla/pgg_13        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_116
+ex_stage/multiplier/cla/pgg_14        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_115
+ex_stage/multiplier/cla/pgg_15        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_114
+ex_stage/multiplier/cla/pgg_16        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_113
+ex_stage/multiplier/cla/pgg_17        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_112
+ex_stage/multiplier/cla/pgg_18        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_111
+ex_stage/multiplier/cla/pgg_19        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_110
+ex_stage/multiplier/cla/pgg_2         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_127
+ex_stage/multiplier/cla/pgg_20        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_109
+ex_stage/multiplier/cla/pgg_21        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_108
+ex_stage/multiplier/cla/pgg_22        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_107
+ex_stage/multiplier/cla/pgg_23        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_106
+ex_stage/multiplier/cla/pgg_24        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_105
+ex_stage/multiplier/cla/pgg_25        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_104
+ex_stage/multiplier/cla/pgg_26        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_103
+ex_stage/multiplier/cla/pgg_27        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_102
+ex_stage/multiplier/cla/pgg_28        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_101
+ex_stage/multiplier/cla/pgg_29        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_100
+ex_stage/multiplier/cla/pgg_3         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_126
+ex_stage/multiplier/cla/pgg_30        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_99
+ex_stage/multiplier/cla/pgg_31        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_98
+ex_stage/multiplier/cla/pgg_32        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_97
+ex_stage/multiplier/cla/pgg_33        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_96
+ex_stage/multiplier/cla/pgg_34        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_95
+ex_stage/multiplier/cla/pgg_35        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_94
+ex_stage/multiplier/cla/pgg_36        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_93
+ex_stage/multiplier/cla/pgg_37        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_92
+ex_stage/multiplier/cla/pgg_38        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_91
+ex_stage/multiplier/cla/pgg_39        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_90
+ex_stage/multiplier/cla/pgg_4         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_125
+ex_stage/multiplier/cla/pgg_40        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_89
+ex_stage/multiplier/cla/pgg_41        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_88
+ex_stage/multiplier/cla/pgg_42        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_87
+ex_stage/multiplier/cla/pgg_43        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_86
+ex_stage/multiplier/cla/pgg_44        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_85
+ex_stage/multiplier/cla/pgg_45        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_84
+ex_stage/multiplier/cla/pgg_46        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_83
+ex_stage/multiplier/cla/pgg_47        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_82
+ex_stage/multiplier/cla/pgg_48        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_81
+ex_stage/multiplier/cla/pgg_49        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_80
+ex_stage/multiplier/cla/pgg_5         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_124
+ex_stage/multiplier/cla/pgg_50        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_79
+ex_stage/multiplier/cla/pgg_51        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_78
+ex_stage/multiplier/cla/pgg_52        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_77
+ex_stage/multiplier/cla/pgg_53        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_76
+ex_stage/multiplier/cla/pgg_54        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_75
+ex_stage/multiplier/cla/pgg_55        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_74
+ex_stage/multiplier/cla/pgg_56        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_73
+ex_stage/multiplier/cla/pgg_57        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_72
+ex_stage/multiplier/cla/pgg_58        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_71
+ex_stage/multiplier/cla/pgg_59        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_70
+ex_stage/multiplier/cla/pgg_6         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_123
+ex_stage/multiplier/cla/pgg_60        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_69
+ex_stage/multiplier/cla/pgg_61        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_68
+ex_stage/multiplier/cla/pgg_62        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_67
+ex_stage/multiplier/cla/pgg_63        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_66
+ex_stage/multiplier/cla/pgg_64        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_65
+ex_stage/multiplier/cla/pgg_65        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_64
+ex_stage/multiplier/cla/pgg_66        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_63
+ex_stage/multiplier/cla/pgg_67        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_62
+ex_stage/multiplier/cla/pgg_68        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_61
+ex_stage/multiplier/cla/pgg_69        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_60
+ex_stage/multiplier/cla/pgg_7         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_122
+ex_stage/multiplier/cla/pgg_70        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_59
+ex_stage/multiplier/cla/pgg_71        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_58
+ex_stage/multiplier/cla/pgg_72        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_57
+ex_stage/multiplier/cla/pgg_73        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_56
+ex_stage/multiplier/cla/pgg_74        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_55
+ex_stage/multiplier/cla/pgg_75        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_54
+ex_stage/multiplier/cla/pgg_76        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_53
+ex_stage/multiplier/cla/pgg_77        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_52
+ex_stage/multiplier/cla/pgg_78        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_51
+ex_stage/multiplier/cla/pgg_79        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_50
+ex_stage/multiplier/cla/pgg_8         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_121
+ex_stage/multiplier/cla/pgg_80        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_49
+ex_stage/multiplier/cla/pgg_81        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_48
+ex_stage/multiplier/cla/pgg_82        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_47
+ex_stage/multiplier/cla/pgg_83        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_46
+ex_stage/multiplier/cla/pgg_84        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_45
+ex_stage/multiplier/cla/pgg_85        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_44
+ex_stage/multiplier/cla/pgg_86        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_43
+ex_stage/multiplier/cla/pgg_87        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_42
+ex_stage/multiplier/cla/pgg_88        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_41
+ex_stage/multiplier/cla/pgg_89        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_40
+ex_stage/multiplier/cla/pgg_9         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_120
+ex_stage/multiplier/cla/pgg_90        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_39
+ex_stage/multiplier/cla/pgg_91        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_38
+ex_stage/multiplier/cla/pgg_92        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_37
+ex_stage/multiplier/cla/pgg_93        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_36
+ex_stage/multiplier/cla/pgg_94        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_35
+ex_stage/multiplier/cla/pgg_95        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_34
+ex_stage/multiplier/cla/pgg_96        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_33
+ex_stage/multiplier/cla/pgg_97        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_32
+ex_stage/multiplier/cla/pgg_98        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_31
+ex_stage/multiplier/cla/pgg_99        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_30
+ex_stage/multiplier/pp              245.8260      0.4    245.8260      0.0000  0.0000  ysyx_22051098_PartialProduct_0
+ex_stage/shifter                    589.9320      0.9    589.9320      0.0000  0.0000  ysyx_22051098_Shifter_0
+icache                            20453.2018     31.8    549.8640    211.6800  0.0000  ysyx_22051098_ICache_0
+icache/data_arrays_0                766.0800      1.2    520.2540    245.8260  0.0000  ysyx_22051098_CacheDataArray_5
+icache/data_arrays_1                777.6720      1.2    531.8460    245.8260  0.0000  ysyx_22051098_CacheDataArray_7
+icache/meta_arrays_0               9039.8699     14.0   3717.6300   5322.2400  0.0000  ysyx_22051098_CacheMetaArray_6
+icache/meta_arrays_1               9040.6259     14.0   3718.3860   5322.2400  0.0000  ysyx_22051098_CacheMetaArray_7
+icache/replacer                      67.4100      0.1      0.0000      0.0000  0.0000  ysyx_22051098_LFSRCacheReplacer_2
+icache/replacer/io_way_prng          67.4100      0.1      3.0240     64.3860  0.0000  ysyx_22051098_MaxPeriodFibonacciLFSR_3
+id_stage                           1151.7660      1.8    966.5460    185.2200  0.0000  ysyx_22051098_ID_0
+if_stage                            799.2180      1.2    487.3680    311.8500  0.0000  ysyx_22051098_IF_0
+mm_stage                           1101.4920      1.7    549.6120    551.8800  0.0000  ysyx_22051098_MM_0
+myrom                               134.5680      0.2     47.6280     86.9400  0.0000  ysyx_22051098_MyROM_0
+regfile                            7272.3420     11.3      0.0000      0.0000  0.0000  ysyx_22051098_Regfile_0
+regfile/rf                         7272.3420     11.3   3522.5820   3749.7600  0.0000  ysyx_22051098__Regfile_0
+wb_stage                            878.2200      1.4    339.5700    538.6500  0.0000  ysyx_22051098_WB_0
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                  31592.7359  32806.8717  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22051098
+Version: R-2020.09-SP3a
+Date   : Wed Mar 13 14:21:06 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: ex_stage/src1_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_5_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/src1_reg_0_/CP (DFQD1BWP40P140)    0.0000    0.0000 #   0.0000 r
+  ex_stage/src1_reg_0_/Q (DFQD1BWP40P140)     0.0773    0.1142     0.1142 f
+  ex_stage/alu/io_a[0] (ysyx_22051098_ALU_0)            0.0000     0.1142 f
+  ex_stage/alu/U161/A1 (IND2D1BWP40P140)      0.0773    0.0000     0.1142 f
+  ex_stage/alu/U161/ZN (IND2D1BWP40P140)      0.0536    0.0598     0.1740 f
+  ex_stage/alu/U550/CI (FA1D1BWP40P140)       0.0536    0.0000     0.1740 f
+  ex_stage/alu/U550/CO (FA1D1BWP40P140)       0.0231    0.0602     0.2342 f
+  ex_stage/alu/U283/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2342 f
+  ex_stage/alu/U283/CO (FA1D1BWP40P140)       0.0231    0.0498     0.2840 f
+  ex_stage/alu/U300/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2840 f
+  ex_stage/alu/U300/CO (FA1D1BWP40P140)       0.0226    0.0498     0.3338 f
+  ex_stage/alu/U512/CI (FA1D1BWP40P140)       0.0226    0.0000     0.3338 f
+  ex_stage/alu/U512/CO (FA1D1BWP40P140)       0.0225    0.0496     0.3835 f
+  ex_stage/alu/U518/CI (FA1D1BWP40P140)       0.0225    0.0000     0.3835 f
+  ex_stage/alu/U518/CO (FA1D1BWP40P140)       0.0231    0.0496     0.4330 f
+  ex_stage/alu/U467/CI (FA1D1BWP40P140)       0.0231    0.0000     0.4330 f
+  ex_stage/alu/U467/CO (FA1D1BWP40P140)       0.0229    0.0498     0.4829 f
+  ex_stage/alu/U506/CI (FA1D1BWP40P140)       0.0229    0.0000     0.4829 f
+  ex_stage/alu/U506/CO (FA1D1BWP40P140)       0.0233    0.0497     0.5326 f
+  ex_stage/alu/U500/CI (FA1D1BWP40P140)       0.0233    0.0000     0.5326 f
+  ex_stage/alu/U500/CO (FA1D1BWP40P140)       0.0226    0.0499     0.5825 f
+  ex_stage/alu/U462/CI (FA1D1BWP40P140)       0.0226    0.0000     0.5825 f
+  ex_stage/alu/U462/CO (FA1D1BWP40P140)       0.0232    0.0496     0.6321 f
+  ex_stage/alu/U455/CI (FA1D1BWP40P140)       0.0232    0.0000     0.6321 f
+  ex_stage/alu/U455/CO (FA1D1BWP40P140)       0.0226    0.0498     0.6819 f
+  ex_stage/alu/U681/CI (FA1D1BWP40P140)       0.0226    0.0000     0.6819 f
+  ex_stage/alu/U681/CO (FA1D1BWP40P140)       0.0229    0.0496     0.7315 f
+  ex_stage/alu/U673/CI (FA1D1BWP40P140)       0.0229    0.0000     0.7315 f
+  ex_stage/alu/U673/CO (FA1D1BWP40P140)       0.0227    0.0497     0.7813 f
+  ex_stage/alu/U667/CI (FA1D1BWP40P140)       0.0227    0.0000     0.7813 f
+  ex_stage/alu/U667/CO (FA1D1BWP40P140)       0.0230    0.0497     0.8309 f
+  ex_stage/alu/U562/CI (FA1D1BWP40P140)       0.0230    0.0000     0.8309 f
+  ex_stage/alu/U562/CO (FA1D1BWP40P140)       0.0227    0.0498     0.8807 f
+  ex_stage/alu/U661/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8807 f
+  ex_stage/alu/U661/CO (FA1D1BWP40P140)       0.0224    0.0497     0.9304 f
+  ex_stage/alu/U487/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9304 f
+  ex_stage/alu/U487/CO (FA1D1BWP40P140)       0.0224    0.0496     0.9799 f
+  ex_stage/alu/U568/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9799 f
+  ex_stage/alu/U568/CO (FA1D1BWP40P140)       0.0230    0.0495     1.0295 f
+  ex_stage/alu/U556/CI (FA1D1BWP40P140)       0.0230    0.0000     1.0295 f
+  ex_stage/alu/U556/CO (FA1D1BWP40P140)       0.0225    0.0498     1.0793 f
+  ex_stage/alu/U525/CI (FA1D1BWP40P140)       0.0225    0.0000     1.0793 f
+  ex_stage/alu/U525/CO (FA1D1BWP40P140)       0.0233    0.0496     1.1289 f
+  ex_stage/alu/U544/CI (FA1D1BWP40P140)       0.0233    0.0000     1.1289 f
+  ex_stage/alu/U544/CO (FA1D1BWP40P140)       0.0226    0.0499     1.1788 f
+  ex_stage/alu/U493/CI (FA1D1BWP40P140)       0.0226    0.0000     1.1788 f
+  ex_stage/alu/U493/CO (FA1D1BWP40P140)       0.0230    0.0496     1.2284 f
+  ex_stage/alu/U537/CI (FA1D1BWP40P140)       0.0230    0.0000     1.2284 f
+  ex_stage/alu/U537/CO (FA1D1BWP40P140)       0.0228    0.0498     1.2782 f
+  ex_stage/alu/U531/CI (FA1D1BWP40P140)       0.0228    0.0000     1.2782 f
+  ex_stage/alu/U531/CO (FA1D1BWP40P140)       0.0230    0.0497     1.3279 f
+  ex_stage/alu/U481/CI (FA1D1BWP40P140)       0.0230    0.0000     1.3279 f
+  ex_stage/alu/U481/CO (FA1D1BWP40P140)       0.0224    0.0498     1.3776 f
+  ex_stage/alu/U412/CI (FA1D1BWP40P140)       0.0224    0.0000     1.3776 f
+  ex_stage/alu/U412/CO (FA1D1BWP40P140)       0.0230    0.0496     1.4272 f
+  ex_stage/alu/U418/CI (FA1D1BWP40P140)       0.0230    0.0000     1.4272 f
+  ex_stage/alu/U418/CO (FA1D1BWP40P140)       0.0227    0.0498     1.4770 f
+  ex_stage/alu/U475/CI (FA1D1BWP40P140)       0.0227    0.0000     1.4770 f
+  ex_stage/alu/U475/CO (FA1D1BWP40P140)       0.0232    0.0497     1.5266 f
+  ex_stage/alu/U436/CI (FA1D1BWP40P140)       0.0232    0.0000     1.5266 f
+  ex_stage/alu/U436/CO (FA1D1BWP40P140)       0.0227    0.0498     1.5765 f
+  ex_stage/alu/U424/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5765 f
+  ex_stage/alu/U424/CO (FA1D1BWP40P140)       0.0226    0.0497     1.6261 f
+  ex_stage/alu/U430/CI (FA1D1BWP40P140)       0.0226    0.0000     1.6261 f
+  ex_stage/alu/U430/CO (FA1D1BWP40P140)       0.0229    0.0496     1.6758 f
+  ex_stage/alu/U368/CI (FA1D1BWP40P140)       0.0229    0.0000     1.6758 f
+  ex_stage/alu/U368/CO (FA1D1BWP40P140)       0.0226    0.0497     1.7255 f
+  ex_stage/alu/U655/CI (FA1D1BWP40P140)       0.0226    0.0000     1.7255 f
+  ex_stage/alu/U655/CO (FA1D1BWP40P140)       0.0230    0.0496     1.7751 f
+  ex_stage/alu/U648/CI (FA1D1BWP40P140)       0.0230    0.0000     1.7751 f
+  ex_stage/alu/U648/CO (FA1D1BWP40P140)       0.0230    0.0498     1.8249 f
+  ex_stage/alu/U642/CI (FA1D1BWP40P140)       0.0230    0.0000     1.8249 f
+  ex_stage/alu/U642/CO (FA1D1BWP40P140)       0.0227    0.0498     1.8747 f
+  ex_stage/alu/U636/CI (FA1D1BWP40P140)       0.0227    0.0000     1.8747 f
+  ex_stage/alu/U636/CO (FA1D1BWP40P140)       0.0232    0.0497     1.9243 f
+  ex_stage/alu/U630/CI (FA1D1BWP40P140)       0.0232    0.0000     1.9243 f
+  ex_stage/alu/U630/CO (FA1D1BWP40P140)       0.0224    0.0498     1.9742 f
+  ex_stage/alu/U624/CI (FA1D1BWP40P140)       0.0224    0.0000     1.9742 f
+  ex_stage/alu/U624/CO (FA1D1BWP40P140)       0.0226    0.0496     2.0237 f
+  ex_stage/alu/U618/CI (FA1D1BWP40P140)       0.0226    0.0000     2.0237 f
+  ex_stage/alu/U618/CO (FA1D1BWP40P140)       0.0227    0.0496     2.0733 f
+  ex_stage/alu/U612/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0733 f
+  ex_stage/alu/U612/CO (FA1D1BWP40P140)       0.0232    0.0497     2.1230 f
+  ex_stage/alu/U606/CI (FA1D1BWP40P140)       0.0232    0.0000     2.1230 f
+  ex_stage/alu/U606/CO (FA1D1BWP40P140)       0.0225    0.0498     2.1728 f
+  ex_stage/alu/U600/CI (FA1D1BWP40P140)       0.0225    0.0000     2.1728 f
+  ex_stage/alu/U600/CO (FA1D1BWP40P140)       0.0227    0.0496     2.2224 f
+  ex_stage/alu/U593/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2224 f
+  ex_stage/alu/U593/CO (FA1D1BWP40P140)       0.0227    0.0497     2.2721 f
+  ex_stage/alu/U587/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2721 f
+  ex_stage/alu/U587/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3218 f
+  ex_stage/alu/U448/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3218 f
+  ex_stage/alu/U448/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3714 f
+  ex_stage/alu/U580/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3714 f
+  ex_stage/alu/U580/CO (FA1D1BWP40P140)       0.0232    0.0497     2.4211 f
+  ex_stage/alu/U574/CI (FA1D1BWP40P140)       0.0232    0.0000     2.4211 f
+  ex_stage/alu/U574/CO (FA1D1BWP40P140)       0.0225    0.0498     2.4709 f
+  ex_stage/alu/U442/CI (FA1D1BWP40P140)       0.0225    0.0000     2.4709 f
+  ex_stage/alu/U442/CO (FA1D1BWP40P140)       0.0232    0.0496     2.5205 f
+  ex_stage/alu/U306/CI (FA1D1BWP40P140)       0.0232    0.0000     2.5205 f
+  ex_stage/alu/U306/CO (FA1D1BWP40P140)       0.0224    0.0498     2.5704 f
+  ex_stage/alu/U315/CI (FA1D1BWP40P140)       0.0224    0.0000     2.5704 f
+  ex_stage/alu/U315/CO (FA1D1BWP40P140)       0.0226    0.0495     2.6199 f
+  ex_stage/alu/U405/CI (FA1D1BWP40P140)       0.0226    0.0000     2.6199 f
+  ex_stage/alu/U405/CO (FA1D1BWP40P140)       0.0227    0.0496     2.6695 f
+  ex_stage/alu/U381/CI (FA1D1BWP40P140)       0.0227    0.0000     2.6695 f
+  ex_stage/alu/U381/CO (FA1D1BWP40P140)       0.0230    0.0497     2.7192 f
+  ex_stage/alu/U399/CI (FA1D1BWP40P140)       0.0230    0.0000     2.7192 f
+  ex_stage/alu/U399/CO (FA1D1BWP40P140)       0.0224    0.0498     2.7689 f
+  ex_stage/alu/U393/CI (FA1D1BWP40P140)       0.0224    0.0000     2.7689 f
+  ex_stage/alu/U393/CO (FA1D1BWP40P140)       0.0232    0.0496     2.8185 f
+  ex_stage/alu/U321/CI (FA1D1BWP40P140)       0.0232    0.0000     2.8185 f
+  ex_stage/alu/U321/CO (FA1D1BWP40P140)       0.0230    0.0498     2.8684 f
+  ex_stage/alu/U387/CI (FA1D1BWP40P140)       0.0230    0.0000     2.8684 f
+  ex_stage/alu/U387/CO (FA1D1BWP40P140)       0.0233    0.0498     2.9181 f
+  ex_stage/alu/U340/CI (FA1D1BWP40P140)       0.0233    0.0000     2.9181 f
+  ex_stage/alu/U340/CO (FA1D1BWP40P140)       0.0228    0.0499     2.9680 f
+  ex_stage/alu/U328/CI (FA1D1BWP40P140)       0.0228    0.0000     2.9680 f
+  ex_stage/alu/U328/CO (FA1D1BWP40P140)       0.0229    0.0497     3.0177 f
+  ex_stage/alu/U334/CI (FA1D1BWP40P140)       0.0229    0.0000     3.0177 f
+  ex_stage/alu/U334/CO (FA1D1BWP40P140)       0.0226    0.0497     3.0674 f
+  ex_stage/alu/U347/CI (FA1D1BWP40P140)       0.0226    0.0000     3.0674 f
+  ex_stage/alu/U347/CO (FA1D1BWP40P140)       0.0235    0.0496     3.1171 f
+  ex_stage/alu/U375/CI (FA1D1BWP40P140)       0.0235    0.0000     3.1171 f
+  ex_stage/alu/U375/CO (FA1D1BWP40P140)       0.0228    0.0500     3.1670 f
+  ex_stage/alu/U353/CI (FA1D1BWP40P140)       0.0228    0.0000     3.1670 f
+  ex_stage/alu/U353/CO (FA1D1BWP40P140)       0.0226    0.0497     3.2167 f
+  ex_stage/alu/U362/CI (FA1D1BWP40P140)       0.0226    0.0000     3.2167 f
+  ex_stage/alu/U362/CO (FA1D1BWP40P140)       0.0231    0.0498     3.2665 f
+  ex_stage/alu/U354/A2 (XNR3UD1BWP40P140)     0.0231    0.0000     3.2665 f
+  ex_stage/alu/U354/ZN (XNR3UD1BWP40P140)     0.0364    0.0704     3.3368 f
+  ex_stage/alu/U355/B2 (AOI22D1BWP40P140)     0.0364    0.0000     3.3368 f
+  ex_stage/alu/U355/ZN (AOI22D1BWP40P140)     0.0709    0.0345     3.3713 r
+  ex_stage/alu/U359/A1 (ND3D1BWP40P140)       0.0709    0.0000     3.3713 r
+  ex_stage/alu/U359/ZN (ND3D1BWP40P140)       0.0505    0.0414     3.4128 f
+  ex_stage/alu/io_out[63] (ysyx_22051098_ALU_0)         0.0000     3.4128 f
+  ex_stage/U901/A1 (AOI21D1BWP40P140)         0.0505    0.0000     3.4128 f
+  ex_stage/U901/ZN (AOI21D1BWP40P140)         0.0432    0.0271     3.4399 r
+  ex_stage/U7/A3 (ND4D1BWP40P140)             0.0432    0.0000     3.4399 r
+  ex_stage/U7/ZN (ND4D1BWP40P140)             0.0710    0.0579     3.4978 f
+  ex_stage/to_id_ex_result[63] (ysyx_22051098_EX_0)     0.0000     3.4978 f
+  id_stage/to_ex_ex_result[63] (ysyx_22051098_ID_0)     0.0000     3.4978 f
+  id_stage/U960/A2 (AOI22D1BWP40P140)         0.0710    0.0000     3.4978 f
+  id_stage/U960/ZN (AOI22D1BWP40P140)         0.0713    0.0379     3.5357 r
+  id_stage/U962/A1 (ND2D1BWP40P140)           0.0713    0.0000     3.5357 r
+  id_stage/U962/ZN (ND2D1BWP40P140)           0.0536    0.0472     3.5828 f
+  id_stage/U1079/I (INVD1BWP40P140)           0.0536    0.0000     3.5828 f
+  id_stage/U1079/ZN (INVD1BWP40P140)          0.0334    0.0339     3.6167 r
+  id_stage/U1080/B2 (OAI22D1BWP40P140)        0.0334    0.0000     3.6167 r
+  id_stage/U1080/ZN (OAI22D1BWP40P140)        0.0396    0.0404     3.6571 f
+  id_stage/U1081/I (INVD1BWP40P140)           0.0396    0.0000     3.6571 f
+  id_stage/U1081/ZN (INVD1BWP40P140)          0.0195    0.0211     3.6782 r
+  id_stage/U1083/B (OAI211D1BWP40P140)        0.0195    0.0000     3.6782 r
+  id_stage/U1083/ZN (OAI211D1BWP40P140)       0.0540    0.0436     3.7218 f
+  id_stage/U1090/A1 (NR2D1BWP40P140)          0.0540    0.0000     3.7218 f
+  id_stage/U1090/ZN (NR2D1BWP40P140)          0.0299    0.0296     3.7514 r
+  id_stage/U1125/A3 (ND3D1BWP40P140)          0.0299    0.0000     3.7514 r
+  id_stage/U1125/ZN (ND3D1BWP40P140)          0.0382    0.0319     3.7833 f
+  id_stage/U1126/C (AOI221D1BWP40P140)        0.0382    0.0000     3.7833 f
+  id_stage/U1126/ZN (AOI221D1BWP40P140)       0.0506    0.0502     3.8335 r
+  id_stage/U1132/A3 (ND4D1BWP40P140)          0.0506    0.0000     3.8335 r
+  id_stage/U1132/ZN (ND4D1BWP40P140)          0.0486    0.0436     3.8771 f
+  id_stage/U1230/A1 (NR2D1BWP40P140)          0.0486    0.0000     3.8771 f
+  id_stage/U1230/ZN (NR2D1BWP40P140)          0.0239    0.0241     3.9012 r
+  id_stage/U1268/B (AOI211D1BWP40P140)        0.0239    0.0000     3.9012 r
+  id_stage/U1268/ZN (AOI211D1BWP40P140)       0.0324    0.0211     3.9223 f
+  id_stage/U1288/B2 (AOI22D1BWP40P140)        0.0324    0.0000     3.9223 f
+  id_stage/U1288/ZN (AOI22D1BWP40P140)        0.0275    0.0332     3.9555 r
+  id_stage/U1369/A1 (OAI21D1BWP40P140)        0.0275    0.0000     3.9555 r
+  id_stage/U1369/ZN (OAI21D1BWP40P140)        0.0321    0.0229     3.9784 f
+  id_stage/U4/A2 (OAI21D1BWP40P140)           0.0321    0.0000     3.9784 f
+  id_stage/U4/ZN (OAI21D1BWP40P140)           0.0218    0.0239     4.0023 r
+  id_stage/U3/A1 (ND2D1BWP40P140)             0.0218    0.0000     4.0023 r
+  id_stage/U3/ZN (ND2D1BWP40P140)             0.0343    0.0225     4.0248 f
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     4.0248 f
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     4.0248 f
+  if_stage/U7/A1 (ND2D1BWP40P140)             0.0343    0.0000     4.0248 f
+  if_stage/U7/ZN (ND2D1BWP40P140)             0.0281    0.0278     4.0526 r
+  if_stage/U13/A3 (OR3D1BWP40P140)            0.0281    0.0000     4.0526 r
+  if_stage/U13/Z (OR3D1BWP40P140)             0.0153    0.0334     4.0860 r
+  if_stage/U5/I (INVD1BWP40P140)              0.0153    0.0000     4.0860 r
+  if_stage/U5/ZN (INVD1BWP40P140)             0.1532    0.0928     4.1788 f
+  if_stage/U257/A1 (AOI22D1BWP40P140)         0.1532    0.0000     4.1788 f
+  if_stage/U257/ZN (AOI22D1BWP40P140)         0.0472    0.0465     4.2253 r
+  if_stage/U258/C (OAI211D1BWP40P140)         0.0472    0.0000     4.2253 r
+  if_stage/U258/ZN (OAI211D1BWP40P140)        0.0884    0.0712     4.2965 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     4.2965 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     4.2965 f
+  icache/U46/B1 (AOI22D1BWP40P140)            0.0884    0.0000     4.2965 f
+  icache/U46/ZN (AOI22D1BWP40P140)            0.0549    0.0428     4.3393 r
+  icache/U18/B (OAI21D1BWP40P140)             0.0549    0.0000     4.3393 r
+  icache/U18/ZN (OAI21D1BWP40P140)            0.1292    0.0926     4.4319 f
+  icache/meta_arrays_0/io_addr[2] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     4.4319 f
+  icache/meta_arrays_0/U94/I (INVD1BWP40P140)
+                                              0.1292    0.0000     4.4319 f
+  icache/meta_arrays_0/U94/ZN (INVD1BWP40P140)
+                                              0.0786    0.0785     4.5104 r
+  icache/meta_arrays_0/U44/A3 (ND3D1BWP40P140)
+                                              0.0786    0.0000     4.5104 r
+  icache/meta_arrays_0/U44/ZN (ND3D1BWP40P140)
+                                              0.1129    0.0867     4.5971 f
+  icache/meta_arrays_0/U87/A1 (NR2D2BWP40P140)
+                                              0.1129    0.0000     4.5971 f
+  icache/meta_arrays_0/U87/ZN (NR2D2BWP40P140)
+                                              0.3583    0.2434     4.8405 r
+  icache/meta_arrays_0/U921/B1 (AOI22D1BWP40P140)
+                                              0.3583    0.0000     4.8405 r
+  icache/meta_arrays_0/U921/ZN (AOI22D1BWP40P140)
+                                              0.0917    0.0611     4.9016 f
+  icache/meta_arrays_0/U925/A1 (ND4D1BWP40P140)
+                                              0.0917    0.0000     4.9016 f
+  icache/meta_arrays_0/U925/ZN (ND4D1BWP40P140)
+                                              0.0313    0.0276     4.9292 r
+  icache/meta_arrays_0/U936/A2 (OR4D1BWP40P140)
+                                              0.0313    0.0000     4.9292 r
+  icache/meta_arrays_0/U936/Z (OR4D1BWP40P140)
+                                              0.0123    0.0360     4.9652 r
+  icache/meta_arrays_0/U958/A2 (AOI22D1BWP40P140)
+                                              0.0123    0.0000     4.9652 r
+  icache/meta_arrays_0/U958/ZN (AOI22D1BWP40P140)
+                                              0.0674    0.0182     4.9833 f
+  icache/meta_arrays_0/U980/A3 (ND4D1BWP40P140)
+                                              0.0674    0.0000     4.9833 f
+  icache/meta_arrays_0/U980/ZN (ND4D1BWP40P140)
+                                              0.0277    0.0304     5.0138 r
+  icache/meta_arrays_0/io_rdata_tag[4] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     5.0138 r
+  icache/U640/B2 (OAI221D1BWP40P140)          0.0277    0.0000     5.0138 r
+  icache/U640/ZN (OAI221D1BWP40P140)          0.0518    0.0461     5.0598 f
+  icache/U642/B (AOI211D1BWP40P140)           0.0518    0.0000     5.0598 f
+  icache/U642/ZN (AOI211D1BWP40P140)          0.0387    0.0435     5.1034 r
+  icache/U643/B (OAI211D1BWP40P140)           0.0387    0.0000     5.1034 r
+  icache/U643/ZN (OAI211D1BWP40P140)          0.0401    0.0411     5.1444 f
+  icache/U644/B (AOI21D1BWP40P140)            0.0401    0.0000     5.1444 f
+  icache/U644/ZN (AOI21D1BWP40P140)           0.0286    0.0303     5.1747 r
+  icache/U645/C (OAI211D1BWP40P140)           0.0286    0.0000     5.1747 r
+  icache/U645/ZN (OAI211D1BWP40P140)          0.0434    0.0410     5.2157 f
+  icache/U646/B (AO21D1BWP40P140)             0.0434    0.0000     5.2157 f
+  icache/U646/Z (AO21D1BWP40P140)             0.0210    0.0479     5.2636 f
+  icache/U650/A2 (AN2D1BWP40P140)             0.0210    0.0000     5.2636 f
+  icache/U650/Z (AN2D1BWP40P140)              0.0165    0.0296     5.2932 f
+  icache/U651/B1 (IND3D1BWP40P140)            0.0165    0.0000     5.2932 f
+  icache/U651/ZN (IND3D1BWP40P140)            0.0188    0.0151     5.3083 r
+  icache/U652/A2 (OAI21D1BWP40P140)           0.0188    0.0000     5.3083 r
+  icache/U652/ZN (OAI21D1BWP40P140)           0.0939    0.0590     5.3673 f
+  icache/U653/A2 (NR2D1BWP40P140)             0.0939    0.0000     5.3673 f
+  icache/U653/ZN (NR2D1BWP40P140)             0.0453    0.0511     5.4184 r
+  icache/U682/I (INVD1BWP40P140)              0.0453    0.0000     5.4184 r
+  icache/U682/ZN (INVD1BWP40P140)             0.0995    0.0735     5.4919 f
+  icache/U947/B (OAI21D1BWP40P140)            0.0995    0.0000     5.4919 f
+  icache/U947/ZN (OAI21D1BWP40P140)           0.0481    0.0402     5.5321 r
+  icache/U950/B (AO21D1BWP40P140)             0.0481    0.0000     5.5321 r
+  icache/U950/Z (AO21D1BWP40P140)             0.0176    0.0334     5.5655 r
+  icache/U951/B2 (AOI22D1BWP40P140)           0.0176    0.0000     5.5655 r
+  icache/U951/ZN (AOI22D1BWP40P140)           0.0625    0.0262     5.5917 f
+  icache/U952/B (OAI31D1BWP40P140)            0.0625    0.0000     5.5917 f
+  icache/U952/ZN (OAI31D1BWP40P140)           0.0350    0.0297     5.6215 r
+  icache/burst_addr_rf_reg_5_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     5.6215 r
+  data arrival time                                                5.6215
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_5_/CP (DFQD1BWP40P140)       0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -5.6215
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.6976
+
+
+  Startpoint: ex_stage/src1_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_7_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/src1_reg_0_/CP (DFQD1BWP40P140)    0.0000    0.0000 #   0.0000 r
+  ex_stage/src1_reg_0_/Q (DFQD1BWP40P140)     0.0773    0.1142     0.1142 f
+  ex_stage/alu/io_a[0] (ysyx_22051098_ALU_0)            0.0000     0.1142 f
+  ex_stage/alu/U161/A1 (IND2D1BWP40P140)      0.0773    0.0000     0.1142 f
+  ex_stage/alu/U161/ZN (IND2D1BWP40P140)      0.0536    0.0598     0.1740 f
+  ex_stage/alu/U550/CI (FA1D1BWP40P140)       0.0536    0.0000     0.1740 f
+  ex_stage/alu/U550/CO (FA1D1BWP40P140)       0.0231    0.0602     0.2342 f
+  ex_stage/alu/U283/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2342 f
+  ex_stage/alu/U283/CO (FA1D1BWP40P140)       0.0231    0.0498     0.2840 f
+  ex_stage/alu/U300/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2840 f
+  ex_stage/alu/U300/CO (FA1D1BWP40P140)       0.0226    0.0498     0.3338 f
+  ex_stage/alu/U512/CI (FA1D1BWP40P140)       0.0226    0.0000     0.3338 f
+  ex_stage/alu/U512/CO (FA1D1BWP40P140)       0.0225    0.0496     0.3835 f
+  ex_stage/alu/U518/CI (FA1D1BWP40P140)       0.0225    0.0000     0.3835 f
+  ex_stage/alu/U518/CO (FA1D1BWP40P140)       0.0231    0.0496     0.4330 f
+  ex_stage/alu/U467/CI (FA1D1BWP40P140)       0.0231    0.0000     0.4330 f
+  ex_stage/alu/U467/CO (FA1D1BWP40P140)       0.0229    0.0498     0.4829 f
+  ex_stage/alu/U506/CI (FA1D1BWP40P140)       0.0229    0.0000     0.4829 f
+  ex_stage/alu/U506/CO (FA1D1BWP40P140)       0.0233    0.0497     0.5326 f
+  ex_stage/alu/U500/CI (FA1D1BWP40P140)       0.0233    0.0000     0.5326 f
+  ex_stage/alu/U500/CO (FA1D1BWP40P140)       0.0226    0.0499     0.5825 f
+  ex_stage/alu/U462/CI (FA1D1BWP40P140)       0.0226    0.0000     0.5825 f
+  ex_stage/alu/U462/CO (FA1D1BWP40P140)       0.0232    0.0496     0.6321 f
+  ex_stage/alu/U455/CI (FA1D1BWP40P140)       0.0232    0.0000     0.6321 f
+  ex_stage/alu/U455/CO (FA1D1BWP40P140)       0.0226    0.0498     0.6819 f
+  ex_stage/alu/U681/CI (FA1D1BWP40P140)       0.0226    0.0000     0.6819 f
+  ex_stage/alu/U681/CO (FA1D1BWP40P140)       0.0229    0.0496     0.7315 f
+  ex_stage/alu/U673/CI (FA1D1BWP40P140)       0.0229    0.0000     0.7315 f
+  ex_stage/alu/U673/CO (FA1D1BWP40P140)       0.0227    0.0497     0.7813 f
+  ex_stage/alu/U667/CI (FA1D1BWP40P140)       0.0227    0.0000     0.7813 f
+  ex_stage/alu/U667/CO (FA1D1BWP40P140)       0.0230    0.0497     0.8309 f
+  ex_stage/alu/U562/CI (FA1D1BWP40P140)       0.0230    0.0000     0.8309 f
+  ex_stage/alu/U562/CO (FA1D1BWP40P140)       0.0227    0.0498     0.8807 f
+  ex_stage/alu/U661/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8807 f
+  ex_stage/alu/U661/CO (FA1D1BWP40P140)       0.0224    0.0497     0.9304 f
+  ex_stage/alu/U487/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9304 f
+  ex_stage/alu/U487/CO (FA1D1BWP40P140)       0.0224    0.0496     0.9799 f
+  ex_stage/alu/U568/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9799 f
+  ex_stage/alu/U568/CO (FA1D1BWP40P140)       0.0230    0.0495     1.0295 f
+  ex_stage/alu/U556/CI (FA1D1BWP40P140)       0.0230    0.0000     1.0295 f
+  ex_stage/alu/U556/CO (FA1D1BWP40P140)       0.0225    0.0498     1.0793 f
+  ex_stage/alu/U525/CI (FA1D1BWP40P140)       0.0225    0.0000     1.0793 f
+  ex_stage/alu/U525/CO (FA1D1BWP40P140)       0.0233    0.0496     1.1289 f
+  ex_stage/alu/U544/CI (FA1D1BWP40P140)       0.0233    0.0000     1.1289 f
+  ex_stage/alu/U544/CO (FA1D1BWP40P140)       0.0226    0.0499     1.1788 f
+  ex_stage/alu/U493/CI (FA1D1BWP40P140)       0.0226    0.0000     1.1788 f
+  ex_stage/alu/U493/CO (FA1D1BWP40P140)       0.0230    0.0496     1.2284 f
+  ex_stage/alu/U537/CI (FA1D1BWP40P140)       0.0230    0.0000     1.2284 f
+  ex_stage/alu/U537/CO (FA1D1BWP40P140)       0.0228    0.0498     1.2782 f
+  ex_stage/alu/U531/CI (FA1D1BWP40P140)       0.0228    0.0000     1.2782 f
+  ex_stage/alu/U531/CO (FA1D1BWP40P140)       0.0230    0.0497     1.3279 f
+  ex_stage/alu/U481/CI (FA1D1BWP40P140)       0.0230    0.0000     1.3279 f
+  ex_stage/alu/U481/CO (FA1D1BWP40P140)       0.0224    0.0498     1.3776 f
+  ex_stage/alu/U412/CI (FA1D1BWP40P140)       0.0224    0.0000     1.3776 f
+  ex_stage/alu/U412/CO (FA1D1BWP40P140)       0.0230    0.0496     1.4272 f
+  ex_stage/alu/U418/CI (FA1D1BWP40P140)       0.0230    0.0000     1.4272 f
+  ex_stage/alu/U418/CO (FA1D1BWP40P140)       0.0227    0.0498     1.4770 f
+  ex_stage/alu/U475/CI (FA1D1BWP40P140)       0.0227    0.0000     1.4770 f
+  ex_stage/alu/U475/CO (FA1D1BWP40P140)       0.0232    0.0497     1.5266 f
+  ex_stage/alu/U436/CI (FA1D1BWP40P140)       0.0232    0.0000     1.5266 f
+  ex_stage/alu/U436/CO (FA1D1BWP40P140)       0.0227    0.0498     1.5765 f
+  ex_stage/alu/U424/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5765 f
+  ex_stage/alu/U424/CO (FA1D1BWP40P140)       0.0226    0.0497     1.6261 f
+  ex_stage/alu/U430/CI (FA1D1BWP40P140)       0.0226    0.0000     1.6261 f
+  ex_stage/alu/U430/CO (FA1D1BWP40P140)       0.0229    0.0496     1.6758 f
+  ex_stage/alu/U368/CI (FA1D1BWP40P140)       0.0229    0.0000     1.6758 f
+  ex_stage/alu/U368/CO (FA1D1BWP40P140)       0.0226    0.0497     1.7255 f
+  ex_stage/alu/U655/CI (FA1D1BWP40P140)       0.0226    0.0000     1.7255 f
+  ex_stage/alu/U655/CO (FA1D1BWP40P140)       0.0230    0.0496     1.7751 f
+  ex_stage/alu/U648/CI (FA1D1BWP40P140)       0.0230    0.0000     1.7751 f
+  ex_stage/alu/U648/CO (FA1D1BWP40P140)       0.0230    0.0498     1.8249 f
+  ex_stage/alu/U642/CI (FA1D1BWP40P140)       0.0230    0.0000     1.8249 f
+  ex_stage/alu/U642/CO (FA1D1BWP40P140)       0.0227    0.0498     1.8747 f
+  ex_stage/alu/U636/CI (FA1D1BWP40P140)       0.0227    0.0000     1.8747 f
+  ex_stage/alu/U636/CO (FA1D1BWP40P140)       0.0232    0.0497     1.9243 f
+  ex_stage/alu/U630/CI (FA1D1BWP40P140)       0.0232    0.0000     1.9243 f
+  ex_stage/alu/U630/CO (FA1D1BWP40P140)       0.0224    0.0498     1.9742 f
+  ex_stage/alu/U624/CI (FA1D1BWP40P140)       0.0224    0.0000     1.9742 f
+  ex_stage/alu/U624/CO (FA1D1BWP40P140)       0.0226    0.0496     2.0237 f
+  ex_stage/alu/U618/CI (FA1D1BWP40P140)       0.0226    0.0000     2.0237 f
+  ex_stage/alu/U618/CO (FA1D1BWP40P140)       0.0227    0.0496     2.0733 f
+  ex_stage/alu/U612/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0733 f
+  ex_stage/alu/U612/CO (FA1D1BWP40P140)       0.0232    0.0497     2.1230 f
+  ex_stage/alu/U606/CI (FA1D1BWP40P140)       0.0232    0.0000     2.1230 f
+  ex_stage/alu/U606/CO (FA1D1BWP40P140)       0.0225    0.0498     2.1728 f
+  ex_stage/alu/U600/CI (FA1D1BWP40P140)       0.0225    0.0000     2.1728 f
+  ex_stage/alu/U600/CO (FA1D1BWP40P140)       0.0227    0.0496     2.2224 f
+  ex_stage/alu/U593/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2224 f
+  ex_stage/alu/U593/CO (FA1D1BWP40P140)       0.0227    0.0497     2.2721 f
+  ex_stage/alu/U587/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2721 f
+  ex_stage/alu/U587/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3218 f
+  ex_stage/alu/U448/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3218 f
+  ex_stage/alu/U448/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3714 f
+  ex_stage/alu/U580/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3714 f
+  ex_stage/alu/U580/CO (FA1D1BWP40P140)       0.0232    0.0497     2.4211 f
+  ex_stage/alu/U574/CI (FA1D1BWP40P140)       0.0232    0.0000     2.4211 f
+  ex_stage/alu/U574/CO (FA1D1BWP40P140)       0.0225    0.0498     2.4709 f
+  ex_stage/alu/U442/CI (FA1D1BWP40P140)       0.0225    0.0000     2.4709 f
+  ex_stage/alu/U442/CO (FA1D1BWP40P140)       0.0232    0.0496     2.5205 f
+  ex_stage/alu/U306/CI (FA1D1BWP40P140)       0.0232    0.0000     2.5205 f
+  ex_stage/alu/U306/CO (FA1D1BWP40P140)       0.0224    0.0498     2.5704 f
+  ex_stage/alu/U315/CI (FA1D1BWP40P140)       0.0224    0.0000     2.5704 f
+  ex_stage/alu/U315/CO (FA1D1BWP40P140)       0.0226    0.0495     2.6199 f
+  ex_stage/alu/U405/CI (FA1D1BWP40P140)       0.0226    0.0000     2.6199 f
+  ex_stage/alu/U405/CO (FA1D1BWP40P140)       0.0227    0.0496     2.6695 f
+  ex_stage/alu/U381/CI (FA1D1BWP40P140)       0.0227    0.0000     2.6695 f
+  ex_stage/alu/U381/CO (FA1D1BWP40P140)       0.0230    0.0497     2.7192 f
+  ex_stage/alu/U399/CI (FA1D1BWP40P140)       0.0230    0.0000     2.7192 f
+  ex_stage/alu/U399/CO (FA1D1BWP40P140)       0.0224    0.0498     2.7689 f
+  ex_stage/alu/U393/CI (FA1D1BWP40P140)       0.0224    0.0000     2.7689 f
+  ex_stage/alu/U393/CO (FA1D1BWP40P140)       0.0232    0.0496     2.8185 f
+  ex_stage/alu/U321/CI (FA1D1BWP40P140)       0.0232    0.0000     2.8185 f
+  ex_stage/alu/U321/CO (FA1D1BWP40P140)       0.0230    0.0498     2.8684 f
+  ex_stage/alu/U387/CI (FA1D1BWP40P140)       0.0230    0.0000     2.8684 f
+  ex_stage/alu/U387/CO (FA1D1BWP40P140)       0.0233    0.0498     2.9181 f
+  ex_stage/alu/U340/CI (FA1D1BWP40P140)       0.0233    0.0000     2.9181 f
+  ex_stage/alu/U340/CO (FA1D1BWP40P140)       0.0228    0.0499     2.9680 f
+  ex_stage/alu/U328/CI (FA1D1BWP40P140)       0.0228    0.0000     2.9680 f
+  ex_stage/alu/U328/CO (FA1D1BWP40P140)       0.0229    0.0497     3.0177 f
+  ex_stage/alu/U334/CI (FA1D1BWP40P140)       0.0229    0.0000     3.0177 f
+  ex_stage/alu/U334/CO (FA1D1BWP40P140)       0.0226    0.0497     3.0674 f
+  ex_stage/alu/U347/CI (FA1D1BWP40P140)       0.0226    0.0000     3.0674 f
+  ex_stage/alu/U347/CO (FA1D1BWP40P140)       0.0235    0.0496     3.1171 f
+  ex_stage/alu/U375/CI (FA1D1BWP40P140)       0.0235    0.0000     3.1171 f
+  ex_stage/alu/U375/CO (FA1D1BWP40P140)       0.0228    0.0500     3.1670 f
+  ex_stage/alu/U353/CI (FA1D1BWP40P140)       0.0228    0.0000     3.1670 f
+  ex_stage/alu/U353/CO (FA1D1BWP40P140)       0.0226    0.0497     3.2167 f
+  ex_stage/alu/U362/CI (FA1D1BWP40P140)       0.0226    0.0000     3.2167 f
+  ex_stage/alu/U362/CO (FA1D1BWP40P140)       0.0231    0.0498     3.2665 f
+  ex_stage/alu/U354/A2 (XNR3UD1BWP40P140)     0.0231    0.0000     3.2665 f
+  ex_stage/alu/U354/ZN (XNR3UD1BWP40P140)     0.0364    0.0704     3.3368 f
+  ex_stage/alu/U355/B2 (AOI22D1BWP40P140)     0.0364    0.0000     3.3368 f
+  ex_stage/alu/U355/ZN (AOI22D1BWP40P140)     0.0709    0.0345     3.3713 r
+  ex_stage/alu/U359/A1 (ND3D1BWP40P140)       0.0709    0.0000     3.3713 r
+  ex_stage/alu/U359/ZN (ND3D1BWP40P140)       0.0505    0.0414     3.4128 f
+  ex_stage/alu/io_out[63] (ysyx_22051098_ALU_0)         0.0000     3.4128 f
+  ex_stage/U901/A1 (AOI21D1BWP40P140)         0.0505    0.0000     3.4128 f
+  ex_stage/U901/ZN (AOI21D1BWP40P140)         0.0432    0.0271     3.4399 r
+  ex_stage/U7/A3 (ND4D1BWP40P140)             0.0432    0.0000     3.4399 r
+  ex_stage/U7/ZN (ND4D1BWP40P140)             0.0710    0.0579     3.4978 f
+  ex_stage/to_id_ex_result[63] (ysyx_22051098_EX_0)     0.0000     3.4978 f
+  id_stage/to_ex_ex_result[63] (ysyx_22051098_ID_0)     0.0000     3.4978 f
+  id_stage/U960/A2 (AOI22D1BWP40P140)         0.0710    0.0000     3.4978 f
+  id_stage/U960/ZN (AOI22D1BWP40P140)         0.0713    0.0379     3.5357 r
+  id_stage/U962/A1 (ND2D1BWP40P140)           0.0713    0.0000     3.5357 r
+  id_stage/U962/ZN (ND2D1BWP40P140)           0.0536    0.0472     3.5828 f
+  id_stage/U1079/I (INVD1BWP40P140)           0.0536    0.0000     3.5828 f
+  id_stage/U1079/ZN (INVD1BWP40P140)          0.0334    0.0339     3.6167 r
+  id_stage/U1080/B2 (OAI22D1BWP40P140)        0.0334    0.0000     3.6167 r
+  id_stage/U1080/ZN (OAI22D1BWP40P140)        0.0396    0.0404     3.6571 f
+  id_stage/U1081/I (INVD1BWP40P140)           0.0396    0.0000     3.6571 f
+  id_stage/U1081/ZN (INVD1BWP40P140)          0.0195    0.0211     3.6782 r
+  id_stage/U1083/B (OAI211D1BWP40P140)        0.0195    0.0000     3.6782 r
+  id_stage/U1083/ZN (OAI211D1BWP40P140)       0.0540    0.0436     3.7218 f
+  id_stage/U1090/A1 (NR2D1BWP40P140)          0.0540    0.0000     3.7218 f
+  id_stage/U1090/ZN (NR2D1BWP40P140)          0.0299    0.0296     3.7514 r
+  id_stage/U1125/A3 (ND3D1BWP40P140)          0.0299    0.0000     3.7514 r
+  id_stage/U1125/ZN (ND3D1BWP40P140)          0.0382    0.0319     3.7833 f
+  id_stage/U1126/C (AOI221D1BWP40P140)        0.0382    0.0000     3.7833 f
+  id_stage/U1126/ZN (AOI221D1BWP40P140)       0.0506    0.0502     3.8335 r
+  id_stage/U1132/A3 (ND4D1BWP40P140)          0.0506    0.0000     3.8335 r
+  id_stage/U1132/ZN (ND4D1BWP40P140)          0.0486    0.0436     3.8771 f
+  id_stage/U1230/A1 (NR2D1BWP40P140)          0.0486    0.0000     3.8771 f
+  id_stage/U1230/ZN (NR2D1BWP40P140)          0.0239    0.0241     3.9012 r
+  id_stage/U1268/B (AOI211D1BWP40P140)        0.0239    0.0000     3.9012 r
+  id_stage/U1268/ZN (AOI211D1BWP40P140)       0.0324    0.0211     3.9223 f
+  id_stage/U1288/B2 (AOI22D1BWP40P140)        0.0324    0.0000     3.9223 f
+  id_stage/U1288/ZN (AOI22D1BWP40P140)        0.0275    0.0332     3.9555 r
+  id_stage/U1369/A1 (OAI21D1BWP40P140)        0.0275    0.0000     3.9555 r
+  id_stage/U1369/ZN (OAI21D1BWP40P140)        0.0321    0.0229     3.9784 f
+  id_stage/U4/A2 (OAI21D1BWP40P140)           0.0321    0.0000     3.9784 f
+  id_stage/U4/ZN (OAI21D1BWP40P140)           0.0218    0.0239     4.0023 r
+  id_stage/U3/A1 (ND2D1BWP40P140)             0.0218    0.0000     4.0023 r
+  id_stage/U3/ZN (ND2D1BWP40P140)             0.0343    0.0225     4.0248 f
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     4.0248 f
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     4.0248 f
+  if_stage/U7/A1 (ND2D1BWP40P140)             0.0343    0.0000     4.0248 f
+  if_stage/U7/ZN (ND2D1BWP40P140)             0.0281    0.0278     4.0526 r
+  if_stage/U13/A3 (OR3D1BWP40P140)            0.0281    0.0000     4.0526 r
+  if_stage/U13/Z (OR3D1BWP40P140)             0.0153    0.0334     4.0860 r
+  if_stage/U5/I (INVD1BWP40P140)              0.0153    0.0000     4.0860 r
+  if_stage/U5/ZN (INVD1BWP40P140)             0.1532    0.0928     4.1788 f
+  if_stage/U257/A1 (AOI22D1BWP40P140)         0.1532    0.0000     4.1788 f
+  if_stage/U257/ZN (AOI22D1BWP40P140)         0.0472    0.0465     4.2253 r
+  if_stage/U258/C (OAI211D1BWP40P140)         0.0472    0.0000     4.2253 r
+  if_stage/U258/ZN (OAI211D1BWP40P140)        0.0884    0.0712     4.2965 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     4.2965 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     4.2965 f
+  icache/U46/B1 (AOI22D1BWP40P140)            0.0884    0.0000     4.2965 f
+  icache/U46/ZN (AOI22D1BWP40P140)            0.0549    0.0428     4.3393 r
+  icache/U18/B (OAI21D1BWP40P140)             0.0549    0.0000     4.3393 r
+  icache/U18/ZN (OAI21D1BWP40P140)            0.1292    0.0926     4.4319 f
+  icache/meta_arrays_0/io_addr[2] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     4.4319 f
+  icache/meta_arrays_0/U94/I (INVD1BWP40P140)
+                                              0.1292    0.0000     4.4319 f
+  icache/meta_arrays_0/U94/ZN (INVD1BWP40P140)
+                                              0.0786    0.0785     4.5104 r
+  icache/meta_arrays_0/U44/A3 (ND3D1BWP40P140)
+                                              0.0786    0.0000     4.5104 r
+  icache/meta_arrays_0/U44/ZN (ND3D1BWP40P140)
+                                              0.1129    0.0867     4.5971 f
+  icache/meta_arrays_0/U87/A1 (NR2D2BWP40P140)
+                                              0.1129    0.0000     4.5971 f
+  icache/meta_arrays_0/U87/ZN (NR2D2BWP40P140)
+                                              0.3583    0.2434     4.8405 r
+  icache/meta_arrays_0/U921/B1 (AOI22D1BWP40P140)
+                                              0.3583    0.0000     4.8405 r
+  icache/meta_arrays_0/U921/ZN (AOI22D1BWP40P140)
+                                              0.0917    0.0611     4.9016 f
+  icache/meta_arrays_0/U925/A1 (ND4D1BWP40P140)
+                                              0.0917    0.0000     4.9016 f
+  icache/meta_arrays_0/U925/ZN (ND4D1BWP40P140)
+                                              0.0313    0.0276     4.9292 r
+  icache/meta_arrays_0/U936/A2 (OR4D1BWP40P140)
+                                              0.0313    0.0000     4.9292 r
+  icache/meta_arrays_0/U936/Z (OR4D1BWP40P140)
+                                              0.0123    0.0360     4.9652 r
+  icache/meta_arrays_0/U958/A2 (AOI22D1BWP40P140)
+                                              0.0123    0.0000     4.9652 r
+  icache/meta_arrays_0/U958/ZN (AOI22D1BWP40P140)
+                                              0.0674    0.0182     4.9833 f
+  icache/meta_arrays_0/U980/A3 (ND4D1BWP40P140)
+                                              0.0674    0.0000     4.9833 f
+  icache/meta_arrays_0/U980/ZN (ND4D1BWP40P140)
+                                              0.0277    0.0304     5.0138 r
+  icache/meta_arrays_0/io_rdata_tag[4] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     5.0138 r
+  icache/U640/B2 (OAI221D1BWP40P140)          0.0277    0.0000     5.0138 r
+  icache/U640/ZN (OAI221D1BWP40P140)          0.0518    0.0461     5.0598 f
+  icache/U642/B (AOI211D1BWP40P140)           0.0518    0.0000     5.0598 f
+  icache/U642/ZN (AOI211D1BWP40P140)          0.0387    0.0435     5.1034 r
+  icache/U643/B (OAI211D1BWP40P140)           0.0387    0.0000     5.1034 r
+  icache/U643/ZN (OAI211D1BWP40P140)          0.0401    0.0411     5.1444 f
+  icache/U644/B (AOI21D1BWP40P140)            0.0401    0.0000     5.1444 f
+  icache/U644/ZN (AOI21D1BWP40P140)           0.0286    0.0303     5.1747 r
+  icache/U645/C (OAI211D1BWP40P140)           0.0286    0.0000     5.1747 r
+  icache/U645/ZN (OAI211D1BWP40P140)          0.0434    0.0410     5.2157 f
+  icache/U646/B (AO21D1BWP40P140)             0.0434    0.0000     5.2157 f
+  icache/U646/Z (AO21D1BWP40P140)             0.0210    0.0479     5.2636 f
+  icache/U650/A2 (AN2D1BWP40P140)             0.0210    0.0000     5.2636 f
+  icache/U650/Z (AN2D1BWP40P140)              0.0165    0.0296     5.2932 f
+  icache/U651/B1 (IND3D1BWP40P140)            0.0165    0.0000     5.2932 f
+  icache/U651/ZN (IND3D1BWP40P140)            0.0188    0.0151     5.3083 r
+  icache/U652/A2 (OAI21D1BWP40P140)           0.0188    0.0000     5.3083 r
+  icache/U652/ZN (OAI21D1BWP40P140)           0.0939    0.0590     5.3673 f
+  icache/U653/A2 (NR2D1BWP40P140)             0.0939    0.0000     5.3673 f
+  icache/U653/ZN (NR2D1BWP40P140)             0.0453    0.0511     5.4184 r
+  icache/U682/I (INVD1BWP40P140)              0.0453    0.0000     5.4184 r
+  icache/U682/ZN (INVD1BWP40P140)             0.0995    0.0735     5.4919 f
+  icache/U954/B (OAI21D1BWP40P140)            0.0995    0.0000     5.4919 f
+  icache/U954/ZN (OAI21D1BWP40P140)           0.0481    0.0402     5.5321 r
+  icache/U957/B (AO21D1BWP40P140)             0.0481    0.0000     5.5321 r
+  icache/U957/Z (AO21D1BWP40P140)             0.0176    0.0334     5.5655 r
+  icache/U958/B2 (AOI22D1BWP40P140)           0.0176    0.0000     5.5655 r
+  icache/U958/ZN (AOI22D1BWP40P140)           0.0625    0.0262     5.5917 f
+  icache/U959/B (OAI31D1BWP40P140)            0.0625    0.0000     5.5917 f
+  icache/U959/ZN (OAI31D1BWP40P140)           0.0350    0.0297     5.6215 r
+  icache/burst_addr_rf_reg_7_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     5.6215 r
+  data arrival time                                                5.6215
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_7_/CP (DFQD1BWP40P140)       0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -5.6215
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.6976
+
+
+  Startpoint: ex_stage/src1_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_9_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/src1_reg_0_/CP (DFQD1BWP40P140)    0.0000    0.0000 #   0.0000 r
+  ex_stage/src1_reg_0_/Q (DFQD1BWP40P140)     0.0773    0.1142     0.1142 f
+  ex_stage/alu/io_a[0] (ysyx_22051098_ALU_0)            0.0000     0.1142 f
+  ex_stage/alu/U161/A1 (IND2D1BWP40P140)      0.0773    0.0000     0.1142 f
+  ex_stage/alu/U161/ZN (IND2D1BWP40P140)      0.0536    0.0598     0.1740 f
+  ex_stage/alu/U550/CI (FA1D1BWP40P140)       0.0536    0.0000     0.1740 f
+  ex_stage/alu/U550/CO (FA1D1BWP40P140)       0.0231    0.0602     0.2342 f
+  ex_stage/alu/U283/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2342 f
+  ex_stage/alu/U283/CO (FA1D1BWP40P140)       0.0231    0.0498     0.2840 f
+  ex_stage/alu/U300/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2840 f
+  ex_stage/alu/U300/CO (FA1D1BWP40P140)       0.0226    0.0498     0.3338 f
+  ex_stage/alu/U512/CI (FA1D1BWP40P140)       0.0226    0.0000     0.3338 f
+  ex_stage/alu/U512/CO (FA1D1BWP40P140)       0.0225    0.0496     0.3835 f
+  ex_stage/alu/U518/CI (FA1D1BWP40P140)       0.0225    0.0000     0.3835 f
+  ex_stage/alu/U518/CO (FA1D1BWP40P140)       0.0231    0.0496     0.4330 f
+  ex_stage/alu/U467/CI (FA1D1BWP40P140)       0.0231    0.0000     0.4330 f
+  ex_stage/alu/U467/CO (FA1D1BWP40P140)       0.0229    0.0498     0.4829 f
+  ex_stage/alu/U506/CI (FA1D1BWP40P140)       0.0229    0.0000     0.4829 f
+  ex_stage/alu/U506/CO (FA1D1BWP40P140)       0.0233    0.0497     0.5326 f
+  ex_stage/alu/U500/CI (FA1D1BWP40P140)       0.0233    0.0000     0.5326 f
+  ex_stage/alu/U500/CO (FA1D1BWP40P140)       0.0226    0.0499     0.5825 f
+  ex_stage/alu/U462/CI (FA1D1BWP40P140)       0.0226    0.0000     0.5825 f
+  ex_stage/alu/U462/CO (FA1D1BWP40P140)       0.0232    0.0496     0.6321 f
+  ex_stage/alu/U455/CI (FA1D1BWP40P140)       0.0232    0.0000     0.6321 f
+  ex_stage/alu/U455/CO (FA1D1BWP40P140)       0.0226    0.0498     0.6819 f
+  ex_stage/alu/U681/CI (FA1D1BWP40P140)       0.0226    0.0000     0.6819 f
+  ex_stage/alu/U681/CO (FA1D1BWP40P140)       0.0229    0.0496     0.7315 f
+  ex_stage/alu/U673/CI (FA1D1BWP40P140)       0.0229    0.0000     0.7315 f
+  ex_stage/alu/U673/CO (FA1D1BWP40P140)       0.0227    0.0497     0.7813 f
+  ex_stage/alu/U667/CI (FA1D1BWP40P140)       0.0227    0.0000     0.7813 f
+  ex_stage/alu/U667/CO (FA1D1BWP40P140)       0.0230    0.0497     0.8309 f
+  ex_stage/alu/U562/CI (FA1D1BWP40P140)       0.0230    0.0000     0.8309 f
+  ex_stage/alu/U562/CO (FA1D1BWP40P140)       0.0227    0.0498     0.8807 f
+  ex_stage/alu/U661/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8807 f
+  ex_stage/alu/U661/CO (FA1D1BWP40P140)       0.0224    0.0497     0.9304 f
+  ex_stage/alu/U487/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9304 f
+  ex_stage/alu/U487/CO (FA1D1BWP40P140)       0.0224    0.0496     0.9799 f
+  ex_stage/alu/U568/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9799 f
+  ex_stage/alu/U568/CO (FA1D1BWP40P140)       0.0230    0.0495     1.0295 f
+  ex_stage/alu/U556/CI (FA1D1BWP40P140)       0.0230    0.0000     1.0295 f
+  ex_stage/alu/U556/CO (FA1D1BWP40P140)       0.0225    0.0498     1.0793 f
+  ex_stage/alu/U525/CI (FA1D1BWP40P140)       0.0225    0.0000     1.0793 f
+  ex_stage/alu/U525/CO (FA1D1BWP40P140)       0.0233    0.0496     1.1289 f
+  ex_stage/alu/U544/CI (FA1D1BWP40P140)       0.0233    0.0000     1.1289 f
+  ex_stage/alu/U544/CO (FA1D1BWP40P140)       0.0226    0.0499     1.1788 f
+  ex_stage/alu/U493/CI (FA1D1BWP40P140)       0.0226    0.0000     1.1788 f
+  ex_stage/alu/U493/CO (FA1D1BWP40P140)       0.0230    0.0496     1.2284 f
+  ex_stage/alu/U537/CI (FA1D1BWP40P140)       0.0230    0.0000     1.2284 f
+  ex_stage/alu/U537/CO (FA1D1BWP40P140)       0.0228    0.0498     1.2782 f
+  ex_stage/alu/U531/CI (FA1D1BWP40P140)       0.0228    0.0000     1.2782 f
+  ex_stage/alu/U531/CO (FA1D1BWP40P140)       0.0230    0.0497     1.3279 f
+  ex_stage/alu/U481/CI (FA1D1BWP40P140)       0.0230    0.0000     1.3279 f
+  ex_stage/alu/U481/CO (FA1D1BWP40P140)       0.0224    0.0498     1.3776 f
+  ex_stage/alu/U412/CI (FA1D1BWP40P140)       0.0224    0.0000     1.3776 f
+  ex_stage/alu/U412/CO (FA1D1BWP40P140)       0.0230    0.0496     1.4272 f
+  ex_stage/alu/U418/CI (FA1D1BWP40P140)       0.0230    0.0000     1.4272 f
+  ex_stage/alu/U418/CO (FA1D1BWP40P140)       0.0227    0.0498     1.4770 f
+  ex_stage/alu/U475/CI (FA1D1BWP40P140)       0.0227    0.0000     1.4770 f
+  ex_stage/alu/U475/CO (FA1D1BWP40P140)       0.0232    0.0497     1.5266 f
+  ex_stage/alu/U436/CI (FA1D1BWP40P140)       0.0232    0.0000     1.5266 f
+  ex_stage/alu/U436/CO (FA1D1BWP40P140)       0.0227    0.0498     1.5765 f
+  ex_stage/alu/U424/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5765 f
+  ex_stage/alu/U424/CO (FA1D1BWP40P140)       0.0226    0.0497     1.6261 f
+  ex_stage/alu/U430/CI (FA1D1BWP40P140)       0.0226    0.0000     1.6261 f
+  ex_stage/alu/U430/CO (FA1D1BWP40P140)       0.0229    0.0496     1.6758 f
+  ex_stage/alu/U368/CI (FA1D1BWP40P140)       0.0229    0.0000     1.6758 f
+  ex_stage/alu/U368/CO (FA1D1BWP40P140)       0.0226    0.0497     1.7255 f
+  ex_stage/alu/U655/CI (FA1D1BWP40P140)       0.0226    0.0000     1.7255 f
+  ex_stage/alu/U655/CO (FA1D1BWP40P140)       0.0230    0.0496     1.7751 f
+  ex_stage/alu/U648/CI (FA1D1BWP40P140)       0.0230    0.0000     1.7751 f
+  ex_stage/alu/U648/CO (FA1D1BWP40P140)       0.0230    0.0498     1.8249 f
+  ex_stage/alu/U642/CI (FA1D1BWP40P140)       0.0230    0.0000     1.8249 f
+  ex_stage/alu/U642/CO (FA1D1BWP40P140)       0.0227    0.0498     1.8747 f
+  ex_stage/alu/U636/CI (FA1D1BWP40P140)       0.0227    0.0000     1.8747 f
+  ex_stage/alu/U636/CO (FA1D1BWP40P140)       0.0232    0.0497     1.9243 f
+  ex_stage/alu/U630/CI (FA1D1BWP40P140)       0.0232    0.0000     1.9243 f
+  ex_stage/alu/U630/CO (FA1D1BWP40P140)       0.0224    0.0498     1.9742 f
+  ex_stage/alu/U624/CI (FA1D1BWP40P140)       0.0224    0.0000     1.9742 f
+  ex_stage/alu/U624/CO (FA1D1BWP40P140)       0.0226    0.0496     2.0237 f
+  ex_stage/alu/U618/CI (FA1D1BWP40P140)       0.0226    0.0000     2.0237 f
+  ex_stage/alu/U618/CO (FA1D1BWP40P140)       0.0227    0.0496     2.0733 f
+  ex_stage/alu/U612/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0733 f
+  ex_stage/alu/U612/CO (FA1D1BWP40P140)       0.0232    0.0497     2.1230 f
+  ex_stage/alu/U606/CI (FA1D1BWP40P140)       0.0232    0.0000     2.1230 f
+  ex_stage/alu/U606/CO (FA1D1BWP40P140)       0.0225    0.0498     2.1728 f
+  ex_stage/alu/U600/CI (FA1D1BWP40P140)       0.0225    0.0000     2.1728 f
+  ex_stage/alu/U600/CO (FA1D1BWP40P140)       0.0227    0.0496     2.2224 f
+  ex_stage/alu/U593/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2224 f
+  ex_stage/alu/U593/CO (FA1D1BWP40P140)       0.0227    0.0497     2.2721 f
+  ex_stage/alu/U587/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2721 f
+  ex_stage/alu/U587/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3218 f
+  ex_stage/alu/U448/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3218 f
+  ex_stage/alu/U448/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3714 f
+  ex_stage/alu/U580/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3714 f
+  ex_stage/alu/U580/CO (FA1D1BWP40P140)       0.0232    0.0497     2.4211 f
+  ex_stage/alu/U574/CI (FA1D1BWP40P140)       0.0232    0.0000     2.4211 f
+  ex_stage/alu/U574/CO (FA1D1BWP40P140)       0.0225    0.0498     2.4709 f
+  ex_stage/alu/U442/CI (FA1D1BWP40P140)       0.0225    0.0000     2.4709 f
+  ex_stage/alu/U442/CO (FA1D1BWP40P140)       0.0232    0.0496     2.5205 f
+  ex_stage/alu/U306/CI (FA1D1BWP40P140)       0.0232    0.0000     2.5205 f
+  ex_stage/alu/U306/CO (FA1D1BWP40P140)       0.0224    0.0498     2.5704 f
+  ex_stage/alu/U315/CI (FA1D1BWP40P140)       0.0224    0.0000     2.5704 f
+  ex_stage/alu/U315/CO (FA1D1BWP40P140)       0.0226    0.0495     2.6199 f
+  ex_stage/alu/U405/CI (FA1D1BWP40P140)       0.0226    0.0000     2.6199 f
+  ex_stage/alu/U405/CO (FA1D1BWP40P140)       0.0227    0.0496     2.6695 f
+  ex_stage/alu/U381/CI (FA1D1BWP40P140)       0.0227    0.0000     2.6695 f
+  ex_stage/alu/U381/CO (FA1D1BWP40P140)       0.0230    0.0497     2.7192 f
+  ex_stage/alu/U399/CI (FA1D1BWP40P140)       0.0230    0.0000     2.7192 f
+  ex_stage/alu/U399/CO (FA1D1BWP40P140)       0.0224    0.0498     2.7689 f
+  ex_stage/alu/U393/CI (FA1D1BWP40P140)       0.0224    0.0000     2.7689 f
+  ex_stage/alu/U393/CO (FA1D1BWP40P140)       0.0232    0.0496     2.8185 f
+  ex_stage/alu/U321/CI (FA1D1BWP40P140)       0.0232    0.0000     2.8185 f
+  ex_stage/alu/U321/CO (FA1D1BWP40P140)       0.0230    0.0498     2.8684 f
+  ex_stage/alu/U387/CI (FA1D1BWP40P140)       0.0230    0.0000     2.8684 f
+  ex_stage/alu/U387/CO (FA1D1BWP40P140)       0.0233    0.0498     2.9181 f
+  ex_stage/alu/U340/CI (FA1D1BWP40P140)       0.0233    0.0000     2.9181 f
+  ex_stage/alu/U340/CO (FA1D1BWP40P140)       0.0228    0.0499     2.9680 f
+  ex_stage/alu/U328/CI (FA1D1BWP40P140)       0.0228    0.0000     2.9680 f
+  ex_stage/alu/U328/CO (FA1D1BWP40P140)       0.0229    0.0497     3.0177 f
+  ex_stage/alu/U334/CI (FA1D1BWP40P140)       0.0229    0.0000     3.0177 f
+  ex_stage/alu/U334/CO (FA1D1BWP40P140)       0.0226    0.0497     3.0674 f
+  ex_stage/alu/U347/CI (FA1D1BWP40P140)       0.0226    0.0000     3.0674 f
+  ex_stage/alu/U347/CO (FA1D1BWP40P140)       0.0235    0.0496     3.1171 f
+  ex_stage/alu/U375/CI (FA1D1BWP40P140)       0.0235    0.0000     3.1171 f
+  ex_stage/alu/U375/CO (FA1D1BWP40P140)       0.0228    0.0500     3.1670 f
+  ex_stage/alu/U353/CI (FA1D1BWP40P140)       0.0228    0.0000     3.1670 f
+  ex_stage/alu/U353/CO (FA1D1BWP40P140)       0.0226    0.0497     3.2167 f
+  ex_stage/alu/U362/CI (FA1D1BWP40P140)       0.0226    0.0000     3.2167 f
+  ex_stage/alu/U362/CO (FA1D1BWP40P140)       0.0231    0.0498     3.2665 f
+  ex_stage/alu/U354/A2 (XNR3UD1BWP40P140)     0.0231    0.0000     3.2665 f
+  ex_stage/alu/U354/ZN (XNR3UD1BWP40P140)     0.0364    0.0704     3.3368 f
+  ex_stage/alu/U355/B2 (AOI22D1BWP40P140)     0.0364    0.0000     3.3368 f
+  ex_stage/alu/U355/ZN (AOI22D1BWP40P140)     0.0709    0.0345     3.3713 r
+  ex_stage/alu/U359/A1 (ND3D1BWP40P140)       0.0709    0.0000     3.3713 r
+  ex_stage/alu/U359/ZN (ND3D1BWP40P140)       0.0505    0.0414     3.4128 f
+  ex_stage/alu/io_out[63] (ysyx_22051098_ALU_0)         0.0000     3.4128 f
+  ex_stage/U901/A1 (AOI21D1BWP40P140)         0.0505    0.0000     3.4128 f
+  ex_stage/U901/ZN (AOI21D1BWP40P140)         0.0432    0.0271     3.4399 r
+  ex_stage/U7/A3 (ND4D1BWP40P140)             0.0432    0.0000     3.4399 r
+  ex_stage/U7/ZN (ND4D1BWP40P140)             0.0710    0.0579     3.4978 f
+  ex_stage/to_id_ex_result[63] (ysyx_22051098_EX_0)     0.0000     3.4978 f
+  id_stage/to_ex_ex_result[63] (ysyx_22051098_ID_0)     0.0000     3.4978 f
+  id_stage/U960/A2 (AOI22D1BWP40P140)         0.0710    0.0000     3.4978 f
+  id_stage/U960/ZN (AOI22D1BWP40P140)         0.0713    0.0379     3.5357 r
+  id_stage/U962/A1 (ND2D1BWP40P140)           0.0713    0.0000     3.5357 r
+  id_stage/U962/ZN (ND2D1BWP40P140)           0.0536    0.0472     3.5828 f
+  id_stage/U1079/I (INVD1BWP40P140)           0.0536    0.0000     3.5828 f
+  id_stage/U1079/ZN (INVD1BWP40P140)          0.0334    0.0339     3.6167 r
+  id_stage/U1080/B2 (OAI22D1BWP40P140)        0.0334    0.0000     3.6167 r
+  id_stage/U1080/ZN (OAI22D1BWP40P140)        0.0396    0.0404     3.6571 f
+  id_stage/U1081/I (INVD1BWP40P140)           0.0396    0.0000     3.6571 f
+  id_stage/U1081/ZN (INVD1BWP40P140)          0.0195    0.0211     3.6782 r
+  id_stage/U1083/B (OAI211D1BWP40P140)        0.0195    0.0000     3.6782 r
+  id_stage/U1083/ZN (OAI211D1BWP40P140)       0.0540    0.0436     3.7218 f
+  id_stage/U1090/A1 (NR2D1BWP40P140)          0.0540    0.0000     3.7218 f
+  id_stage/U1090/ZN (NR2D1BWP40P140)          0.0299    0.0296     3.7514 r
+  id_stage/U1125/A3 (ND3D1BWP40P140)          0.0299    0.0000     3.7514 r
+  id_stage/U1125/ZN (ND3D1BWP40P140)          0.0382    0.0319     3.7833 f
+  id_stage/U1126/C (AOI221D1BWP40P140)        0.0382    0.0000     3.7833 f
+  id_stage/U1126/ZN (AOI221D1BWP40P140)       0.0506    0.0502     3.8335 r
+  id_stage/U1132/A3 (ND4D1BWP40P140)          0.0506    0.0000     3.8335 r
+  id_stage/U1132/ZN (ND4D1BWP40P140)          0.0486    0.0436     3.8771 f
+  id_stage/U1230/A1 (NR2D1BWP40P140)          0.0486    0.0000     3.8771 f
+  id_stage/U1230/ZN (NR2D1BWP40P140)          0.0239    0.0241     3.9012 r
+  id_stage/U1268/B (AOI211D1BWP40P140)        0.0239    0.0000     3.9012 r
+  id_stage/U1268/ZN (AOI211D1BWP40P140)       0.0324    0.0211     3.9223 f
+  id_stage/U1288/B2 (AOI22D1BWP40P140)        0.0324    0.0000     3.9223 f
+  id_stage/U1288/ZN (AOI22D1BWP40P140)        0.0275    0.0332     3.9555 r
+  id_stage/U1369/A1 (OAI21D1BWP40P140)        0.0275    0.0000     3.9555 r
+  id_stage/U1369/ZN (OAI21D1BWP40P140)        0.0321    0.0229     3.9784 f
+  id_stage/U4/A2 (OAI21D1BWP40P140)           0.0321    0.0000     3.9784 f
+  id_stage/U4/ZN (OAI21D1BWP40P140)           0.0218    0.0239     4.0023 r
+  id_stage/U3/A1 (ND2D1BWP40P140)             0.0218    0.0000     4.0023 r
+  id_stage/U3/ZN (ND2D1BWP40P140)             0.0343    0.0225     4.0248 f
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     4.0248 f
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     4.0248 f
+  if_stage/U7/A1 (ND2D1BWP40P140)             0.0343    0.0000     4.0248 f
+  if_stage/U7/ZN (ND2D1BWP40P140)             0.0281    0.0278     4.0526 r
+  if_stage/U13/A3 (OR3D1BWP40P140)            0.0281    0.0000     4.0526 r
+  if_stage/U13/Z (OR3D1BWP40P140)             0.0153    0.0334     4.0860 r
+  if_stage/U5/I (INVD1BWP40P140)              0.0153    0.0000     4.0860 r
+  if_stage/U5/ZN (INVD1BWP40P140)             0.1532    0.0928     4.1788 f
+  if_stage/U257/A1 (AOI22D1BWP40P140)         0.1532    0.0000     4.1788 f
+  if_stage/U257/ZN (AOI22D1BWP40P140)         0.0472    0.0465     4.2253 r
+  if_stage/U258/C (OAI211D1BWP40P140)         0.0472    0.0000     4.2253 r
+  if_stage/U258/ZN (OAI211D1BWP40P140)        0.0884    0.0712     4.2965 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     4.2965 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     4.2965 f
+  icache/U46/B1 (AOI22D1BWP40P140)            0.0884    0.0000     4.2965 f
+  icache/U46/ZN (AOI22D1BWP40P140)            0.0549    0.0428     4.3393 r
+  icache/U18/B (OAI21D1BWP40P140)             0.0549    0.0000     4.3393 r
+  icache/U18/ZN (OAI21D1BWP40P140)            0.1292    0.0926     4.4319 f
+  icache/meta_arrays_0/io_addr[2] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     4.4319 f
+  icache/meta_arrays_0/U94/I (INVD1BWP40P140)
+                                              0.1292    0.0000     4.4319 f
+  icache/meta_arrays_0/U94/ZN (INVD1BWP40P140)
+                                              0.0786    0.0785     4.5104 r
+  icache/meta_arrays_0/U44/A3 (ND3D1BWP40P140)
+                                              0.0786    0.0000     4.5104 r
+  icache/meta_arrays_0/U44/ZN (ND3D1BWP40P140)
+                                              0.1129    0.0867     4.5971 f
+  icache/meta_arrays_0/U87/A1 (NR2D2BWP40P140)
+                                              0.1129    0.0000     4.5971 f
+  icache/meta_arrays_0/U87/ZN (NR2D2BWP40P140)
+                                              0.3583    0.2434     4.8405 r
+  icache/meta_arrays_0/U921/B1 (AOI22D1BWP40P140)
+                                              0.3583    0.0000     4.8405 r
+  icache/meta_arrays_0/U921/ZN (AOI22D1BWP40P140)
+                                              0.0917    0.0611     4.9016 f
+  icache/meta_arrays_0/U925/A1 (ND4D1BWP40P140)
+                                              0.0917    0.0000     4.9016 f
+  icache/meta_arrays_0/U925/ZN (ND4D1BWP40P140)
+                                              0.0313    0.0276     4.9292 r
+  icache/meta_arrays_0/U936/A2 (OR4D1BWP40P140)
+                                              0.0313    0.0000     4.9292 r
+  icache/meta_arrays_0/U936/Z (OR4D1BWP40P140)
+                                              0.0123    0.0360     4.9652 r
+  icache/meta_arrays_0/U958/A2 (AOI22D1BWP40P140)
+                                              0.0123    0.0000     4.9652 r
+  icache/meta_arrays_0/U958/ZN (AOI22D1BWP40P140)
+                                              0.0674    0.0182     4.9833 f
+  icache/meta_arrays_0/U980/A3 (ND4D1BWP40P140)
+                                              0.0674    0.0000     4.9833 f
+  icache/meta_arrays_0/U980/ZN (ND4D1BWP40P140)
+                                              0.0277    0.0304     5.0138 r
+  icache/meta_arrays_0/io_rdata_tag[4] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     5.0138 r
+  icache/U640/B2 (OAI221D1BWP40P140)          0.0277    0.0000     5.0138 r
+  icache/U640/ZN (OAI221D1BWP40P140)          0.0518    0.0461     5.0598 f
+  icache/U642/B (AOI211D1BWP40P140)           0.0518    0.0000     5.0598 f
+  icache/U642/ZN (AOI211D1BWP40P140)          0.0387    0.0435     5.1034 r
+  icache/U643/B (OAI211D1BWP40P140)           0.0387    0.0000     5.1034 r
+  icache/U643/ZN (OAI211D1BWP40P140)          0.0401    0.0411     5.1444 f
+  icache/U644/B (AOI21D1BWP40P140)            0.0401    0.0000     5.1444 f
+  icache/U644/ZN (AOI21D1BWP40P140)           0.0286    0.0303     5.1747 r
+  icache/U645/C (OAI211D1BWP40P140)           0.0286    0.0000     5.1747 r
+  icache/U645/ZN (OAI211D1BWP40P140)          0.0434    0.0410     5.2157 f
+  icache/U646/B (AO21D1BWP40P140)             0.0434    0.0000     5.2157 f
+  icache/U646/Z (AO21D1BWP40P140)             0.0210    0.0479     5.2636 f
+  icache/U650/A2 (AN2D1BWP40P140)             0.0210    0.0000     5.2636 f
+  icache/U650/Z (AN2D1BWP40P140)              0.0165    0.0296     5.2932 f
+  icache/U651/B1 (IND3D1BWP40P140)            0.0165    0.0000     5.2932 f
+  icache/U651/ZN (IND3D1BWP40P140)            0.0188    0.0151     5.3083 r
+  icache/U652/A2 (OAI21D1BWP40P140)           0.0188    0.0000     5.3083 r
+  icache/U652/ZN (OAI21D1BWP40P140)           0.0939    0.0590     5.3673 f
+  icache/U653/A2 (NR2D1BWP40P140)             0.0939    0.0000     5.3673 f
+  icache/U653/ZN (NR2D1BWP40P140)             0.0453    0.0511     5.4184 r
+  icache/U682/I (INVD1BWP40P140)              0.0453    0.0000     5.4184 r
+  icache/U682/ZN (INVD1BWP40P140)             0.0995    0.0735     5.4919 f
+  icache/U961/B (OAI21D1BWP40P140)            0.0995    0.0000     5.4919 f
+  icache/U961/ZN (OAI21D1BWP40P140)           0.0481    0.0402     5.5321 r
+  icache/U964/B (AO21D1BWP40P140)             0.0481    0.0000     5.5321 r
+  icache/U964/Z (AO21D1BWP40P140)             0.0176    0.0334     5.5655 r
+  icache/U965/B2 (AOI22D1BWP40P140)           0.0176    0.0000     5.5655 r
+  icache/U965/ZN (AOI22D1BWP40P140)           0.0625    0.0262     5.5917 f
+  icache/U966/B (OAI31D1BWP40P140)            0.0625    0.0000     5.5917 f
+  icache/U966/ZN (OAI31D1BWP40P140)           0.0350    0.0297     5.6215 r
+  icache/burst_addr_rf_reg_9_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     5.6215 r
+  data arrival time                                                5.6215
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_9_/CP (DFQD1BWP40P140)       0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -5.6215
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.6976
+
+
+  Startpoint: ex_stage/src1_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_11_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/src1_reg_0_/CP (DFQD1BWP40P140)    0.0000    0.0000 #   0.0000 r
+  ex_stage/src1_reg_0_/Q (DFQD1BWP40P140)     0.0773    0.1142     0.1142 f
+  ex_stage/alu/io_a[0] (ysyx_22051098_ALU_0)            0.0000     0.1142 f
+  ex_stage/alu/U161/A1 (IND2D1BWP40P140)      0.0773    0.0000     0.1142 f
+  ex_stage/alu/U161/ZN (IND2D1BWP40P140)      0.0536    0.0598     0.1740 f
+  ex_stage/alu/U550/CI (FA1D1BWP40P140)       0.0536    0.0000     0.1740 f
+  ex_stage/alu/U550/CO (FA1D1BWP40P140)       0.0231    0.0602     0.2342 f
+  ex_stage/alu/U283/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2342 f
+  ex_stage/alu/U283/CO (FA1D1BWP40P140)       0.0231    0.0498     0.2840 f
+  ex_stage/alu/U300/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2840 f
+  ex_stage/alu/U300/CO (FA1D1BWP40P140)       0.0226    0.0498     0.3338 f
+  ex_stage/alu/U512/CI (FA1D1BWP40P140)       0.0226    0.0000     0.3338 f
+  ex_stage/alu/U512/CO (FA1D1BWP40P140)       0.0225    0.0496     0.3835 f
+  ex_stage/alu/U518/CI (FA1D1BWP40P140)       0.0225    0.0000     0.3835 f
+  ex_stage/alu/U518/CO (FA1D1BWP40P140)       0.0231    0.0496     0.4330 f
+  ex_stage/alu/U467/CI (FA1D1BWP40P140)       0.0231    0.0000     0.4330 f
+  ex_stage/alu/U467/CO (FA1D1BWP40P140)       0.0229    0.0498     0.4829 f
+  ex_stage/alu/U506/CI (FA1D1BWP40P140)       0.0229    0.0000     0.4829 f
+  ex_stage/alu/U506/CO (FA1D1BWP40P140)       0.0233    0.0497     0.5326 f
+  ex_stage/alu/U500/CI (FA1D1BWP40P140)       0.0233    0.0000     0.5326 f
+  ex_stage/alu/U500/CO (FA1D1BWP40P140)       0.0226    0.0499     0.5825 f
+  ex_stage/alu/U462/CI (FA1D1BWP40P140)       0.0226    0.0000     0.5825 f
+  ex_stage/alu/U462/CO (FA1D1BWP40P140)       0.0232    0.0496     0.6321 f
+  ex_stage/alu/U455/CI (FA1D1BWP40P140)       0.0232    0.0000     0.6321 f
+  ex_stage/alu/U455/CO (FA1D1BWP40P140)       0.0226    0.0498     0.6819 f
+  ex_stage/alu/U681/CI (FA1D1BWP40P140)       0.0226    0.0000     0.6819 f
+  ex_stage/alu/U681/CO (FA1D1BWP40P140)       0.0229    0.0496     0.7315 f
+  ex_stage/alu/U673/CI (FA1D1BWP40P140)       0.0229    0.0000     0.7315 f
+  ex_stage/alu/U673/CO (FA1D1BWP40P140)       0.0227    0.0497     0.7813 f
+  ex_stage/alu/U667/CI (FA1D1BWP40P140)       0.0227    0.0000     0.7813 f
+  ex_stage/alu/U667/CO (FA1D1BWP40P140)       0.0230    0.0497     0.8309 f
+  ex_stage/alu/U562/CI (FA1D1BWP40P140)       0.0230    0.0000     0.8309 f
+  ex_stage/alu/U562/CO (FA1D1BWP40P140)       0.0227    0.0498     0.8807 f
+  ex_stage/alu/U661/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8807 f
+  ex_stage/alu/U661/CO (FA1D1BWP40P140)       0.0224    0.0497     0.9304 f
+  ex_stage/alu/U487/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9304 f
+  ex_stage/alu/U487/CO (FA1D1BWP40P140)       0.0224    0.0496     0.9799 f
+  ex_stage/alu/U568/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9799 f
+  ex_stage/alu/U568/CO (FA1D1BWP40P140)       0.0230    0.0495     1.0295 f
+  ex_stage/alu/U556/CI (FA1D1BWP40P140)       0.0230    0.0000     1.0295 f
+  ex_stage/alu/U556/CO (FA1D1BWP40P140)       0.0225    0.0498     1.0793 f
+  ex_stage/alu/U525/CI (FA1D1BWP40P140)       0.0225    0.0000     1.0793 f
+  ex_stage/alu/U525/CO (FA1D1BWP40P140)       0.0233    0.0496     1.1289 f
+  ex_stage/alu/U544/CI (FA1D1BWP40P140)       0.0233    0.0000     1.1289 f
+  ex_stage/alu/U544/CO (FA1D1BWP40P140)       0.0226    0.0499     1.1788 f
+  ex_stage/alu/U493/CI (FA1D1BWP40P140)       0.0226    0.0000     1.1788 f
+  ex_stage/alu/U493/CO (FA1D1BWP40P140)       0.0230    0.0496     1.2284 f
+  ex_stage/alu/U537/CI (FA1D1BWP40P140)       0.0230    0.0000     1.2284 f
+  ex_stage/alu/U537/CO (FA1D1BWP40P140)       0.0228    0.0498     1.2782 f
+  ex_stage/alu/U531/CI (FA1D1BWP40P140)       0.0228    0.0000     1.2782 f
+  ex_stage/alu/U531/CO (FA1D1BWP40P140)       0.0230    0.0497     1.3279 f
+  ex_stage/alu/U481/CI (FA1D1BWP40P140)       0.0230    0.0000     1.3279 f
+  ex_stage/alu/U481/CO (FA1D1BWP40P140)       0.0224    0.0498     1.3776 f
+  ex_stage/alu/U412/CI (FA1D1BWP40P140)       0.0224    0.0000     1.3776 f
+  ex_stage/alu/U412/CO (FA1D1BWP40P140)       0.0230    0.0496     1.4272 f
+  ex_stage/alu/U418/CI (FA1D1BWP40P140)       0.0230    0.0000     1.4272 f
+  ex_stage/alu/U418/CO (FA1D1BWP40P140)       0.0227    0.0498     1.4770 f
+  ex_stage/alu/U475/CI (FA1D1BWP40P140)       0.0227    0.0000     1.4770 f
+  ex_stage/alu/U475/CO (FA1D1BWP40P140)       0.0232    0.0497     1.5266 f
+  ex_stage/alu/U436/CI (FA1D1BWP40P140)       0.0232    0.0000     1.5266 f
+  ex_stage/alu/U436/CO (FA1D1BWP40P140)       0.0227    0.0498     1.5765 f
+  ex_stage/alu/U424/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5765 f
+  ex_stage/alu/U424/CO (FA1D1BWP40P140)       0.0226    0.0497     1.6261 f
+  ex_stage/alu/U430/CI (FA1D1BWP40P140)       0.0226    0.0000     1.6261 f
+  ex_stage/alu/U430/CO (FA1D1BWP40P140)       0.0229    0.0496     1.6758 f
+  ex_stage/alu/U368/CI (FA1D1BWP40P140)       0.0229    0.0000     1.6758 f
+  ex_stage/alu/U368/CO (FA1D1BWP40P140)       0.0226    0.0497     1.7255 f
+  ex_stage/alu/U655/CI (FA1D1BWP40P140)       0.0226    0.0000     1.7255 f
+  ex_stage/alu/U655/CO (FA1D1BWP40P140)       0.0230    0.0496     1.7751 f
+  ex_stage/alu/U648/CI (FA1D1BWP40P140)       0.0230    0.0000     1.7751 f
+  ex_stage/alu/U648/CO (FA1D1BWP40P140)       0.0230    0.0498     1.8249 f
+  ex_stage/alu/U642/CI (FA1D1BWP40P140)       0.0230    0.0000     1.8249 f
+  ex_stage/alu/U642/CO (FA1D1BWP40P140)       0.0227    0.0498     1.8747 f
+  ex_stage/alu/U636/CI (FA1D1BWP40P140)       0.0227    0.0000     1.8747 f
+  ex_stage/alu/U636/CO (FA1D1BWP40P140)       0.0232    0.0497     1.9243 f
+  ex_stage/alu/U630/CI (FA1D1BWP40P140)       0.0232    0.0000     1.9243 f
+  ex_stage/alu/U630/CO (FA1D1BWP40P140)       0.0224    0.0498     1.9742 f
+  ex_stage/alu/U624/CI (FA1D1BWP40P140)       0.0224    0.0000     1.9742 f
+  ex_stage/alu/U624/CO (FA1D1BWP40P140)       0.0226    0.0496     2.0237 f
+  ex_stage/alu/U618/CI (FA1D1BWP40P140)       0.0226    0.0000     2.0237 f
+  ex_stage/alu/U618/CO (FA1D1BWP40P140)       0.0227    0.0496     2.0733 f
+  ex_stage/alu/U612/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0733 f
+  ex_stage/alu/U612/CO (FA1D1BWP40P140)       0.0232    0.0497     2.1230 f
+  ex_stage/alu/U606/CI (FA1D1BWP40P140)       0.0232    0.0000     2.1230 f
+  ex_stage/alu/U606/CO (FA1D1BWP40P140)       0.0225    0.0498     2.1728 f
+  ex_stage/alu/U600/CI (FA1D1BWP40P140)       0.0225    0.0000     2.1728 f
+  ex_stage/alu/U600/CO (FA1D1BWP40P140)       0.0227    0.0496     2.2224 f
+  ex_stage/alu/U593/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2224 f
+  ex_stage/alu/U593/CO (FA1D1BWP40P140)       0.0227    0.0497     2.2721 f
+  ex_stage/alu/U587/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2721 f
+  ex_stage/alu/U587/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3218 f
+  ex_stage/alu/U448/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3218 f
+  ex_stage/alu/U448/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3714 f
+  ex_stage/alu/U580/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3714 f
+  ex_stage/alu/U580/CO (FA1D1BWP40P140)       0.0232    0.0497     2.4211 f
+  ex_stage/alu/U574/CI (FA1D1BWP40P140)       0.0232    0.0000     2.4211 f
+  ex_stage/alu/U574/CO (FA1D1BWP40P140)       0.0225    0.0498     2.4709 f
+  ex_stage/alu/U442/CI (FA1D1BWP40P140)       0.0225    0.0000     2.4709 f
+  ex_stage/alu/U442/CO (FA1D1BWP40P140)       0.0232    0.0496     2.5205 f
+  ex_stage/alu/U306/CI (FA1D1BWP40P140)       0.0232    0.0000     2.5205 f
+  ex_stage/alu/U306/CO (FA1D1BWP40P140)       0.0224    0.0498     2.5704 f
+  ex_stage/alu/U315/CI (FA1D1BWP40P140)       0.0224    0.0000     2.5704 f
+  ex_stage/alu/U315/CO (FA1D1BWP40P140)       0.0226    0.0495     2.6199 f
+  ex_stage/alu/U405/CI (FA1D1BWP40P140)       0.0226    0.0000     2.6199 f
+  ex_stage/alu/U405/CO (FA1D1BWP40P140)       0.0227    0.0496     2.6695 f
+  ex_stage/alu/U381/CI (FA1D1BWP40P140)       0.0227    0.0000     2.6695 f
+  ex_stage/alu/U381/CO (FA1D1BWP40P140)       0.0230    0.0497     2.7192 f
+  ex_stage/alu/U399/CI (FA1D1BWP40P140)       0.0230    0.0000     2.7192 f
+  ex_stage/alu/U399/CO (FA1D1BWP40P140)       0.0224    0.0498     2.7689 f
+  ex_stage/alu/U393/CI (FA1D1BWP40P140)       0.0224    0.0000     2.7689 f
+  ex_stage/alu/U393/CO (FA1D1BWP40P140)       0.0232    0.0496     2.8185 f
+  ex_stage/alu/U321/CI (FA1D1BWP40P140)       0.0232    0.0000     2.8185 f
+  ex_stage/alu/U321/CO (FA1D1BWP40P140)       0.0230    0.0498     2.8684 f
+  ex_stage/alu/U387/CI (FA1D1BWP40P140)       0.0230    0.0000     2.8684 f
+  ex_stage/alu/U387/CO (FA1D1BWP40P140)       0.0233    0.0498     2.9181 f
+  ex_stage/alu/U340/CI (FA1D1BWP40P140)       0.0233    0.0000     2.9181 f
+  ex_stage/alu/U340/CO (FA1D1BWP40P140)       0.0228    0.0499     2.9680 f
+  ex_stage/alu/U328/CI (FA1D1BWP40P140)       0.0228    0.0000     2.9680 f
+  ex_stage/alu/U328/CO (FA1D1BWP40P140)       0.0229    0.0497     3.0177 f
+  ex_stage/alu/U334/CI (FA1D1BWP40P140)       0.0229    0.0000     3.0177 f
+  ex_stage/alu/U334/CO (FA1D1BWP40P140)       0.0226    0.0497     3.0674 f
+  ex_stage/alu/U347/CI (FA1D1BWP40P140)       0.0226    0.0000     3.0674 f
+  ex_stage/alu/U347/CO (FA1D1BWP40P140)       0.0235    0.0496     3.1171 f
+  ex_stage/alu/U375/CI (FA1D1BWP40P140)       0.0235    0.0000     3.1171 f
+  ex_stage/alu/U375/CO (FA1D1BWP40P140)       0.0228    0.0500     3.1670 f
+  ex_stage/alu/U353/CI (FA1D1BWP40P140)       0.0228    0.0000     3.1670 f
+  ex_stage/alu/U353/CO (FA1D1BWP40P140)       0.0226    0.0497     3.2167 f
+  ex_stage/alu/U362/CI (FA1D1BWP40P140)       0.0226    0.0000     3.2167 f
+  ex_stage/alu/U362/CO (FA1D1BWP40P140)       0.0231    0.0498     3.2665 f
+  ex_stage/alu/U354/A2 (XNR3UD1BWP40P140)     0.0231    0.0000     3.2665 f
+  ex_stage/alu/U354/ZN (XNR3UD1BWP40P140)     0.0364    0.0704     3.3368 f
+  ex_stage/alu/U355/B2 (AOI22D1BWP40P140)     0.0364    0.0000     3.3368 f
+  ex_stage/alu/U355/ZN (AOI22D1BWP40P140)     0.0709    0.0345     3.3713 r
+  ex_stage/alu/U359/A1 (ND3D1BWP40P140)       0.0709    0.0000     3.3713 r
+  ex_stage/alu/U359/ZN (ND3D1BWP40P140)       0.0505    0.0414     3.4128 f
+  ex_stage/alu/io_out[63] (ysyx_22051098_ALU_0)         0.0000     3.4128 f
+  ex_stage/U901/A1 (AOI21D1BWP40P140)         0.0505    0.0000     3.4128 f
+  ex_stage/U901/ZN (AOI21D1BWP40P140)         0.0432    0.0271     3.4399 r
+  ex_stage/U7/A3 (ND4D1BWP40P140)             0.0432    0.0000     3.4399 r
+  ex_stage/U7/ZN (ND4D1BWP40P140)             0.0710    0.0579     3.4978 f
+  ex_stage/to_id_ex_result[63] (ysyx_22051098_EX_0)     0.0000     3.4978 f
+  id_stage/to_ex_ex_result[63] (ysyx_22051098_ID_0)     0.0000     3.4978 f
+  id_stage/U960/A2 (AOI22D1BWP40P140)         0.0710    0.0000     3.4978 f
+  id_stage/U960/ZN (AOI22D1BWP40P140)         0.0713    0.0379     3.5357 r
+  id_stage/U962/A1 (ND2D1BWP40P140)           0.0713    0.0000     3.5357 r
+  id_stage/U962/ZN (ND2D1BWP40P140)           0.0536    0.0472     3.5828 f
+  id_stage/U1079/I (INVD1BWP40P140)           0.0536    0.0000     3.5828 f
+  id_stage/U1079/ZN (INVD1BWP40P140)          0.0334    0.0339     3.6167 r
+  id_stage/U1080/B2 (OAI22D1BWP40P140)        0.0334    0.0000     3.6167 r
+  id_stage/U1080/ZN (OAI22D1BWP40P140)        0.0396    0.0404     3.6571 f
+  id_stage/U1081/I (INVD1BWP40P140)           0.0396    0.0000     3.6571 f
+  id_stage/U1081/ZN (INVD1BWP40P140)          0.0195    0.0211     3.6782 r
+  id_stage/U1083/B (OAI211D1BWP40P140)        0.0195    0.0000     3.6782 r
+  id_stage/U1083/ZN (OAI211D1BWP40P140)       0.0540    0.0436     3.7218 f
+  id_stage/U1090/A1 (NR2D1BWP40P140)          0.0540    0.0000     3.7218 f
+  id_stage/U1090/ZN (NR2D1BWP40P140)          0.0299    0.0296     3.7514 r
+  id_stage/U1125/A3 (ND3D1BWP40P140)          0.0299    0.0000     3.7514 r
+  id_stage/U1125/ZN (ND3D1BWP40P140)          0.0382    0.0319     3.7833 f
+  id_stage/U1126/C (AOI221D1BWP40P140)        0.0382    0.0000     3.7833 f
+  id_stage/U1126/ZN (AOI221D1BWP40P140)       0.0506    0.0502     3.8335 r
+  id_stage/U1132/A3 (ND4D1BWP40P140)          0.0506    0.0000     3.8335 r
+  id_stage/U1132/ZN (ND4D1BWP40P140)          0.0486    0.0436     3.8771 f
+  id_stage/U1230/A1 (NR2D1BWP40P140)          0.0486    0.0000     3.8771 f
+  id_stage/U1230/ZN (NR2D1BWP40P140)          0.0239    0.0241     3.9012 r
+  id_stage/U1268/B (AOI211D1BWP40P140)        0.0239    0.0000     3.9012 r
+  id_stage/U1268/ZN (AOI211D1BWP40P140)       0.0324    0.0211     3.9223 f
+  id_stage/U1288/B2 (AOI22D1BWP40P140)        0.0324    0.0000     3.9223 f
+  id_stage/U1288/ZN (AOI22D1BWP40P140)        0.0275    0.0332     3.9555 r
+  id_stage/U1369/A1 (OAI21D1BWP40P140)        0.0275    0.0000     3.9555 r
+  id_stage/U1369/ZN (OAI21D1BWP40P140)        0.0321    0.0229     3.9784 f
+  id_stage/U4/A2 (OAI21D1BWP40P140)           0.0321    0.0000     3.9784 f
+  id_stage/U4/ZN (OAI21D1BWP40P140)           0.0218    0.0239     4.0023 r
+  id_stage/U3/A1 (ND2D1BWP40P140)             0.0218    0.0000     4.0023 r
+  id_stage/U3/ZN (ND2D1BWP40P140)             0.0343    0.0225     4.0248 f
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     4.0248 f
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     4.0248 f
+  if_stage/U7/A1 (ND2D1BWP40P140)             0.0343    0.0000     4.0248 f
+  if_stage/U7/ZN (ND2D1BWP40P140)             0.0281    0.0278     4.0526 r
+  if_stage/U13/A3 (OR3D1BWP40P140)            0.0281    0.0000     4.0526 r
+  if_stage/U13/Z (OR3D1BWP40P140)             0.0153    0.0334     4.0860 r
+  if_stage/U5/I (INVD1BWP40P140)              0.0153    0.0000     4.0860 r
+  if_stage/U5/ZN (INVD1BWP40P140)             0.1532    0.0928     4.1788 f
+  if_stage/U257/A1 (AOI22D1BWP40P140)         0.1532    0.0000     4.1788 f
+  if_stage/U257/ZN (AOI22D1BWP40P140)         0.0472    0.0465     4.2253 r
+  if_stage/U258/C (OAI211D1BWP40P140)         0.0472    0.0000     4.2253 r
+  if_stage/U258/ZN (OAI211D1BWP40P140)        0.0884    0.0712     4.2965 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     4.2965 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     4.2965 f
+  icache/U46/B1 (AOI22D1BWP40P140)            0.0884    0.0000     4.2965 f
+  icache/U46/ZN (AOI22D1BWP40P140)            0.0549    0.0428     4.3393 r
+  icache/U18/B (OAI21D1BWP40P140)             0.0549    0.0000     4.3393 r
+  icache/U18/ZN (OAI21D1BWP40P140)            0.1292    0.0926     4.4319 f
+  icache/meta_arrays_0/io_addr[2] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     4.4319 f
+  icache/meta_arrays_0/U94/I (INVD1BWP40P140)
+                                              0.1292    0.0000     4.4319 f
+  icache/meta_arrays_0/U94/ZN (INVD1BWP40P140)
+                                              0.0786    0.0785     4.5104 r
+  icache/meta_arrays_0/U44/A3 (ND3D1BWP40P140)
+                                              0.0786    0.0000     4.5104 r
+  icache/meta_arrays_0/U44/ZN (ND3D1BWP40P140)
+                                              0.1129    0.0867     4.5971 f
+  icache/meta_arrays_0/U87/A1 (NR2D2BWP40P140)
+                                              0.1129    0.0000     4.5971 f
+  icache/meta_arrays_0/U87/ZN (NR2D2BWP40P140)
+                                              0.3583    0.2434     4.8405 r
+  icache/meta_arrays_0/U921/B1 (AOI22D1BWP40P140)
+                                              0.3583    0.0000     4.8405 r
+  icache/meta_arrays_0/U921/ZN (AOI22D1BWP40P140)
+                                              0.0917    0.0611     4.9016 f
+  icache/meta_arrays_0/U925/A1 (ND4D1BWP40P140)
+                                              0.0917    0.0000     4.9016 f
+  icache/meta_arrays_0/U925/ZN (ND4D1BWP40P140)
+                                              0.0313    0.0276     4.9292 r
+  icache/meta_arrays_0/U936/A2 (OR4D1BWP40P140)
+                                              0.0313    0.0000     4.9292 r
+  icache/meta_arrays_0/U936/Z (OR4D1BWP40P140)
+                                              0.0123    0.0360     4.9652 r
+  icache/meta_arrays_0/U958/A2 (AOI22D1BWP40P140)
+                                              0.0123    0.0000     4.9652 r
+  icache/meta_arrays_0/U958/ZN (AOI22D1BWP40P140)
+                                              0.0674    0.0182     4.9833 f
+  icache/meta_arrays_0/U980/A3 (ND4D1BWP40P140)
+                                              0.0674    0.0000     4.9833 f
+  icache/meta_arrays_0/U980/ZN (ND4D1BWP40P140)
+                                              0.0277    0.0304     5.0138 r
+  icache/meta_arrays_0/io_rdata_tag[4] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     5.0138 r
+  icache/U640/B2 (OAI221D1BWP40P140)          0.0277    0.0000     5.0138 r
+  icache/U640/ZN (OAI221D1BWP40P140)          0.0518    0.0461     5.0598 f
+  icache/U642/B (AOI211D1BWP40P140)           0.0518    0.0000     5.0598 f
+  icache/U642/ZN (AOI211D1BWP40P140)          0.0387    0.0435     5.1034 r
+  icache/U643/B (OAI211D1BWP40P140)           0.0387    0.0000     5.1034 r
+  icache/U643/ZN (OAI211D1BWP40P140)          0.0401    0.0411     5.1444 f
+  icache/U644/B (AOI21D1BWP40P140)            0.0401    0.0000     5.1444 f
+  icache/U644/ZN (AOI21D1BWP40P140)           0.0286    0.0303     5.1747 r
+  icache/U645/C (OAI211D1BWP40P140)           0.0286    0.0000     5.1747 r
+  icache/U645/ZN (OAI211D1BWP40P140)          0.0434    0.0410     5.2157 f
+  icache/U646/B (AO21D1BWP40P140)             0.0434    0.0000     5.2157 f
+  icache/U646/Z (AO21D1BWP40P140)             0.0210    0.0479     5.2636 f
+  icache/U650/A2 (AN2D1BWP40P140)             0.0210    0.0000     5.2636 f
+  icache/U650/Z (AN2D1BWP40P140)              0.0165    0.0296     5.2932 f
+  icache/U651/B1 (IND3D1BWP40P140)            0.0165    0.0000     5.2932 f
+  icache/U651/ZN (IND3D1BWP40P140)            0.0188    0.0151     5.3083 r
+  icache/U652/A2 (OAI21D1BWP40P140)           0.0188    0.0000     5.3083 r
+  icache/U652/ZN (OAI21D1BWP40P140)           0.0939    0.0590     5.3673 f
+  icache/U653/A2 (NR2D1BWP40P140)             0.0939    0.0000     5.3673 f
+  icache/U653/ZN (NR2D1BWP40P140)             0.0453    0.0511     5.4184 r
+  icache/U682/I (INVD1BWP40P140)              0.0453    0.0000     5.4184 r
+  icache/U682/ZN (INVD1BWP40P140)             0.0995    0.0735     5.4919 f
+  icache/U968/B (OAI21D1BWP40P140)            0.0995    0.0000     5.4919 f
+  icache/U968/ZN (OAI21D1BWP40P140)           0.0481    0.0402     5.5321 r
+  icache/U971/B (AO21D1BWP40P140)             0.0481    0.0000     5.5321 r
+  icache/U971/Z (AO21D1BWP40P140)             0.0176    0.0334     5.5655 r
+  icache/U972/B2 (AOI22D1BWP40P140)           0.0176    0.0000     5.5655 r
+  icache/U972/ZN (AOI22D1BWP40P140)           0.0558    0.0262     5.5917 f
+  icache/U973/B (OAI31D1BWP40P140)            0.0558    0.0000     5.5917 f
+  icache/U973/ZN (OAI31D1BWP40P140)           0.0350    0.0281     5.6198 r
+  icache/burst_addr_rf_reg_11_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     5.6198 r
+  data arrival time                                                5.6198
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_11_/CP (DFQD1BWP40P140)      0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -5.6198
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.6992
+
+
+  Startpoint: ex_stage/src1_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_12_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/src1_reg_0_/CP (DFQD1BWP40P140)    0.0000    0.0000 #   0.0000 r
+  ex_stage/src1_reg_0_/Q (DFQD1BWP40P140)     0.0773    0.1142     0.1142 f
+  ex_stage/alu/io_a[0] (ysyx_22051098_ALU_0)            0.0000     0.1142 f
+  ex_stage/alu/U161/A1 (IND2D1BWP40P140)      0.0773    0.0000     0.1142 f
+  ex_stage/alu/U161/ZN (IND2D1BWP40P140)      0.0536    0.0598     0.1740 f
+  ex_stage/alu/U550/CI (FA1D1BWP40P140)       0.0536    0.0000     0.1740 f
+  ex_stage/alu/U550/CO (FA1D1BWP40P140)       0.0231    0.0602     0.2342 f
+  ex_stage/alu/U283/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2342 f
+  ex_stage/alu/U283/CO (FA1D1BWP40P140)       0.0231    0.0498     0.2840 f
+  ex_stage/alu/U300/CI (FA1D1BWP40P140)       0.0231    0.0000     0.2840 f
+  ex_stage/alu/U300/CO (FA1D1BWP40P140)       0.0226    0.0498     0.3338 f
+  ex_stage/alu/U512/CI (FA1D1BWP40P140)       0.0226    0.0000     0.3338 f
+  ex_stage/alu/U512/CO (FA1D1BWP40P140)       0.0225    0.0496     0.3835 f
+  ex_stage/alu/U518/CI (FA1D1BWP40P140)       0.0225    0.0000     0.3835 f
+  ex_stage/alu/U518/CO (FA1D1BWP40P140)       0.0231    0.0496     0.4330 f
+  ex_stage/alu/U467/CI (FA1D1BWP40P140)       0.0231    0.0000     0.4330 f
+  ex_stage/alu/U467/CO (FA1D1BWP40P140)       0.0229    0.0498     0.4829 f
+  ex_stage/alu/U506/CI (FA1D1BWP40P140)       0.0229    0.0000     0.4829 f
+  ex_stage/alu/U506/CO (FA1D1BWP40P140)       0.0233    0.0497     0.5326 f
+  ex_stage/alu/U500/CI (FA1D1BWP40P140)       0.0233    0.0000     0.5326 f
+  ex_stage/alu/U500/CO (FA1D1BWP40P140)       0.0226    0.0499     0.5825 f
+  ex_stage/alu/U462/CI (FA1D1BWP40P140)       0.0226    0.0000     0.5825 f
+  ex_stage/alu/U462/CO (FA1D1BWP40P140)       0.0232    0.0496     0.6321 f
+  ex_stage/alu/U455/CI (FA1D1BWP40P140)       0.0232    0.0000     0.6321 f
+  ex_stage/alu/U455/CO (FA1D1BWP40P140)       0.0226    0.0498     0.6819 f
+  ex_stage/alu/U681/CI (FA1D1BWP40P140)       0.0226    0.0000     0.6819 f
+  ex_stage/alu/U681/CO (FA1D1BWP40P140)       0.0229    0.0496     0.7315 f
+  ex_stage/alu/U673/CI (FA1D1BWP40P140)       0.0229    0.0000     0.7315 f
+  ex_stage/alu/U673/CO (FA1D1BWP40P140)       0.0227    0.0497     0.7813 f
+  ex_stage/alu/U667/CI (FA1D1BWP40P140)       0.0227    0.0000     0.7813 f
+  ex_stage/alu/U667/CO (FA1D1BWP40P140)       0.0230    0.0497     0.8309 f
+  ex_stage/alu/U562/CI (FA1D1BWP40P140)       0.0230    0.0000     0.8309 f
+  ex_stage/alu/U562/CO (FA1D1BWP40P140)       0.0227    0.0498     0.8807 f
+  ex_stage/alu/U661/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8807 f
+  ex_stage/alu/U661/CO (FA1D1BWP40P140)       0.0224    0.0497     0.9304 f
+  ex_stage/alu/U487/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9304 f
+  ex_stage/alu/U487/CO (FA1D1BWP40P140)       0.0224    0.0496     0.9799 f
+  ex_stage/alu/U568/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9799 f
+  ex_stage/alu/U568/CO (FA1D1BWP40P140)       0.0230    0.0495     1.0295 f
+  ex_stage/alu/U556/CI (FA1D1BWP40P140)       0.0230    0.0000     1.0295 f
+  ex_stage/alu/U556/CO (FA1D1BWP40P140)       0.0225    0.0498     1.0793 f
+  ex_stage/alu/U525/CI (FA1D1BWP40P140)       0.0225    0.0000     1.0793 f
+  ex_stage/alu/U525/CO (FA1D1BWP40P140)       0.0233    0.0496     1.1289 f
+  ex_stage/alu/U544/CI (FA1D1BWP40P140)       0.0233    0.0000     1.1289 f
+  ex_stage/alu/U544/CO (FA1D1BWP40P140)       0.0226    0.0499     1.1788 f
+  ex_stage/alu/U493/CI (FA1D1BWP40P140)       0.0226    0.0000     1.1788 f
+  ex_stage/alu/U493/CO (FA1D1BWP40P140)       0.0230    0.0496     1.2284 f
+  ex_stage/alu/U537/CI (FA1D1BWP40P140)       0.0230    0.0000     1.2284 f
+  ex_stage/alu/U537/CO (FA1D1BWP40P140)       0.0228    0.0498     1.2782 f
+  ex_stage/alu/U531/CI (FA1D1BWP40P140)       0.0228    0.0000     1.2782 f
+  ex_stage/alu/U531/CO (FA1D1BWP40P140)       0.0230    0.0497     1.3279 f
+  ex_stage/alu/U481/CI (FA1D1BWP40P140)       0.0230    0.0000     1.3279 f
+  ex_stage/alu/U481/CO (FA1D1BWP40P140)       0.0224    0.0498     1.3776 f
+  ex_stage/alu/U412/CI (FA1D1BWP40P140)       0.0224    0.0000     1.3776 f
+  ex_stage/alu/U412/CO (FA1D1BWP40P140)       0.0230    0.0496     1.4272 f
+  ex_stage/alu/U418/CI (FA1D1BWP40P140)       0.0230    0.0000     1.4272 f
+  ex_stage/alu/U418/CO (FA1D1BWP40P140)       0.0227    0.0498     1.4770 f
+  ex_stage/alu/U475/CI (FA1D1BWP40P140)       0.0227    0.0000     1.4770 f
+  ex_stage/alu/U475/CO (FA1D1BWP40P140)       0.0232    0.0497     1.5266 f
+  ex_stage/alu/U436/CI (FA1D1BWP40P140)       0.0232    0.0000     1.5266 f
+  ex_stage/alu/U436/CO (FA1D1BWP40P140)       0.0227    0.0498     1.5765 f
+  ex_stage/alu/U424/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5765 f
+  ex_stage/alu/U424/CO (FA1D1BWP40P140)       0.0226    0.0497     1.6261 f
+  ex_stage/alu/U430/CI (FA1D1BWP40P140)       0.0226    0.0000     1.6261 f
+  ex_stage/alu/U430/CO (FA1D1BWP40P140)       0.0229    0.0496     1.6758 f
+  ex_stage/alu/U368/CI (FA1D1BWP40P140)       0.0229    0.0000     1.6758 f
+  ex_stage/alu/U368/CO (FA1D1BWP40P140)       0.0226    0.0497     1.7255 f
+  ex_stage/alu/U655/CI (FA1D1BWP40P140)       0.0226    0.0000     1.7255 f
+  ex_stage/alu/U655/CO (FA1D1BWP40P140)       0.0230    0.0496     1.7751 f
+  ex_stage/alu/U648/CI (FA1D1BWP40P140)       0.0230    0.0000     1.7751 f
+  ex_stage/alu/U648/CO (FA1D1BWP40P140)       0.0230    0.0498     1.8249 f
+  ex_stage/alu/U642/CI (FA1D1BWP40P140)       0.0230    0.0000     1.8249 f
+  ex_stage/alu/U642/CO (FA1D1BWP40P140)       0.0227    0.0498     1.8747 f
+  ex_stage/alu/U636/CI (FA1D1BWP40P140)       0.0227    0.0000     1.8747 f
+  ex_stage/alu/U636/CO (FA1D1BWP40P140)       0.0232    0.0497     1.9243 f
+  ex_stage/alu/U630/CI (FA1D1BWP40P140)       0.0232    0.0000     1.9243 f
+  ex_stage/alu/U630/CO (FA1D1BWP40P140)       0.0224    0.0498     1.9742 f
+  ex_stage/alu/U624/CI (FA1D1BWP40P140)       0.0224    0.0000     1.9742 f
+  ex_stage/alu/U624/CO (FA1D1BWP40P140)       0.0226    0.0496     2.0237 f
+  ex_stage/alu/U618/CI (FA1D1BWP40P140)       0.0226    0.0000     2.0237 f
+  ex_stage/alu/U618/CO (FA1D1BWP40P140)       0.0227    0.0496     2.0733 f
+  ex_stage/alu/U612/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0733 f
+  ex_stage/alu/U612/CO (FA1D1BWP40P140)       0.0232    0.0497     2.1230 f
+  ex_stage/alu/U606/CI (FA1D1BWP40P140)       0.0232    0.0000     2.1230 f
+  ex_stage/alu/U606/CO (FA1D1BWP40P140)       0.0225    0.0498     2.1728 f
+  ex_stage/alu/U600/CI (FA1D1BWP40P140)       0.0225    0.0000     2.1728 f
+  ex_stage/alu/U600/CO (FA1D1BWP40P140)       0.0227    0.0496     2.2224 f
+  ex_stage/alu/U593/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2224 f
+  ex_stage/alu/U593/CO (FA1D1BWP40P140)       0.0227    0.0497     2.2721 f
+  ex_stage/alu/U587/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2721 f
+  ex_stage/alu/U587/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3218 f
+  ex_stage/alu/U448/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3218 f
+  ex_stage/alu/U448/CO (FA1D1BWP40P140)       0.0227    0.0497     2.3714 f
+  ex_stage/alu/U580/CI (FA1D1BWP40P140)       0.0227    0.0000     2.3714 f
+  ex_stage/alu/U580/CO (FA1D1BWP40P140)       0.0232    0.0497     2.4211 f
+  ex_stage/alu/U574/CI (FA1D1BWP40P140)       0.0232    0.0000     2.4211 f
+  ex_stage/alu/U574/CO (FA1D1BWP40P140)       0.0225    0.0498     2.4709 f
+  ex_stage/alu/U442/CI (FA1D1BWP40P140)       0.0225    0.0000     2.4709 f
+  ex_stage/alu/U442/CO (FA1D1BWP40P140)       0.0232    0.0496     2.5205 f
+  ex_stage/alu/U306/CI (FA1D1BWP40P140)       0.0232    0.0000     2.5205 f
+  ex_stage/alu/U306/CO (FA1D1BWP40P140)       0.0224    0.0498     2.5704 f
+  ex_stage/alu/U315/CI (FA1D1BWP40P140)       0.0224    0.0000     2.5704 f
+  ex_stage/alu/U315/CO (FA1D1BWP40P140)       0.0226    0.0495     2.6199 f
+  ex_stage/alu/U405/CI (FA1D1BWP40P140)       0.0226    0.0000     2.6199 f
+  ex_stage/alu/U405/CO (FA1D1BWP40P140)       0.0227    0.0496     2.6695 f
+  ex_stage/alu/U381/CI (FA1D1BWP40P140)       0.0227    0.0000     2.6695 f
+  ex_stage/alu/U381/CO (FA1D1BWP40P140)       0.0230    0.0497     2.7192 f
+  ex_stage/alu/U399/CI (FA1D1BWP40P140)       0.0230    0.0000     2.7192 f
+  ex_stage/alu/U399/CO (FA1D1BWP40P140)       0.0224    0.0498     2.7689 f
+  ex_stage/alu/U393/CI (FA1D1BWP40P140)       0.0224    0.0000     2.7689 f
+  ex_stage/alu/U393/CO (FA1D1BWP40P140)       0.0232    0.0496     2.8185 f
+  ex_stage/alu/U321/CI (FA1D1BWP40P140)       0.0232    0.0000     2.8185 f
+  ex_stage/alu/U321/CO (FA1D1BWP40P140)       0.0230    0.0498     2.8684 f
+  ex_stage/alu/U387/CI (FA1D1BWP40P140)       0.0230    0.0000     2.8684 f
+  ex_stage/alu/U387/CO (FA1D1BWP40P140)       0.0233    0.0498     2.9181 f
+  ex_stage/alu/U340/CI (FA1D1BWP40P140)       0.0233    0.0000     2.9181 f
+  ex_stage/alu/U340/CO (FA1D1BWP40P140)       0.0228    0.0499     2.9680 f
+  ex_stage/alu/U328/CI (FA1D1BWP40P140)       0.0228    0.0000     2.9680 f
+  ex_stage/alu/U328/CO (FA1D1BWP40P140)       0.0229    0.0497     3.0177 f
+  ex_stage/alu/U334/CI (FA1D1BWP40P140)       0.0229    0.0000     3.0177 f
+  ex_stage/alu/U334/CO (FA1D1BWP40P140)       0.0226    0.0497     3.0674 f
+  ex_stage/alu/U347/CI (FA1D1BWP40P140)       0.0226    0.0000     3.0674 f
+  ex_stage/alu/U347/CO (FA1D1BWP40P140)       0.0235    0.0496     3.1171 f
+  ex_stage/alu/U375/CI (FA1D1BWP40P140)       0.0235    0.0000     3.1171 f
+  ex_stage/alu/U375/CO (FA1D1BWP40P140)       0.0228    0.0500     3.1670 f
+  ex_stage/alu/U353/CI (FA1D1BWP40P140)       0.0228    0.0000     3.1670 f
+  ex_stage/alu/U353/CO (FA1D1BWP40P140)       0.0226    0.0497     3.2167 f
+  ex_stage/alu/U362/CI (FA1D1BWP40P140)       0.0226    0.0000     3.2167 f
+  ex_stage/alu/U362/CO (FA1D1BWP40P140)       0.0231    0.0498     3.2665 f
+  ex_stage/alu/U354/A2 (XNR3UD1BWP40P140)     0.0231    0.0000     3.2665 f
+  ex_stage/alu/U354/ZN (XNR3UD1BWP40P140)     0.0364    0.0704     3.3368 f
+  ex_stage/alu/U355/B2 (AOI22D1BWP40P140)     0.0364    0.0000     3.3368 f
+  ex_stage/alu/U355/ZN (AOI22D1BWP40P140)     0.0709    0.0345     3.3713 r
+  ex_stage/alu/U359/A1 (ND3D1BWP40P140)       0.0709    0.0000     3.3713 r
+  ex_stage/alu/U359/ZN (ND3D1BWP40P140)       0.0505    0.0414     3.4128 f
+  ex_stage/alu/io_out[63] (ysyx_22051098_ALU_0)         0.0000     3.4128 f
+  ex_stage/U901/A1 (AOI21D1BWP40P140)         0.0505    0.0000     3.4128 f
+  ex_stage/U901/ZN (AOI21D1BWP40P140)         0.0432    0.0271     3.4399 r
+  ex_stage/U7/A3 (ND4D1BWP40P140)             0.0432    0.0000     3.4399 r
+  ex_stage/U7/ZN (ND4D1BWP40P140)             0.0710    0.0579     3.4978 f
+  ex_stage/to_id_ex_result[63] (ysyx_22051098_EX_0)     0.0000     3.4978 f
+  id_stage/to_ex_ex_result[63] (ysyx_22051098_ID_0)     0.0000     3.4978 f
+  id_stage/U960/A2 (AOI22D1BWP40P140)         0.0710    0.0000     3.4978 f
+  id_stage/U960/ZN (AOI22D1BWP40P140)         0.0713    0.0379     3.5357 r
+  id_stage/U962/A1 (ND2D1BWP40P140)           0.0713    0.0000     3.5357 r
+  id_stage/U962/ZN (ND2D1BWP40P140)           0.0536    0.0472     3.5828 f
+  id_stage/U1079/I (INVD1BWP40P140)           0.0536    0.0000     3.5828 f
+  id_stage/U1079/ZN (INVD1BWP40P140)          0.0334    0.0339     3.6167 r
+  id_stage/U1080/B2 (OAI22D1BWP40P140)        0.0334    0.0000     3.6167 r
+  id_stage/U1080/ZN (OAI22D1BWP40P140)        0.0396    0.0404     3.6571 f
+  id_stage/U1081/I (INVD1BWP40P140)           0.0396    0.0000     3.6571 f
+  id_stage/U1081/ZN (INVD1BWP40P140)          0.0195    0.0211     3.6782 r
+  id_stage/U1083/B (OAI211D1BWP40P140)        0.0195    0.0000     3.6782 r
+  id_stage/U1083/ZN (OAI211D1BWP40P140)       0.0540    0.0436     3.7218 f
+  id_stage/U1090/A1 (NR2D1BWP40P140)          0.0540    0.0000     3.7218 f
+  id_stage/U1090/ZN (NR2D1BWP40P140)          0.0299    0.0296     3.7514 r
+  id_stage/U1125/A3 (ND3D1BWP40P140)          0.0299    0.0000     3.7514 r
+  id_stage/U1125/ZN (ND3D1BWP40P140)          0.0382    0.0319     3.7833 f
+  id_stage/U1126/C (AOI221D1BWP40P140)        0.0382    0.0000     3.7833 f
+  id_stage/U1126/ZN (AOI221D1BWP40P140)       0.0506    0.0502     3.8335 r
+  id_stage/U1132/A3 (ND4D1BWP40P140)          0.0506    0.0000     3.8335 r
+  id_stage/U1132/ZN (ND4D1BWP40P140)          0.0486    0.0436     3.8771 f
+  id_stage/U1230/A1 (NR2D1BWP40P140)          0.0486    0.0000     3.8771 f
+  id_stage/U1230/ZN (NR2D1BWP40P140)          0.0239    0.0241     3.9012 r
+  id_stage/U1268/B (AOI211D1BWP40P140)        0.0239    0.0000     3.9012 r
+  id_stage/U1268/ZN (AOI211D1BWP40P140)       0.0324    0.0211     3.9223 f
+  id_stage/U1288/B2 (AOI22D1BWP40P140)        0.0324    0.0000     3.9223 f
+  id_stage/U1288/ZN (AOI22D1BWP40P140)        0.0275    0.0332     3.9555 r
+  id_stage/U1369/A1 (OAI21D1BWP40P140)        0.0275    0.0000     3.9555 r
+  id_stage/U1369/ZN (OAI21D1BWP40P140)        0.0321    0.0229     3.9784 f
+  id_stage/U4/A2 (OAI21D1BWP40P140)           0.0321    0.0000     3.9784 f
+  id_stage/U4/ZN (OAI21D1BWP40P140)           0.0218    0.0239     4.0023 r
+  id_stage/U3/A1 (ND2D1BWP40P140)             0.0218    0.0000     4.0023 r
+  id_stage/U3/ZN (ND2D1BWP40P140)             0.0343    0.0225     4.0248 f
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     4.0248 f
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     4.0248 f
+  if_stage/U7/A1 (ND2D1BWP40P140)             0.0343    0.0000     4.0248 f
+  if_stage/U7/ZN (ND2D1BWP40P140)             0.0281    0.0278     4.0526 r
+  if_stage/U13/A3 (OR3D1BWP40P140)            0.0281    0.0000     4.0526 r
+  if_stage/U13/Z (OR3D1BWP40P140)             0.0153    0.0334     4.0860 r
+  if_stage/U5/I (INVD1BWP40P140)              0.0153    0.0000     4.0860 r
+  if_stage/U5/ZN (INVD1BWP40P140)             0.1532    0.0928     4.1788 f
+  if_stage/U257/A1 (AOI22D1BWP40P140)         0.1532    0.0000     4.1788 f
+  if_stage/U257/ZN (AOI22D1BWP40P140)         0.0472    0.0465     4.2253 r
+  if_stage/U258/C (OAI211D1BWP40P140)         0.0472    0.0000     4.2253 r
+  if_stage/U258/ZN (OAI211D1BWP40P140)        0.0884    0.0712     4.2965 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     4.2965 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     4.2965 f
+  icache/U46/B1 (AOI22D1BWP40P140)            0.0884    0.0000     4.2965 f
+  icache/U46/ZN (AOI22D1BWP40P140)            0.0549    0.0428     4.3393 r
+  icache/U18/B (OAI21D1BWP40P140)             0.0549    0.0000     4.3393 r
+  icache/U18/ZN (OAI21D1BWP40P140)            0.1292    0.0926     4.4319 f
+  icache/meta_arrays_0/io_addr[2] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     4.4319 f
+  icache/meta_arrays_0/U94/I (INVD1BWP40P140)
+                                              0.1292    0.0000     4.4319 f
+  icache/meta_arrays_0/U94/ZN (INVD1BWP40P140)
+                                              0.0786    0.0785     4.5104 r
+  icache/meta_arrays_0/U44/A3 (ND3D1BWP40P140)
+                                              0.0786    0.0000     4.5104 r
+  icache/meta_arrays_0/U44/ZN (ND3D1BWP40P140)
+                                              0.1129    0.0867     4.5971 f
+  icache/meta_arrays_0/U87/A1 (NR2D2BWP40P140)
+                                              0.1129    0.0000     4.5971 f
+  icache/meta_arrays_0/U87/ZN (NR2D2BWP40P140)
+                                              0.3583    0.2434     4.8405 r
+  icache/meta_arrays_0/U921/B1 (AOI22D1BWP40P140)
+                                              0.3583    0.0000     4.8405 r
+  icache/meta_arrays_0/U921/ZN (AOI22D1BWP40P140)
+                                              0.0917    0.0611     4.9016 f
+  icache/meta_arrays_0/U925/A1 (ND4D1BWP40P140)
+                                              0.0917    0.0000     4.9016 f
+  icache/meta_arrays_0/U925/ZN (ND4D1BWP40P140)
+                                              0.0313    0.0276     4.9292 r
+  icache/meta_arrays_0/U936/A2 (OR4D1BWP40P140)
+                                              0.0313    0.0000     4.9292 r
+  icache/meta_arrays_0/U936/Z (OR4D1BWP40P140)
+                                              0.0123    0.0360     4.9652 r
+  icache/meta_arrays_0/U958/A2 (AOI22D1BWP40P140)
+                                              0.0123    0.0000     4.9652 r
+  icache/meta_arrays_0/U958/ZN (AOI22D1BWP40P140)
+                                              0.0674    0.0182     4.9833 f
+  icache/meta_arrays_0/U980/A3 (ND4D1BWP40P140)
+                                              0.0674    0.0000     4.9833 f
+  icache/meta_arrays_0/U980/ZN (ND4D1BWP40P140)
+                                              0.0277    0.0304     5.0138 r
+  icache/meta_arrays_0/io_rdata_tag[4] (ysyx_22051098_CacheMetaArray_6)
+                                                        0.0000     5.0138 r
+  icache/U640/B2 (OAI221D1BWP40P140)          0.0277    0.0000     5.0138 r
+  icache/U640/ZN (OAI221D1BWP40P140)          0.0518    0.0461     5.0598 f
+  icache/U642/B (AOI211D1BWP40P140)           0.0518    0.0000     5.0598 f
+  icache/U642/ZN (AOI211D1BWP40P140)          0.0387    0.0435     5.1034 r
+  icache/U643/B (OAI211D1BWP40P140)           0.0387    0.0000     5.1034 r
+  icache/U643/ZN (OAI211D1BWP40P140)          0.0401    0.0411     5.1444 f
+  icache/U644/B (AOI21D1BWP40P140)            0.0401    0.0000     5.1444 f
+  icache/U644/ZN (AOI21D1BWP40P140)           0.0286    0.0303     5.1747 r
+  icache/U645/C (OAI211D1BWP40P140)           0.0286    0.0000     5.1747 r
+  icache/U645/ZN (OAI211D1BWP40P140)          0.0434    0.0410     5.2157 f
+  icache/U646/B (AO21D1BWP40P140)             0.0434    0.0000     5.2157 f
+  icache/U646/Z (AO21D1BWP40P140)             0.0210    0.0479     5.2636 f
+  icache/U650/A2 (AN2D1BWP40P140)             0.0210    0.0000     5.2636 f
+  icache/U650/Z (AN2D1BWP40P140)              0.0165    0.0296     5.2932 f
+  icache/U651/B1 (IND3D1BWP40P140)            0.0165    0.0000     5.2932 f
+  icache/U651/ZN (IND3D1BWP40P140)            0.0188    0.0151     5.3083 r
+  icache/U652/A2 (OAI21D1BWP40P140)           0.0188    0.0000     5.3083 r
+  icache/U652/ZN (OAI21D1BWP40P140)           0.0939    0.0590     5.3673 f
+  icache/U653/A2 (NR2D1BWP40P140)             0.0939    0.0000     5.3673 f
+  icache/U653/ZN (NR2D1BWP40P140)             0.0453    0.0511     5.4184 r
+  icache/U682/I (INVD1BWP40P140)              0.0453    0.0000     5.4184 r
+  icache/U682/ZN (INVD1BWP40P140)             0.0995    0.0735     5.4919 f
+  icache/U686/B (OAI21D1BWP40P140)            0.0995    0.0000     5.4919 f
+  icache/U686/ZN (OAI21D1BWP40P140)           0.0471    0.0395     5.5314 r
+  icache/U687/B2 (AOI32D1BWP40P140)           0.0471    0.0000     5.5314 r
+  icache/U687/ZN (AOI32D1BWP40P140)           0.0836    0.0381     5.5695 f
+  icache/U688/B (OAI21D1BWP40P140)            0.0836    0.0000     5.5695 f
+  icache/U688/ZN (OAI21D1BWP40P140)           0.0322    0.0322     5.6017 r
+  icache/burst_addr_rf_reg_12_/D (DFQD1BWP40P140)
+                                              0.0322    0.0000     5.6017 r
+  data arrival time                                                5.6017
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_12_/CP (DFQD1BWP40P140)      0.0000     6.3500 r
+  library setup time                                   -0.0304     6.3196
+  data required time                                               6.3196
+  --------------------------------------------------------------------------
+  data required time                                               6.3196
+  data arrival time                                               -5.6017
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.7180
+
+
+1
