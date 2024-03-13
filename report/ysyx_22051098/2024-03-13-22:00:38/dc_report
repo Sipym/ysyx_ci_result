@@ -1,0 +1,1943 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22051098
+freq: 100
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+64355.9  64355.9  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+76714  76714  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40   LVT40
+100.00  0.00 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  100.0     153.8      2.273  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22051098
+Version: R-2020.09-SP3a
+Date   : Wed Mar 13 23:53:47 2024
+****************************************
+
+Number of ports:                        24086
+Number of nets:                         96610
+Number of cells:                        78345
+Number of combinational cells:          59389
+Number of sequential cells:             17325
+Number of macros/black boxes:               0
+Number of buf/inv:                      15963
+Number of references:                      17
+
+Combinational area:              31549.013866
+Buf/Inv area:                     4798.206052
+Noncombinational area:           32806.871741
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 64355.885608
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+ysyx_22051098                     64355.8856    100.0    355.8240      0.0000  0.0000  ysyx_22051098
+arbiter                             702.3240      1.1    247.5900    454.7340  0.0000  ysyx_22051098_AXI_Arbiter_0
+clint                               782.5860      1.2    415.9260    366.6600  0.0000  ysyx_22051098_CLINT_0
+csr                                2004.6600      3.1   1033.2000    971.4600  0.0000  ysyx_22051098_CSR_0
+dcache                            22833.0899     35.5   1257.2280    519.7500  0.0000  ysyx_22051098_DCache_0
+dcache/data_arrays_0                891.5760      1.4    645.7500    245.8260  0.0000  ysyx_22051098_CacheDataArray_4
+dcache/data_arrays_1                891.8280      1.4    646.0020    245.8260  0.0000  ysyx_22051098_CacheDataArray_6
+dcache/meta_arrays_0               9602.9639     14.9   4038.8040   5564.1600  0.0000  ysyx_22051098_CacheMetaArray_4
+dcache/meta_arrays_1               9602.3339     14.9   4038.1740   5564.1600  0.0000  ysyx_22051098_CacheMetaArray_5
+dcache/replacer                      67.4100      0.1      0.0000      0.0000  0.0000  ysyx_22051098_LFSRCacheReplacer_3
+dcache/replacer/io_way_prng          67.4100      0.1      3.0240     64.3860  0.0000  ysyx_22051098_MaxPeriodFibonacciLFSR_2
+ex_stage                           5834.4300      9.1    831.7260    842.9400  0.0000  ysyx_22051098_EX_0
+ex_stage/alu                        471.6180      0.7    229.4460      0.0000  0.0000  ysyx_22051098_ALU_0
+ex_stage/alu/adder                  242.1720      0.4      0.8820      0.0000  0.0000  ysyx_22051098_CarryLookaheadAdder_4
+ex_stage/alu/adder/cog                4.7880      0.0      4.7880      0.0000  0.0000  ysyx_22051098_CLA_COGen_10
+ex_stage/alu/adder/cog_1              4.7880      0.0      4.7880      0.0000  0.0000  ysyx_22051098_CLA_COGen_9
+ex_stage/alu/adder/cog_10             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_31
+ex_stage/alu/adder/cog_11             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_151
+ex_stage/alu/adder/cog_12             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_150
+ex_stage/alu/adder/cog_13             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_149
+ex_stage/alu/adder/cog_14             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_148
+ex_stage/alu/adder/cog_15             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_30
+ex_stage/alu/adder/cog_16             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_164
+ex_stage/alu/adder/cog_17             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_147
+ex_stage/alu/adder/cog_18             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_146
+ex_stage/alu/adder/cog_19             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_145
+ex_stage/alu/adder/cog_2              4.7880      0.0      4.7880      0.0000  0.0000  ysyx_22051098_CLA_COGen_169
+ex_stage/alu/adder/cog_20             4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_163
+ex_stage/alu/adder/cog_3              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_157
+ex_stage/alu/adder/cog_4              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_156
+ex_stage/alu/adder/cog_5              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_32
+ex_stage/alu/adder/cog_6              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_155
+ex_stage/alu/adder/cog_7              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_154
+ex_stage/alu/adder/cog_8              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_153
+ex_stage/alu/adder/cog_9              4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_152
+ex_stage/alu/adder/pgg                2.3940      0.0      2.3940      0.0000  0.0000  ysyx_22051098_CLA_PGGen_6
+ex_stage/alu/adder/pgg_1              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_451
+ex_stage/alu/adder/pgg_10             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_442
+ex_stage/alu/adder/pgg_11             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_441
+ex_stage/alu/adder/pgg_12             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_440
+ex_stage/alu/adder/pgg_13             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_439
+ex_stage/alu/adder/pgg_14             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_438
+ex_stage/alu/adder/pgg_15             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_437
+ex_stage/alu/adder/pgg_16             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_436
+ex_stage/alu/adder/pgg_17             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_435
+ex_stage/alu/adder/pgg_18             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_434
+ex_stage/alu/adder/pgg_19             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_433
+ex_stage/alu/adder/pgg_2              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_450
+ex_stage/alu/adder/pgg_20             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_432
+ex_stage/alu/adder/pgg_21             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_431
+ex_stage/alu/adder/pgg_22             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_430
+ex_stage/alu/adder/pgg_23             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_429
+ex_stage/alu/adder/pgg_24             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_428
+ex_stage/alu/adder/pgg_25             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_427
+ex_stage/alu/adder/pgg_26             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_426
+ex_stage/alu/adder/pgg_27             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_425
+ex_stage/alu/adder/pgg_28             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_424
+ex_stage/alu/adder/pgg_29             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_423
+ex_stage/alu/adder/pgg_3              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_449
+ex_stage/alu/adder/pgg_30             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_422
+ex_stage/alu/adder/pgg_31             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_421
+ex_stage/alu/adder/pgg_32             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_420
+ex_stage/alu/adder/pgg_33             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_419
+ex_stage/alu/adder/pgg_34             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_418
+ex_stage/alu/adder/pgg_35             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_417
+ex_stage/alu/adder/pgg_36             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_416
+ex_stage/alu/adder/pgg_37             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_415
+ex_stage/alu/adder/pgg_38             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_414
+ex_stage/alu/adder/pgg_39             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_413
+ex_stage/alu/adder/pgg_4              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_448
+ex_stage/alu/adder/pgg_40             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_412
+ex_stage/alu/adder/pgg_41             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_411
+ex_stage/alu/adder/pgg_42             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_410
+ex_stage/alu/adder/pgg_43             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_409
+ex_stage/alu/adder/pgg_44             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_408
+ex_stage/alu/adder/pgg_45             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_407
+ex_stage/alu/adder/pgg_46             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_406
+ex_stage/alu/adder/pgg_47             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_405
+ex_stage/alu/adder/pgg_48             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_404
+ex_stage/alu/adder/pgg_49             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_403
+ex_stage/alu/adder/pgg_5              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_447
+ex_stage/alu/adder/pgg_50             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_402
+ex_stage/alu/adder/pgg_51             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_401
+ex_stage/alu/adder/pgg_52             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_400
+ex_stage/alu/adder/pgg_53             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_399
+ex_stage/alu/adder/pgg_54             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_398
+ex_stage/alu/adder/pgg_55             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_397
+ex_stage/alu/adder/pgg_56             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_396
+ex_stage/alu/adder/pgg_57             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_395
+ex_stage/alu/adder/pgg_58             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_394
+ex_stage/alu/adder/pgg_59             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_393
+ex_stage/alu/adder/pgg_6              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_446
+ex_stage/alu/adder/pgg_60             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_392
+ex_stage/alu/adder/pgg_61             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_391
+ex_stage/alu/adder/pgg_62             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_390
+ex_stage/alu/adder/pgg_63             2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_505
+ex_stage/alu/adder/pgg_7              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_445
+ex_stage/alu/adder/pgg_8              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_444
+ex_stage/alu/adder/pgg_9              2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_443
+ex_stage/divider                   1375.9200      2.1    871.1640    504.7560  0.0000  ysyx_22051098_Radix2Divider_0
+ex_stage/multiplier                1722.1680      2.7    377.7480    625.5900  0.0000  ysyx_22051098_BoothMultiplier_0
+ex_stage/multiplier/cla             473.0040      0.7      0.0000      0.0000  0.0000  ysyx_22051098_CarryLookaheadAdder_2_0
+ex_stage/multiplier/cla/cog           0.6300      0.0      0.6300      0.0000  0.0000  ysyx_22051098_CLA_COGen_3
+ex_stage/multiplier/cla/cog_1         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_29
+ex_stage/multiplier/cla/cog_10        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_137
+ex_stage/multiplier/cla/cog_11        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_27
+ex_stage/multiplier/cla/cog_12        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_136
+ex_stage/multiplier/cla/cog_13        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_135
+ex_stage/multiplier/cla/cog_14        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_134
+ex_stage/multiplier/cla/cog_15        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_133
+ex_stage/multiplier/cla/cog_16        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_26
+ex_stage/multiplier/cla/cog_17        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_25
+ex_stage/multiplier/cla/cog_18        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_132
+ex_stage/multiplier/cla/cog_19        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_131
+ex_stage/multiplier/cla/cog_2         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_144
+ex_stage/multiplier/cla/cog_20        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_130
+ex_stage/multiplier/cla/cog_21        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_24
+ex_stage/multiplier/cla/cog_22        1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_5
+ex_stage/multiplier/cla/cog_23        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_23
+ex_stage/multiplier/cla/cog_24        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_129
+ex_stage/multiplier/cla/cog_25        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_128
+ex_stage/multiplier/cla/cog_26        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_127
+ex_stage/multiplier/cla/cog_27        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_22
+ex_stage/multiplier/cla/cog_28        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_21
+ex_stage/multiplier/cla/cog_29        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_41
+ex_stage/multiplier/cla/cog_3         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_143
+ex_stage/multiplier/cla/cog_30        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_40
+ex_stage/multiplier/cla/cog_31        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_39
+ex_stage/multiplier/cla/cog_32        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_20
+ex_stage/multiplier/cla/cog_33        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_19
+ex_stage/multiplier/cla/cog_34        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_38
+ex_stage/multiplier/cla/cog_35        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_37
+ex_stage/multiplier/cla/cog_36        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_36
+ex_stage/multiplier/cla/cog_37        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_18
+ex_stage/multiplier/cla/cog_38        1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_14
+ex_stage/multiplier/cla/cog_39        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_17
+ex_stage/multiplier/cla/cog_4         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_142
+ex_stage/multiplier/cla/cog_40        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_16
+ex_stage/multiplier/cla/cog_41        4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_15
+ex_stage/multiplier/cla/cog_42        1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_13
+ex_stage/multiplier/cla/cog_5         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_141
+ex_stage/multiplier/cla/cog_6         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_28
+ex_stage/multiplier/cla/cog_7         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_140
+ex_stage/multiplier/cla/cog_8         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_139
+ex_stage/multiplier/cla/cog_9         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_138
+ex_stage/multiplier/cla/pgg           2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_389
+ex_stage/multiplier/cla/pgg_1         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_388
+ex_stage/multiplier/cla/pgg_10        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_123
+ex_stage/multiplier/cla/pgg_100       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_33
+ex_stage/multiplier/cla/pgg_101       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_32
+ex_stage/multiplier/cla/pgg_102       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_31
+ex_stage/multiplier/cla/pgg_103       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_30
+ex_stage/multiplier/cla/pgg_104       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_29
+ex_stage/multiplier/cla/pgg_105       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_28
+ex_stage/multiplier/cla/pgg_106       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_27
+ex_stage/multiplier/cla/pgg_107       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_26
+ex_stage/multiplier/cla/pgg_108       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_25
+ex_stage/multiplier/cla/pgg_109       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_24
+ex_stage/multiplier/cla/pgg_11        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_122
+ex_stage/multiplier/cla/pgg_110       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_23
+ex_stage/multiplier/cla/pgg_111       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_22
+ex_stage/multiplier/cla/pgg_112       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_21
+ex_stage/multiplier/cla/pgg_113       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_20
+ex_stage/multiplier/cla/pgg_114       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_19
+ex_stage/multiplier/cla/pgg_115       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_18
+ex_stage/multiplier/cla/pgg_116       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_17
+ex_stage/multiplier/cla/pgg_117       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_16
+ex_stage/multiplier/cla/pgg_118       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_15
+ex_stage/multiplier/cla/pgg_119       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_14
+ex_stage/multiplier/cla/pgg_12        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_121
+ex_stage/multiplier/cla/pgg_120       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_13
+ex_stage/multiplier/cla/pgg_121       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_12
+ex_stage/multiplier/cla/pgg_122       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_11
+ex_stage/multiplier/cla/pgg_123       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_10
+ex_stage/multiplier/cla/pgg_124       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_9
+ex_stage/multiplier/cla/pgg_125       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_8
+ex_stage/multiplier/cla/pgg_126       2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_7
+ex_stage/multiplier/cla/pgg_127       1.7640      0.0      1.7640      0.0000  0.0000  ysyx_22051098_CLA_PGGen_3
+ex_stage/multiplier/cla/pgg_13        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_120
+ex_stage/multiplier/cla/pgg_14        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_119
+ex_stage/multiplier/cla/pgg_15        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_118
+ex_stage/multiplier/cla/pgg_16        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_117
+ex_stage/multiplier/cla/pgg_17        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_116
+ex_stage/multiplier/cla/pgg_18        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_115
+ex_stage/multiplier/cla/pgg_19        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_114
+ex_stage/multiplier/cla/pgg_2         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_387
+ex_stage/multiplier/cla/pgg_20        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_113
+ex_stage/multiplier/cla/pgg_21        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_112
+ex_stage/multiplier/cla/pgg_22        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_111
+ex_stage/multiplier/cla/pgg_23        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_110
+ex_stage/multiplier/cla/pgg_24        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_109
+ex_stage/multiplier/cla/pgg_25        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_108
+ex_stage/multiplier/cla/pgg_26        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_107
+ex_stage/multiplier/cla/pgg_27        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_106
+ex_stage/multiplier/cla/pgg_28        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_105
+ex_stage/multiplier/cla/pgg_29        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_104
+ex_stage/multiplier/cla/pgg_3         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_386
+ex_stage/multiplier/cla/pgg_30        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_103
+ex_stage/multiplier/cla/pgg_31        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_102
+ex_stage/multiplier/cla/pgg_32        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_101
+ex_stage/multiplier/cla/pgg_33        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_100
+ex_stage/multiplier/cla/pgg_34        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_99
+ex_stage/multiplier/cla/pgg_35        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_98
+ex_stage/multiplier/cla/pgg_36        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_97
+ex_stage/multiplier/cla/pgg_37        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_96
+ex_stage/multiplier/cla/pgg_38        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_95
+ex_stage/multiplier/cla/pgg_39        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_94
+ex_stage/multiplier/cla/pgg_4         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_385
+ex_stage/multiplier/cla/pgg_40        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_93
+ex_stage/multiplier/cla/pgg_41        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_92
+ex_stage/multiplier/cla/pgg_42        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_91
+ex_stage/multiplier/cla/pgg_43        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_90
+ex_stage/multiplier/cla/pgg_44        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_89
+ex_stage/multiplier/cla/pgg_45        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_88
+ex_stage/multiplier/cla/pgg_46        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_87
+ex_stage/multiplier/cla/pgg_47        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_86
+ex_stage/multiplier/cla/pgg_48        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_85
+ex_stage/multiplier/cla/pgg_49        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_84
+ex_stage/multiplier/cla/pgg_5         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_384
+ex_stage/multiplier/cla/pgg_50        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_83
+ex_stage/multiplier/cla/pgg_51        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_82
+ex_stage/multiplier/cla/pgg_52        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_81
+ex_stage/multiplier/cla/pgg_53        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_80
+ex_stage/multiplier/cla/pgg_54        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_79
+ex_stage/multiplier/cla/pgg_55        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_78
+ex_stage/multiplier/cla/pgg_56        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_77
+ex_stage/multiplier/cla/pgg_57        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_76
+ex_stage/multiplier/cla/pgg_58        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_75
+ex_stage/multiplier/cla/pgg_59        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_74
+ex_stage/multiplier/cla/pgg_6         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_127
+ex_stage/multiplier/cla/pgg_60        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_73
+ex_stage/multiplier/cla/pgg_61        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_72
+ex_stage/multiplier/cla/pgg_62        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_71
+ex_stage/multiplier/cla/pgg_63        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_70
+ex_stage/multiplier/cla/pgg_64        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_69
+ex_stage/multiplier/cla/pgg_65        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_68
+ex_stage/multiplier/cla/pgg_66        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_67
+ex_stage/multiplier/cla/pgg_67        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_66
+ex_stage/multiplier/cla/pgg_68        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_65
+ex_stage/multiplier/cla/pgg_69        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_64
+ex_stage/multiplier/cla/pgg_7         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_126
+ex_stage/multiplier/cla/pgg_70        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_63
+ex_stage/multiplier/cla/pgg_71        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_62
+ex_stage/multiplier/cla/pgg_72        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_61
+ex_stage/multiplier/cla/pgg_73        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_60
+ex_stage/multiplier/cla/pgg_74        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_59
+ex_stage/multiplier/cla/pgg_75        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_58
+ex_stage/multiplier/cla/pgg_76        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_57
+ex_stage/multiplier/cla/pgg_77        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_56
+ex_stage/multiplier/cla/pgg_78        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_55
+ex_stage/multiplier/cla/pgg_79        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_54
+ex_stage/multiplier/cla/pgg_8         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_125
+ex_stage/multiplier/cla/pgg_80        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_53
+ex_stage/multiplier/cla/pgg_81        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_52
+ex_stage/multiplier/cla/pgg_82        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_51
+ex_stage/multiplier/cla/pgg_83        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_50
+ex_stage/multiplier/cla/pgg_84        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_49
+ex_stage/multiplier/cla/pgg_85        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_48
+ex_stage/multiplier/cla/pgg_86        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_47
+ex_stage/multiplier/cla/pgg_87        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_46
+ex_stage/multiplier/cla/pgg_88        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_45
+ex_stage/multiplier/cla/pgg_89        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_44
+ex_stage/multiplier/cla/pgg_9         2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_124
+ex_stage/multiplier/cla/pgg_90        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_43
+ex_stage/multiplier/cla/pgg_91        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_42
+ex_stage/multiplier/cla/pgg_92        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_41
+ex_stage/multiplier/cla/pgg_93        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_40
+ex_stage/multiplier/cla/pgg_94        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_39
+ex_stage/multiplier/cla/pgg_95        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_38
+ex_stage/multiplier/cla/pgg_96        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_37
+ex_stage/multiplier/cla/pgg_97        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_36
+ex_stage/multiplier/cla/pgg_98        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_35
+ex_stage/multiplier/cla/pgg_99        2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_34
+ex_stage/multiplier/pp              245.8260      0.4    245.8260      0.0000  0.0000  ysyx_22051098_PartialProduct_0
+ex_stage/shifter                    590.0580      0.9    590.0580      0.0000  0.0000  ysyx_22051098_Shifter_0
+icache                            20445.5158     31.8    550.8720    211.6800  0.0000  ysyx_22051098_ICache_0
+icache/data_arrays_0                766.3320      1.2    520.5060    245.8260  0.0000  ysyx_22051098_CacheDataArray_5
+icache/data_arrays_1                767.3400      1.2    521.5140    245.8260  0.0000  ysyx_22051098_CacheDataArray_7
+icache/meta_arrays_0               9040.2479     14.0   3718.0080   5322.2400  0.0000  ysyx_22051098_CacheMetaArray_6
+icache/meta_arrays_1               9041.2559     14.0   3719.0160   5322.2400  0.0000  ysyx_22051098_CacheMetaArray_7
+icache/replacer                      67.7880      0.1      0.0000      0.0000  0.0000  ysyx_22051098_LFSRCacheReplacer_2
+icache/replacer/io_way_prng          67.7880      0.1      3.2760     64.5120  0.0000  ysyx_22051098_MaxPeriodFibonacciLFSR_3
+id_stage                           1211.1120      1.9    799.8480    185.2200  0.0000  ysyx_22051098_ID_0
+id_stage/cla                        226.0440      0.4      0.0000      0.0000  0.0000  ysyx_22051098_CarryLookaheadAdder_3
+id_stage/cla/cog                      1.6380      0.0      1.6380      0.0000  0.0000  ysyx_22051098_CLA_COGen_0
+id_stage/cla/cog_1                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_COGen_4
+id_stage/cla/cog_10                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_168
+id_stage/cla/cog_11                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_167
+id_stage/cla/cog_12                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_160
+id_stage/cla/cog_13                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_159
+id_stage/cla/cog_14                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_158
+id_stage/cla/cog_15                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_166
+id_stage/cla/cog_16                   1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_2
+id_stage/cla/cog_17                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_34
+id_stage/cla/cog_18                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_165
+id_stage/cla/cog_19                   4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_33
+id_stage/cla/cog_2                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_COGen_12
+id_stage/cla/cog_20                   1.8900      0.0      1.8900      0.0000  0.0000  ysyx_22051098_CLA_COGen_11
+id_stage/cla/cog_3                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_1
+id_stage/cla/cog_4                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_6
+id_stage/cla/cog_5                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_35
+id_stage/cla/cog_6                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_8
+id_stage/cla/cog_7                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_7
+id_stage/cla/cog_8                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_162
+id_stage/cla/cog_9                    4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22051098_CLA_COGen_161
+id_stage/cla/pgg                      1.1340      0.0      1.1340      0.0000  0.0000  ysyx_22051098_CLA_PGGen_1
+id_stage/cla/pgg_1                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_0
+id_stage/cla/pgg_10                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_497
+id_stage/cla/pgg_11                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_496
+id_stage/cla/pgg_12                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_495
+id_stage/cla/pgg_13                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_494
+id_stage/cla/pgg_14                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_493
+id_stage/cla/pgg_15                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_492
+id_stage/cla/pgg_16                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_491
+id_stage/cla/pgg_17                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_490
+id_stage/cla/pgg_18                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_489
+id_stage/cla/pgg_19                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_488
+id_stage/cla/pgg_2                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_4
+id_stage/cla/pgg_20                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_487
+id_stage/cla/pgg_21                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_486
+id_stage/cla/pgg_22                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_485
+id_stage/cla/pgg_23                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_484
+id_stage/cla/pgg_24                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_483
+id_stage/cla/pgg_25                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_482
+id_stage/cla/pgg_26                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_481
+id_stage/cla/pgg_27                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_480
+id_stage/cla/pgg_28                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_479
+id_stage/cla/pgg_29                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_5
+id_stage/cla/pgg_3                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_504
+id_stage/cla/pgg_30                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_511
+id_stage/cla/pgg_31                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_510
+id_stage/cla/pgg_32                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_478
+id_stage/cla/pgg_33                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_477
+id_stage/cla/pgg_34                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_476
+id_stage/cla/pgg_35                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_475
+id_stage/cla/pgg_36                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_474
+id_stage/cla/pgg_37                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_473
+id_stage/cla/pgg_38                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_472
+id_stage/cla/pgg_39                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_471
+id_stage/cla/pgg_4                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_503
+id_stage/cla/pgg_40                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_470
+id_stage/cla/pgg_41                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_469
+id_stage/cla/pgg_42                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_468
+id_stage/cla/pgg_43                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_467
+id_stage/cla/pgg_44                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_466
+id_stage/cla/pgg_45                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_465
+id_stage/cla/pgg_46                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_464
+id_stage/cla/pgg_47                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_509
+id_stage/cla/pgg_48                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_463
+id_stage/cla/pgg_49                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_462
+id_stage/cla/pgg_5                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_502
+id_stage/cla/pgg_50                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_461
+id_stage/cla/pgg_51                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_460
+id_stage/cla/pgg_52                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_459
+id_stage/cla/pgg_53                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_508
+id_stage/cla/pgg_54                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_458
+id_stage/cla/pgg_55                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_507
+id_stage/cla/pgg_56                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_457
+id_stage/cla/pgg_57                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_456
+id_stage/cla/pgg_58                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_455
+id_stage/cla/pgg_59                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_454
+id_stage/cla/pgg_6                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_501
+id_stage/cla/pgg_60                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_453
+id_stage/cla/pgg_61                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_506
+id_stage/cla/pgg_62                   2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_452
+id_stage/cla/pgg_63                   1.7640      0.0      1.7640      0.0000  0.0000  ysyx_22051098_CLA_PGGen_2
+id_stage/cla/pgg_7                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_500
+id_stage/cla/pgg_8                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_499
+id_stage/cla/pgg_9                    2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22051098_CLA_PGGen_498
+if_stage                            799.4700      1.2    487.6200    311.8500  0.0000  ysyx_22051098_IF_0
+mm_stage                           1103.1300      1.7    551.2500    551.8800  0.0000  ysyx_22051098_MM_0
+myrom                               134.5680      0.2     47.6280     86.9400  0.0000  ysyx_22051098_MyROM_0
+regfile                            7270.7040     11.3      0.0000      0.0000  0.0000  ysyx_22051098_Regfile_0
+regfile/rf                         7270.7040     11.3   3520.9440   3749.7600  0.0000  ysyx_22051098__Regfile_0
+wb_stage                            878.4720      1.4    339.8220    538.6500  0.0000  ysyx_22051098_WB_0
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                  31549.0139  32806.8717  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22051098
+Version: R-2020.09-SP3a
+Date   : Wed Mar 13 23:53:39 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: ex_stage/alu_op_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_5_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/alu_op_reg_0_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/alu_op_reg_0_/Q (DFQD1BWP40P140)   0.3344    0.2560     0.2560 f
+  ex_stage/alu/io_op[0] (ysyx_22051098_ALU_0)           0.0000     0.2560 f
+  ex_stage/alu/U4/I (INVD1BWP40P140)          0.3344    0.0000     0.2560 f
+  ex_stage/alu/U4/ZN (INVD1BWP40P140)         0.3219    0.2897     0.5457 r
+  ex_stage/alu/U400/B2 (AOI22D1BWP40P140)     0.3219    0.0000     0.5457 r
+  ex_stage/alu/U400/ZN (AOI22D1BWP40P140)     0.0933    0.0691     0.6148 f
+  ex_stage/alu/adder/io_b[5] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/io_b (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/A1 (NR2D1BWP40P140)
+                                              0.0933    0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/ZN (NR2D1BWP40P140)
+                                              0.0437    0.0438     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/I (INVD1BWP40P140)
+                                              0.0437    0.0000     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/ZN (INVD1BWP40P140)
+                                              0.0244    0.0245     0.6831 f
+  ex_stage/alu/adder/pgg_5/io_p (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/io_p_1 (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/A2 (AO21D1BWP40P140)
+                                              0.0244    0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/Z (AO21D1BWP40P140)
+                                              0.0136    0.0335     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/A1 (AO21D1BWP40P140)
+                                              0.0136    0.0000     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/Z (AO21D1BWP40P140)
+                                              0.0129    0.0255     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/A2 (AO21D1BWP40P140)
+                                              0.0129    0.0000     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/Z (AO21D1BWP40P140)
+                                              0.0186    0.0340     0.7762 f
+  ex_stage/alu/adder/cog_3/io_go (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/io_g_1 (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/B (AO21D1BWP40P140)
+                                              0.0186    0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/Z (AO21D1BWP40P140)
+                                              0.0135    0.0356     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/A1 (AO21D1BWP40P140)
+                                              0.0135    0.0000     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/Z (AO21D1BWP40P140)
+                                              0.0128    0.0255     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/A2 (AO21D1BWP40P140)
+                                              0.0128    0.0000     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/Z (AO21D1BWP40P140)
+                                              0.0184    0.0338     0.8712 f
+  ex_stage/alu/adder/cog_1/io_go (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/io_g_0 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/B (AO21D1BWP40P140)
+                                              0.0184    0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/Z (AO21D1BWP40P140)
+                                              0.0293    0.0466     0.9177 f
+  ex_stage/alu/adder/cog/U4/A2 (AO21D1BWP40P140)
+                                              0.0293    0.0000     0.9177 f
+  ex_stage/alu/adder/cog/U4/Z (AO21D1BWP40P140)
+                                              0.0294    0.0462     0.9639 f
+  ex_stage/alu/adder/cog/U5/A2 (AO21D1BWP40P140)
+                                              0.0294    0.0000     0.9639 f
+  ex_stage/alu/adder/cog/U5/Z (AO21D1BWP40P140)
+                                              0.0252    0.0437     1.0076 f
+  ex_stage/alu/adder/cog/io_co_2 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/io_c (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/Z (AO21D1BWP40P140)
+                                              0.0210    0.0397     1.1319 f
+  ex_stage/alu/adder/cog_16/io_co_2 (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/io_c (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/Z (AO21D1BWP40P140)
+                                              0.0210    0.0384     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/Z (AO21D1BWP40P140)
+                                              0.0210    0.0383     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/Z (AO21D1BWP40P140)
+                                              0.0169    0.0351     1.2437 f
+  ex_stage/alu/adder/cog_20/io_co_2 (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/io_c (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/B (OAI21D1BWP40P140)
+                                              0.0169    0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/ZN (OAI21D1BWP40P140)
+                                              0.0236    0.0160     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/B (OAI31D1BWP40P140)
+                                              0.0236    0.0000     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/ZN (OAI31D1BWP40P140)
+                                              0.0506    0.0414     1.3011 f
+  ex_stage/alu/adder/pgg_63/io_s (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/adder/io_s[63] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/U81/A1 (OAI21D1BWP40P140)      0.0506    0.0000     1.3011 f
+  ex_stage/alu/U81/ZN (OAI21D1BWP40P140)      0.0321    0.0261     1.3272 r
+  ex_stage/alu/U82/B (IOA21D1BWP40P140)       0.0321    0.0000     1.3272 r
+  ex_stage/alu/U82/ZN (IOA21D1BWP40P140)      0.0219    0.0201     1.3473 f
+  ex_stage/alu/U83/B2 (AOI22D1BWP40P140)      0.0219    0.0000     1.3473 f
+  ex_stage/alu/U83/ZN (AOI22D1BWP40P140)      0.0348    0.0300     1.3774 r
+  ex_stage/alu/U84/C (OAI211D1BWP40P140)      0.0348    0.0000     1.3774 r
+  ex_stage/alu/U84/ZN (OAI211D1BWP40P140)     0.2947    0.1842     1.5615 f
+  ex_stage/alu/io_out[0] (ysyx_22051098_ALU_0)          0.0000     1.5615 f
+  ex_stage/U549/B1 (AOI22D1BWP40P140)         0.2947    0.0000     1.5615 f
+  ex_stage/U549/ZN (AOI22D1BWP40P140)         0.0710    0.0688     1.6304 r
+  ex_stage/U550/A3 (ND3D1BWP40P140)           0.0710    0.0000     1.6304 r
+  ex_stage/U550/ZN (ND3D1BWP40P140)           0.0536    0.0499     1.6802 f
+  ex_stage/to_id_ex_result[0] (ysyx_22051098_EX_0)      0.0000     1.6802 f
+  id_stage/to_ex_ex_result[0] (ysyx_22051098_ID_0)      0.0000     1.6802 f
+  id_stage/U500/A2 (AOI22D1BWP40P140)         0.0536    0.0000     1.6802 f
+  id_stage/U500/ZN (AOI22D1BWP40P140)         0.0713    0.0335     1.7137 r
+  id_stage/U502/A1 (ND2D1BWP40P140)           0.0713    0.0000     1.7137 r
+  id_stage/U502/ZN (ND2D1BWP40P140)           0.0368    0.0330     1.7467 f
+  id_stage/U503/I (INVD1BWP40P140)            0.0368    0.0000     1.7467 f
+  id_stage/U503/ZN (INVD1BWP40P140)           0.0227    0.0244     1.7711 r
+  id_stage/U1192/A2 (ND2D1BWP40P140)          0.0227    0.0000     1.7711 r
+  id_stage/U1192/ZN (ND2D1BWP40P140)          0.0368    0.0285     1.7996 f
+  id_stage/U1195/A1 (IOA21D1BWP40P140)        0.0368    0.0000     1.7996 f
+  id_stage/U1195/ZN (IOA21D1BWP40P140)        0.0211    0.0390     1.8387 f
+  id_stage/U1196/C (OAI211D1BWP40P140)        0.0211    0.0000     1.8387 f
+  id_stage/U1196/ZN (OAI211D1BWP40P140)       0.0214    0.0183     1.8569 r
+  id_stage/U1200/A1 (AOI21D1BWP40P140)        0.0214    0.0000     1.8569 r
+  id_stage/U1200/ZN (AOI21D1BWP40P140)        0.0233    0.0206     1.8776 f
+  id_stage/U1203/A1 (OA21D1BWP40P140)         0.0233    0.0000     1.8776 f
+  id_stage/U1203/Z (OA21D1BWP40P140)          0.0123    0.0290     1.9066 f
+  id_stage/U1205/A2 (OA21D1BWP40P140)         0.0123    0.0000     1.9066 f
+  id_stage/U1205/Z (OA21D1BWP40P140)          0.0126    0.0279     1.9345 f
+  id_stage/U1208/A2 (AOI211D1BWP40P140)       0.0126    0.0000     1.9345 f
+  id_stage/U1208/ZN (AOI211D1BWP40P140)       0.0340    0.0257     1.9602 r
+  id_stage/U1232/A1 (OAI211D1BWP40P140)       0.0340    0.0000     1.9602 r
+  id_stage/U1232/ZN (OAI211D1BWP40P140)       0.0401    0.0345     1.9947 f
+  id_stage/U1245/B1 (AOI221D1BWP40P140)       0.0401    0.0000     1.9947 f
+  id_stage/U1245/ZN (AOI221D1BWP40P140)       0.0499    0.0524     2.0471 r
+  id_stage/U1246/B2 (OAI22D1BWP40P140)        0.0499    0.0000     2.0471 r
+  id_stage/U1246/ZN (OAI22D1BWP40P140)        0.0333    0.0380     2.0851 f
+  id_stage/U1247/B (AOI21D1BWP40P140)         0.0333    0.0000     2.0851 f
+  id_stage/U1247/ZN (AOI21D1BWP40P140)        0.0282    0.0292     2.1143 r
+  id_stage/U1249/B (OAI211D1BWP40P140)        0.0282    0.0000     2.1143 r
+  id_stage/U1249/ZN (OAI211D1BWP40P140)       0.0535    0.0469     2.1612 f
+  id_stage/U1290/B1 (MAOI22D1BWP40P140)       0.0535    0.0000     2.1612 f
+  id_stage/U1290/ZN (MAOI22D1BWP40P140)       0.0264    0.0396     2.2008 f
+  id_stage/U1291/B1 (OAI22D1BWP40P140)        0.0264    0.0000     2.2008 f
+  id_stage/U1291/ZN (OAI22D1BWP40P140)        0.0322    0.0256     2.2264 r
+  id_stage/U1292/C (AOI211D1BWP40P140)        0.0322    0.0000     2.2264 r
+  id_stage/U1292/ZN (AOI211D1BWP40P140)       0.0300    0.0225     2.2488 f
+  id_stage/U1293/A1 (OAI21D1BWP40P140)        0.0300    0.0000     2.2488 f
+  id_stage/U1293/ZN (OAI21D1BWP40P140)        0.0634    0.0262     2.2750 r
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     2.2750 r
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     2.2750 r
+  if_stage/U89/A1 (ND2D1BWP40P140)            0.0634    0.0000     2.2750 r
+  if_stage/U89/ZN (ND2D1BWP40P140)            0.0539    0.0465     2.3215 f
+  if_stage/U133/I (INVD1BWP40P140)            0.0539    0.0000     2.3215 f
+  if_stage/U133/ZN (INVD1BWP40P140)           0.0234    0.0248     2.3463 r
+  if_stage/U14/A1 (NR2D1BWP40P140)            0.0234    0.0000     2.3463 r
+  if_stage/U14/ZN (NR2D1BWP40P140)            0.0200    0.0190     2.3653 f
+  if_stage/U11/A2 (ND2D1BWP40P140)            0.0200    0.0000     2.3653 f
+  if_stage/U11/ZN (ND2D1BWP40P140)            0.0335    0.0240     2.3893 r
+  if_stage/U134/I (INVD1BWP40P140)            0.0335    0.0000     2.3893 r
+  if_stage/U134/ZN (INVD1BWP40P140)           0.1401    0.0929     2.4822 f
+  if_stage/U281/B (OAI21D1BWP40P140)          0.1401    0.0000     2.4822 f
+  if_stage/U281/ZN (OAI21D1BWP40P140)         0.0450    0.0407     2.5229 r
+  if_stage/U284/A2 (OAI211D1BWP40P140)        0.0450    0.0000     2.5229 r
+  if_stage/U284/ZN (OAI211D1BWP40P140)        0.0884    0.0631     2.5860 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     2.5860 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     2.5860 f
+  icache/U690/B1 (AOI22D1BWP40P140)           0.0884    0.0000     2.5860 f
+  icache/U690/ZN (AOI22D1BWP40P140)           0.0550    0.0428     2.6288 r
+  icache/U691/B (OAI21D1BWP40P140)            0.0550    0.0000     2.6288 r
+  icache/U691/ZN (OAI21D1BWP40P140)           0.1225    0.0890     2.7178 f
+  icache/meta_arrays_1/io_addr[2] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     2.7178 f
+  icache/meta_arrays_1/U158/I (INVD1BWP40P140)
+                                              0.1225    0.0000     2.7178 f
+  icache/meta_arrays_1/U158/ZN (INVD1BWP40P140)
+                                              0.0716    0.0722     2.7900 r
+  icache/meta_arrays_1/U160/A1 (ND2D1BWP40P140)
+                                              0.0716    0.0000     2.7900 r
+  icache/meta_arrays_1/U160/ZN (ND2D1BWP40P140)
+                                              0.0626    0.0536     2.8436 f
+  icache/meta_arrays_1/U183/B1 (INR2D1BWP40P140)
+                                              0.0626    0.0000     2.8436 f
+  icache/meta_arrays_1/U183/ZN (INR2D1BWP40P140)
+                                              0.4348    0.2714     3.1150 r
+  icache/meta_arrays_1/U426/I (INVD1BWP40P140)
+                                              0.4348    0.0000     3.1150 r
+  icache/meta_arrays_1/U426/ZN (INVD1BWP40P140)
+                                              0.1061    0.0710     3.1859 f
+  icache/meta_arrays_1/U427/I (INVD1BWP40P140)
+                                              0.1061    0.0000     3.1859 f
+  icache/meta_arrays_1/U427/ZN (INVD1BWP40P140)
+                                              0.1474    0.1208     3.3067 r
+  icache/meta_arrays_1/U1715/B1 (AOI22D1BWP40P140)
+                                              0.1474    0.0000     3.3067 r
+  icache/meta_arrays_1/U1715/ZN (AOI22D1BWP40P140)
+                                              0.0910    0.0474     3.3541 f
+  icache/meta_arrays_1/U1718/A2 (ND4D1BWP40P140)
+                                              0.0910    0.0000     3.3541 f
+  icache/meta_arrays_1/U1718/ZN (ND4D1BWP40P140)
+                                              0.0318    0.0287     3.3829 r
+  icache/meta_arrays_1/U1724/A3 (OR4D1BWP40P140)
+                                              0.0318    0.0000     3.3829 r
+  icache/meta_arrays_1/U1724/Z (OR4D1BWP40P140)
+                                              0.0122    0.0338     3.4166 r
+  icache/meta_arrays_1/U1725/B2 (AOI22D1BWP40P140)
+                                              0.0122    0.0000     3.4166 r
+  icache/meta_arrays_1/U1725/ZN (AOI22D1BWP40P140)
+                                              0.0653    0.0249     3.4415 f
+  icache/meta_arrays_1/U1747/A3 (ND4D1BWP40P140)
+                                              0.0653    0.0000     3.4415 f
+  icache/meta_arrays_1/U1747/ZN (ND4D1BWP40P140)
+                                              0.0266    0.0293     3.4708 r
+  icache/meta_arrays_1/io_rdata_tag[13] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     3.4708 r
+  icache/U551/B2 (OAI22D1BWP40P140)           0.0266    0.0000     3.4708 r
+  icache/U551/ZN (OAI22D1BWP40P140)           0.0307    0.0334     3.5042 f
+  icache/U552/C (AOI221D1BWP40P140)           0.0307    0.0000     3.5042 f
+  icache/U552/ZN (AOI221D1BWP40P140)          0.0441    0.0421     3.5464 r
+  icache/U553/C (OAI211D1BWP40P140)           0.0441    0.0000     3.5464 r
+  icache/U553/ZN (OAI211D1BWP40P140)          0.0400    0.0425     3.5889 f
+  icache/U554/B (AOI21D1BWP40P140)            0.0400    0.0000     3.5889 f
+  icache/U554/ZN (AOI21D1BWP40P140)           0.0292    0.0301     3.6190 r
+  icache/U588/A2 (ND4D1BWP40P140)             0.0292    0.0000     3.6190 r
+  icache/U588/ZN (ND4D1BWP40P140)             0.0721    0.0532     3.6721 f
+  icache/U623/A1 (AN2D1BWP40P140)             0.0721    0.0000     3.6721 f
+  icache/U623/Z (AN2D1BWP40P140)              0.0165    0.0456     3.7177 f
+  icache/U624/B1 (IND3D1BWP40P140)            0.0165    0.0000     3.7177 f
+  icache/U624/ZN (IND3D1BWP40P140)            0.0188    0.0151     3.7328 r
+  icache/U625/A2 (OAI21D1BWP40P140)           0.0188    0.0000     3.7328 r
+  icache/U625/ZN (OAI21D1BWP40P140)           0.0939    0.0590     3.7919 f
+  icache/U626/A2 (NR2D1BWP40P140)             0.0939    0.0000     3.7919 f
+  icache/U626/ZN (NR2D1BWP40P140)             0.0453    0.0511     3.8429 r
+  icache/U655/I (INVD1BWP40P140)              0.0453    0.0000     3.8429 r
+  icache/U655/ZN (INVD1BWP40P140)             0.0995    0.0735     3.9165 f
+  icache/U952/B (OAI21D1BWP40P140)            0.0995    0.0000     3.9165 f
+  icache/U952/ZN (OAI21D1BWP40P140)           0.0481    0.0402     3.9566 r
+  icache/U955/B (AO21D1BWP40P140)             0.0481    0.0000     3.9566 r
+  icache/U955/Z (AO21D1BWP40P140)             0.0176    0.0334     3.9900 r
+  icache/U956/B2 (AOI22D1BWP40P140)           0.0176    0.0000     3.9900 r
+  icache/U956/ZN (AOI22D1BWP40P140)           0.0625    0.0262     4.0163 f
+  icache/U957/B (OAI31D1BWP40P140)            0.0625    0.0000     4.0163 f
+  icache/U957/ZN (OAI31D1BWP40P140)           0.0350    0.0297     4.0460 r
+  icache/burst_addr_rf_reg_5_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     4.0460 r
+  data arrival time                                                4.0460
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_5_/CP (DFQD1BWP40P140)       0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -4.0460
+  --------------------------------------------------------------------------
+  slack (MET)                                                      2.2731
+
+
+  Startpoint: ex_stage/alu_op_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_7_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/alu_op_reg_0_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/alu_op_reg_0_/Q (DFQD1BWP40P140)   0.3344    0.2560     0.2560 f
+  ex_stage/alu/io_op[0] (ysyx_22051098_ALU_0)           0.0000     0.2560 f
+  ex_stage/alu/U4/I (INVD1BWP40P140)          0.3344    0.0000     0.2560 f
+  ex_stage/alu/U4/ZN (INVD1BWP40P140)         0.3219    0.2897     0.5457 r
+  ex_stage/alu/U400/B2 (AOI22D1BWP40P140)     0.3219    0.0000     0.5457 r
+  ex_stage/alu/U400/ZN (AOI22D1BWP40P140)     0.0933    0.0691     0.6148 f
+  ex_stage/alu/adder/io_b[5] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/io_b (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/A1 (NR2D1BWP40P140)
+                                              0.0933    0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/ZN (NR2D1BWP40P140)
+                                              0.0437    0.0438     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/I (INVD1BWP40P140)
+                                              0.0437    0.0000     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/ZN (INVD1BWP40P140)
+                                              0.0244    0.0245     0.6831 f
+  ex_stage/alu/adder/pgg_5/io_p (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/io_p_1 (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/A2 (AO21D1BWP40P140)
+                                              0.0244    0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/Z (AO21D1BWP40P140)
+                                              0.0136    0.0335     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/A1 (AO21D1BWP40P140)
+                                              0.0136    0.0000     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/Z (AO21D1BWP40P140)
+                                              0.0129    0.0255     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/A2 (AO21D1BWP40P140)
+                                              0.0129    0.0000     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/Z (AO21D1BWP40P140)
+                                              0.0186    0.0340     0.7762 f
+  ex_stage/alu/adder/cog_3/io_go (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/io_g_1 (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/B (AO21D1BWP40P140)
+                                              0.0186    0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/Z (AO21D1BWP40P140)
+                                              0.0135    0.0356     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/A1 (AO21D1BWP40P140)
+                                              0.0135    0.0000     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/Z (AO21D1BWP40P140)
+                                              0.0128    0.0255     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/A2 (AO21D1BWP40P140)
+                                              0.0128    0.0000     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/Z (AO21D1BWP40P140)
+                                              0.0184    0.0338     0.8712 f
+  ex_stage/alu/adder/cog_1/io_go (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/io_g_0 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/B (AO21D1BWP40P140)
+                                              0.0184    0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/Z (AO21D1BWP40P140)
+                                              0.0293    0.0466     0.9177 f
+  ex_stage/alu/adder/cog/U4/A2 (AO21D1BWP40P140)
+                                              0.0293    0.0000     0.9177 f
+  ex_stage/alu/adder/cog/U4/Z (AO21D1BWP40P140)
+                                              0.0294    0.0462     0.9639 f
+  ex_stage/alu/adder/cog/U5/A2 (AO21D1BWP40P140)
+                                              0.0294    0.0000     0.9639 f
+  ex_stage/alu/adder/cog/U5/Z (AO21D1BWP40P140)
+                                              0.0252    0.0437     1.0076 f
+  ex_stage/alu/adder/cog/io_co_2 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/io_c (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/Z (AO21D1BWP40P140)
+                                              0.0210    0.0397     1.1319 f
+  ex_stage/alu/adder/cog_16/io_co_2 (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/io_c (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/Z (AO21D1BWP40P140)
+                                              0.0210    0.0384     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/Z (AO21D1BWP40P140)
+                                              0.0210    0.0383     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/Z (AO21D1BWP40P140)
+                                              0.0169    0.0351     1.2437 f
+  ex_stage/alu/adder/cog_20/io_co_2 (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/io_c (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/B (OAI21D1BWP40P140)
+                                              0.0169    0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/ZN (OAI21D1BWP40P140)
+                                              0.0236    0.0160     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/B (OAI31D1BWP40P140)
+                                              0.0236    0.0000     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/ZN (OAI31D1BWP40P140)
+                                              0.0506    0.0414     1.3011 f
+  ex_stage/alu/adder/pgg_63/io_s (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/adder/io_s[63] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/U81/A1 (OAI21D1BWP40P140)      0.0506    0.0000     1.3011 f
+  ex_stage/alu/U81/ZN (OAI21D1BWP40P140)      0.0321    0.0261     1.3272 r
+  ex_stage/alu/U82/B (IOA21D1BWP40P140)       0.0321    0.0000     1.3272 r
+  ex_stage/alu/U82/ZN (IOA21D1BWP40P140)      0.0219    0.0201     1.3473 f
+  ex_stage/alu/U83/B2 (AOI22D1BWP40P140)      0.0219    0.0000     1.3473 f
+  ex_stage/alu/U83/ZN (AOI22D1BWP40P140)      0.0348    0.0300     1.3774 r
+  ex_stage/alu/U84/C (OAI211D1BWP40P140)      0.0348    0.0000     1.3774 r
+  ex_stage/alu/U84/ZN (OAI211D1BWP40P140)     0.2947    0.1842     1.5615 f
+  ex_stage/alu/io_out[0] (ysyx_22051098_ALU_0)          0.0000     1.5615 f
+  ex_stage/U549/B1 (AOI22D1BWP40P140)         0.2947    0.0000     1.5615 f
+  ex_stage/U549/ZN (AOI22D1BWP40P140)         0.0710    0.0688     1.6304 r
+  ex_stage/U550/A3 (ND3D1BWP40P140)           0.0710    0.0000     1.6304 r
+  ex_stage/U550/ZN (ND3D1BWP40P140)           0.0536    0.0499     1.6802 f
+  ex_stage/to_id_ex_result[0] (ysyx_22051098_EX_0)      0.0000     1.6802 f
+  id_stage/to_ex_ex_result[0] (ysyx_22051098_ID_0)      0.0000     1.6802 f
+  id_stage/U500/A2 (AOI22D1BWP40P140)         0.0536    0.0000     1.6802 f
+  id_stage/U500/ZN (AOI22D1BWP40P140)         0.0713    0.0335     1.7137 r
+  id_stage/U502/A1 (ND2D1BWP40P140)           0.0713    0.0000     1.7137 r
+  id_stage/U502/ZN (ND2D1BWP40P140)           0.0368    0.0330     1.7467 f
+  id_stage/U503/I (INVD1BWP40P140)            0.0368    0.0000     1.7467 f
+  id_stage/U503/ZN (INVD1BWP40P140)           0.0227    0.0244     1.7711 r
+  id_stage/U1192/A2 (ND2D1BWP40P140)          0.0227    0.0000     1.7711 r
+  id_stage/U1192/ZN (ND2D1BWP40P140)          0.0368    0.0285     1.7996 f
+  id_stage/U1195/A1 (IOA21D1BWP40P140)        0.0368    0.0000     1.7996 f
+  id_stage/U1195/ZN (IOA21D1BWP40P140)        0.0211    0.0390     1.8387 f
+  id_stage/U1196/C (OAI211D1BWP40P140)        0.0211    0.0000     1.8387 f
+  id_stage/U1196/ZN (OAI211D1BWP40P140)       0.0214    0.0183     1.8569 r
+  id_stage/U1200/A1 (AOI21D1BWP40P140)        0.0214    0.0000     1.8569 r
+  id_stage/U1200/ZN (AOI21D1BWP40P140)        0.0233    0.0206     1.8776 f
+  id_stage/U1203/A1 (OA21D1BWP40P140)         0.0233    0.0000     1.8776 f
+  id_stage/U1203/Z (OA21D1BWP40P140)          0.0123    0.0290     1.9066 f
+  id_stage/U1205/A2 (OA21D1BWP40P140)         0.0123    0.0000     1.9066 f
+  id_stage/U1205/Z (OA21D1BWP40P140)          0.0126    0.0279     1.9345 f
+  id_stage/U1208/A2 (AOI211D1BWP40P140)       0.0126    0.0000     1.9345 f
+  id_stage/U1208/ZN (AOI211D1BWP40P140)       0.0340    0.0257     1.9602 r
+  id_stage/U1232/A1 (OAI211D1BWP40P140)       0.0340    0.0000     1.9602 r
+  id_stage/U1232/ZN (OAI211D1BWP40P140)       0.0401    0.0345     1.9947 f
+  id_stage/U1245/B1 (AOI221D1BWP40P140)       0.0401    0.0000     1.9947 f
+  id_stage/U1245/ZN (AOI221D1BWP40P140)       0.0499    0.0524     2.0471 r
+  id_stage/U1246/B2 (OAI22D1BWP40P140)        0.0499    0.0000     2.0471 r
+  id_stage/U1246/ZN (OAI22D1BWP40P140)        0.0333    0.0380     2.0851 f
+  id_stage/U1247/B (AOI21D1BWP40P140)         0.0333    0.0000     2.0851 f
+  id_stage/U1247/ZN (AOI21D1BWP40P140)        0.0282    0.0292     2.1143 r
+  id_stage/U1249/B (OAI211D1BWP40P140)        0.0282    0.0000     2.1143 r
+  id_stage/U1249/ZN (OAI211D1BWP40P140)       0.0535    0.0469     2.1612 f
+  id_stage/U1290/B1 (MAOI22D1BWP40P140)       0.0535    0.0000     2.1612 f
+  id_stage/U1290/ZN (MAOI22D1BWP40P140)       0.0264    0.0396     2.2008 f
+  id_stage/U1291/B1 (OAI22D1BWP40P140)        0.0264    0.0000     2.2008 f
+  id_stage/U1291/ZN (OAI22D1BWP40P140)        0.0322    0.0256     2.2264 r
+  id_stage/U1292/C (AOI211D1BWP40P140)        0.0322    0.0000     2.2264 r
+  id_stage/U1292/ZN (AOI211D1BWP40P140)       0.0300    0.0225     2.2488 f
+  id_stage/U1293/A1 (OAI21D1BWP40P140)        0.0300    0.0000     2.2488 f
+  id_stage/U1293/ZN (OAI21D1BWP40P140)        0.0634    0.0262     2.2750 r
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     2.2750 r
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     2.2750 r
+  if_stage/U89/A1 (ND2D1BWP40P140)            0.0634    0.0000     2.2750 r
+  if_stage/U89/ZN (ND2D1BWP40P140)            0.0539    0.0465     2.3215 f
+  if_stage/U133/I (INVD1BWP40P140)            0.0539    0.0000     2.3215 f
+  if_stage/U133/ZN (INVD1BWP40P140)           0.0234    0.0248     2.3463 r
+  if_stage/U14/A1 (NR2D1BWP40P140)            0.0234    0.0000     2.3463 r
+  if_stage/U14/ZN (NR2D1BWP40P140)            0.0200    0.0190     2.3653 f
+  if_stage/U11/A2 (ND2D1BWP40P140)            0.0200    0.0000     2.3653 f
+  if_stage/U11/ZN (ND2D1BWP40P140)            0.0335    0.0240     2.3893 r
+  if_stage/U134/I (INVD1BWP40P140)            0.0335    0.0000     2.3893 r
+  if_stage/U134/ZN (INVD1BWP40P140)           0.1401    0.0929     2.4822 f
+  if_stage/U281/B (OAI21D1BWP40P140)          0.1401    0.0000     2.4822 f
+  if_stage/U281/ZN (OAI21D1BWP40P140)         0.0450    0.0407     2.5229 r
+  if_stage/U284/A2 (OAI211D1BWP40P140)        0.0450    0.0000     2.5229 r
+  if_stage/U284/ZN (OAI211D1BWP40P140)        0.0884    0.0631     2.5860 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     2.5860 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     2.5860 f
+  icache/U690/B1 (AOI22D1BWP40P140)           0.0884    0.0000     2.5860 f
+  icache/U690/ZN (AOI22D1BWP40P140)           0.0550    0.0428     2.6288 r
+  icache/U691/B (OAI21D1BWP40P140)            0.0550    0.0000     2.6288 r
+  icache/U691/ZN (OAI21D1BWP40P140)           0.1225    0.0890     2.7178 f
+  icache/meta_arrays_1/io_addr[2] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     2.7178 f
+  icache/meta_arrays_1/U158/I (INVD1BWP40P140)
+                                              0.1225    0.0000     2.7178 f
+  icache/meta_arrays_1/U158/ZN (INVD1BWP40P140)
+                                              0.0716    0.0722     2.7900 r
+  icache/meta_arrays_1/U160/A1 (ND2D1BWP40P140)
+                                              0.0716    0.0000     2.7900 r
+  icache/meta_arrays_1/U160/ZN (ND2D1BWP40P140)
+                                              0.0626    0.0536     2.8436 f
+  icache/meta_arrays_1/U183/B1 (INR2D1BWP40P140)
+                                              0.0626    0.0000     2.8436 f
+  icache/meta_arrays_1/U183/ZN (INR2D1BWP40P140)
+                                              0.4348    0.2714     3.1150 r
+  icache/meta_arrays_1/U426/I (INVD1BWP40P140)
+                                              0.4348    0.0000     3.1150 r
+  icache/meta_arrays_1/U426/ZN (INVD1BWP40P140)
+                                              0.1061    0.0710     3.1859 f
+  icache/meta_arrays_1/U427/I (INVD1BWP40P140)
+                                              0.1061    0.0000     3.1859 f
+  icache/meta_arrays_1/U427/ZN (INVD1BWP40P140)
+                                              0.1474    0.1208     3.3067 r
+  icache/meta_arrays_1/U1715/B1 (AOI22D1BWP40P140)
+                                              0.1474    0.0000     3.3067 r
+  icache/meta_arrays_1/U1715/ZN (AOI22D1BWP40P140)
+                                              0.0910    0.0474     3.3541 f
+  icache/meta_arrays_1/U1718/A2 (ND4D1BWP40P140)
+                                              0.0910    0.0000     3.3541 f
+  icache/meta_arrays_1/U1718/ZN (ND4D1BWP40P140)
+                                              0.0318    0.0287     3.3829 r
+  icache/meta_arrays_1/U1724/A3 (OR4D1BWP40P140)
+                                              0.0318    0.0000     3.3829 r
+  icache/meta_arrays_1/U1724/Z (OR4D1BWP40P140)
+                                              0.0122    0.0338     3.4166 r
+  icache/meta_arrays_1/U1725/B2 (AOI22D1BWP40P140)
+                                              0.0122    0.0000     3.4166 r
+  icache/meta_arrays_1/U1725/ZN (AOI22D1BWP40P140)
+                                              0.0653    0.0249     3.4415 f
+  icache/meta_arrays_1/U1747/A3 (ND4D1BWP40P140)
+                                              0.0653    0.0000     3.4415 f
+  icache/meta_arrays_1/U1747/ZN (ND4D1BWP40P140)
+                                              0.0266    0.0293     3.4708 r
+  icache/meta_arrays_1/io_rdata_tag[13] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     3.4708 r
+  icache/U551/B2 (OAI22D1BWP40P140)           0.0266    0.0000     3.4708 r
+  icache/U551/ZN (OAI22D1BWP40P140)           0.0307    0.0334     3.5042 f
+  icache/U552/C (AOI221D1BWP40P140)           0.0307    0.0000     3.5042 f
+  icache/U552/ZN (AOI221D1BWP40P140)          0.0441    0.0421     3.5464 r
+  icache/U553/C (OAI211D1BWP40P140)           0.0441    0.0000     3.5464 r
+  icache/U553/ZN (OAI211D1BWP40P140)          0.0400    0.0425     3.5889 f
+  icache/U554/B (AOI21D1BWP40P140)            0.0400    0.0000     3.5889 f
+  icache/U554/ZN (AOI21D1BWP40P140)           0.0292    0.0301     3.6190 r
+  icache/U588/A2 (ND4D1BWP40P140)             0.0292    0.0000     3.6190 r
+  icache/U588/ZN (ND4D1BWP40P140)             0.0721    0.0532     3.6721 f
+  icache/U623/A1 (AN2D1BWP40P140)             0.0721    0.0000     3.6721 f
+  icache/U623/Z (AN2D1BWP40P140)              0.0165    0.0456     3.7177 f
+  icache/U624/B1 (IND3D1BWP40P140)            0.0165    0.0000     3.7177 f
+  icache/U624/ZN (IND3D1BWP40P140)            0.0188    0.0151     3.7328 r
+  icache/U625/A2 (OAI21D1BWP40P140)           0.0188    0.0000     3.7328 r
+  icache/U625/ZN (OAI21D1BWP40P140)           0.0939    0.0590     3.7919 f
+  icache/U626/A2 (NR2D1BWP40P140)             0.0939    0.0000     3.7919 f
+  icache/U626/ZN (NR2D1BWP40P140)             0.0453    0.0511     3.8429 r
+  icache/U655/I (INVD1BWP40P140)              0.0453    0.0000     3.8429 r
+  icache/U655/ZN (INVD1BWP40P140)             0.0995    0.0735     3.9165 f
+  icache/U959/B (OAI21D1BWP40P140)            0.0995    0.0000     3.9165 f
+  icache/U959/ZN (OAI21D1BWP40P140)           0.0481    0.0402     3.9566 r
+  icache/U962/B (AO21D1BWP40P140)             0.0481    0.0000     3.9566 r
+  icache/U962/Z (AO21D1BWP40P140)             0.0176    0.0334     3.9900 r
+  icache/U963/B2 (AOI22D1BWP40P140)           0.0176    0.0000     3.9900 r
+  icache/U963/ZN (AOI22D1BWP40P140)           0.0625    0.0262     4.0163 f
+  icache/U964/B (OAI31D1BWP40P140)            0.0625    0.0000     4.0163 f
+  icache/U964/ZN (OAI31D1BWP40P140)           0.0350    0.0297     4.0460 r
+  icache/burst_addr_rf_reg_7_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     4.0460 r
+  data arrival time                                                4.0460
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_7_/CP (DFQD1BWP40P140)       0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -4.0460
+  --------------------------------------------------------------------------
+  slack (MET)                                                      2.2731
+
+
+  Startpoint: ex_stage/alu_op_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_9_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/alu_op_reg_0_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/alu_op_reg_0_/Q (DFQD1BWP40P140)   0.3344    0.2560     0.2560 f
+  ex_stage/alu/io_op[0] (ysyx_22051098_ALU_0)           0.0000     0.2560 f
+  ex_stage/alu/U4/I (INVD1BWP40P140)          0.3344    0.0000     0.2560 f
+  ex_stage/alu/U4/ZN (INVD1BWP40P140)         0.3219    0.2897     0.5457 r
+  ex_stage/alu/U400/B2 (AOI22D1BWP40P140)     0.3219    0.0000     0.5457 r
+  ex_stage/alu/U400/ZN (AOI22D1BWP40P140)     0.0933    0.0691     0.6148 f
+  ex_stage/alu/adder/io_b[5] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/io_b (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/A1 (NR2D1BWP40P140)
+                                              0.0933    0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/ZN (NR2D1BWP40P140)
+                                              0.0437    0.0438     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/I (INVD1BWP40P140)
+                                              0.0437    0.0000     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/ZN (INVD1BWP40P140)
+                                              0.0244    0.0245     0.6831 f
+  ex_stage/alu/adder/pgg_5/io_p (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/io_p_1 (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/A2 (AO21D1BWP40P140)
+                                              0.0244    0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/Z (AO21D1BWP40P140)
+                                              0.0136    0.0335     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/A1 (AO21D1BWP40P140)
+                                              0.0136    0.0000     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/Z (AO21D1BWP40P140)
+                                              0.0129    0.0255     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/A2 (AO21D1BWP40P140)
+                                              0.0129    0.0000     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/Z (AO21D1BWP40P140)
+                                              0.0186    0.0340     0.7762 f
+  ex_stage/alu/adder/cog_3/io_go (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/io_g_1 (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/B (AO21D1BWP40P140)
+                                              0.0186    0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/Z (AO21D1BWP40P140)
+                                              0.0135    0.0356     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/A1 (AO21D1BWP40P140)
+                                              0.0135    0.0000     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/Z (AO21D1BWP40P140)
+                                              0.0128    0.0255     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/A2 (AO21D1BWP40P140)
+                                              0.0128    0.0000     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/Z (AO21D1BWP40P140)
+                                              0.0184    0.0338     0.8712 f
+  ex_stage/alu/adder/cog_1/io_go (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/io_g_0 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/B (AO21D1BWP40P140)
+                                              0.0184    0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/Z (AO21D1BWP40P140)
+                                              0.0293    0.0466     0.9177 f
+  ex_stage/alu/adder/cog/U4/A2 (AO21D1BWP40P140)
+                                              0.0293    0.0000     0.9177 f
+  ex_stage/alu/adder/cog/U4/Z (AO21D1BWP40P140)
+                                              0.0294    0.0462     0.9639 f
+  ex_stage/alu/adder/cog/U5/A2 (AO21D1BWP40P140)
+                                              0.0294    0.0000     0.9639 f
+  ex_stage/alu/adder/cog/U5/Z (AO21D1BWP40P140)
+                                              0.0252    0.0437     1.0076 f
+  ex_stage/alu/adder/cog/io_co_2 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/io_c (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/Z (AO21D1BWP40P140)
+                                              0.0210    0.0397     1.1319 f
+  ex_stage/alu/adder/cog_16/io_co_2 (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/io_c (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/Z (AO21D1BWP40P140)
+                                              0.0210    0.0384     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/Z (AO21D1BWP40P140)
+                                              0.0210    0.0383     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/Z (AO21D1BWP40P140)
+                                              0.0169    0.0351     1.2437 f
+  ex_stage/alu/adder/cog_20/io_co_2 (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/io_c (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/B (OAI21D1BWP40P140)
+                                              0.0169    0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/ZN (OAI21D1BWP40P140)
+                                              0.0236    0.0160     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/B (OAI31D1BWP40P140)
+                                              0.0236    0.0000     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/ZN (OAI31D1BWP40P140)
+                                              0.0506    0.0414     1.3011 f
+  ex_stage/alu/adder/pgg_63/io_s (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/adder/io_s[63] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/U81/A1 (OAI21D1BWP40P140)      0.0506    0.0000     1.3011 f
+  ex_stage/alu/U81/ZN (OAI21D1BWP40P140)      0.0321    0.0261     1.3272 r
+  ex_stage/alu/U82/B (IOA21D1BWP40P140)       0.0321    0.0000     1.3272 r
+  ex_stage/alu/U82/ZN (IOA21D1BWP40P140)      0.0219    0.0201     1.3473 f
+  ex_stage/alu/U83/B2 (AOI22D1BWP40P140)      0.0219    0.0000     1.3473 f
+  ex_stage/alu/U83/ZN (AOI22D1BWP40P140)      0.0348    0.0300     1.3774 r
+  ex_stage/alu/U84/C (OAI211D1BWP40P140)      0.0348    0.0000     1.3774 r
+  ex_stage/alu/U84/ZN (OAI211D1BWP40P140)     0.2947    0.1842     1.5615 f
+  ex_stage/alu/io_out[0] (ysyx_22051098_ALU_0)          0.0000     1.5615 f
+  ex_stage/U549/B1 (AOI22D1BWP40P140)         0.2947    0.0000     1.5615 f
+  ex_stage/U549/ZN (AOI22D1BWP40P140)         0.0710    0.0688     1.6304 r
+  ex_stage/U550/A3 (ND3D1BWP40P140)           0.0710    0.0000     1.6304 r
+  ex_stage/U550/ZN (ND3D1BWP40P140)           0.0536    0.0499     1.6802 f
+  ex_stage/to_id_ex_result[0] (ysyx_22051098_EX_0)      0.0000     1.6802 f
+  id_stage/to_ex_ex_result[0] (ysyx_22051098_ID_0)      0.0000     1.6802 f
+  id_stage/U500/A2 (AOI22D1BWP40P140)         0.0536    0.0000     1.6802 f
+  id_stage/U500/ZN (AOI22D1BWP40P140)         0.0713    0.0335     1.7137 r
+  id_stage/U502/A1 (ND2D1BWP40P140)           0.0713    0.0000     1.7137 r
+  id_stage/U502/ZN (ND2D1BWP40P140)           0.0368    0.0330     1.7467 f
+  id_stage/U503/I (INVD1BWP40P140)            0.0368    0.0000     1.7467 f
+  id_stage/U503/ZN (INVD1BWP40P140)           0.0227    0.0244     1.7711 r
+  id_stage/U1192/A2 (ND2D1BWP40P140)          0.0227    0.0000     1.7711 r
+  id_stage/U1192/ZN (ND2D1BWP40P140)          0.0368    0.0285     1.7996 f
+  id_stage/U1195/A1 (IOA21D1BWP40P140)        0.0368    0.0000     1.7996 f
+  id_stage/U1195/ZN (IOA21D1BWP40P140)        0.0211    0.0390     1.8387 f
+  id_stage/U1196/C (OAI211D1BWP40P140)        0.0211    0.0000     1.8387 f
+  id_stage/U1196/ZN (OAI211D1BWP40P140)       0.0214    0.0183     1.8569 r
+  id_stage/U1200/A1 (AOI21D1BWP40P140)        0.0214    0.0000     1.8569 r
+  id_stage/U1200/ZN (AOI21D1BWP40P140)        0.0233    0.0206     1.8776 f
+  id_stage/U1203/A1 (OA21D1BWP40P140)         0.0233    0.0000     1.8776 f
+  id_stage/U1203/Z (OA21D1BWP40P140)          0.0123    0.0290     1.9066 f
+  id_stage/U1205/A2 (OA21D1BWP40P140)         0.0123    0.0000     1.9066 f
+  id_stage/U1205/Z (OA21D1BWP40P140)          0.0126    0.0279     1.9345 f
+  id_stage/U1208/A2 (AOI211D1BWP40P140)       0.0126    0.0000     1.9345 f
+  id_stage/U1208/ZN (AOI211D1BWP40P140)       0.0340    0.0257     1.9602 r
+  id_stage/U1232/A1 (OAI211D1BWP40P140)       0.0340    0.0000     1.9602 r
+  id_stage/U1232/ZN (OAI211D1BWP40P140)       0.0401    0.0345     1.9947 f
+  id_stage/U1245/B1 (AOI221D1BWP40P140)       0.0401    0.0000     1.9947 f
+  id_stage/U1245/ZN (AOI221D1BWP40P140)       0.0499    0.0524     2.0471 r
+  id_stage/U1246/B2 (OAI22D1BWP40P140)        0.0499    0.0000     2.0471 r
+  id_stage/U1246/ZN (OAI22D1BWP40P140)        0.0333    0.0380     2.0851 f
+  id_stage/U1247/B (AOI21D1BWP40P140)         0.0333    0.0000     2.0851 f
+  id_stage/U1247/ZN (AOI21D1BWP40P140)        0.0282    0.0292     2.1143 r
+  id_stage/U1249/B (OAI211D1BWP40P140)        0.0282    0.0000     2.1143 r
+  id_stage/U1249/ZN (OAI211D1BWP40P140)       0.0535    0.0469     2.1612 f
+  id_stage/U1290/B1 (MAOI22D1BWP40P140)       0.0535    0.0000     2.1612 f
+  id_stage/U1290/ZN (MAOI22D1BWP40P140)       0.0264    0.0396     2.2008 f
+  id_stage/U1291/B1 (OAI22D1BWP40P140)        0.0264    0.0000     2.2008 f
+  id_stage/U1291/ZN (OAI22D1BWP40P140)        0.0322    0.0256     2.2264 r
+  id_stage/U1292/C (AOI211D1BWP40P140)        0.0322    0.0000     2.2264 r
+  id_stage/U1292/ZN (AOI211D1BWP40P140)       0.0300    0.0225     2.2488 f
+  id_stage/U1293/A1 (OAI21D1BWP40P140)        0.0300    0.0000     2.2488 f
+  id_stage/U1293/ZN (OAI21D1BWP40P140)        0.0634    0.0262     2.2750 r
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     2.2750 r
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     2.2750 r
+  if_stage/U89/A1 (ND2D1BWP40P140)            0.0634    0.0000     2.2750 r
+  if_stage/U89/ZN (ND2D1BWP40P140)            0.0539    0.0465     2.3215 f
+  if_stage/U133/I (INVD1BWP40P140)            0.0539    0.0000     2.3215 f
+  if_stage/U133/ZN (INVD1BWP40P140)           0.0234    0.0248     2.3463 r
+  if_stage/U14/A1 (NR2D1BWP40P140)            0.0234    0.0000     2.3463 r
+  if_stage/U14/ZN (NR2D1BWP40P140)            0.0200    0.0190     2.3653 f
+  if_stage/U11/A2 (ND2D1BWP40P140)            0.0200    0.0000     2.3653 f
+  if_stage/U11/ZN (ND2D1BWP40P140)            0.0335    0.0240     2.3893 r
+  if_stage/U134/I (INVD1BWP40P140)            0.0335    0.0000     2.3893 r
+  if_stage/U134/ZN (INVD1BWP40P140)           0.1401    0.0929     2.4822 f
+  if_stage/U281/B (OAI21D1BWP40P140)          0.1401    0.0000     2.4822 f
+  if_stage/U281/ZN (OAI21D1BWP40P140)         0.0450    0.0407     2.5229 r
+  if_stage/U284/A2 (OAI211D1BWP40P140)        0.0450    0.0000     2.5229 r
+  if_stage/U284/ZN (OAI211D1BWP40P140)        0.0884    0.0631     2.5860 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     2.5860 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     2.5860 f
+  icache/U690/B1 (AOI22D1BWP40P140)           0.0884    0.0000     2.5860 f
+  icache/U690/ZN (AOI22D1BWP40P140)           0.0550    0.0428     2.6288 r
+  icache/U691/B (OAI21D1BWP40P140)            0.0550    0.0000     2.6288 r
+  icache/U691/ZN (OAI21D1BWP40P140)           0.1225    0.0890     2.7178 f
+  icache/meta_arrays_1/io_addr[2] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     2.7178 f
+  icache/meta_arrays_1/U158/I (INVD1BWP40P140)
+                                              0.1225    0.0000     2.7178 f
+  icache/meta_arrays_1/U158/ZN (INVD1BWP40P140)
+                                              0.0716    0.0722     2.7900 r
+  icache/meta_arrays_1/U160/A1 (ND2D1BWP40P140)
+                                              0.0716    0.0000     2.7900 r
+  icache/meta_arrays_1/U160/ZN (ND2D1BWP40P140)
+                                              0.0626    0.0536     2.8436 f
+  icache/meta_arrays_1/U183/B1 (INR2D1BWP40P140)
+                                              0.0626    0.0000     2.8436 f
+  icache/meta_arrays_1/U183/ZN (INR2D1BWP40P140)
+                                              0.4348    0.2714     3.1150 r
+  icache/meta_arrays_1/U426/I (INVD1BWP40P140)
+                                              0.4348    0.0000     3.1150 r
+  icache/meta_arrays_1/U426/ZN (INVD1BWP40P140)
+                                              0.1061    0.0710     3.1859 f
+  icache/meta_arrays_1/U427/I (INVD1BWP40P140)
+                                              0.1061    0.0000     3.1859 f
+  icache/meta_arrays_1/U427/ZN (INVD1BWP40P140)
+                                              0.1474    0.1208     3.3067 r
+  icache/meta_arrays_1/U1715/B1 (AOI22D1BWP40P140)
+                                              0.1474    0.0000     3.3067 r
+  icache/meta_arrays_1/U1715/ZN (AOI22D1BWP40P140)
+                                              0.0910    0.0474     3.3541 f
+  icache/meta_arrays_1/U1718/A2 (ND4D1BWP40P140)
+                                              0.0910    0.0000     3.3541 f
+  icache/meta_arrays_1/U1718/ZN (ND4D1BWP40P140)
+                                              0.0318    0.0287     3.3829 r
+  icache/meta_arrays_1/U1724/A3 (OR4D1BWP40P140)
+                                              0.0318    0.0000     3.3829 r
+  icache/meta_arrays_1/U1724/Z (OR4D1BWP40P140)
+                                              0.0122    0.0338     3.4166 r
+  icache/meta_arrays_1/U1725/B2 (AOI22D1BWP40P140)
+                                              0.0122    0.0000     3.4166 r
+  icache/meta_arrays_1/U1725/ZN (AOI22D1BWP40P140)
+                                              0.0653    0.0249     3.4415 f
+  icache/meta_arrays_1/U1747/A3 (ND4D1BWP40P140)
+                                              0.0653    0.0000     3.4415 f
+  icache/meta_arrays_1/U1747/ZN (ND4D1BWP40P140)
+                                              0.0266    0.0293     3.4708 r
+  icache/meta_arrays_1/io_rdata_tag[13] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     3.4708 r
+  icache/U551/B2 (OAI22D1BWP40P140)           0.0266    0.0000     3.4708 r
+  icache/U551/ZN (OAI22D1BWP40P140)           0.0307    0.0334     3.5042 f
+  icache/U552/C (AOI221D1BWP40P140)           0.0307    0.0000     3.5042 f
+  icache/U552/ZN (AOI221D1BWP40P140)          0.0441    0.0421     3.5464 r
+  icache/U553/C (OAI211D1BWP40P140)           0.0441    0.0000     3.5464 r
+  icache/U553/ZN (OAI211D1BWP40P140)          0.0400    0.0425     3.5889 f
+  icache/U554/B (AOI21D1BWP40P140)            0.0400    0.0000     3.5889 f
+  icache/U554/ZN (AOI21D1BWP40P140)           0.0292    0.0301     3.6190 r
+  icache/U588/A2 (ND4D1BWP40P140)             0.0292    0.0000     3.6190 r
+  icache/U588/ZN (ND4D1BWP40P140)             0.0721    0.0532     3.6721 f
+  icache/U623/A1 (AN2D1BWP40P140)             0.0721    0.0000     3.6721 f
+  icache/U623/Z (AN2D1BWP40P140)              0.0165    0.0456     3.7177 f
+  icache/U624/B1 (IND3D1BWP40P140)            0.0165    0.0000     3.7177 f
+  icache/U624/ZN (IND3D1BWP40P140)            0.0188    0.0151     3.7328 r
+  icache/U625/A2 (OAI21D1BWP40P140)           0.0188    0.0000     3.7328 r
+  icache/U625/ZN (OAI21D1BWP40P140)           0.0939    0.0590     3.7919 f
+  icache/U626/A2 (NR2D1BWP40P140)             0.0939    0.0000     3.7919 f
+  icache/U626/ZN (NR2D1BWP40P140)             0.0453    0.0511     3.8429 r
+  icache/U655/I (INVD1BWP40P140)              0.0453    0.0000     3.8429 r
+  icache/U655/ZN (INVD1BWP40P140)             0.0995    0.0735     3.9165 f
+  icache/U966/B (OAI21D1BWP40P140)            0.0995    0.0000     3.9165 f
+  icache/U966/ZN (OAI21D1BWP40P140)           0.0481    0.0402     3.9566 r
+  icache/U969/B (AO21D1BWP40P140)             0.0481    0.0000     3.9566 r
+  icache/U969/Z (AO21D1BWP40P140)             0.0176    0.0334     3.9900 r
+  icache/U970/B2 (AOI22D1BWP40P140)           0.0176    0.0000     3.9900 r
+  icache/U970/ZN (AOI22D1BWP40P140)           0.0625    0.0262     4.0163 f
+  icache/U971/B (OAI31D1BWP40P140)            0.0625    0.0000     4.0163 f
+  icache/U971/ZN (OAI31D1BWP40P140)           0.0350    0.0297     4.0460 r
+  icache/burst_addr_rf_reg_9_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     4.0460 r
+  data arrival time                                                4.0460
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_9_/CP (DFQD1BWP40P140)       0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -4.0460
+  --------------------------------------------------------------------------
+  slack (MET)                                                      2.2731
+
+
+  Startpoint: ex_stage/alu_op_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_11_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/alu_op_reg_0_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/alu_op_reg_0_/Q (DFQD1BWP40P140)   0.3344    0.2560     0.2560 f
+  ex_stage/alu/io_op[0] (ysyx_22051098_ALU_0)           0.0000     0.2560 f
+  ex_stage/alu/U4/I (INVD1BWP40P140)          0.3344    0.0000     0.2560 f
+  ex_stage/alu/U4/ZN (INVD1BWP40P140)         0.3219    0.2897     0.5457 r
+  ex_stage/alu/U400/B2 (AOI22D1BWP40P140)     0.3219    0.0000     0.5457 r
+  ex_stage/alu/U400/ZN (AOI22D1BWP40P140)     0.0933    0.0691     0.6148 f
+  ex_stage/alu/adder/io_b[5] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/io_b (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/A1 (NR2D1BWP40P140)
+                                              0.0933    0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/ZN (NR2D1BWP40P140)
+                                              0.0437    0.0438     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/I (INVD1BWP40P140)
+                                              0.0437    0.0000     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/ZN (INVD1BWP40P140)
+                                              0.0244    0.0245     0.6831 f
+  ex_stage/alu/adder/pgg_5/io_p (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/io_p_1 (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/A2 (AO21D1BWP40P140)
+                                              0.0244    0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/Z (AO21D1BWP40P140)
+                                              0.0136    0.0335     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/A1 (AO21D1BWP40P140)
+                                              0.0136    0.0000     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/Z (AO21D1BWP40P140)
+                                              0.0129    0.0255     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/A2 (AO21D1BWP40P140)
+                                              0.0129    0.0000     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/Z (AO21D1BWP40P140)
+                                              0.0186    0.0340     0.7762 f
+  ex_stage/alu/adder/cog_3/io_go (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/io_g_1 (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/B (AO21D1BWP40P140)
+                                              0.0186    0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/Z (AO21D1BWP40P140)
+                                              0.0135    0.0356     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/A1 (AO21D1BWP40P140)
+                                              0.0135    0.0000     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/Z (AO21D1BWP40P140)
+                                              0.0128    0.0255     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/A2 (AO21D1BWP40P140)
+                                              0.0128    0.0000     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/Z (AO21D1BWP40P140)
+                                              0.0184    0.0338     0.8712 f
+  ex_stage/alu/adder/cog_1/io_go (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/io_g_0 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/B (AO21D1BWP40P140)
+                                              0.0184    0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/Z (AO21D1BWP40P140)
+                                              0.0293    0.0466     0.9177 f
+  ex_stage/alu/adder/cog/U4/A2 (AO21D1BWP40P140)
+                                              0.0293    0.0000     0.9177 f
+  ex_stage/alu/adder/cog/U4/Z (AO21D1BWP40P140)
+                                              0.0294    0.0462     0.9639 f
+  ex_stage/alu/adder/cog/U5/A2 (AO21D1BWP40P140)
+                                              0.0294    0.0000     0.9639 f
+  ex_stage/alu/adder/cog/U5/Z (AO21D1BWP40P140)
+                                              0.0252    0.0437     1.0076 f
+  ex_stage/alu/adder/cog/io_co_2 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/io_c (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/Z (AO21D1BWP40P140)
+                                              0.0210    0.0397     1.1319 f
+  ex_stage/alu/adder/cog_16/io_co_2 (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/io_c (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/Z (AO21D1BWP40P140)
+                                              0.0210    0.0384     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/Z (AO21D1BWP40P140)
+                                              0.0210    0.0383     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/Z (AO21D1BWP40P140)
+                                              0.0169    0.0351     1.2437 f
+  ex_stage/alu/adder/cog_20/io_co_2 (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/io_c (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/B (OAI21D1BWP40P140)
+                                              0.0169    0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/ZN (OAI21D1BWP40P140)
+                                              0.0236    0.0160     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/B (OAI31D1BWP40P140)
+                                              0.0236    0.0000     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/ZN (OAI31D1BWP40P140)
+                                              0.0506    0.0414     1.3011 f
+  ex_stage/alu/adder/pgg_63/io_s (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/adder/io_s[63] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/U81/A1 (OAI21D1BWP40P140)      0.0506    0.0000     1.3011 f
+  ex_stage/alu/U81/ZN (OAI21D1BWP40P140)      0.0321    0.0261     1.3272 r
+  ex_stage/alu/U82/B (IOA21D1BWP40P140)       0.0321    0.0000     1.3272 r
+  ex_stage/alu/U82/ZN (IOA21D1BWP40P140)      0.0219    0.0201     1.3473 f
+  ex_stage/alu/U83/B2 (AOI22D1BWP40P140)      0.0219    0.0000     1.3473 f
+  ex_stage/alu/U83/ZN (AOI22D1BWP40P140)      0.0348    0.0300     1.3774 r
+  ex_stage/alu/U84/C (OAI211D1BWP40P140)      0.0348    0.0000     1.3774 r
+  ex_stage/alu/U84/ZN (OAI211D1BWP40P140)     0.2947    0.1842     1.5615 f
+  ex_stage/alu/io_out[0] (ysyx_22051098_ALU_0)          0.0000     1.5615 f
+  ex_stage/U549/B1 (AOI22D1BWP40P140)         0.2947    0.0000     1.5615 f
+  ex_stage/U549/ZN (AOI22D1BWP40P140)         0.0710    0.0688     1.6304 r
+  ex_stage/U550/A3 (ND3D1BWP40P140)           0.0710    0.0000     1.6304 r
+  ex_stage/U550/ZN (ND3D1BWP40P140)           0.0536    0.0499     1.6802 f
+  ex_stage/to_id_ex_result[0] (ysyx_22051098_EX_0)      0.0000     1.6802 f
+  id_stage/to_ex_ex_result[0] (ysyx_22051098_ID_0)      0.0000     1.6802 f
+  id_stage/U500/A2 (AOI22D1BWP40P140)         0.0536    0.0000     1.6802 f
+  id_stage/U500/ZN (AOI22D1BWP40P140)         0.0713    0.0335     1.7137 r
+  id_stage/U502/A1 (ND2D1BWP40P140)           0.0713    0.0000     1.7137 r
+  id_stage/U502/ZN (ND2D1BWP40P140)           0.0368    0.0330     1.7467 f
+  id_stage/U503/I (INVD1BWP40P140)            0.0368    0.0000     1.7467 f
+  id_stage/U503/ZN (INVD1BWP40P140)           0.0227    0.0244     1.7711 r
+  id_stage/U1192/A2 (ND2D1BWP40P140)          0.0227    0.0000     1.7711 r
+  id_stage/U1192/ZN (ND2D1BWP40P140)          0.0368    0.0285     1.7996 f
+  id_stage/U1195/A1 (IOA21D1BWP40P140)        0.0368    0.0000     1.7996 f
+  id_stage/U1195/ZN (IOA21D1BWP40P140)        0.0211    0.0390     1.8387 f
+  id_stage/U1196/C (OAI211D1BWP40P140)        0.0211    0.0000     1.8387 f
+  id_stage/U1196/ZN (OAI211D1BWP40P140)       0.0214    0.0183     1.8569 r
+  id_stage/U1200/A1 (AOI21D1BWP40P140)        0.0214    0.0000     1.8569 r
+  id_stage/U1200/ZN (AOI21D1BWP40P140)        0.0233    0.0206     1.8776 f
+  id_stage/U1203/A1 (OA21D1BWP40P140)         0.0233    0.0000     1.8776 f
+  id_stage/U1203/Z (OA21D1BWP40P140)          0.0123    0.0290     1.9066 f
+  id_stage/U1205/A2 (OA21D1BWP40P140)         0.0123    0.0000     1.9066 f
+  id_stage/U1205/Z (OA21D1BWP40P140)          0.0126    0.0279     1.9345 f
+  id_stage/U1208/A2 (AOI211D1BWP40P140)       0.0126    0.0000     1.9345 f
+  id_stage/U1208/ZN (AOI211D1BWP40P140)       0.0340    0.0257     1.9602 r
+  id_stage/U1232/A1 (OAI211D1BWP40P140)       0.0340    0.0000     1.9602 r
+  id_stage/U1232/ZN (OAI211D1BWP40P140)       0.0401    0.0345     1.9947 f
+  id_stage/U1245/B1 (AOI221D1BWP40P140)       0.0401    0.0000     1.9947 f
+  id_stage/U1245/ZN (AOI221D1BWP40P140)       0.0499    0.0524     2.0471 r
+  id_stage/U1246/B2 (OAI22D1BWP40P140)        0.0499    0.0000     2.0471 r
+  id_stage/U1246/ZN (OAI22D1BWP40P140)        0.0333    0.0380     2.0851 f
+  id_stage/U1247/B (AOI21D1BWP40P140)         0.0333    0.0000     2.0851 f
+  id_stage/U1247/ZN (AOI21D1BWP40P140)        0.0282    0.0292     2.1143 r
+  id_stage/U1249/B (OAI211D1BWP40P140)        0.0282    0.0000     2.1143 r
+  id_stage/U1249/ZN (OAI211D1BWP40P140)       0.0535    0.0469     2.1612 f
+  id_stage/U1290/B1 (MAOI22D1BWP40P140)       0.0535    0.0000     2.1612 f
+  id_stage/U1290/ZN (MAOI22D1BWP40P140)       0.0264    0.0396     2.2008 f
+  id_stage/U1291/B1 (OAI22D1BWP40P140)        0.0264    0.0000     2.2008 f
+  id_stage/U1291/ZN (OAI22D1BWP40P140)        0.0322    0.0256     2.2264 r
+  id_stage/U1292/C (AOI211D1BWP40P140)        0.0322    0.0000     2.2264 r
+  id_stage/U1292/ZN (AOI211D1BWP40P140)       0.0300    0.0225     2.2488 f
+  id_stage/U1293/A1 (OAI21D1BWP40P140)        0.0300    0.0000     2.2488 f
+  id_stage/U1293/ZN (OAI21D1BWP40P140)        0.0634    0.0262     2.2750 r
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     2.2750 r
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     2.2750 r
+  if_stage/U89/A1 (ND2D1BWP40P140)            0.0634    0.0000     2.2750 r
+  if_stage/U89/ZN (ND2D1BWP40P140)            0.0539    0.0465     2.3215 f
+  if_stage/U133/I (INVD1BWP40P140)            0.0539    0.0000     2.3215 f
+  if_stage/U133/ZN (INVD1BWP40P140)           0.0234    0.0248     2.3463 r
+  if_stage/U14/A1 (NR2D1BWP40P140)            0.0234    0.0000     2.3463 r
+  if_stage/U14/ZN (NR2D1BWP40P140)            0.0200    0.0190     2.3653 f
+  if_stage/U11/A2 (ND2D1BWP40P140)            0.0200    0.0000     2.3653 f
+  if_stage/U11/ZN (ND2D1BWP40P140)            0.0335    0.0240     2.3893 r
+  if_stage/U134/I (INVD1BWP40P140)            0.0335    0.0000     2.3893 r
+  if_stage/U134/ZN (INVD1BWP40P140)           0.1401    0.0929     2.4822 f
+  if_stage/U281/B (OAI21D1BWP40P140)          0.1401    0.0000     2.4822 f
+  if_stage/U281/ZN (OAI21D1BWP40P140)         0.0450    0.0407     2.5229 r
+  if_stage/U284/A2 (OAI211D1BWP40P140)        0.0450    0.0000     2.5229 r
+  if_stage/U284/ZN (OAI211D1BWP40P140)        0.0884    0.0631     2.5860 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     2.5860 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     2.5860 f
+  icache/U690/B1 (AOI22D1BWP40P140)           0.0884    0.0000     2.5860 f
+  icache/U690/ZN (AOI22D1BWP40P140)           0.0550    0.0428     2.6288 r
+  icache/U691/B (OAI21D1BWP40P140)            0.0550    0.0000     2.6288 r
+  icache/U691/ZN (OAI21D1BWP40P140)           0.1225    0.0890     2.7178 f
+  icache/meta_arrays_1/io_addr[2] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     2.7178 f
+  icache/meta_arrays_1/U158/I (INVD1BWP40P140)
+                                              0.1225    0.0000     2.7178 f
+  icache/meta_arrays_1/U158/ZN (INVD1BWP40P140)
+                                              0.0716    0.0722     2.7900 r
+  icache/meta_arrays_1/U160/A1 (ND2D1BWP40P140)
+                                              0.0716    0.0000     2.7900 r
+  icache/meta_arrays_1/U160/ZN (ND2D1BWP40P140)
+                                              0.0626    0.0536     2.8436 f
+  icache/meta_arrays_1/U183/B1 (INR2D1BWP40P140)
+                                              0.0626    0.0000     2.8436 f
+  icache/meta_arrays_1/U183/ZN (INR2D1BWP40P140)
+                                              0.4348    0.2714     3.1150 r
+  icache/meta_arrays_1/U426/I (INVD1BWP40P140)
+                                              0.4348    0.0000     3.1150 r
+  icache/meta_arrays_1/U426/ZN (INVD1BWP40P140)
+                                              0.1061    0.0710     3.1859 f
+  icache/meta_arrays_1/U427/I (INVD1BWP40P140)
+                                              0.1061    0.0000     3.1859 f
+  icache/meta_arrays_1/U427/ZN (INVD1BWP40P140)
+                                              0.1474    0.1208     3.3067 r
+  icache/meta_arrays_1/U1715/B1 (AOI22D1BWP40P140)
+                                              0.1474    0.0000     3.3067 r
+  icache/meta_arrays_1/U1715/ZN (AOI22D1BWP40P140)
+                                              0.0910    0.0474     3.3541 f
+  icache/meta_arrays_1/U1718/A2 (ND4D1BWP40P140)
+                                              0.0910    0.0000     3.3541 f
+  icache/meta_arrays_1/U1718/ZN (ND4D1BWP40P140)
+                                              0.0318    0.0287     3.3829 r
+  icache/meta_arrays_1/U1724/A3 (OR4D1BWP40P140)
+                                              0.0318    0.0000     3.3829 r
+  icache/meta_arrays_1/U1724/Z (OR4D1BWP40P140)
+                                              0.0122    0.0338     3.4166 r
+  icache/meta_arrays_1/U1725/B2 (AOI22D1BWP40P140)
+                                              0.0122    0.0000     3.4166 r
+  icache/meta_arrays_1/U1725/ZN (AOI22D1BWP40P140)
+                                              0.0653    0.0249     3.4415 f
+  icache/meta_arrays_1/U1747/A3 (ND4D1BWP40P140)
+                                              0.0653    0.0000     3.4415 f
+  icache/meta_arrays_1/U1747/ZN (ND4D1BWP40P140)
+                                              0.0266    0.0293     3.4708 r
+  icache/meta_arrays_1/io_rdata_tag[13] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     3.4708 r
+  icache/U551/B2 (OAI22D1BWP40P140)           0.0266    0.0000     3.4708 r
+  icache/U551/ZN (OAI22D1BWP40P140)           0.0307    0.0334     3.5042 f
+  icache/U552/C (AOI221D1BWP40P140)           0.0307    0.0000     3.5042 f
+  icache/U552/ZN (AOI221D1BWP40P140)          0.0441    0.0421     3.5464 r
+  icache/U553/C (OAI211D1BWP40P140)           0.0441    0.0000     3.5464 r
+  icache/U553/ZN (OAI211D1BWP40P140)          0.0400    0.0425     3.5889 f
+  icache/U554/B (AOI21D1BWP40P140)            0.0400    0.0000     3.5889 f
+  icache/U554/ZN (AOI21D1BWP40P140)           0.0292    0.0301     3.6190 r
+  icache/U588/A2 (ND4D1BWP40P140)             0.0292    0.0000     3.6190 r
+  icache/U588/ZN (ND4D1BWP40P140)             0.0721    0.0532     3.6721 f
+  icache/U623/A1 (AN2D1BWP40P140)             0.0721    0.0000     3.6721 f
+  icache/U623/Z (AN2D1BWP40P140)              0.0165    0.0456     3.7177 f
+  icache/U624/B1 (IND3D1BWP40P140)            0.0165    0.0000     3.7177 f
+  icache/U624/ZN (IND3D1BWP40P140)            0.0188    0.0151     3.7328 r
+  icache/U625/A2 (OAI21D1BWP40P140)           0.0188    0.0000     3.7328 r
+  icache/U625/ZN (OAI21D1BWP40P140)           0.0939    0.0590     3.7919 f
+  icache/U626/A2 (NR2D1BWP40P140)             0.0939    0.0000     3.7919 f
+  icache/U626/ZN (NR2D1BWP40P140)             0.0453    0.0511     3.8429 r
+  icache/U655/I (INVD1BWP40P140)              0.0453    0.0000     3.8429 r
+  icache/U655/ZN (INVD1BWP40P140)             0.0995    0.0735     3.9165 f
+  icache/U973/B (OAI21D1BWP40P140)            0.0995    0.0000     3.9165 f
+  icache/U973/ZN (OAI21D1BWP40P140)           0.0481    0.0402     3.9566 r
+  icache/U976/B (AO21D1BWP40P140)             0.0481    0.0000     3.9566 r
+  icache/U976/Z (AO21D1BWP40P140)             0.0176    0.0334     3.9900 r
+  icache/U977/B2 (AOI22D1BWP40P140)           0.0176    0.0000     3.9900 r
+  icache/U977/ZN (AOI22D1BWP40P140)           0.0558    0.0262     4.0163 f
+  icache/U978/B (OAI31D1BWP40P140)            0.0558    0.0000     4.0163 f
+  icache/U978/ZN (OAI31D1BWP40P140)           0.0350    0.0281     4.0444 r
+  icache/burst_addr_rf_reg_11_/D (DFQD1BWP40P140)
+                                              0.0350    0.0000     4.0444 r
+  data arrival time                                                4.0444
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_11_/CP (DFQD1BWP40P140)      0.0000     6.3500 r
+  library setup time                                   -0.0310     6.3190
+  data required time                                               6.3190
+  --------------------------------------------------------------------------
+  data required time                                               6.3190
+  data arrival time                                               -4.0444
+  --------------------------------------------------------------------------
+  slack (MET)                                                      2.2747
+
+
+  Startpoint: ex_stage/alu_op_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/burst_addr_rf_reg_12_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/alu_op_reg_0_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/alu_op_reg_0_/Q (DFQD1BWP40P140)   0.3344    0.2560     0.2560 f
+  ex_stage/alu/io_op[0] (ysyx_22051098_ALU_0)           0.0000     0.2560 f
+  ex_stage/alu/U4/I (INVD1BWP40P140)          0.3344    0.0000     0.2560 f
+  ex_stage/alu/U4/ZN (INVD1BWP40P140)         0.3219    0.2897     0.5457 r
+  ex_stage/alu/U400/B2 (AOI22D1BWP40P140)     0.3219    0.0000     0.5457 r
+  ex_stage/alu/U400/ZN (AOI22D1BWP40P140)     0.0933    0.0691     0.6148 f
+  ex_stage/alu/adder/io_b[5] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/io_b (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/A1 (NR2D1BWP40P140)
+                                              0.0933    0.0000     0.6148 f
+  ex_stage/alu/adder/pgg_5/U2/ZN (NR2D1BWP40P140)
+                                              0.0437    0.0438     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/I (INVD1BWP40P140)
+                                              0.0437    0.0000     0.6586 r
+  ex_stage/alu/adder/pgg_5/U3/ZN (INVD1BWP40P140)
+                                              0.0244    0.0245     0.6831 f
+  ex_stage/alu/adder/pgg_5/io_p (ysyx_22051098_CLA_PGGen_447)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/io_p_1 (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/A2 (AO21D1BWP40P140)
+                                              0.0244    0.0000     0.6831 f
+  ex_stage/alu/adder/cog_3/U4/Z (AO21D1BWP40P140)
+                                              0.0136    0.0335     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/A1 (AO21D1BWP40P140)
+                                              0.0136    0.0000     0.7167 f
+  ex_stage/alu/adder/cog_3/U5/Z (AO21D1BWP40P140)
+                                              0.0129    0.0255     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/A2 (AO21D1BWP40P140)
+                                              0.0129    0.0000     0.7422 f
+  ex_stage/alu/adder/cog_3/U6/Z (AO21D1BWP40P140)
+                                              0.0186    0.0340     0.7762 f
+  ex_stage/alu/adder/cog_3/io_go (ysyx_22051098_CLA_COGen_157)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/io_g_1 (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/B (AO21D1BWP40P140)
+                                              0.0186    0.0000     0.7762 f
+  ex_stage/alu/adder/cog_1/U5/Z (AO21D1BWP40P140)
+                                              0.0135    0.0356     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/A1 (AO21D1BWP40P140)
+                                              0.0135    0.0000     0.8118 f
+  ex_stage/alu/adder/cog_1/U6/Z (AO21D1BWP40P140)
+                                              0.0128    0.0255     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/A2 (AO21D1BWP40P140)
+                                              0.0128    0.0000     0.8373 f
+  ex_stage/alu/adder/cog_1/U7/Z (AO21D1BWP40P140)
+                                              0.0184    0.0338     0.8712 f
+  ex_stage/alu/adder/cog_1/io_go (ysyx_22051098_CLA_COGen_9)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/io_g_0 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/B (AO21D1BWP40P140)
+                                              0.0184    0.0000     0.8712 f
+  ex_stage/alu/adder/cog/U3/Z (AO21D1BWP40P140)
+                                              0.0293    0.0466     0.9177 f
+  ex_stage/alu/adder/cog/U4/A2 (AO21D1BWP40P140)
+                                              0.0293    0.0000     0.9177 f
+  ex_stage/alu/adder/cog/U4/Z (AO21D1BWP40P140)
+                                              0.0294    0.0462     0.9639 f
+  ex_stage/alu/adder/cog/U5/A2 (AO21D1BWP40P140)
+                                              0.0294    0.0000     0.9639 f
+  ex_stage/alu/adder/cog/U5/Z (AO21D1BWP40P140)
+                                              0.0252    0.0437     1.0076 f
+  ex_stage/alu/adder/cog/io_co_2 (ysyx_22051098_CLA_COGen_10)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/io_c (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0076 f
+  ex_stage/alu/adder/cog_16/U2/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0499 f
+  ex_stage/alu/adder/cog_16/U3/Z (AO21D1BWP40P140)
+                                              0.0252    0.0423     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/A2 (AO21D1BWP40P140)
+                                              0.0252    0.0000     1.0922 f
+  ex_stage/alu/adder/cog_16/U4/Z (AO21D1BWP40P140)
+                                              0.0210    0.0397     1.1319 f
+  ex_stage/alu/adder/cog_16/io_co_2 (ysyx_22051098_CLA_COGen_164)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/io_c (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1319 f
+  ex_stage/alu/adder/cog_20/U2/Z (AO21D1BWP40P140)
+                                              0.0210    0.0384     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.1703 f
+  ex_stage/alu/adder/cog_20/U3/Z (AO21D1BWP40P140)
+                                              0.0210    0.0383     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/A2 (AO21D1BWP40P140)
+                                              0.0210    0.0000     1.2086 f
+  ex_stage/alu/adder/cog_20/U4/Z (AO21D1BWP40P140)
+                                              0.0169    0.0351     1.2437 f
+  ex_stage/alu/adder/cog_20/io_co_2 (ysyx_22051098_CLA_COGen_163)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/io_c (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/B (OAI21D1BWP40P140)
+                                              0.0169    0.0000     1.2437 f
+  ex_stage/alu/adder/pgg_63/U4/ZN (OAI21D1BWP40P140)
+                                              0.0236    0.0160     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/B (OAI31D1BWP40P140)
+                                              0.0236    0.0000     1.2597 r
+  ex_stage/alu/adder/pgg_63/U5/ZN (OAI31D1BWP40P140)
+                                              0.0506    0.0414     1.3011 f
+  ex_stage/alu/adder/pgg_63/io_s (ysyx_22051098_CLA_PGGen_505)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/adder/io_s[63] (ysyx_22051098_CarryLookaheadAdder_4)
+                                                        0.0000     1.3011 f
+  ex_stage/alu/U81/A1 (OAI21D1BWP40P140)      0.0506    0.0000     1.3011 f
+  ex_stage/alu/U81/ZN (OAI21D1BWP40P140)      0.0321    0.0261     1.3272 r
+  ex_stage/alu/U82/B (IOA21D1BWP40P140)       0.0321    0.0000     1.3272 r
+  ex_stage/alu/U82/ZN (IOA21D1BWP40P140)      0.0219    0.0201     1.3473 f
+  ex_stage/alu/U83/B2 (AOI22D1BWP40P140)      0.0219    0.0000     1.3473 f
+  ex_stage/alu/U83/ZN (AOI22D1BWP40P140)      0.0348    0.0300     1.3774 r
+  ex_stage/alu/U84/C (OAI211D1BWP40P140)      0.0348    0.0000     1.3774 r
+  ex_stage/alu/U84/ZN (OAI211D1BWP40P140)     0.2947    0.1842     1.5615 f
+  ex_stage/alu/io_out[0] (ysyx_22051098_ALU_0)          0.0000     1.5615 f
+  ex_stage/U549/B1 (AOI22D1BWP40P140)         0.2947    0.0000     1.5615 f
+  ex_stage/U549/ZN (AOI22D1BWP40P140)         0.0710    0.0688     1.6304 r
+  ex_stage/U550/A3 (ND3D1BWP40P140)           0.0710    0.0000     1.6304 r
+  ex_stage/U550/ZN (ND3D1BWP40P140)           0.0536    0.0499     1.6802 f
+  ex_stage/to_id_ex_result[0] (ysyx_22051098_EX_0)      0.0000     1.6802 f
+  id_stage/to_ex_ex_result[0] (ysyx_22051098_ID_0)      0.0000     1.6802 f
+  id_stage/U500/A2 (AOI22D1BWP40P140)         0.0536    0.0000     1.6802 f
+  id_stage/U500/ZN (AOI22D1BWP40P140)         0.0713    0.0335     1.7137 r
+  id_stage/U502/A1 (ND2D1BWP40P140)           0.0713    0.0000     1.7137 r
+  id_stage/U502/ZN (ND2D1BWP40P140)           0.0368    0.0330     1.7467 f
+  id_stage/U503/I (INVD1BWP40P140)            0.0368    0.0000     1.7467 f
+  id_stage/U503/ZN (INVD1BWP40P140)           0.0227    0.0244     1.7711 r
+  id_stage/U1192/A2 (ND2D1BWP40P140)          0.0227    0.0000     1.7711 r
+  id_stage/U1192/ZN (ND2D1BWP40P140)          0.0368    0.0285     1.7996 f
+  id_stage/U1195/A1 (IOA21D1BWP40P140)        0.0368    0.0000     1.7996 f
+  id_stage/U1195/ZN (IOA21D1BWP40P140)        0.0211    0.0390     1.8387 f
+  id_stage/U1196/C (OAI211D1BWP40P140)        0.0211    0.0000     1.8387 f
+  id_stage/U1196/ZN (OAI211D1BWP40P140)       0.0214    0.0183     1.8569 r
+  id_stage/U1200/A1 (AOI21D1BWP40P140)        0.0214    0.0000     1.8569 r
+  id_stage/U1200/ZN (AOI21D1BWP40P140)        0.0233    0.0206     1.8776 f
+  id_stage/U1203/A1 (OA21D1BWP40P140)         0.0233    0.0000     1.8776 f
+  id_stage/U1203/Z (OA21D1BWP40P140)          0.0123    0.0290     1.9066 f
+  id_stage/U1205/A2 (OA21D1BWP40P140)         0.0123    0.0000     1.9066 f
+  id_stage/U1205/Z (OA21D1BWP40P140)          0.0126    0.0279     1.9345 f
+  id_stage/U1208/A2 (AOI211D1BWP40P140)       0.0126    0.0000     1.9345 f
+  id_stage/U1208/ZN (AOI211D1BWP40P140)       0.0340    0.0257     1.9602 r
+  id_stage/U1232/A1 (OAI211D1BWP40P140)       0.0340    0.0000     1.9602 r
+  id_stage/U1232/ZN (OAI211D1BWP40P140)       0.0401    0.0345     1.9947 f
+  id_stage/U1245/B1 (AOI221D1BWP40P140)       0.0401    0.0000     1.9947 f
+  id_stage/U1245/ZN (AOI221D1BWP40P140)       0.0499    0.0524     2.0471 r
+  id_stage/U1246/B2 (OAI22D1BWP40P140)        0.0499    0.0000     2.0471 r
+  id_stage/U1246/ZN (OAI22D1BWP40P140)        0.0333    0.0380     2.0851 f
+  id_stage/U1247/B (AOI21D1BWP40P140)         0.0333    0.0000     2.0851 f
+  id_stage/U1247/ZN (AOI21D1BWP40P140)        0.0282    0.0292     2.1143 r
+  id_stage/U1249/B (OAI211D1BWP40P140)        0.0282    0.0000     2.1143 r
+  id_stage/U1249/ZN (OAI211D1BWP40P140)       0.0535    0.0469     2.1612 f
+  id_stage/U1290/B1 (MAOI22D1BWP40P140)       0.0535    0.0000     2.1612 f
+  id_stage/U1290/ZN (MAOI22D1BWP40P140)       0.0264    0.0396     2.2008 f
+  id_stage/U1291/B1 (OAI22D1BWP40P140)        0.0264    0.0000     2.2008 f
+  id_stage/U1291/ZN (OAI22D1BWP40P140)        0.0322    0.0256     2.2264 r
+  id_stage/U1292/C (AOI211D1BWP40P140)        0.0322    0.0000     2.2264 r
+  id_stage/U1292/ZN (AOI211D1BWP40P140)       0.0300    0.0225     2.2488 f
+  id_stage/U1293/A1 (OAI21D1BWP40P140)        0.0300    0.0000     2.2488 f
+  id_stage/U1293/ZN (OAI21D1BWP40P140)        0.0634    0.0262     2.2750 r
+  id_stage/to_if_is_jmp (ysyx_22051098_ID_0)            0.0000     2.2750 r
+  if_stage/to_id_is_jmp (ysyx_22051098_IF_0)            0.0000     2.2750 r
+  if_stage/U89/A1 (ND2D1BWP40P140)            0.0634    0.0000     2.2750 r
+  if_stage/U89/ZN (ND2D1BWP40P140)            0.0539    0.0465     2.3215 f
+  if_stage/U133/I (INVD1BWP40P140)            0.0539    0.0000     2.3215 f
+  if_stage/U133/ZN (INVD1BWP40P140)           0.0234    0.0248     2.3463 r
+  if_stage/U14/A1 (NR2D1BWP40P140)            0.0234    0.0000     2.3463 r
+  if_stage/U14/ZN (NR2D1BWP40P140)            0.0200    0.0190     2.3653 f
+  if_stage/U11/A2 (ND2D1BWP40P140)            0.0200    0.0000     2.3653 f
+  if_stage/U11/ZN (ND2D1BWP40P140)            0.0335    0.0240     2.3893 r
+  if_stage/U134/I (INVD1BWP40P140)            0.0335    0.0000     2.3893 r
+  if_stage/U134/ZN (INVD1BWP40P140)           0.1401    0.0929     2.4822 f
+  if_stage/U281/B (OAI21D1BWP40P140)          0.1401    0.0000     2.4822 f
+  if_stage/U281/ZN (OAI21D1BWP40P140)         0.0450    0.0407     2.5229 r
+  if_stage/U284/A2 (OAI211D1BWP40P140)        0.0450    0.0000     2.5229 r
+  if_stage/U284/ZN (OAI211D1BWP40P140)        0.0884    0.0631     2.5860 f
+  if_stage/to_mem_ar_bits_addr[6] (ysyx_22051098_IF_0)
+                                                        0.0000     2.5860 f
+  icache/to_cpu_ar_bits_addr[6] (ysyx_22051098_ICache_0)
+                                                        0.0000     2.5860 f
+  icache/U690/B1 (AOI22D1BWP40P140)           0.0884    0.0000     2.5860 f
+  icache/U690/ZN (AOI22D1BWP40P140)           0.0550    0.0428     2.6288 r
+  icache/U691/B (OAI21D1BWP40P140)            0.0550    0.0000     2.6288 r
+  icache/U691/ZN (OAI21D1BWP40P140)           0.1225    0.0890     2.7178 f
+  icache/meta_arrays_1/io_addr[2] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     2.7178 f
+  icache/meta_arrays_1/U158/I (INVD1BWP40P140)
+                                              0.1225    0.0000     2.7178 f
+  icache/meta_arrays_1/U158/ZN (INVD1BWP40P140)
+                                              0.0716    0.0722     2.7900 r
+  icache/meta_arrays_1/U160/A1 (ND2D1BWP40P140)
+                                              0.0716    0.0000     2.7900 r
+  icache/meta_arrays_1/U160/ZN (ND2D1BWP40P140)
+                                              0.0626    0.0536     2.8436 f
+  icache/meta_arrays_1/U183/B1 (INR2D1BWP40P140)
+                                              0.0626    0.0000     2.8436 f
+  icache/meta_arrays_1/U183/ZN (INR2D1BWP40P140)
+                                              0.4348    0.2714     3.1150 r
+  icache/meta_arrays_1/U426/I (INVD1BWP40P140)
+                                              0.4348    0.0000     3.1150 r
+  icache/meta_arrays_1/U426/ZN (INVD1BWP40P140)
+                                              0.1061    0.0710     3.1859 f
+  icache/meta_arrays_1/U427/I (INVD1BWP40P140)
+                                              0.1061    0.0000     3.1859 f
+  icache/meta_arrays_1/U427/ZN (INVD1BWP40P140)
+                                              0.1474    0.1208     3.3067 r
+  icache/meta_arrays_1/U1715/B1 (AOI22D1BWP40P140)
+                                              0.1474    0.0000     3.3067 r
+  icache/meta_arrays_1/U1715/ZN (AOI22D1BWP40P140)
+                                              0.0910    0.0474     3.3541 f
+  icache/meta_arrays_1/U1718/A2 (ND4D1BWP40P140)
+                                              0.0910    0.0000     3.3541 f
+  icache/meta_arrays_1/U1718/ZN (ND4D1BWP40P140)
+                                              0.0318    0.0287     3.3829 r
+  icache/meta_arrays_1/U1724/A3 (OR4D1BWP40P140)
+                                              0.0318    0.0000     3.3829 r
+  icache/meta_arrays_1/U1724/Z (OR4D1BWP40P140)
+                                              0.0122    0.0338     3.4166 r
+  icache/meta_arrays_1/U1725/B2 (AOI22D1BWP40P140)
+                                              0.0122    0.0000     3.4166 r
+  icache/meta_arrays_1/U1725/ZN (AOI22D1BWP40P140)
+                                              0.0653    0.0249     3.4415 f
+  icache/meta_arrays_1/U1747/A3 (ND4D1BWP40P140)
+                                              0.0653    0.0000     3.4415 f
+  icache/meta_arrays_1/U1747/ZN (ND4D1BWP40P140)
+                                              0.0266    0.0293     3.4708 r
+  icache/meta_arrays_1/io_rdata_tag[13] (ysyx_22051098_CacheMetaArray_7)
+                                                        0.0000     3.4708 r
+  icache/U551/B2 (OAI22D1BWP40P140)           0.0266    0.0000     3.4708 r
+  icache/U551/ZN (OAI22D1BWP40P140)           0.0307    0.0334     3.5042 f
+  icache/U552/C (AOI221D1BWP40P140)           0.0307    0.0000     3.5042 f
+  icache/U552/ZN (AOI221D1BWP40P140)          0.0441    0.0421     3.5464 r
+  icache/U553/C (OAI211D1BWP40P140)           0.0441    0.0000     3.5464 r
+  icache/U553/ZN (OAI211D1BWP40P140)          0.0400    0.0425     3.5889 f
+  icache/U554/B (AOI21D1BWP40P140)            0.0400    0.0000     3.5889 f
+  icache/U554/ZN (AOI21D1BWP40P140)           0.0292    0.0301     3.6190 r
+  icache/U588/A2 (ND4D1BWP40P140)             0.0292    0.0000     3.6190 r
+  icache/U588/ZN (ND4D1BWP40P140)             0.0721    0.0532     3.6721 f
+  icache/U623/A1 (AN2D1BWP40P140)             0.0721    0.0000     3.6721 f
+  icache/U623/Z (AN2D1BWP40P140)              0.0165    0.0456     3.7177 f
+  icache/U624/B1 (IND3D1BWP40P140)            0.0165    0.0000     3.7177 f
+  icache/U624/ZN (IND3D1BWP40P140)            0.0188    0.0151     3.7328 r
+  icache/U625/A2 (OAI21D1BWP40P140)           0.0188    0.0000     3.7328 r
+  icache/U625/ZN (OAI21D1BWP40P140)           0.0939    0.0590     3.7919 f
+  icache/U626/A2 (NR2D1BWP40P140)             0.0939    0.0000     3.7919 f
+  icache/U626/ZN (NR2D1BWP40P140)             0.0453    0.0511     3.8429 r
+  icache/U655/I (INVD1BWP40P140)              0.0453    0.0000     3.8429 r
+  icache/U655/ZN (INVD1BWP40P140)             0.0995    0.0735     3.9165 f
+  icache/U656/B (OAI21D1BWP40P140)            0.0995    0.0000     3.9165 f
+  icache/U656/ZN (OAI21D1BWP40P140)           0.0471    0.0395     3.9559 r
+  icache/U657/B2 (AOI32D1BWP40P140)           0.0471    0.0000     3.9559 r
+  icache/U657/ZN (AOI32D1BWP40P140)           0.0835    0.0381     3.9940 f
+  icache/U658/B (OAI21D1BWP40P140)            0.0835    0.0000     3.9940 f
+  icache/U658/ZN (OAI21D1BWP40P140)           0.0322    0.0321     4.0262 r
+  icache/burst_addr_rf_reg_12_/D (DFQD1BWP40P140)
+                                              0.0322    0.0000     4.0262 r
+  data arrival time                                                4.0262
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/burst_addr_rf_reg_12_/CP (DFQD1BWP40P140)      0.0000     6.3500 r
+  library setup time                                   -0.0304     6.3196
+  data required time                                               6.3196
+  --------------------------------------------------------------------------
+  data required time                                               6.3196
+  data arrival time                                               -4.0262
+  --------------------------------------------------------------------------
+  slack (MET)                                                      2.2935
+
+
+1
