@@ -1,1 +1,1 @@
-wait 3 duts
+parse config.toml with no error
