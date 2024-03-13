@@ -1,0 +1,2921 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22051098
+freq: 100
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+64302.5  64302.5  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+75742  75742  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40   LVT40
+100.00  0.00 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  100.0     153.8      0.050  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22051098
+Version: R-2020.09-SP3a
+Date   : Wed Mar 13 13:24:09 2024
+****************************************
+
+Number of ports:                        20203
+Number of nets:                         92328
+Number of cells:                        76747
+Number of combinational cells:          58417
+Number of sequential cells:             17325
+Number of macros/black boxes:               0
+Number of buf/inv:                      15904
+Number of references:                      17
+
+Combinational area:              31487.399852
+Buf/Inv area:                     4789.638051
+Noncombinational area:           32815.061744
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 64302.461596
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+ysyx_22051098                     64302.4616    100.0    358.8480      0.0000  0.0000  ysyx_22051098
+arbiter                             702.7020      1.1    247.9680    454.7340  0.0000  ysyx_22051098_AXI_Arbiter_0
+clint                               782.7120      1.2    416.0520    366.6600  0.0000  ysyx_22051098_CLINT_0
+csr                                2004.5340      3.1   1033.0740    971.4600  0.0000  ysyx_22051098_CSR_0
+dcache                            22831.8299     35.5   1256.2200    519.7500  0.0000  ysyx_22051098_DCache_0
+dcache/data_arrays_0                891.5760      1.4    645.7500    245.8260  0.0000  ysyx_22051098_CacheDataArray_4
+dcache/data_arrays_1                891.4500      1.4    645.6240    245.8260  0.0000  ysyx_22051098_CacheDataArray_6
+dcache/meta_arrays_0               9602.4599     14.9   4038.3000   5564.1600  0.0000  ysyx_22051098_CacheMetaArray_4
+dcache/meta_arrays_1               9602.5859     14.9   4038.4260   5564.1600  0.0000  ysyx_22051098_CacheMetaArray_5
+dcache/replacer                      67.7880      0.1      0.0000      0.0000  0.0000  ysyx_22051098_LFSRCacheReplacer_3
+dcache/replacer/io_way_prng          67.7880      0.1      3.2760     64.5120  0.0000  ysyx_22051098_MaxPeriodFibonacciLFSR_2
+ex_stage                           5820.6960      9.1    832.7340    842.9400  0.0000  ysyx_22051098_EX_0
+ex_stage/alu                        566.1180      0.9    566.1180      0.0000  0.0000  ysyx_22051098_ALU_0
+ex_stage/divider                   1384.1100      2.2    871.4160    512.6940  0.0000  ysyx_22051098_Radix2Divider_0
+ex_stage/multiplier                1604.8620      2.5    700.6860    625.7160  0.0000  ysyx_22051098_BoothMultiplier_0
+ex_stage/multiplier/pp              278.4600      0.4    278.4600      0.0000  0.0000  ysyx_22051098_PartialProduct_0
+ex_stage/shifter                    589.9320      0.9    589.9320      0.0000  0.0000  ysyx_22051098_Shifter_0
+icache                            20463.7858     31.8    549.7380    211.8060  0.0000  ysyx_22051098_ICache_0
+icache/data_arrays_0                779.1840      1.2    533.3580    245.8260  0.0000  ysyx_22051098_CacheDataArray_5
+icache/data_arrays_1                777.4200      1.2    531.5940    245.8260  0.0000  ysyx_22051098_CacheDataArray_7
+icache/meta_arrays_0               9039.1139     14.1   3716.8740   5322.2400  0.0000  ysyx_22051098_CacheMetaArray_6
+icache/meta_arrays_1               9039.1139     14.1   3716.8740   5322.2400  0.0000  ysyx_22051098_CacheMetaArray_7
+icache/replacer                      67.4100      0.1      0.0000      0.0000  0.0000  ysyx_22051098_LFSRCacheReplacer_2
+icache/replacer/io_way_prng          67.4100      0.1      3.0240     64.3860  0.0000  ysyx_22051098_MaxPeriodFibonacciLFSR_3
+id_stage                           1151.7660      1.8    966.5460    185.2200  0.0000  ysyx_22051098_ID_0
+if_stage                            799.2180      1.2    487.3680    311.8500  0.0000  ysyx_22051098_IF_0
+mm_stage                           1101.4920      1.7    549.6120    551.8800  0.0000  ysyx_22051098_MM_0
+myrom                               134.5680      0.2     47.6280     86.9400  0.0000  ysyx_22051098_MyROM_0
+regfile                            7272.0900     11.3      0.0000      0.0000  0.0000  ysyx_22051098_Regfile_0
+regfile/rf                         7272.0900     11.3   3522.3300   3749.7600  0.0000  ysyx_22051098__Regfile_0
+wb_stage                            878.2200      1.4    339.5700    538.6500  0.0000  ysyx_22051098_WB_0
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                  31487.3999  32815.0617  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22051098
+Version: R-2020.09-SP3a
+Date   : Wed Mar 13 13:24:02 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: ex_stage/multiplier/b_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ex_stage/multiplier/result_reg_127_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/multiplier/b_reg_2_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/multiplier/b_reg_2_/Q (DFQD1BWP40P140)
+                                              0.0313    0.0884     0.0884 f
+  ex_stage/multiplier/pp/io_bi[2] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/A3 (ND3D1BWP40P140)
+                                              0.0313    0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/ZN (ND3D1BWP40P140)
+                                              0.1666    0.1080     0.1964 r
+  ex_stage/multiplier/pp/U4/I (BUFFD1BWP40P140)
+                                              0.1666    0.0000     0.1964 r
+  ex_stage/multiplier/pp/U4/Z (BUFFD1BWP40P140)
+                                              0.3307    0.2213     0.4176 r
+  ex_stage/multiplier/pp/U18/C (OAI211D1BWP40P140)
+                                              0.3307    0.0000     0.4176 r
+  ex_stage/multiplier/pp/U18/ZN (OAI211D1BWP40P140)
+                                              0.0889    0.0804     0.4980 f
+  ex_stage/multiplier/pp/io_p[0] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.4980 f
+  ex_stage/multiplier/U455/A1 (AOI21D1BWP40P140)
+                                              0.0889    0.0000     0.4980 f
+  ex_stage/multiplier/U455/ZN (AOI21D1BWP40P140)
+                                              0.0435    0.0429     0.5409 r
+  ex_stage/multiplier/U458/A1 (OAI21D1BWP40P140)
+                                              0.0435    0.0000     0.5409 r
+  ex_stage/multiplier/U458/ZN (OAI21D1BWP40P140)
+                                              0.0375    0.0326     0.5735 f
+  ex_stage/multiplier/U461/A2 (AOI21D1BWP40P140)
+                                              0.0375    0.0000     0.5735 f
+  ex_stage/multiplier/U461/ZN (AOI21D1BWP40P140)
+                                              0.0389    0.0350     0.6085 r
+  ex_stage/multiplier/U464/A1 (OAI21D1BWP40P140)
+                                              0.0389    0.0000     0.6085 r
+  ex_stage/multiplier/U464/ZN (OAI21D1BWP40P140)
+                                              0.0443    0.0370     0.6455 f
+  ex_stage/multiplier/U468/A1 (AOI21D1BWP40P140)
+                                              0.0443    0.0000     0.6455 f
+  ex_stage/multiplier/U468/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.6829 r
+  ex_stage/multiplier/U471/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.6829 r
+  ex_stage/multiplier/U471/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7203 f
+  ex_stage/multiplier/U475/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7203 f
+  ex_stage/multiplier/U475/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.7578 r
+  ex_stage/multiplier/U478/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.7578 r
+  ex_stage/multiplier/U478/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7953 f
+  ex_stage/multiplier/U482/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7953 f
+  ex_stage/multiplier/U482/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.8327 r
+  ex_stage/multiplier/U485/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.8327 r
+  ex_stage/multiplier/U485/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.8702 f
+  ex_stage/multiplier/U489/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.8702 f
+  ex_stage/multiplier/U489/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.9076 r
+  ex_stage/multiplier/U492/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.9076 r
+  ex_stage/multiplier/U492/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     0.9451 f
+  ex_stage/multiplier/U496/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     0.9451 f
+  ex_stage/multiplier/U496/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     0.9827 r
+  ex_stage/multiplier/U499/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     0.9827 r
+  ex_stage/multiplier/U499/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0203 f
+  ex_stage/multiplier/U503/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0203 f
+  ex_stage/multiplier/U503/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.0579 r
+  ex_stage/multiplier/U506/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.0579 r
+  ex_stage/multiplier/U506/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0954 f
+  ex_stage/multiplier/U510/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0954 f
+  ex_stage/multiplier/U510/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.1330 r
+  ex_stage/multiplier/U513/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.1330 r
+  ex_stage/multiplier/U513/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.1706 f
+  ex_stage/multiplier/U517/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.1706 f
+  ex_stage/multiplier/U517/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2082 r
+  ex_stage/multiplier/U520/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2082 r
+  ex_stage/multiplier/U520/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.2457 f
+  ex_stage/multiplier/U524/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.2457 f
+  ex_stage/multiplier/U524/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2834 r
+  ex_stage/multiplier/U527/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2834 r
+  ex_stage/multiplier/U527/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3209 f
+  ex_stage/multiplier/U531/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3209 f
+  ex_stage/multiplier/U531/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.3585 r
+  ex_stage/multiplier/U534/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.3585 r
+  ex_stage/multiplier/U534/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3961 f
+  ex_stage/multiplier/U538/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3961 f
+  ex_stage/multiplier/U538/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.4337 r
+  ex_stage/multiplier/U541/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.4337 r
+  ex_stage/multiplier/U541/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.4712 f
+  ex_stage/multiplier/U545/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.4712 f
+  ex_stage/multiplier/U545/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5089 r
+  ex_stage/multiplier/U548/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5089 r
+  ex_stage/multiplier/U548/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.5464 f
+  ex_stage/multiplier/U552/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.5464 f
+  ex_stage/multiplier/U552/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5840 r
+  ex_stage/multiplier/U555/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5840 r
+  ex_stage/multiplier/U555/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6216 f
+  ex_stage/multiplier/U559/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6216 f
+  ex_stage/multiplier/U559/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.6592 r
+  ex_stage/multiplier/U562/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.6592 r
+  ex_stage/multiplier/U562/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6967 f
+  ex_stage/multiplier/U566/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6967 f
+  ex_stage/multiplier/U566/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.7343 r
+  ex_stage/multiplier/U569/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.7343 r
+  ex_stage/multiplier/U569/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.7719 f
+  ex_stage/multiplier/U573/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.7719 f
+  ex_stage/multiplier/U573/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8095 r
+  ex_stage/multiplier/U576/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8095 r
+  ex_stage/multiplier/U576/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.8470 f
+  ex_stage/multiplier/U580/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.8470 f
+  ex_stage/multiplier/U580/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8847 r
+  ex_stage/multiplier/U583/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8847 r
+  ex_stage/multiplier/U583/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9222 f
+  ex_stage/multiplier/U587/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9222 f
+  ex_stage/multiplier/U587/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.9598 r
+  ex_stage/multiplier/U590/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.9598 r
+  ex_stage/multiplier/U590/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9974 f
+  ex_stage/multiplier/U594/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9974 f
+  ex_stage/multiplier/U594/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.0350 r
+  ex_stage/multiplier/U597/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.0350 r
+  ex_stage/multiplier/U597/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.0725 f
+  ex_stage/multiplier/U601/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.0725 f
+  ex_stage/multiplier/U601/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1102 r
+  ex_stage/multiplier/U604/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1102 r
+  ex_stage/multiplier/U604/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.1477 f
+  ex_stage/multiplier/U608/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.1477 f
+  ex_stage/multiplier/U608/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1853 r
+  ex_stage/multiplier/U611/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1853 r
+  ex_stage/multiplier/U611/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2229 f
+  ex_stage/multiplier/U615/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2229 f
+  ex_stage/multiplier/U615/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.2605 r
+  ex_stage/multiplier/U618/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.2605 r
+  ex_stage/multiplier/U618/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2980 f
+  ex_stage/multiplier/U622/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2980 f
+  ex_stage/multiplier/U622/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.3357 r
+  ex_stage/multiplier/U625/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.3357 r
+  ex_stage/multiplier/U625/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.3732 f
+  ex_stage/multiplier/U629/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.3732 f
+  ex_stage/multiplier/U629/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4108 r
+  ex_stage/multiplier/U632/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4108 r
+  ex_stage/multiplier/U632/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.4483 f
+  ex_stage/multiplier/U636/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.4483 f
+  ex_stage/multiplier/U636/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4860 r
+  ex_stage/multiplier/U639/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4860 r
+  ex_stage/multiplier/U639/ZN (OAI21D1BWP40P140)
+                                              0.0470    0.0387     2.5247 f
+  ex_stage/multiplier/U643/A1 (AO21D1BWP40P140)
+                                              0.0470    0.0000     2.5247 f
+  ex_stage/multiplier/U643/Z (AO21D1BWP40P140)
+                                              0.0182    0.0384     2.5631 f
+  ex_stage/multiplier/U646/CI (FA1D1BWP40P140)
+                                              0.0182    0.0000     2.5631 f
+  ex_stage/multiplier/U646/CO (FA1D1BWP40P140)
+                                              0.0232    0.0480     2.6111 f
+  ex_stage/multiplier/U649/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6111 f
+  ex_stage/multiplier/U649/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.6609 f
+  ex_stage/multiplier/U652/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6609 f
+  ex_stage/multiplier/U652/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7108 f
+  ex_stage/multiplier/U655/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7108 f
+  ex_stage/multiplier/U655/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7606 f
+  ex_stage/multiplier/U658/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7606 f
+  ex_stage/multiplier/U658/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8105 f
+  ex_stage/multiplier/U661/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8105 f
+  ex_stage/multiplier/U661/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8603 f
+  ex_stage/multiplier/U664/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8603 f
+  ex_stage/multiplier/U664/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9101 f
+  ex_stage/multiplier/U667/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9101 f
+  ex_stage/multiplier/U667/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9600 f
+  ex_stage/multiplier/U670/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9600 f
+  ex_stage/multiplier/U670/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0098 f
+  ex_stage/multiplier/U673/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0098 f
+  ex_stage/multiplier/U673/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0597 f
+  ex_stage/multiplier/U676/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0597 f
+  ex_stage/multiplier/U676/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     3.1095 f
+  ex_stage/multiplier/U679/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1095 f
+  ex_stage/multiplier/U679/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.1590 f
+  ex_stage/multiplier/U682/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1590 f
+  ex_stage/multiplier/U682/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2086 f
+  ex_stage/multiplier/U685/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2086 f
+  ex_stage/multiplier/U685/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2581 f
+  ex_stage/multiplier/U688/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2581 f
+  ex_stage/multiplier/U688/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3077 f
+  ex_stage/multiplier/U691/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3077 f
+  ex_stage/multiplier/U691/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3572 f
+  ex_stage/multiplier/U694/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3572 f
+  ex_stage/multiplier/U694/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4068 f
+  ex_stage/multiplier/U697/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4068 f
+  ex_stage/multiplier/U697/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4563 f
+  ex_stage/multiplier/U700/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4563 f
+  ex_stage/multiplier/U700/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5059 f
+  ex_stage/multiplier/U703/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5059 f
+  ex_stage/multiplier/U703/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5555 f
+  ex_stage/multiplier/U706/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5555 f
+  ex_stage/multiplier/U706/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6050 f
+  ex_stage/multiplier/U709/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6050 f
+  ex_stage/multiplier/U709/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6546 f
+  ex_stage/multiplier/U712/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6546 f
+  ex_stage/multiplier/U712/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7041 f
+  ex_stage/multiplier/U715/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7041 f
+  ex_stage/multiplier/U715/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7537 f
+  ex_stage/multiplier/U718/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7537 f
+  ex_stage/multiplier/U718/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8032 f
+  ex_stage/multiplier/U721/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8032 f
+  ex_stage/multiplier/U721/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8528 f
+  ex_stage/multiplier/U724/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8528 f
+  ex_stage/multiplier/U724/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9023 f
+  ex_stage/multiplier/U727/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9023 f
+  ex_stage/multiplier/U727/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9519 f
+  ex_stage/multiplier/U730/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9519 f
+  ex_stage/multiplier/U730/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0014 f
+  ex_stage/multiplier/U733/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0014 f
+  ex_stage/multiplier/U733/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0510 f
+  ex_stage/multiplier/U736/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0510 f
+  ex_stage/multiplier/U736/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1005 f
+  ex_stage/multiplier/U739/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1005 f
+  ex_stage/multiplier/U739/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1501 f
+  ex_stage/multiplier/U742/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1501 f
+  ex_stage/multiplier/U742/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     4.1996 f
+  ex_stage/multiplier/U745/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.1996 f
+  ex_stage/multiplier/U745/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2495 f
+  ex_stage/multiplier/U748/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2495 f
+  ex_stage/multiplier/U748/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2993 f
+  ex_stage/multiplier/U751/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2993 f
+  ex_stage/multiplier/U751/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3491 f
+  ex_stage/multiplier/U754/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3491 f
+  ex_stage/multiplier/U754/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3990 f
+  ex_stage/multiplier/U757/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3990 f
+  ex_stage/multiplier/U757/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4488 f
+  ex_stage/multiplier/U760/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4488 f
+  ex_stage/multiplier/U760/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4986 f
+  ex_stage/multiplier/U763/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4986 f
+  ex_stage/multiplier/U763/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5485 f
+  ex_stage/multiplier/U766/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5485 f
+  ex_stage/multiplier/U766/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5983 f
+  ex_stage/multiplier/U769/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5983 f
+  ex_stage/multiplier/U769/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6482 f
+  ex_stage/multiplier/U772/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6482 f
+  ex_stage/multiplier/U772/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6980 f
+  ex_stage/multiplier/U775/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6980 f
+  ex_stage/multiplier/U775/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7478 f
+  ex_stage/multiplier/U778/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7478 f
+  ex_stage/multiplier/U778/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7977 f
+  ex_stage/multiplier/U781/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7977 f
+  ex_stage/multiplier/U781/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8475 f
+  ex_stage/multiplier/U784/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8475 f
+  ex_stage/multiplier/U784/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8974 f
+  ex_stage/multiplier/U787/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8974 f
+  ex_stage/multiplier/U787/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9472 f
+  ex_stage/multiplier/U790/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9472 f
+  ex_stage/multiplier/U790/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9970 f
+  ex_stage/multiplier/U793/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9970 f
+  ex_stage/multiplier/U793/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0469 f
+  ex_stage/multiplier/U796/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0469 f
+  ex_stage/multiplier/U796/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0967 f
+  ex_stage/multiplier/U799/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0967 f
+  ex_stage/multiplier/U799/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1465 f
+  ex_stage/multiplier/U802/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1465 f
+  ex_stage/multiplier/U802/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1964 f
+  ex_stage/multiplier/U805/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1964 f
+  ex_stage/multiplier/U805/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2462 f
+  ex_stage/multiplier/U808/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2462 f
+  ex_stage/multiplier/U808/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2961 f
+  ex_stage/multiplier/U811/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2961 f
+  ex_stage/multiplier/U811/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3459 f
+  ex_stage/multiplier/U814/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3459 f
+  ex_stage/multiplier/U814/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3957 f
+  ex_stage/multiplier/U817/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3957 f
+  ex_stage/multiplier/U817/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.4456 f
+  ex_stage/multiplier/U820/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.4456 f
+  ex_stage/multiplier/U820/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.4954 f
+  ex_stage/multiplier/U823/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.4954 f
+  ex_stage/multiplier/U823/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5450 f
+  ex_stage/multiplier/U826/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5450 f
+  ex_stage/multiplier/U826/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5945 f
+  ex_stage/multiplier/U829/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5945 f
+  ex_stage/multiplier/U829/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.6441 f
+  ex_stage/multiplier/U832/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.6441 f
+  ex_stage/multiplier/U832/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.6939 f
+  ex_stage/multiplier/U835/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.6939 f
+  ex_stage/multiplier/U835/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7435 f
+  ex_stage/multiplier/U838/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7435 f
+  ex_stage/multiplier/U838/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7930 f
+  ex_stage/multiplier/U841/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7930 f
+  ex_stage/multiplier/U841/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.8426 f
+  ex_stage/multiplier/U844/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.8426 f
+  ex_stage/multiplier/U844/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.8924 f
+  ex_stage/multiplier/U847/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.8924 f
+  ex_stage/multiplier/U847/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9420 f
+  ex_stage/multiplier/U850/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9420 f
+  ex_stage/multiplier/U850/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9915 f
+  ex_stage/multiplier/U853/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9915 f
+  ex_stage/multiplier/U853/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     6.0411 f
+  ex_stage/multiplier/U856/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     6.0411 f
+  ex_stage/multiplier/U856/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     6.0909 f
+  ex_stage/multiplier/U859/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     6.0909 f
+  ex_stage/multiplier/U859/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     6.1404 f
+  ex_stage/multiplier/U860/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     6.1404 f
+  ex_stage/multiplier/U860/S (FA1D1BWP40P140)
+                                              0.0250    0.0850     6.2254 r
+  ex_stage/multiplier/U861/B2 (MOAI22D1BWP40P140)
+                                              0.0250    0.0000     6.2254 r
+  ex_stage/multiplier/U861/ZN (MOAI22D1BWP40P140)
+                                              0.0882    0.0345     6.2599 r
+  ex_stage/multiplier/result_reg_127_/D (DFQD1BWP40P140)
+                                              0.0882    0.0000     6.2599 r
+  data arrival time                                                6.2599
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  ex_stage/multiplier/result_reg_127_/CP (DFQD1BWP40P140)
+                                                        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.2599
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0496
+
+
+  Startpoint: ex_stage/multiplier/b_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ex_stage/multiplier/result_reg_126_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/multiplier/b_reg_2_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/multiplier/b_reg_2_/Q (DFQD1BWP40P140)
+                                              0.0313    0.0884     0.0884 f
+  ex_stage/multiplier/pp/io_bi[2] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/A3 (ND3D1BWP40P140)
+                                              0.0313    0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/ZN (ND3D1BWP40P140)
+                                              0.1666    0.1080     0.1964 r
+  ex_stage/multiplier/pp/U4/I (BUFFD1BWP40P140)
+                                              0.1666    0.0000     0.1964 r
+  ex_stage/multiplier/pp/U4/Z (BUFFD1BWP40P140)
+                                              0.3307    0.2213     0.4176 r
+  ex_stage/multiplier/pp/U18/C (OAI211D1BWP40P140)
+                                              0.3307    0.0000     0.4176 r
+  ex_stage/multiplier/pp/U18/ZN (OAI211D1BWP40P140)
+                                              0.0889    0.0804     0.4980 f
+  ex_stage/multiplier/pp/io_p[0] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.4980 f
+  ex_stage/multiplier/U455/A1 (AOI21D1BWP40P140)
+                                              0.0889    0.0000     0.4980 f
+  ex_stage/multiplier/U455/ZN (AOI21D1BWP40P140)
+                                              0.0435    0.0429     0.5409 r
+  ex_stage/multiplier/U458/A1 (OAI21D1BWP40P140)
+                                              0.0435    0.0000     0.5409 r
+  ex_stage/multiplier/U458/ZN (OAI21D1BWP40P140)
+                                              0.0375    0.0326     0.5735 f
+  ex_stage/multiplier/U461/A2 (AOI21D1BWP40P140)
+                                              0.0375    0.0000     0.5735 f
+  ex_stage/multiplier/U461/ZN (AOI21D1BWP40P140)
+                                              0.0389    0.0350     0.6085 r
+  ex_stage/multiplier/U464/A1 (OAI21D1BWP40P140)
+                                              0.0389    0.0000     0.6085 r
+  ex_stage/multiplier/U464/ZN (OAI21D1BWP40P140)
+                                              0.0443    0.0370     0.6455 f
+  ex_stage/multiplier/U468/A1 (AOI21D1BWP40P140)
+                                              0.0443    0.0000     0.6455 f
+  ex_stage/multiplier/U468/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.6829 r
+  ex_stage/multiplier/U471/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.6829 r
+  ex_stage/multiplier/U471/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7203 f
+  ex_stage/multiplier/U475/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7203 f
+  ex_stage/multiplier/U475/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.7578 r
+  ex_stage/multiplier/U478/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.7578 r
+  ex_stage/multiplier/U478/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7953 f
+  ex_stage/multiplier/U482/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7953 f
+  ex_stage/multiplier/U482/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.8327 r
+  ex_stage/multiplier/U485/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.8327 r
+  ex_stage/multiplier/U485/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.8702 f
+  ex_stage/multiplier/U489/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.8702 f
+  ex_stage/multiplier/U489/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.9076 r
+  ex_stage/multiplier/U492/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.9076 r
+  ex_stage/multiplier/U492/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     0.9451 f
+  ex_stage/multiplier/U496/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     0.9451 f
+  ex_stage/multiplier/U496/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     0.9827 r
+  ex_stage/multiplier/U499/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     0.9827 r
+  ex_stage/multiplier/U499/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0203 f
+  ex_stage/multiplier/U503/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0203 f
+  ex_stage/multiplier/U503/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.0579 r
+  ex_stage/multiplier/U506/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.0579 r
+  ex_stage/multiplier/U506/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0954 f
+  ex_stage/multiplier/U510/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0954 f
+  ex_stage/multiplier/U510/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.1330 r
+  ex_stage/multiplier/U513/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.1330 r
+  ex_stage/multiplier/U513/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.1706 f
+  ex_stage/multiplier/U517/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.1706 f
+  ex_stage/multiplier/U517/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2082 r
+  ex_stage/multiplier/U520/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2082 r
+  ex_stage/multiplier/U520/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.2457 f
+  ex_stage/multiplier/U524/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.2457 f
+  ex_stage/multiplier/U524/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2834 r
+  ex_stage/multiplier/U527/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2834 r
+  ex_stage/multiplier/U527/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3209 f
+  ex_stage/multiplier/U531/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3209 f
+  ex_stage/multiplier/U531/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.3585 r
+  ex_stage/multiplier/U534/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.3585 r
+  ex_stage/multiplier/U534/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3961 f
+  ex_stage/multiplier/U538/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3961 f
+  ex_stage/multiplier/U538/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.4337 r
+  ex_stage/multiplier/U541/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.4337 r
+  ex_stage/multiplier/U541/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.4712 f
+  ex_stage/multiplier/U545/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.4712 f
+  ex_stage/multiplier/U545/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5089 r
+  ex_stage/multiplier/U548/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5089 r
+  ex_stage/multiplier/U548/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.5464 f
+  ex_stage/multiplier/U552/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.5464 f
+  ex_stage/multiplier/U552/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5840 r
+  ex_stage/multiplier/U555/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5840 r
+  ex_stage/multiplier/U555/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6216 f
+  ex_stage/multiplier/U559/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6216 f
+  ex_stage/multiplier/U559/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.6592 r
+  ex_stage/multiplier/U562/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.6592 r
+  ex_stage/multiplier/U562/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6967 f
+  ex_stage/multiplier/U566/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6967 f
+  ex_stage/multiplier/U566/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.7343 r
+  ex_stage/multiplier/U569/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.7343 r
+  ex_stage/multiplier/U569/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.7719 f
+  ex_stage/multiplier/U573/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.7719 f
+  ex_stage/multiplier/U573/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8095 r
+  ex_stage/multiplier/U576/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8095 r
+  ex_stage/multiplier/U576/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.8470 f
+  ex_stage/multiplier/U580/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.8470 f
+  ex_stage/multiplier/U580/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8847 r
+  ex_stage/multiplier/U583/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8847 r
+  ex_stage/multiplier/U583/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9222 f
+  ex_stage/multiplier/U587/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9222 f
+  ex_stage/multiplier/U587/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.9598 r
+  ex_stage/multiplier/U590/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.9598 r
+  ex_stage/multiplier/U590/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9974 f
+  ex_stage/multiplier/U594/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9974 f
+  ex_stage/multiplier/U594/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.0350 r
+  ex_stage/multiplier/U597/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.0350 r
+  ex_stage/multiplier/U597/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.0725 f
+  ex_stage/multiplier/U601/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.0725 f
+  ex_stage/multiplier/U601/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1102 r
+  ex_stage/multiplier/U604/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1102 r
+  ex_stage/multiplier/U604/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.1477 f
+  ex_stage/multiplier/U608/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.1477 f
+  ex_stage/multiplier/U608/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1853 r
+  ex_stage/multiplier/U611/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1853 r
+  ex_stage/multiplier/U611/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2229 f
+  ex_stage/multiplier/U615/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2229 f
+  ex_stage/multiplier/U615/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.2605 r
+  ex_stage/multiplier/U618/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.2605 r
+  ex_stage/multiplier/U618/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2980 f
+  ex_stage/multiplier/U622/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2980 f
+  ex_stage/multiplier/U622/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.3357 r
+  ex_stage/multiplier/U625/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.3357 r
+  ex_stage/multiplier/U625/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.3732 f
+  ex_stage/multiplier/U629/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.3732 f
+  ex_stage/multiplier/U629/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4108 r
+  ex_stage/multiplier/U632/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4108 r
+  ex_stage/multiplier/U632/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.4483 f
+  ex_stage/multiplier/U636/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.4483 f
+  ex_stage/multiplier/U636/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4860 r
+  ex_stage/multiplier/U639/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4860 r
+  ex_stage/multiplier/U639/ZN (OAI21D1BWP40P140)
+                                              0.0470    0.0387     2.5247 f
+  ex_stage/multiplier/U643/A1 (AO21D1BWP40P140)
+                                              0.0470    0.0000     2.5247 f
+  ex_stage/multiplier/U643/Z (AO21D1BWP40P140)
+                                              0.0182    0.0384     2.5631 f
+  ex_stage/multiplier/U646/CI (FA1D1BWP40P140)
+                                              0.0182    0.0000     2.5631 f
+  ex_stage/multiplier/U646/CO (FA1D1BWP40P140)
+                                              0.0232    0.0480     2.6111 f
+  ex_stage/multiplier/U649/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6111 f
+  ex_stage/multiplier/U649/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.6609 f
+  ex_stage/multiplier/U652/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6609 f
+  ex_stage/multiplier/U652/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7108 f
+  ex_stage/multiplier/U655/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7108 f
+  ex_stage/multiplier/U655/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7606 f
+  ex_stage/multiplier/U658/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7606 f
+  ex_stage/multiplier/U658/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8105 f
+  ex_stage/multiplier/U661/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8105 f
+  ex_stage/multiplier/U661/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8603 f
+  ex_stage/multiplier/U664/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8603 f
+  ex_stage/multiplier/U664/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9101 f
+  ex_stage/multiplier/U667/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9101 f
+  ex_stage/multiplier/U667/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9600 f
+  ex_stage/multiplier/U670/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9600 f
+  ex_stage/multiplier/U670/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0098 f
+  ex_stage/multiplier/U673/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0098 f
+  ex_stage/multiplier/U673/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0597 f
+  ex_stage/multiplier/U676/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0597 f
+  ex_stage/multiplier/U676/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     3.1095 f
+  ex_stage/multiplier/U679/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1095 f
+  ex_stage/multiplier/U679/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.1590 f
+  ex_stage/multiplier/U682/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1590 f
+  ex_stage/multiplier/U682/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2086 f
+  ex_stage/multiplier/U685/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2086 f
+  ex_stage/multiplier/U685/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2581 f
+  ex_stage/multiplier/U688/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2581 f
+  ex_stage/multiplier/U688/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3077 f
+  ex_stage/multiplier/U691/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3077 f
+  ex_stage/multiplier/U691/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3572 f
+  ex_stage/multiplier/U694/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3572 f
+  ex_stage/multiplier/U694/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4068 f
+  ex_stage/multiplier/U697/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4068 f
+  ex_stage/multiplier/U697/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4563 f
+  ex_stage/multiplier/U700/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4563 f
+  ex_stage/multiplier/U700/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5059 f
+  ex_stage/multiplier/U703/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5059 f
+  ex_stage/multiplier/U703/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5555 f
+  ex_stage/multiplier/U706/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5555 f
+  ex_stage/multiplier/U706/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6050 f
+  ex_stage/multiplier/U709/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6050 f
+  ex_stage/multiplier/U709/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6546 f
+  ex_stage/multiplier/U712/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6546 f
+  ex_stage/multiplier/U712/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7041 f
+  ex_stage/multiplier/U715/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7041 f
+  ex_stage/multiplier/U715/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7537 f
+  ex_stage/multiplier/U718/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7537 f
+  ex_stage/multiplier/U718/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8032 f
+  ex_stage/multiplier/U721/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8032 f
+  ex_stage/multiplier/U721/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8528 f
+  ex_stage/multiplier/U724/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8528 f
+  ex_stage/multiplier/U724/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9023 f
+  ex_stage/multiplier/U727/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9023 f
+  ex_stage/multiplier/U727/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9519 f
+  ex_stage/multiplier/U730/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9519 f
+  ex_stage/multiplier/U730/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0014 f
+  ex_stage/multiplier/U733/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0014 f
+  ex_stage/multiplier/U733/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0510 f
+  ex_stage/multiplier/U736/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0510 f
+  ex_stage/multiplier/U736/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1005 f
+  ex_stage/multiplier/U739/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1005 f
+  ex_stage/multiplier/U739/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1501 f
+  ex_stage/multiplier/U742/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1501 f
+  ex_stage/multiplier/U742/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     4.1996 f
+  ex_stage/multiplier/U745/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.1996 f
+  ex_stage/multiplier/U745/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2495 f
+  ex_stage/multiplier/U748/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2495 f
+  ex_stage/multiplier/U748/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2993 f
+  ex_stage/multiplier/U751/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2993 f
+  ex_stage/multiplier/U751/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3491 f
+  ex_stage/multiplier/U754/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3491 f
+  ex_stage/multiplier/U754/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3990 f
+  ex_stage/multiplier/U757/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3990 f
+  ex_stage/multiplier/U757/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4488 f
+  ex_stage/multiplier/U760/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4488 f
+  ex_stage/multiplier/U760/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4986 f
+  ex_stage/multiplier/U763/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4986 f
+  ex_stage/multiplier/U763/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5485 f
+  ex_stage/multiplier/U766/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5485 f
+  ex_stage/multiplier/U766/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5983 f
+  ex_stage/multiplier/U769/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5983 f
+  ex_stage/multiplier/U769/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6482 f
+  ex_stage/multiplier/U772/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6482 f
+  ex_stage/multiplier/U772/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6980 f
+  ex_stage/multiplier/U775/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6980 f
+  ex_stage/multiplier/U775/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7478 f
+  ex_stage/multiplier/U778/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7478 f
+  ex_stage/multiplier/U778/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7977 f
+  ex_stage/multiplier/U781/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7977 f
+  ex_stage/multiplier/U781/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8475 f
+  ex_stage/multiplier/U784/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8475 f
+  ex_stage/multiplier/U784/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8974 f
+  ex_stage/multiplier/U787/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8974 f
+  ex_stage/multiplier/U787/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9472 f
+  ex_stage/multiplier/U790/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9472 f
+  ex_stage/multiplier/U790/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9970 f
+  ex_stage/multiplier/U793/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9970 f
+  ex_stage/multiplier/U793/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0469 f
+  ex_stage/multiplier/U796/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0469 f
+  ex_stage/multiplier/U796/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0967 f
+  ex_stage/multiplier/U799/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0967 f
+  ex_stage/multiplier/U799/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1465 f
+  ex_stage/multiplier/U802/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1465 f
+  ex_stage/multiplier/U802/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1964 f
+  ex_stage/multiplier/U805/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1964 f
+  ex_stage/multiplier/U805/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2462 f
+  ex_stage/multiplier/U808/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2462 f
+  ex_stage/multiplier/U808/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2961 f
+  ex_stage/multiplier/U811/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2961 f
+  ex_stage/multiplier/U811/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3459 f
+  ex_stage/multiplier/U814/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3459 f
+  ex_stage/multiplier/U814/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3957 f
+  ex_stage/multiplier/U817/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3957 f
+  ex_stage/multiplier/U817/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.4456 f
+  ex_stage/multiplier/U820/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.4456 f
+  ex_stage/multiplier/U820/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.4954 f
+  ex_stage/multiplier/U823/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.4954 f
+  ex_stage/multiplier/U823/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5450 f
+  ex_stage/multiplier/U826/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5450 f
+  ex_stage/multiplier/U826/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5945 f
+  ex_stage/multiplier/U829/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5945 f
+  ex_stage/multiplier/U829/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.6441 f
+  ex_stage/multiplier/U832/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.6441 f
+  ex_stage/multiplier/U832/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.6939 f
+  ex_stage/multiplier/U835/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.6939 f
+  ex_stage/multiplier/U835/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7435 f
+  ex_stage/multiplier/U838/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7435 f
+  ex_stage/multiplier/U838/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7930 f
+  ex_stage/multiplier/U841/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7930 f
+  ex_stage/multiplier/U841/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.8426 f
+  ex_stage/multiplier/U844/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.8426 f
+  ex_stage/multiplier/U844/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.8924 f
+  ex_stage/multiplier/U847/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.8924 f
+  ex_stage/multiplier/U847/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9420 f
+  ex_stage/multiplier/U850/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9420 f
+  ex_stage/multiplier/U850/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9915 f
+  ex_stage/multiplier/U853/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9915 f
+  ex_stage/multiplier/U853/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     6.0411 f
+  ex_stage/multiplier/U856/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     6.0411 f
+  ex_stage/multiplier/U856/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     6.0909 f
+  ex_stage/multiplier/U859/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     6.0909 f
+  ex_stage/multiplier/U859/S (FA1D1BWP40P140)
+                                              0.0250    0.0850     6.1759 r
+  ex_stage/multiplier/U857/B2 (MOAI22D1BWP40P140)
+                                              0.0250    0.0000     6.1759 r
+  ex_stage/multiplier/U857/ZN (MOAI22D1BWP40P140)
+                                              0.0882    0.0345     6.2104 r
+  ex_stage/multiplier/result_reg_126_/D (DFQD1BWP40P140)
+                                              0.0882    0.0000     6.2104 r
+  data arrival time                                                6.2104
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  ex_stage/multiplier/result_reg_126_/CP (DFQD1BWP40P140)
+                                                        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.2104
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0992
+
+
+  Startpoint: ex_stage/multiplier/b_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ex_stage/multiplier/result_reg_125_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/multiplier/b_reg_2_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/multiplier/b_reg_2_/Q (DFQD1BWP40P140)
+                                              0.0313    0.0884     0.0884 f
+  ex_stage/multiplier/pp/io_bi[2] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/A3 (ND3D1BWP40P140)
+                                              0.0313    0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/ZN (ND3D1BWP40P140)
+                                              0.1666    0.1080     0.1964 r
+  ex_stage/multiplier/pp/U4/I (BUFFD1BWP40P140)
+                                              0.1666    0.0000     0.1964 r
+  ex_stage/multiplier/pp/U4/Z (BUFFD1BWP40P140)
+                                              0.3307    0.2213     0.4176 r
+  ex_stage/multiplier/pp/U18/C (OAI211D1BWP40P140)
+                                              0.3307    0.0000     0.4176 r
+  ex_stage/multiplier/pp/U18/ZN (OAI211D1BWP40P140)
+                                              0.0889    0.0804     0.4980 f
+  ex_stage/multiplier/pp/io_p[0] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.4980 f
+  ex_stage/multiplier/U455/A1 (AOI21D1BWP40P140)
+                                              0.0889    0.0000     0.4980 f
+  ex_stage/multiplier/U455/ZN (AOI21D1BWP40P140)
+                                              0.0435    0.0429     0.5409 r
+  ex_stage/multiplier/U458/A1 (OAI21D1BWP40P140)
+                                              0.0435    0.0000     0.5409 r
+  ex_stage/multiplier/U458/ZN (OAI21D1BWP40P140)
+                                              0.0375    0.0326     0.5735 f
+  ex_stage/multiplier/U461/A2 (AOI21D1BWP40P140)
+                                              0.0375    0.0000     0.5735 f
+  ex_stage/multiplier/U461/ZN (AOI21D1BWP40P140)
+                                              0.0389    0.0350     0.6085 r
+  ex_stage/multiplier/U464/A1 (OAI21D1BWP40P140)
+                                              0.0389    0.0000     0.6085 r
+  ex_stage/multiplier/U464/ZN (OAI21D1BWP40P140)
+                                              0.0443    0.0370     0.6455 f
+  ex_stage/multiplier/U468/A1 (AOI21D1BWP40P140)
+                                              0.0443    0.0000     0.6455 f
+  ex_stage/multiplier/U468/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.6829 r
+  ex_stage/multiplier/U471/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.6829 r
+  ex_stage/multiplier/U471/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7203 f
+  ex_stage/multiplier/U475/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7203 f
+  ex_stage/multiplier/U475/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.7578 r
+  ex_stage/multiplier/U478/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.7578 r
+  ex_stage/multiplier/U478/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7953 f
+  ex_stage/multiplier/U482/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7953 f
+  ex_stage/multiplier/U482/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.8327 r
+  ex_stage/multiplier/U485/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.8327 r
+  ex_stage/multiplier/U485/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.8702 f
+  ex_stage/multiplier/U489/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.8702 f
+  ex_stage/multiplier/U489/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.9076 r
+  ex_stage/multiplier/U492/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.9076 r
+  ex_stage/multiplier/U492/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     0.9451 f
+  ex_stage/multiplier/U496/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     0.9451 f
+  ex_stage/multiplier/U496/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     0.9827 r
+  ex_stage/multiplier/U499/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     0.9827 r
+  ex_stage/multiplier/U499/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0203 f
+  ex_stage/multiplier/U503/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0203 f
+  ex_stage/multiplier/U503/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.0579 r
+  ex_stage/multiplier/U506/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.0579 r
+  ex_stage/multiplier/U506/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0954 f
+  ex_stage/multiplier/U510/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0954 f
+  ex_stage/multiplier/U510/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.1330 r
+  ex_stage/multiplier/U513/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.1330 r
+  ex_stage/multiplier/U513/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.1706 f
+  ex_stage/multiplier/U517/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.1706 f
+  ex_stage/multiplier/U517/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2082 r
+  ex_stage/multiplier/U520/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2082 r
+  ex_stage/multiplier/U520/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.2457 f
+  ex_stage/multiplier/U524/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.2457 f
+  ex_stage/multiplier/U524/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2834 r
+  ex_stage/multiplier/U527/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2834 r
+  ex_stage/multiplier/U527/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3209 f
+  ex_stage/multiplier/U531/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3209 f
+  ex_stage/multiplier/U531/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.3585 r
+  ex_stage/multiplier/U534/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.3585 r
+  ex_stage/multiplier/U534/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3961 f
+  ex_stage/multiplier/U538/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3961 f
+  ex_stage/multiplier/U538/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.4337 r
+  ex_stage/multiplier/U541/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.4337 r
+  ex_stage/multiplier/U541/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.4712 f
+  ex_stage/multiplier/U545/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.4712 f
+  ex_stage/multiplier/U545/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5089 r
+  ex_stage/multiplier/U548/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5089 r
+  ex_stage/multiplier/U548/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.5464 f
+  ex_stage/multiplier/U552/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.5464 f
+  ex_stage/multiplier/U552/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5840 r
+  ex_stage/multiplier/U555/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5840 r
+  ex_stage/multiplier/U555/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6216 f
+  ex_stage/multiplier/U559/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6216 f
+  ex_stage/multiplier/U559/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.6592 r
+  ex_stage/multiplier/U562/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.6592 r
+  ex_stage/multiplier/U562/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6967 f
+  ex_stage/multiplier/U566/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6967 f
+  ex_stage/multiplier/U566/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.7343 r
+  ex_stage/multiplier/U569/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.7343 r
+  ex_stage/multiplier/U569/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.7719 f
+  ex_stage/multiplier/U573/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.7719 f
+  ex_stage/multiplier/U573/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8095 r
+  ex_stage/multiplier/U576/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8095 r
+  ex_stage/multiplier/U576/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.8470 f
+  ex_stage/multiplier/U580/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.8470 f
+  ex_stage/multiplier/U580/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8847 r
+  ex_stage/multiplier/U583/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8847 r
+  ex_stage/multiplier/U583/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9222 f
+  ex_stage/multiplier/U587/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9222 f
+  ex_stage/multiplier/U587/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.9598 r
+  ex_stage/multiplier/U590/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.9598 r
+  ex_stage/multiplier/U590/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9974 f
+  ex_stage/multiplier/U594/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9974 f
+  ex_stage/multiplier/U594/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.0350 r
+  ex_stage/multiplier/U597/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.0350 r
+  ex_stage/multiplier/U597/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.0725 f
+  ex_stage/multiplier/U601/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.0725 f
+  ex_stage/multiplier/U601/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1102 r
+  ex_stage/multiplier/U604/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1102 r
+  ex_stage/multiplier/U604/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.1477 f
+  ex_stage/multiplier/U608/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.1477 f
+  ex_stage/multiplier/U608/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1853 r
+  ex_stage/multiplier/U611/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1853 r
+  ex_stage/multiplier/U611/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2229 f
+  ex_stage/multiplier/U615/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2229 f
+  ex_stage/multiplier/U615/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.2605 r
+  ex_stage/multiplier/U618/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.2605 r
+  ex_stage/multiplier/U618/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2980 f
+  ex_stage/multiplier/U622/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2980 f
+  ex_stage/multiplier/U622/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.3357 r
+  ex_stage/multiplier/U625/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.3357 r
+  ex_stage/multiplier/U625/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.3732 f
+  ex_stage/multiplier/U629/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.3732 f
+  ex_stage/multiplier/U629/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4108 r
+  ex_stage/multiplier/U632/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4108 r
+  ex_stage/multiplier/U632/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.4483 f
+  ex_stage/multiplier/U636/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.4483 f
+  ex_stage/multiplier/U636/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4860 r
+  ex_stage/multiplier/U639/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4860 r
+  ex_stage/multiplier/U639/ZN (OAI21D1BWP40P140)
+                                              0.0470    0.0387     2.5247 f
+  ex_stage/multiplier/U643/A1 (AO21D1BWP40P140)
+                                              0.0470    0.0000     2.5247 f
+  ex_stage/multiplier/U643/Z (AO21D1BWP40P140)
+                                              0.0182    0.0384     2.5631 f
+  ex_stage/multiplier/U646/CI (FA1D1BWP40P140)
+                                              0.0182    0.0000     2.5631 f
+  ex_stage/multiplier/U646/CO (FA1D1BWP40P140)
+                                              0.0232    0.0480     2.6111 f
+  ex_stage/multiplier/U649/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6111 f
+  ex_stage/multiplier/U649/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.6609 f
+  ex_stage/multiplier/U652/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6609 f
+  ex_stage/multiplier/U652/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7108 f
+  ex_stage/multiplier/U655/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7108 f
+  ex_stage/multiplier/U655/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7606 f
+  ex_stage/multiplier/U658/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7606 f
+  ex_stage/multiplier/U658/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8105 f
+  ex_stage/multiplier/U661/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8105 f
+  ex_stage/multiplier/U661/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8603 f
+  ex_stage/multiplier/U664/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8603 f
+  ex_stage/multiplier/U664/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9101 f
+  ex_stage/multiplier/U667/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9101 f
+  ex_stage/multiplier/U667/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9600 f
+  ex_stage/multiplier/U670/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9600 f
+  ex_stage/multiplier/U670/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0098 f
+  ex_stage/multiplier/U673/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0098 f
+  ex_stage/multiplier/U673/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0597 f
+  ex_stage/multiplier/U676/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0597 f
+  ex_stage/multiplier/U676/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     3.1095 f
+  ex_stage/multiplier/U679/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1095 f
+  ex_stage/multiplier/U679/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.1590 f
+  ex_stage/multiplier/U682/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1590 f
+  ex_stage/multiplier/U682/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2086 f
+  ex_stage/multiplier/U685/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2086 f
+  ex_stage/multiplier/U685/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2581 f
+  ex_stage/multiplier/U688/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2581 f
+  ex_stage/multiplier/U688/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3077 f
+  ex_stage/multiplier/U691/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3077 f
+  ex_stage/multiplier/U691/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3572 f
+  ex_stage/multiplier/U694/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3572 f
+  ex_stage/multiplier/U694/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4068 f
+  ex_stage/multiplier/U697/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4068 f
+  ex_stage/multiplier/U697/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4563 f
+  ex_stage/multiplier/U700/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4563 f
+  ex_stage/multiplier/U700/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5059 f
+  ex_stage/multiplier/U703/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5059 f
+  ex_stage/multiplier/U703/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5555 f
+  ex_stage/multiplier/U706/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5555 f
+  ex_stage/multiplier/U706/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6050 f
+  ex_stage/multiplier/U709/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6050 f
+  ex_stage/multiplier/U709/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6546 f
+  ex_stage/multiplier/U712/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6546 f
+  ex_stage/multiplier/U712/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7041 f
+  ex_stage/multiplier/U715/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7041 f
+  ex_stage/multiplier/U715/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7537 f
+  ex_stage/multiplier/U718/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7537 f
+  ex_stage/multiplier/U718/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8032 f
+  ex_stage/multiplier/U721/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8032 f
+  ex_stage/multiplier/U721/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8528 f
+  ex_stage/multiplier/U724/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8528 f
+  ex_stage/multiplier/U724/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9023 f
+  ex_stage/multiplier/U727/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9023 f
+  ex_stage/multiplier/U727/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9519 f
+  ex_stage/multiplier/U730/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9519 f
+  ex_stage/multiplier/U730/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0014 f
+  ex_stage/multiplier/U733/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0014 f
+  ex_stage/multiplier/U733/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0510 f
+  ex_stage/multiplier/U736/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0510 f
+  ex_stage/multiplier/U736/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1005 f
+  ex_stage/multiplier/U739/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1005 f
+  ex_stage/multiplier/U739/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1501 f
+  ex_stage/multiplier/U742/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1501 f
+  ex_stage/multiplier/U742/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     4.1996 f
+  ex_stage/multiplier/U745/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.1996 f
+  ex_stage/multiplier/U745/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2495 f
+  ex_stage/multiplier/U748/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2495 f
+  ex_stage/multiplier/U748/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2993 f
+  ex_stage/multiplier/U751/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2993 f
+  ex_stage/multiplier/U751/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3491 f
+  ex_stage/multiplier/U754/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3491 f
+  ex_stage/multiplier/U754/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3990 f
+  ex_stage/multiplier/U757/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3990 f
+  ex_stage/multiplier/U757/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4488 f
+  ex_stage/multiplier/U760/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4488 f
+  ex_stage/multiplier/U760/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4986 f
+  ex_stage/multiplier/U763/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4986 f
+  ex_stage/multiplier/U763/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5485 f
+  ex_stage/multiplier/U766/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5485 f
+  ex_stage/multiplier/U766/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5983 f
+  ex_stage/multiplier/U769/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5983 f
+  ex_stage/multiplier/U769/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6482 f
+  ex_stage/multiplier/U772/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6482 f
+  ex_stage/multiplier/U772/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6980 f
+  ex_stage/multiplier/U775/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6980 f
+  ex_stage/multiplier/U775/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7478 f
+  ex_stage/multiplier/U778/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7478 f
+  ex_stage/multiplier/U778/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7977 f
+  ex_stage/multiplier/U781/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7977 f
+  ex_stage/multiplier/U781/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8475 f
+  ex_stage/multiplier/U784/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8475 f
+  ex_stage/multiplier/U784/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8974 f
+  ex_stage/multiplier/U787/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8974 f
+  ex_stage/multiplier/U787/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9472 f
+  ex_stage/multiplier/U790/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9472 f
+  ex_stage/multiplier/U790/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9970 f
+  ex_stage/multiplier/U793/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9970 f
+  ex_stage/multiplier/U793/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0469 f
+  ex_stage/multiplier/U796/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0469 f
+  ex_stage/multiplier/U796/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0967 f
+  ex_stage/multiplier/U799/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0967 f
+  ex_stage/multiplier/U799/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1465 f
+  ex_stage/multiplier/U802/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1465 f
+  ex_stage/multiplier/U802/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1964 f
+  ex_stage/multiplier/U805/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1964 f
+  ex_stage/multiplier/U805/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2462 f
+  ex_stage/multiplier/U808/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2462 f
+  ex_stage/multiplier/U808/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2961 f
+  ex_stage/multiplier/U811/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2961 f
+  ex_stage/multiplier/U811/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3459 f
+  ex_stage/multiplier/U814/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3459 f
+  ex_stage/multiplier/U814/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3957 f
+  ex_stage/multiplier/U817/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3957 f
+  ex_stage/multiplier/U817/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.4456 f
+  ex_stage/multiplier/U820/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.4456 f
+  ex_stage/multiplier/U820/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.4954 f
+  ex_stage/multiplier/U823/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.4954 f
+  ex_stage/multiplier/U823/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5450 f
+  ex_stage/multiplier/U826/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5450 f
+  ex_stage/multiplier/U826/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5945 f
+  ex_stage/multiplier/U829/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5945 f
+  ex_stage/multiplier/U829/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.6441 f
+  ex_stage/multiplier/U832/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.6441 f
+  ex_stage/multiplier/U832/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.6939 f
+  ex_stage/multiplier/U835/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.6939 f
+  ex_stage/multiplier/U835/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7435 f
+  ex_stage/multiplier/U838/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7435 f
+  ex_stage/multiplier/U838/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7930 f
+  ex_stage/multiplier/U841/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7930 f
+  ex_stage/multiplier/U841/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.8426 f
+  ex_stage/multiplier/U844/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.8426 f
+  ex_stage/multiplier/U844/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.8924 f
+  ex_stage/multiplier/U847/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.8924 f
+  ex_stage/multiplier/U847/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9420 f
+  ex_stage/multiplier/U850/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9420 f
+  ex_stage/multiplier/U850/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9915 f
+  ex_stage/multiplier/U853/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9915 f
+  ex_stage/multiplier/U853/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     6.0411 f
+  ex_stage/multiplier/U856/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     6.0411 f
+  ex_stage/multiplier/U856/S (FA1D1BWP40P140)
+                                              0.0250    0.0853     6.1263 r
+  ex_stage/multiplier/U854/B2 (MOAI22D1BWP40P140)
+                                              0.0250    0.0000     6.1263 r
+  ex_stage/multiplier/U854/ZN (MOAI22D1BWP40P140)
+                                              0.0882    0.0345     6.1608 r
+  ex_stage/multiplier/result_reg_125_/D (DFQD1BWP40P140)
+                                              0.0882    0.0000     6.1608 r
+  data arrival time                                                6.1608
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  ex_stage/multiplier/result_reg_125_/CP (DFQD1BWP40P140)
+                                                        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.1608
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.1488
+
+
+  Startpoint: ex_stage/multiplier/b_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ex_stage/multiplier/result_reg_124_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/multiplier/b_reg_2_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/multiplier/b_reg_2_/Q (DFQD1BWP40P140)
+                                              0.0313    0.0884     0.0884 f
+  ex_stage/multiplier/pp/io_bi[2] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/A3 (ND3D1BWP40P140)
+                                              0.0313    0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/ZN (ND3D1BWP40P140)
+                                              0.1666    0.1080     0.1964 r
+  ex_stage/multiplier/pp/U4/I (BUFFD1BWP40P140)
+                                              0.1666    0.0000     0.1964 r
+  ex_stage/multiplier/pp/U4/Z (BUFFD1BWP40P140)
+                                              0.3307    0.2213     0.4176 r
+  ex_stage/multiplier/pp/U18/C (OAI211D1BWP40P140)
+                                              0.3307    0.0000     0.4176 r
+  ex_stage/multiplier/pp/U18/ZN (OAI211D1BWP40P140)
+                                              0.0889    0.0804     0.4980 f
+  ex_stage/multiplier/pp/io_p[0] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.4980 f
+  ex_stage/multiplier/U455/A1 (AOI21D1BWP40P140)
+                                              0.0889    0.0000     0.4980 f
+  ex_stage/multiplier/U455/ZN (AOI21D1BWP40P140)
+                                              0.0435    0.0429     0.5409 r
+  ex_stage/multiplier/U458/A1 (OAI21D1BWP40P140)
+                                              0.0435    0.0000     0.5409 r
+  ex_stage/multiplier/U458/ZN (OAI21D1BWP40P140)
+                                              0.0375    0.0326     0.5735 f
+  ex_stage/multiplier/U461/A2 (AOI21D1BWP40P140)
+                                              0.0375    0.0000     0.5735 f
+  ex_stage/multiplier/U461/ZN (AOI21D1BWP40P140)
+                                              0.0389    0.0350     0.6085 r
+  ex_stage/multiplier/U464/A1 (OAI21D1BWP40P140)
+                                              0.0389    0.0000     0.6085 r
+  ex_stage/multiplier/U464/ZN (OAI21D1BWP40P140)
+                                              0.0443    0.0370     0.6455 f
+  ex_stage/multiplier/U468/A1 (AOI21D1BWP40P140)
+                                              0.0443    0.0000     0.6455 f
+  ex_stage/multiplier/U468/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.6829 r
+  ex_stage/multiplier/U471/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.6829 r
+  ex_stage/multiplier/U471/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7203 f
+  ex_stage/multiplier/U475/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7203 f
+  ex_stage/multiplier/U475/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.7578 r
+  ex_stage/multiplier/U478/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.7578 r
+  ex_stage/multiplier/U478/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7953 f
+  ex_stage/multiplier/U482/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7953 f
+  ex_stage/multiplier/U482/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.8327 r
+  ex_stage/multiplier/U485/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.8327 r
+  ex_stage/multiplier/U485/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.8702 f
+  ex_stage/multiplier/U489/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.8702 f
+  ex_stage/multiplier/U489/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.9076 r
+  ex_stage/multiplier/U492/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.9076 r
+  ex_stage/multiplier/U492/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     0.9451 f
+  ex_stage/multiplier/U496/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     0.9451 f
+  ex_stage/multiplier/U496/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     0.9827 r
+  ex_stage/multiplier/U499/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     0.9827 r
+  ex_stage/multiplier/U499/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0203 f
+  ex_stage/multiplier/U503/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0203 f
+  ex_stage/multiplier/U503/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.0579 r
+  ex_stage/multiplier/U506/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.0579 r
+  ex_stage/multiplier/U506/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0954 f
+  ex_stage/multiplier/U510/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0954 f
+  ex_stage/multiplier/U510/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.1330 r
+  ex_stage/multiplier/U513/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.1330 r
+  ex_stage/multiplier/U513/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.1706 f
+  ex_stage/multiplier/U517/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.1706 f
+  ex_stage/multiplier/U517/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2082 r
+  ex_stage/multiplier/U520/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2082 r
+  ex_stage/multiplier/U520/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.2457 f
+  ex_stage/multiplier/U524/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.2457 f
+  ex_stage/multiplier/U524/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2834 r
+  ex_stage/multiplier/U527/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2834 r
+  ex_stage/multiplier/U527/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3209 f
+  ex_stage/multiplier/U531/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3209 f
+  ex_stage/multiplier/U531/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.3585 r
+  ex_stage/multiplier/U534/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.3585 r
+  ex_stage/multiplier/U534/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3961 f
+  ex_stage/multiplier/U538/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3961 f
+  ex_stage/multiplier/U538/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.4337 r
+  ex_stage/multiplier/U541/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.4337 r
+  ex_stage/multiplier/U541/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.4712 f
+  ex_stage/multiplier/U545/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.4712 f
+  ex_stage/multiplier/U545/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5089 r
+  ex_stage/multiplier/U548/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5089 r
+  ex_stage/multiplier/U548/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.5464 f
+  ex_stage/multiplier/U552/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.5464 f
+  ex_stage/multiplier/U552/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5840 r
+  ex_stage/multiplier/U555/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5840 r
+  ex_stage/multiplier/U555/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6216 f
+  ex_stage/multiplier/U559/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6216 f
+  ex_stage/multiplier/U559/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.6592 r
+  ex_stage/multiplier/U562/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.6592 r
+  ex_stage/multiplier/U562/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6967 f
+  ex_stage/multiplier/U566/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6967 f
+  ex_stage/multiplier/U566/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.7343 r
+  ex_stage/multiplier/U569/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.7343 r
+  ex_stage/multiplier/U569/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.7719 f
+  ex_stage/multiplier/U573/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.7719 f
+  ex_stage/multiplier/U573/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8095 r
+  ex_stage/multiplier/U576/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8095 r
+  ex_stage/multiplier/U576/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.8470 f
+  ex_stage/multiplier/U580/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.8470 f
+  ex_stage/multiplier/U580/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8847 r
+  ex_stage/multiplier/U583/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8847 r
+  ex_stage/multiplier/U583/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9222 f
+  ex_stage/multiplier/U587/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9222 f
+  ex_stage/multiplier/U587/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.9598 r
+  ex_stage/multiplier/U590/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.9598 r
+  ex_stage/multiplier/U590/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9974 f
+  ex_stage/multiplier/U594/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9974 f
+  ex_stage/multiplier/U594/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.0350 r
+  ex_stage/multiplier/U597/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.0350 r
+  ex_stage/multiplier/U597/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.0725 f
+  ex_stage/multiplier/U601/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.0725 f
+  ex_stage/multiplier/U601/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1102 r
+  ex_stage/multiplier/U604/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1102 r
+  ex_stage/multiplier/U604/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.1477 f
+  ex_stage/multiplier/U608/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.1477 f
+  ex_stage/multiplier/U608/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1853 r
+  ex_stage/multiplier/U611/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1853 r
+  ex_stage/multiplier/U611/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2229 f
+  ex_stage/multiplier/U615/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2229 f
+  ex_stage/multiplier/U615/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.2605 r
+  ex_stage/multiplier/U618/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.2605 r
+  ex_stage/multiplier/U618/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2980 f
+  ex_stage/multiplier/U622/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2980 f
+  ex_stage/multiplier/U622/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.3357 r
+  ex_stage/multiplier/U625/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.3357 r
+  ex_stage/multiplier/U625/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.3732 f
+  ex_stage/multiplier/U629/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.3732 f
+  ex_stage/multiplier/U629/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4108 r
+  ex_stage/multiplier/U632/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4108 r
+  ex_stage/multiplier/U632/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.4483 f
+  ex_stage/multiplier/U636/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.4483 f
+  ex_stage/multiplier/U636/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4860 r
+  ex_stage/multiplier/U639/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4860 r
+  ex_stage/multiplier/U639/ZN (OAI21D1BWP40P140)
+                                              0.0470    0.0387     2.5247 f
+  ex_stage/multiplier/U643/A1 (AO21D1BWP40P140)
+                                              0.0470    0.0000     2.5247 f
+  ex_stage/multiplier/U643/Z (AO21D1BWP40P140)
+                                              0.0182    0.0384     2.5631 f
+  ex_stage/multiplier/U646/CI (FA1D1BWP40P140)
+                                              0.0182    0.0000     2.5631 f
+  ex_stage/multiplier/U646/CO (FA1D1BWP40P140)
+                                              0.0232    0.0480     2.6111 f
+  ex_stage/multiplier/U649/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6111 f
+  ex_stage/multiplier/U649/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.6609 f
+  ex_stage/multiplier/U652/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6609 f
+  ex_stage/multiplier/U652/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7108 f
+  ex_stage/multiplier/U655/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7108 f
+  ex_stage/multiplier/U655/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7606 f
+  ex_stage/multiplier/U658/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7606 f
+  ex_stage/multiplier/U658/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8105 f
+  ex_stage/multiplier/U661/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8105 f
+  ex_stage/multiplier/U661/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8603 f
+  ex_stage/multiplier/U664/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8603 f
+  ex_stage/multiplier/U664/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9101 f
+  ex_stage/multiplier/U667/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9101 f
+  ex_stage/multiplier/U667/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9600 f
+  ex_stage/multiplier/U670/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9600 f
+  ex_stage/multiplier/U670/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0098 f
+  ex_stage/multiplier/U673/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0098 f
+  ex_stage/multiplier/U673/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0597 f
+  ex_stage/multiplier/U676/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0597 f
+  ex_stage/multiplier/U676/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     3.1095 f
+  ex_stage/multiplier/U679/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1095 f
+  ex_stage/multiplier/U679/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.1590 f
+  ex_stage/multiplier/U682/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1590 f
+  ex_stage/multiplier/U682/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2086 f
+  ex_stage/multiplier/U685/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2086 f
+  ex_stage/multiplier/U685/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2581 f
+  ex_stage/multiplier/U688/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2581 f
+  ex_stage/multiplier/U688/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3077 f
+  ex_stage/multiplier/U691/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3077 f
+  ex_stage/multiplier/U691/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3572 f
+  ex_stage/multiplier/U694/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3572 f
+  ex_stage/multiplier/U694/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4068 f
+  ex_stage/multiplier/U697/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4068 f
+  ex_stage/multiplier/U697/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4563 f
+  ex_stage/multiplier/U700/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4563 f
+  ex_stage/multiplier/U700/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5059 f
+  ex_stage/multiplier/U703/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5059 f
+  ex_stage/multiplier/U703/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5555 f
+  ex_stage/multiplier/U706/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5555 f
+  ex_stage/multiplier/U706/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6050 f
+  ex_stage/multiplier/U709/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6050 f
+  ex_stage/multiplier/U709/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6546 f
+  ex_stage/multiplier/U712/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6546 f
+  ex_stage/multiplier/U712/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7041 f
+  ex_stage/multiplier/U715/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7041 f
+  ex_stage/multiplier/U715/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7537 f
+  ex_stage/multiplier/U718/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7537 f
+  ex_stage/multiplier/U718/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8032 f
+  ex_stage/multiplier/U721/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8032 f
+  ex_stage/multiplier/U721/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8528 f
+  ex_stage/multiplier/U724/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8528 f
+  ex_stage/multiplier/U724/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9023 f
+  ex_stage/multiplier/U727/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9023 f
+  ex_stage/multiplier/U727/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9519 f
+  ex_stage/multiplier/U730/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9519 f
+  ex_stage/multiplier/U730/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0014 f
+  ex_stage/multiplier/U733/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0014 f
+  ex_stage/multiplier/U733/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0510 f
+  ex_stage/multiplier/U736/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0510 f
+  ex_stage/multiplier/U736/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1005 f
+  ex_stage/multiplier/U739/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1005 f
+  ex_stage/multiplier/U739/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1501 f
+  ex_stage/multiplier/U742/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1501 f
+  ex_stage/multiplier/U742/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     4.1996 f
+  ex_stage/multiplier/U745/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.1996 f
+  ex_stage/multiplier/U745/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2495 f
+  ex_stage/multiplier/U748/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2495 f
+  ex_stage/multiplier/U748/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2993 f
+  ex_stage/multiplier/U751/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2993 f
+  ex_stage/multiplier/U751/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3491 f
+  ex_stage/multiplier/U754/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3491 f
+  ex_stage/multiplier/U754/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3990 f
+  ex_stage/multiplier/U757/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3990 f
+  ex_stage/multiplier/U757/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4488 f
+  ex_stage/multiplier/U760/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4488 f
+  ex_stage/multiplier/U760/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4986 f
+  ex_stage/multiplier/U763/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4986 f
+  ex_stage/multiplier/U763/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5485 f
+  ex_stage/multiplier/U766/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5485 f
+  ex_stage/multiplier/U766/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5983 f
+  ex_stage/multiplier/U769/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5983 f
+  ex_stage/multiplier/U769/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6482 f
+  ex_stage/multiplier/U772/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6482 f
+  ex_stage/multiplier/U772/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6980 f
+  ex_stage/multiplier/U775/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6980 f
+  ex_stage/multiplier/U775/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7478 f
+  ex_stage/multiplier/U778/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7478 f
+  ex_stage/multiplier/U778/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7977 f
+  ex_stage/multiplier/U781/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7977 f
+  ex_stage/multiplier/U781/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8475 f
+  ex_stage/multiplier/U784/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8475 f
+  ex_stage/multiplier/U784/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8974 f
+  ex_stage/multiplier/U787/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8974 f
+  ex_stage/multiplier/U787/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9472 f
+  ex_stage/multiplier/U790/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9472 f
+  ex_stage/multiplier/U790/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9970 f
+  ex_stage/multiplier/U793/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9970 f
+  ex_stage/multiplier/U793/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0469 f
+  ex_stage/multiplier/U796/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0469 f
+  ex_stage/multiplier/U796/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0967 f
+  ex_stage/multiplier/U799/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0967 f
+  ex_stage/multiplier/U799/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1465 f
+  ex_stage/multiplier/U802/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1465 f
+  ex_stage/multiplier/U802/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1964 f
+  ex_stage/multiplier/U805/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1964 f
+  ex_stage/multiplier/U805/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2462 f
+  ex_stage/multiplier/U808/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2462 f
+  ex_stage/multiplier/U808/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2961 f
+  ex_stage/multiplier/U811/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2961 f
+  ex_stage/multiplier/U811/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3459 f
+  ex_stage/multiplier/U814/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3459 f
+  ex_stage/multiplier/U814/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3957 f
+  ex_stage/multiplier/U817/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3957 f
+  ex_stage/multiplier/U817/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.4456 f
+  ex_stage/multiplier/U820/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.4456 f
+  ex_stage/multiplier/U820/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.4954 f
+  ex_stage/multiplier/U823/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.4954 f
+  ex_stage/multiplier/U823/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5450 f
+  ex_stage/multiplier/U826/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5450 f
+  ex_stage/multiplier/U826/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5945 f
+  ex_stage/multiplier/U829/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5945 f
+  ex_stage/multiplier/U829/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.6441 f
+  ex_stage/multiplier/U832/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.6441 f
+  ex_stage/multiplier/U832/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.6939 f
+  ex_stage/multiplier/U835/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.6939 f
+  ex_stage/multiplier/U835/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7435 f
+  ex_stage/multiplier/U838/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7435 f
+  ex_stage/multiplier/U838/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7930 f
+  ex_stage/multiplier/U841/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7930 f
+  ex_stage/multiplier/U841/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.8426 f
+  ex_stage/multiplier/U844/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.8426 f
+  ex_stage/multiplier/U844/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.8924 f
+  ex_stage/multiplier/U847/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.8924 f
+  ex_stage/multiplier/U847/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9420 f
+  ex_stage/multiplier/U850/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9420 f
+  ex_stage/multiplier/U850/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9915 f
+  ex_stage/multiplier/U853/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9915 f
+  ex_stage/multiplier/U853/S (FA1D1BWP40P140)
+                                              0.0245    0.0850     6.0765 r
+  ex_stage/multiplier/U851/B2 (MOAI22D1BWP40P140)
+                                              0.0245    0.0000     6.0765 r
+  ex_stage/multiplier/U851/ZN (MOAI22D1BWP40P140)
+                                              0.0882    0.0344     6.1109 r
+  ex_stage/multiplier/result_reg_124_/D (DFQD1BWP40P140)
+                                              0.0882    0.0000     6.1109 r
+  data arrival time                                                6.1109
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  ex_stage/multiplier/result_reg_124_/CP (DFQD1BWP40P140)
+                                                        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.1109
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.1987
+
+
+  Startpoint: ex_stage/multiplier/b_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ex_stage/multiplier/result_reg_123_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ex_stage/multiplier/b_reg_2_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ex_stage/multiplier/b_reg_2_/Q (DFQD1BWP40P140)
+                                              0.0313    0.0884     0.0884 f
+  ex_stage/multiplier/pp/io_bi[2] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/A3 (ND3D1BWP40P140)
+                                              0.0313    0.0000     0.0884 f
+  ex_stage/multiplier/pp/U5/ZN (ND3D1BWP40P140)
+                                              0.1666    0.1080     0.1964 r
+  ex_stage/multiplier/pp/U4/I (BUFFD1BWP40P140)
+                                              0.1666    0.0000     0.1964 r
+  ex_stage/multiplier/pp/U4/Z (BUFFD1BWP40P140)
+                                              0.3307    0.2213     0.4176 r
+  ex_stage/multiplier/pp/U18/C (OAI211D1BWP40P140)
+                                              0.3307    0.0000     0.4176 r
+  ex_stage/multiplier/pp/U18/ZN (OAI211D1BWP40P140)
+                                              0.0889    0.0804     0.4980 f
+  ex_stage/multiplier/pp/io_p[0] (ysyx_22051098_PartialProduct_0)
+                                                        0.0000     0.4980 f
+  ex_stage/multiplier/U455/A1 (AOI21D1BWP40P140)
+                                              0.0889    0.0000     0.4980 f
+  ex_stage/multiplier/U455/ZN (AOI21D1BWP40P140)
+                                              0.0435    0.0429     0.5409 r
+  ex_stage/multiplier/U458/A1 (OAI21D1BWP40P140)
+                                              0.0435    0.0000     0.5409 r
+  ex_stage/multiplier/U458/ZN (OAI21D1BWP40P140)
+                                              0.0375    0.0326     0.5735 f
+  ex_stage/multiplier/U461/A2 (AOI21D1BWP40P140)
+                                              0.0375    0.0000     0.5735 f
+  ex_stage/multiplier/U461/ZN (AOI21D1BWP40P140)
+                                              0.0389    0.0350     0.6085 r
+  ex_stage/multiplier/U464/A1 (OAI21D1BWP40P140)
+                                              0.0389    0.0000     0.6085 r
+  ex_stage/multiplier/U464/ZN (OAI21D1BWP40P140)
+                                              0.0443    0.0370     0.6455 f
+  ex_stage/multiplier/U468/A1 (AOI21D1BWP40P140)
+                                              0.0443    0.0000     0.6455 f
+  ex_stage/multiplier/U468/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.6829 r
+  ex_stage/multiplier/U471/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.6829 r
+  ex_stage/multiplier/U471/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7203 f
+  ex_stage/multiplier/U475/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7203 f
+  ex_stage/multiplier/U475/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.7578 r
+  ex_stage/multiplier/U478/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.7578 r
+  ex_stage/multiplier/U478/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.7953 f
+  ex_stage/multiplier/U482/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.7953 f
+  ex_stage/multiplier/U482/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.8327 r
+  ex_stage/multiplier/U485/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.8327 r
+  ex_stage/multiplier/U485/ZN (OAI21D1BWP40P140)
+                                              0.0445    0.0375     0.8702 f
+  ex_stage/multiplier/U489/A1 (AOI21D1BWP40P140)
+                                              0.0445    0.0000     0.8702 f
+  ex_stage/multiplier/U489/ZN (AOI21D1BWP40P140)
+                                              0.0410    0.0374     0.9076 r
+  ex_stage/multiplier/U492/A1 (OAI21D1BWP40P140)
+                                              0.0410    0.0000     0.9076 r
+  ex_stage/multiplier/U492/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     0.9451 f
+  ex_stage/multiplier/U496/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     0.9451 f
+  ex_stage/multiplier/U496/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     0.9827 r
+  ex_stage/multiplier/U499/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     0.9827 r
+  ex_stage/multiplier/U499/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0203 f
+  ex_stage/multiplier/U503/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0203 f
+  ex_stage/multiplier/U503/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.0579 r
+  ex_stage/multiplier/U506/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.0579 r
+  ex_stage/multiplier/U506/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.0954 f
+  ex_stage/multiplier/U510/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.0954 f
+  ex_stage/multiplier/U510/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.1330 r
+  ex_stage/multiplier/U513/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.1330 r
+  ex_stage/multiplier/U513/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.1706 f
+  ex_stage/multiplier/U517/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.1706 f
+  ex_stage/multiplier/U517/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2082 r
+  ex_stage/multiplier/U520/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2082 r
+  ex_stage/multiplier/U520/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.2457 f
+  ex_stage/multiplier/U524/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.2457 f
+  ex_stage/multiplier/U524/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.2834 r
+  ex_stage/multiplier/U527/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.2834 r
+  ex_stage/multiplier/U527/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3209 f
+  ex_stage/multiplier/U531/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3209 f
+  ex_stage/multiplier/U531/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.3585 r
+  ex_stage/multiplier/U534/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.3585 r
+  ex_stage/multiplier/U534/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.3961 f
+  ex_stage/multiplier/U538/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.3961 f
+  ex_stage/multiplier/U538/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.4337 r
+  ex_stage/multiplier/U541/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.4337 r
+  ex_stage/multiplier/U541/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.4712 f
+  ex_stage/multiplier/U545/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.4712 f
+  ex_stage/multiplier/U545/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5089 r
+  ex_stage/multiplier/U548/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5089 r
+  ex_stage/multiplier/U548/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.5464 f
+  ex_stage/multiplier/U552/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.5464 f
+  ex_stage/multiplier/U552/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.5840 r
+  ex_stage/multiplier/U555/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.5840 r
+  ex_stage/multiplier/U555/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6216 f
+  ex_stage/multiplier/U559/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6216 f
+  ex_stage/multiplier/U559/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.6592 r
+  ex_stage/multiplier/U562/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.6592 r
+  ex_stage/multiplier/U562/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.6967 f
+  ex_stage/multiplier/U566/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.6967 f
+  ex_stage/multiplier/U566/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.7343 r
+  ex_stage/multiplier/U569/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.7343 r
+  ex_stage/multiplier/U569/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.7719 f
+  ex_stage/multiplier/U573/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.7719 f
+  ex_stage/multiplier/U573/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8095 r
+  ex_stage/multiplier/U576/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8095 r
+  ex_stage/multiplier/U576/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.8470 f
+  ex_stage/multiplier/U580/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.8470 f
+  ex_stage/multiplier/U580/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.8847 r
+  ex_stage/multiplier/U583/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.8847 r
+  ex_stage/multiplier/U583/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9222 f
+  ex_stage/multiplier/U587/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9222 f
+  ex_stage/multiplier/U587/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     1.9598 r
+  ex_stage/multiplier/U590/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     1.9598 r
+  ex_stage/multiplier/U590/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     1.9974 f
+  ex_stage/multiplier/U594/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     1.9974 f
+  ex_stage/multiplier/U594/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.0350 r
+  ex_stage/multiplier/U597/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.0350 r
+  ex_stage/multiplier/U597/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.0725 f
+  ex_stage/multiplier/U601/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.0725 f
+  ex_stage/multiplier/U601/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1102 r
+  ex_stage/multiplier/U604/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1102 r
+  ex_stage/multiplier/U604/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.1477 f
+  ex_stage/multiplier/U608/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.1477 f
+  ex_stage/multiplier/U608/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.1853 r
+  ex_stage/multiplier/U611/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.1853 r
+  ex_stage/multiplier/U611/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2229 f
+  ex_stage/multiplier/U615/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2229 f
+  ex_stage/multiplier/U615/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.2605 r
+  ex_stage/multiplier/U618/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.2605 r
+  ex_stage/multiplier/U618/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.2980 f
+  ex_stage/multiplier/U622/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.2980 f
+  ex_stage/multiplier/U622/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.3357 r
+  ex_stage/multiplier/U625/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.3357 r
+  ex_stage/multiplier/U625/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.3732 f
+  ex_stage/multiplier/U629/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.3732 f
+  ex_stage/multiplier/U629/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4108 r
+  ex_stage/multiplier/U632/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4108 r
+  ex_stage/multiplier/U632/ZN (OAI21D1BWP40P140)
+                                              0.0453    0.0375     2.4483 f
+  ex_stage/multiplier/U636/A1 (AOI21D1BWP40P140)
+                                              0.0453    0.0000     2.4483 f
+  ex_stage/multiplier/U636/ZN (AOI21D1BWP40P140)
+                                              0.0412    0.0376     2.4860 r
+  ex_stage/multiplier/U639/A1 (OAI21D1BWP40P140)
+                                              0.0412    0.0000     2.4860 r
+  ex_stage/multiplier/U639/ZN (OAI21D1BWP40P140)
+                                              0.0470    0.0387     2.5247 f
+  ex_stage/multiplier/U643/A1 (AO21D1BWP40P140)
+                                              0.0470    0.0000     2.5247 f
+  ex_stage/multiplier/U643/Z (AO21D1BWP40P140)
+                                              0.0182    0.0384     2.5631 f
+  ex_stage/multiplier/U646/CI (FA1D1BWP40P140)
+                                              0.0182    0.0000     2.5631 f
+  ex_stage/multiplier/U646/CO (FA1D1BWP40P140)
+                                              0.0232    0.0480     2.6111 f
+  ex_stage/multiplier/U649/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6111 f
+  ex_stage/multiplier/U649/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.6609 f
+  ex_stage/multiplier/U652/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.6609 f
+  ex_stage/multiplier/U652/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7108 f
+  ex_stage/multiplier/U655/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7108 f
+  ex_stage/multiplier/U655/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.7606 f
+  ex_stage/multiplier/U658/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.7606 f
+  ex_stage/multiplier/U658/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8105 f
+  ex_stage/multiplier/U661/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8105 f
+  ex_stage/multiplier/U661/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.8603 f
+  ex_stage/multiplier/U664/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.8603 f
+  ex_stage/multiplier/U664/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9101 f
+  ex_stage/multiplier/U667/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9101 f
+  ex_stage/multiplier/U667/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     2.9600 f
+  ex_stage/multiplier/U670/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     2.9600 f
+  ex_stage/multiplier/U670/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0098 f
+  ex_stage/multiplier/U673/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0098 f
+  ex_stage/multiplier/U673/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     3.0597 f
+  ex_stage/multiplier/U676/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     3.0597 f
+  ex_stage/multiplier/U676/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     3.1095 f
+  ex_stage/multiplier/U679/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1095 f
+  ex_stage/multiplier/U679/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.1590 f
+  ex_stage/multiplier/U682/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.1590 f
+  ex_stage/multiplier/U682/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2086 f
+  ex_stage/multiplier/U685/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2086 f
+  ex_stage/multiplier/U685/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.2581 f
+  ex_stage/multiplier/U688/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.2581 f
+  ex_stage/multiplier/U688/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3077 f
+  ex_stage/multiplier/U691/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3077 f
+  ex_stage/multiplier/U691/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.3572 f
+  ex_stage/multiplier/U694/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.3572 f
+  ex_stage/multiplier/U694/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4068 f
+  ex_stage/multiplier/U697/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4068 f
+  ex_stage/multiplier/U697/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.4563 f
+  ex_stage/multiplier/U700/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.4563 f
+  ex_stage/multiplier/U700/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5059 f
+  ex_stage/multiplier/U703/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5059 f
+  ex_stage/multiplier/U703/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.5555 f
+  ex_stage/multiplier/U706/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.5555 f
+  ex_stage/multiplier/U706/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6050 f
+  ex_stage/multiplier/U709/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6050 f
+  ex_stage/multiplier/U709/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.6546 f
+  ex_stage/multiplier/U712/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.6546 f
+  ex_stage/multiplier/U712/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7041 f
+  ex_stage/multiplier/U715/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7041 f
+  ex_stage/multiplier/U715/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.7537 f
+  ex_stage/multiplier/U718/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.7537 f
+  ex_stage/multiplier/U718/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8032 f
+  ex_stage/multiplier/U721/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8032 f
+  ex_stage/multiplier/U721/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.8528 f
+  ex_stage/multiplier/U724/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.8528 f
+  ex_stage/multiplier/U724/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9023 f
+  ex_stage/multiplier/U727/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9023 f
+  ex_stage/multiplier/U727/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     3.9519 f
+  ex_stage/multiplier/U730/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     3.9519 f
+  ex_stage/multiplier/U730/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0014 f
+  ex_stage/multiplier/U733/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0014 f
+  ex_stage/multiplier/U733/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.0510 f
+  ex_stage/multiplier/U736/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.0510 f
+  ex_stage/multiplier/U736/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1005 f
+  ex_stage/multiplier/U739/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1005 f
+  ex_stage/multiplier/U739/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     4.1501 f
+  ex_stage/multiplier/U742/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     4.1501 f
+  ex_stage/multiplier/U742/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     4.1996 f
+  ex_stage/multiplier/U745/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.1996 f
+  ex_stage/multiplier/U745/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2495 f
+  ex_stage/multiplier/U748/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2495 f
+  ex_stage/multiplier/U748/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.2993 f
+  ex_stage/multiplier/U751/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.2993 f
+  ex_stage/multiplier/U751/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3491 f
+  ex_stage/multiplier/U754/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3491 f
+  ex_stage/multiplier/U754/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.3990 f
+  ex_stage/multiplier/U757/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.3990 f
+  ex_stage/multiplier/U757/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4488 f
+  ex_stage/multiplier/U760/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4488 f
+  ex_stage/multiplier/U760/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.4986 f
+  ex_stage/multiplier/U763/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.4986 f
+  ex_stage/multiplier/U763/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5485 f
+  ex_stage/multiplier/U766/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5485 f
+  ex_stage/multiplier/U766/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.5983 f
+  ex_stage/multiplier/U769/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.5983 f
+  ex_stage/multiplier/U769/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6482 f
+  ex_stage/multiplier/U772/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6482 f
+  ex_stage/multiplier/U772/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.6980 f
+  ex_stage/multiplier/U775/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.6980 f
+  ex_stage/multiplier/U775/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7478 f
+  ex_stage/multiplier/U778/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7478 f
+  ex_stage/multiplier/U778/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.7977 f
+  ex_stage/multiplier/U781/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.7977 f
+  ex_stage/multiplier/U781/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8475 f
+  ex_stage/multiplier/U784/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8475 f
+  ex_stage/multiplier/U784/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.8974 f
+  ex_stage/multiplier/U787/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.8974 f
+  ex_stage/multiplier/U787/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9472 f
+  ex_stage/multiplier/U790/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9472 f
+  ex_stage/multiplier/U790/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     4.9970 f
+  ex_stage/multiplier/U793/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     4.9970 f
+  ex_stage/multiplier/U793/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0469 f
+  ex_stage/multiplier/U796/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0469 f
+  ex_stage/multiplier/U796/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.0967 f
+  ex_stage/multiplier/U799/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.0967 f
+  ex_stage/multiplier/U799/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1465 f
+  ex_stage/multiplier/U802/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1465 f
+  ex_stage/multiplier/U802/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.1964 f
+  ex_stage/multiplier/U805/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.1964 f
+  ex_stage/multiplier/U805/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2462 f
+  ex_stage/multiplier/U808/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2462 f
+  ex_stage/multiplier/U808/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.2961 f
+  ex_stage/multiplier/U811/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.2961 f
+  ex_stage/multiplier/U811/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3459 f
+  ex_stage/multiplier/U814/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3459 f
+  ex_stage/multiplier/U814/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.3957 f
+  ex_stage/multiplier/U817/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.3957 f
+  ex_stage/multiplier/U817/CO (FA1D1BWP40P140)
+                                              0.0232    0.0498     5.4456 f
+  ex_stage/multiplier/U820/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.4456 f
+  ex_stage/multiplier/U820/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.4954 f
+  ex_stage/multiplier/U823/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.4954 f
+  ex_stage/multiplier/U823/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5450 f
+  ex_stage/multiplier/U826/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5450 f
+  ex_stage/multiplier/U826/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.5945 f
+  ex_stage/multiplier/U829/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.5945 f
+  ex_stage/multiplier/U829/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.6441 f
+  ex_stage/multiplier/U832/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.6441 f
+  ex_stage/multiplier/U832/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.6939 f
+  ex_stage/multiplier/U835/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.6939 f
+  ex_stage/multiplier/U835/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7435 f
+  ex_stage/multiplier/U838/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7435 f
+  ex_stage/multiplier/U838/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.7930 f
+  ex_stage/multiplier/U841/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.7930 f
+  ex_stage/multiplier/U841/CO (FA1D1BWP40P140)
+                                              0.0232    0.0496     5.8426 f
+  ex_stage/multiplier/U844/CI (FA1D1BWP40P140)
+                                              0.0232    0.0000     5.8426 f
+  ex_stage/multiplier/U844/CO (FA1D1BWP40P140)
+                                              0.0224    0.0498     5.8924 f
+  ex_stage/multiplier/U847/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.8924 f
+  ex_stage/multiplier/U847/CO (FA1D1BWP40P140)
+                                              0.0224    0.0496     5.9420 f
+  ex_stage/multiplier/U850/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     5.9420 f
+  ex_stage/multiplier/U850/S (FA1D1BWP40P140)
+                                              0.0250    0.0850     6.0269 r
+  ex_stage/multiplier/U848/B2 (MOAI22D1BWP40P140)
+                                              0.0250    0.0000     6.0269 r
+  ex_stage/multiplier/U848/ZN (MOAI22D1BWP40P140)
+                                              0.0882    0.0345     6.0615 r
+  ex_stage/multiplier/result_reg_123_/D (DFQD1BWP40P140)
+                                              0.0882    0.0000     6.0615 r
+  data arrival time                                                6.0615
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  ex_stage/multiplier/result_reg_123_/CP (DFQD1BWP40P140)
+                                                        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.0615
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.2481
+
+
+1
