@@ -1,0 +1,2053 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22051094
+freq: 100
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+70069.5  70069.5  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+74332  74332  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.99  0.01 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  100.0     153.8      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22051094
+Version: R-2020.09-SP3a
+Date   : Thu Mar 14 17:03:32 2024
+****************************************
+
+Number of ports:                        20682
+Number of nets:                         88670
+Number of cells:                        76594
+Number of combinational cells:          54783
+Number of sequential cells:             19549
+Number of macros/black boxes:               0
+Number of buf/inv:                      10177
+Number of references:                      16
+
+Combinational area:              33117.839670
+Buf/Inv area:                     3150.756023
+Noncombinational area:           36951.641722
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 70069.481392
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+ysyx_22051094                     70069.4814    100.0    489.3840      0.0000  0.0000  ysyx_22051094
+arbiter                             335.4120      0.5    265.4820     69.9300  0.0000  ysyx_22051094_AXI_Arbiter_0
+clint                               843.8220      1.2    480.9420    362.8800  0.0000  ysyx_22051094_Clint_0
+csr                                 695.0160      1.0    305.6760    389.3400  0.0000  ysyx_22051094_CSR_0
+dcache                            25522.4337     36.4   1101.3660    829.7100  0.0000  ysyx_22051094_Cache_3
+dcache/random_bit_prng               35.1540      0.1      3.0240     32.1300  0.0000  ysyx_22051094_MaxPeriodFibonacciLFSR_2
+dcache/ways_D                       308.9520      0.4    186.1020    122.8500  0.0000  ysyx_22051094_Cache_Sram_1_6
+dcache/ways_D_1                     308.9520      0.4    186.1020    122.8500  0.0000  ysyx_22051094_Cache_Sram_1_9
+dcache/ways_V                       308.9520      0.4    186.1020    122.8500  0.0000  ysyx_22051094_Cache_Sram_1_8
+dcache/ways_V_1                     308.9520      0.4    186.1020    122.8500  0.0000  ysyx_22051094_Cache_Sram_1_11
+dcache/ways_data                    138.6000      0.2    138.6000      0.0000  0.0000  ysyx_22051094_Cache_Line_6
+dcache/ways_data_1                  140.1120      0.2    140.1120      0.0000  0.0000  ysyx_22051094_Cache_Line_5
+dcache/ways_tag                   11020.9679     15.7   4387.0679   6633.8999  0.0000  ysyx_22051094_Cache_Sram_6
+dcache/ways_tag_1                 11020.7159     15.7   4386.8159   6633.8999  0.0000  ysyx_22051094_Cache_Sram_7
+ds                                 1555.8480      2.2   1370.6280    185.2200  0.0000  ysyx_22051094_DS_0
+es                                 5926.7880      8.5    865.2420    842.9400  0.0000  ysyx_22051094_ES_0
+es/alu                             1163.7360      1.7   1163.7360      0.0000  0.0000  ysyx_22051094_ALU_0
+es/divider                         1526.9940      2.2   1024.1280    502.8660  0.0000  ysyx_22051094_Divider_0
+es/multiplier                      1527.8760      2.2    902.2860    625.5900  0.0000  ysyx_22051094_Multiplier_0
+fs                                  426.3840      0.6    241.1640    185.2200  0.0000  ysyx_22051094_FS_0
+icache                            24165.9178     34.5    725.6340    393.1200  0.0000  ysyx_22051094_Cache_2
+icache/random_bit_prng               35.5320      0.1      3.2760     32.2560  0.0000  ysyx_22051094_MaxPeriodFibonacciLFSR_3
+icache/ways_V                       311.3460      0.4    188.4960    122.8500  0.0000  ysyx_22051094_Cache_Sram_1_4
+icache/ways_V_1                     311.2200      0.4    188.3700    122.8500  0.0000  ysyx_22051094_Cache_Sram_1_10
+icache/ways_data                    175.8960      0.3    175.8960      0.0000  0.0000  ysyx_22051094_Cache_Line_4
+icache/ways_data_1                  158.5080      0.2    158.5080      0.0000  0.0000  ysyx_22051094_Cache_Line_7
+icache/ways_tag                   11027.2679     15.7   4393.3679   6633.8999  0.0000  ysyx_22051094_Cache_Sram_1
+icache/ways_tag_1                 11027.3939     15.7   4393.4939   6633.8999  0.0000  ysyx_22051094_Cache_Sram_5
+ms                                 1527.3720      2.2    709.0020    818.3700  0.0000  ysyx_22051094_MS_0
+pf                                  373.4640      0.5    248.7240    124.7400  0.0000  ysyx_22051094_PF_0
+rf                                 7271.5860     10.4   3521.8260   3749.7600  0.0000  ysyx_22051094_Regfile_0
+ws                                  936.0540      1.3    401.1840    534.8700  0.0000  ysyx_22051094_WS_0
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                  33117.8397  36951.6417  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22051094
+Version: R-2020.09-SP3a
+Date   : Thu Mar 14 17:03:25 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: es/es_reg_alu_op_2_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/ways_V_1/io_Q_r_reg
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  es/es_reg_alu_op_2_reg/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  es/es_reg_alu_op_2_reg/Q (DFQD1BWP40P140)   0.0228    0.0835     0.0835 f
+  es/alu/io_alu_op_2 (ysyx_22051094_ALU_0)              0.0000     0.0835 f
+  es/alu/U251/A1 (NR2D1BWP40P140)             0.0228    0.0000     0.0835 f
+  es/alu/U251/ZN (NR2D1BWP40P140)             0.0180    0.0176     0.1011 r
+  es/alu/U252/B1 (IND2D1BWP40P140)            0.0180    0.0000     0.1011 r
+  es/alu/U252/ZN (IND2D1BWP40P140)            0.0853    0.0564     0.1575 f
+  es/alu/U6/I (INVD1BWP40P140)                0.0853    0.0000     0.1575 f
+  es/alu/U6/ZN (INVD1BWP40P140)               0.0287    0.0291     0.1867 r
+  es/alu/U365/I (INVD2BWP40P140)              0.0287    0.0000     0.1867 r
+  es/alu/U365/ZN (INVD2BWP40P140)             0.2839    0.1698     0.3565 f
+  es/alu/U2137/A1 (XNR2UD1BWP40P140)          0.2839    0.0000     0.3565 f
+  es/alu/U2137/ZN (XNR2UD1BWP40P140)          0.0699    0.0820     0.4385 f
+  es/alu/U295/A1 (ND2D1BWP40P140)             0.0699    0.0000     0.4385 f
+  es/alu/U295/ZN (ND2D1BWP40P140)             0.0259    0.0268     0.4653 r
+  es/alu/U296/I (INVD1BWP40P140)              0.0259    0.0000     0.4653 r
+  es/alu/U296/ZN (INVD1BWP40P140)             0.0129    0.0131     0.4784 f
+  es/alu/U297/B (AOI21D1BWP40P140)            0.0129    0.0000     0.4784 f
+  es/alu/U297/ZN (AOI21D1BWP40P140)           0.0410    0.0310     0.5095 r
+  es/alu/U9/A1 (OAI21D1BWP40P140)             0.0410    0.0000     0.5095 r
+  es/alu/U9/ZN (OAI21D1BWP40P140)             0.0445    0.0375     0.5469 f
+  es/alu/U2144/A1 (AOI21D1BWP40P140)          0.0445    0.0000     0.5469 f
+  es/alu/U2144/ZN (AOI21D1BWP40P140)          0.0410    0.0374     0.5844 r
+  es/alu/U2143/A1 (OAI21D1BWP40P140)          0.0410    0.0000     0.5844 r
+  es/alu/U2143/ZN (OAI21D1BWP40P140)          0.0445    0.0375     0.6219 f
+  es/alu/U306/A1 (AOI21D1BWP40P140)           0.0445    0.0000     0.6219 f
+  es/alu/U306/ZN (AOI21D1BWP40P140)           0.0410    0.0374     0.6593 r
+  es/alu/U636/A1 (OAI21D1BWP40P140)           0.0410    0.0000     0.6593 r
+  es/alu/U636/ZN (OAI21D1BWP40P140)           0.0445    0.0375     0.6968 f
+  es/alu/U1273/A1 (AOI21D1BWP40P140)          0.0445    0.0000     0.6968 f
+  es/alu/U1273/ZN (AOI21D1BWP40P140)          0.0478    0.0417     0.7385 r
+  es/alu/U312/A1 (OAI21D2BWP40P140)           0.0478    0.0000     0.7385 r
+  es/alu/U312/ZN (OAI21D2BWP40P140)           0.0307    0.0265     0.7650 f
+  es/alu/U1274/A1 (AOI21D1BWP40P140)          0.0307    0.0000     0.7650 f
+  es/alu/U1274/ZN (AOI21D1BWP40P140)          0.0457    0.0376     0.8026 r
+  es/alu/U89/A1 (OAI21D2BWP40P140)            0.0457    0.0000     0.8026 r
+  es/alu/U89/ZN (OAI21D2BWP40P140)            0.0307    0.0262     0.8288 f
+  es/alu/U319/A1 (AOI21D1BWP40P140)           0.0307    0.0000     0.8288 f
+  es/alu/U319/ZN (AOI21D1BWP40P140)           0.0388    0.0334     0.8621 r
+  es/alu/U2090/A1 (OAI21D1BWP40P140)          0.0388    0.0000     0.8621 r
+  es/alu/U2090/ZN (OAI21D1BWP40P140)          0.0442    0.0370     0.8991 f
+  es/alu/U2134/A1 (AOI21D1BWP40P140)          0.0442    0.0000     0.8991 f
+  es/alu/U2134/ZN (AOI21D1BWP40P140)          0.0478    0.0417     0.9407 r
+  es/alu/U88/A1 (OAI21D2BWP40P140)            0.0478    0.0000     0.9407 r
+  es/alu/U88/ZN (OAI21D2BWP40P140)            0.0307    0.0265     0.9673 f
+  es/alu/U328/A1 (AOI21D1BWP40P140)           0.0307    0.0000     0.9673 f
+  es/alu/U328/ZN (AOI21D1BWP40P140)           0.0388    0.0334     1.0006 r
+  es/alu/U2135/A1 (OAI21D1BWP40P140)          0.0388    0.0000     1.0006 r
+  es/alu/U2135/ZN (OAI21D1BWP40P140)          0.0497    0.0404     1.0410 f
+  es/alu/U87/A1 (AOI21OPTREPBD1BWP40P140)     0.0497    0.0000     1.0410 f
+  es/alu/U87/ZN (AOI21OPTREPBD1BWP40P140)     0.0341    0.0332     1.0742 r
+  es/alu/U86/A1 (OAI21D2BWP40P140)            0.0341    0.0000     1.0742 r
+  es/alu/U86/ZN (OAI21D2BWP40P140)            0.0307    0.0243     1.0985 f
+  es/alu/U337/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.0985 f
+  es/alu/U337/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.1361 r
+  es/alu/U339/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.1361 r
+  es/alu/U339/ZN (OAI21D2BWP40P140)           0.0341    0.0289     1.1650 f
+  es/alu/U81/A1 (AOI21D2BWP40P140)            0.0341    0.0000     1.1650 f
+  es/alu/U81/ZN (AOI21D2BWP40P140)            0.0280    0.0258     1.1909 r
+  es/alu/U77/A1 (OAI21D2BWP40P140LVT)         0.0280    0.0000     1.1909 r
+  es/alu/U77/ZN (OAI21D2BWP40P140LVT)         0.0273    0.0188     1.2096 f
+  es/alu/U346/A1 (AOI21D1BWP40P140)           0.0273    0.0000     1.2096 f
+  es/alu/U346/ZN (AOI21D1BWP40P140)           0.0452    0.0364     1.2461 r
+  es/alu/U71/A1 (OAI21D2BWP40P140)            0.0452    0.0000     1.2461 r
+  es/alu/U71/ZN (OAI21D2BWP40P140)            0.0307    0.0261     1.2722 f
+  es/alu/U333/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.2722 f
+  es/alu/U333/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.3097 r
+  es/alu/U354/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.3097 r
+  es/alu/U354/ZN (OAI21D2BWP40P140)           0.0341    0.0289     1.3386 f
+  es/alu/U67/A1 (AOI21D2BWP40P140)            0.0341    0.0000     1.3386 f
+  es/alu/U67/ZN (AOI21D2BWP40P140)            0.0277    0.0256     1.3642 r
+  es/alu/U62/A1 (OAI21D2BWP40P140)            0.0277    0.0000     1.3642 r
+  es/alu/U62/ZN (OAI21D2BWP40P140)            0.0307    0.0228     1.3870 f
+  es/alu/U361/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.3870 f
+  es/alu/U361/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.4246 r
+  es/alu/U58/A1 (OAI21D2BWP40P140)            0.0457    0.0000     1.4246 r
+  es/alu/U58/ZN (OAI21D2BWP40P140)            0.0307    0.0262     1.4507 f
+  es/alu/U342/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.4507 f
+  es/alu/U342/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.4883 r
+  es/alu/U367/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.4883 r
+  es/alu/U367/ZN (OAI21D2BWP40P140)           0.0307    0.0262     1.5145 f
+  es/alu/U370/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.5145 f
+  es/alu/U370/ZN (AOI21D1BWP40P140)           0.0465    0.0381     1.5525 r
+  es/alu/U48/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0465    0.0000     1.5525 r
+  es/alu/U48/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0329    0.0244     1.5769 f
+  es/alu/U91/A1 (ND2D1BWP40P140)              0.0329    0.0000     1.5769 f
+  es/alu/U91/ZN (ND2D1BWP40P140)              0.0171    0.0188     1.5957 r
+  es/alu/U2142/A1 (ND2OPTPAD2BWP40P140)       0.0171    0.0000     1.5957 r
+  es/alu/U2142/ZN (ND2OPTPAD2BWP40P140)       0.0145    0.0132     1.6089 f
+  es/alu/U1669/CI (FA1D1BWP40P140)            0.0145    0.0000     1.6089 f
+  es/alu/U1669/CO (FA1D1BWP40P140)            0.0257    0.0497     1.6586 f
+  es/alu/U45/A1 (ND2D1BWP40P140)              0.0257    0.0000     1.6586 f
+  es/alu/U45/ZN (ND2D1BWP40P140)              0.0127    0.0141     1.6727 r
+  es/alu/U348/A1 (ND2D1BWP40P140)             0.0127    0.0000     1.6727 r
+  es/alu/U348/ZN (ND2D1BWP40P140)             0.0287    0.0220     1.6947 f
+  es/alu/U1391/CI (FA1D1BWP40P140)            0.0287    0.0000     1.6947 f
+  es/alu/U1391/CO (FA1D1BWP40P140)            0.0225    0.0519     1.7466 f
+  es/alu/U1680/CI (FA1D1BWP40P140)            0.0225    0.0000     1.7466 f
+  es/alu/U1680/CO (FA1D1BWP40P140)            0.0257    0.0526     1.7992 f
+  es/alu/U26/A1 (ND2D1BWP40P140)              0.0257    0.0000     1.7992 f
+  es/alu/U26/ZN (ND2D1BWP40P140)              0.0127    0.0141     1.8133 r
+  es/alu/U352/A1 (ND2D1BWP40P140)             0.0127    0.0000     1.8133 r
+  es/alu/U352/ZN (ND2D1BWP40P140)             0.0287    0.0220     1.8353 f
+  es/alu/U1417/CI (FA1D1BWP40P140)            0.0287    0.0000     1.8353 f
+  es/alu/U1417/CO (FA1D1BWP40P140)            0.0225    0.0519     1.8872 f
+  es/alu/U232/CI (FA1D1BWP40P140)             0.0225    0.0000     1.8872 f
+  es/alu/U232/CO (FA1D1BWP40P140)             0.0223    0.0496     1.9368 f
+  es/alu/U1436/CI (FA1D1BWP40P140)            0.0223    0.0000     1.9368 f
+  es/alu/U1436/CO (FA1D1BWP40P140)            0.0257    0.0526     1.9894 f
+  es/alu/U5/A1 (ND2D1BWP40P140)               0.0257    0.0000     1.9894 f
+  es/alu/U5/ZN (ND2D1BWP40P140)               0.0127    0.0141     2.0034 r
+  es/alu/U357/A1 (ND2D1BWP40P140)             0.0127    0.0000     2.0034 r
+  es/alu/U357/ZN (ND2D1BWP40P140)             0.0287    0.0220     2.0255 f
+  es/alu/U2079/CI (FA1D1BWP40P140)            0.0287    0.0000     2.0255 f
+  es/alu/U2079/CO (FA1D1BWP40P140)            0.0225    0.0519     2.0773 f
+  es/alu/U246/CI (FA1D1BWP40P140)             0.0225    0.0000     2.0773 f
+  es/alu/U246/CO (FA1D1BWP40P140)             0.0223    0.0496     2.1269 f
+  es/alu/U768/CI (FA1D1BWP40P140)             0.0223    0.0000     2.1269 f
+  es/alu/U768/CO (FA1D1BWP40P140)             0.0223    0.0495     2.1764 f
+  es/alu/U2136/CI (FA1D1BWP40P140)            0.0223    0.0000     2.1764 f
+  es/alu/U2136/CO (FA1D1BWP40P140)            0.0223    0.0495     2.2259 f
+  es/alu/U1323/CI (FA1D1BWP40P140)            0.0223    0.0000     2.2259 f
+  es/alu/U1323/CO (FA1D1BWP40P140)            0.0223    0.0495     2.2755 f
+  es/alu/U247/CI (FA1D1BWP40P140)             0.0223    0.0000     2.2755 f
+  es/alu/U247/CO (FA1D1BWP40P140)             0.0223    0.0495     2.3250 f
+  es/alu/U1641/CI (FA1D1BWP40P140)            0.0223    0.0000     2.3250 f
+  es/alu/U1641/CO (FA1D1BWP40P140)            0.0223    0.0495     2.3745 f
+  es/alu/U95/CI (FA1D1BWP40P140)              0.0223    0.0000     2.3745 f
+  es/alu/U95/CO (FA1D1BWP40P140)              0.0223    0.0495     2.4240 f
+  es/alu/U1809/CI (FA1D1BWP40P140)            0.0223    0.0000     2.4240 f
+  es/alu/U1809/CO (FA1D1BWP40P140)            0.0223    0.0495     2.4735 f
+  es/alu/U248/CI (FA1D1BWP40P140)             0.0223    0.0000     2.4735 f
+  es/alu/U248/CO (FA1D1BWP40P140)             0.0223    0.0495     2.5231 f
+  es/alu/U1463/CI (FA1D1BWP40P140)            0.0223    0.0000     2.5231 f
+  es/alu/U1463/CO (FA1D1BWP40P140)            0.0224    0.0495     2.5726 f
+  es/alu/U96/CI (FA1D1BWP40P140)              0.0224    0.0000     2.5726 f
+  es/alu/U96/CO (FA1D1BWP40P140)              0.0223    0.0495     2.6221 f
+  es/alu/U1697/CI (FA1D1BWP40P140)            0.0223    0.0000     2.6221 f
+  es/alu/U1697/CO (FA1D1BWP40P140)            0.0224    0.0495     2.6716 f
+  es/alu/U372/CI (FA1D1BWP40P140)             0.0224    0.0000     2.6716 f
+  es/alu/U372/CO (FA1D1BWP40P140)             0.0223    0.0495     2.7212 f
+  es/alu/U2105/CI (FA1D1BWP40P140)            0.0223    0.0000     2.7212 f
+  es/alu/U2105/CO (FA1D1BWP40P140)            0.0253    0.0522     2.7734 f
+  es/alu/U3/A1 (ND2OPTIBD1BWP40P140)          0.0253    0.0000     2.7734 f
+  es/alu/U3/ZN (ND2OPTIBD1BWP40P140)          0.0147    0.0162     2.7896 r
+  es/alu/U375/A1 (ND2D1BWP40P140)             0.0147    0.0000     2.7896 r
+  es/alu/U375/ZN (ND2D1BWP40P140)             0.0287    0.0226     2.8122 f
+  es/alu/U1038/CI (FA1D1BWP40P140)            0.0287    0.0000     2.8122 f
+  es/alu/U1038/S (FA1D1BWP40P140)             0.0266    0.0890     2.9012 r
+  es/alu/U376/I (INVD1BWP40P140)              0.0266    0.0000     2.9012 r
+  es/alu/U376/ZN (INVD1BWP40P140)             0.0165    0.0164     2.9176 f
+  es/alu/U2/A1 (OAI21D1BWP40P140)             0.0165    0.0000     2.9176 f
+  es/alu/U2/ZN (OAI21D1BWP40P140)             0.0257    0.0188     2.9363 r
+  es/alu/io_alu_result[63] (ysyx_22051094_ALU_0)        0.0000     2.9363 r
+  es/U4/A1 (AO21D1BWP40P140)                  0.0257    0.0000     2.9363 r
+  es/U4/Z (AO21D1BWP40P140)                   0.0217    0.0357     2.9720 r
+  es/U3/B1 (INR2D1BWP40P140)                  0.0217    0.0000     2.9720 r
+  es/U3/ZN (INR2D1BWP40P140)                  0.0259    0.0221     2.9941 f
+  es/U6/A1 (NR2OPTIBD1BWP40P140)              0.0259    0.0000     2.9941 f
+  es/U6/ZN (NR2OPTIBD1BWP40P140)              0.0181    0.0180     3.0121 r
+  es/U7/A1 (OAI21D1BWP40P140)                 0.0181    0.0000     3.0121 r
+  es/U7/ZN (OAI21D1BWP40P140)                 0.0322    0.0249     3.0369 f
+  es/U81/A1 (AN2D1BWP40P140)                  0.0322    0.0000     3.0369 f
+  es/U81/Z (AN2D1BWP40P140)                   0.0188    0.0370     3.0739 f
+  es/es_ds_to_ms_valid (ysyx_22051094_ES_0)             0.0000     3.0739 f
+  ds/es_ds_to_ms_valid (ysyx_22051094_DS_0)             0.0000     3.0739 f
+  ds/U444/A1 (ND2D1BWP40P140)                 0.0188    0.0000     3.0739 f
+  ds/U444/ZN (ND2D1BWP40P140)                 0.0234    0.0201     3.0940 r
+  ds/U2660/B1 (INR2D2BWP40P140)               0.0234    0.0000     3.0940 r
+  ds/U2660/ZN (INR2D2BWP40P140)               0.1651    0.1001     3.1941 f
+  ds/U238/B1 (INR2D2BWP40P140)                0.1651    0.0000     3.1941 f
+  ds/U238/ZN (INR2D2BWP40P140)                0.0406    0.0356     3.2297 r
+  ds/U672/B1 (IND2D1BWP40P140)                0.0406    0.0000     3.2297 r
+  ds/U672/ZN (IND2D1BWP40P140)                0.4857    0.2889     3.5185 f
+  ds/U2658/I (INVD1BWP40P140)                 0.4857    0.0000     3.5185 f
+  ds/U2658/ZN (INVD1BWP40P140)                0.0740    0.0520     3.5706 r
+  ds/U2659/A1 (IOA21D1BWP40P140)              0.0740    0.0000     3.5706 r
+  ds/U2659/ZN (IOA21D1BWP40P140)              0.0227    0.0461     3.6166 r
+  ds/U172/A1 (OR2D1BWP40P140)                 0.0227    0.0000     3.6166 r
+  ds/U172/Z (OR2D1BWP40P140)                  0.0394    0.0445     3.6612 r
+  ds/U1169/I (INVD1BWP40P140)                 0.0394    0.0000     3.6612 r
+  ds/U1169/ZN (INVD1BWP40P140)                0.0237    0.0240     3.6852 f
+  ds/U1173/A2 (OAI21D1BWP40P140)              0.0237    0.0000     3.6852 f
+  ds/U1173/ZN (OAI21D1BWP40P140)              0.0261    0.0212     3.7064 r
+  ds/U1174/A2 (MOAI22D1BWP40P140)             0.0261    0.0000     3.7064 r
+  ds/U1174/ZN (MOAI22D1BWP40P140)             0.0273    0.0249     3.7313 f
+  ds/U1175/B (AOI211D1BWP40P140)              0.0273    0.0000     3.7313 f
+  ds/U1175/ZN (AOI211D1BWP40P140)             0.0375    0.0371     3.7684 r
+  ds/U1176/C (AOI221D1BWP40P140)              0.0375    0.0000     3.7684 r
+  ds/U1176/ZN (AOI221D1BWP40P140)             0.0413    0.0230     3.7914 f
+  ds/U1196/A1 (OAI31D1BWP40P140)              0.0413    0.0000     3.7914 f
+  ds/U1196/ZN (OAI31D1BWP40P140)              0.0300    0.0354     3.8268 r
+  ds/U1197/C (AOI221D1BWP40P140)              0.0300    0.0000     3.8268 r
+  ds/U1197/ZN (AOI221D1BWP40P140)             0.0413    0.0212     3.8480 f
+  ds/U1198/I (INVD1BWP40P140)                 0.0413    0.0000     3.8480 f
+  ds/U1198/ZN (INVD1BWP40P140)                0.0157    0.0169     3.8649 r
+  ds/U72/A1 (ND4D1BWP40P140)                  0.0157    0.0000     3.8649 r
+  ds/U72/ZN (ND4D1BWP40P140)                  0.0454    0.0301     3.8950 f
+  ds/U71/A1 (AOI21D1BWP40P140)                0.0454    0.0000     3.8950 f
+  ds/U71/ZN (AOI21D1BWP40P140)                0.0255    0.0257     3.9207 r
+  ds/U1291/B1 (AOI221D1BWP40P140)             0.0255    0.0000     3.9207 r
+  ds/U1291/ZN (AOI221D1BWP40P140)             0.0402    0.0332     3.9539 f
+  ds/U99/A2 (NR2D1BWP40P140)                  0.0402    0.0000     3.9539 f
+  ds/U99/ZN (NR2D1BWP40P140)                  0.0235    0.0247     3.9786 r
+  ds/U1331/B (AOI211D1BWP40P140)              0.0235    0.0000     3.9786 r
+  ds/U1331/ZN (AOI211D1BWP40P140)             0.0349    0.0219     4.0005 f
+  ds/U1459/B1 (AOI22D1BWP40P140)              0.0349    0.0000     4.0005 f
+  ds/U1459/ZN (AOI22D1BWP40P140)              0.0275    0.0308     4.0313 r
+  ds/U1460/A1 (IND2D1BWP40P140)               0.0275    0.0000     4.0313 r
+  ds/U1460/ZN (IND2D1BWP40P140)               0.0164    0.0273     4.0586 r
+  ds/U1548/B (OAI211D1BWP40P140)              0.0164    0.0000     4.0586 r
+  ds/U1548/ZN (OAI211D1BWP40P140)             0.0438    0.0373     4.0959 f
+  ds/U305/A1 (AO21D1BWP40P140)                0.0438    0.0000     4.0959 f
+  ds/U305/Z (AO21D1BWP40P140)                 0.0205    0.0392     4.1351 f
+  ds/ds_pf_br_taken (ysyx_22051094_DS_0)                0.0000     4.1351 f
+  pf/ds_pf_br_taken (ysyx_22051094_PF_0)                0.0000     4.1351 f
+  pf/U77/I (INVD1BWP40P140)                   0.0205    0.0000     4.1351 f
+  pf/U77/ZN (INVD1BWP40P140)                  0.0154    0.0157     4.1508 r
+  pf/U6/B1 (INR2D2BWP40P140)                  0.0154    0.0000     4.1508 r
+  pf/U6/ZN (INR2D2BWP40P140)                  0.1386    0.0822     4.2330 f
+  pf/U4/B1 (INR2D1BWP40P140)                  0.1386    0.0000     4.2330 f
+  pf/U4/ZN (INR2D1BWP40P140)                  0.1947    0.1555     4.3884 r
+  pf/U31/I (INVD1BWP40P140)                   0.1947    0.0000     4.3884 r
+  pf/U31/ZN (INVD1BWP40P140)                  0.2034    0.1743     4.5628 f
+  pf/U107/A2 (MOAI22D1BWP40P140)              0.2034    0.0000     4.5628 f
+  pf/U107/ZN (MOAI22D1BWP40P140)              0.0464    0.0496     4.6123 r
+  pf/U64/B (AO21D1BWP40P140)                  0.0464    0.0000     4.6123 r
+  pf/U64/Z (AO21D1BWP40P140)                  0.0347    0.0413     4.6536 r
+  pf/inst_master_ar_bits_addr[6] (ysyx_22051094_PF_0)   0.0000     4.6536 r
+  icache/cpu_master_ar_bits_addr[6] (ysyx_22051094_Cache_2)
+                                                        0.0000     4.6536 r
+  icache/U604/B1 (AOI22D1BWP40P140)           0.0347    0.0000     4.6536 r
+  icache/U604/ZN (AOI22D1BWP40P140)           0.0701    0.0344     4.6881 f
+  icache/U1232/A2 (MAOI22D1BWP40P140)         0.0701    0.0000     4.6881 f
+  icache/U1232/ZN (MAOI22D1BWP40P140)         0.1232    0.0942     4.7823 r
+  icache/ways_V_1/io_A[2] (ysyx_22051094_Cache_Sram_1_10)
+                                                        0.0000     4.7823 r
+  icache/ways_V_1/U83/I (INVD1BWP40P140)      0.1232    0.0000     4.7823 r
+  icache/ways_V_1/U83/ZN (INVD1BWP40P140)     0.0469    0.0416     4.8239 f
+  icache/ways_V_1/U92/A2 (NR2D1BWP40P140)     0.0469    0.0000     4.8239 f
+  icache/ways_V_1/U92/ZN (NR2D1BWP40P140)     0.0461    0.0399     4.8638 r
+  icache/ways_V_1/U93/I (INVD1BWP40P140)      0.0461    0.0000     4.8638 r
+  icache/ways_V_1/U93/ZN (INVD1BWP40P140)     0.0290    0.0282     4.8920 f
+  icache/ways_V_1/U94/A2 (NR2D1BWP40P140)     0.0290    0.0000     4.8920 f
+  icache/ways_V_1/U94/ZN (NR2D1BWP40P140)     0.0491    0.0303     4.9223 r
+  icache/ways_V_1/U95/A2 (ND2D1BWP40P140)     0.0491    0.0000     4.9223 r
+  icache/ways_V_1/U95/ZN (ND2D1BWP40P140)     0.0384    0.0345     4.9568 f
+  icache/ways_V_1/U111/I (INVD1BWP40P140)     0.0384    0.0000     4.9568 f
+  icache/ways_V_1/U111/ZN (INVD1BWP40P140)    0.0188    0.0203     4.9771 r
+  icache/ways_V_1/U112/A2 (ND2D1BWP40P140)    0.0188    0.0000     4.9771 r
+  icache/ways_V_1/U112/ZN (ND2D1BWP40P140)    0.0474    0.0318     5.0088 f
+  icache/ways_V_1/U113/S (MUX2NUD1BWP40P140)
+                                              0.0474    0.0000     5.0088 f
+  icache/ways_V_1/U113/ZN (MUX2NUD1BWP40P140)
+                                              0.0242    0.0390     5.0478 f
+  icache/ways_V_1/U116/A1 (AOI221D1BWP40P140)
+                                              0.0242    0.0000     5.0478 f
+  icache/ways_V_1/U116/ZN (AOI221D1BWP40P140)
+                                              0.0424    0.0284     5.0762 r
+  icache/ways_V_1/U120/A2 (OAI32D1BWP40P140)
+                                              0.0424    0.0000     5.0762 r
+  icache/ways_V_1/U120/ZN (OAI32D1BWP40P140)
+                                              0.0367    0.0330     5.1092 f
+  icache/ways_V_1/U123/I1 (MUX2NUD1BWP40P140)
+                                              0.0367    0.0000     5.1092 f
+  icache/ways_V_1/U123/ZN (MUX2NUD1BWP40P140)
+                                              0.0266    0.0280     5.1372 r
+  icache/ways_V_1/U124/I1 (MUX2NUD1BWP40P140)
+                                              0.0266    0.0000     5.1372 r
+  icache/ways_V_1/U124/ZN (MUX2NUD1BWP40P140)
+                                              0.0228    0.0210     5.1582 f
+  icache/ways_V_1/U126/I1 (MUX2NUD1BWP40P140)
+                                              0.0228    0.0000     5.1582 f
+  icache/ways_V_1/U126/ZN (MUX2NUD1BWP40P140)
+                                              0.0267    0.0244     5.1826 r
+  icache/ways_V_1/U129/A1 (AOI21D1BWP40P140)
+                                              0.0267    0.0000     5.1826 r
+  icache/ways_V_1/U129/ZN (AOI21D1BWP40P140)
+                                              0.0227    0.0209     5.2036 f
+  icache/ways_V_1/U131/I1 (MUX2NUD1BWP40P140)
+                                              0.0227    0.0000     5.2036 f
+  icache/ways_V_1/U131/ZN (MUX2NUD1BWP40P140)
+                                              0.0236    0.0241     5.2276 r
+  icache/ways_V_1/U132/I1 (MUX2NUD1BWP40P140)
+                                              0.0236    0.0000     5.2276 r
+  icache/ways_V_1/U132/ZN (MUX2NUD1BWP40P140)
+                                              0.0218    0.0199     5.2475 f
+  icache/ways_V_1/U133/I0 (MUX2NUD1BWP40P140)
+                                              0.0218    0.0000     5.2475 f
+  icache/ways_V_1/U133/ZN (MUX2NUD1BWP40P140)
+                                              0.0240    0.0251     5.2726 r
+  icache/ways_V_1/U134/I1 (MUX2NUD1BWP40P140)
+                                              0.0240    0.0000     5.2726 r
+  icache/ways_V_1/U134/ZN (MUX2NUD1BWP40P140)
+                                              0.0242    0.0212     5.2938 f
+  icache/ways_V_1/U136/A1 (AOI221D1BWP40P140)
+                                              0.0242    0.0000     5.2938 f
+  icache/ways_V_1/U136/ZN (AOI221D1BWP40P140)
+                                              0.0443    0.0288     5.3226 r
+  icache/ways_V_1/U6/A1 (NR2D1BWP40P140)      0.0443    0.0000     5.3226 r
+  icache/ways_V_1/U6/ZN (NR2D1BWP40P140)      0.0174    0.0165     5.3390 f
+  icache/ways_V_1/U5/A1 (OAI22D1BWP40P140)    0.0174    0.0000     5.3390 f
+  icache/ways_V_1/U5/ZN (OAI22D1BWP40P140)    0.0263    0.0160     5.3550 r
+  icache/ways_V_1/U142/I0 (MUX2NUD1BWP40P140)
+                                              0.0263    0.0000     5.3550 r
+  icache/ways_V_1/U142/ZN (MUX2NUD1BWP40P140)
+                                              0.0254    0.0247     5.3797 f
+  icache/ways_V_1/U146/A1 (AOI221D1BWP40P140)
+                                              0.0254    0.0000     5.3797 f
+  icache/ways_V_1/U146/ZN (AOI221D1BWP40P140)
+                                              0.0427    0.0289     5.4085 r
+  icache/ways_V_1/U4/A1 (OAI22D1BWP40P140)    0.0427    0.0000     5.4085 r
+  icache/ways_V_1/U4/ZN (OAI22D1BWP40P140)    0.0290    0.0279     5.4364 f
+  icache/ways_V_1/U154/A1 (AOI221D1BWP40P140)
+                                              0.0290    0.0000     5.4364 f
+  icache/ways_V_1/U154/ZN (AOI221D1BWP40P140)
+                                              0.0422    0.0297     5.4661 r
+  icache/ways_V_1/U159/A2 (OAI32D1BWP40P140)
+                                              0.0422    0.0000     5.4661 r
+  icache/ways_V_1/U159/ZN (OAI32D1BWP40P140)
+                                              0.0352    0.0323     5.4985 f
+  icache/ways_V_1/U160/I0 (MUX2NUD1BWP40P140)
+                                              0.0352    0.0000     5.4985 f
+  icache/ways_V_1/U160/ZN (MUX2NUD1BWP40P140)
+                                              0.0242    0.0286     5.5271 r
+  icache/ways_V_1/U164/I0 (MUX2NUD1BWP40P140)
+                                              0.0242    0.0000     5.5271 r
+  icache/ways_V_1/U164/ZN (MUX2NUD1BWP40P140)
+                                              0.0252    0.0242     5.5513 f
+  icache/ways_V_1/U168/A1 (AOI221D1BWP40P140)
+                                              0.0252    0.0000     5.5513 f
+  icache/ways_V_1/U168/ZN (AOI221D1BWP40P140)
+                                              0.0424    0.0286     5.5799 r
+  icache/ways_V_1/U173/A2 (OAI32D1BWP40P140)
+                                              0.0424    0.0000     5.5799 r
+  icache/ways_V_1/U173/ZN (OAI32D1BWP40P140)
+                                              0.0375    0.0330     5.6129 f
+  icache/ways_V_1/U176/I1 (MUX2NUD1BWP40P140)
+                                              0.0375    0.0000     5.6129 f
+  icache/ways_V_1/U176/ZN (MUX2NUD1BWP40P140)
+                                              0.0311    0.0282     5.6411 r
+  icache/ways_V_1/U178/I1 (MUX2NUD1BWP40P140)
+                                              0.0311    0.0000     5.6411 r
+  icache/ways_V_1/U178/ZN (MUX2NUD1BWP40P140)
+                                              0.0218    0.0213     5.6625 f
+  icache/ways_V_1/U179/I0 (MUX2NUD1BWP40P140)
+                                              0.0218    0.0000     5.6625 f
+  icache/ways_V_1/U179/ZN (MUX2NUD1BWP40P140)
+                                              0.0240    0.0251     5.6875 r
+  icache/ways_V_1/U181/I1 (MUX2NUD1BWP40P140)
+                                              0.0240    0.0000     5.6875 r
+  icache/ways_V_1/U181/ZN (MUX2NUD1BWP40P140)
+                                              0.0228    0.0205     5.7080 f
+  icache/ways_V_1/U183/I1 (MUX2NUD1BWP40P140)
+                                              0.0228    0.0000     5.7080 f
+  icache/ways_V_1/U183/ZN (MUX2NUD1BWP40P140)
+                                              0.0263    0.0241     5.7321 r
+  icache/ways_V_1/U185/I1 (MUX2NUD1BWP40P140)
+                                              0.0263    0.0000     5.7321 r
+  icache/ways_V_1/U185/ZN (MUX2NUD1BWP40P140)
+                                              0.0218    0.0204     5.7525 f
+  icache/ways_V_1/U186/I0 (MUX2NUD1BWP40P140)
+                                              0.0218    0.0000     5.7525 f
+  icache/ways_V_1/U186/ZN (MUX2NUD1BWP40P140)
+                                              0.0247    0.0255     5.7780 r
+  icache/ways_V_1/U188/A1 (AOI21D1BWP40P140)
+                                              0.0247    0.0000     5.7780 r
+  icache/ways_V_1/U188/ZN (AOI21D1BWP40P140)
+                                              0.0224    0.0205     5.7984 f
+  icache/ways_V_1/U190/I1 (MUX2NUD1BWP40P140)
+                                              0.0224    0.0000     5.7984 f
+  icache/ways_V_1/U190/ZN (MUX2NUD1BWP40P140)
+                                              0.0262    0.0240     5.8224 r
+  icache/ways_V_1/U192/I1 (MUX2NUD1BWP40P140)
+                                              0.0262    0.0000     5.8224 r
+  icache/ways_V_1/U192/ZN (MUX2NUD1BWP40P140)
+                                              0.0218    0.0204     5.8428 f
+  icache/ways_V_1/U193/I0 (MUX2NUD1BWP40P140)
+                                              0.0218    0.0000     5.8428 f
+  icache/ways_V_1/U193/ZN (MUX2NUD1BWP40P140)
+                                              0.0240    0.0251     5.8678 r
+  icache/ways_V_1/U195/I1 (MUX2NUD1BWP40P140)
+                                              0.0240    0.0000     5.8678 r
+  icache/ways_V_1/U195/ZN (MUX2NUD1BWP40P140)
+                                              0.0228    0.0205     5.8883 f
+  icache/ways_V_1/U197/I1 (MUX2NUD1BWP40P140)
+                                              0.0228    0.0000     5.8883 f
+  icache/ways_V_1/U197/ZN (MUX2NUD1BWP40P140)
+                                              0.0296    0.0241     5.9124 r
+  icache/ways_V_1/U199/I1 (MUX2NUD1BWP40P140)
+                                              0.0296    0.0000     5.9124 r
+  icache/ways_V_1/U199/ZN (MUX2NUD1BWP40P140)
+                                              0.0218    0.0210     5.9334 f
+  icache/ways_V_1/U200/I0 (MUX2NUD1BWP40P140)
+                                              0.0218    0.0000     5.9334 f
+  icache/ways_V_1/U200/ZN (MUX2NUD1BWP40P140)
+                                              0.0247    0.0255     5.9589 r
+  icache/ways_V_1/U204/A1 (AOI21D1BWP40P140)
+                                              0.0247    0.0000     5.9589 r
+  icache/ways_V_1/U204/ZN (AOI21D1BWP40P140)
+                                              0.0224    0.0205     5.9794 f
+  icache/ways_V_1/U206/I1 (MUX2NUD1BWP40P140)
+                                              0.0224    0.0000     5.9794 f
+  icache/ways_V_1/U206/ZN (MUX2NUD1BWP40P140)
+                                              0.0271    0.0240     6.0033 r
+  icache/ways_V_1/U210/I1 (MUX2NUD1BWP40P140)
+                                              0.0271    0.0000     6.0033 r
+  icache/ways_V_1/U210/ZN (MUX2NUD1BWP40P140)
+                                              0.0228    0.0211     6.0244 f
+  icache/ways_V_1/U211/I1 (MUX2NUD1BWP40P140)
+                                              0.0228    0.0000     6.0244 f
+  icache/ways_V_1/U211/ZN (MUX2NUD1BWP40P140)
+                                              0.0262    0.0244     6.0489 r
+  icache/ways_V_1/U214/A1 (AOI21D1BWP40P140)
+                                              0.0262    0.0000     6.0489 r
+  icache/ways_V_1/U214/ZN (AOI21D1BWP40P140)
+                                              0.0226    0.0208     6.0697 f
+  icache/ways_V_1/U215/I1 (MUX2NUD1BWP40P140)
+                                              0.0226    0.0000     6.0697 f
+  icache/ways_V_1/U215/ZN (MUX2NUD1BWP40P140)
+                                              0.0262    0.0240     6.0937 r
+  icache/ways_V_1/U216/I1 (MUX2NUD1BWP40P140)
+                                              0.0262    0.0000     6.0937 r
+  icache/ways_V_1/U216/ZN (MUX2NUD1BWP40P140)
+                                              0.0218    0.0204     6.1141 f
+  icache/ways_V_1/U217/I0 (MUX2NUD1BWP40P140)
+                                              0.0218    0.0000     6.1141 f
+  icache/ways_V_1/U217/ZN (MUX2NUD1BWP40P140)
+                                              0.0240    0.0251     6.1391 r
+  icache/ways_V_1/U219/I1 (MUX2NUD1BWP40P140)
+                                              0.0240    0.0000     6.1391 r
+  icache/ways_V_1/U219/ZN (MUX2NUD1BWP40P140)
+                                              0.0228    0.0205     6.1596 f
+  icache/ways_V_1/U221/I1 (MUX2NUD1BWP40P140)
+                                              0.0228    0.0000     6.1596 f
+  icache/ways_V_1/U221/ZN (MUX2NUD1BWP40P140)
+                                              0.0273    0.0244     6.1841 r
+  icache/ways_V_1/U225/A1 (AOI21D1BWP40P140)
+                                              0.0273    0.0000     6.1841 r
+  icache/ways_V_1/U225/ZN (AOI21D1BWP40P140)
+                                              0.0220    0.0205     6.2046 f
+  icache/ways_V_1/U226/I0 (MUX2NUD1BWP40P140)
+                                              0.0220    0.0000     6.2046 f
+  icache/ways_V_1/U226/ZN (MUX2NUD1BWP40P140)
+                                              0.0241    0.0251     6.2298 r
+  icache/ways_V_1/U228/I1 (MUX2NUD1BWP40P140)
+                                              0.0241    0.0000     6.2298 r
+  icache/ways_V_1/U228/ZN (MUX2NUD1BWP40P140)
+                                              0.0242    0.0212     6.2510 f
+  icache/ways_V_1/U233/A1 (AOI221D1BWP40P140)
+                                              0.0242    0.0000     6.2510 f
+  icache/ways_V_1/U233/ZN (AOI221D1BWP40P140)
+                                              0.0435    0.0291     6.2801 r
+  icache/ways_V_1/U239/A1 (OA21D1BWP40P140)   0.0435    0.0000     6.2801 r
+  icache/ways_V_1/U239/Z (OA21D1BWP40P140)    0.0137    0.0350     6.3151 r
+  icache/ways_V_1/U3/A2 (AOI211D1BWP40P140)   0.0137    0.0000     6.3151 r
+  icache/ways_V_1/U3/ZN (AOI211D1BWP40P140)   0.0568    0.0206     6.3357 f
+  icache/ways_V_1/io_Q_r_reg/D (DFQD1BWP40P140)
+                                              0.0568    0.0000     6.3357 f
+  data arrival time                                                6.3357
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/ways_V_1/io_Q_r_reg/CP (DFQD1BWP40P140)        0.0000     6.3500 r
+  library setup time                                   -0.0143     6.3357
+  data required time                                               6.3357
+  --------------------------------------------------------------------------
+  data required time                                               6.3357
+  data arrival time                                               -6.3357
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+  Startpoint: es/es_reg_alu_op_2_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/req_reg_tag_reg_52_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  es/es_reg_alu_op_2_reg/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  es/es_reg_alu_op_2_reg/Q (DFQD1BWP40P140)   0.0228    0.0835     0.0835 f
+  es/alu/io_alu_op_2 (ysyx_22051094_ALU_0)              0.0000     0.0835 f
+  es/alu/U251/A1 (NR2D1BWP40P140)             0.0228    0.0000     0.0835 f
+  es/alu/U251/ZN (NR2D1BWP40P140)             0.0180    0.0176     0.1011 r
+  es/alu/U252/B1 (IND2D1BWP40P140)            0.0180    0.0000     0.1011 r
+  es/alu/U252/ZN (IND2D1BWP40P140)            0.0853    0.0564     0.1575 f
+  es/alu/U6/I (INVD1BWP40P140)                0.0853    0.0000     0.1575 f
+  es/alu/U6/ZN (INVD1BWP40P140)               0.0287    0.0291     0.1867 r
+  es/alu/U365/I (INVD2BWP40P140)              0.0287    0.0000     0.1867 r
+  es/alu/U365/ZN (INVD2BWP40P140)             0.2839    0.1698     0.3565 f
+  es/alu/U2137/A1 (XNR2UD1BWP40P140)          0.2839    0.0000     0.3565 f
+  es/alu/U2137/ZN (XNR2UD1BWP40P140)          0.0699    0.0820     0.4385 f
+  es/alu/U295/A1 (ND2D1BWP40P140)             0.0699    0.0000     0.4385 f
+  es/alu/U295/ZN (ND2D1BWP40P140)             0.0259    0.0268     0.4653 r
+  es/alu/U296/I (INVD1BWP40P140)              0.0259    0.0000     0.4653 r
+  es/alu/U296/ZN (INVD1BWP40P140)             0.0129    0.0131     0.4784 f
+  es/alu/U297/B (AOI21D1BWP40P140)            0.0129    0.0000     0.4784 f
+  es/alu/U297/ZN (AOI21D1BWP40P140)           0.0410    0.0310     0.5095 r
+  es/alu/U9/A1 (OAI21D1BWP40P140)             0.0410    0.0000     0.5095 r
+  es/alu/U9/ZN (OAI21D1BWP40P140)             0.0445    0.0375     0.5469 f
+  es/alu/U2144/A1 (AOI21D1BWP40P140)          0.0445    0.0000     0.5469 f
+  es/alu/U2144/ZN (AOI21D1BWP40P140)          0.0410    0.0374     0.5844 r
+  es/alu/U2143/A1 (OAI21D1BWP40P140)          0.0410    0.0000     0.5844 r
+  es/alu/U2143/ZN (OAI21D1BWP40P140)          0.0445    0.0375     0.6219 f
+  es/alu/U306/A1 (AOI21D1BWP40P140)           0.0445    0.0000     0.6219 f
+  es/alu/U306/ZN (AOI21D1BWP40P140)           0.0410    0.0374     0.6593 r
+  es/alu/U636/A1 (OAI21D1BWP40P140)           0.0410    0.0000     0.6593 r
+  es/alu/U636/ZN (OAI21D1BWP40P140)           0.0445    0.0375     0.6968 f
+  es/alu/U1273/A1 (AOI21D1BWP40P140)          0.0445    0.0000     0.6968 f
+  es/alu/U1273/ZN (AOI21D1BWP40P140)          0.0478    0.0417     0.7385 r
+  es/alu/U312/A1 (OAI21D2BWP40P140)           0.0478    0.0000     0.7385 r
+  es/alu/U312/ZN (OAI21D2BWP40P140)           0.0307    0.0265     0.7650 f
+  es/alu/U1274/A1 (AOI21D1BWP40P140)          0.0307    0.0000     0.7650 f
+  es/alu/U1274/ZN (AOI21D1BWP40P140)          0.0457    0.0376     0.8026 r
+  es/alu/U89/A1 (OAI21D2BWP40P140)            0.0457    0.0000     0.8026 r
+  es/alu/U89/ZN (OAI21D2BWP40P140)            0.0307    0.0262     0.8288 f
+  es/alu/U319/A1 (AOI21D1BWP40P140)           0.0307    0.0000     0.8288 f
+  es/alu/U319/ZN (AOI21D1BWP40P140)           0.0388    0.0334     0.8621 r
+  es/alu/U2090/A1 (OAI21D1BWP40P140)          0.0388    0.0000     0.8621 r
+  es/alu/U2090/ZN (OAI21D1BWP40P140)          0.0442    0.0370     0.8991 f
+  es/alu/U2134/A1 (AOI21D1BWP40P140)          0.0442    0.0000     0.8991 f
+  es/alu/U2134/ZN (AOI21D1BWP40P140)          0.0478    0.0417     0.9407 r
+  es/alu/U88/A1 (OAI21D2BWP40P140)            0.0478    0.0000     0.9407 r
+  es/alu/U88/ZN (OAI21D2BWP40P140)            0.0307    0.0265     0.9673 f
+  es/alu/U328/A1 (AOI21D1BWP40P140)           0.0307    0.0000     0.9673 f
+  es/alu/U328/ZN (AOI21D1BWP40P140)           0.0388    0.0334     1.0006 r
+  es/alu/U2135/A1 (OAI21D1BWP40P140)          0.0388    0.0000     1.0006 r
+  es/alu/U2135/ZN (OAI21D1BWP40P140)          0.0497    0.0404     1.0410 f
+  es/alu/U87/A1 (AOI21OPTREPBD1BWP40P140)     0.0497    0.0000     1.0410 f
+  es/alu/U87/ZN (AOI21OPTREPBD1BWP40P140)     0.0341    0.0332     1.0742 r
+  es/alu/U86/A1 (OAI21D2BWP40P140)            0.0341    0.0000     1.0742 r
+  es/alu/U86/ZN (OAI21D2BWP40P140)            0.0307    0.0243     1.0985 f
+  es/alu/U337/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.0985 f
+  es/alu/U337/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.1361 r
+  es/alu/U339/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.1361 r
+  es/alu/U339/ZN (OAI21D2BWP40P140)           0.0341    0.0289     1.1650 f
+  es/alu/U81/A1 (AOI21D2BWP40P140)            0.0341    0.0000     1.1650 f
+  es/alu/U81/ZN (AOI21D2BWP40P140)            0.0280    0.0258     1.1909 r
+  es/alu/U77/A1 (OAI21D2BWP40P140LVT)         0.0280    0.0000     1.1909 r
+  es/alu/U77/ZN (OAI21D2BWP40P140LVT)         0.0273    0.0188     1.2096 f
+  es/alu/U346/A1 (AOI21D1BWP40P140)           0.0273    0.0000     1.2096 f
+  es/alu/U346/ZN (AOI21D1BWP40P140)           0.0452    0.0364     1.2461 r
+  es/alu/U71/A1 (OAI21D2BWP40P140)            0.0452    0.0000     1.2461 r
+  es/alu/U71/ZN (OAI21D2BWP40P140)            0.0307    0.0261     1.2722 f
+  es/alu/U333/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.2722 f
+  es/alu/U333/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.3097 r
+  es/alu/U354/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.3097 r
+  es/alu/U354/ZN (OAI21D2BWP40P140)           0.0341    0.0289     1.3386 f
+  es/alu/U67/A1 (AOI21D2BWP40P140)            0.0341    0.0000     1.3386 f
+  es/alu/U67/ZN (AOI21D2BWP40P140)            0.0277    0.0256     1.3642 r
+  es/alu/U62/A1 (OAI21D2BWP40P140)            0.0277    0.0000     1.3642 r
+  es/alu/U62/ZN (OAI21D2BWP40P140)            0.0307    0.0228     1.3870 f
+  es/alu/U361/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.3870 f
+  es/alu/U361/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.4246 r
+  es/alu/U58/A1 (OAI21D2BWP40P140)            0.0457    0.0000     1.4246 r
+  es/alu/U58/ZN (OAI21D2BWP40P140)            0.0307    0.0262     1.4507 f
+  es/alu/U342/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.4507 f
+  es/alu/U342/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.4883 r
+  es/alu/U367/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.4883 r
+  es/alu/U367/ZN (OAI21D2BWP40P140)           0.0307    0.0262     1.5145 f
+  es/alu/U370/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.5145 f
+  es/alu/U370/ZN (AOI21D1BWP40P140)           0.0465    0.0381     1.5525 r
+  es/alu/U48/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0465    0.0000     1.5525 r
+  es/alu/U48/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0329    0.0244     1.5769 f
+  es/alu/U91/A1 (ND2D1BWP40P140)              0.0329    0.0000     1.5769 f
+  es/alu/U91/ZN (ND2D1BWP40P140)              0.0171    0.0188     1.5957 r
+  es/alu/U2142/A1 (ND2OPTPAD2BWP40P140)       0.0171    0.0000     1.5957 r
+  es/alu/U2142/ZN (ND2OPTPAD2BWP40P140)       0.0145    0.0132     1.6089 f
+  es/alu/U1669/CI (FA1D1BWP40P140)            0.0145    0.0000     1.6089 f
+  es/alu/U1669/CO (FA1D1BWP40P140)            0.0257    0.0497     1.6586 f
+  es/alu/U45/A1 (ND2D1BWP40P140)              0.0257    0.0000     1.6586 f
+  es/alu/U45/ZN (ND2D1BWP40P140)              0.0127    0.0141     1.6727 r
+  es/alu/U348/A1 (ND2D1BWP40P140)             0.0127    0.0000     1.6727 r
+  es/alu/U348/ZN (ND2D1BWP40P140)             0.0287    0.0220     1.6947 f
+  es/alu/U1391/CI (FA1D1BWP40P140)            0.0287    0.0000     1.6947 f
+  es/alu/U1391/CO (FA1D1BWP40P140)            0.0225    0.0519     1.7466 f
+  es/alu/U1680/CI (FA1D1BWP40P140)            0.0225    0.0000     1.7466 f
+  es/alu/U1680/CO (FA1D1BWP40P140)            0.0257    0.0526     1.7992 f
+  es/alu/U26/A1 (ND2D1BWP40P140)              0.0257    0.0000     1.7992 f
+  es/alu/U26/ZN (ND2D1BWP40P140)              0.0127    0.0141     1.8133 r
+  es/alu/U352/A1 (ND2D1BWP40P140)             0.0127    0.0000     1.8133 r
+  es/alu/U352/ZN (ND2D1BWP40P140)             0.0287    0.0220     1.8353 f
+  es/alu/U1417/CI (FA1D1BWP40P140)            0.0287    0.0000     1.8353 f
+  es/alu/U1417/CO (FA1D1BWP40P140)            0.0225    0.0519     1.8872 f
+  es/alu/U232/CI (FA1D1BWP40P140)             0.0225    0.0000     1.8872 f
+  es/alu/U232/CO (FA1D1BWP40P140)             0.0223    0.0496     1.9368 f
+  es/alu/U1436/CI (FA1D1BWP40P140)            0.0223    0.0000     1.9368 f
+  es/alu/U1436/CO (FA1D1BWP40P140)            0.0257    0.0526     1.9894 f
+  es/alu/U5/A1 (ND2D1BWP40P140)               0.0257    0.0000     1.9894 f
+  es/alu/U5/ZN (ND2D1BWP40P140)               0.0127    0.0141     2.0034 r
+  es/alu/U357/A1 (ND2D1BWP40P140)             0.0127    0.0000     2.0034 r
+  es/alu/U357/ZN (ND2D1BWP40P140)             0.0287    0.0220     2.0255 f
+  es/alu/U2079/CI (FA1D1BWP40P140)            0.0287    0.0000     2.0255 f
+  es/alu/U2079/CO (FA1D1BWP40P140)            0.0225    0.0519     2.0773 f
+  es/alu/U246/CI (FA1D1BWP40P140)             0.0225    0.0000     2.0773 f
+  es/alu/U246/CO (FA1D1BWP40P140)             0.0223    0.0496     2.1269 f
+  es/alu/U768/CI (FA1D1BWP40P140)             0.0223    0.0000     2.1269 f
+  es/alu/U768/CO (FA1D1BWP40P140)             0.0223    0.0495     2.1764 f
+  es/alu/U2136/CI (FA1D1BWP40P140)            0.0223    0.0000     2.1764 f
+  es/alu/U2136/CO (FA1D1BWP40P140)            0.0223    0.0495     2.2259 f
+  es/alu/U1323/CI (FA1D1BWP40P140)            0.0223    0.0000     2.2259 f
+  es/alu/U1323/CO (FA1D1BWP40P140)            0.0223    0.0495     2.2755 f
+  es/alu/U247/CI (FA1D1BWP40P140)             0.0223    0.0000     2.2755 f
+  es/alu/U247/CO (FA1D1BWP40P140)             0.0223    0.0495     2.3250 f
+  es/alu/U1641/CI (FA1D1BWP40P140)            0.0223    0.0000     2.3250 f
+  es/alu/U1641/CO (FA1D1BWP40P140)            0.0223    0.0495     2.3745 f
+  es/alu/U95/CI (FA1D1BWP40P140)              0.0223    0.0000     2.3745 f
+  es/alu/U95/CO (FA1D1BWP40P140)              0.0223    0.0495     2.4240 f
+  es/alu/U1809/CI (FA1D1BWP40P140)            0.0223    0.0000     2.4240 f
+  es/alu/U1809/CO (FA1D1BWP40P140)            0.0223    0.0495     2.4735 f
+  es/alu/U248/CI (FA1D1BWP40P140)             0.0223    0.0000     2.4735 f
+  es/alu/U248/CO (FA1D1BWP40P140)             0.0223    0.0495     2.5231 f
+  es/alu/U1463/CI (FA1D1BWP40P140)            0.0223    0.0000     2.5231 f
+  es/alu/U1463/CO (FA1D1BWP40P140)            0.0224    0.0495     2.5726 f
+  es/alu/U96/CI (FA1D1BWP40P140)              0.0224    0.0000     2.5726 f
+  es/alu/U96/CO (FA1D1BWP40P140)              0.0223    0.0495     2.6221 f
+  es/alu/U1697/CI (FA1D1BWP40P140)            0.0223    0.0000     2.6221 f
+  es/alu/U1697/CO (FA1D1BWP40P140)            0.0224    0.0495     2.6716 f
+  es/alu/U372/CI (FA1D1BWP40P140)             0.0224    0.0000     2.6716 f
+  es/alu/U372/CO (FA1D1BWP40P140)             0.0223    0.0495     2.7212 f
+  es/alu/U2105/CI (FA1D1BWP40P140)            0.0223    0.0000     2.7212 f
+  es/alu/U2105/S (FA1D1BWP40P140)             0.0215    0.0669     2.7880 f
+  es/alu/U2106/A2 (ND2D1BWP40P140)            0.0215    0.0000     2.7880 f
+  es/alu/U2106/ZN (ND2D1BWP40P140)            0.0568    0.0146     2.8027 r
+  es/alu/U2118/B (OAI211D1BWP40P140)          0.0568    0.0000     2.8027 r
+  es/alu/U2118/ZN (OAI211D1BWP40P140)         0.0441    0.0456     2.8483 f
+  es/alu/io_alu_result[61] (ysyx_22051094_ALU_0)        0.0000     2.8483 f
+  es/U9/A1 (AO21D1BWP40P140)                  0.0441    0.0000     2.8483 f
+  es/U9/Z (AO21D1BWP40P140)                   0.0303    0.0444     2.8927 f
+  es/U292/I (INVD1BWP40P140)                  0.0303    0.0000     2.8927 f
+  es/U292/ZN (INVD1BWP40P140)                 0.0135    0.0149     2.9076 r
+  es/U377/A1 (ND3D1BWP40P140)                 0.0135    0.0000     2.9076 r
+  es/U377/ZN (ND3D1BWP40P140)                 0.0345    0.0235     2.9311 f
+  es/U378/A2 (NR2D1BWP40P140)                 0.0345    0.0000     2.9311 f
+  es/U378/ZN (NR2D1BWP40P140)                 0.0193    0.0228     2.9540 r
+  es/U3/A1 (INR2D1BWP40P140)                  0.0193    0.0000     2.9540 r
+  es/U3/ZN (INR2D1BWP40P140)                  0.0383    0.0425     2.9965 r
+  es/U6/A1 (NR2OPTIBD1BWP40P140)              0.0383    0.0000     2.9965 r
+  es/U6/ZN (NR2OPTIBD1BWP40P140)              0.0165    0.0159     3.0125 f
+  es/U7/A1 (OAI21D1BWP40P140)                 0.0165    0.0000     3.0125 f
+  es/U7/ZN (OAI21D1BWP40P140)                 0.0253    0.0215     3.0339 r
+  es/U81/A1 (AN2D1BWP40P140)                  0.0253    0.0000     3.0339 r
+  es/U81/Z (AN2D1BWP40P140)                   0.0211    0.0411     3.0751 r
+  es/es_ds_to_ms_valid (ysyx_22051094_ES_0)             0.0000     3.0751 r
+  ds/es_ds_to_ms_valid (ysyx_22051094_DS_0)             0.0000     3.0751 r
+  ds/U444/A1 (ND2D1BWP40P140)                 0.0211    0.0000     3.0751 r
+  ds/U444/ZN (ND2D1BWP40P140)                 0.0396    0.0309     3.1060 f
+  ds/U2660/B1 (INR2D2BWP40P140)               0.0396    0.0000     3.1060 f
+  ds/U2660/ZN (INR2D2BWP40P140)               0.2361    0.1490     3.2550 r
+  ds/U676/B1 (INR2D2BWP40P140)                0.2361    0.0000     3.2550 r
+  ds/U676/ZN (INR2D2BWP40P140)                0.1814    0.1585     3.4135 f
+  ds/U1141/A1 (AOI22D1BWP40P140)              0.1814    0.0000     3.4135 f
+  ds/U1141/ZN (AOI22D1BWP40P140)              0.0523    0.0504     3.4639 r
+  ds/U1142/B (OAI21D1BWP40P140)               0.0523    0.0000     3.4639 r
+  ds/U1142/ZN (OAI21D1BWP40P140)              0.0626    0.0331     3.4970 f
+  ds/U171/A1 (OR2D1BWP40P140)                 0.0626    0.0000     3.4970 f
+  ds/U171/Z (OR2D1BWP40P140)                  0.0395    0.0544     3.5515 f
+  ds/U1922/A1 (AO22D1BWP40P140)               0.0395    0.0000     3.5515 f
+  ds/U1922/Z (AO22D1BWP40P140)                0.0257    0.0429     3.5943 f
+  ds/U175/A1 (OR2D1BWP40P140)                 0.0257    0.0000     3.5943 f
+  ds/U175/Z (OR2D1BWP40P140)                  0.0159    0.0310     3.6253 f
+  ds/U176/A2 (AOI21D1BWP40P140)               0.0159    0.0000     3.6253 f
+  ds/U176/ZN (AOI21D1BWP40P140)               0.0373    0.0281     3.6534 r
+  ds/U2585/A1 (OAI21D1BWP40P140)              0.0373    0.0000     3.6534 r
+  ds/U2585/ZN (OAI21D1BWP40P140)              0.0438    0.0366     3.6900 f
+  ds/U2172/A1 (AOI21D1BWP40P140)              0.0438    0.0000     3.6900 f
+  ds/U2172/ZN (AOI21D1BWP40P140)              0.0409    0.0372     3.7272 r
+  ds/U184/A1 (OAI21D1BWP40P140)               0.0409    0.0000     3.7272 r
+  ds/U184/ZN (OAI21D1BWP40P140)               0.0445    0.0375     3.7647 f
+  ds/U2168/A1 (AOI21D1BWP40P140)              0.0445    0.0000     3.7647 f
+  ds/U2168/ZN (AOI21D1BWP40P140)              0.0410    0.0374     3.8021 r
+  ds/U2164/A1 (OAI21D1BWP40P140)              0.0410    0.0000     3.8021 r
+  ds/U2164/ZN (OAI21D1BWP40P140)              0.0445    0.0375     3.8396 f
+  ds/U191/A1 (AOI21D1BWP40P140)               0.0445    0.0000     3.8396 f
+  ds/U191/ZN (AOI21D1BWP40P140)               0.0410    0.0374     3.8770 r
+  ds/U2110/A1 (OAI21D1BWP40P140)              0.0410    0.0000     3.8770 r
+  ds/U2110/ZN (OAI21D1BWP40P140)              0.0445    0.0375     3.9145 f
+  ds/U2116/A1 (AOI21D1BWP40P140)              0.0445    0.0000     3.9145 f
+  ds/U2116/ZN (AOI21D1BWP40P140)              0.0410    0.0374     3.9519 r
+  ds/U200/A1 (OAI21D1BWP40P140)               0.0410    0.0000     3.9519 r
+  ds/U200/ZN (OAI21D1BWP40P140)               0.0445    0.0375     3.9894 f
+  ds/U229/A1 (AOI21D1BWP40P140)               0.0445    0.0000     3.9894 f
+  ds/U229/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.0269 r
+  ds/U227/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.0269 r
+  ds/U227/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.0644 f
+  ds/U208/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.0644 f
+  ds/U208/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.1018 r
+  ds/U224/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.1018 r
+  ds/U224/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.1393 f
+  ds/U223/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.1393 f
+  ds/U223/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.1767 r
+  ds/U216/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.1767 r
+  ds/U216/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.2142 f
+  ds/U2122/A1 (AOI21D1BWP40P140)              0.0445    0.0000     4.2142 f
+  ds/U2122/ZN (AOI21D1BWP40P140)              0.0410    0.0374     4.2516 r
+  ds/U220/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.2516 r
+  ds/U220/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.2891 f
+  ds/U221/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.2891 f
+  ds/U221/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.3265 r
+  ds/U218/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.3265 r
+  ds/U218/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.3640 f
+  ds/U213/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.3640 f
+  ds/U213/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.4014 r
+  ds/U226/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.4014 r
+  ds/U226/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.4389 f
+  ds/U206/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.4389 f
+  ds/U206/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.4764 r
+  ds/U2128/A1 (OAI21D1BWP40P140)              0.0410    0.0000     4.4764 r
+  ds/U2128/ZN (OAI21D1BWP40P140)              0.0445    0.0375     4.5139 f
+  ds/U230/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.5139 f
+  ds/U230/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.5513 r
+  ds/U232/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.5513 r
+  ds/U232/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.5888 f
+  ds/U202/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.5888 f
+  ds/U202/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.6262 r
+  ds/U196/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.6262 r
+  ds/U196/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.6637 f
+  ds/U446/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.6637 f
+  ds/U446/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.7011 r
+  ds/U236/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.7011 r
+  ds/U236/ZN (OAI21D1BWP40P140)               0.0524    0.0375     4.7386 f
+  ds/U2138/A1 (AOI21D1BWP40P140)              0.0524    0.0000     4.7386 f
+  ds/U2138/ZN (AOI21D1BWP40P140)              0.0424    0.0396     4.7783 r
+  ds/U195/A1 (OAI21D1BWP40P140)               0.0424    0.0000     4.7783 r
+  ds/U195/ZN (OAI21D1BWP40P140)               0.0468    0.0333     4.8116 f
+  ds/U2107/CI (FA1D1BWP40P140)                0.0468    0.0000     4.8116 f
+  ds/U2107/CO (FA1D1BWP40P140)                0.0398    0.0611     4.8727 f
+  ds/U1165/A1 (ND2D1BWP40P140)                0.0398    0.0000     4.8727 f
+  ds/U1165/ZN (ND2D1BWP40P140)                0.0157    0.0171     4.8898 r
+  ds/U189/A1 (ND2D1BWP40P140)                 0.0157    0.0000     4.8898 r
+  ds/U189/ZN (ND2D1BWP40P140)                 0.0361    0.0228     4.9126 f
+  ds/U2113/CI (FA1D1BWP40P140)                0.0361    0.0000     4.9126 f
+  ds/U2113/CO (FA1D1BWP40P140)                0.0394    0.0573     4.9699 f
+  ds/U186/A1 (ND2OPTIBD1BWP40P140)            0.0394    0.0000     4.9699 f
+  ds/U186/ZN (ND2OPTIBD1BWP40P140)            0.0180    0.0201     4.9900 r
+  ds/U180/A1 (ND2OPTPAD1BWP40P140LVT)         0.0180    0.0000     4.9900 r
+  ds/U180/ZN (ND2OPTPAD1BWP40P140LVT)         0.0273    0.0162     5.0062 f
+  ds/U2119/CI (FA1D1BWP40P140)                0.0273    0.0000     5.0062 f
+  ds/U2119/CO (FA1D1BWP40P140)                0.0427    0.0568     5.0630 f
+  ds/U178/A1 (ND2D2BWP40P140)                 0.0427    0.0000     5.0630 f
+  ds/U178/ZN (ND2D2BWP40P140)                 0.0149    0.0157     5.0787 r
+  ds/U2645/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.0787 r
+  ds/U2645/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.0914 f
+  ds/U2125/CI (FA1D1BWP40P140)                0.0225    0.0000     5.0914 f
+  ds/U2125/CO (FA1D1BWP40P140)                0.0427    0.0550     5.1464 f
+  ds/U173/A1 (ND2D2BWP40P140)                 0.0427    0.0000     5.1464 f
+  ds/U173/ZN (ND2D2BWP40P140)                 0.0149    0.0157     5.1621 r
+  ds/U2639/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.1621 r
+  ds/U2639/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.1749 f
+  ds/U2131/CI (FA1D1BWP40P140)                0.0225    0.0000     5.1749 f
+  ds/U2131/CO (FA1D1BWP40P140)                0.0418    0.0542     5.2291 f
+  ds/U45/A1 (ND2D1P5BWP40P140)                0.0418    0.0000     5.2291 f
+  ds/U45/ZN (ND2D1P5BWP40P140)                0.0141    0.0152     5.2443 r
+  ds/U2144/A1 (ND2D1BWP40P140)                0.0141    0.0000     5.2443 r
+  ds/U2144/ZN (ND2D1BWP40P140)                0.0370    0.0224     5.2668 f
+  ds/U2141/CI (FA1D1BWP40P140)                0.0370    0.0000     5.2668 f
+  ds/U2141/CO (FA1D1BWP40P140)                0.0398    0.0579     5.3247 f
+  ds/U1167/A1 (ND2D1BWP40P140)                0.0398    0.0000     5.3247 f
+  ds/U1167/ZN (ND2D1BWP40P140)                0.0186    0.0203     5.3449 r
+  ds/U2628/A1 (ND2OPTPAD2BWP40P140)           0.0186    0.0000     5.3449 r
+  ds/U2628/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0135     5.3585 f
+  ds/U2146/CI (FA1D1BWP40P140)                0.0225    0.0000     5.3585 f
+  ds/U2146/CO (FA1D1BWP40P140)                0.0399    0.0528     5.4112 f
+  ds/U44/A1 (ND2D1BWP40P140LVT)               0.0399    0.0000     5.4112 f
+  ds/U44/ZN (ND2D1BWP40P140LVT)               0.0174    0.0168     5.4280 r
+  ds/U2622/A1 (ND2OPTPAD2BWP40P140)           0.0174    0.0000     5.4280 r
+  ds/U2622/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0133     5.4413 f
+  ds/U2150/CI (FA1D1BWP40P140)                0.0225    0.0000     5.4413 f
+  ds/U2150/CO (FA1D1BWP40P140)                0.0427    0.0550     5.4963 f
+  ds/U42/A1 (ND2D2BWP40P140)                  0.0427    0.0000     5.4963 f
+  ds/U42/ZN (ND2D2BWP40P140)                  0.0149    0.0157     5.5119 r
+  ds/U2616/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.5119 r
+  ds/U2616/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.5247 f
+  ds/U2154/CI (FA1D1BWP40P140)                0.0225    0.0000     5.5247 f
+  ds/U2154/CO (FA1D1BWP40P140)                0.0427    0.0550     5.5797 f
+  ds/U41/A1 (ND2D2BWP40P140)                  0.0427    0.0000     5.5797 f
+  ds/U41/ZN (ND2D2BWP40P140)                  0.0149    0.0157     5.5953 r
+  ds/U2610/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.5953 r
+  ds/U2610/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.6081 f
+  ds/U2158/CI (FA1D1BWP40P140)                0.0225    0.0000     5.6081 f
+  ds/U2158/CO (FA1D1BWP40P140)                0.0427    0.0550     5.6631 f
+  ds/U13/A1 (ND2D2BWP40P140)                  0.0427    0.0000     5.6631 f
+  ds/U13/ZN (ND2D2BWP40P140)                  0.0135    0.0140     5.6771 r
+  ds/U2148/A1 (ND2D1BWP40P140)                0.0135    0.0000     5.6771 r
+  ds/U2148/ZN (ND2D1BWP40P140)                0.0370    0.0223     5.6994 f
+  ds/U2162/CI (FA1D1BWP40P140)                0.0370    0.0000     5.6994 f
+  ds/U2162/CO (FA1D1BWP40P140)                0.0399    0.0580     5.7574 f
+  ds/U12/A1 (ND2D1BWP40P140LVT)               0.0399    0.0000     5.7574 f
+  ds/U12/ZN (ND2D1BWP40P140LVT)               0.0147    0.0138     5.7712 r
+  ds/U2152/A1 (ND2D1BWP40P140)                0.0147    0.0000     5.7712 r
+  ds/U2152/ZN (ND2D1BWP40P140)                0.0370    0.0226     5.7938 f
+  ds/U2166/CI (FA1D1BWP40P140)                0.0370    0.0000     5.7938 f
+  ds/U2166/CO (FA1D1BWP40P140)                0.0418    0.0595     5.8533 f
+  ds/U11/A1 (ND2D1P5BWP40P140)                0.0418    0.0000     5.8533 f
+  ds/U11/ZN (ND2D1P5BWP40P140)                0.0159    0.0173     5.8706 r
+  ds/U2594/A1 (ND2OPTPAD2BWP40P140)           0.0159    0.0000     5.8706 r
+  ds/U2594/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0130     5.8835 f
+  ds/U2170/CI (FA1D1BWP40P140)                0.0225    0.0000     5.8835 f
+  ds/U2170/CO (FA1D1BWP40P140)                0.0398    0.0526     5.9362 f
+  ds/U10/A1 (ND2D1BWP40P140)                  0.0398    0.0000     5.9362 f
+  ds/U10/ZN (ND2D1BWP40P140)                  0.0157    0.0171     5.9533 r
+  ds/U2156/A1 (ND2D1BWP40P140)                0.0157    0.0000     5.9533 r
+  ds/U2156/ZN (ND2D1BWP40P140)                0.0370    0.0228     5.9762 f
+  ds/U2174/CI (FA1D1BWP40P140)                0.0370    0.0000     5.9762 f
+  ds/U2174/CO (FA1D1BWP40P140)                0.0362    0.0548     6.0310 f
+  ds/U2178/CI (FA1D1BWP40P140)                0.0362    0.0000     6.0310 f
+  ds/U2178/CO (FA1D1BWP40P140)                0.0362    0.0545     6.0855 f
+  ds/U2181/CI (FA1D1BWP40P140)                0.0362    0.0000     6.0855 f
+  ds/U2181/S (FA1D1BWP40P140)                 0.0312    0.0879     6.1734 r
+  ds/U115/A1 (IOA21D1BWP40P140)               0.0312    0.0000     6.1734 r
+  ds/U115/ZN (IOA21D1BWP40P140)               0.0279    0.0401     6.2135 r
+  ds/ds_pf_br_target[62] (ysyx_22051094_DS_0)           0.0000     6.2135 r
+  pf/ds_pf_br_target[62] (ysyx_22051094_PF_0)           0.0000     6.2135 r
+  pf/U24/A1 (IOA21D1BWP40P140)                0.0279    0.0000     6.2135 r
+  pf/U24/ZN (IOA21D1BWP40P140)                0.0337    0.0404     6.2539 r
+  pf/U8/I (BUFFD1BWP40P140)                   0.0337    0.0000     6.2539 r
+  pf/U8/Z (BUFFD1BWP40P140)                   0.0125    0.0290     6.2829 r
+  pf/inst_master_ar_bits_addr[62] (ysyx_22051094_PF_0)
+                                                        0.0000     6.2829 r
+  icache/cpu_master_ar_bits_addr[62] (ysyx_22051094_Cache_2)
+                                                        0.0000     6.2829 r
+  icache/U746/B2 (MOAI22D1BWP40P140)          0.0125    0.0000     6.2829 r
+  icache/U746/ZN (MOAI22D1BWP40P140)          0.0555    0.0317     6.3146 r
+  icache/req_reg_tag_reg_52_/D (DFQD1BWP40P140)
+                                              0.0555    0.0000     6.3146 r
+  data arrival time                                                6.3146
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/req_reg_tag_reg_52_/CP (DFQD1BWP40P140)        0.0000     6.3500 r
+  library setup time                                   -0.0353     6.3147
+  data required time                                               6.3147
+  --------------------------------------------------------------------------
+  data required time                                               6.3147
+  data arrival time                                               -6.3146
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: es/es_reg_alu_op_2_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache/req_reg_tag_reg_53_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  es/es_reg_alu_op_2_reg/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  es/es_reg_alu_op_2_reg/Q (DFQD1BWP40P140)   0.0228    0.0835     0.0835 f
+  es/alu/io_alu_op_2 (ysyx_22051094_ALU_0)              0.0000     0.0835 f
+  es/alu/U251/A1 (NR2D1BWP40P140)             0.0228    0.0000     0.0835 f
+  es/alu/U251/ZN (NR2D1BWP40P140)             0.0180    0.0176     0.1011 r
+  es/alu/U252/B1 (IND2D1BWP40P140)            0.0180    0.0000     0.1011 r
+  es/alu/U252/ZN (IND2D1BWP40P140)            0.0853    0.0564     0.1575 f
+  es/alu/U6/I (INVD1BWP40P140)                0.0853    0.0000     0.1575 f
+  es/alu/U6/ZN (INVD1BWP40P140)               0.0287    0.0291     0.1867 r
+  es/alu/U365/I (INVD2BWP40P140)              0.0287    0.0000     0.1867 r
+  es/alu/U365/ZN (INVD2BWP40P140)             0.2839    0.1698     0.3565 f
+  es/alu/U2137/A1 (XNR2UD1BWP40P140)          0.2839    0.0000     0.3565 f
+  es/alu/U2137/ZN (XNR2UD1BWP40P140)          0.0699    0.0820     0.4385 f
+  es/alu/U295/A1 (ND2D1BWP40P140)             0.0699    0.0000     0.4385 f
+  es/alu/U295/ZN (ND2D1BWP40P140)             0.0259    0.0268     0.4653 r
+  es/alu/U296/I (INVD1BWP40P140)              0.0259    0.0000     0.4653 r
+  es/alu/U296/ZN (INVD1BWP40P140)             0.0129    0.0131     0.4784 f
+  es/alu/U297/B (AOI21D1BWP40P140)            0.0129    0.0000     0.4784 f
+  es/alu/U297/ZN (AOI21D1BWP40P140)           0.0410    0.0310     0.5095 r
+  es/alu/U9/A1 (OAI21D1BWP40P140)             0.0410    0.0000     0.5095 r
+  es/alu/U9/ZN (OAI21D1BWP40P140)             0.0445    0.0375     0.5469 f
+  es/alu/U2144/A1 (AOI21D1BWP40P140)          0.0445    0.0000     0.5469 f
+  es/alu/U2144/ZN (AOI21D1BWP40P140)          0.0410    0.0374     0.5844 r
+  es/alu/U2143/A1 (OAI21D1BWP40P140)          0.0410    0.0000     0.5844 r
+  es/alu/U2143/ZN (OAI21D1BWP40P140)          0.0445    0.0375     0.6219 f
+  es/alu/U306/A1 (AOI21D1BWP40P140)           0.0445    0.0000     0.6219 f
+  es/alu/U306/ZN (AOI21D1BWP40P140)           0.0410    0.0374     0.6593 r
+  es/alu/U636/A1 (OAI21D1BWP40P140)           0.0410    0.0000     0.6593 r
+  es/alu/U636/ZN (OAI21D1BWP40P140)           0.0445    0.0375     0.6968 f
+  es/alu/U1273/A1 (AOI21D1BWP40P140)          0.0445    0.0000     0.6968 f
+  es/alu/U1273/ZN (AOI21D1BWP40P140)          0.0478    0.0417     0.7385 r
+  es/alu/U312/A1 (OAI21D2BWP40P140)           0.0478    0.0000     0.7385 r
+  es/alu/U312/ZN (OAI21D2BWP40P140)           0.0307    0.0265     0.7650 f
+  es/alu/U1274/A1 (AOI21D1BWP40P140)          0.0307    0.0000     0.7650 f
+  es/alu/U1274/ZN (AOI21D1BWP40P140)          0.0457    0.0376     0.8026 r
+  es/alu/U89/A1 (OAI21D2BWP40P140)            0.0457    0.0000     0.8026 r
+  es/alu/U89/ZN (OAI21D2BWP40P140)            0.0307    0.0262     0.8288 f
+  es/alu/U319/A1 (AOI21D1BWP40P140)           0.0307    0.0000     0.8288 f
+  es/alu/U319/ZN (AOI21D1BWP40P140)           0.0388    0.0334     0.8621 r
+  es/alu/U2090/A1 (OAI21D1BWP40P140)          0.0388    0.0000     0.8621 r
+  es/alu/U2090/ZN (OAI21D1BWP40P140)          0.0442    0.0370     0.8991 f
+  es/alu/U2134/A1 (AOI21D1BWP40P140)          0.0442    0.0000     0.8991 f
+  es/alu/U2134/ZN (AOI21D1BWP40P140)          0.0478    0.0417     0.9407 r
+  es/alu/U88/A1 (OAI21D2BWP40P140)            0.0478    0.0000     0.9407 r
+  es/alu/U88/ZN (OAI21D2BWP40P140)            0.0307    0.0265     0.9673 f
+  es/alu/U328/A1 (AOI21D1BWP40P140)           0.0307    0.0000     0.9673 f
+  es/alu/U328/ZN (AOI21D1BWP40P140)           0.0388    0.0334     1.0006 r
+  es/alu/U2135/A1 (OAI21D1BWP40P140)          0.0388    0.0000     1.0006 r
+  es/alu/U2135/ZN (OAI21D1BWP40P140)          0.0497    0.0404     1.0410 f
+  es/alu/U87/A1 (AOI21OPTREPBD1BWP40P140)     0.0497    0.0000     1.0410 f
+  es/alu/U87/ZN (AOI21OPTREPBD1BWP40P140)     0.0341    0.0332     1.0742 r
+  es/alu/U86/A1 (OAI21D2BWP40P140)            0.0341    0.0000     1.0742 r
+  es/alu/U86/ZN (OAI21D2BWP40P140)            0.0307    0.0243     1.0985 f
+  es/alu/U337/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.0985 f
+  es/alu/U337/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.1361 r
+  es/alu/U339/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.1361 r
+  es/alu/U339/ZN (OAI21D2BWP40P140)           0.0341    0.0289     1.1650 f
+  es/alu/U81/A1 (AOI21D2BWP40P140)            0.0341    0.0000     1.1650 f
+  es/alu/U81/ZN (AOI21D2BWP40P140)            0.0280    0.0258     1.1909 r
+  es/alu/U77/A1 (OAI21D2BWP40P140LVT)         0.0280    0.0000     1.1909 r
+  es/alu/U77/ZN (OAI21D2BWP40P140LVT)         0.0273    0.0188     1.2096 f
+  es/alu/U346/A1 (AOI21D1BWP40P140)           0.0273    0.0000     1.2096 f
+  es/alu/U346/ZN (AOI21D1BWP40P140)           0.0452    0.0364     1.2461 r
+  es/alu/U71/A1 (OAI21D2BWP40P140)            0.0452    0.0000     1.2461 r
+  es/alu/U71/ZN (OAI21D2BWP40P140)            0.0307    0.0261     1.2722 f
+  es/alu/U333/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.2722 f
+  es/alu/U333/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.3097 r
+  es/alu/U354/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.3097 r
+  es/alu/U354/ZN (OAI21D2BWP40P140)           0.0341    0.0289     1.3386 f
+  es/alu/U67/A1 (AOI21D2BWP40P140)            0.0341    0.0000     1.3386 f
+  es/alu/U67/ZN (AOI21D2BWP40P140)            0.0277    0.0256     1.3642 r
+  es/alu/U62/A1 (OAI21D2BWP40P140)            0.0277    0.0000     1.3642 r
+  es/alu/U62/ZN (OAI21D2BWP40P140)            0.0307    0.0228     1.3870 f
+  es/alu/U361/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.3870 f
+  es/alu/U361/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.4246 r
+  es/alu/U58/A1 (OAI21D2BWP40P140)            0.0457    0.0000     1.4246 r
+  es/alu/U58/ZN (OAI21D2BWP40P140)            0.0307    0.0262     1.4507 f
+  es/alu/U342/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.4507 f
+  es/alu/U342/ZN (AOI21D1BWP40P140)           0.0457    0.0375     1.4883 r
+  es/alu/U367/A1 (OAI21D2BWP40P140)           0.0457    0.0000     1.4883 r
+  es/alu/U367/ZN (OAI21D2BWP40P140)           0.0307    0.0262     1.5145 f
+  es/alu/U370/A1 (AOI21D1BWP40P140)           0.0307    0.0000     1.5145 f
+  es/alu/U370/ZN (AOI21D1BWP40P140)           0.0465    0.0381     1.5525 r
+  es/alu/U48/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0465    0.0000     1.5525 r
+  es/alu/U48/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0329    0.0244     1.5769 f
+  es/alu/U91/A1 (ND2D1BWP40P140)              0.0329    0.0000     1.5769 f
+  es/alu/U91/ZN (ND2D1BWP40P140)              0.0171    0.0188     1.5957 r
+  es/alu/U2142/A1 (ND2OPTPAD2BWP40P140)       0.0171    0.0000     1.5957 r
+  es/alu/U2142/ZN (ND2OPTPAD2BWP40P140)       0.0145    0.0132     1.6089 f
+  es/alu/U1669/CI (FA1D1BWP40P140)            0.0145    0.0000     1.6089 f
+  es/alu/U1669/CO (FA1D1BWP40P140)            0.0257    0.0497     1.6586 f
+  es/alu/U45/A1 (ND2D1BWP40P140)              0.0257    0.0000     1.6586 f
+  es/alu/U45/ZN (ND2D1BWP40P140)              0.0127    0.0141     1.6727 r
+  es/alu/U348/A1 (ND2D1BWP40P140)             0.0127    0.0000     1.6727 r
+  es/alu/U348/ZN (ND2D1BWP40P140)             0.0287    0.0220     1.6947 f
+  es/alu/U1391/CI (FA1D1BWP40P140)            0.0287    0.0000     1.6947 f
+  es/alu/U1391/CO (FA1D1BWP40P140)            0.0225    0.0519     1.7466 f
+  es/alu/U1680/CI (FA1D1BWP40P140)            0.0225    0.0000     1.7466 f
+  es/alu/U1680/CO (FA1D1BWP40P140)            0.0257    0.0526     1.7992 f
+  es/alu/U26/A1 (ND2D1BWP40P140)              0.0257    0.0000     1.7992 f
+  es/alu/U26/ZN (ND2D1BWP40P140)              0.0127    0.0141     1.8133 r
+  es/alu/U352/A1 (ND2D1BWP40P140)             0.0127    0.0000     1.8133 r
+  es/alu/U352/ZN (ND2D1BWP40P140)             0.0287    0.0220     1.8353 f
+  es/alu/U1417/CI (FA1D1BWP40P140)            0.0287    0.0000     1.8353 f
+  es/alu/U1417/CO (FA1D1BWP40P140)            0.0225    0.0519     1.8872 f
+  es/alu/U232/CI (FA1D1BWP40P140)             0.0225    0.0000     1.8872 f
+  es/alu/U232/CO (FA1D1BWP40P140)             0.0223    0.0496     1.9368 f
+  es/alu/U1436/CI (FA1D1BWP40P140)            0.0223    0.0000     1.9368 f
+  es/alu/U1436/CO (FA1D1BWP40P140)            0.0257    0.0526     1.9894 f
+  es/alu/U5/A1 (ND2D1BWP40P140)               0.0257    0.0000     1.9894 f
+  es/alu/U5/ZN (ND2D1BWP40P140)               0.0127    0.0141     2.0034 r
+  es/alu/U357/A1 (ND2D1BWP40P140)             0.0127    0.0000     2.0034 r
+  es/alu/U357/ZN (ND2D1BWP40P140)             0.0287    0.0220     2.0255 f
+  es/alu/U2079/CI (FA1D1BWP40P140)            0.0287    0.0000     2.0255 f
+  es/alu/U2079/CO (FA1D1BWP40P140)            0.0225    0.0519     2.0773 f
+  es/alu/U246/CI (FA1D1BWP40P140)             0.0225    0.0000     2.0773 f
+  es/alu/U246/CO (FA1D1BWP40P140)             0.0223    0.0496     2.1269 f
+  es/alu/U768/CI (FA1D1BWP40P140)             0.0223    0.0000     2.1269 f
+  es/alu/U768/CO (FA1D1BWP40P140)             0.0223    0.0495     2.1764 f
+  es/alu/U2136/CI (FA1D1BWP40P140)            0.0223    0.0000     2.1764 f
+  es/alu/U2136/CO (FA1D1BWP40P140)            0.0223    0.0495     2.2259 f
+  es/alu/U1323/CI (FA1D1BWP40P140)            0.0223    0.0000     2.2259 f
+  es/alu/U1323/CO (FA1D1BWP40P140)            0.0223    0.0495     2.2755 f
+  es/alu/U247/CI (FA1D1BWP40P140)             0.0223    0.0000     2.2755 f
+  es/alu/U247/CO (FA1D1BWP40P140)             0.0223    0.0495     2.3250 f
+  es/alu/U1641/CI (FA1D1BWP40P140)            0.0223    0.0000     2.3250 f
+  es/alu/U1641/CO (FA1D1BWP40P140)            0.0223    0.0495     2.3745 f
+  es/alu/U95/CI (FA1D1BWP40P140)              0.0223    0.0000     2.3745 f
+  es/alu/U95/CO (FA1D1BWP40P140)              0.0223    0.0495     2.4240 f
+  es/alu/U1809/CI (FA1D1BWP40P140)            0.0223    0.0000     2.4240 f
+  es/alu/U1809/CO (FA1D1BWP40P140)            0.0223    0.0495     2.4735 f
+  es/alu/U248/CI (FA1D1BWP40P140)             0.0223    0.0000     2.4735 f
+  es/alu/U248/CO (FA1D1BWP40P140)             0.0223    0.0495     2.5231 f
+  es/alu/U1463/CI (FA1D1BWP40P140)            0.0223    0.0000     2.5231 f
+  es/alu/U1463/CO (FA1D1BWP40P140)            0.0224    0.0495     2.5726 f
+  es/alu/U96/CI (FA1D1BWP40P140)              0.0224    0.0000     2.5726 f
+  es/alu/U96/CO (FA1D1BWP40P140)              0.0223    0.0495     2.6221 f
+  es/alu/U1697/CI (FA1D1BWP40P140)            0.0223    0.0000     2.6221 f
+  es/alu/U1697/CO (FA1D1BWP40P140)            0.0224    0.0495     2.6716 f
+  es/alu/U372/CI (FA1D1BWP40P140)             0.0224    0.0000     2.6716 f
+  es/alu/U372/CO (FA1D1BWP40P140)             0.0223    0.0495     2.7212 f
+  es/alu/U2105/CI (FA1D1BWP40P140)            0.0223    0.0000     2.7212 f
+  es/alu/U2105/S (FA1D1BWP40P140)             0.0215    0.0669     2.7880 f
+  es/alu/U2106/A2 (ND2D1BWP40P140)            0.0215    0.0000     2.7880 f
+  es/alu/U2106/ZN (ND2D1BWP40P140)            0.0568    0.0146     2.8027 r
+  es/alu/U2118/B (OAI211D1BWP40P140)          0.0568    0.0000     2.8027 r
+  es/alu/U2118/ZN (OAI211D1BWP40P140)         0.0441    0.0456     2.8483 f
+  es/alu/io_alu_result[61] (ysyx_22051094_ALU_0)        0.0000     2.8483 f
+  es/U9/A1 (AO21D1BWP40P140)                  0.0441    0.0000     2.8483 f
+  es/U9/Z (AO21D1BWP40P140)                   0.0303    0.0444     2.8927 f
+  es/U292/I (INVD1BWP40P140)                  0.0303    0.0000     2.8927 f
+  es/U292/ZN (INVD1BWP40P140)                 0.0135    0.0149     2.9076 r
+  es/U377/A1 (ND3D1BWP40P140)                 0.0135    0.0000     2.9076 r
+  es/U377/ZN (ND3D1BWP40P140)                 0.0345    0.0235     2.9311 f
+  es/U378/A2 (NR2D1BWP40P140)                 0.0345    0.0000     2.9311 f
+  es/U378/ZN (NR2D1BWP40P140)                 0.0193    0.0228     2.9540 r
+  es/U3/A1 (INR2D1BWP40P140)                  0.0193    0.0000     2.9540 r
+  es/U3/ZN (INR2D1BWP40P140)                  0.0383    0.0425     2.9965 r
+  es/U6/A1 (NR2OPTIBD1BWP40P140)              0.0383    0.0000     2.9965 r
+  es/U6/ZN (NR2OPTIBD1BWP40P140)              0.0165    0.0159     3.0125 f
+  es/U7/A1 (OAI21D1BWP40P140)                 0.0165    0.0000     3.0125 f
+  es/U7/ZN (OAI21D1BWP40P140)                 0.0253    0.0215     3.0339 r
+  es/U81/A1 (AN2D1BWP40P140)                  0.0253    0.0000     3.0339 r
+  es/U81/Z (AN2D1BWP40P140)                   0.0211    0.0411     3.0751 r
+  es/es_ds_to_ms_valid (ysyx_22051094_ES_0)             0.0000     3.0751 r
+  ds/es_ds_to_ms_valid (ysyx_22051094_DS_0)             0.0000     3.0751 r
+  ds/U444/A1 (ND2D1BWP40P140)                 0.0211    0.0000     3.0751 r
+  ds/U444/ZN (ND2D1BWP40P140)                 0.0396    0.0309     3.1060 f
+  ds/U2660/B1 (INR2D2BWP40P140)               0.0396    0.0000     3.1060 f
+  ds/U2660/ZN (INR2D2BWP40P140)               0.2361    0.1490     3.2550 r
+  ds/U676/B1 (INR2D2BWP40P140)                0.2361    0.0000     3.2550 r
+  ds/U676/ZN (INR2D2BWP40P140)                0.1814    0.1585     3.4135 f
+  ds/U1141/A1 (AOI22D1BWP40P140)              0.1814    0.0000     3.4135 f
+  ds/U1141/ZN (AOI22D1BWP40P140)              0.0523    0.0504     3.4639 r
+  ds/U1142/B (OAI21D1BWP40P140)               0.0523    0.0000     3.4639 r
+  ds/U1142/ZN (OAI21D1BWP40P140)              0.0626    0.0331     3.4970 f
+  ds/U171/A1 (OR2D1BWP40P140)                 0.0626    0.0000     3.4970 f
+  ds/U171/Z (OR2D1BWP40P140)                  0.0395    0.0544     3.5515 f
+  ds/U1922/A1 (AO22D1BWP40P140)               0.0395    0.0000     3.5515 f
+  ds/U1922/Z (AO22D1BWP40P140)                0.0257    0.0429     3.5943 f
+  ds/U175/A1 (OR2D1BWP40P140)                 0.0257    0.0000     3.5943 f
+  ds/U175/Z (OR2D1BWP40P140)                  0.0159    0.0310     3.6253 f
+  ds/U176/A2 (AOI21D1BWP40P140)               0.0159    0.0000     3.6253 f
+  ds/U176/ZN (AOI21D1BWP40P140)               0.0373    0.0281     3.6534 r
+  ds/U2585/A1 (OAI21D1BWP40P140)              0.0373    0.0000     3.6534 r
+  ds/U2585/ZN (OAI21D1BWP40P140)              0.0438    0.0366     3.6900 f
+  ds/U2172/A1 (AOI21D1BWP40P140)              0.0438    0.0000     3.6900 f
+  ds/U2172/ZN (AOI21D1BWP40P140)              0.0409    0.0372     3.7272 r
+  ds/U184/A1 (OAI21D1BWP40P140)               0.0409    0.0000     3.7272 r
+  ds/U184/ZN (OAI21D1BWP40P140)               0.0445    0.0375     3.7647 f
+  ds/U2168/A1 (AOI21D1BWP40P140)              0.0445    0.0000     3.7647 f
+  ds/U2168/ZN (AOI21D1BWP40P140)              0.0410    0.0374     3.8021 r
+  ds/U2164/A1 (OAI21D1BWP40P140)              0.0410    0.0000     3.8021 r
+  ds/U2164/ZN (OAI21D1BWP40P140)              0.0445    0.0375     3.8396 f
+  ds/U191/A1 (AOI21D1BWP40P140)               0.0445    0.0000     3.8396 f
+  ds/U191/ZN (AOI21D1BWP40P140)               0.0410    0.0374     3.8770 r
+  ds/U2110/A1 (OAI21D1BWP40P140)              0.0410    0.0000     3.8770 r
+  ds/U2110/ZN (OAI21D1BWP40P140)              0.0445    0.0375     3.9145 f
+  ds/U2116/A1 (AOI21D1BWP40P140)              0.0445    0.0000     3.9145 f
+  ds/U2116/ZN (AOI21D1BWP40P140)              0.0410    0.0374     3.9519 r
+  ds/U200/A1 (OAI21D1BWP40P140)               0.0410    0.0000     3.9519 r
+  ds/U200/ZN (OAI21D1BWP40P140)               0.0445    0.0375     3.9894 f
+  ds/U229/A1 (AOI21D1BWP40P140)               0.0445    0.0000     3.9894 f
+  ds/U229/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.0269 r
+  ds/U227/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.0269 r
+  ds/U227/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.0644 f
+  ds/U208/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.0644 f
+  ds/U208/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.1018 r
+  ds/U224/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.1018 r
+  ds/U224/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.1393 f
+  ds/U223/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.1393 f
+  ds/U223/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.1767 r
+  ds/U216/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.1767 r
+  ds/U216/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.2142 f
+  ds/U2122/A1 (AOI21D1BWP40P140)              0.0445    0.0000     4.2142 f
+  ds/U2122/ZN (AOI21D1BWP40P140)              0.0410    0.0374     4.2516 r
+  ds/U220/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.2516 r
+  ds/U220/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.2891 f
+  ds/U221/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.2891 f
+  ds/U221/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.3265 r
+  ds/U218/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.3265 r
+  ds/U218/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.3640 f
+  ds/U213/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.3640 f
+  ds/U213/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.4014 r
+  ds/U226/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.4014 r
+  ds/U226/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.4389 f
+  ds/U206/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.4389 f
+  ds/U206/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.4764 r
+  ds/U2128/A1 (OAI21D1BWP40P140)              0.0410    0.0000     4.4764 r
+  ds/U2128/ZN (OAI21D1BWP40P140)              0.0445    0.0375     4.5139 f
+  ds/U230/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.5139 f
+  ds/U230/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.5513 r
+  ds/U232/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.5513 r
+  ds/U232/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.5888 f
+  ds/U202/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.5888 f
+  ds/U202/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.6262 r
+  ds/U196/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.6262 r
+  ds/U196/ZN (OAI21D1BWP40P140)               0.0445    0.0375     4.6637 f
+  ds/U446/A1 (AOI21D1BWP40P140)               0.0445    0.0000     4.6637 f
+  ds/U446/ZN (AOI21D1BWP40P140)               0.0410    0.0374     4.7011 r
+  ds/U236/A1 (OAI21D1BWP40P140)               0.0410    0.0000     4.7011 r
+  ds/U236/ZN (OAI21D1BWP40P140)               0.0524    0.0375     4.7386 f
+  ds/U2138/A1 (AOI21D1BWP40P140)              0.0524    0.0000     4.7386 f
+  ds/U2138/ZN (AOI21D1BWP40P140)              0.0424    0.0396     4.7783 r
+  ds/U195/A1 (OAI21D1BWP40P140)               0.0424    0.0000     4.7783 r
+  ds/U195/ZN (OAI21D1BWP40P140)               0.0468    0.0333     4.8116 f
+  ds/U2107/CI (FA1D1BWP40P140)                0.0468    0.0000     4.8116 f
+  ds/U2107/CO (FA1D1BWP40P140)                0.0398    0.0611     4.8727 f
+  ds/U1165/A1 (ND2D1BWP40P140)                0.0398    0.0000     4.8727 f
+  ds/U1165/ZN (ND2D1BWP40P140)                0.0157    0.0171     4.8898 r
+  ds/U189/A1 (ND2D1BWP40P140)                 0.0157    0.0000     4.8898 r
+  ds/U189/ZN (ND2D1BWP40P140)                 0.0361    0.0228     4.9126 f
+  ds/U2113/CI (FA1D1BWP40P140)                0.0361    0.0000     4.9126 f
+  ds/U2113/CO (FA1D1BWP40P140)                0.0394    0.0573     4.9699 f
+  ds/U186/A1 (ND2OPTIBD1BWP40P140)            0.0394    0.0000     4.9699 f
+  ds/U186/ZN (ND2OPTIBD1BWP40P140)            0.0180    0.0201     4.9900 r
+  ds/U180/A1 (ND2OPTPAD1BWP40P140LVT)         0.0180    0.0000     4.9900 r
+  ds/U180/ZN (ND2OPTPAD1BWP40P140LVT)         0.0273    0.0162     5.0062 f
+  ds/U2119/CI (FA1D1BWP40P140)                0.0273    0.0000     5.0062 f
+  ds/U2119/CO (FA1D1BWP40P140)                0.0427    0.0568     5.0630 f
+  ds/U178/A1 (ND2D2BWP40P140)                 0.0427    0.0000     5.0630 f
+  ds/U178/ZN (ND2D2BWP40P140)                 0.0149    0.0157     5.0787 r
+  ds/U2645/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.0787 r
+  ds/U2645/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.0914 f
+  ds/U2125/CI (FA1D1BWP40P140)                0.0225    0.0000     5.0914 f
+  ds/U2125/CO (FA1D1BWP40P140)                0.0427    0.0550     5.1464 f
+  ds/U173/A1 (ND2D2BWP40P140)                 0.0427    0.0000     5.1464 f
+  ds/U173/ZN (ND2D2BWP40P140)                 0.0149    0.0157     5.1621 r
+  ds/U2639/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.1621 r
+  ds/U2639/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.1749 f
+  ds/U2131/CI (FA1D1BWP40P140)                0.0225    0.0000     5.1749 f
+  ds/U2131/CO (FA1D1BWP40P140)                0.0418    0.0542     5.2291 f
+  ds/U45/A1 (ND2D1P5BWP40P140)                0.0418    0.0000     5.2291 f
+  ds/U45/ZN (ND2D1P5BWP40P140)                0.0141    0.0152     5.2443 r
+  ds/U2144/A1 (ND2D1BWP40P140)                0.0141    0.0000     5.2443 r
+  ds/U2144/ZN (ND2D1BWP40P140)                0.0370    0.0224     5.2668 f
+  ds/U2141/CI (FA1D1BWP40P140)                0.0370    0.0000     5.2668 f
+  ds/U2141/CO (FA1D1BWP40P140)                0.0398    0.0579     5.3247 f
+  ds/U1167/A1 (ND2D1BWP40P140)                0.0398    0.0000     5.3247 f
+  ds/U1167/ZN (ND2D1BWP40P140)                0.0186    0.0203     5.3449 r
+  ds/U2628/A1 (ND2OPTPAD2BWP40P140)           0.0186    0.0000     5.3449 r
+  ds/U2628/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0135     5.3585 f
+  ds/U2146/CI (FA1D1BWP40P140)                0.0225    0.0000     5.3585 f
+  ds/U2146/CO (FA1D1BWP40P140)                0.0399    0.0528     5.4112 f
+  ds/U44/A1 (ND2D1BWP40P140LVT)               0.0399    0.0000     5.4112 f
+  ds/U44/ZN (ND2D1BWP40P140LVT)               0.0174    0.0168     5.4280 r
+  ds/U2622/A1 (ND2OPTPAD2BWP40P140)           0.0174    0.0000     5.4280 r
+  ds/U2622/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0133     5.4413 f
+  ds/U2150/CI (FA1D1BWP40P140)                0.0225    0.0000     5.4413 f
+  ds/U2150/CO (FA1D1BWP40P140)                0.0427    0.0550     5.4963 f
+  ds/U42/A1 (ND2D2BWP40P140)                  0.0427    0.0000     5.4963 f
+  ds/U42/ZN (ND2D2BWP40P140)                  0.0149    0.0157     5.5119 r
+  ds/U2616/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.5119 r
+  ds/U2616/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.5247 f
+  ds/U2154/CI (FA1D1BWP40P140)                0.0225    0.0000     5.5247 f
+  ds/U2154/CO (FA1D1BWP40P140)                0.0427    0.0550     5.5797 f
+  ds/U41/A1 (ND2D2BWP40P140)                  0.0427    0.0000     5.5797 f
+  ds/U41/ZN (ND2D2BWP40P140)                  0.0149    0.0157     5.5953 r
+  ds/U2610/A1 (ND2OPTPAD2BWP40P140)           0.0149    0.0000     5.5953 r
+  ds/U2610/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0128     5.6081 f
+  ds/U2158/CI (FA1D1BWP40P140)                0.0225    0.0000     5.6081 f
+  ds/U2158/CO (FA1D1BWP40P140)                0.0427    0.0550     5.6631 f
+  ds/U13/A1 (ND2D2BWP40P140)                  0.0427    0.0000     5.6631 f
+  ds/U13/ZN (ND2D2BWP40P140)                  0.0135    0.0140     5.6771 r
+  ds/U2148/A1 (ND2D1BWP40P140)                0.0135    0.0000     5.6771 r
+  ds/U2148/ZN (ND2D1BWP40P140)                0.0370    0.0223     5.6994 f
+  ds/U2162/CI (FA1D1BWP40P140)                0.0370    0.0000     5.6994 f
+  ds/U2162/CO (FA1D1BWP40P140)                0.0399    0.0580     5.7574 f
+  ds/U12/A1 (ND2D1BWP40P140LVT)               0.0399    0.0000     5.7574 f
+  ds/U12/ZN (ND2D1BWP40P140LVT)               0.0147    0.0138     5.7712 r
+  ds/U2152/A1 (ND2D1BWP40P140)                0.0147    0.0000     5.7712 r
+  ds/U2152/ZN (ND2D1BWP40P140)                0.0370    0.0226     5.7938 f
+  ds/U2166/CI (FA1D1BWP40P140)                0.0370    0.0000     5.7938 f
+  ds/U2166/CO (FA1D1BWP40P140)                0.0418    0.0595     5.8533 f
+  ds/U11/A1 (ND2D1P5BWP40P140)                0.0418    0.0000     5.8533 f
+  ds/U11/ZN (ND2D1P5BWP40P140)                0.0159    0.0173     5.8706 r
+  ds/U2594/A1 (ND2OPTPAD2BWP40P140)           0.0159    0.0000     5.8706 r
+  ds/U2594/ZN (ND2OPTPAD2BWP40P140)           0.0225    0.0130     5.8835 f
+  ds/U2170/CI (FA1D1BWP40P140)                0.0225    0.0000     5.8835 f
+  ds/U2170/CO (FA1D1BWP40P140)                0.0398    0.0526     5.9362 f
+  ds/U10/A1 (ND2D1BWP40P140)                  0.0398    0.0000     5.9362 f
+  ds/U10/ZN (ND2D1BWP40P140)                  0.0157    0.0171     5.9533 r
+  ds/U2156/A1 (ND2D1BWP40P140)                0.0157    0.0000     5.9533 r
+  ds/U2156/ZN (ND2D1BWP40P140)                0.0370    0.0228     5.9762 f
+  ds/U2174/CI (FA1D1BWP40P140)                0.0370    0.0000     5.9762 f
+  ds/U2174/CO (FA1D1BWP40P140)                0.0362    0.0548     6.0310 f
+  ds/U2178/CI (FA1D1BWP40P140)                0.0362    0.0000     6.0310 f
+  ds/U2178/CO (FA1D1BWP40P140)                0.0362    0.0545     6.0855 f
+  ds/U2181/CI (FA1D1BWP40P140)                0.0362    0.0000     6.0855 f
+  ds/U2181/CO (FA1D1BWP40P140)                0.0318    0.0509     6.1364 f
+  ds/U2179/A2 (XOR2UD1BWP40P140)              0.0318    0.0000     6.1364 f
+  ds/U2179/Z (XOR2UD1BWP40P140)               0.0363    0.0406     6.1770 f
+  ds/U116/A1 (IOA21D1BWP40P140)               0.0363    0.0000     6.1770 f
+  ds/U116/ZN (IOA21D1BWP40P140)               0.0354    0.0431     6.2201 f
+  ds/ds_pf_br_target[63] (ysyx_22051094_DS_0)           0.0000     6.2201 f
+  pf/ds_pf_br_target[63] (ysyx_22051094_PF_0)           0.0000     6.2201 f
+  pf/U25/A1 (IOA21D1BWP40P140)                0.0354    0.0000     6.2201 f
+  pf/U25/ZN (IOA21D1BWP40P140)                0.0361    0.0444     6.2646 f
+  pf/U7/I (BUFFD1BWP40P140)                   0.0361    0.0000     6.2646 f
+  pf/U7/Z (BUFFD1BWP40P140)                   0.0131    0.0330     6.2975 f
+  pf/inst_master_ar_bits_addr[63] (ysyx_22051094_PF_0)
+                                                        0.0000     6.2975 f
+  icache/cpu_master_ar_bits_addr[63] (ysyx_22051094_Cache_2)
+                                                        0.0000     6.2975 f
+  icache/U744/B2 (MOAI22D1BWP40P140)          0.0131    0.0000     6.2975 f
+  icache/U744/ZN (MOAI22D1BWP40P140)          0.0667    0.0335     6.3310 f
+  icache/req_reg_tag_reg_53_/D (DFQD1BWP40P140)
+                                              0.0667    0.0000     6.3310 f
+  data arrival time                                                6.3310
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  icache/req_reg_tag_reg_53_/CP (DFQD1BWP40P140)        0.0000     6.3500 r
+  library setup time                                   -0.0174     6.3326
+  data required time                                               6.3326
+  --------------------------------------------------------------------------
+  data required time                                               6.3326
+  data arrival time                                               -6.3310
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0015
+
+
+  Startpoint: es/multiplier/y_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: es/multiplier/res_reg_126_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  es/multiplier/y_reg_1_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  es/multiplier/y_reg_1_/Q (DFQD1BWP40P140)   0.0178    0.0802     0.0802 f
+  es/multiplier/U152/A2 (OR2D1BWP40P140)      0.0178    0.0000     0.0802 f
+  es/multiplier/U152/Z (OR2D1BWP40P140)       0.0193    0.0333     0.1135 f
+  es/multiplier/U94/I (INVD1BWP40P140)        0.0193    0.0000     0.1135 f
+  es/multiplier/U94/ZN (INVD1BWP40P140)       0.0127    0.0134     0.1269 r
+  es/multiplier/U51/I1 (MUX2ND2BWP40P140)     0.0127    0.0000     0.1269 r
+  es/multiplier/U51/ZN (MUX2ND2BWP40P140)     0.2944    0.2016     0.3284 f
+  es/multiplier/U493/B1 (OAI22D1BWP40P140)    0.2944    0.0000     0.3284 f
+  es/multiplier/U493/ZN (OAI22D1BWP40P140)    0.0850    0.0720     0.4004 r
+  es/multiplier/U494/A2 (XOR2UD1BWP40P140)    0.0850    0.0000     0.4004 r
+  es/multiplier/U494/Z (XOR2UD1BWP40P140)     0.0987    0.0511     0.4516 f
+  es/multiplier/U53/B (FA1D1BWP40P140)        0.0987    0.0000     0.4516 f
+  es/multiplier/U53/CO (FA1D1BWP40P140)       0.0227    0.0782     0.5298 f
+  es/multiplier/U705/CI (FA1D1BWP40P140)      0.0227    0.0000     0.5298 f
+  es/multiplier/U705/CO (FA1D1BWP40P140)      0.0272    0.0536     0.5833 f
+  es/multiplier/U23/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     0.5833 f
+  es/multiplier/U23/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     0.6195 f
+  es/multiplier/U702/CI (FA1D1BWP40P140)      0.0224    0.0000     0.6195 f
+  es/multiplier/U702/CO (FA1D1BWP40P140)      0.0227    0.0496     0.6691 f
+  es/multiplier/U54/CI (FA1D1BWP40P140)       0.0227    0.0000     0.6691 f
+  es/multiplier/U54/CO (FA1D1BWP40P140)       0.0227    0.0496     0.7187 f
+  es/multiplier/U720/CI (FA1D1BWP40P140)      0.0227    0.0000     0.7187 f
+  es/multiplier/U720/CO (FA1D1BWP40P140)      0.0227    0.0496     0.7683 f
+  es/multiplier/U106/CI (FA1D1BWP40P140)      0.0227    0.0000     0.7683 f
+  es/multiplier/U106/CO (FA1D1BWP40P140)      0.0227    0.0496     0.8180 f
+  es/multiplier/U55/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8180 f
+  es/multiplier/U55/CO (FA1D1BWP40P140)       0.0272    0.0536     0.8716 f
+  es/multiplier/U20/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     0.8716 f
+  es/multiplier/U20/CO (FA1OPTCD1BWP40P140)   0.0272    0.0399     0.9114 f
+  es/multiplier/U19/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     0.9114 f
+  es/multiplier/U19/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     0.9476 f
+  es/multiplier/U56/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9476 f
+  es/multiplier/U56/CO (FA1D1BWP40P140)       0.0227    0.0496     0.9972 f
+  es/multiplier/U740/CI (FA1D1BWP40P140)      0.0227    0.0000     0.9972 f
+  es/multiplier/U740/CO (FA1D1BWP40P140)      0.0272    0.0536     1.0507 f
+  es/multiplier/U18/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.0507 f
+  es/multiplier/U18/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.0869 f
+  es/multiplier/U737/CI (FA1D1BWP40P140)      0.0224    0.0000     1.0869 f
+  es/multiplier/U737/CO (FA1D1BWP40P140)      0.0227    0.0496     1.1365 f
+  es/multiplier/U57/CI (FA1D1BWP40P140)       0.0227    0.0000     1.1365 f
+  es/multiplier/U57/CO (FA1D1BWP40P140)       0.0227    0.0496     1.1861 f
+  es/multiplier/U729/CI (FA1D1BWP40P140)      0.0227    0.0000     1.1861 f
+  es/multiplier/U729/CO (FA1D1BWP40P140)      0.0272    0.0536     1.2397 f
+  es/multiplier/U17/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.2397 f
+  es/multiplier/U17/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.2759 f
+  es/multiplier/U58/CI (FA1D1BWP40P140)       0.0224    0.0000     1.2759 f
+  es/multiplier/U58/CO (FA1D1BWP40P140)       0.0272    0.0535     1.3294 f
+  es/multiplier/U16/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.3294 f
+  es/multiplier/U16/CO (FA1OPTCD1BWP40P140)   0.0272    0.0399     1.3692 f
+  es/multiplier/U15/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.3692 f
+  es/multiplier/U15/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.4054 f
+  es/multiplier/U59/CI (FA1D1BWP40P140)       0.0224    0.0000     1.4054 f
+  es/multiplier/U59/CO (FA1D1BWP40P140)       0.0227    0.0496     1.4550 f
+  es/multiplier/U750/CI (FA1D1BWP40P140)      0.0227    0.0000     1.4550 f
+  es/multiplier/U750/CO (FA1D1BWP40P140)      0.0272    0.0536     1.5085 f
+  es/multiplier/U14/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.5085 f
+  es/multiplier/U14/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.5447 f
+  es/multiplier/U755/CI (FA1D1BWP40P140)      0.0224    0.0000     1.5447 f
+  es/multiplier/U755/CO (FA1D1BWP40P140)      0.0227    0.0496     1.5943 f
+  es/multiplier/U60/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5943 f
+  es/multiplier/U60/CO (FA1D1BWP40P140)       0.0227    0.0496     1.6439 f
+  es/multiplier/U760/CI (FA1D1BWP40P140)      0.0227    0.0000     1.6439 f
+  es/multiplier/U760/CO (FA1D1BWP40P140)      0.0272    0.0536     1.6975 f
+  es/multiplier/U13/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.6975 f
+  es/multiplier/U13/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.7337 f
+  es/multiplier/U61/CI (FA1D1BWP40P140)       0.0224    0.0000     1.7337 f
+  es/multiplier/U61/CO (FA1D1BWP40P140)       0.0272    0.0535     1.7872 f
+  es/multiplier/U12/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.7872 f
+  es/multiplier/U12/CO (FA1OPTCD1BWP40P140)   0.0272    0.0399     1.8270 f
+  es/multiplier/U11/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.8270 f
+  es/multiplier/U11/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.8632 f
+  es/multiplier/U63/CI (FA1D1BWP40P140)       0.0224    0.0000     1.8632 f
+  es/multiplier/U63/CO (FA1D1BWP40P140)       0.0227    0.0496     1.9128 f
+  es/multiplier/U772/CI (FA1D1BWP40P140)      0.0227    0.0000     1.9128 f
+  es/multiplier/U772/CO (FA1D1BWP40P140)      0.0272    0.0536     1.9663 f
+  es/multiplier/U10/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.9663 f
+  es/multiplier/U10/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     2.0025 f
+  es/multiplier/U777/CI (FA1D1BWP40P140)      0.0224    0.0000     2.0025 f
+  es/multiplier/U777/CO (FA1D1BWP40P140)      0.0227    0.0496     2.0521 f
+  es/multiplier/U64/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0521 f
+  es/multiplier/U64/CO (FA1D1BWP40P140)       0.0227    0.0496     2.1017 f
+  es/multiplier/U782/CI (FA1D1BWP40P140)      0.0227    0.0000     2.1017 f
+  es/multiplier/U782/CO (FA1D1BWP40P140)      0.0227    0.0496     2.1514 f
+  es/multiplier/U110/CI (FA1D1BWP40P140)      0.0227    0.0000     2.1514 f
+  es/multiplier/U110/CO (FA1D1BWP40P140)      0.0227    0.0496     2.2010 f
+  es/multiplier/U65/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2010 f
+  es/multiplier/U65/CO (FA1D1BWP40P140)       0.0272    0.0536     2.2546 f
+  es/multiplier/U9/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.2546 f
+  es/multiplier/U9/CO (FA1OPTCD1BWP40P140)    0.0272    0.0399     2.2944 f
+  es/multiplier/U8/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.2944 f
+  es/multiplier/U8/CO (FA1OPTCD1BWP40P140)    0.0224    0.0362     2.3306 f
+  es/multiplier/U66/CI (FA1D1BWP40P140)       0.0224    0.0000     2.3306 f
+  es/multiplier/U66/CO (FA1D1BWP40P140)       0.0227    0.0496     2.3802 f
+  es/multiplier/U795/CI (FA1D1BWP40P140)      0.0227    0.0000     2.3802 f
+  es/multiplier/U795/CO (FA1D1BWP40P140)      0.0272    0.0536     2.4338 f
+  es/multiplier/U7/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.4338 f
+  es/multiplier/U7/CO (FA1OPTCD1BWP40P140)    0.0224    0.0362     2.4699 f
+  es/multiplier/U799/CI (FA1D1BWP40P140)      0.0224    0.0000     2.4699 f
+  es/multiplier/U799/CO (FA1D1BWP40P140)      0.0227    0.0496     2.5195 f
+  es/multiplier/U67/CI (FA1D1BWP40P140)       0.0227    0.0000     2.5195 f
+  es/multiplier/U67/CO (FA1D1BWP40P140)       0.0227    0.0496     2.5691 f
+  es/multiplier/U804/CI (FA1D1BWP40P140)      0.0227    0.0000     2.5691 f
+  es/multiplier/U804/CO (FA1D1BWP40P140)      0.0272    0.0536     2.6227 f
+  es/multiplier/U6/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.6227 f
+  es/multiplier/U6/CO (FA1OPTCD1BWP40P140)    0.0224    0.0362     2.6589 f
+  es/multiplier/U68/CI (FA1D1BWP40P140)       0.0224    0.0000     2.6589 f
+  es/multiplier/U68/CO (FA1D1BWP40P140)       0.0272    0.0535     2.7124 f
+  es/multiplier/U811/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     2.7124 f
+  es/multiplier/U811/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     2.7450 f
+  es/multiplier/U814/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     2.7450 f
+  es/multiplier/U814/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0285     2.7734 f
+  es/multiplier/U69/CI (FA1D1BWP40P140)       0.0177    0.0000     2.7734 f
+  es/multiplier/U69/CO (FA1D1BWP40P140)       0.0227    0.0478     2.8213 f
+  es/multiplier/U818/CI (FA1D1BWP40P140)      0.0227    0.0000     2.8213 f
+  es/multiplier/U818/CO (FA1D1BWP40P140)      0.0272    0.0536     2.8749 f
+  es/multiplier/U821/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     2.8749 f
+  es/multiplier/U821/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     2.9055 f
+  es/multiplier/U824/CI (FA1D1BWP40P140)      0.0177    0.0000     2.9055 f
+  es/multiplier/U824/CO (FA1D1BWP40P140)      0.0227    0.0478     2.9533 f
+  es/multiplier/U70/CI (FA1D1BWP40P140)       0.0227    0.0000     2.9533 f
+  es/multiplier/U70/CO (FA1D1BWP40P140)       0.0227    0.0496     3.0030 f
+  es/multiplier/U829/CI (FA1D1BWP40P140)      0.0227    0.0000     3.0030 f
+  es/multiplier/U829/CO (FA1D1BWP40P140)      0.0272    0.0536     3.0566 f
+  es/multiplier/U832/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.0566 f
+  es/multiplier/U832/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.0872 f
+  es/multiplier/U71/CI (FA1D1BWP40P140)       0.0177    0.0000     3.0872 f
+  es/multiplier/U71/CO (FA1D1BWP40P140)       0.0272    0.0518     3.1390 f
+  es/multiplier/U836/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.1390 f
+  es/multiplier/U836/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     3.1715 f
+  es/multiplier/U839/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     3.1715 f
+  es/multiplier/U839/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0285     3.2000 f
+  es/multiplier/U73/CI (FA1D1BWP40P140)       0.0177    0.0000     3.2000 f
+  es/multiplier/U73/CO (FA1D1BWP40P140)       0.0227    0.0478     3.2479 f
+  es/multiplier/U844/CI (FA1D1BWP40P140)      0.0227    0.0000     3.2479 f
+  es/multiplier/U844/CO (FA1D1BWP40P140)      0.0272    0.0536     3.3015 f
+  es/multiplier/U847/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.3015 f
+  es/multiplier/U847/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.3321 f
+  es/multiplier/U850/CI (FA1D1BWP40P140)      0.0177    0.0000     3.3321 f
+  es/multiplier/U850/CO (FA1D1BWP40P140)      0.0227    0.0478     3.3799 f
+  es/multiplier/U74/CI (FA1D1BWP40P140)       0.0227    0.0000     3.3799 f
+  es/multiplier/U74/CO (FA1D1BWP40P140)       0.0227    0.0496     3.4296 f
+  es/multiplier/U855/CI (FA1D1BWP40P140)      0.0227    0.0000     3.4296 f
+  es/multiplier/U855/CO (FA1D1BWP40P140)      0.0227    0.0496     3.4792 f
+  es/multiplier/U114/CI (FA1D1BWP40P140)      0.0227    0.0000     3.4792 f
+  es/multiplier/U114/CO (FA1D1BWP40P140)      0.0227    0.0496     3.5288 f
+  es/multiplier/U75/CI (FA1D1BWP40P140)       0.0227    0.0000     3.5288 f
+  es/multiplier/U75/CO (FA1D1BWP40P140)       0.0272    0.0536     3.5824 f
+  es/multiplier/U862/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.5824 f
+  es/multiplier/U862/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     3.6150 f
+  es/multiplier/U865/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     3.6150 f
+  es/multiplier/U865/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0285     3.6435 f
+  es/multiplier/U76/CI (FA1D1BWP40P140)       0.0177    0.0000     3.6435 f
+  es/multiplier/U76/CO (FA1D1BWP40P140)       0.0227    0.0478     3.6913 f
+  es/multiplier/U870/CI (FA1D1BWP40P140)      0.0227    0.0000     3.6913 f
+  es/multiplier/U870/CO (FA1D1BWP40P140)      0.0272    0.0536     3.7449 f
+  es/multiplier/U873/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.7449 f
+  es/multiplier/U873/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.7755 f
+  es/multiplier/U875/CI (FA1D1BWP40P140)      0.0177    0.0000     3.7755 f
+  es/multiplier/U875/CO (FA1D1BWP40P140)      0.0227    0.0478     3.8234 f
+  es/multiplier/U77/CI (FA1D1BWP40P140)       0.0227    0.0000     3.8234 f
+  es/multiplier/U77/CO (FA1D1BWP40P140)       0.0227    0.0496     3.8730 f
+  es/multiplier/U880/CI (FA1D1BWP40P140)      0.0227    0.0000     3.8730 f
+  es/multiplier/U880/CO (FA1D1BWP40P140)      0.0272    0.0536     3.9266 f
+  es/multiplier/U883/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.9266 f
+  es/multiplier/U883/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.9572 f
+  es/multiplier/U78/CI (FA1D1BWP40P140)       0.0177    0.0000     3.9572 f
+  es/multiplier/U78/CO (FA1D1BWP40P140)       0.0272    0.0518     4.0090 f
+  es/multiplier/U888/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     4.0090 f
+  es/multiplier/U888/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     4.0416 f
+  es/multiplier/U891/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     4.0416 f
+  es/multiplier/U891/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0285     4.0701 f
+  es/multiplier/U79/CI (FA1D1BWP40P140)       0.0181    0.0000     4.0701 f
+  es/multiplier/U79/CO (FA1D1BWP40P140)       0.0230    0.0480     4.1180 f
+  es/multiplier/U895/CI (FA1D1BWP40P140)      0.0230    0.0000     4.1180 f
+  es/multiplier/U895/CO (FA1D1BWP40P140)      0.0276    0.0537     4.1718 f
+  es/multiplier/U898/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.1718 f
+  es/multiplier/U898/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.2025 f
+  es/multiplier/U901/CI (FA1D1BWP40P140)      0.0181    0.0000     4.2025 f
+  es/multiplier/U901/CO (FA1D1BWP40P140)      0.0230    0.0480     4.2504 f
+  es/multiplier/U80/CI (FA1D1BWP40P140)       0.0230    0.0000     4.2504 f
+  es/multiplier/U80/CO (FA1D1BWP40P140)       0.0230    0.0498     4.3002 f
+  es/multiplier/U906/CI (FA1D1BWP40P140)      0.0230    0.0000     4.3002 f
+  es/multiplier/U906/CO (FA1D1BWP40P140)      0.0276    0.0537     4.3539 f
+  es/multiplier/U909/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.3539 f
+  es/multiplier/U909/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.3847 f
+  es/multiplier/U81/CI (FA1D1BWP40P140)       0.0181    0.0000     4.3847 f
+  es/multiplier/U81/CO (FA1D1BWP40P140)       0.0275    0.0519     4.4365 f
+  es/multiplier/U913/CI (FA1OPTCD1BWP40P140)
+                                              0.0275    0.0000     4.4365 f
+  es/multiplier/U913/CO (FA1OPTCD1BWP40P140)
+                                              0.0276    0.0400     4.4765 f
+  es/multiplier/U916/CI (FA1OPTCD1BWP40P140)
+                                              0.0276    0.0000     4.4765 f
+  es/multiplier/U916/CO (FA1OPTCD1BWP40P140)
+                                              0.0228    0.0363     4.5128 f
+  es/multiplier/U83/CI (FA1D1BWP40P140)       0.0228    0.0000     4.5128 f
+  es/multiplier/U83/CO (FA1D1BWP40P140)       0.0230    0.0497     4.5625 f
+  es/multiplier/U921/CI (FA1D1BWP40P140)      0.0230    0.0000     4.5625 f
+  es/multiplier/U921/CO (FA1D1BWP40P140)      0.0276    0.0537     4.6162 f
+  es/multiplier/U924/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.6162 f
+  es/multiplier/U924/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.6469 f
+  es/multiplier/U927/CI (FA1D1BWP40P140)      0.0181    0.0000     4.6469 f
+  es/multiplier/U927/CO (FA1D1BWP40P140)      0.0230    0.0480     4.6949 f
+  es/multiplier/U84/CI (FA1D1BWP40P140)       0.0230    0.0000     4.6949 f
+  es/multiplier/U84/CO (FA1D1BWP40P140)       0.0230    0.0498     4.7447 f
+  es/multiplier/U932/CI (FA1D1BWP40P140)      0.0230    0.0000     4.7447 f
+  es/multiplier/U932/CO (FA1D1BWP40P140)      0.0230    0.0498     4.7944 f
+  es/multiplier/U118/CI (FA1D1BWP40P140)      0.0230    0.0000     4.7944 f
+  es/multiplier/U118/CO (FA1D1BWP40P140)      0.0230    0.0498     4.8442 f
+  es/multiplier/U937/CI (FA1D1BWP40P140)      0.0230    0.0000     4.8442 f
+  es/multiplier/U937/CO (FA1D1BWP40P140)      0.0276    0.0537     4.8979 f
+  es/multiplier/U940/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.8979 f
+  es/multiplier/U940/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.9287 f
+  es/multiplier/U943/CI (FA1D1BWP40P140)      0.0181    0.0000     4.9287 f
+  es/multiplier/U943/CO (FA1D1BWP40P140)      0.0230    0.0480     4.9766 f
+  es/multiplier/U85/CI (FA1D1BWP40P140)       0.0230    0.0000     4.9766 f
+  es/multiplier/U85/CO (FA1D1BWP40P140)       0.0230    0.0498     5.0264 f
+  es/multiplier/U948/CI (FA1D1BWP40P140)      0.0230    0.0000     5.0264 f
+  es/multiplier/U948/CO (FA1D1BWP40P140)      0.0230    0.0498     5.0762 f
+  es/multiplier/U951/CI (FA1D1BWP40P140)      0.0230    0.0000     5.0762 f
+  es/multiplier/U951/CO (FA1D1BWP40P140)      0.0230    0.0498     5.1259 f
+  es/multiplier/U953/CI (FA1D1BWP40P140)      0.0230    0.0000     5.1259 f
+  es/multiplier/U953/CO (FA1D1BWP40P140)      0.0230    0.0498     5.1757 f
+  es/multiplier/U956/CI (FA1D1BWP40P140)      0.0230    0.0000     5.1757 f
+  es/multiplier/U956/CO (FA1D1BWP40P140)      0.0230    0.0498     5.2255 f
+  es/multiplier/U959/CI (FA1D1BWP40P140)      0.0230    0.0000     5.2255 f
+  es/multiplier/U959/CO (FA1D1BWP40P140)      0.0230    0.0498     5.2753 f
+  es/multiplier/U962/CI (FA1D1BWP40P140)      0.0230    0.0000     5.2753 f
+  es/multiplier/U962/CO (FA1D1BWP40P140)      0.0230    0.0498     5.3250 f
+  es/multiplier/U965/CI (FA1D1BWP40P140)      0.0230    0.0000     5.3250 f
+  es/multiplier/U965/CO (FA1D1BWP40P140)      0.0230    0.0498     5.3748 f
+  es/multiplier/U86/CI (FA1D1BWP40P140)       0.0230    0.0000     5.3748 f
+  es/multiplier/U86/CO (FA1D1BWP40P140)       0.0230    0.0498     5.4246 f
+  es/multiplier/U970/CI (FA1D1BWP40P140)      0.0230    0.0000     5.4246 f
+  es/multiplier/U970/CO (FA1D1BWP40P140)      0.0230    0.0498     5.4743 f
+  es/multiplier/U973/CI (FA1D1BWP40P140)      0.0230    0.0000     5.4743 f
+  es/multiplier/U973/CO (FA1D1BWP40P140)      0.0230    0.0498     5.5241 f
+  es/multiplier/U975/CI (FA1D1BWP40P140)      0.0230    0.0000     5.5241 f
+  es/multiplier/U975/CO (FA1D1BWP40P140)      0.0230    0.0498     5.5739 f
+  es/multiplier/U978/CI (FA1D1BWP40P140)      0.0230    0.0000     5.5739 f
+  es/multiplier/U978/CO (FA1D1BWP40P140)      0.0276    0.0537     5.6276 f
+  es/multiplier/U981/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     5.6276 f
+  es/multiplier/U981/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     5.6583 f
+  es/multiplier/U984/CI (FA1D1BWP40P140)      0.0181    0.0000     5.6583 f
+  es/multiplier/U984/CO (FA1D1BWP40P140)      0.0230    0.0480     5.7063 f
+  es/multiplier/U87/CI (FA1D1BWP40P140)       0.0230    0.0000     5.7063 f
+  es/multiplier/U87/CO (FA1D1BWP40P140)       0.0230    0.0498     5.7561 f
+  es/multiplier/U989/CI (FA1D1BWP40P140)      0.0230    0.0000     5.7561 f
+  es/multiplier/U989/CO (FA1D1BWP40P140)      0.0230    0.0498     5.8058 f
+  es/multiplier/U992/CI (FA1D1BWP40P140)      0.0230    0.0000     5.8058 f
+  es/multiplier/U992/CO (FA1D1BWP40P140)      0.0230    0.0498     5.8556 f
+  es/multiplier/U88/CI (FA1D1BWP40P140)       0.0230    0.0000     5.8556 f
+  es/multiplier/U88/CO (FA1D1BWP40P140)       0.0230    0.0498     5.9054 f
+  es/multiplier/U996/CI (FA1D1BWP40P140)      0.0230    0.0000     5.9054 f
+  es/multiplier/U996/CO (FA1D1BWP40P140)      0.0276    0.0537     5.9591 f
+  es/multiplier/U999/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     5.9591 f
+  es/multiplier/U999/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     5.9898 f
+  es/multiplier/U1002/CI (FA1D1BWP40P140)     0.0181    0.0000     5.9898 f
+  es/multiplier/U1002/CO (FA1D1BWP40P140)     0.0230    0.0480     6.0378 f
+  es/multiplier/U89/CI (FA1D1BWP40P140)       0.0230    0.0000     6.0378 f
+  es/multiplier/U89/CO (FA1D1BWP40P140)       0.0230    0.0498     6.0876 f
+  es/multiplier/U1029/CI (FA1D1BWP40P140)     0.0230    0.0000     6.0876 f
+  es/multiplier/U1029/CO (FA1D1BWP40P140)     0.0230    0.0498     6.1373 f
+  es/multiplier/U1027/CI (FA1D1BWP40P140)     0.0230    0.0000     6.1373 f
+  es/multiplier/U1027/CO (FA1D1BWP40P140)     0.0230    0.0498     6.1871 f
+  es/multiplier/U1024/CI (FA1D1BWP40P140)     0.0230    0.0000     6.1871 f
+  es/multiplier/U1024/S (FA1D1BWP40P140)      0.0249    0.0852     6.2723 r
+  es/multiplier/U92/B2 (MOAI22D1BWP40P140)    0.0249    0.0000     6.2723 r
+  es/multiplier/U92/ZN (MOAI22D1BWP40P140)    0.0880    0.0345     6.3068 r
+  es/multiplier/res_reg_126_/D (DFQD1BWP40P140)
+                                              0.0880    0.0000     6.3068 r
+  data arrival time                                                6.3068
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  es/multiplier/res_reg_126_/CP (DFQD1BWP40P140)        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.3068
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0028
+
+
+  Startpoint: es/multiplier/y_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: es/multiplier/res_reg_127_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  es/multiplier/y_reg_1_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  es/multiplier/y_reg_1_/Q (DFQD1BWP40P140)   0.0178    0.0802     0.0802 f
+  es/multiplier/U152/A2 (OR2D1BWP40P140)      0.0178    0.0000     0.0802 f
+  es/multiplier/U152/Z (OR2D1BWP40P140)       0.0193    0.0333     0.1135 f
+  es/multiplier/U94/I (INVD1BWP40P140)        0.0193    0.0000     0.1135 f
+  es/multiplier/U94/ZN (INVD1BWP40P140)       0.0127    0.0134     0.1269 r
+  es/multiplier/U51/I1 (MUX2ND2BWP40P140)     0.0127    0.0000     0.1269 r
+  es/multiplier/U51/ZN (MUX2ND2BWP40P140)     0.2944    0.2016     0.3284 f
+  es/multiplier/U493/B1 (OAI22D1BWP40P140)    0.2944    0.0000     0.3284 f
+  es/multiplier/U493/ZN (OAI22D1BWP40P140)    0.0850    0.0720     0.4004 r
+  es/multiplier/U494/A2 (XOR2UD1BWP40P140)    0.0850    0.0000     0.4004 r
+  es/multiplier/U494/Z (XOR2UD1BWP40P140)     0.0987    0.0511     0.4516 f
+  es/multiplier/U53/B (FA1D1BWP40P140)        0.0987    0.0000     0.4516 f
+  es/multiplier/U53/CO (FA1D1BWP40P140)       0.0227    0.0782     0.5298 f
+  es/multiplier/U705/CI (FA1D1BWP40P140)      0.0227    0.0000     0.5298 f
+  es/multiplier/U705/CO (FA1D1BWP40P140)      0.0272    0.0536     0.5833 f
+  es/multiplier/U23/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     0.5833 f
+  es/multiplier/U23/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     0.6195 f
+  es/multiplier/U702/CI (FA1D1BWP40P140)      0.0224    0.0000     0.6195 f
+  es/multiplier/U702/CO (FA1D1BWP40P140)      0.0227    0.0496     0.6691 f
+  es/multiplier/U54/CI (FA1D1BWP40P140)       0.0227    0.0000     0.6691 f
+  es/multiplier/U54/CO (FA1D1BWP40P140)       0.0227    0.0496     0.7187 f
+  es/multiplier/U720/CI (FA1D1BWP40P140)      0.0227    0.0000     0.7187 f
+  es/multiplier/U720/CO (FA1D1BWP40P140)      0.0227    0.0496     0.7683 f
+  es/multiplier/U106/CI (FA1D1BWP40P140)      0.0227    0.0000     0.7683 f
+  es/multiplier/U106/CO (FA1D1BWP40P140)      0.0227    0.0496     0.8180 f
+  es/multiplier/U55/CI (FA1D1BWP40P140)       0.0227    0.0000     0.8180 f
+  es/multiplier/U55/CO (FA1D1BWP40P140)       0.0272    0.0536     0.8716 f
+  es/multiplier/U20/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     0.8716 f
+  es/multiplier/U20/CO (FA1OPTCD1BWP40P140)   0.0272    0.0399     0.9114 f
+  es/multiplier/U19/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     0.9114 f
+  es/multiplier/U19/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     0.9476 f
+  es/multiplier/U56/CI (FA1D1BWP40P140)       0.0224    0.0000     0.9476 f
+  es/multiplier/U56/CO (FA1D1BWP40P140)       0.0227    0.0496     0.9972 f
+  es/multiplier/U740/CI (FA1D1BWP40P140)      0.0227    0.0000     0.9972 f
+  es/multiplier/U740/CO (FA1D1BWP40P140)      0.0272    0.0536     1.0507 f
+  es/multiplier/U18/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.0507 f
+  es/multiplier/U18/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.0869 f
+  es/multiplier/U737/CI (FA1D1BWP40P140)      0.0224    0.0000     1.0869 f
+  es/multiplier/U737/CO (FA1D1BWP40P140)      0.0227    0.0496     1.1365 f
+  es/multiplier/U57/CI (FA1D1BWP40P140)       0.0227    0.0000     1.1365 f
+  es/multiplier/U57/CO (FA1D1BWP40P140)       0.0227    0.0496     1.1861 f
+  es/multiplier/U729/CI (FA1D1BWP40P140)      0.0227    0.0000     1.1861 f
+  es/multiplier/U729/CO (FA1D1BWP40P140)      0.0272    0.0536     1.2397 f
+  es/multiplier/U17/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.2397 f
+  es/multiplier/U17/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.2759 f
+  es/multiplier/U58/CI (FA1D1BWP40P140)       0.0224    0.0000     1.2759 f
+  es/multiplier/U58/CO (FA1D1BWP40P140)       0.0272    0.0535     1.3294 f
+  es/multiplier/U16/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.3294 f
+  es/multiplier/U16/CO (FA1OPTCD1BWP40P140)   0.0272    0.0399     1.3692 f
+  es/multiplier/U15/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.3692 f
+  es/multiplier/U15/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.4054 f
+  es/multiplier/U59/CI (FA1D1BWP40P140)       0.0224    0.0000     1.4054 f
+  es/multiplier/U59/CO (FA1D1BWP40P140)       0.0227    0.0496     1.4550 f
+  es/multiplier/U750/CI (FA1D1BWP40P140)      0.0227    0.0000     1.4550 f
+  es/multiplier/U750/CO (FA1D1BWP40P140)      0.0272    0.0536     1.5085 f
+  es/multiplier/U14/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.5085 f
+  es/multiplier/U14/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.5447 f
+  es/multiplier/U755/CI (FA1D1BWP40P140)      0.0224    0.0000     1.5447 f
+  es/multiplier/U755/CO (FA1D1BWP40P140)      0.0227    0.0496     1.5943 f
+  es/multiplier/U60/CI (FA1D1BWP40P140)       0.0227    0.0000     1.5943 f
+  es/multiplier/U60/CO (FA1D1BWP40P140)       0.0227    0.0496     1.6439 f
+  es/multiplier/U760/CI (FA1D1BWP40P140)      0.0227    0.0000     1.6439 f
+  es/multiplier/U760/CO (FA1D1BWP40P140)      0.0272    0.0536     1.6975 f
+  es/multiplier/U13/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.6975 f
+  es/multiplier/U13/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.7337 f
+  es/multiplier/U61/CI (FA1D1BWP40P140)       0.0224    0.0000     1.7337 f
+  es/multiplier/U61/CO (FA1D1BWP40P140)       0.0272    0.0535     1.7872 f
+  es/multiplier/U12/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.7872 f
+  es/multiplier/U12/CO (FA1OPTCD1BWP40P140)   0.0272    0.0399     1.8270 f
+  es/multiplier/U11/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.8270 f
+  es/multiplier/U11/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     1.8632 f
+  es/multiplier/U63/CI (FA1D1BWP40P140)       0.0224    0.0000     1.8632 f
+  es/multiplier/U63/CO (FA1D1BWP40P140)       0.0227    0.0496     1.9128 f
+  es/multiplier/U772/CI (FA1D1BWP40P140)      0.0227    0.0000     1.9128 f
+  es/multiplier/U772/CO (FA1D1BWP40P140)      0.0272    0.0536     1.9663 f
+  es/multiplier/U10/CI (FA1OPTCD1BWP40P140)   0.0272    0.0000     1.9663 f
+  es/multiplier/U10/CO (FA1OPTCD1BWP40P140)   0.0224    0.0362     2.0025 f
+  es/multiplier/U777/CI (FA1D1BWP40P140)      0.0224    0.0000     2.0025 f
+  es/multiplier/U777/CO (FA1D1BWP40P140)      0.0227    0.0496     2.0521 f
+  es/multiplier/U64/CI (FA1D1BWP40P140)       0.0227    0.0000     2.0521 f
+  es/multiplier/U64/CO (FA1D1BWP40P140)       0.0227    0.0496     2.1017 f
+  es/multiplier/U782/CI (FA1D1BWP40P140)      0.0227    0.0000     2.1017 f
+  es/multiplier/U782/CO (FA1D1BWP40P140)      0.0227    0.0496     2.1514 f
+  es/multiplier/U110/CI (FA1D1BWP40P140)      0.0227    0.0000     2.1514 f
+  es/multiplier/U110/CO (FA1D1BWP40P140)      0.0227    0.0496     2.2010 f
+  es/multiplier/U65/CI (FA1D1BWP40P140)       0.0227    0.0000     2.2010 f
+  es/multiplier/U65/CO (FA1D1BWP40P140)       0.0272    0.0536     2.2546 f
+  es/multiplier/U9/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.2546 f
+  es/multiplier/U9/CO (FA1OPTCD1BWP40P140)    0.0272    0.0399     2.2944 f
+  es/multiplier/U8/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.2944 f
+  es/multiplier/U8/CO (FA1OPTCD1BWP40P140)    0.0224    0.0362     2.3306 f
+  es/multiplier/U66/CI (FA1D1BWP40P140)       0.0224    0.0000     2.3306 f
+  es/multiplier/U66/CO (FA1D1BWP40P140)       0.0227    0.0496     2.3802 f
+  es/multiplier/U795/CI (FA1D1BWP40P140)      0.0227    0.0000     2.3802 f
+  es/multiplier/U795/CO (FA1D1BWP40P140)      0.0272    0.0536     2.4338 f
+  es/multiplier/U7/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.4338 f
+  es/multiplier/U7/CO (FA1OPTCD1BWP40P140)    0.0224    0.0362     2.4699 f
+  es/multiplier/U799/CI (FA1D1BWP40P140)      0.0224    0.0000     2.4699 f
+  es/multiplier/U799/CO (FA1D1BWP40P140)      0.0227    0.0496     2.5195 f
+  es/multiplier/U67/CI (FA1D1BWP40P140)       0.0227    0.0000     2.5195 f
+  es/multiplier/U67/CO (FA1D1BWP40P140)       0.0227    0.0496     2.5691 f
+  es/multiplier/U804/CI (FA1D1BWP40P140)      0.0227    0.0000     2.5691 f
+  es/multiplier/U804/CO (FA1D1BWP40P140)      0.0272    0.0536     2.6227 f
+  es/multiplier/U6/CI (FA1OPTCD1BWP40P140)    0.0272    0.0000     2.6227 f
+  es/multiplier/U6/CO (FA1OPTCD1BWP40P140)    0.0224    0.0362     2.6589 f
+  es/multiplier/U68/CI (FA1D1BWP40P140)       0.0224    0.0000     2.6589 f
+  es/multiplier/U68/CO (FA1D1BWP40P140)       0.0272    0.0535     2.7124 f
+  es/multiplier/U811/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     2.7124 f
+  es/multiplier/U811/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     2.7450 f
+  es/multiplier/U814/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     2.7450 f
+  es/multiplier/U814/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0285     2.7734 f
+  es/multiplier/U69/CI (FA1D1BWP40P140)       0.0177    0.0000     2.7734 f
+  es/multiplier/U69/CO (FA1D1BWP40P140)       0.0227    0.0478     2.8213 f
+  es/multiplier/U818/CI (FA1D1BWP40P140)      0.0227    0.0000     2.8213 f
+  es/multiplier/U818/CO (FA1D1BWP40P140)      0.0272    0.0536     2.8749 f
+  es/multiplier/U821/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     2.8749 f
+  es/multiplier/U821/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     2.9055 f
+  es/multiplier/U824/CI (FA1D1BWP40P140)      0.0177    0.0000     2.9055 f
+  es/multiplier/U824/CO (FA1D1BWP40P140)      0.0227    0.0478     2.9533 f
+  es/multiplier/U70/CI (FA1D1BWP40P140)       0.0227    0.0000     2.9533 f
+  es/multiplier/U70/CO (FA1D1BWP40P140)       0.0227    0.0496     3.0030 f
+  es/multiplier/U829/CI (FA1D1BWP40P140)      0.0227    0.0000     3.0030 f
+  es/multiplier/U829/CO (FA1D1BWP40P140)      0.0272    0.0536     3.0566 f
+  es/multiplier/U832/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.0566 f
+  es/multiplier/U832/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.0872 f
+  es/multiplier/U71/CI (FA1D1BWP40P140)       0.0177    0.0000     3.0872 f
+  es/multiplier/U71/CO (FA1D1BWP40P140)       0.0272    0.0518     3.1390 f
+  es/multiplier/U836/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.1390 f
+  es/multiplier/U836/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     3.1715 f
+  es/multiplier/U839/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     3.1715 f
+  es/multiplier/U839/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0285     3.2000 f
+  es/multiplier/U73/CI (FA1D1BWP40P140)       0.0177    0.0000     3.2000 f
+  es/multiplier/U73/CO (FA1D1BWP40P140)       0.0227    0.0478     3.2479 f
+  es/multiplier/U844/CI (FA1D1BWP40P140)      0.0227    0.0000     3.2479 f
+  es/multiplier/U844/CO (FA1D1BWP40P140)      0.0272    0.0536     3.3015 f
+  es/multiplier/U847/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.3015 f
+  es/multiplier/U847/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.3321 f
+  es/multiplier/U850/CI (FA1D1BWP40P140)      0.0177    0.0000     3.3321 f
+  es/multiplier/U850/CO (FA1D1BWP40P140)      0.0227    0.0478     3.3799 f
+  es/multiplier/U74/CI (FA1D1BWP40P140)       0.0227    0.0000     3.3799 f
+  es/multiplier/U74/CO (FA1D1BWP40P140)       0.0227    0.0496     3.4296 f
+  es/multiplier/U855/CI (FA1D1BWP40P140)      0.0227    0.0000     3.4296 f
+  es/multiplier/U855/CO (FA1D1BWP40P140)      0.0227    0.0496     3.4792 f
+  es/multiplier/U114/CI (FA1D1BWP40P140)      0.0227    0.0000     3.4792 f
+  es/multiplier/U114/CO (FA1D1BWP40P140)      0.0227    0.0496     3.5288 f
+  es/multiplier/U75/CI (FA1D1BWP40P140)       0.0227    0.0000     3.5288 f
+  es/multiplier/U75/CO (FA1D1BWP40P140)       0.0272    0.0536     3.5824 f
+  es/multiplier/U862/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.5824 f
+  es/multiplier/U862/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     3.6150 f
+  es/multiplier/U865/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     3.6150 f
+  es/multiplier/U865/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0285     3.6435 f
+  es/multiplier/U76/CI (FA1D1BWP40P140)       0.0177    0.0000     3.6435 f
+  es/multiplier/U76/CO (FA1D1BWP40P140)       0.0227    0.0478     3.6913 f
+  es/multiplier/U870/CI (FA1D1BWP40P140)      0.0227    0.0000     3.6913 f
+  es/multiplier/U870/CO (FA1D1BWP40P140)      0.0272    0.0536     3.7449 f
+  es/multiplier/U873/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.7449 f
+  es/multiplier/U873/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.7755 f
+  es/multiplier/U875/CI (FA1D1BWP40P140)      0.0177    0.0000     3.7755 f
+  es/multiplier/U875/CO (FA1D1BWP40P140)      0.0227    0.0478     3.8234 f
+  es/multiplier/U77/CI (FA1D1BWP40P140)       0.0227    0.0000     3.8234 f
+  es/multiplier/U77/CO (FA1D1BWP40P140)       0.0227    0.0496     3.8730 f
+  es/multiplier/U880/CI (FA1D1BWP40P140)      0.0227    0.0000     3.8730 f
+  es/multiplier/U880/CO (FA1D1BWP40P140)      0.0272    0.0536     3.9266 f
+  es/multiplier/U883/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     3.9266 f
+  es/multiplier/U883/CO (FA1OPTCD2BWP40P140)
+                                              0.0177    0.0306     3.9572 f
+  es/multiplier/U78/CI (FA1D1BWP40P140)       0.0177    0.0000     3.9572 f
+  es/multiplier/U78/CO (FA1D1BWP40P140)       0.0272    0.0518     4.0090 f
+  es/multiplier/U888/CI (FA1OPTCD2BWP40P140)
+                                              0.0272    0.0000     4.0090 f
+  es/multiplier/U888/CO (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0326     4.0416 f
+  es/multiplier/U891/CI (FA1OPTCD2BWP40P140)
+                                              0.0202    0.0000     4.0416 f
+  es/multiplier/U891/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0285     4.0701 f
+  es/multiplier/U79/CI (FA1D1BWP40P140)       0.0181    0.0000     4.0701 f
+  es/multiplier/U79/CO (FA1D1BWP40P140)       0.0230    0.0480     4.1180 f
+  es/multiplier/U895/CI (FA1D1BWP40P140)      0.0230    0.0000     4.1180 f
+  es/multiplier/U895/CO (FA1D1BWP40P140)      0.0276    0.0537     4.1718 f
+  es/multiplier/U898/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.1718 f
+  es/multiplier/U898/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.2025 f
+  es/multiplier/U901/CI (FA1D1BWP40P140)      0.0181    0.0000     4.2025 f
+  es/multiplier/U901/CO (FA1D1BWP40P140)      0.0230    0.0480     4.2504 f
+  es/multiplier/U80/CI (FA1D1BWP40P140)       0.0230    0.0000     4.2504 f
+  es/multiplier/U80/CO (FA1D1BWP40P140)       0.0230    0.0498     4.3002 f
+  es/multiplier/U906/CI (FA1D1BWP40P140)      0.0230    0.0000     4.3002 f
+  es/multiplier/U906/CO (FA1D1BWP40P140)      0.0276    0.0537     4.3539 f
+  es/multiplier/U909/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.3539 f
+  es/multiplier/U909/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.3847 f
+  es/multiplier/U81/CI (FA1D1BWP40P140)       0.0181    0.0000     4.3847 f
+  es/multiplier/U81/CO (FA1D1BWP40P140)       0.0275    0.0519     4.4365 f
+  es/multiplier/U913/CI (FA1OPTCD1BWP40P140)
+                                              0.0275    0.0000     4.4365 f
+  es/multiplier/U913/CO (FA1OPTCD1BWP40P140)
+                                              0.0276    0.0400     4.4765 f
+  es/multiplier/U916/CI (FA1OPTCD1BWP40P140)
+                                              0.0276    0.0000     4.4765 f
+  es/multiplier/U916/CO (FA1OPTCD1BWP40P140)
+                                              0.0228    0.0363     4.5128 f
+  es/multiplier/U83/CI (FA1D1BWP40P140)       0.0228    0.0000     4.5128 f
+  es/multiplier/U83/CO (FA1D1BWP40P140)       0.0230    0.0497     4.5625 f
+  es/multiplier/U921/CI (FA1D1BWP40P140)      0.0230    0.0000     4.5625 f
+  es/multiplier/U921/CO (FA1D1BWP40P140)      0.0276    0.0537     4.6162 f
+  es/multiplier/U924/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.6162 f
+  es/multiplier/U924/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.6469 f
+  es/multiplier/U927/CI (FA1D1BWP40P140)      0.0181    0.0000     4.6469 f
+  es/multiplier/U927/CO (FA1D1BWP40P140)      0.0230    0.0480     4.6949 f
+  es/multiplier/U84/CI (FA1D1BWP40P140)       0.0230    0.0000     4.6949 f
+  es/multiplier/U84/CO (FA1D1BWP40P140)       0.0230    0.0498     4.7447 f
+  es/multiplier/U932/CI (FA1D1BWP40P140)      0.0230    0.0000     4.7447 f
+  es/multiplier/U932/CO (FA1D1BWP40P140)      0.0230    0.0498     4.7944 f
+  es/multiplier/U118/CI (FA1D1BWP40P140)      0.0230    0.0000     4.7944 f
+  es/multiplier/U118/CO (FA1D1BWP40P140)      0.0230    0.0498     4.8442 f
+  es/multiplier/U937/CI (FA1D1BWP40P140)      0.0230    0.0000     4.8442 f
+  es/multiplier/U937/CO (FA1D1BWP40P140)      0.0276    0.0537     4.8979 f
+  es/multiplier/U940/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     4.8979 f
+  es/multiplier/U940/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     4.9287 f
+  es/multiplier/U943/CI (FA1D1BWP40P140)      0.0181    0.0000     4.9287 f
+  es/multiplier/U943/CO (FA1D1BWP40P140)      0.0230    0.0480     4.9766 f
+  es/multiplier/U85/CI (FA1D1BWP40P140)       0.0230    0.0000     4.9766 f
+  es/multiplier/U85/CO (FA1D1BWP40P140)       0.0230    0.0498     5.0264 f
+  es/multiplier/U948/CI (FA1D1BWP40P140)      0.0230    0.0000     5.0264 f
+  es/multiplier/U948/CO (FA1D1BWP40P140)      0.0230    0.0498     5.0762 f
+  es/multiplier/U951/CI (FA1D1BWP40P140)      0.0230    0.0000     5.0762 f
+  es/multiplier/U951/CO (FA1D1BWP40P140)      0.0230    0.0498     5.1259 f
+  es/multiplier/U953/CI (FA1D1BWP40P140)      0.0230    0.0000     5.1259 f
+  es/multiplier/U953/CO (FA1D1BWP40P140)      0.0230    0.0498     5.1757 f
+  es/multiplier/U956/CI (FA1D1BWP40P140)      0.0230    0.0000     5.1757 f
+  es/multiplier/U956/CO (FA1D1BWP40P140)      0.0230    0.0498     5.2255 f
+  es/multiplier/U959/CI (FA1D1BWP40P140)      0.0230    0.0000     5.2255 f
+  es/multiplier/U959/CO (FA1D1BWP40P140)      0.0230    0.0498     5.2753 f
+  es/multiplier/U962/CI (FA1D1BWP40P140)      0.0230    0.0000     5.2753 f
+  es/multiplier/U962/CO (FA1D1BWP40P140)      0.0230    0.0498     5.3250 f
+  es/multiplier/U965/CI (FA1D1BWP40P140)      0.0230    0.0000     5.3250 f
+  es/multiplier/U965/CO (FA1D1BWP40P140)      0.0230    0.0498     5.3748 f
+  es/multiplier/U86/CI (FA1D1BWP40P140)       0.0230    0.0000     5.3748 f
+  es/multiplier/U86/CO (FA1D1BWP40P140)       0.0230    0.0498     5.4246 f
+  es/multiplier/U970/CI (FA1D1BWP40P140)      0.0230    0.0000     5.4246 f
+  es/multiplier/U970/CO (FA1D1BWP40P140)      0.0230    0.0498     5.4743 f
+  es/multiplier/U973/CI (FA1D1BWP40P140)      0.0230    0.0000     5.4743 f
+  es/multiplier/U973/CO (FA1D1BWP40P140)      0.0230    0.0498     5.5241 f
+  es/multiplier/U975/CI (FA1D1BWP40P140)      0.0230    0.0000     5.5241 f
+  es/multiplier/U975/CO (FA1D1BWP40P140)      0.0230    0.0498     5.5739 f
+  es/multiplier/U978/CI (FA1D1BWP40P140)      0.0230    0.0000     5.5739 f
+  es/multiplier/U978/CO (FA1D1BWP40P140)      0.0276    0.0537     5.6276 f
+  es/multiplier/U981/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     5.6276 f
+  es/multiplier/U981/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     5.6583 f
+  es/multiplier/U984/CI (FA1D1BWP40P140)      0.0181    0.0000     5.6583 f
+  es/multiplier/U984/CO (FA1D1BWP40P140)      0.0230    0.0480     5.7063 f
+  es/multiplier/U87/CI (FA1D1BWP40P140)       0.0230    0.0000     5.7063 f
+  es/multiplier/U87/CO (FA1D1BWP40P140)       0.0230    0.0498     5.7561 f
+  es/multiplier/U989/CI (FA1D1BWP40P140)      0.0230    0.0000     5.7561 f
+  es/multiplier/U989/CO (FA1D1BWP40P140)      0.0230    0.0498     5.8058 f
+  es/multiplier/U992/CI (FA1D1BWP40P140)      0.0230    0.0000     5.8058 f
+  es/multiplier/U992/CO (FA1D1BWP40P140)      0.0230    0.0498     5.8556 f
+  es/multiplier/U88/CI (FA1D1BWP40P140)       0.0230    0.0000     5.8556 f
+  es/multiplier/U88/CO (FA1D1BWP40P140)       0.0230    0.0498     5.9054 f
+  es/multiplier/U996/CI (FA1D1BWP40P140)      0.0230    0.0000     5.9054 f
+  es/multiplier/U996/CO (FA1D1BWP40P140)      0.0276    0.0537     5.9591 f
+  es/multiplier/U999/CI (FA1OPTCD2BWP40P140)
+                                              0.0276    0.0000     5.9591 f
+  es/multiplier/U999/CO (FA1OPTCD2BWP40P140)
+                                              0.0181    0.0307     5.9898 f
+  es/multiplier/U1002/CI (FA1D1BWP40P140)     0.0181    0.0000     5.9898 f
+  es/multiplier/U1002/CO (FA1D1BWP40P140)     0.0230    0.0480     6.0378 f
+  es/multiplier/U89/CI (FA1D1BWP40P140)       0.0230    0.0000     6.0378 f
+  es/multiplier/U89/CO (FA1D1BWP40P140)       0.0230    0.0498     6.0876 f
+  es/multiplier/U1029/CI (FA1D1BWP40P140)     0.0230    0.0000     6.0876 f
+  es/multiplier/U1029/CO (FA1D1BWP40P140)     0.0230    0.0498     6.1373 f
+  es/multiplier/U1027/CI (FA1D1BWP40P140)     0.0230    0.0000     6.1373 f
+  es/multiplier/U1027/CO (FA1D1BWP40P140)     0.0230    0.0498     6.1871 f
+  es/multiplier/U1024/CI (FA1D1BWP40P140)     0.0230    0.0000     6.1871 f
+  es/multiplier/U1024/CO (FA1D1BWP40P140)     0.0191    0.0461     6.2332 f
+  es/multiplier/U1025/A2 (XOR2UD1BWP40P140)   0.0191    0.0000     6.2332 f
+  es/multiplier/U1025/Z (XOR2UD1BWP40P140)    0.0358    0.0284     6.2616 r
+  es/multiplier/U93/B2 (MOAI22D1BWP40P140)    0.0358    0.0000     6.2616 r
+  es/multiplier/U93/ZN (MOAI22D1BWP40P140)    0.0880    0.0368     6.2984 r
+  es/multiplier/res_reg_127_/D (DFQD1BWP40P140)
+                                              0.0880    0.0000     6.2984 r
+  data arrival time                                                6.2984
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  es/multiplier/res_reg_127_/CP (DFQD1BWP40P140)        0.0000     6.3500 r
+  library setup time                                   -0.0404     6.3096
+  data required time                                               6.3096
+  --------------------------------------------------------------------------
+  data required time                                               6.3096
+  data arrival time                                               -6.2984
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0112
+
+
+1
