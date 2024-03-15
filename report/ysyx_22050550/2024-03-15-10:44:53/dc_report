@@ -1,0 +1,1816 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22050550
+freq: 200
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+34434.4  34434.4  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+40869  40869  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.93  0.07 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  200.0     307.7      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22050550
+Version: R-2020.09-SP3a
+Date   : Fri Mar 15 12:46:47 2024
+****************************************
+
+Number of ports:                        29533
+Number of nets:                         66564
+Number of cells:                        42140
+Number of combinational cells:          33308
+Number of sequential cells:              7561
+Number of macros/black boxes:               0
+Number of buf/inv:                       6601
+Number of references:                      89
+
+Combinational area:              20115.648145
+Buf/Inv area:                     2085.930007
+Noncombinational area:           14318.765902
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 34434.414048
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------
+ysyx_22050550                     34434.4140    100.0    927.3600      0.0000  0.0000  ysyx_22050550
+ByPass                               36.2880      0.1     36.2880      0.0000  0.0000  ysyx_22050550_ByPass_0
+CLINT                               685.5660      2.0    327.0960      0.0000  0.0000  ysyx_22050550_CLINT_0
+CLINT/Mtime                         178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_54
+CLINT/Mtimecmp                      180.0540      0.5     59.0940    120.9600  0.0000  ysyx_22050550_Reg_64_0000000005f5e100_0
+DCache                             7535.0520     21.9   2703.3300    109.6200  0.0000  ysyx_22050550_CACHE_0
+DCache/dataok                         2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050550_Reg_1_0_445
+DCache/genblk1_0__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_192
+DCache/genblk1_10__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_254
+DCache/genblk1_11__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_238
+DCache/genblk1_12__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_173
+DCache/genblk1_13__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_141
+DCache/genblk1_14__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_221
+DCache/genblk1_15__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_205
+DCache/genblk1_1__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_255
+DCache/genblk1_2__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_239
+DCache/genblk1_3__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_174
+DCache/genblk1_4__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_142
+DCache/genblk1_5__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_208
+DCache/genblk1_6__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_222
+DCache/genblk1_7__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_206
+DCache/genblk1_8__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_190
+DCache/genblk1_9__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_158
+DCache/genblk2_0__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_189
+DCache/genblk2_10__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_252
+DCache/genblk2_11__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_236
+DCache/genblk2_12__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_171
+DCache/genblk2_13__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_139
+DCache/genblk2_14__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_219
+DCache/genblk2_15__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_203
+DCache/genblk2_1__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_157
+DCache/genblk2_2__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_253
+DCache/genblk2_3__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_237
+DCache/genblk2_4__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_172
+DCache/genblk2_5__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_140
+DCache/genblk2_6__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_220
+DCache/genblk2_7__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_204
+DCache/genblk2_8__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_188
+DCache/genblk2_9__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_156
+DCache/genblk3_0__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_187
+DCache/genblk3_10__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_250
+DCache/genblk3_11__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_234
+DCache/genblk3_12__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_169
+DCache/genblk3_13__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_137
+DCache/genblk3_14__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_217
+DCache/genblk3_15__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_201
+DCache/genblk3_1__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_155
+DCache/genblk3_2__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_251
+DCache/genblk3_3__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_235
+DCache/genblk3_4__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_170
+DCache/genblk3_5__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_138
+DCache/genblk3_6__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_218
+DCache/genblk3_7__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_202
+DCache/genblk3_8__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_186
+DCache/genblk3_9__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_154
+DCache/genblk4_0__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_185
+DCache/genblk4_10__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_152
+DCache/genblk4_11__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_248
+DCache/genblk4_12__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_232
+DCache/genblk4_13__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_167
+DCache/genblk4_14__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_135
+DCache/genblk4_15__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_199
+DCache/genblk4_1__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_153
+DCache/genblk4_2__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_215
+DCache/genblk4_3__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_249
+DCache/genblk4_4__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_233
+DCache/genblk4_5__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_168
+DCache/genblk4_6__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_136
+DCache/genblk4_7__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_216
+DCache/genblk4_8__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_200
+DCache/genblk4_9__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_184
+DCache/regfence                       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_355
+DCache/regfencecnt                   17.3880      0.1      6.0480     11.3400  0.0000  ysyx_22050550_Reg_6_00_3
+DCache/regvalid                       6.0480      0.0      2.2680      3.7800  0.0000  ysyx_22050550_Reg_2_0_2
+DCache/valid_dirty_0__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_367
+DCache/valid_dirty_0__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_413
+DCache/valid_dirty_10__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_415
+DCache/valid_dirty_10__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_447
+DCache/valid_dirty_11__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_352
+DCache/valid_dirty_11__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_383
+DCache/valid_dirty_12__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_288
+DCache/valid_dirty_12__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_320
+DCache/valid_dirty_13__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_478
+DCache/valid_dirty_13__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_255
+DCache/valid_dirty_14__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_493
+DCache/valid_dirty_14__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_446
+DCache/valid_dirty_15__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_429
+DCache/valid_dirty_15__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_461
+DCache/valid_dirty_16__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_366
+DCache/valid_dirty_16__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_397
+DCache/valid_dirty_17__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_302
+DCache/valid_dirty_17__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_334
+DCache/valid_dirty_18__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_492
+DCache/valid_dirty_18__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_269
+DCache/valid_dirty_19__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_428
+DCache/valid_dirty_19__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_460
+DCache/valid_dirty_1__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_385
+DCache/valid_dirty_1__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_417
+DCache/valid_dirty_20__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_365
+DCache/valid_dirty_20__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_396
+DCache/valid_dirty_21__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_301
+DCache/valid_dirty_21__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_333
+DCache/valid_dirty_22__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_491
+DCache/valid_dirty_22__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_268
+DCache/valid_dirty_23__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_427
+DCache/valid_dirty_23__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_459
+DCache/valid_dirty_24__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_364
+DCache/valid_dirty_24__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_395
+DCache/valid_dirty_25__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_300
+DCache/valid_dirty_25__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_332
+DCache/valid_dirty_26__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_490
+DCache/valid_dirty_26__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_267
+DCache/valid_dirty_27__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_426
+DCache/valid_dirty_27__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_458
+DCache/valid_dirty_28__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_363
+DCache/valid_dirty_28__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_394
+DCache/valid_dirty_29__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_299
+DCache/valid_dirty_29__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_331
+DCache/valid_dirty_2__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_322
+DCache/valid_dirty_2__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_354
+DCache/valid_dirty_30__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_489
+DCache/valid_dirty_30__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_266
+DCache/valid_dirty_31__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_425
+DCache/valid_dirty_31__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_457
+DCache/valid_dirty_32__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_362
+DCache/valid_dirty_32__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_393
+DCache/valid_dirty_33__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_298
+DCache/valid_dirty_33__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_330
+DCache/valid_dirty_34__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_488
+DCache/valid_dirty_34__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_265
+DCache/valid_dirty_35__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_424
+DCache/valid_dirty_35__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_456
+DCache/valid_dirty_36__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_361
+DCache/valid_dirty_36__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_392
+DCache/valid_dirty_37__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_297
+DCache/valid_dirty_37__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_329
+DCache/valid_dirty_38__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_487
+DCache/valid_dirty_38__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_264
+DCache/valid_dirty_39__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_423
+DCache/valid_dirty_39__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_455
+DCache/valid_dirty_3__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_257
+DCache/valid_dirty_3__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_290
+DCache/valid_dirty_40__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_360
+DCache/valid_dirty_40__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_391
+DCache/valid_dirty_41__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_296
+DCache/valid_dirty_41__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_328
+DCache/valid_dirty_42__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_486
+DCache/valid_dirty_42__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_263
+DCache/valid_dirty_43__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_422
+DCache/valid_dirty_43__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_454
+DCache/valid_dirty_44__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_359
+DCache/valid_dirty_44__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_390
+DCache/valid_dirty_45__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_295
+DCache/valid_dirty_45__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_327
+DCache/valid_dirty_46__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_485
+DCache/valid_dirty_46__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_262
+DCache/valid_dirty_47__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_421
+DCache/valid_dirty_47__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_453
+DCache/valid_dirty_48__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_358
+DCache/valid_dirty_48__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_389
+DCache/valid_dirty_49__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_326
+DCache/valid_dirty_49__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_414
+DCache/valid_dirty_4__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_448
+DCache/valid_dirty_4__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_480
+DCache/valid_dirty_50__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_261
+DCache/valid_dirty_50__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_294
+DCache/valid_dirty_51__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_452
+DCache/valid_dirty_51__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_484
+DCache/valid_dirty_52__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_388
+DCache/valid_dirty_52__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_420
+DCache/valid_dirty_53__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_325
+DCache/valid_dirty_53__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_357
+DCache/valid_dirty_54__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_293
+DCache/valid_dirty_54__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_382
+DCache/valid_dirty_55__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_483
+DCache/valid_dirty_55__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_260
+DCache/valid_dirty_56__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_451
+DCache/valid_dirty_56__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_351
+DCache/valid_dirty_57__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_419
+DCache/valid_dirty_57__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_319
+DCache/valid_dirty_58__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_356
+DCache/valid_dirty_58__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_387
+DCache/valid_dirty_59__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_324
+DCache/valid_dirty_59__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_287
+DCache/valid_dirty_5__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_384
+DCache/valid_dirty_5__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_416
+DCache/valid_dirty_60__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_292
+DCache/valid_dirty_60__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_254
+DCache/valid_dirty_61__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_259
+DCache/valid_dirty_61__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_477
+DCache/valid_dirty_62__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_450
+DCache/valid_dirty_62__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_482
+DCache/valid_dirty_63__regdirty       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_386
+DCache/valid_dirty_63__regvalid       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_418
+DCache/valid_dirty_6__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_321
+DCache/valid_dirty_6__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_353
+DCache/valid_dirty_7__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_335
+DCache/valid_dirty_7__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_289
+DCache/valid_dirty_8__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_256
+DCache/valid_dirty_8__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_303
+DCache/valid_dirty_9__regdirty        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_479
+DCache/valid_dirty_9__regvalid        3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_270
+EXU                                4912.8660     14.3   1690.4160    124.7400  0.0000  ysyx_22050550_EXU_0
+EXU/Divder                         1704.1500      4.9   1318.0860    368.6760  0.0000  ysyx_22050550_Diver_0
+EXU/Divder/IndReg                    17.3880      0.1      6.0480     11.3400  0.0000  ysyx_22050550_Reg_6_00_4
+EXU/Multi                          1393.5600      4.0    126.3780      3.7800  0.0000  ysyx_22050550_Multi_0
+EXU/Multi/IndReg                     14.6160      0.0      5.1660      9.4500  0.0000  ysyx_22050550_Reg_6_00_5
+EXU/Multi/ProdGen                   718.8300      2.1    718.8300      0.0000  0.0000  ysyx_22050550_PartProductGen_0
+EXU/Multi/ProdReg                   351.4140      1.0    113.2740    238.1400  0.0000  ysyx_22050550_Reg_128_2
+EXU/Multi/SumReg                    178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_128_3
+ICache                             5897.6820     17.1   1279.1520    102.0600  0.0000  ysyx_22050550_ICACHE_0
+ICache/dataok                         2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050550_Reg_1_0_381
+ICache/genblk1_0__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_224
+ICache/genblk1_10__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_176
+ICache/genblk1_11__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_182
+ICache/genblk1_12__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_150
+ICache/genblk1_13__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_246
+ICache/genblk1_14__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_240
+ICache/genblk1_15__Treg0             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_230
+ICache/genblk1_1__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_144
+ICache/genblk1_2__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_183
+ICache/genblk1_3__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_151
+ICache/genblk1_4__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_247
+ICache/genblk1_5__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_231
+ICache/genblk1_6__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_166
+ICache/genblk1_7__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_134
+ICache/genblk1_8__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_214
+ICache/genblk1_9__Treg0              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_198
+ICache/genblk2_0__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_165
+ICache/genblk2_10__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_132
+ICache/genblk2_11__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_212
+ICache/genblk2_12__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_196
+ICache/genblk2_13__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_143
+ICache/genblk2_14__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_180
+ICache/genblk2_15__Treg1             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_148
+ICache/genblk2_1__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_133
+ICache/genblk2_2__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_213
+ICache/genblk2_3__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_197
+ICache/genblk2_4__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_181
+ICache/genblk2_5__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_149
+ICache/genblk2_6__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_245
+ICache/genblk2_7__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_229
+ICache/genblk2_8__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_164
+ICache/genblk2_9__Treg1              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_175
+ICache/genblk3_0__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_244
+ICache/genblk3_10__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_227
+ICache/genblk3_11__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_162
+ICache/genblk3_12__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_207
+ICache/genblk3_13__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_130
+ICache/genblk3_14__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_210
+ICache/genblk3_15__Treg2             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_194
+ICache/genblk3_1__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_228
+ICache/genblk3_2__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_163
+ICache/genblk3_3__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_131
+ICache/genblk3_4__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_211
+ICache/genblk3_5__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_195
+ICache/genblk3_6__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_179
+ICache/genblk3_7__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_147
+ICache/genblk3_8__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_223
+ICache/genblk3_9__Treg2              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_243
+ICache/genblk4_0__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_178
+ICache/genblk4_10__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_145
+ICache/genblk4_11__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_159
+ICache/genblk4_12__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_241
+ICache/genblk4_13__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_225
+ICache/genblk4_14__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_160
+ICache/genblk4_15__Treg3             67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_128
+ICache/genblk4_1__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_146
+ICache/genblk4_2__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_242
+ICache/genblk4_3__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_226
+ICache/genblk4_4__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_161
+ICache/genblk4_5__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_129
+ICache/genblk4_6__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_209
+ICache/genblk4_7__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_191
+ICache/genblk4_8__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_193
+ICache/genblk4_9__Treg3              67.2840      0.2     21.9240     45.3600  0.0000  ysyx_22050550_Reg_24_000000_177
+ICache/regvalid                       6.3000      0.0      2.5200      3.7800  0.0000  ysyx_22050550_Reg_2_0_3
+ICache/valid_dirty_0__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_284
+ICache/valid_dirty_10__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_474
+ICache/valid_dirty_11__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_442
+ICache/valid_dirty_12__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_410
+ICache/valid_dirty_13__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_379
+ICache/valid_dirty_14__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_347
+ICache/valid_dirty_15__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_315
+ICache/valid_dirty_16__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_282
+ICache/valid_dirty_17__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_505
+ICache/valid_dirty_18__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_473
+ICache/valid_dirty_19__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_441
+ICache/valid_dirty_1__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_507
+ICache/valid_dirty_20__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_409
+ICache/valid_dirty_21__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_378
+ICache/valid_dirty_22__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_346
+ICache/valid_dirty_23__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_314
+ICache/valid_dirty_24__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_281
+ICache/valid_dirty_25__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_504
+ICache/valid_dirty_26__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_472
+ICache/valid_dirty_27__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_440
+ICache/valid_dirty_28__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_408
+ICache/valid_dirty_29__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_377
+ICache/valid_dirty_2__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_475
+ICache/valid_dirty_30__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_345
+ICache/valid_dirty_31__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_313
+ICache/valid_dirty_32__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_280
+ICache/valid_dirty_33__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_503
+ICache/valid_dirty_34__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_471
+ICache/valid_dirty_35__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_439
+ICache/valid_dirty_36__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_407
+ICache/valid_dirty_37__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_376
+ICache/valid_dirty_38__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_344
+ICache/valid_dirty_39__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_312
+ICache/valid_dirty_3__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_443
+ICache/valid_dirty_40__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_279
+ICache/valid_dirty_41__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_502
+ICache/valid_dirty_42__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_470
+ICache/valid_dirty_43__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_438
+ICache/valid_dirty_44__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_406
+ICache/valid_dirty_45__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_375
+ICache/valid_dirty_46__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_343
+ICache/valid_dirty_47__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_311
+ICache/valid_dirty_48__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_278
+ICache/valid_dirty_49__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_501
+ICache/valid_dirty_4__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_411
+ICache/valid_dirty_50__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_469
+ICache/valid_dirty_51__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_437
+ICache/valid_dirty_52__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_405
+ICache/valid_dirty_53__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_350
+ICache/valid_dirty_54__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_374
+ICache/valid_dirty_55__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_342
+ICache/valid_dirty_56__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_310
+ICache/valid_dirty_57__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_449
+ICache/valid_dirty_58__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_277
+ICache/valid_dirty_59__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_500
+ICache/valid_dirty_5__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_380
+ICache/valid_dirty_60__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_468
+ICache/valid_dirty_61__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_436
+ICache/valid_dirty_62__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_404
+ICache/valid_dirty_63__regvalid       3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_373
+ICache/valid_dirty_6__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_348
+ICache/valid_dirty_7__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_316
+ICache/valid_dirty_8__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_283
+ICache/valid_dirty_9__regvalid        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_506
+IDU                                 833.8680      2.4    833.8680      0.0000  0.0000  ysyx_22050550_IDU_0
+IFU                                  54.5580      0.2     54.5580      0.0000  0.0000  ysyx_22050550_IFU_0
+LSU                                 523.7820      1.5    451.8360     71.9460  0.0000  ysyx_22050550_LSU_0
+PCREG                               790.0200      2.3    610.8480      0.0000  0.0000  ysyx_22050550_PCREG_0
+PCREG/regpc                         179.1720      0.5     58.2120    120.9600  0.0000  ysyx_22050550_Reg_64_0000000030000000_0
+REGS                               8562.8340     24.9   1781.6400      0.0000  0.0000  ysyx_22050550_REGS_0
+REGS/Rmcause                        178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_89
+REGS/Rmepc                          178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_81
+REGS/Rmie                           178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_50
+REGS/Rmip                           178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_56
+REGS/Rmstatus                       179.6760      0.5     58.7160    120.9600  0.0000  ysyx_22050550_Reg_64_0000000a00001800_0
+REGS/Rmtvec                         178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_96
+REGS/regfile_10__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_91
+REGS/regfile_11__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_74
+REGS/regfile_12__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_83
+REGS/regfile_13__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_53
+REGS/regfile_14__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_75
+REGS/regfile_15__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_63
+REGS/regfile_16__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_67
+REGS/regfile_17__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_99
+REGS/regfile_18__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_57
+REGS/regfile_19__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_51
+REGS/regfile_1__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_72
+REGS/regfile_20__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_92
+REGS/regfile_21__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_84
+REGS/regfile_22__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_61
+REGS/regfile_23__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_95
+REGS/regfile_24__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_60
+REGS/regfile_25__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_76
+REGS/regfile_26__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_55
+REGS/regfile_27__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_66
+REGS/regfile_28__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_68
+REGS/regfile_29__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_97
+REGS/regfile_2__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_80
+REGS/regfile_30__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_90
+REGS/regfile_31__regi               178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_82
+REGS/regfile_3__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_58
+REGS/regfile_4__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_52
+REGS/regfile_5__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_62
+REGS/regfile_6__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_98
+REGS/regfile_7__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_88
+REGS/regfile_8__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_69
+REGS/regfile_9__regi                178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_59
+REGS/regpc                          178.4160      0.5     57.4560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_73
+RamArbiter                          107.6040      0.3    107.6040      0.0000  0.0000  ysyx_22050550_RamArbiter_0
+RegEXLS_alures                      178.9200      0.5     57.9600    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_65
+RegEXLS_csrflag                       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_336
+RegEXLS_ecallflag                     3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_304
+RegEXLS_flush                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_430
+RegEXLS_func3                         9.0720      0.0      3.4020      5.6700  0.0000  ysyx_22050550_Reg_3_0_4
+RegEXLS_inst                         47.8800      0.1     15.7500     32.1300  0.0000  ysyx_22050550_Reg_32_00000000_9
+RegEXLS_mretflag                      3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_271
+RegEXLS_npc                          89.4600      0.3     28.9800     60.4800  0.0000  ysyx_22050550_Reg_32_00000000_10
+RegEXLS_pc                          178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_85
+RegEXLS_rflag                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_462
+RegEXLS_rs2                         178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_77
+RegEXLS_valid                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_399
+RegEXLS_wdaddr                       14.6160      0.0      5.1660      9.4500  0.0000  ysyx_22050550_Reg_5_00_6
+RegEXLS_wen                           3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_368
+RegEXLS_wflag                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_494
+RegEXLS_wmask                        22.9320      0.1      7.8120     15.1200  0.0000  ysyx_22050550_Reg_8_00_3
+RegEXLS_writedata                   178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_71
+RegFlush                              3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_285
+RegLSWB_alures                      129.2760      0.4      0.2520    129.0240  0.0000  ysyx_22050550_Reg_64_0000000000000000_87
+RegLSWB_csrflag                       2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050550_Reg_1_0_318
+RegLSWB_ecallflag                     2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050550_Reg_1_0_291
+RegLSWB_flush                         2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050550_Reg_1_0_481
+RegLSWB_func3                         6.3000      0.0      0.2520      6.0480  0.0000  ysyx_22050550_Reg_3_0_5
+RegLSWB_inst                         34.5240      0.1      0.2520     34.2720  0.0000  ysyx_22050550_Reg_32_00000000_11
+RegLSWB_lsures                      153.2160      0.4     32.2560    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_94
+RegLSWB_mretflag                      2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050550_Reg_1_0_258
+RegLSWB_npc                          89.4600      0.3     28.9800     60.4800  0.0000  ysyx_22050550_Reg_32_00000000_12
+RegLSWB_pc                          129.2760      0.4      0.2520    129.0240  0.0000  ysyx_22050550_Reg_64_0000000000000000_79
+RegLSWB_readflag                      2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050550_Reg_1_0_323
+RegLSWB_valid                         2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050550_Reg_1_0_476
+RegLSWB_wdaddr                       10.3320      0.0      0.2520     10.0800  0.0000  ysyx_22050550_Reg_5_00_4
+RegLSWB_wen                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050550_Reg_1_0_286
+Regidex_AluOp_op                     11.8440      0.0      4.2840      7.5600  0.0000  ysyx_22050550_Reg_5_00_7
+Regidex_AluOp_rd1                   178.6680      0.5     57.7080    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_86
+Regidex_AluOp_rd2                   178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_93
+Regidex_alumask                       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_463
+Regidex_csrflag                       3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_305
+Regidex_ecallflag                     3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_272
+Regidex_flush                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_431
+Regidex_func3                         9.0720      0.0      3.4020      5.6700  0.0000  ysyx_22050550_Reg_3_0_3
+Regidex_inst                         47.8800      0.1     15.7500     32.1300  0.0000  ysyx_22050550_Reg_32_00000000_13
+Regidex_mretflag                      3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_495
+Regidex_npc                          89.4600      0.3     28.9800     60.4800  0.0000  ysyx_22050550_Reg_32_00000000_8
+Regidex_pc                          178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_70
+Regidex_rflag                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_337
+Regidex_rs2                         178.5420      0.5     57.5820    120.9600  0.0000  ysyx_22050550_Reg_64_0000000000000000_78
+Regidex_valid                         3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_412
+Regidex_waddr                        14.6160      0.0      5.1660      9.4500  0.0000  ysyx_22050550_Reg_5_00_5
+Regidex_wen                           3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_444
+Regidex_wflag                         3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_369
+Regidex_wmask                        21.9240      0.1      6.8040     15.1200  0.0000  ysyx_22050550_Reg_8_00_2
+Regif_id_flush                        3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_349
+Regif_id_inst                        89.4600      0.3     28.9800     60.4800  0.0000  ysyx_22050550_Reg_32_00000000_7
+Regif_id_pc                         178.9200      0.5     57.7080    121.2120  0.0000  ysyx_22050550_Reg_64_0000000000000000_64
+Regif_id_valid                        3.5280      0.0      1.2600      2.2680  0.0000  ysyx_22050550_Reg_1_0_317
+ScoreBoard                          186.6060      0.5     88.9560      0.0000  0.0000  ysyx_22050550_ScoreBoard_0
+ScoreBoard/regfile_10__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_308
+ScoreBoard/regfile_11__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_275
+ScoreBoard/regfile_12__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_498
+ScoreBoard/regfile_13__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_466
+ScoreBoard/regfile_14__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_434
+ScoreBoard/regfile_15__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_402
+ScoreBoard/regfile_16__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_371
+ScoreBoard/regfile_17__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_339
+ScoreBoard/regfile_18__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_307
+ScoreBoard/regfile_19__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_274
+ScoreBoard/regfile_1__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_341
+ScoreBoard/regfile_20__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_497
+ScoreBoard/regfile_21__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_465
+ScoreBoard/regfile_22__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_433
+ScoreBoard/regfile_23__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_401
+ScoreBoard/regfile_24__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_370
+ScoreBoard/regfile_25__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_338
+ScoreBoard/regfile_26__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_306
+ScoreBoard/regfile_27__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_273
+ScoreBoard/regfile_28__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_496
+ScoreBoard/regfile_29__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_464
+ScoreBoard/regfile_2__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_309
+ScoreBoard/regfile_30__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_432
+ScoreBoard/regfile_31__regi           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_400
+ScoreBoard/regfile_3__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_276
+ScoreBoard/regfile_4__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_499
+ScoreBoard/regfile_5__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_467
+ScoreBoard/regfile_6__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_435
+ScoreBoard/regfile_7__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_403
+ScoreBoard/regfile_8__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_372
+ScoreBoard/regfile_9__regi            3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050550_Reg_1_0_340
+WBU                                 674.7300      2.0    671.7060      0.0000  0.0000  ysyx_22050550_WBU_0
+WBU/RegInter                          3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050550_Reg_1_0_398
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------
+Total                                                  20115.6481  14318.7659  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22050550
+Version: R-2020.09-SP3a
+Date   : Fri Mar 15 12:46:43 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: Regif_id_valid/dout_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ICache/valid_dirty_35__regvalid/dout_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  Regif_id_valid/dout_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  Regif_id_valid/dout_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0381    0.0847     0.0847 f
+  Regif_id_valid/dout[0] (ysyx_22050550_Reg_1_0_317)    0.0000     0.0847 f
+  U539/A1 (AN2D1BWP40P140)                    0.0381    0.0000     0.0847 f
+  U539/Z (AN2D1BWP40P140)                     0.0333    0.0475     0.1321 f
+  IDU/io_IFID_inst[20] (ysyx_22050550_IDU_0)            0.0000     0.1321 f
+  IDU/U9/I (BUFFD1BWP40P140)                  0.0333    0.0000     0.1321 f
+  IDU/U9/Z (BUFFD1BWP40P140)                  0.0244    0.0397     0.1719 f
+  IDU/io_IDRegFile_raddr2[0] (ysyx_22050550_IDU_0)      0.0000     0.1719 f
+  REGS/io_IDU_raddr2[0] (ysyx_22050550_REGS_0)          0.0000     0.1719 f
+  REGS/U49/B1 (IND2D1BWP40P140LVT)            0.0244    0.0000     0.1719 f
+  REGS/U49/ZN (IND2D1BWP40P140LVT)            0.0457    0.0346     0.2065 r
+  REGS/U93/A2 (OR2D1BWP40P140)                0.0457    0.0000     0.2065 r
+  REGS/U93/Z (OR2D1BWP40P140)                 0.0118    0.0350     0.2415 r
+  REGS/U21/I (INVD1BWP40P140)                 0.0118    0.0000     0.2415 r
+  REGS/U21/ZN (INVD1BWP40P140)                0.2769    0.1594     0.4008 f
+  REGS/U2473/B2 (AOI22D1BWP40P140)            0.2769    0.0000     0.4008 f
+  REGS/U2473/ZN (AOI22D1BWP40P140)            0.0578    0.0753     0.4761 r
+  REGS/U2474/A4 (ND4D1BWP40P140)              0.0578    0.0000     0.4761 r
+  REGS/U2474/ZN (ND4D1BWP40P140)              0.0487    0.0464     0.5225 f
+  REGS/U2475/A4 (OR4D1BWP40P140)              0.0487    0.0000     0.5225 f
+  REGS/U2475/Z (OR4D1BWP40P140)               0.0160    0.0447     0.5672 f
+  REGS/io_IDU_rdata2[34] (ysyx_22050550_REGS_0)         0.0000     0.5672 f
+  IDU/io_RegFileID_rdata2[34] (ysyx_22050550_IDU_0)     0.0000     0.5672 f
+  IDU/U613/I (INVD1BWP40P140)                 0.0160    0.0000     0.5672 f
+  IDU/U613/ZN (INVD1BWP40P140)                0.0101    0.0112     0.5784 r
+  IDU/U614/I1 (MUX2NUD1BWP40P140)             0.0101    0.0000     0.5784 r
+  IDU/U614/ZN (MUX2NUD1BWP40P140)             0.0660    0.0386     0.6170 f
+  IDU/U997/A2 (XOR2UD1BWP40P140)              0.0660    0.0000     0.6170 f
+  IDU/U997/Z (XOR2UD1BWP40P140)               0.0405    0.0506     0.6675 f
+  IDU/U130/A2 (NR2D1BWP40P140)                0.0405    0.0000     0.6675 f
+  IDU/U130/ZN (NR2D1BWP40P140)                0.0213    0.0240     0.6916 r
+  IDU/U1000/A1 (ND3D1BWP40P140)               0.0213    0.0000     0.6916 r
+  IDU/U1000/ZN (ND3D1BWP40P140)               0.0328    0.0253     0.7169 f
+  IDU/U317/A2 (NR2D1BWP40P140)                0.0328    0.0000     0.7169 f
+  IDU/U317/ZN (NR2D1BWP40P140)                0.0198    0.0224     0.7393 r
+  IDU/U388/A2 (ND2D1BWP40P140)                0.0198    0.0000     0.7393 r
+  IDU/U388/ZN (ND2D1BWP40P140)                0.0193    0.0185     0.7577 f
+  IDU/U70/A2 (NR2D1BWP40P140)                 0.0193    0.0000     0.7577 f
+  IDU/U70/ZN (NR2D1BWP40P140)                 0.0172    0.0187     0.7764 r
+  IDU/U75/A1 (ND3D1BWP40P140)                 0.0172    0.0000     0.7764 r
+  IDU/U75/ZN (ND3D1BWP40P140)                 0.0547    0.0387     0.8151 f
+  IDU/U1043/B1 (MAOI22D1BWP40P140)            0.0547    0.0000     0.8151 f
+  IDU/U1043/ZN (MAOI22D1BWP40P140)            0.0214    0.0397     0.8548 f
+  IDU/U56/B (OAI21D1BWP40P140)                0.0214    0.0000     0.8548 f
+  IDU/U56/ZN (OAI21D1BWP40P140)               0.0204    0.0173     0.8721 r
+  IDU/U398/A1 (AOI21D1BWP40P140)              0.0204    0.0000     0.8721 r
+  IDU/U398/ZN (AOI21D1BWP40P140)              0.0274    0.0199     0.8920 f
+  IDU/U223/A1 (NR2D1BWP40P140)                0.0274    0.0000     0.8920 f
+  IDU/U223/ZN (NR2D1BWP40P140)                0.0251    0.0233     0.9153 r
+  IDU/io_IDNPC_jal[2] (ysyx_22050550_IDU_0)             0.0000     0.9153 r
+  PCREG/Id_jal[2] (ysyx_22050550_PCREG_0)               0.0000     0.9153 r
+  PCREG/U46/A1 (NR2D2BWP40P140)               0.0251    0.0000     0.9153 r
+  PCREG/U46/ZN (NR2D2BWP40P140)               0.0341    0.0238     0.9391 f
+  PCREG/U44/I (INVD6BWP40P140)                0.0341    0.0000     0.9391 f
+  PCREG/U44/ZN (INVD6BWP40P140)               0.0532    0.0428     0.9819 r
+  PCREG/U43/B1 (INR2D16BWP40P140)             0.0532    0.0000     0.9819 r
+  PCREG/U43/ZN (INR2D16BWP40P140)             0.0338    0.0310     1.0129 f
+  PCREG/U256/A1 (ND2D1BWP40P140)              0.0338    0.0000     1.0129 f
+  PCREG/U256/ZN (ND2D1BWP40P140)              0.0288    0.0191     1.0320 r
+  PCREG/U80/B (IOA21D1BWP40P140)              0.0288    0.0000     1.0320 r
+  PCREG/U80/ZN (IOA21D1BWP40P140)             0.0283    0.0244     1.0564 f
+  PCREG/U319/A2 (OR2D1BWP40P140)              0.0283    0.0000     1.0564 f
+  PCREG/U319/Z (OR2D1BWP40P140)               0.0159    0.0337     1.0902 f
+  PCREG/U11/A1 (AOI21D1BWP40P140)             0.0159    0.0000     1.0902 f
+  PCREG/U11/ZN (AOI21D1BWP40P140)             0.0369    0.0286     1.1187 r
+  PCREG/U312/A1 (OAI21D1BWP40P140)            0.0369    0.0000     1.1187 r
+  PCREG/U312/ZN (OAI21D1BWP40P140)            0.0438    0.0365     1.1552 f
+  PCREG/U298/A1 (AOI21D1BWP40P140)            0.0438    0.0000     1.1552 f
+  PCREG/U298/ZN (AOI21D1BWP40P140)            0.0409    0.0372     1.1925 r
+  PCREG/U283/A1 (OAI21D1BWP40P140)            0.0409    0.0000     1.1925 r
+  PCREG/U283/ZN (OAI21D1BWP40P140)            0.0445    0.0375     1.2299 f
+  PCREG/U291/A1 (AOI21D1BWP40P140)            0.0445    0.0000     1.2299 f
+  PCREG/U291/ZN (AOI21D1BWP40P140)            0.0347    0.0326     1.2626 r
+  PCREG/U278/A1 (OAI21D1BWP40P140)            0.0347    0.0000     1.2626 r
+  PCREG/U278/ZN (OAI21D1BWP40P140)            0.0358    0.0308     1.2933 f
+  PCREG/U24/A1 (AOI21D1BWP40P140)             0.0358    0.0000     1.2933 f
+  PCREG/U24/ZN (AOI21D1BWP40P140)             0.0331    0.0305     1.3238 r
+  PCREG/U271/A1 (OAI21D1BWP40P140)            0.0331    0.0000     1.3238 r
+  PCREG/U271/ZN (OAI21D1BWP40P140)            0.0505    0.0399     1.3637 f
+  PCREG/U257/A1 (AOI21D2BWP40P140)            0.0505    0.0000     1.3637 f
+  PCREG/U257/ZN (AOI21D2BWP40P140)            0.0309    0.0293     1.3931 r
+  PCREG/U326/A1 (OAI21D2BWP40P140)            0.0309    0.0000     1.3931 r
+  PCREG/U326/ZN (OAI21D2BWP40P140)            0.0327    0.0260     1.4191 f
+  PCREG/U331/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4191 f
+  PCREG/U331/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4443 r
+  PCREG/U333/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4443 r
+  PCREG/U333/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.4695 f
+  PCREG/U335/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4695 f
+  PCREG/U335/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4947 r
+  PCREG/U337/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4947 r
+  PCREG/U337/ZN (OAI21D2BWP40P140)            0.0321    0.0248     1.5195 f
+  PCREG/U223/A1 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0321    0.0000     1.5195 f
+  PCREG/U223/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0300    0.0242     1.5437 r
+  PCREG/U220/A1 (OAI21D2BWP40P140LVT)         0.0300    0.0000     1.5437 r
+  PCREG/U220/ZN (OAI21D2BWP40P140LVT)         0.0284    0.0212     1.5649 f
+  PCREG/U343/A1 (AOI21D2BWP40P140)            0.0284    0.0000     1.5649 f
+  PCREG/U343/ZN (AOI21D2BWP40P140)            0.0276    0.0240     1.5889 r
+  PCREG/U345/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.5889 r
+  PCREG/U345/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6141 f
+  PCREG/U347/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6141 f
+  PCREG/U347/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6393 r
+  PCREG/U349/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6393 r
+  PCREG/U349/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6645 f
+  PCREG/U351/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6645 f
+  PCREG/U351/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6897 r
+  PCREG/U353/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6897 r
+  PCREG/U353/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7149 f
+  PCREG/U356/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7149 f
+  PCREG/U356/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7401 r
+  PCREG/U358/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7401 r
+  PCREG/U358/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7653 f
+  PCREG/U360/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7653 f
+  PCREG/U360/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7905 r
+  PCREG/U362/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7905 r
+  PCREG/U362/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8157 f
+  PCREG/U364/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8157 f
+  PCREG/U364/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8409 r
+  PCREG/U366/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8409 r
+  PCREG/U366/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8661 f
+  PCREG/U368/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8661 f
+  PCREG/U368/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8913 r
+  PCREG/U370/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8913 r
+  PCREG/U370/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.9165 f
+  PCREG/U375/A1 (XNR2UD1BWP40P140)            0.0327    0.0000     1.9165 f
+  PCREG/U375/ZN (XNR2UD1BWP40P140)            0.0338    0.0198     1.9363 r
+  PCREG/U6/A2 (ND2D1BWP40P140)                0.0338    0.0000     1.9363 r
+  PCREG/U6/ZN (ND2D1BWP40P140)                0.0517    0.0216     1.9579 f
+  PCREG/U380/A1 (ND2D1BWP40P140)              0.0517    0.0000     1.9579 f
+  PCREG/U380/ZN (ND2D1BWP40P140)              0.0425    0.0310     1.9889 r
+  PCREG/U5/A1 (NR2D1BWP40P140)                0.0425    0.0000     1.9889 r
+  PCREG/U5/ZN (NR2D1BWP40P140)                0.0236    0.0234     2.0123 f
+  PCREG/U341/A1 (OR2D4BWP40P140)              0.0236    0.0000     2.0123 f
+  PCREG/U341/Z (OR2D4BWP40P140)               0.1308    0.0979     2.1102 f
+  PCREG/U903/S (MUX2D1BWP40P140)              0.1308    0.0000     2.1102 f
+  PCREG/U903/Z (MUX2D1BWP40P140)              0.0186    0.0660     2.1762 r
+  PCREG/npc[6] (ysyx_22050550_PCREG_0)                  0.0000     2.1762 r
+  IFU/Pc[6] (ysyx_22050550_IFU_0)                       0.0000     2.1762 r
+  IFU/U6/I (BUFFD1BWP40P140)                  0.0186    0.0000     2.1762 r
+  IFU/U6/Z (BUFFD1BWP40P140)                  0.0170    0.0285     2.2047 r
+  IFU/Cache_addr[6] (ysyx_22050550_IFU_0)               0.0000     2.2047 r
+  ICache/io_Cache_addr[6] (ysyx_22050550_ICACHE_0)      0.0000     2.2047 r
+  ICache/U142/A1 (AOI21OPTREPBD1BWP40P140)    0.0170    0.0000     2.2047 r
+  ICache/U142/ZN (AOI21OPTREPBD1BWP40P140)    0.0681    0.0417     2.2464 f
+  ICache/U392/I (BUFFD1BWP40P140)             0.0681    0.0000     2.2464 f
+  ICache/U392/Z (BUFFD1BWP40P140)             0.0171    0.0442     2.2906 f
+  ICache/U356/A2 (NR2D1BWP40P140)             0.0171    0.0000     2.2906 f
+  ICache/U356/ZN (NR2D1BWP40P140)             0.0449    0.0299     2.3205 r
+  ICache/U57/I (INVD1BWP40P140)               0.0449    0.0000     2.3205 r
+  ICache/U57/ZN (INVD1BWP40P140)              0.0244    0.0243     2.3448 f
+  ICache/U34/A2 (NR2D2BWP40P140)              0.0244    0.0000     2.3448 f
+  ICache/U34/ZN (NR2D2BWP40P140)              0.4144    0.2459     2.5907 r
+  ICache/U574/A1 (AOI22D1BWP40P140)           0.4144    0.0000     2.5907 r
+  ICache/U574/ZN (AOI22D1BWP40P140)           0.0971    0.0404     2.6311 f
+  ICache/U578/A2 (ND4D1BWP40P140)             0.0971    0.0000     2.6311 f
+  ICache/U578/ZN (ND4D1BWP40P140)             0.0301    0.0299     2.6610 r
+  ICache/U584/A1 (NR2D1BWP40P140)             0.0301    0.0000     2.6610 r
+  ICache/U584/ZN (NR2D1BWP40P140)             0.0193    0.0185     2.6795 f
+  ICache/U585/A1 (XNR2UD1BWP40P140)           0.0193    0.0000     2.6795 f
+  ICache/U585/ZN (XNR2UD1BWP40P140)           0.0635    0.0272     2.7067 f
+  ICache/U586/A4 (NR4D1BWP40P140)             0.0635    0.0000     2.7067 f
+  ICache/U586/ZN (NR4D1BWP40P140)             0.0295    0.0396     2.7463 r
+  ICache/U638/A1 (ND3D1BWP40P140)             0.0295    0.0000     2.7463 r
+  ICache/U638/ZN (ND3D1BWP40P140)             0.0381    0.0309     2.7772 f
+  ICache/U750/A2 (NR4D1BWP40P140)             0.0381    0.0000     2.7772 f
+  ICache/U750/ZN (NR4D1BWP40P140)             0.0301    0.0314     2.8086 r
+  ICache/U108/A1 (IND2D1BWP40P140)            0.0301    0.0000     2.8086 r
+  ICache/U108/ZN (IND2D1BWP40P140)            0.0186    0.0294     2.8380 r
+  ICache/U49/I0 (MUX2NUD1BWP40P140)           0.0186    0.0000     2.8380 r
+  ICache/U49/ZN (MUX2NUD1BWP40P140)           0.0597    0.0433     2.8813 f
+  ICache/U362/A1 (NR2D1BWP40P140)             0.0597    0.0000     2.8813 f
+  ICache/U362/ZN (NR2D1BWP40P140)             0.0420    0.0405     2.9218 r
+  ICache/U47/A2 (ND2D2BWP40P140)              0.0420    0.0000     2.9218 r
+  ICache/U47/ZN (ND2D2BWP40P140)              0.0778    0.0593     2.9811 f
+  ICache/U87/A1 (NR2D1BWP40P140)              0.0778    0.0000     2.9811 f
+  ICache/U87/ZN (NR2D1BWP40P140)              0.0379    0.0354     3.0164 r
+  ICache/valid_dirty_35__regvalid/wen (ysyx_22050550_Reg_1_0_439)
+                                                        0.0000     3.0164 r
+  ICache/valid_dirty_35__regvalid/U4/A1 (NR2D1BWP40P140)
+                                              0.0379    0.0000     3.0164 r
+  ICache/valid_dirty_35__regvalid/U4/ZN (NR2D1BWP40P140)
+                                              0.0165    0.0162     3.0327 f
+  ICache/valid_dirty_35__regvalid/U5/B (AOI211D1BWP40P140)
+                                              0.0165    0.0000     3.0327 f
+  ICache/valid_dirty_35__regvalid/U5/ZN (AOI211D1BWP40P140)
+                                              0.0510    0.0329     3.0656 r
+  ICache/valid_dirty_35__regvalid/dout_reg_0_/D (DFQD1BWP40P140)
+                                              0.0510    0.0000     3.0656 r
+  data arrival time                                                3.0656
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  ICache/valid_dirty_35__regvalid/dout_reg_0_/CP (DFQD1BWP40P140)
+                                                        0.0000     3.1000 r
+  library setup time                                   -0.0343     3.0657
+  data required time                                               3.0657
+  --------------------------------------------------------------------------
+  data required time                                               3.0657
+  data arrival time                                               -3.0656
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: Regif_id_valid/dout_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ICache/valid_dirty_39__regvalid/dout_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  Regif_id_valid/dout_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  Regif_id_valid/dout_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0381    0.0847     0.0847 f
+  Regif_id_valid/dout[0] (ysyx_22050550_Reg_1_0_317)    0.0000     0.0847 f
+  U539/A1 (AN2D1BWP40P140)                    0.0381    0.0000     0.0847 f
+  U539/Z (AN2D1BWP40P140)                     0.0333    0.0475     0.1321 f
+  IDU/io_IFID_inst[20] (ysyx_22050550_IDU_0)            0.0000     0.1321 f
+  IDU/U9/I (BUFFD1BWP40P140)                  0.0333    0.0000     0.1321 f
+  IDU/U9/Z (BUFFD1BWP40P140)                  0.0244    0.0397     0.1719 f
+  IDU/io_IDRegFile_raddr2[0] (ysyx_22050550_IDU_0)      0.0000     0.1719 f
+  REGS/io_IDU_raddr2[0] (ysyx_22050550_REGS_0)          0.0000     0.1719 f
+  REGS/U49/B1 (IND2D1BWP40P140LVT)            0.0244    0.0000     0.1719 f
+  REGS/U49/ZN (IND2D1BWP40P140LVT)            0.0457    0.0346     0.2065 r
+  REGS/U93/A2 (OR2D1BWP40P140)                0.0457    0.0000     0.2065 r
+  REGS/U93/Z (OR2D1BWP40P140)                 0.0118    0.0350     0.2415 r
+  REGS/U21/I (INVD1BWP40P140)                 0.0118    0.0000     0.2415 r
+  REGS/U21/ZN (INVD1BWP40P140)                0.2769    0.1594     0.4008 f
+  REGS/U2473/B2 (AOI22D1BWP40P140)            0.2769    0.0000     0.4008 f
+  REGS/U2473/ZN (AOI22D1BWP40P140)            0.0578    0.0753     0.4761 r
+  REGS/U2474/A4 (ND4D1BWP40P140)              0.0578    0.0000     0.4761 r
+  REGS/U2474/ZN (ND4D1BWP40P140)              0.0487    0.0464     0.5225 f
+  REGS/U2475/A4 (OR4D1BWP40P140)              0.0487    0.0000     0.5225 f
+  REGS/U2475/Z (OR4D1BWP40P140)               0.0160    0.0447     0.5672 f
+  REGS/io_IDU_rdata2[34] (ysyx_22050550_REGS_0)         0.0000     0.5672 f
+  IDU/io_RegFileID_rdata2[34] (ysyx_22050550_IDU_0)     0.0000     0.5672 f
+  IDU/U613/I (INVD1BWP40P140)                 0.0160    0.0000     0.5672 f
+  IDU/U613/ZN (INVD1BWP40P140)                0.0101    0.0112     0.5784 r
+  IDU/U614/I1 (MUX2NUD1BWP40P140)             0.0101    0.0000     0.5784 r
+  IDU/U614/ZN (MUX2NUD1BWP40P140)             0.0660    0.0386     0.6170 f
+  IDU/U997/A2 (XOR2UD1BWP40P140)              0.0660    0.0000     0.6170 f
+  IDU/U997/Z (XOR2UD1BWP40P140)               0.0405    0.0506     0.6675 f
+  IDU/U130/A2 (NR2D1BWP40P140)                0.0405    0.0000     0.6675 f
+  IDU/U130/ZN (NR2D1BWP40P140)                0.0213    0.0240     0.6916 r
+  IDU/U1000/A1 (ND3D1BWP40P140)               0.0213    0.0000     0.6916 r
+  IDU/U1000/ZN (ND3D1BWP40P140)               0.0328    0.0253     0.7169 f
+  IDU/U317/A2 (NR2D1BWP40P140)                0.0328    0.0000     0.7169 f
+  IDU/U317/ZN (NR2D1BWP40P140)                0.0198    0.0224     0.7393 r
+  IDU/U388/A2 (ND2D1BWP40P140)                0.0198    0.0000     0.7393 r
+  IDU/U388/ZN (ND2D1BWP40P140)                0.0193    0.0185     0.7577 f
+  IDU/U70/A2 (NR2D1BWP40P140)                 0.0193    0.0000     0.7577 f
+  IDU/U70/ZN (NR2D1BWP40P140)                 0.0172    0.0187     0.7764 r
+  IDU/U75/A1 (ND3D1BWP40P140)                 0.0172    0.0000     0.7764 r
+  IDU/U75/ZN (ND3D1BWP40P140)                 0.0547    0.0387     0.8151 f
+  IDU/U1043/B1 (MAOI22D1BWP40P140)            0.0547    0.0000     0.8151 f
+  IDU/U1043/ZN (MAOI22D1BWP40P140)            0.0214    0.0397     0.8548 f
+  IDU/U56/B (OAI21D1BWP40P140)                0.0214    0.0000     0.8548 f
+  IDU/U56/ZN (OAI21D1BWP40P140)               0.0204    0.0173     0.8721 r
+  IDU/U398/A1 (AOI21D1BWP40P140)              0.0204    0.0000     0.8721 r
+  IDU/U398/ZN (AOI21D1BWP40P140)              0.0274    0.0199     0.8920 f
+  IDU/U223/A1 (NR2D1BWP40P140)                0.0274    0.0000     0.8920 f
+  IDU/U223/ZN (NR2D1BWP40P140)                0.0251    0.0233     0.9153 r
+  IDU/io_IDNPC_jal[2] (ysyx_22050550_IDU_0)             0.0000     0.9153 r
+  PCREG/Id_jal[2] (ysyx_22050550_PCREG_0)               0.0000     0.9153 r
+  PCREG/U46/A1 (NR2D2BWP40P140)               0.0251    0.0000     0.9153 r
+  PCREG/U46/ZN (NR2D2BWP40P140)               0.0341    0.0238     0.9391 f
+  PCREG/U44/I (INVD6BWP40P140)                0.0341    0.0000     0.9391 f
+  PCREG/U44/ZN (INVD6BWP40P140)               0.0532    0.0428     0.9819 r
+  PCREG/U43/B1 (INR2D16BWP40P140)             0.0532    0.0000     0.9819 r
+  PCREG/U43/ZN (INR2D16BWP40P140)             0.0338    0.0310     1.0129 f
+  PCREG/U256/A1 (ND2D1BWP40P140)              0.0338    0.0000     1.0129 f
+  PCREG/U256/ZN (ND2D1BWP40P140)              0.0288    0.0191     1.0320 r
+  PCREG/U80/B (IOA21D1BWP40P140)              0.0288    0.0000     1.0320 r
+  PCREG/U80/ZN (IOA21D1BWP40P140)             0.0283    0.0244     1.0564 f
+  PCREG/U319/A2 (OR2D1BWP40P140)              0.0283    0.0000     1.0564 f
+  PCREG/U319/Z (OR2D1BWP40P140)               0.0159    0.0337     1.0902 f
+  PCREG/U11/A1 (AOI21D1BWP40P140)             0.0159    0.0000     1.0902 f
+  PCREG/U11/ZN (AOI21D1BWP40P140)             0.0369    0.0286     1.1187 r
+  PCREG/U312/A1 (OAI21D1BWP40P140)            0.0369    0.0000     1.1187 r
+  PCREG/U312/ZN (OAI21D1BWP40P140)            0.0438    0.0365     1.1552 f
+  PCREG/U298/A1 (AOI21D1BWP40P140)            0.0438    0.0000     1.1552 f
+  PCREG/U298/ZN (AOI21D1BWP40P140)            0.0409    0.0372     1.1925 r
+  PCREG/U283/A1 (OAI21D1BWP40P140)            0.0409    0.0000     1.1925 r
+  PCREG/U283/ZN (OAI21D1BWP40P140)            0.0445    0.0375     1.2299 f
+  PCREG/U291/A1 (AOI21D1BWP40P140)            0.0445    0.0000     1.2299 f
+  PCREG/U291/ZN (AOI21D1BWP40P140)            0.0347    0.0326     1.2626 r
+  PCREG/U278/A1 (OAI21D1BWP40P140)            0.0347    0.0000     1.2626 r
+  PCREG/U278/ZN (OAI21D1BWP40P140)            0.0358    0.0308     1.2933 f
+  PCREG/U24/A1 (AOI21D1BWP40P140)             0.0358    0.0000     1.2933 f
+  PCREG/U24/ZN (AOI21D1BWP40P140)             0.0331    0.0305     1.3238 r
+  PCREG/U271/A1 (OAI21D1BWP40P140)            0.0331    0.0000     1.3238 r
+  PCREG/U271/ZN (OAI21D1BWP40P140)            0.0505    0.0399     1.3637 f
+  PCREG/U257/A1 (AOI21D2BWP40P140)            0.0505    0.0000     1.3637 f
+  PCREG/U257/ZN (AOI21D2BWP40P140)            0.0309    0.0293     1.3931 r
+  PCREG/U326/A1 (OAI21D2BWP40P140)            0.0309    0.0000     1.3931 r
+  PCREG/U326/ZN (OAI21D2BWP40P140)            0.0327    0.0260     1.4191 f
+  PCREG/U331/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4191 f
+  PCREG/U331/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4443 r
+  PCREG/U333/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4443 r
+  PCREG/U333/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.4695 f
+  PCREG/U335/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4695 f
+  PCREG/U335/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4947 r
+  PCREG/U337/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4947 r
+  PCREG/U337/ZN (OAI21D2BWP40P140)            0.0321    0.0248     1.5195 f
+  PCREG/U223/A1 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0321    0.0000     1.5195 f
+  PCREG/U223/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0300    0.0242     1.5437 r
+  PCREG/U220/A1 (OAI21D2BWP40P140LVT)         0.0300    0.0000     1.5437 r
+  PCREG/U220/ZN (OAI21D2BWP40P140LVT)         0.0284    0.0212     1.5649 f
+  PCREG/U343/A1 (AOI21D2BWP40P140)            0.0284    0.0000     1.5649 f
+  PCREG/U343/ZN (AOI21D2BWP40P140)            0.0276    0.0240     1.5889 r
+  PCREG/U345/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.5889 r
+  PCREG/U345/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6141 f
+  PCREG/U347/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6141 f
+  PCREG/U347/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6393 r
+  PCREG/U349/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6393 r
+  PCREG/U349/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6645 f
+  PCREG/U351/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6645 f
+  PCREG/U351/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6897 r
+  PCREG/U353/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6897 r
+  PCREG/U353/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7149 f
+  PCREG/U356/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7149 f
+  PCREG/U356/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7401 r
+  PCREG/U358/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7401 r
+  PCREG/U358/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7653 f
+  PCREG/U360/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7653 f
+  PCREG/U360/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7905 r
+  PCREG/U362/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7905 r
+  PCREG/U362/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8157 f
+  PCREG/U364/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8157 f
+  PCREG/U364/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8409 r
+  PCREG/U366/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8409 r
+  PCREG/U366/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8661 f
+  PCREG/U368/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8661 f
+  PCREG/U368/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8913 r
+  PCREG/U370/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8913 r
+  PCREG/U370/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.9165 f
+  PCREG/U375/A1 (XNR2UD1BWP40P140)            0.0327    0.0000     1.9165 f
+  PCREG/U375/ZN (XNR2UD1BWP40P140)            0.0338    0.0198     1.9363 r
+  PCREG/U6/A2 (ND2D1BWP40P140)                0.0338    0.0000     1.9363 r
+  PCREG/U6/ZN (ND2D1BWP40P140)                0.0517    0.0216     1.9579 f
+  PCREG/U380/A1 (ND2D1BWP40P140)              0.0517    0.0000     1.9579 f
+  PCREG/U380/ZN (ND2D1BWP40P140)              0.0425    0.0310     1.9889 r
+  PCREG/U5/A1 (NR2D1BWP40P140)                0.0425    0.0000     1.9889 r
+  PCREG/U5/ZN (NR2D1BWP40P140)                0.0236    0.0234     2.0123 f
+  PCREG/U341/A1 (OR2D4BWP40P140)              0.0236    0.0000     2.0123 f
+  PCREG/U341/Z (OR2D4BWP40P140)               0.1308    0.0979     2.1102 f
+  PCREG/U903/S (MUX2D1BWP40P140)              0.1308    0.0000     2.1102 f
+  PCREG/U903/Z (MUX2D1BWP40P140)              0.0186    0.0660     2.1762 r
+  PCREG/npc[6] (ysyx_22050550_PCREG_0)                  0.0000     2.1762 r
+  IFU/Pc[6] (ysyx_22050550_IFU_0)                       0.0000     2.1762 r
+  IFU/U6/I (BUFFD1BWP40P140)                  0.0186    0.0000     2.1762 r
+  IFU/U6/Z (BUFFD1BWP40P140)                  0.0170    0.0285     2.2047 r
+  IFU/Cache_addr[6] (ysyx_22050550_IFU_0)               0.0000     2.2047 r
+  ICache/io_Cache_addr[6] (ysyx_22050550_ICACHE_0)      0.0000     2.2047 r
+  ICache/U142/A1 (AOI21OPTREPBD1BWP40P140)    0.0170    0.0000     2.2047 r
+  ICache/U142/ZN (AOI21OPTREPBD1BWP40P140)    0.0681    0.0417     2.2464 f
+  ICache/U392/I (BUFFD1BWP40P140)             0.0681    0.0000     2.2464 f
+  ICache/U392/Z (BUFFD1BWP40P140)             0.0171    0.0442     2.2906 f
+  ICache/U356/A2 (NR2D1BWP40P140)             0.0171    0.0000     2.2906 f
+  ICache/U356/ZN (NR2D1BWP40P140)             0.0449    0.0299     2.3205 r
+  ICache/U57/I (INVD1BWP40P140)               0.0449    0.0000     2.3205 r
+  ICache/U57/ZN (INVD1BWP40P140)              0.0244    0.0243     2.3448 f
+  ICache/U34/A2 (NR2D2BWP40P140)              0.0244    0.0000     2.3448 f
+  ICache/U34/ZN (NR2D2BWP40P140)              0.4144    0.2459     2.5907 r
+  ICache/U574/A1 (AOI22D1BWP40P140)           0.4144    0.0000     2.5907 r
+  ICache/U574/ZN (AOI22D1BWP40P140)           0.0971    0.0404     2.6311 f
+  ICache/U578/A2 (ND4D1BWP40P140)             0.0971    0.0000     2.6311 f
+  ICache/U578/ZN (ND4D1BWP40P140)             0.0301    0.0299     2.6610 r
+  ICache/U584/A1 (NR2D1BWP40P140)             0.0301    0.0000     2.6610 r
+  ICache/U584/ZN (NR2D1BWP40P140)             0.0193    0.0185     2.6795 f
+  ICache/U585/A1 (XNR2UD1BWP40P140)           0.0193    0.0000     2.6795 f
+  ICache/U585/ZN (XNR2UD1BWP40P140)           0.0635    0.0272     2.7067 f
+  ICache/U586/A4 (NR4D1BWP40P140)             0.0635    0.0000     2.7067 f
+  ICache/U586/ZN (NR4D1BWP40P140)             0.0295    0.0396     2.7463 r
+  ICache/U638/A1 (ND3D1BWP40P140)             0.0295    0.0000     2.7463 r
+  ICache/U638/ZN (ND3D1BWP40P140)             0.0381    0.0309     2.7772 f
+  ICache/U750/A2 (NR4D1BWP40P140)             0.0381    0.0000     2.7772 f
+  ICache/U750/ZN (NR4D1BWP40P140)             0.0301    0.0314     2.8086 r
+  ICache/U108/A1 (IND2D1BWP40P140)            0.0301    0.0000     2.8086 r
+  ICache/U108/ZN (IND2D1BWP40P140)            0.0186    0.0294     2.8380 r
+  ICache/U49/I0 (MUX2NUD1BWP40P140)           0.0186    0.0000     2.8380 r
+  ICache/U49/ZN (MUX2NUD1BWP40P140)           0.0597    0.0433     2.8813 f
+  ICache/U362/A1 (NR2D1BWP40P140)             0.0597    0.0000     2.8813 f
+  ICache/U362/ZN (NR2D1BWP40P140)             0.0420    0.0405     2.9218 r
+  ICache/U47/A2 (ND2D2BWP40P140)              0.0420    0.0000     2.9218 r
+  ICache/U47/ZN (ND2D2BWP40P140)              0.0778    0.0593     2.9811 f
+  ICache/U40/A1 (NR2D1BWP40P140)              0.0778    0.0000     2.9811 f
+  ICache/U40/ZN (NR2D1BWP40P140)              0.0379    0.0354     3.0164 r
+  ICache/valid_dirty_39__regvalid/wen (ysyx_22050550_Reg_1_0_312)
+                                                        0.0000     3.0164 r
+  ICache/valid_dirty_39__regvalid/U4/A1 (NR2D1BWP40P140)
+                                              0.0379    0.0000     3.0164 r
+  ICache/valid_dirty_39__regvalid/U4/ZN (NR2D1BWP40P140)
+                                              0.0165    0.0162     3.0327 f
+  ICache/valid_dirty_39__regvalid/U5/B (AOI211D1BWP40P140)
+                                              0.0165    0.0000     3.0327 f
+  ICache/valid_dirty_39__regvalid/U5/ZN (AOI211D1BWP40P140)
+                                              0.0510    0.0329     3.0656 r
+  ICache/valid_dirty_39__regvalid/dout_reg_0_/D (DFQD1BWP40P140)
+                                              0.0510    0.0000     3.0656 r
+  data arrival time                                                3.0656
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  ICache/valid_dirty_39__regvalid/dout_reg_0_/CP (DFQD1BWP40P140)
+                                                        0.0000     3.1000 r
+  library setup time                                   -0.0343     3.0657
+  data required time                                               3.0657
+  --------------------------------------------------------------------------
+  data required time                                               3.0657
+  data arrival time                                               -3.0656
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: Regif_id_valid/dout_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ICache/valid_dirty_43__regvalid/dout_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  Regif_id_valid/dout_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  Regif_id_valid/dout_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0381    0.0847     0.0847 f
+  Regif_id_valid/dout[0] (ysyx_22050550_Reg_1_0_317)    0.0000     0.0847 f
+  U539/A1 (AN2D1BWP40P140)                    0.0381    0.0000     0.0847 f
+  U539/Z (AN2D1BWP40P140)                     0.0333    0.0475     0.1321 f
+  IDU/io_IFID_inst[20] (ysyx_22050550_IDU_0)            0.0000     0.1321 f
+  IDU/U9/I (BUFFD1BWP40P140)                  0.0333    0.0000     0.1321 f
+  IDU/U9/Z (BUFFD1BWP40P140)                  0.0244    0.0397     0.1719 f
+  IDU/io_IDRegFile_raddr2[0] (ysyx_22050550_IDU_0)      0.0000     0.1719 f
+  REGS/io_IDU_raddr2[0] (ysyx_22050550_REGS_0)          0.0000     0.1719 f
+  REGS/U49/B1 (IND2D1BWP40P140LVT)            0.0244    0.0000     0.1719 f
+  REGS/U49/ZN (IND2D1BWP40P140LVT)            0.0457    0.0346     0.2065 r
+  REGS/U93/A2 (OR2D1BWP40P140)                0.0457    0.0000     0.2065 r
+  REGS/U93/Z (OR2D1BWP40P140)                 0.0118    0.0350     0.2415 r
+  REGS/U21/I (INVD1BWP40P140)                 0.0118    0.0000     0.2415 r
+  REGS/U21/ZN (INVD1BWP40P140)                0.2769    0.1594     0.4008 f
+  REGS/U2473/B2 (AOI22D1BWP40P140)            0.2769    0.0000     0.4008 f
+  REGS/U2473/ZN (AOI22D1BWP40P140)            0.0578    0.0753     0.4761 r
+  REGS/U2474/A4 (ND4D1BWP40P140)              0.0578    0.0000     0.4761 r
+  REGS/U2474/ZN (ND4D1BWP40P140)              0.0487    0.0464     0.5225 f
+  REGS/U2475/A4 (OR4D1BWP40P140)              0.0487    0.0000     0.5225 f
+  REGS/U2475/Z (OR4D1BWP40P140)               0.0160    0.0447     0.5672 f
+  REGS/io_IDU_rdata2[34] (ysyx_22050550_REGS_0)         0.0000     0.5672 f
+  IDU/io_RegFileID_rdata2[34] (ysyx_22050550_IDU_0)     0.0000     0.5672 f
+  IDU/U613/I (INVD1BWP40P140)                 0.0160    0.0000     0.5672 f
+  IDU/U613/ZN (INVD1BWP40P140)                0.0101    0.0112     0.5784 r
+  IDU/U614/I1 (MUX2NUD1BWP40P140)             0.0101    0.0000     0.5784 r
+  IDU/U614/ZN (MUX2NUD1BWP40P140)             0.0660    0.0386     0.6170 f
+  IDU/U997/A2 (XOR2UD1BWP40P140)              0.0660    0.0000     0.6170 f
+  IDU/U997/Z (XOR2UD1BWP40P140)               0.0405    0.0506     0.6675 f
+  IDU/U130/A2 (NR2D1BWP40P140)                0.0405    0.0000     0.6675 f
+  IDU/U130/ZN (NR2D1BWP40P140)                0.0213    0.0240     0.6916 r
+  IDU/U1000/A1 (ND3D1BWP40P140)               0.0213    0.0000     0.6916 r
+  IDU/U1000/ZN (ND3D1BWP40P140)               0.0328    0.0253     0.7169 f
+  IDU/U317/A2 (NR2D1BWP40P140)                0.0328    0.0000     0.7169 f
+  IDU/U317/ZN (NR2D1BWP40P140)                0.0198    0.0224     0.7393 r
+  IDU/U388/A2 (ND2D1BWP40P140)                0.0198    0.0000     0.7393 r
+  IDU/U388/ZN (ND2D1BWP40P140)                0.0193    0.0185     0.7577 f
+  IDU/U70/A2 (NR2D1BWP40P140)                 0.0193    0.0000     0.7577 f
+  IDU/U70/ZN (NR2D1BWP40P140)                 0.0172    0.0187     0.7764 r
+  IDU/U75/A1 (ND3D1BWP40P140)                 0.0172    0.0000     0.7764 r
+  IDU/U75/ZN (ND3D1BWP40P140)                 0.0547    0.0387     0.8151 f
+  IDU/U1043/B1 (MAOI22D1BWP40P140)            0.0547    0.0000     0.8151 f
+  IDU/U1043/ZN (MAOI22D1BWP40P140)            0.0214    0.0397     0.8548 f
+  IDU/U56/B (OAI21D1BWP40P140)                0.0214    0.0000     0.8548 f
+  IDU/U56/ZN (OAI21D1BWP40P140)               0.0204    0.0173     0.8721 r
+  IDU/U398/A1 (AOI21D1BWP40P140)              0.0204    0.0000     0.8721 r
+  IDU/U398/ZN (AOI21D1BWP40P140)              0.0274    0.0199     0.8920 f
+  IDU/U223/A1 (NR2D1BWP40P140)                0.0274    0.0000     0.8920 f
+  IDU/U223/ZN (NR2D1BWP40P140)                0.0251    0.0233     0.9153 r
+  IDU/io_IDNPC_jal[2] (ysyx_22050550_IDU_0)             0.0000     0.9153 r
+  PCREG/Id_jal[2] (ysyx_22050550_PCREG_0)               0.0000     0.9153 r
+  PCREG/U46/A1 (NR2D2BWP40P140)               0.0251    0.0000     0.9153 r
+  PCREG/U46/ZN (NR2D2BWP40P140)               0.0341    0.0238     0.9391 f
+  PCREG/U44/I (INVD6BWP40P140)                0.0341    0.0000     0.9391 f
+  PCREG/U44/ZN (INVD6BWP40P140)               0.0532    0.0428     0.9819 r
+  PCREG/U43/B1 (INR2D16BWP40P140)             0.0532    0.0000     0.9819 r
+  PCREG/U43/ZN (INR2D16BWP40P140)             0.0338    0.0310     1.0129 f
+  PCREG/U256/A1 (ND2D1BWP40P140)              0.0338    0.0000     1.0129 f
+  PCREG/U256/ZN (ND2D1BWP40P140)              0.0288    0.0191     1.0320 r
+  PCREG/U80/B (IOA21D1BWP40P140)              0.0288    0.0000     1.0320 r
+  PCREG/U80/ZN (IOA21D1BWP40P140)             0.0283    0.0244     1.0564 f
+  PCREG/U319/A2 (OR2D1BWP40P140)              0.0283    0.0000     1.0564 f
+  PCREG/U319/Z (OR2D1BWP40P140)               0.0159    0.0337     1.0902 f
+  PCREG/U11/A1 (AOI21D1BWP40P140)             0.0159    0.0000     1.0902 f
+  PCREG/U11/ZN (AOI21D1BWP40P140)             0.0369    0.0286     1.1187 r
+  PCREG/U312/A1 (OAI21D1BWP40P140)            0.0369    0.0000     1.1187 r
+  PCREG/U312/ZN (OAI21D1BWP40P140)            0.0438    0.0365     1.1552 f
+  PCREG/U298/A1 (AOI21D1BWP40P140)            0.0438    0.0000     1.1552 f
+  PCREG/U298/ZN (AOI21D1BWP40P140)            0.0409    0.0372     1.1925 r
+  PCREG/U283/A1 (OAI21D1BWP40P140)            0.0409    0.0000     1.1925 r
+  PCREG/U283/ZN (OAI21D1BWP40P140)            0.0445    0.0375     1.2299 f
+  PCREG/U291/A1 (AOI21D1BWP40P140)            0.0445    0.0000     1.2299 f
+  PCREG/U291/ZN (AOI21D1BWP40P140)            0.0347    0.0326     1.2626 r
+  PCREG/U278/A1 (OAI21D1BWP40P140)            0.0347    0.0000     1.2626 r
+  PCREG/U278/ZN (OAI21D1BWP40P140)            0.0358    0.0308     1.2933 f
+  PCREG/U24/A1 (AOI21D1BWP40P140)             0.0358    0.0000     1.2933 f
+  PCREG/U24/ZN (AOI21D1BWP40P140)             0.0331    0.0305     1.3238 r
+  PCREG/U271/A1 (OAI21D1BWP40P140)            0.0331    0.0000     1.3238 r
+  PCREG/U271/ZN (OAI21D1BWP40P140)            0.0505    0.0399     1.3637 f
+  PCREG/U257/A1 (AOI21D2BWP40P140)            0.0505    0.0000     1.3637 f
+  PCREG/U257/ZN (AOI21D2BWP40P140)            0.0309    0.0293     1.3931 r
+  PCREG/U326/A1 (OAI21D2BWP40P140)            0.0309    0.0000     1.3931 r
+  PCREG/U326/ZN (OAI21D2BWP40P140)            0.0327    0.0260     1.4191 f
+  PCREG/U331/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4191 f
+  PCREG/U331/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4443 r
+  PCREG/U333/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4443 r
+  PCREG/U333/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.4695 f
+  PCREG/U335/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4695 f
+  PCREG/U335/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4947 r
+  PCREG/U337/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4947 r
+  PCREG/U337/ZN (OAI21D2BWP40P140)            0.0321    0.0248     1.5195 f
+  PCREG/U223/A1 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0321    0.0000     1.5195 f
+  PCREG/U223/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0300    0.0242     1.5437 r
+  PCREG/U220/A1 (OAI21D2BWP40P140LVT)         0.0300    0.0000     1.5437 r
+  PCREG/U220/ZN (OAI21D2BWP40P140LVT)         0.0284    0.0212     1.5649 f
+  PCREG/U343/A1 (AOI21D2BWP40P140)            0.0284    0.0000     1.5649 f
+  PCREG/U343/ZN (AOI21D2BWP40P140)            0.0276    0.0240     1.5889 r
+  PCREG/U345/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.5889 r
+  PCREG/U345/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6141 f
+  PCREG/U347/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6141 f
+  PCREG/U347/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6393 r
+  PCREG/U349/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6393 r
+  PCREG/U349/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6645 f
+  PCREG/U351/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6645 f
+  PCREG/U351/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6897 r
+  PCREG/U353/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6897 r
+  PCREG/U353/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7149 f
+  PCREG/U356/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7149 f
+  PCREG/U356/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7401 r
+  PCREG/U358/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7401 r
+  PCREG/U358/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7653 f
+  PCREG/U360/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7653 f
+  PCREG/U360/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7905 r
+  PCREG/U362/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7905 r
+  PCREG/U362/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8157 f
+  PCREG/U364/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8157 f
+  PCREG/U364/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8409 r
+  PCREG/U366/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8409 r
+  PCREG/U366/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8661 f
+  PCREG/U368/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8661 f
+  PCREG/U368/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8913 r
+  PCREG/U370/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8913 r
+  PCREG/U370/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.9165 f
+  PCREG/U375/A1 (XNR2UD1BWP40P140)            0.0327    0.0000     1.9165 f
+  PCREG/U375/ZN (XNR2UD1BWP40P140)            0.0338    0.0198     1.9363 r
+  PCREG/U6/A2 (ND2D1BWP40P140)                0.0338    0.0000     1.9363 r
+  PCREG/U6/ZN (ND2D1BWP40P140)                0.0517    0.0216     1.9579 f
+  PCREG/U380/A1 (ND2D1BWP40P140)              0.0517    0.0000     1.9579 f
+  PCREG/U380/ZN (ND2D1BWP40P140)              0.0425    0.0310     1.9889 r
+  PCREG/U5/A1 (NR2D1BWP40P140)                0.0425    0.0000     1.9889 r
+  PCREG/U5/ZN (NR2D1BWP40P140)                0.0236    0.0234     2.0123 f
+  PCREG/U341/A1 (OR2D4BWP40P140)              0.0236    0.0000     2.0123 f
+  PCREG/U341/Z (OR2D4BWP40P140)               0.1308    0.0979     2.1102 f
+  PCREG/U903/S (MUX2D1BWP40P140)              0.1308    0.0000     2.1102 f
+  PCREG/U903/Z (MUX2D1BWP40P140)              0.0186    0.0660     2.1762 r
+  PCREG/npc[6] (ysyx_22050550_PCREG_0)                  0.0000     2.1762 r
+  IFU/Pc[6] (ysyx_22050550_IFU_0)                       0.0000     2.1762 r
+  IFU/U6/I (BUFFD1BWP40P140)                  0.0186    0.0000     2.1762 r
+  IFU/U6/Z (BUFFD1BWP40P140)                  0.0170    0.0285     2.2047 r
+  IFU/Cache_addr[6] (ysyx_22050550_IFU_0)               0.0000     2.2047 r
+  ICache/io_Cache_addr[6] (ysyx_22050550_ICACHE_0)      0.0000     2.2047 r
+  ICache/U142/A1 (AOI21OPTREPBD1BWP40P140)    0.0170    0.0000     2.2047 r
+  ICache/U142/ZN (AOI21OPTREPBD1BWP40P140)    0.0681    0.0417     2.2464 f
+  ICache/U392/I (BUFFD1BWP40P140)             0.0681    0.0000     2.2464 f
+  ICache/U392/Z (BUFFD1BWP40P140)             0.0171    0.0442     2.2906 f
+  ICache/U356/A2 (NR2D1BWP40P140)             0.0171    0.0000     2.2906 f
+  ICache/U356/ZN (NR2D1BWP40P140)             0.0449    0.0299     2.3205 r
+  ICache/U57/I (INVD1BWP40P140)               0.0449    0.0000     2.3205 r
+  ICache/U57/ZN (INVD1BWP40P140)              0.0244    0.0243     2.3448 f
+  ICache/U34/A2 (NR2D2BWP40P140)              0.0244    0.0000     2.3448 f
+  ICache/U34/ZN (NR2D2BWP40P140)              0.4144    0.2459     2.5907 r
+  ICache/U574/A1 (AOI22D1BWP40P140)           0.4144    0.0000     2.5907 r
+  ICache/U574/ZN (AOI22D1BWP40P140)           0.0971    0.0404     2.6311 f
+  ICache/U578/A2 (ND4D1BWP40P140)             0.0971    0.0000     2.6311 f
+  ICache/U578/ZN (ND4D1BWP40P140)             0.0301    0.0299     2.6610 r
+  ICache/U584/A1 (NR2D1BWP40P140)             0.0301    0.0000     2.6610 r
+  ICache/U584/ZN (NR2D1BWP40P140)             0.0193    0.0185     2.6795 f
+  ICache/U585/A1 (XNR2UD1BWP40P140)           0.0193    0.0000     2.6795 f
+  ICache/U585/ZN (XNR2UD1BWP40P140)           0.0635    0.0272     2.7067 f
+  ICache/U586/A4 (NR4D1BWP40P140)             0.0635    0.0000     2.7067 f
+  ICache/U586/ZN (NR4D1BWP40P140)             0.0295    0.0396     2.7463 r
+  ICache/U638/A1 (ND3D1BWP40P140)             0.0295    0.0000     2.7463 r
+  ICache/U638/ZN (ND3D1BWP40P140)             0.0381    0.0309     2.7772 f
+  ICache/U750/A2 (NR4D1BWP40P140)             0.0381    0.0000     2.7772 f
+  ICache/U750/ZN (NR4D1BWP40P140)             0.0301    0.0314     2.8086 r
+  ICache/U108/A1 (IND2D1BWP40P140)            0.0301    0.0000     2.8086 r
+  ICache/U108/ZN (IND2D1BWP40P140)            0.0186    0.0294     2.8380 r
+  ICache/U49/I0 (MUX2NUD1BWP40P140)           0.0186    0.0000     2.8380 r
+  ICache/U49/ZN (MUX2NUD1BWP40P140)           0.0597    0.0433     2.8813 f
+  ICache/U362/A1 (NR2D1BWP40P140)             0.0597    0.0000     2.8813 f
+  ICache/U362/ZN (NR2D1BWP40P140)             0.0420    0.0405     2.9218 r
+  ICache/U47/A2 (ND2D2BWP40P140)              0.0420    0.0000     2.9218 r
+  ICache/U47/ZN (ND2D2BWP40P140)              0.0778    0.0593     2.9811 f
+  ICache/U76/A1 (NR2D1BWP40P140)              0.0778    0.0000     2.9811 f
+  ICache/U76/ZN (NR2D1BWP40P140)              0.0379    0.0354     3.0164 r
+  ICache/valid_dirty_43__regvalid/wen (ysyx_22050550_Reg_1_0_438)
+                                                        0.0000     3.0164 r
+  ICache/valid_dirty_43__regvalid/U4/A1 (NR2D1BWP40P140)
+                                              0.0379    0.0000     3.0164 r
+  ICache/valid_dirty_43__regvalid/U4/ZN (NR2D1BWP40P140)
+                                              0.0165    0.0162     3.0327 f
+  ICache/valid_dirty_43__regvalid/U5/B (AOI211D1BWP40P140)
+                                              0.0165    0.0000     3.0327 f
+  ICache/valid_dirty_43__regvalid/U5/ZN (AOI211D1BWP40P140)
+                                              0.0510    0.0329     3.0656 r
+  ICache/valid_dirty_43__regvalid/dout_reg_0_/D (DFQD1BWP40P140)
+                                              0.0510    0.0000     3.0656 r
+  data arrival time                                                3.0656
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  ICache/valid_dirty_43__regvalid/dout_reg_0_/CP (DFQD1BWP40P140)
+                                                        0.0000     3.1000 r
+  library setup time                                   -0.0343     3.0657
+  data required time                                               3.0657
+  --------------------------------------------------------------------------
+  data required time                                               3.0657
+  data arrival time                                               -3.0656
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: Regif_id_valid/dout_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ICache/valid_dirty_27__regvalid/dout_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  Regif_id_valid/dout_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  Regif_id_valid/dout_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0381    0.0847     0.0847 f
+  Regif_id_valid/dout[0] (ysyx_22050550_Reg_1_0_317)    0.0000     0.0847 f
+  U539/A1 (AN2D1BWP40P140)                    0.0381    0.0000     0.0847 f
+  U539/Z (AN2D1BWP40P140)                     0.0333    0.0475     0.1321 f
+  IDU/io_IFID_inst[20] (ysyx_22050550_IDU_0)            0.0000     0.1321 f
+  IDU/U9/I (BUFFD1BWP40P140)                  0.0333    0.0000     0.1321 f
+  IDU/U9/Z (BUFFD1BWP40P140)                  0.0244    0.0397     0.1719 f
+  IDU/io_IDRegFile_raddr2[0] (ysyx_22050550_IDU_0)      0.0000     0.1719 f
+  REGS/io_IDU_raddr2[0] (ysyx_22050550_REGS_0)          0.0000     0.1719 f
+  REGS/U49/B1 (IND2D1BWP40P140LVT)            0.0244    0.0000     0.1719 f
+  REGS/U49/ZN (IND2D1BWP40P140LVT)            0.0457    0.0346     0.2065 r
+  REGS/U93/A2 (OR2D1BWP40P140)                0.0457    0.0000     0.2065 r
+  REGS/U93/Z (OR2D1BWP40P140)                 0.0118    0.0350     0.2415 r
+  REGS/U21/I (INVD1BWP40P140)                 0.0118    0.0000     0.2415 r
+  REGS/U21/ZN (INVD1BWP40P140)                0.2769    0.1594     0.4008 f
+  REGS/U2473/B2 (AOI22D1BWP40P140)            0.2769    0.0000     0.4008 f
+  REGS/U2473/ZN (AOI22D1BWP40P140)            0.0578    0.0753     0.4761 r
+  REGS/U2474/A4 (ND4D1BWP40P140)              0.0578    0.0000     0.4761 r
+  REGS/U2474/ZN (ND4D1BWP40P140)              0.0487    0.0464     0.5225 f
+  REGS/U2475/A4 (OR4D1BWP40P140)              0.0487    0.0000     0.5225 f
+  REGS/U2475/Z (OR4D1BWP40P140)               0.0160    0.0447     0.5672 f
+  REGS/io_IDU_rdata2[34] (ysyx_22050550_REGS_0)         0.0000     0.5672 f
+  IDU/io_RegFileID_rdata2[34] (ysyx_22050550_IDU_0)     0.0000     0.5672 f
+  IDU/U613/I (INVD1BWP40P140)                 0.0160    0.0000     0.5672 f
+  IDU/U613/ZN (INVD1BWP40P140)                0.0101    0.0112     0.5784 r
+  IDU/U614/I1 (MUX2NUD1BWP40P140)             0.0101    0.0000     0.5784 r
+  IDU/U614/ZN (MUX2NUD1BWP40P140)             0.0660    0.0386     0.6170 f
+  IDU/U997/A2 (XOR2UD1BWP40P140)              0.0660    0.0000     0.6170 f
+  IDU/U997/Z (XOR2UD1BWP40P140)               0.0405    0.0506     0.6675 f
+  IDU/U130/A2 (NR2D1BWP40P140)                0.0405    0.0000     0.6675 f
+  IDU/U130/ZN (NR2D1BWP40P140)                0.0213    0.0240     0.6916 r
+  IDU/U1000/A1 (ND3D1BWP40P140)               0.0213    0.0000     0.6916 r
+  IDU/U1000/ZN (ND3D1BWP40P140)               0.0328    0.0253     0.7169 f
+  IDU/U317/A2 (NR2D1BWP40P140)                0.0328    0.0000     0.7169 f
+  IDU/U317/ZN (NR2D1BWP40P140)                0.0198    0.0224     0.7393 r
+  IDU/U388/A2 (ND2D1BWP40P140)                0.0198    0.0000     0.7393 r
+  IDU/U388/ZN (ND2D1BWP40P140)                0.0193    0.0185     0.7577 f
+  IDU/U70/A2 (NR2D1BWP40P140)                 0.0193    0.0000     0.7577 f
+  IDU/U70/ZN (NR2D1BWP40P140)                 0.0172    0.0187     0.7764 r
+  IDU/U75/A1 (ND3D1BWP40P140)                 0.0172    0.0000     0.7764 r
+  IDU/U75/ZN (ND3D1BWP40P140)                 0.0547    0.0387     0.8151 f
+  IDU/U1043/B1 (MAOI22D1BWP40P140)            0.0547    0.0000     0.8151 f
+  IDU/U1043/ZN (MAOI22D1BWP40P140)            0.0214    0.0397     0.8548 f
+  IDU/U56/B (OAI21D1BWP40P140)                0.0214    0.0000     0.8548 f
+  IDU/U56/ZN (OAI21D1BWP40P140)               0.0204    0.0173     0.8721 r
+  IDU/U398/A1 (AOI21D1BWP40P140)              0.0204    0.0000     0.8721 r
+  IDU/U398/ZN (AOI21D1BWP40P140)              0.0274    0.0199     0.8920 f
+  IDU/U223/A1 (NR2D1BWP40P140)                0.0274    0.0000     0.8920 f
+  IDU/U223/ZN (NR2D1BWP40P140)                0.0251    0.0233     0.9153 r
+  IDU/io_IDNPC_jal[2] (ysyx_22050550_IDU_0)             0.0000     0.9153 r
+  PCREG/Id_jal[2] (ysyx_22050550_PCREG_0)               0.0000     0.9153 r
+  PCREG/U46/A1 (NR2D2BWP40P140)               0.0251    0.0000     0.9153 r
+  PCREG/U46/ZN (NR2D2BWP40P140)               0.0341    0.0238     0.9391 f
+  PCREG/U44/I (INVD6BWP40P140)                0.0341    0.0000     0.9391 f
+  PCREG/U44/ZN (INVD6BWP40P140)               0.0532    0.0428     0.9819 r
+  PCREG/U43/B1 (INR2D16BWP40P140)             0.0532    0.0000     0.9819 r
+  PCREG/U43/ZN (INR2D16BWP40P140)             0.0338    0.0310     1.0129 f
+  PCREG/U256/A1 (ND2D1BWP40P140)              0.0338    0.0000     1.0129 f
+  PCREG/U256/ZN (ND2D1BWP40P140)              0.0288    0.0191     1.0320 r
+  PCREG/U80/B (IOA21D1BWP40P140)              0.0288    0.0000     1.0320 r
+  PCREG/U80/ZN (IOA21D1BWP40P140)             0.0283    0.0244     1.0564 f
+  PCREG/U319/A2 (OR2D1BWP40P140)              0.0283    0.0000     1.0564 f
+  PCREG/U319/Z (OR2D1BWP40P140)               0.0159    0.0337     1.0902 f
+  PCREG/U11/A1 (AOI21D1BWP40P140)             0.0159    0.0000     1.0902 f
+  PCREG/U11/ZN (AOI21D1BWP40P140)             0.0369    0.0286     1.1187 r
+  PCREG/U312/A1 (OAI21D1BWP40P140)            0.0369    0.0000     1.1187 r
+  PCREG/U312/ZN (OAI21D1BWP40P140)            0.0438    0.0365     1.1552 f
+  PCREG/U298/A1 (AOI21D1BWP40P140)            0.0438    0.0000     1.1552 f
+  PCREG/U298/ZN (AOI21D1BWP40P140)            0.0409    0.0372     1.1925 r
+  PCREG/U283/A1 (OAI21D1BWP40P140)            0.0409    0.0000     1.1925 r
+  PCREG/U283/ZN (OAI21D1BWP40P140)            0.0445    0.0375     1.2299 f
+  PCREG/U291/A1 (AOI21D1BWP40P140)            0.0445    0.0000     1.2299 f
+  PCREG/U291/ZN (AOI21D1BWP40P140)            0.0347    0.0326     1.2626 r
+  PCREG/U278/A1 (OAI21D1BWP40P140)            0.0347    0.0000     1.2626 r
+  PCREG/U278/ZN (OAI21D1BWP40P140)            0.0358    0.0308     1.2933 f
+  PCREG/U24/A1 (AOI21D1BWP40P140)             0.0358    0.0000     1.2933 f
+  PCREG/U24/ZN (AOI21D1BWP40P140)             0.0331    0.0305     1.3238 r
+  PCREG/U271/A1 (OAI21D1BWP40P140)            0.0331    0.0000     1.3238 r
+  PCREG/U271/ZN (OAI21D1BWP40P140)            0.0505    0.0399     1.3637 f
+  PCREG/U257/A1 (AOI21D2BWP40P140)            0.0505    0.0000     1.3637 f
+  PCREG/U257/ZN (AOI21D2BWP40P140)            0.0309    0.0293     1.3931 r
+  PCREG/U326/A1 (OAI21D2BWP40P140)            0.0309    0.0000     1.3931 r
+  PCREG/U326/ZN (OAI21D2BWP40P140)            0.0327    0.0260     1.4191 f
+  PCREG/U331/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4191 f
+  PCREG/U331/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4443 r
+  PCREG/U333/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4443 r
+  PCREG/U333/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.4695 f
+  PCREG/U335/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.4695 f
+  PCREG/U335/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.4947 r
+  PCREG/U337/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.4947 r
+  PCREG/U337/ZN (OAI21D2BWP40P140)            0.0321    0.0248     1.5195 f
+  PCREG/U223/A1 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0321    0.0000     1.5195 f
+  PCREG/U223/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0300    0.0242     1.5437 r
+  PCREG/U220/A1 (OAI21D2BWP40P140LVT)         0.0300    0.0000     1.5437 r
+  PCREG/U220/ZN (OAI21D2BWP40P140LVT)         0.0284    0.0212     1.5649 f
+  PCREG/U343/A1 (AOI21D2BWP40P140)            0.0284    0.0000     1.5649 f
+  PCREG/U343/ZN (AOI21D2BWP40P140)            0.0276    0.0240     1.5889 r
+  PCREG/U345/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.5889 r
+  PCREG/U345/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6141 f
+  PCREG/U347/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6141 f
+  PCREG/U347/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6393 r
+  PCREG/U349/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6393 r
+  PCREG/U349/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.6645 f
+  PCREG/U351/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.6645 f
+  PCREG/U351/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.6897 r
+  PCREG/U353/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.6897 r
+  PCREG/U353/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7149 f
+  PCREG/U356/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7149 f
+  PCREG/U356/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7401 r
+  PCREG/U358/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7401 r
+  PCREG/U358/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.7653 f
+  PCREG/U360/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.7653 f
+  PCREG/U360/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.7905 r
+  PCREG/U362/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.7905 r
+  PCREG/U362/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8157 f
+  PCREG/U364/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8157 f
+  PCREG/U364/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8409 r
+  PCREG/U366/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8409 r
+  PCREG/U366/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.8661 f
+  PCREG/U368/A1 (AOI21D2BWP40P140)            0.0327    0.0000     1.8661 f
+  PCREG/U368/ZN (AOI21D2BWP40P140)            0.0276    0.0252     1.8913 r
+  PCREG/U370/A1 (OAI21D2BWP40P140)            0.0276    0.0000     1.8913 r
+  PCREG/U370/ZN (OAI21D2BWP40P140)            0.0327    0.0252     1.9165 f
+  PCREG/U375/A1 (XNR2UD1BWP40P140)            0.0327    0.0000     1.9165 f
+  PCREG/U375/ZN (XNR2UD1BWP40P140)            0.0338    0.0198     1.9363 r
+  PCREG/U6/A2 (ND2D1BWP40P140)                0.0338    0.0000     1.9363 r
+  PCREG/U6/ZN (ND2D1BWP40P140)                0.0517    0.0216     1.9579 f
+  PCREG/U380/A1 (ND2D1BWP40P140)              0.0517    0.0000     1.9579 f
+  PCREG/U380/ZN (ND2D1BWP40P140)              0.0425    0.0310     1.9889 r
+  PCREG/U5/A1 (NR2D1BWP40P140)                0.0425    0.0000     1.9889 r
+  PCREG/U5/ZN (NR2D1BWP40P140)                0.0236    0.0234     2.0123 f
+  PCREG/U341/A1 (OR2D4BWP40P140)              0.0236    0.0000     2.0123 f
+  PCREG/U341/Z (OR2D4BWP40P140)               0.1308    0.0979     2.1102 f
+  PCREG/U903/S (MUX2D1BWP40P140)              0.1308    0.0000     2.1102 f
+  PCREG/U903/Z (MUX2D1BWP40P140)              0.0186    0.0660     2.1762 r
+  PCREG/npc[6] (ysyx_22050550_PCREG_0)                  0.0000     2.1762 r
+  IFU/Pc[6] (ysyx_22050550_IFU_0)                       0.0000     2.1762 r
+  IFU/U6/I (BUFFD1BWP40P140)                  0.0186    0.0000     2.1762 r
+  IFU/U6/Z (BUFFD1BWP40P140)                  0.0170    0.0285     2.2047 r
+  IFU/Cache_addr[6] (ysyx_22050550_IFU_0)               0.0000     2.2047 r
+  ICache/io_Cache_addr[6] (ysyx_22050550_ICACHE_0)      0.0000     2.2047 r
+  ICache/U142/A1 (AOI21OPTREPBD1BWP40P140)    0.0170    0.0000     2.2047 r
+  ICache/U142/ZN (AOI21OPTREPBD1BWP40P140)    0.0681    0.0417     2.2464 f
+  ICache/U392/I (BUFFD1BWP40P140)             0.0681    0.0000     2.2464 f
+  ICache/U392/Z (BUFFD1BWP40P140)             0.0171    0.0442     2.2906 f
+  ICache/U356/A2 (NR2D1BWP40P140)             0.0171    0.0000     2.2906 f
+  ICache/U356/ZN (NR2D1BWP40P140)             0.0449    0.0299     2.3205 r
+  ICache/U57/I (INVD1BWP40P140)               0.0449    0.0000     2.3205 r
+  ICache/U57/ZN (INVD1BWP40P140)              0.0244    0.0243     2.3448 f
+  ICache/U34/A2 (NR2D2BWP40P140)              0.0244    0.0000     2.3448 f
+  ICache/U34/ZN (NR2D2BWP40P140)              0.4144    0.2459     2.5907 r
+  ICache/U574/A1 (AOI22D1BWP40P140)           0.4144    0.0000     2.5907 r
+  ICache/U574/ZN (AOI22D1BWP40P140)           0.0971    0.0404     2.6311 f
+  ICache/U578/A2 (ND4D1BWP40P140)             0.0971    0.0000     2.6311 f
+  ICache/U578/ZN (ND4D1BWP40P140)             0.0301    0.0299     2.6610 r
+  ICache/U584/A1 (NR2D1BWP40P140)             0.0301    0.0000     2.6610 r
+  ICache/U584/ZN (NR2D1BWP40P140)             0.0193    0.0185     2.6795 f
+  ICache/U585/A1 (XNR2UD1BWP40P140)           0.0193    0.0000     2.6795 f
+  ICache/U585/ZN (XNR2UD1BWP40P140)           0.0635    0.0272     2.7067 f
+  ICache/U586/A4 (NR4D1BWP40P140)             0.0635    0.0000     2.7067 f
+  ICache/U586/ZN (NR4D1BWP40P140)             0.0295    0.0396     2.7463 r
+  ICache/U638/A1 (ND3D1BWP40P140)             0.0295    0.0000     2.7463 r
+  ICache/U638/ZN (ND3D1BWP40P140)             0.0381    0.0309     2.7772 f
+  ICache/U750/A2 (NR4D1BWP40P140)             0.0381    0.0000     2.7772 f
+  ICache/U750/ZN (NR4D1BWP40P140)             0.0301    0.0314     2.8086 r
+  ICache/U108/A1 (IND2D1BWP40P140)            0.0301    0.0000     2.8086 r
+  ICache/U108/ZN (IND2D1BWP40P140)            0.0186    0.0294     2.8380 r
+  ICache/U49/I0 (MUX2NUD1BWP40P140)           0.0186    0.0000     2.8380 r
+  ICache/U49/ZN (MUX2NUD1BWP40P140)           0.0597    0.0433     2.8813 f
+  ICache/U362/A1 (NR2D1BWP40P140)             0.0597    0.0000     2.8813 f
+  ICache/U362/ZN (NR2D1BWP40P140)             0.0420    0.0405     2.9218 r
+  ICache/U47/A2 (ND2D2BWP40P140)              0.0420    0.0000     2.9218 r
+  ICache/U47/ZN (ND2D2BWP40P140)              0.0778    0.0593     2.9811 f
+  ICache/U81/A1 (NR2D1BWP40P140)              0.0778    0.0000     2.9811 f
+  ICache/U81/ZN (NR2D1BWP40P140)              0.0379    0.0354     3.0164 r
+  ICache/valid_dirty_27__regvalid/wen (ysyx_22050550_Reg_1_0_440)
+                                                        0.0000     3.0164 r
+  ICache/valid_dirty_27__regvalid/U4/A1 (NR2D1BWP40P140)
+                                              0.0379    0.0000     3.0164 r
+  ICache/valid_dirty_27__regvalid/U4/ZN (NR2D1BWP40P140)
+                                              0.0165    0.0162     3.0327 f
+  ICache/valid_dirty_27__regvalid/U5/B (AOI211D1BWP40P140)
+                                              0.0165    0.0000     3.0327 f
+  ICache/valid_dirty_27__regvalid/U5/ZN (AOI211D1BWP40P140)
+                                              0.0510    0.0329     3.0656 r
+  ICache/valid_dirty_27__regvalid/dout_reg_0_/D (DFQD1BWP40P140)
+                                              0.0510    0.0000     3.0656 r
+  data arrival time                                                3.0656
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  ICache/valid_dirty_27__regvalid/dout_reg_0_/CP (DFQD1BWP40P140)
+                                                        0.0000     3.1000 r
+  library setup time                                   -0.0343     3.0657
+  data required time                                               3.0657
+  --------------------------------------------------------------------------
+  data required time                                               3.0657
+  data arrival time                                               -3.0656
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: Regidex_valid/dout_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: EXU/Multi/ProdReg/dout_reg_125_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  Regidex_valid/dout_reg_0_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  Regidex_valid/dout_reg_0_/Q (DFQD1BWP40P140)
+                                              0.0252    0.0848     0.0848 f
+  Regidex_valid/dout[0] (ysyx_22050550_Reg_1_0_412)     0.0000     0.0848 f
+  EXU/io_id_valid (ysyx_22050550_EXU_0)                 0.0000     0.0848 f
+  EXU/U38/I (INVD1BWP40P140)                  0.0252    0.0000     0.0848 f
+  EXU/U38/ZN (INVD1BWP40P140)                 0.0204    0.0205     0.1053 r
+  EXU/U608/A1 (NR2D1BWP40P140)                0.0204    0.0000     0.1053 r
+  EXU/U608/ZN (NR2D1BWP40P140)                0.0175    0.0123     0.1176 f
+  EXU/U39/A1 (INR2D1BWP40P140)                0.0175    0.0000     0.1176 f
+  EXU/U39/ZN (INR2D1BWP40P140)                0.0157    0.0286     0.1462 f
+  EXU/U1804/I (BUFFD1BWP40P140)               0.0157    0.0000     0.1462 f
+  EXU/U1804/Z (BUFFD1BWP40P140)               0.2965    0.1842     0.3304 f
+  EXU/U1807/A1 (AN2D1BWP40P140)               0.2965    0.0000     0.3304 f
+  EXU/U1807/Z (AN2D1BWP40P140)                0.0217    0.0791     0.4095 f
+  EXU/Multi/io_Exu_Multiplier[7] (ysyx_22050550_Multi_0)
+                                                        0.0000     0.4095 f
+  EXU/Multi/U44/I0 (MUX2NUD1BWP40P140)        0.0217    0.0000     0.4095 f
+  EXU/Multi/U44/ZN (MUX2NUD1BWP40P140)        0.0322    0.0245     0.4340 r
+  EXU/Multi/U46/I0 (MUX2NUD1BWP40P140)        0.0322    0.0000     0.4340 r
+  EXU/Multi/U46/ZN (MUX2NUD1BWP40P140)        0.0403    0.0312     0.4652 f
+  EXU/Multi/U52/A1 (AOI21D1BWP40P140)         0.0403    0.0000     0.4652 f
+  EXU/Multi/U52/ZN (AOI21D1BWP40P140)         0.0305    0.0248     0.4900 r
+  EXU/Multi/U16/A1 (OAI21D1BWP40P140)         0.0305    0.0000     0.4900 r
+  EXU/Multi/U16/ZN (OAI21D1BWP40P140)         0.0312    0.0234     0.5134 f
+  EXU/Multi/U57/B (AOI21D1BWP40P140)          0.0312    0.0000     0.5134 f
+  EXU/Multi/U57/ZN (AOI21D1BWP40P140)         0.0266    0.0271     0.5405 r
+  EXU/Multi/U7/I0 (MUX2NUD1BWP40P140)         0.0266    0.0000     0.5405 r
+  EXU/Multi/U7/ZN (MUX2NUD1BWP40P140)         0.0463    0.0369     0.5774 f
+  EXU/Multi/ProdGen/io_Choose_BSub (ysyx_22050550_PartProductGen_0)
+                                                        0.0000     0.5774 f
+  EXU/Multi/ProdGen/U14/A1 (XNR2UD1BWP40P140LVT)
+                                              0.0463    0.0000     0.5774 f
+  EXU/Multi/ProdGen/U14/ZN (XNR2UD1BWP40P140LVT)
+                                              0.0617    0.0334     0.6108 r
+  EXU/Multi/ProdGen/U405/I (INVD2BWP40P140)   0.0617    0.0000     0.6108 r
+  EXU/Multi/ProdGen/U405/ZN (INVD2BWP40P140)
+                                              0.1491    0.1061     0.7169 f
+  EXU/Multi/ProdGen/U345/A1 (AOI22D1BWP40P140)
+                                              0.1491    0.0000     0.7169 f
+  EXU/Multi/ProdGen/U345/ZN (AOI22D1BWP40P140)
+                                              0.0471    0.0465     0.7634 r
+  EXU/Multi/ProdGen/U1019/A2 (AN3D2BWP40P140)
+                                              0.0471    0.0000     0.7634 r
+  EXU/Multi/ProdGen/U1019/Z (AN3D2BWP40P140)
+                                              0.0164    0.0526     0.8160 r
+  EXU/Multi/ProdGen/U49/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0164    0.0000     0.8160 r
+  EXU/Multi/ProdGen/U49/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0320    0.0193     0.8353 f
+  EXU/Multi/ProdGen/U378/CI (FA1D1BWP40P140)
+                                              0.0320    0.0000     0.8353 f
+  EXU/Multi/ProdGen/U378/S (FA1D1BWP40P140)   0.0255    0.0747     0.9101 f
+  EXU/Multi/ProdGen/U350/A1 (NR2D1BWP40P140)
+                                              0.0255    0.0000     0.9101 f
+  EXU/Multi/ProdGen/U350/ZN (NR2D1BWP40P140)
+                                              0.0248    0.0228     0.9329 r
+  EXU/Multi/ProdGen/U369/A1 (OAI21D1BWP40P140)
+                                              0.0248    0.0000     0.9329 r
+  EXU/Multi/ProdGen/U369/ZN (OAI21D1BWP40P140)
+                                              0.0366    0.0281     0.9610 f
+  EXU/Multi/ProdGen/U39/A1 (AOI21D1BWP40P140)
+                                              0.0366    0.0000     0.9610 f
+  EXU/Multi/ProdGen/U39/ZN (AOI21D1BWP40P140)
+                                              0.0465    0.0394     1.0004 r
+  EXU/Multi/ProdGen/U392/A1 (OAI21D2BWP40P140)
+                                              0.0465    0.0000     1.0004 r
+  EXU/Multi/ProdGen/U392/ZN (OAI21D2BWP40P140)
+                                              0.0305    0.0264     1.0268 f
+  EXU/Multi/ProdGen/U714/A1 (AOI21D1BWP40P140LVT)
+                                              0.0305    0.0000     1.0268 f
+  EXU/Multi/ProdGen/U714/ZN (AOI21D1BWP40P140LVT)
+                                              0.0397    0.0322     1.0590 r
+  EXU/Multi/ProdGen/U46/A1 (OAI21D2BWP40P140LVT)
+                                              0.0397    0.0000     1.0590 r
+  EXU/Multi/ProdGen/U46/ZN (OAI21D2BWP40P140LVT)
+                                              0.0258    0.0204     1.0794 f
+  EXU/Multi/ProdGen/U40/A1 (AOI21D1BWP40P140)
+                                              0.0258    0.0000     1.0794 f
+  EXU/Multi/ProdGen/U40/ZN (AOI21D1BWP40P140)
+                                              0.0382    0.0318     1.1112 r
+  EXU/Multi/ProdGen/U1014/A1 (OAI21D1BWP40P140)
+                                              0.0382    0.0000     1.1112 r
+  EXU/Multi/ProdGen/U1014/ZN (OAI21D1BWP40P140)
+                                              0.0496    0.0402     1.1515 f
+  EXU/Multi/ProdGen/U45/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0496    0.0000     1.1515 f
+  EXU/Multi/ProdGen/U45/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0332     1.1846 r
+  EXU/Multi/ProdGen/U461/A1 (OAI21D2BWP40P140)
+                                              0.0340    0.0000     1.1846 r
+  EXU/Multi/ProdGen/U461/ZN (OAI21D2BWP40P140)
+                                              0.0322    0.0264     1.2110 f
+  EXU/Multi/ProdGen/U44/A1 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0322    0.0000     1.2110 f
+  EXU/Multi/ProdGen/U44/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0300    0.0243     1.2353 r
+  EXU/Multi/ProdGen/U43/A1 (OAI21D2BWP40P140LVT)
+                                              0.0300    0.0000     1.2353 r
+  EXU/Multi/ProdGen/U43/ZN (OAI21D2BWP40P140LVT)
+                                              0.0279    0.0207     1.2560 f
+  EXU/Multi/ProdGen/U496/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0279    0.0000     1.2560 f
+  EXU/Multi/ProdGen/U496/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0286     1.2845 r
+  EXU/Multi/ProdGen/U507/A1 (OAI21D2BWP40P140)
+                                              0.0340    0.0000     1.2845 r
+  EXU/Multi/ProdGen/U507/ZN (OAI21D2BWP40P140)
+                                              0.0327    0.0267     1.3113 f
+  EXU/Multi/ProdGen/U807/A1 (AOI21D2BWP40P140)
+                                              0.0327    0.0000     1.3113 f
+  EXU/Multi/ProdGen/U807/ZN (AOI21D2BWP40P140)
+                                              0.0276    0.0253     1.3365 r
+  EXU/Multi/ProdGen/U42/A1 (OAI21D2BWP40P140)
+                                              0.0276    0.0000     1.3365 r
+  EXU/Multi/ProdGen/U42/ZN (OAI21D2BWP40P140)
+                                              0.0319    0.0246     1.3611 f
+  EXU/Multi/ProdGen/U542/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0319    0.0000     1.3611 f
+  EXU/Multi/ProdGen/U542/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0296     1.3907 r
+  EXU/Multi/ProdGen/U554/A1 (OAI21D2BWP40P140)
+                                              0.0340    0.0000     1.3907 r
+  EXU/Multi/ProdGen/U554/ZN (OAI21D2BWP40P140)
+                                              0.0327    0.0267     1.4175 f
+  EXU/Multi/ProdGen/U795/A1 (AOI21D2BWP40P140)
+                                              0.0327    0.0000     1.4175 f
+  EXU/Multi/ProdGen/U795/ZN (AOI21D2BWP40P140)
+                                              0.0279    0.0255     1.4429 r
+  EXU/Multi/ProdGen/U41/A1 (OAI21D2BWP40P140LVT)
+                                              0.0279    0.0000     1.4429 r
+  EXU/Multi/ProdGen/U41/ZN (OAI21D2BWP40P140LVT)
+                                              0.0258    0.0188     1.4617 f
+  EXU/Multi/ProdGen/U102/A1 (AOI21D1BWP40P140)
+                                              0.0258    0.0000     1.4617 f
+  EXU/Multi/ProdGen/U102/ZN (AOI21D1BWP40P140)
+                                              0.0385    0.0320     1.4937 r
+  EXU/Multi/ProdGen/U13/A1 (OAI21D1BWP40P140LVT)
+                                              0.0385    0.0000     1.4937 r
+  EXU/Multi/ProdGen/U13/ZN (OAI21D1BWP40P140LVT)
+                                              0.0436    0.0341     1.5278 f
+  EXU/Multi/ProdGen/U856/A1 (AOI21D2BWP40P140)
+                                              0.0436    0.0000     1.5278 f
+  EXU/Multi/ProdGen/U856/ZN (AOI21D2BWP40P140)
+                                              0.0295    0.0278     1.5556 r
+  EXU/Multi/ProdGen/U621/A1 (OAI21D2BWP40P140)
+                                              0.0295    0.0000     1.5556 r
+  EXU/Multi/ProdGen/U621/ZN (OAI21D2BWP40P140)
+                                              0.0293    0.0232     1.5788 f
+  EXU/Multi/ProdGen/U634/A1 (AOI21D1BWP40P140)
+                                              0.0293    0.0000     1.5788 f
+  EXU/Multi/ProdGen/U634/ZN (AOI21D1BWP40P140)
+                                              0.0461    0.0375     1.6163 r
+  EXU/Multi/ProdGen/U9/A1 (OAI21D2BWP40P140LVT)
+                                              0.0461    0.0000     1.6163 r
+  EXU/Multi/ProdGen/U9/ZN (OAI21D2BWP40P140LVT)
+                                              0.0296    0.0235     1.6398 f
+  EXU/Multi/ProdGen/U854/A1 (AOI21D2BWP40P140)
+                                              0.0296    0.0000     1.6398 f
+  EXU/Multi/ProdGen/U854/ZN (AOI21D2BWP40P140)
+                                              0.0276    0.0244     1.6642 r
+  EXU/Multi/ProdGen/U668/A1 (OAI21D2BWP40P140)
+                                              0.0276    0.0000     1.6642 r
+  EXU/Multi/ProdGen/U668/ZN (OAI21D2BWP40P140)
+                                              0.0319    0.0246     1.6888 f
+  EXU/Multi/ProdGen/U680/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0319    0.0000     1.6888 f
+  EXU/Multi/ProdGen/U680/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0296     1.7184 r
+  EXU/Multi/ProdGen/U692/A1 (OAI21D2BWP40P140)
+                                              0.0340    0.0000     1.7184 r
+  EXU/Multi/ProdGen/U692/ZN (OAI21D2BWP40P140)
+                                              0.0327    0.0267     1.7451 f
+  EXU/Multi/ProdGen/U750/A1 (AOI21D2BWP40P140)
+                                              0.0327    0.0000     1.7451 f
+  EXU/Multi/ProdGen/U750/ZN (AOI21D2BWP40P140)
+                                              0.0276    0.0253     1.7704 r
+  EXU/Multi/ProdGen/U7/A1 (OAI21D2BWP40P140)
+                                              0.0276    0.0000     1.7704 r
+  EXU/Multi/ProdGen/U7/ZN (OAI21D2BWP40P140)
+                                              0.0293    0.0228     1.7932 f
+  EXU/Multi/ProdGen/U727/A1 (AOI21D1BWP40P140)
+                                              0.0293    0.0000     1.7932 f
+  EXU/Multi/ProdGen/U727/ZN (AOI21D1BWP40P140)
+                                              0.0455    0.0371     1.8303 r
+  EXU/Multi/ProdGen/U738/A1 (OAI21D2BWP40P140)
+                                              0.0455    0.0000     1.8303 r
+  EXU/Multi/ProdGen/U738/ZN (OAI21D2BWP40P140)
+                                              0.0335    0.0288     1.8591 f
+  EXU/Multi/ProdGen/U646/A1 (AOI21D2BWP40P140)
+                                              0.0335    0.0000     1.8591 f
+  EXU/Multi/ProdGen/U646/ZN (AOI21D2BWP40P140)
+                                              0.0276    0.0255     1.8846 r
+  EXU/Multi/ProdGen/U6/A1 (OAI21D2BWP40P140)
+                                              0.0276    0.0000     1.8846 r
+  EXU/Multi/ProdGen/U6/ZN (OAI21D2BWP40P140)
+                                              0.0293    0.0228     1.9074 f
+  EXU/Multi/ProdGen/U47/A1 (AOI21D1BWP40P140)
+                                              0.0293    0.0000     1.9074 f
+  EXU/Multi/ProdGen/U47/ZN (AOI21D1BWP40P140)
+                                              0.0455    0.0371     1.9445 r
+  EXU/Multi/ProdGen/U785/A1 (OAI21D2BWP40P140)
+                                              0.0455    0.0000     1.9445 r
+  EXU/Multi/ProdGen/U785/ZN (OAI21D2BWP40P140)
+                                              0.0335    0.0288     1.9733 f
+  EXU/Multi/ProdGen/U859/A1 (AOI21D2BWP40P140)
+                                              0.0335    0.0000     1.9733 f
+  EXU/Multi/ProdGen/U859/ZN (AOI21D2BWP40P140)
+                                              0.0279    0.0257     1.9990 r
+  EXU/Multi/ProdGen/U3/A1 (OAI21D2BWP40P140LVT)
+                                              0.0279    0.0000     1.9990 r
+  EXU/Multi/ProdGen/U3/ZN (OAI21D2BWP40P140LVT)
+                                              0.0258    0.0188     2.0177 f
+  EXU/Multi/ProdGen/U48/A1 (AOI21D1BWP40P140)
+                                              0.0258    0.0000     2.0177 f
+  EXU/Multi/ProdGen/U48/ZN (AOI21D1BWP40P140)
+                                              0.0382    0.0318     2.0495 r
+  EXU/Multi/ProdGen/U1021/A1 (OAI21D1BWP40P140)
+                                              0.0382    0.0000     2.0495 r
+  EXU/Multi/ProdGen/U1021/ZN (OAI21D1BWP40P140)
+                                              0.0365    0.0315     2.0810 f
+  EXU/Multi/ProdGen/U1020/A1 (AOI21D1BWP40P140)
+                                              0.0365    0.0000     2.0810 f
+  EXU/Multi/ProdGen/U1020/ZN (AOI21D1BWP40P140)
+                                              0.0332    0.0306     2.1117 r
+  EXU/Multi/ProdGen/U105/A1 (OAI21D1BWP40P140)
+                                              0.0332    0.0000     2.1117 r
+  EXU/Multi/ProdGen/U105/ZN (OAI21D1BWP40P140)
+                                              0.0358    0.0304     2.1421 f
+  EXU/Multi/ProdGen/U575/A1 (AOI21D1BWP40P140)
+                                              0.0358    0.0000     2.1421 f
+  EXU/Multi/ProdGen/U575/ZN (AOI21D1BWP40P140)
+                                              0.0393    0.0348     2.1769 r
+  EXU/Multi/ProdGen/U530/A2 (MOAI22D1BWP40P140)
+                                              0.0393    0.0000     2.1769 r
+  EXU/Multi/ProdGen/U530/ZN (MOAI22D1BWP40P140)
+                                              0.0392    0.0347     2.2116 f
+  EXU/Multi/ProdGen/U1016/CI (FA1D1BWP40P140)
+                                              0.0392    0.0000     2.2116 f
+  EXU/Multi/ProdGen/U1016/CO (FA1D1BWP40P140)
+                                              0.0228    0.0555     2.2671 f
+  EXU/Multi/ProdGen/U1017/CI (FA1D1BWP40P140)
+                                              0.0228    0.0000     2.2671 f
+  EXU/Multi/ProdGen/U1017/CO (FA1D1BWP40P140)
+                                              0.0223    0.0497     2.3168 f
+  EXU/Multi/ProdGen/U1015/CI (FA1D1BWP40P140)
+                                              0.0223    0.0000     2.3168 f
+  EXU/Multi/ProdGen/U1015/CO (FA1D1BWP40P140)
+                                              0.0223    0.0495     2.3663 f
+  EXU/Multi/ProdGen/U950/CI (FA1D1BWP40P140)
+                                              0.0223    0.0000     2.3663 f
+  EXU/Multi/ProdGen/U950/CO (FA1D1BWP40P140)
+                                              0.0223    0.0495     2.4158 f
+  EXU/Multi/ProdGen/U951/CI (FA1D1BWP40P140)
+                                              0.0223    0.0000     2.4158 f
+  EXU/Multi/ProdGen/U951/CO (FA1D1BWP40P140)
+                                              0.0223    0.0495     2.4653 f
+  EXU/Multi/ProdGen/U858/CI (FA1D1BWP40P140)
+                                              0.0223    0.0000     2.4653 f
+  EXU/Multi/ProdGen/U858/CO (FA1D1BWP40P140)
+                                              0.0223    0.0495     2.5148 f
+  EXU/Multi/ProdGen/U857/CI (FA1D1BWP40P140)
+                                              0.0223    0.0000     2.5148 f
+  EXU/Multi/ProdGen/U857/CO (FA1D1BWP40P140)
+                                              0.0253    0.0522     2.5671 f
+  EXU/Multi/ProdGen/U1029/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0253    0.0000     2.5671 f
+  EXU/Multi/ProdGen/U1029/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0147    0.0162     2.5833 r
+  EXU/Multi/ProdGen/U184/A1 (ND2D1BWP40P140)
+                                              0.0147    0.0000     2.5833 r
+  EXU/Multi/ProdGen/U184/ZN (ND2D1BWP40P140)
+                                              0.0282    0.0226     2.6058 f
+  EXU/Multi/ProdGen/U855/CI (FA1D1BWP40P140)
+                                              0.0282    0.0000     2.6058 f
+  EXU/Multi/ProdGen/U855/CO (FA1D1BWP40P140)
+                                              0.0255    0.0544     2.6603 f
+  EXU/Multi/ProdGen/U1035/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0255    0.0000     2.6603 f
+  EXU/Multi/ProdGen/U1035/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0142    0.0159     2.6761 r
+  EXU/Multi/ProdGen/U1034/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0142    0.0000     2.6761 r
+  EXU/Multi/ProdGen/U1034/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0263    0.0209     2.6970 f
+  EXU/Multi/ProdGen/U1018/CI (FA1D1BWP40P140)
+                                              0.0263    0.0000     2.6970 f
+  EXU/Multi/ProdGen/U1018/CO (FA1D1BWP40P140)
+                                              0.0254    0.0537     2.7507 f
+  EXU/Multi/ProdGen/U1042/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0254    0.0000     2.7507 f
+  EXU/Multi/ProdGen/U1042/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0177    0.0185     2.7693 r
+  EXU/Multi/ProdGen/U1040/A1 (ND2OPTIBD2BWP40P140)
+                                              0.0177    0.0000     2.7693 r
+  EXU/Multi/ProdGen/U1040/ZN (ND2OPTIBD2BWP40P140)
+                                              0.0188    0.0158     2.7851 f
+  EXU/Multi/ProdGen/U960/CI (FA1D1BWP40P140)
+                                              0.0188    0.0000     2.7851 f
+  EXU/Multi/ProdGen/U960/CO (FA1D1BWP40P140)
+                                              0.0222    0.0482     2.8333 f
+  EXU/Multi/ProdGen/U990/CI (FA1D1BWP40P140)
+                                              0.0222    0.0000     2.8333 f
+  EXU/Multi/ProdGen/U990/CO (FA1D1BWP40P140)
+                                              0.0223    0.0495     2.8827 f
+  EXU/Multi/ProdGen/U1013/CI (FA1D1BWP40P140)
+                                              0.0223    0.0000     2.8827 f
+  EXU/Multi/ProdGen/U1013/CO (FA1D1BWP40P140)
+                                              0.0253    0.0522     2.9350 f
+  EXU/Multi/ProdGen/U1024/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0253    0.0000     2.9350 f
+  EXU/Multi/ProdGen/U1024/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0142    0.0158     2.9508 r
+  EXU/Multi/ProdGen/U1023/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0142    0.0000     2.9508 r
+  EXU/Multi/ProdGen/U1023/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0186    0.0161     2.9669 f
+  EXU/Multi/ProdGen/U991/A2 (XOR2UD1BWP40P140)
+                                              0.0186    0.0000     2.9669 f
+  EXU/Multi/ProdGen/U991/Z (XOR2UD1BWP40P140)
+                                              0.0334    0.0268     2.9937 r
+  EXU/Multi/ProdGen/io_Choose_PartProdOut[125] (ysyx_22050550_PartProductGen_0)
+                                                        0.0000     2.9937 r
+  EXU/Multi/U208/A1 (INR2D1BWP40P140)         0.0334    0.0000     2.9937 r
+  EXU/Multi/U208/ZN (INR2D1BWP40P140)         0.0623    0.0349     3.0286 r
+  EXU/Multi/ProdReg/din[125] (ysyx_22050550_Reg_128_2)
+                                                        0.0000     3.0286 r
+  EXU/Multi/ProdReg/U130/A1 (AO22D1BWP40P140)
+                                              0.0623    0.0000     3.0286 r
+  EXU/Multi/ProdReg/U130/Z (AO22D1BWP40P140)
+                                              0.0240    0.0424     3.0710 r
+  EXU/Multi/ProdReg/dout_reg_125_/D (DFQD1BWP40P140)
+                                              0.0240    0.0000     3.0710 r
+  data arrival time                                                3.0710
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  EXU/Multi/ProdReg/dout_reg_125_/CP (DFQD1BWP40P140)   0.0000     3.1000 r
+  library setup time                                   -0.0287     3.0713
+  data required time                                               3.0713
+  --------------------------------------------------------------------------
+  data required time                                               3.0713
+  data arrival time                                               -3.0710
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0004
+
+
+1
