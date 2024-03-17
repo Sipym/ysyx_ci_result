@@ -1,0 +1,26 @@
+
+dut: ysyx_22050019
+
+################
+#vcs compile log
+################
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050019.v, 1478
+  Second declaration for identifier 'axi_lsu_dcache_ar_valid' ignored
+  Identifier 'axi_lsu_dcache_ar_valid' previously declared as wire. 
+  [../cpu/ysyx_22050019.v, 974]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050019.v, 1479
+  Second declaration for identifier 'axi_lsu_dcache_ar_addr' ignored
+  Identifier 'axi_lsu_dcache_ar_addr' previously declared as wire. 
+  [../cpu/ysyx_22050019.v, 975]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050019.v, 1480
+  Second declaration for identifier 'axi_lsu_dcache_r_ready' ignored
+  Identifier 'axi_lsu_dcache_r_ready' previously declared as wire. 
+  [../cpu/ysyx_22050019.v, 976]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050019.v, 1482
+  Second declaration for identifier 'axi_lsu_dcache_r_resp' ignored
+  Identifier 'axi_lsu_dcache_r_resp' previously declared as wire. 
+  [../cpu/ysyx_22050019.v, 978]
