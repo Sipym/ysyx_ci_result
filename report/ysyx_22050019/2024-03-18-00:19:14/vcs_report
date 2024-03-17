@@ -1,0 +1,276 @@
+
+dut: ysyx_22050019
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello test in flash pass!!
+hello test in mem fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 00:52 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to ram...
+$finish called from file "../tb/asic_system.v", line 417.
+$finish at simulation time 40000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 40000000000 ps
+CPU Time:     54.480 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 00:53:08 2024
+======================================================
+
+hello test in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 00:53 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+$finish called from file "../tb/asic_system.v", line 419.
+$finish at simulation time 40000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 40000000000 ps
+CPU Time:     55.320 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 00:54:04 2024
+======================================================
+
+memtest test in flash fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 00:54 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+START TEST...
+$finish called from file "../tb/asic_system.v", line 421.
+$finish at simulation time 600000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 600000000000 ps
+CPU Time:    753.210 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 01:06:37 2024
+======================================================
+
+memtest test in mem fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 01:06 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to ram...
+$finish called from file "../tb/asic_system.v", line 423.
+$finish at simulation time 120000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 120000000000 ps
+CPU Time:    153.040 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 01:09:11 2024
+======================================================
+
+memtest test in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 01:09 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+$finish called from file "../tb/asic_system.v", line 425.
+$finish at simulation time 60000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 60000000000 ps
+CPU Time:     78.730 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 01:10:30 2024
+======================================================
+
+rtthread test in flash fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 01:10 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+$finish called from file "../tb/asic_system.v", line 428.
+$finish at simulation time 1600000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1600000000000 ps
+CPU Time:   2054.840 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 01:44:45 2024
+======================================================
+
+rtthread test in mem fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 01:44 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to ram...
+$finish called from file "../tb/asic_system.v", line 430.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    308.960 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 01:49:54 2024
+======================================================
+
+rtthread test in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 01:49 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to sdram
+$finish called from file "../tb/asic_system.v", line 432.
+$finish at simulation time 200000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000000000 ps
+CPU Time:    263.510 seconds;       Data structure size:  38.5Mb
+Mon Mar 18 01:54:18 2024
+======================================================
+
