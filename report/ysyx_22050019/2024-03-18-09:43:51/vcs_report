@@ -1,0 +1,52 @@
+
+dut: ysyx_22050019
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello test in mem fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Mar 18 10:13 2024
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+*Verdi* Loading libsscore_vcs202012.so
+FSDB Dumper for VCS, Release Verdi_R-2020.12, Linux x86_64/64bit, 11/19/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'asic_top.fsdb'
+*Verdi* : Begin traversing the scope (asic_system.u0_asic_top.u0_soc_top), layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+jump to ram...
+$finish called from file "../tb/asic_system.v", line 417.
+$finish at simulation time 40000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 40000000000 ps
+CPU Time:     93.120 seconds;       Data structure size:  38.6Mb
+Mon Mar 18 10:14:28 2024
+======================================================
+
