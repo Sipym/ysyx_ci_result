@@ -1,0 +1,833 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22050019
+freq: 800
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+56737.7  56737.7  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+67361  67361  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+56.85  43.15 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns     tns      num
+CLK_clock  800.0     1230.8     -0.033  -62.550  3734 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22050019
+Version: R-2020.09-SP3a
+Date   : Thu Mar 21 01:24:15 2024
+****************************************
+
+Number of ports:                        26408
+Number of nets:                         92761
+Number of cells:                        77053
+Number of combinational cells:          56832
+Number of sequential cells:             10529
+Number of macros/black boxes:               0
+Number of buf/inv:                      13893
+Number of references:                      91
+
+Combinational area:              35938.223737
+Buf/Inv area:                     5047.560040
+Noncombinational area:           20799.449760
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 56737.673497
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------------------------
+ysyx_22050019                     56737.6735    100.0   1117.2420      0.0000  0.0000  ysyx_22050019
+ARBITER                             198.5760      0.3    192.9060      5.6700  0.0000  ysyx_22050133_axi_arbiter_0
+CSR                                1622.2500      2.9    751.7160    728.4060  0.0000  ysyx_22050019_CSR_0
+CSR/mux_csr_wdata                   142.1280      0.3      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY6_KEY_LEN8_DATA_LEN64_0
+CSR/mux_csr_wdata/i0                142.1280      0.3    142.1280      0.0000  0.0000  MuxKeyInternal_NR_KEY6_KEY_LEN8_DATA_LEN64_HAS_DEFAULT1_0
+D_CACHE                           20844.1797     36.7  13928.1658   6916.0139  0.0000  ysyx_22050019_dcache_0
+EXU                                6475.3920     11.4     15.6240      9.4500  0.0000  ysyx_22050019_EXU_0
+EXU/alu                            6450.3180     11.4   1311.2820      0.0000  0.0000  ysyx_22050019_alu_0
+EXU/alu/divider                    1999.7460      3.5   1451.8980    404.4600  0.0000  ysyx_22050019_divider_0
+EXU/alu/divider/mux_out             143.3880      0.3      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY8_KEY_LEN8_DATA_LEN64_0
+EXU/alu/divider/mux_out/i0          143.3880      0.3    143.3880      0.0000  0.0000  MuxKeyInternal_NR_KEY8_KEY_LEN8_DATA_LEN64_HAS_DEFAULT1_0
+EXU/alu/multiplier_cycle           2822.1480      5.0   1388.7720    662.8860  0.0000  ysyx_22050019_multiplier_cycle_0
+EXU/alu/multiplier_cycle/booth_code
+                                    665.1540      1.2    369.8100      0.0000  0.0000  ysyx_22050019_booth_code_DATA_WIDTH130_0
+EXU/alu/multiplier_cycle/booth_code/op1_sel
+                                    294.5880      0.5      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY8_KEY_LEN3_DATA_LEN131_0
+EXU/alu/multiplier_cycle/booth_code/op1_sel/i0
+                                    294.5880      0.5    294.5880      0.0000  0.0000  MuxKeyInternal_NR_KEY8_KEY_LEN3_DATA_LEN131_HAS_DEFAULT1_0
+EXU/alu/multiplier_cycle/booth_code/op2_sel
+                                      0.7560      0.0      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY8_KEY_LEN3_DATA_LEN1_0
+EXU/alu/multiplier_cycle/booth_code/op2_sel/i0
+                                      0.7560      0.0      0.7560      0.0000  0.0000  MuxKeyInternal_NR_KEY8_KEY_LEN3_DATA_LEN1_HAS_DEFAULT1_0
+EXU/alu/multiplier_cycle/ysyx_22050019_mux
+                                    105.3360      0.2      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY5_KEY_LEN5_DATA_LEN64_3
+EXU/alu/multiplier_cycle/ysyx_22050019_mux/i0
+                                    105.3360      0.2    105.3360      0.0000  0.0000  MuxKeyInternal_NR_KEY5_KEY_LEN5_DATA_LEN64_HAS_DEFAULT1_2
+EXU/alu/mux_alu_result              317.1420      0.6      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY21_KEY_LEN21_DATA_LEN64_0
+EXU/alu/mux_alu_result/i0           317.1420      0.6    317.1420      0.0000  0.0000  MuxKeyInternal_NR_KEY21_KEY_LEN21_DATA_LEN64_HAS_DEFAULT1_0
+EX_MEM                              576.9540      1.0    106.4700    470.4840  0.0000  ysyx_22050019_EX_MEM_0
+IB                                  334.0260      0.6    247.0860     86.9400  0.0000  ysyx_22050019_fetch_buffer_0
+IDU                                1119.2580      2.0    925.4700      0.0000  0.0000  ysyx_22050019_IDU_0
+IDU/mux_branch                       33.6420      0.1      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY2_KEY_LEN2_DATA_LEN64_3
+IDU/mux_branch/i0                    33.6420      0.1     33.6420      0.0000  0.0000  MuxKeyInternal_NR_KEY2_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_2
+IDU/mux_imm                          53.1720      0.1      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY5_KEY_LEN5_DATA_LEN64_2
+IDU/mux_imm/i0                       53.1720      0.1     53.1720      0.0000  0.0000  MuxKeyInternal_NR_KEY5_KEY_LEN5_DATA_LEN64_HAS_DEFAULT1_3
+IDU/mux_op1                          46.3680      0.1      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY2_KEY_LEN2_DATA_LEN64_2
+IDU/mux_op1/i0                       46.3680      0.1     46.3680      0.0000  0.0000  MuxKeyInternal_NR_KEY2_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_3
+IDU/mux_op2                          60.6060      0.1      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY3_KEY_LEN3_DATA_LEN64_0
+IDU/mux_op2/i0                       60.6060      0.1     60.6060      0.0000  0.0000  MuxKeyInternal_NR_KEY3_KEY_LEN3_DATA_LEN64_HAS_DEFAULT1_0
+ID_EX                               947.8980      1.7    360.1080    587.7900  0.0000  ysyx_22050019_ID_EX_0
+IFU                                 346.6260      0.6    278.4600     68.1660  0.0000  ysyx_22050019_IFU_0
+IF_ID                               244.8180      0.4    114.4080    130.4100  0.0000  ysyx_22050019_IF_ID_0
+I_CACHE                           11476.9619     20.2   5218.4159   6258.5459  0.0000  ysyx_22050019_icache_0
+LSU                                 958.8600      1.7    559.8180    309.0780  0.0000  ysyx_22050019_LSU_0
+LSU/mem_r_data_mux                   75.3480      0.1      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY6_KEY_LEN6_DATA_LEN64_0
+LSU/mem_r_data_mux/i0                75.3480      0.1     75.3480      0.0000  0.0000  MuxKeyInternal_NR_KEY6_KEY_LEN6_DATA_LEN64_HAS_DEFAULT1_0
+LSU/mem_w_wdth_mux                   14.6160      0.0      0.0000      0.0000  0.0000  ysyx_22050019_mux_NR_KEY4_KEY_LEN4_DATA_LEN8_0
+LSU/mem_w_wdth_mux/i0                14.6160      0.0     14.6160      0.0000  0.0000  MuxKeyInternal_NR_KEY4_KEY_LEN4_DATA_LEN8_HAS_DEFAULT1_0
+MEM_WB                              184.2120      0.3     36.1620    148.0500  0.0000  ysyx_22050019_MEM_WB_0
+REGS                               9706.0319     17.1   5949.9720   3756.0600  0.0000  ysyx_22050019_regs_0
+WBU                                  83.6640      0.1     83.6640      0.0000  0.0000  ysyx_22050019_WBU_0
+pipe_control                          4.4100      0.0      4.4100      0.0000  0.0000  ysyx_22050019_pipeline_Control_0
+u_ysyx_22050019_axi_interconnect    496.3140      0.9    239.2740    257.0400  0.0000  ysyx_22050019_axi_interconnect_0
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------------------------
+Total                                                  35938.2237  20799.4498  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22050019
+Version: R-2020.09-SP3a
+Date   : Thu Mar 21 01:24:09 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: IF_ID/inst_o_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: IB/pc_changed_reg
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  IF_ID/inst_o_reg_6_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  IF_ID/inst_o_reg_6_/Q (DFQD4BWP40P140LVT)   0.0184    0.0604     0.0604 f
+  IF_ID/inst_o[6] (ysyx_22050019_IF_ID_0)               0.0000     0.0604 f
+  IDU/inst_i[6] (ysyx_22050019_IDU_0)                   0.0000     0.0604 f
+  IDU/U1002/I (INVD4BWP40P140LVT)             0.0184    0.0000     0.0604 f
+  IDU/U1002/ZN (INVD4BWP40P140LVT)            0.0070    0.0068     0.0672 r
+  IDU/U999/B (OAI21OPTREPBD2BWP40P140LVT)     0.0070    0.0000     0.0672 r
+  IDU/U999/ZN (OAI21OPTREPBD2BWP40P140LVT)    0.0182    0.0137     0.0808 f
+  IDU/U889/A1 (ND2D3BWP40P140LVT)             0.0182    0.0000     0.0808 f
+  IDU/U889/ZN (ND2D3BWP40P140LVT)             0.0106    0.0100     0.0909 r
+  IDU/U214/A1 (INR2D6BWP40P140LVT)            0.0106    0.0000     0.0909 r
+  IDU/U214/ZN (INR2D6BWP40P140LVT)            0.0174    0.0251     0.1159 r
+  IDU/U1482/B1 (INR2D4BWP40P140LVT)           0.0174    0.0000     0.1159 r
+  IDU/U1482/ZN (INR2D4BWP40P140LVT)           0.0156    0.0134     0.1293 f
+  IDU/U953/A1 (NR2OPTPAD4BWP40P140LVT)        0.0156    0.0000     0.1293 f
+  IDU/U953/ZN (NR2OPTPAD4BWP40P140LVT)        0.0150    0.0130     0.1424 r
+  IDU/raddr1[0] (ysyx_22050019_IDU_0)                   0.0000     0.1424 r
+  REGS/raddr1[0] (ysyx_22050019_regs_0)                 0.0000     0.1424 r
+  REGS/U7139/A1 (XNR2OPTND4BWP40P140LVT)      0.0150    0.0000     0.1424 r
+  REGS/U7139/ZN (XNR2OPTND4BWP40P140LVT)      0.0295    0.0208     0.1631 r
+  REGS/U7725/A3 (ND3OPTPAD6BWP40P140LVT)      0.0295    0.0000     0.1631 r
+  REGS/U7725/ZN (ND3OPTPAD6BWP40P140LVT)      0.0222    0.0202     0.1834 f
+  REGS/U7748/A1 (NR2OPTPAD8BWP40P140LVT)      0.0222    0.0000     0.1834 f
+  REGS/U7748/ZN (NR2OPTPAD8BWP40P140LVT)      0.0226    0.0192     0.2026 r
+  REGS/U4528/B1 (INR2D8BWP40P140LVT)          0.0226    0.0000     0.2026 r
+  REGS/U4528/ZN (INR2D8BWP40P140LVT)          0.0170    0.0148     0.2173 f
+  REGS/U7570/I (INVD12BWP40P140LVT)           0.0170    0.0000     0.2173 f
+  REGS/U7570/ZN (INVD12BWP40P140LVT)          0.0123    0.0115     0.2288 r
+  REGS/U4000/I (INVD16BWP40P140LVT)           0.0123    0.0000     0.2288 r
+  REGS/U4000/ZN (INVD16BWP40P140LVT)          0.0109    0.0095     0.2383 f
+  REGS/U1201/A1 (ND2OPTD12BWP40P140LVT)       0.0109    0.0000     0.2383 f
+  REGS/U1201/ZN (ND2OPTD12BWP40P140LVT)       0.0152    0.0107     0.2490 r
+  REGS/U7114/I (BUFFD4BWP40P140LVT)           0.0152    0.0000     0.2490 r
+  REGS/U7114/Z (BUFFD4BWP40P140LVT)           0.0088    0.0173     0.2663 r
+  REGS/U4079/A1 (IAO22D2BWP40P140LVT)         0.0088    0.0000     0.2663 r
+  REGS/U4079/ZN (IAO22D2BWP40P140LVT)         0.0208    0.0260     0.2923 r
+  REGS/U5413/A2 (ND4D3BWP40P140LVT)           0.0208    0.0000     0.2923 r
+  REGS/U5413/ZN (ND4D3BWP40P140LVT)           0.0352    0.0281     0.3204 f
+  REGS/U4186/A2 (OR3D4BWP40P140LVT)           0.0352    0.0000     0.3204 f
+  REGS/U4186/Z (OR3D4BWP40P140LVT)            0.0159    0.0370     0.3574 f
+  REGS/rdata1[25] (ysyx_22050019_regs_0)                0.0000     0.3574 f
+  IDU/rdata1[25] (ysyx_22050019_IDU_0)                  0.0000     0.3574 f
+  IDU/U566/A1 (ND2OPTPAD2BWP40P140LVT)        0.0159    0.0000     0.3574 f
+  IDU/U566/ZN (ND2OPTPAD2BWP40P140LVT)        0.0122    0.0098     0.3672 r
+  IDU/U1188/B (OAI21D2BWP40P140LVT)           0.0122    0.0000     0.3672 r
+  IDU/U1188/ZN (OAI21D2BWP40P140LVT)          0.0186    0.0181     0.3853 f
+  IDU/U884/A1 (AOI21D2BWP40P140LVT)           0.0186    0.0000     0.3853 f
+  IDU/U884/ZN (AOI21D2BWP40P140LVT)           0.0213    0.0166     0.4019 r
+  IDU/U1290/A1 (OAI21OPTREPBD2BWP40P140LVT)   0.0213    0.0000     0.4019 r
+  IDU/U1290/ZN (OAI21OPTREPBD2BWP40P140LVT)   0.0162    0.0128     0.4147 f
+  IDU/U1477/B (AOI21D2BWP40P140LVT)           0.0162    0.0000     0.4147 f
+  IDU/U1477/ZN (AOI21D2BWP40P140LVT)          0.0175    0.0181     0.4328 r
+  IDU/U810/B (OAI21OPTREPBD2BWP40P140LVT)     0.0175    0.0000     0.4328 r
+  IDU/U810/ZN (OAI21OPTREPBD2BWP40P140LVT)    0.0206    0.0175     0.4503 f
+  IDU/U1341/A1 (AOI21D4BWP40P140LVT)          0.0206    0.0000     0.4503 f
+  IDU/U1341/ZN (AOI21D4BWP40P140LVT)          0.0225    0.0170     0.4673 r
+  IDU/U1337/A1 (XNR2OPTND4BWP40P140LVT)       0.0225    0.0000     0.4673 r
+  IDU/U1337/ZN (XNR2OPTND4BWP40P140LVT)       0.0275    0.0217     0.4890 r
+  IDU/U1464/A1 (AOI21OPTREPBD2BWP40P140LVT)   0.0275    0.0000     0.4890 r
+  IDU/U1464/ZN (AOI21OPTREPBD2BWP40P140LVT)   0.0240    0.0221     0.5111 f
+  IDU/U195/A1 (ND2OPTIBD4BWP40P140LVT)        0.0240    0.0000     0.5111 f
+  IDU/U195/ZN (ND2OPTIBD4BWP40P140LVT)        0.0133    0.0125     0.5236 r
+  IDU/inst_j (ysyx_22050019_IDU_0)                      0.0000     0.5236 r
+  U570/A1 (NR2OPTIBD6BWP40P140LVT)            0.0133    0.0000     0.5236 r
+  U570/ZN (NR2OPTIBD6BWP40P140LVT)            0.0154    0.0095     0.5331 f
+  U569/I (INVD9BWP40P140LVT)                  0.0154    0.0000     0.5331 f
+  U569/ZN (INVD9BWP40P140LVT)                 0.0105    0.0098     0.5429 r
+  IFU/inst_j (ysyx_22050019_IFU_0)                      0.0000     0.5429 r
+  IFU/U111/A1 (ND2OPTPAD12BWP40P140LVT)       0.0105    0.0000     0.5429 r
+  IFU/U111/ZN (ND2OPTPAD12BWP40P140LVT)       0.0153    0.0122     0.5551 f
+  IFU/U109/I (INVD18BWP40P140LVT)             0.0153    0.0000     0.5551 f
+  IFU/U109/ZN (INVD18BWP40P140LVT)            0.0120    0.0111     0.5662 r
+  IFU/U92/I (INVD9BWP40P140LVT)               0.0120    0.0000     0.5662 r
+  IFU/U92/ZN (INVD9BWP40P140LVT)              0.0115    0.0100     0.5762 f
+  IFU/U106/I (INVD12BWP40P140LVT)             0.0115    0.0000     0.5762 f
+  IFU/U106/ZN (INVD12BWP40P140LVT)            0.0086    0.0081     0.5843 r
+  IFU/U272/S (MUX2NOPTD8BWP40P140LVT)         0.0086    0.0000     0.5843 r
+  IFU/U272/ZN (MUX2NOPTD8BWP40P140LVT)        0.0217    0.0158     0.6001 r
+  IFU/inst_addr_o[28] (ysyx_22050019_IFU_0)             0.0000     0.6001 r
+  IB/pc_i[28] (ysyx_22050019_fetch_buffer_0)            0.0000     0.6001 r
+  IB/U330/A1 (XOR2OPTND4BWP40P140LVT)         0.0217    0.0000     0.6001 r
+  IB/U330/Z (XOR2OPTND4BWP40P140LVT)          0.0209    0.0187     0.6189 r
+  IB/U127/A1 (NR2OPTPAD2BWP40P140LVT)         0.0209    0.0000     0.6189 r
+  IB/U127/ZN (NR2OPTPAD2BWP40P140LVT)         0.0145    0.0105     0.6293 f
+  IB/U125/A2 (ND2D3BWP40P140LVT)              0.0145    0.0000     0.6293 f
+  IB/U125/ZN (ND2D3BWP40P140LVT)              0.0088    0.0088     0.6381 r
+  IB/U254/I (INVD2BWP40P140LVT)               0.0088    0.0000     0.6381 r
+  IB/U254/ZN (INVD2BWP40P140LVT)              0.0073    0.0066     0.6447 f
+  IB/U207/A1 (ND3OPTPAD2BWP40P140LVT)         0.0073    0.0000     0.6447 f
+  IB/U207/ZN (ND3OPTPAD2BWP40P140LVT)         0.0140    0.0073     0.6520 r
+  IB/U206/A3 (OAI31D2BWP40P140LVT)            0.0140    0.0000     0.6520 r
+  IB/U206/ZN (OAI31D2BWP40P140LVT)            0.0277    0.0148     0.6668 f
+  IB/U327/A1 (ND3OPTPAD2BWP40P140LVT)         0.0277    0.0000     0.6668 f
+  IB/U327/ZN (ND3OPTPAD2BWP40P140LVT)         0.0125    0.0105     0.6773 r
+  IB/pc_changed_reg/D (DFD1BWP40P140LVT)      0.0125    0.0000     0.6773 r
+  data arrival time                                                0.6773
+
+  clock CLK_clock (rise edge)                           0.8125     0.8125
+  clock network delay (ideal)                           0.0000     0.8125
+  clock uncertainty                                    -0.1500     0.6625
+  IB/pc_changed_reg/CP (DFD1BWP40P140LVT)               0.0000     0.6625 r
+  library setup time                                   -0.0182     0.6443
+  data required time                                               0.6443
+  --------------------------------------------------------------------------
+  data required time                                               0.6443
+  data arrival time                                               -0.6773
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0330
+
+
+  Startpoint: EX_MEM/ram_we_o_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: D_CACHE/r_data_reg_53_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  EX_MEM/ram_we_o_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  EX_MEM/ram_we_o_reg/Q (DFQD4BWP40P140LVT)   0.0122    0.0559     0.0559 f
+  EX_MEM/U192/I (INVD8BWP40P140LVT)           0.0122    0.0000     0.0559 f
+  EX_MEM/U192/ZN (INVD8BWP40P140LVT)          0.0103    0.0095     0.0655 r
+  EX_MEM/U191/I (INVD18BWP40P140LVT)          0.0103    0.0000     0.0655 r
+  EX_MEM/U191/ZN (INVD18BWP40P140LVT)         0.0231    0.0169     0.0824 f
+  EX_MEM/ram_we_o (ysyx_22050019_EX_MEM_0)              0.0000     0.0824 f
+  LSU/ram_we_i (ysyx_22050019_LSU_0)                    0.0000     0.0824 f
+  LSU/U266/S (MUX2NOPTD6BWP40P140LVT)         0.0231    0.0000     0.0824 f
+  LSU/U266/ZN (MUX2NOPTD6BWP40P140LVT)        0.0231    0.0205     0.1028 f
+  LSU/ram_waddr[24] (ysyx_22050019_LSU_0)               0.0000     0.1028 f
+  U2870/A4 (NR4D2BWP40P140LVT)                0.0231    0.0000     0.1028 f
+  U2870/ZN (NR4D2BWP40P140LVT)                0.0225    0.0264     0.1292 r
+  U2876/A1 (ND2OPTPAD2BWP40P140LVT)           0.0225    0.0000     0.1292 r
+  U2876/ZN (ND2OPTPAD2BWP40P140LVT)           0.0127    0.0110     0.1403 f
+  U2839/A1 (NR2OPTPAD2BWP40P140LVT)           0.0127    0.0000     0.1403 f
+  U2839/ZN (NR2OPTPAD2BWP40P140LVT)           0.0161    0.0133     0.1536 r
+  U2838/A1 (ND2OPTPAD4BWP40P140LVT)           0.0161    0.0000     0.1536 r
+  U2838/ZN (ND2OPTPAD4BWP40P140LVT)           0.0197    0.0159     0.1695 f
+  U2154/A2 (ND2OPTD12BWP40P140LVT)            0.0197    0.0000     0.1695 f
+  U2154/ZN (ND2OPTD12BWP40P140LVT)            0.0149    0.0139     0.1834 r
+  U2153/I (INVD16BWP40P140LVT)                0.0149    0.0000     0.1834 r
+  U2153/ZN (INVD16BWP40P140LVT)               0.0200    0.0158     0.1992 f
+  U2183/B1 (INR2D16BWP40P140LVT)              0.0200    0.0000     0.1992 f
+  U2183/ZN (INR2D16BWP40P140LVT)              0.0144    0.0127     0.2119 r
+  D_CACHE/aw_addr_i[6] (ysyx_22050019_dcache_0)         0.0000     0.2119 r
+  D_CACHE/U8528/A2 (NR2D16BWP40P140LVT)       0.0144    0.0000     0.2119 r
+  D_CACHE/U8528/ZN (NR2D16BWP40P140LVT)       0.0159    0.0136     0.2254 f
+  D_CACHE/U17964/A1 (INR2D8BWP40P140LVT)      0.0159    0.0000     0.2254 f
+  D_CACHE/U17964/ZN (INR2D8BWP40P140LVT)      0.0142    0.0235     0.2489 f
+  D_CACHE/U17933/A1 (ND2D16BWP40P140LVT)      0.0142    0.0000     0.2489 f
+  D_CACHE/U17933/ZN (ND2D16BWP40P140LVT)      0.0169    0.0119     0.2608 r
+  D_CACHE/U8575/I (INVD18BWP40P140LVT)        0.0169    0.0000     0.2608 r
+  D_CACHE/U8575/ZN (INVD18BWP40P140LVT)       0.0109    0.0094     0.2702 f
+  D_CACHE/U12768/A1 (ND2OPTD12BWP40P140LVT)   0.0109    0.0000     0.2702 f
+  D_CACHE/U12768/ZN (ND2OPTD12BWP40P140LVT)   0.0127    0.0093     0.2794 r
+  D_CACHE/U4810/A1 (OR2D1BWP40P140LVT)        0.0127    0.0000     0.2794 r
+  D_CACHE/U4810/Z (OR2D1BWP40P140LVT)         0.0125    0.0220     0.3014 r
+  D_CACHE/U17571/B (IOA21D2BWP40P140LVT)      0.0125    0.0000     0.3014 r
+  D_CACHE/U17571/ZN (IOA21D2BWP40P140LVT)     0.0146    0.0120     0.3134 f
+  D_CACHE/U6689/B1 (INR3D2BWP40P140LVT)       0.0146    0.0000     0.3134 f
+  D_CACHE/U6689/ZN (INR3D2BWP40P140LVT)       0.0241    0.0206     0.3340 r
+  D_CACHE/U8320/A3 (ND3OPTPAD2BWP40P140LVT)   0.0241    0.0000     0.3340 r
+  D_CACHE/U8320/ZN (ND3OPTPAD2BWP40P140LVT)   0.0187    0.0186     0.3526 f
+  D_CACHE/U18016/I (INVD2BWP40P140LVT)        0.0187    0.0000     0.3526 f
+  D_CACHE/U18016/ZN (INVD2BWP40P140LVT)       0.0090    0.0087     0.3614 r
+  D_CACHE/U18046/A2 (ND2D2BWP40P140LVT)       0.0090    0.0000     0.3614 r
+  D_CACHE/U18046/ZN (ND2D2BWP40P140LVT)       0.0151    0.0138     0.3752 f
+  D_CACHE/U8286/A1 (NR2OPTPAD2BWP40P140LVT)   0.0151    0.0000     0.3752 f
+  D_CACHE/U8286/ZN (NR2OPTPAD2BWP40P140LVT)   0.0112    0.0098     0.3849 r
+  D_CACHE/U18360/A1 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0112    0.0000     0.3849 r
+  D_CACHE/U18360/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0228    0.0161     0.4010 f
+  D_CACHE/U18041/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0228    0.0000     0.4010 f
+  D_CACHE/U18041/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0324    0.0244     0.4255 f
+  D_CACHE/U12749/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0324    0.0000     0.4255 f
+  D_CACHE/U12749/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0153     0.4408 r
+  D_CACHE/U17607/A3 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0000     0.4408 r
+  D_CACHE/U17607/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0207     0.4615 f
+  D_CACHE/U18247/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0000     0.4615 f
+  D_CACHE/U18247/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0151    0.0149     0.4764 r
+  D_CACHE/U18172/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0151    0.0000     0.4764 r
+  D_CACHE/U18172/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0136    0.0115     0.4879 f
+  D_CACHE/U18160/I (INVD6BWP40P140LVT)        0.0136    0.0000     0.4879 f
+  D_CACHE/U18160/ZN (INVD6BWP40P140LVT)       0.0098    0.0092     0.4970 r
+  D_CACHE/U12769/A1 (NR2OPTIBD12BWP40P140LVT)
+                                              0.0098    0.0000     0.4970 r
+  D_CACHE/U12769/ZN (NR2OPTIBD12BWP40P140LVT)
+                                              0.0202    0.0115     0.5085 f
+  D_CACHE/U18551/A1 (AOI21D8BWP40P140LVT)     0.0202    0.0000     0.5085 f
+  D_CACHE/U18551/ZN (AOI21D8BWP40P140LVT)     0.0316    0.0225     0.5309 r
+  D_CACHE/U9802/I (INVD8BWP40P140LVT)         0.0316    0.0000     0.5309 r
+  D_CACHE/U9802/ZN (INVD8BWP40P140LVT)        0.0230    0.0195     0.5505 f
+  D_CACHE/U8463/A2 (NR2OPTIBD4BWP40P140LVT)   0.0230    0.0000     0.5505 f
+  D_CACHE/U8463/ZN (NR2OPTIBD4BWP40P140LVT)   0.0144    0.0155     0.5659 r
+  D_CACHE/U635/A1 (ND2OPTIBD6BWP40P140LVT)    0.0144    0.0000     0.5659 r
+  D_CACHE/U635/ZN (ND2OPTIBD6BWP40P140LVT)    0.0180    0.0134     0.5793 f
+  D_CACHE/U17792/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0180    0.0000     0.5793 f
+  D_CACHE/U17792/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0188    0.0130     0.5923 r
+  D_CACHE/U17583/I (INVD8BWP40P140LVT)        0.0188    0.0000     0.5923 r
+  D_CACHE/U17583/ZN (INVD8BWP40P140LVT)       0.0088    0.0075     0.5998 f
+  D_CACHE/U17881/B1 (INR2D8BWP40P140LVT)      0.0088    0.0000     0.5998 f
+  D_CACHE/U17881/ZN (INR2D8BWP40P140LVT)      0.0177    0.0121     0.6119 r
+  D_CACHE/U8725/A1 (ND2OPTIBD16BWP40P140LVT)
+                                              0.0177    0.0000     0.6119 r
+  D_CACHE/U8725/ZN (ND2OPTIBD16BWP40P140LVT)
+                                              0.0192    0.0146     0.6266 f
+  D_CACHE/U16724/I (INVD9BWP40P140LVT)        0.0192    0.0000     0.6266 f
+  D_CACHE/U16724/ZN (INVD9BWP40P140LVT)       0.0200    0.0170     0.6436 r
+  D_CACHE/U11076/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0200    0.0000     0.6436 r
+  D_CACHE/U11076/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0118    0.0090     0.6526 f
+  D_CACHE/U5794/A1 (ND2D2BWP40P140LVT)        0.0118    0.0000     0.6526 f
+  D_CACHE/U5794/ZN (ND2D2BWP40P140LVT)        0.0122    0.0080     0.6606 r
+  D_CACHE/U8396/A2 (NR2D2BWP40P140LVT)        0.0122    0.0000     0.6606 r
+  D_CACHE/U8396/ZN (NR2D2BWP40P140LVT)        0.0085    0.0086     0.6691 f
+  D_CACHE/U18053/B1 (IND2D1BWP40P140LVT)      0.0085    0.0000     0.6691 f
+  D_CACHE/U18053/ZN (IND2D1BWP40P140LVT)      0.0099    0.0080     0.6771 r
+  D_CACHE/r_data_reg_53_/D (DFD1BWP40P140LVT)
+                                              0.0099    0.0000     0.6771 r
+  data arrival time                                                0.6771
+
+  clock CLK_clock (rise edge)                           0.8125     0.8125
+  clock network delay (ideal)                           0.0000     0.8125
+  clock uncertainty                                    -0.1500     0.6625
+  D_CACHE/r_data_reg_53_/CP (DFD1BWP40P140LVT)          0.0000     0.6625 r
+  library setup time                                   -0.0178     0.6447
+  data required time                                               0.6447
+  --------------------------------------------------------------------------
+  data required time                                               0.6447
+  data arrival time                                               -0.6771
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0323
+
+
+  Startpoint: EX_MEM/ram_we_o_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: D_CACHE/r_data_reg_52_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  EX_MEM/ram_we_o_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  EX_MEM/ram_we_o_reg/Q (DFQD4BWP40P140LVT)   0.0122    0.0559     0.0559 f
+  EX_MEM/U192/I (INVD8BWP40P140LVT)           0.0122    0.0000     0.0559 f
+  EX_MEM/U192/ZN (INVD8BWP40P140LVT)          0.0103    0.0095     0.0655 r
+  EX_MEM/U191/I (INVD18BWP40P140LVT)          0.0103    0.0000     0.0655 r
+  EX_MEM/U191/ZN (INVD18BWP40P140LVT)         0.0231    0.0169     0.0824 f
+  EX_MEM/ram_we_o (ysyx_22050019_EX_MEM_0)              0.0000     0.0824 f
+  LSU/ram_we_i (ysyx_22050019_LSU_0)                    0.0000     0.0824 f
+  LSU/U266/S (MUX2NOPTD6BWP40P140LVT)         0.0231    0.0000     0.0824 f
+  LSU/U266/ZN (MUX2NOPTD6BWP40P140LVT)        0.0231    0.0205     0.1028 f
+  LSU/ram_waddr[24] (ysyx_22050019_LSU_0)               0.0000     0.1028 f
+  U2870/A4 (NR4D2BWP40P140LVT)                0.0231    0.0000     0.1028 f
+  U2870/ZN (NR4D2BWP40P140LVT)                0.0225    0.0264     0.1292 r
+  U2876/A1 (ND2OPTPAD2BWP40P140LVT)           0.0225    0.0000     0.1292 r
+  U2876/ZN (ND2OPTPAD2BWP40P140LVT)           0.0127    0.0110     0.1403 f
+  U2839/A1 (NR2OPTPAD2BWP40P140LVT)           0.0127    0.0000     0.1403 f
+  U2839/ZN (NR2OPTPAD2BWP40P140LVT)           0.0161    0.0133     0.1536 r
+  U2838/A1 (ND2OPTPAD4BWP40P140LVT)           0.0161    0.0000     0.1536 r
+  U2838/ZN (ND2OPTPAD4BWP40P140LVT)           0.0197    0.0159     0.1695 f
+  U2154/A2 (ND2OPTD12BWP40P140LVT)            0.0197    0.0000     0.1695 f
+  U2154/ZN (ND2OPTD12BWP40P140LVT)            0.0149    0.0139     0.1834 r
+  U2153/I (INVD16BWP40P140LVT)                0.0149    0.0000     0.1834 r
+  U2153/ZN (INVD16BWP40P140LVT)               0.0200    0.0158     0.1992 f
+  U2183/B1 (INR2D16BWP40P140LVT)              0.0200    0.0000     0.1992 f
+  U2183/ZN (INR2D16BWP40P140LVT)              0.0144    0.0127     0.2119 r
+  D_CACHE/aw_addr_i[6] (ysyx_22050019_dcache_0)         0.0000     0.2119 r
+  D_CACHE/U8528/A2 (NR2D16BWP40P140LVT)       0.0144    0.0000     0.2119 r
+  D_CACHE/U8528/ZN (NR2D16BWP40P140LVT)       0.0159    0.0136     0.2254 f
+  D_CACHE/U17964/A1 (INR2D8BWP40P140LVT)      0.0159    0.0000     0.2254 f
+  D_CACHE/U17964/ZN (INR2D8BWP40P140LVT)      0.0142    0.0235     0.2489 f
+  D_CACHE/U17933/A1 (ND2D16BWP40P140LVT)      0.0142    0.0000     0.2489 f
+  D_CACHE/U17933/ZN (ND2D16BWP40P140LVT)      0.0169    0.0119     0.2608 r
+  D_CACHE/U8575/I (INVD18BWP40P140LVT)        0.0169    0.0000     0.2608 r
+  D_CACHE/U8575/ZN (INVD18BWP40P140LVT)       0.0109    0.0094     0.2702 f
+  D_CACHE/U12768/A1 (ND2OPTD12BWP40P140LVT)   0.0109    0.0000     0.2702 f
+  D_CACHE/U12768/ZN (ND2OPTD12BWP40P140LVT)   0.0127    0.0093     0.2794 r
+  D_CACHE/U4810/A1 (OR2D1BWP40P140LVT)        0.0127    0.0000     0.2794 r
+  D_CACHE/U4810/Z (OR2D1BWP40P140LVT)         0.0125    0.0220     0.3014 r
+  D_CACHE/U17571/B (IOA21D2BWP40P140LVT)      0.0125    0.0000     0.3014 r
+  D_CACHE/U17571/ZN (IOA21D2BWP40P140LVT)     0.0146    0.0120     0.3134 f
+  D_CACHE/U6689/B1 (INR3D2BWP40P140LVT)       0.0146    0.0000     0.3134 f
+  D_CACHE/U6689/ZN (INR3D2BWP40P140LVT)       0.0241    0.0206     0.3340 r
+  D_CACHE/U8320/A3 (ND3OPTPAD2BWP40P140LVT)   0.0241    0.0000     0.3340 r
+  D_CACHE/U8320/ZN (ND3OPTPAD2BWP40P140LVT)   0.0187    0.0186     0.3526 f
+  D_CACHE/U18016/I (INVD2BWP40P140LVT)        0.0187    0.0000     0.3526 f
+  D_CACHE/U18016/ZN (INVD2BWP40P140LVT)       0.0090    0.0087     0.3614 r
+  D_CACHE/U18046/A2 (ND2D2BWP40P140LVT)       0.0090    0.0000     0.3614 r
+  D_CACHE/U18046/ZN (ND2D2BWP40P140LVT)       0.0151    0.0138     0.3752 f
+  D_CACHE/U8286/A1 (NR2OPTPAD2BWP40P140LVT)   0.0151    0.0000     0.3752 f
+  D_CACHE/U8286/ZN (NR2OPTPAD2BWP40P140LVT)   0.0112    0.0098     0.3849 r
+  D_CACHE/U18360/A1 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0112    0.0000     0.3849 r
+  D_CACHE/U18360/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0228    0.0161     0.4010 f
+  D_CACHE/U18041/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0228    0.0000     0.4010 f
+  D_CACHE/U18041/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0324    0.0244     0.4255 f
+  D_CACHE/U12749/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0324    0.0000     0.4255 f
+  D_CACHE/U12749/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0153     0.4408 r
+  D_CACHE/U17607/A3 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0000     0.4408 r
+  D_CACHE/U17607/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0207     0.4615 f
+  D_CACHE/U18247/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0000     0.4615 f
+  D_CACHE/U18247/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0151    0.0149     0.4764 r
+  D_CACHE/U18172/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0151    0.0000     0.4764 r
+  D_CACHE/U18172/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0136    0.0115     0.4879 f
+  D_CACHE/U18160/I (INVD6BWP40P140LVT)        0.0136    0.0000     0.4879 f
+  D_CACHE/U18160/ZN (INVD6BWP40P140LVT)       0.0098    0.0092     0.4970 r
+  D_CACHE/U12769/A1 (NR2OPTIBD12BWP40P140LVT)
+                                              0.0098    0.0000     0.4970 r
+  D_CACHE/U12769/ZN (NR2OPTIBD12BWP40P140LVT)
+                                              0.0202    0.0115     0.5085 f
+  D_CACHE/U18551/A1 (AOI21D8BWP40P140LVT)     0.0202    0.0000     0.5085 f
+  D_CACHE/U18551/ZN (AOI21D8BWP40P140LVT)     0.0316    0.0225     0.5309 r
+  D_CACHE/U9802/I (INVD8BWP40P140LVT)         0.0316    0.0000     0.5309 r
+  D_CACHE/U9802/ZN (INVD8BWP40P140LVT)        0.0230    0.0195     0.5505 f
+  D_CACHE/U8463/A2 (NR2OPTIBD4BWP40P140LVT)   0.0230    0.0000     0.5505 f
+  D_CACHE/U8463/ZN (NR2OPTIBD4BWP40P140LVT)   0.0144    0.0155     0.5659 r
+  D_CACHE/U635/A1 (ND2OPTIBD6BWP40P140LVT)    0.0144    0.0000     0.5659 r
+  D_CACHE/U635/ZN (ND2OPTIBD6BWP40P140LVT)    0.0180    0.0134     0.5793 f
+  D_CACHE/U17792/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0180    0.0000     0.5793 f
+  D_CACHE/U17792/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0188    0.0130     0.5923 r
+  D_CACHE/U17583/I (INVD8BWP40P140LVT)        0.0188    0.0000     0.5923 r
+  D_CACHE/U17583/ZN (INVD8BWP40P140LVT)       0.0088    0.0075     0.5998 f
+  D_CACHE/U17881/B1 (INR2D8BWP40P140LVT)      0.0088    0.0000     0.5998 f
+  D_CACHE/U17881/ZN (INR2D8BWP40P140LVT)      0.0177    0.0121     0.6119 r
+  D_CACHE/U8725/A1 (ND2OPTIBD16BWP40P140LVT)
+                                              0.0177    0.0000     0.6119 r
+  D_CACHE/U8725/ZN (ND2OPTIBD16BWP40P140LVT)
+                                              0.0192    0.0146     0.6266 f
+  D_CACHE/U16724/I (INVD9BWP40P140LVT)        0.0192    0.0000     0.6266 f
+  D_CACHE/U16724/ZN (INVD9BWP40P140LVT)       0.0200    0.0170     0.6436 r
+  D_CACHE/U18987/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0200    0.0000     0.6436 r
+  D_CACHE/U18987/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0124    0.0108     0.6543 f
+  D_CACHE/U11862/A1 (ND2D2BWP40P140LVT)       0.0124    0.0000     0.6543 f
+  D_CACHE/U11862/ZN (ND2D2BWP40P140LVT)       0.0123    0.0081     0.6625 r
+  D_CACHE/U11725/I (INVD2BWP40P140LVT)        0.0123    0.0000     0.6625 r
+  D_CACHE/U11725/ZN (INVD2BWP40P140LVT)       0.0079    0.0073     0.6698 f
+  D_CACHE/U11683/A1 (ND3D2BWP40P140LVT)       0.0079    0.0000     0.6698 f
+  D_CACHE/U11683/ZN (ND3D2BWP40P140LVT)       0.0134    0.0065     0.6763 r
+  D_CACHE/r_data_reg_52_/D (DFD1BWP40P140LVT)
+                                              0.0134    0.0000     0.6763 r
+  data arrival time                                                0.6763
+
+  clock CLK_clock (rise edge)                           0.8125     0.8125
+  clock network delay (ideal)                           0.0000     0.8125
+  clock uncertainty                                    -0.1500     0.6625
+  D_CACHE/r_data_reg_52_/CP (DFD1BWP40P140LVT)          0.0000     0.6625 r
+  library setup time                                   -0.0184     0.6441
+  data required time                                               0.6441
+  --------------------------------------------------------------------------
+  data required time                                               0.6441
+  data arrival time                                               -0.6763
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0321
+
+
+  Startpoint: EX_MEM/ram_we_o_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: D_CACHE/valid_reg_0__54_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  EX_MEM/ram_we_o_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  EX_MEM/ram_we_o_reg/Q (DFQD4BWP40P140LVT)   0.0122    0.0559     0.0559 f
+  EX_MEM/U192/I (INVD8BWP40P140LVT)           0.0122    0.0000     0.0559 f
+  EX_MEM/U192/ZN (INVD8BWP40P140LVT)          0.0103    0.0095     0.0655 r
+  EX_MEM/U191/I (INVD18BWP40P140LVT)          0.0103    0.0000     0.0655 r
+  EX_MEM/U191/ZN (INVD18BWP40P140LVT)         0.0231    0.0169     0.0824 f
+  EX_MEM/ram_we_o (ysyx_22050019_EX_MEM_0)              0.0000     0.0824 f
+  LSU/ram_we_i (ysyx_22050019_LSU_0)                    0.0000     0.0824 f
+  LSU/U266/S (MUX2NOPTD6BWP40P140LVT)         0.0231    0.0000     0.0824 f
+  LSU/U266/ZN (MUX2NOPTD6BWP40P140LVT)        0.0231    0.0205     0.1028 f
+  LSU/ram_waddr[24] (ysyx_22050019_LSU_0)               0.0000     0.1028 f
+  U2870/A4 (NR4D2BWP40P140LVT)                0.0231    0.0000     0.1028 f
+  U2870/ZN (NR4D2BWP40P140LVT)                0.0225    0.0264     0.1292 r
+  U2876/A1 (ND2OPTPAD2BWP40P140LVT)           0.0225    0.0000     0.1292 r
+  U2876/ZN (ND2OPTPAD2BWP40P140LVT)           0.0127    0.0110     0.1403 f
+  U2839/A1 (NR2OPTPAD2BWP40P140LVT)           0.0127    0.0000     0.1403 f
+  U2839/ZN (NR2OPTPAD2BWP40P140LVT)           0.0161    0.0133     0.1536 r
+  U2838/A1 (ND2OPTPAD4BWP40P140LVT)           0.0161    0.0000     0.1536 r
+  U2838/ZN (ND2OPTPAD4BWP40P140LVT)           0.0197    0.0159     0.1695 f
+  U2154/A2 (ND2OPTD12BWP40P140LVT)            0.0197    0.0000     0.1695 f
+  U2154/ZN (ND2OPTD12BWP40P140LVT)            0.0149    0.0139     0.1834 r
+  U2153/I (INVD16BWP40P140LVT)                0.0149    0.0000     0.1834 r
+  U2153/ZN (INVD16BWP40P140LVT)               0.0200    0.0158     0.1992 f
+  U2183/B1 (INR2D16BWP40P140LVT)              0.0200    0.0000     0.1992 f
+  U2183/ZN (INR2D16BWP40P140LVT)              0.0144    0.0127     0.2119 r
+  D_CACHE/aw_addr_i[6] (ysyx_22050019_dcache_0)         0.0000     0.2119 r
+  D_CACHE/U8528/A2 (NR2D16BWP40P140LVT)       0.0144    0.0000     0.2119 r
+  D_CACHE/U8528/ZN (NR2D16BWP40P140LVT)       0.0159    0.0136     0.2254 f
+  D_CACHE/U17964/A1 (INR2D8BWP40P140LVT)      0.0159    0.0000     0.2254 f
+  D_CACHE/U17964/ZN (INR2D8BWP40P140LVT)      0.0142    0.0235     0.2489 f
+  D_CACHE/U17933/A1 (ND2D16BWP40P140LVT)      0.0142    0.0000     0.2489 f
+  D_CACHE/U17933/ZN (ND2D16BWP40P140LVT)      0.0169    0.0119     0.2608 r
+  D_CACHE/U8575/I (INVD18BWP40P140LVT)        0.0169    0.0000     0.2608 r
+  D_CACHE/U8575/ZN (INVD18BWP40P140LVT)       0.0109    0.0094     0.2702 f
+  D_CACHE/U12768/A1 (ND2OPTD12BWP40P140LVT)   0.0109    0.0000     0.2702 f
+  D_CACHE/U12768/ZN (ND2OPTD12BWP40P140LVT)   0.0127    0.0093     0.2794 r
+  D_CACHE/U4810/A1 (OR2D1BWP40P140LVT)        0.0127    0.0000     0.2794 r
+  D_CACHE/U4810/Z (OR2D1BWP40P140LVT)         0.0125    0.0220     0.3014 r
+  D_CACHE/U17571/B (IOA21D2BWP40P140LVT)      0.0125    0.0000     0.3014 r
+  D_CACHE/U17571/ZN (IOA21D2BWP40P140LVT)     0.0146    0.0120     0.3134 f
+  D_CACHE/U6689/B1 (INR3D2BWP40P140LVT)       0.0146    0.0000     0.3134 f
+  D_CACHE/U6689/ZN (INR3D2BWP40P140LVT)       0.0241    0.0206     0.3340 r
+  D_CACHE/U8320/A3 (ND3OPTPAD2BWP40P140LVT)   0.0241    0.0000     0.3340 r
+  D_CACHE/U8320/ZN (ND3OPTPAD2BWP40P140LVT)   0.0187    0.0186     0.3526 f
+  D_CACHE/U18016/I (INVD2BWP40P140LVT)        0.0187    0.0000     0.3526 f
+  D_CACHE/U18016/ZN (INVD2BWP40P140LVT)       0.0090    0.0087     0.3614 r
+  D_CACHE/U18046/A2 (ND2D2BWP40P140LVT)       0.0090    0.0000     0.3614 r
+  D_CACHE/U18046/ZN (ND2D2BWP40P140LVT)       0.0151    0.0138     0.3752 f
+  D_CACHE/U8286/A1 (NR2OPTPAD2BWP40P140LVT)   0.0151    0.0000     0.3752 f
+  D_CACHE/U8286/ZN (NR2OPTPAD2BWP40P140LVT)   0.0112    0.0098     0.3849 r
+  D_CACHE/U18360/A1 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0112    0.0000     0.3849 r
+  D_CACHE/U18360/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0228    0.0161     0.4010 f
+  D_CACHE/U18041/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0228    0.0000     0.4010 f
+  D_CACHE/U18041/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0324    0.0244     0.4255 f
+  D_CACHE/U12749/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0324    0.0000     0.4255 f
+  D_CACHE/U12749/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0153     0.4408 r
+  D_CACHE/U17607/A3 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0000     0.4408 r
+  D_CACHE/U17607/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0207     0.4615 f
+  D_CACHE/U18247/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0000     0.4615 f
+  D_CACHE/U18247/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0151    0.0149     0.4764 r
+  D_CACHE/U18172/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0151    0.0000     0.4764 r
+  D_CACHE/U18172/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0136    0.0115     0.4879 f
+  D_CACHE/U18160/I (INVD6BWP40P140LVT)        0.0136    0.0000     0.4879 f
+  D_CACHE/U18160/ZN (INVD6BWP40P140LVT)       0.0098    0.0092     0.4970 r
+  D_CACHE/U12769/A1 (NR2OPTIBD12BWP40P140LVT)
+                                              0.0098    0.0000     0.4970 r
+  D_CACHE/U12769/ZN (NR2OPTIBD12BWP40P140LVT)
+                                              0.0202    0.0115     0.5085 f
+  D_CACHE/U18551/A1 (AOI21D8BWP40P140LVT)     0.0202    0.0000     0.5085 f
+  D_CACHE/U18551/ZN (AOI21D8BWP40P140LVT)     0.0316    0.0225     0.5309 r
+  D_CACHE/U18251/A1 (INR2D8BWP40P140LVT)      0.0316    0.0000     0.5309 r
+  D_CACHE/U18251/ZN (INR2D8BWP40P140LVT)      0.0258    0.0361     0.5671 r
+  D_CACHE/U17991/A1 (ND2OPTPAD6BWP40P140LVT)
+                                              0.0258    0.0000     0.5671 r
+  D_CACHE/U17991/ZN (ND2OPTPAD6BWP40P140LVT)
+                                              0.0173    0.0125     0.5796 f
+  D_CACHE/U6548/A1 (NR2OPTPAD8BWP40P140LVT)   0.0173    0.0000     0.5796 f
+  D_CACHE/U6548/ZN (NR2OPTPAD8BWP40P140LVT)   0.0193    0.0163     0.5959 r
+  D_CACHE/U10502/B1 (INR2D8BWP40P140LVT)      0.0193    0.0000     0.5959 r
+  D_CACHE/U10502/ZN (INR2D8BWP40P140LVT)      0.0186    0.0148     0.6108 f
+  D_CACHE/U18463/B1 (INR2D8BWP40P140LVT)      0.0186    0.0000     0.6108 f
+  D_CACHE/U18463/ZN (INR2D8BWP40P140LVT)      0.0224    0.0172     0.6279 r
+  D_CACHE/U18628/A1 (MAOI22D4BWP40P140LVT)    0.0224    0.0000     0.6279 r
+  D_CACHE/U18628/ZN (MAOI22D4BWP40P140LVT)    0.0275    0.0129     0.6408 f
+  D_CACHE/U16675/A1 (ND2D2BWP40P140LVT)       0.0275    0.0000     0.6408 f
+  D_CACHE/U16675/ZN (ND2D2BWP40P140LVT)       0.0134    0.0128     0.6536 r
+  D_CACHE/U18703/S (MUX2NOPTD2BWP40P140LVT)   0.0134    0.0000     0.6536 r
+  D_CACHE/U18703/ZN (MUX2NOPTD2BWP40P140LVT)
+                                              0.0270    0.0188     0.6724 r
+  D_CACHE/valid_reg_0__54_/D (DFQD2BWP40P140LVT)
+                                              0.0270    0.0000     0.6724 r
+  data arrival time                                                0.6724
+
+  clock CLK_clock (rise edge)                           0.8125     0.8125
+  clock network delay (ideal)                           0.0000     0.8125
+  clock uncertainty                                    -0.1500     0.6625
+  D_CACHE/valid_reg_0__54_/CP (DFQD2BWP40P140LVT)       0.0000     0.6625 r
+  library setup time                                   -0.0222     0.6403
+  data required time                                               0.6403
+  --------------------------------------------------------------------------
+  data required time                                               0.6403
+  data arrival time                                               -0.6724
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0321
+
+
+  Startpoint: EX_MEM/ram_we_o_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: D_CACHE/r_data_reg_50_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  EX_MEM/ram_we_o_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  EX_MEM/ram_we_o_reg/Q (DFQD4BWP40P140LVT)   0.0122    0.0559     0.0559 f
+  EX_MEM/U192/I (INVD8BWP40P140LVT)           0.0122    0.0000     0.0559 f
+  EX_MEM/U192/ZN (INVD8BWP40P140LVT)          0.0103    0.0095     0.0655 r
+  EX_MEM/U191/I (INVD18BWP40P140LVT)          0.0103    0.0000     0.0655 r
+  EX_MEM/U191/ZN (INVD18BWP40P140LVT)         0.0231    0.0169     0.0824 f
+  EX_MEM/ram_we_o (ysyx_22050019_EX_MEM_0)              0.0000     0.0824 f
+  LSU/ram_we_i (ysyx_22050019_LSU_0)                    0.0000     0.0824 f
+  LSU/U266/S (MUX2NOPTD6BWP40P140LVT)         0.0231    0.0000     0.0824 f
+  LSU/U266/ZN (MUX2NOPTD6BWP40P140LVT)        0.0231    0.0205     0.1028 f
+  LSU/ram_waddr[24] (ysyx_22050019_LSU_0)               0.0000     0.1028 f
+  U2870/A4 (NR4D2BWP40P140LVT)                0.0231    0.0000     0.1028 f
+  U2870/ZN (NR4D2BWP40P140LVT)                0.0225    0.0264     0.1292 r
+  U2876/A1 (ND2OPTPAD2BWP40P140LVT)           0.0225    0.0000     0.1292 r
+  U2876/ZN (ND2OPTPAD2BWP40P140LVT)           0.0127    0.0110     0.1403 f
+  U2839/A1 (NR2OPTPAD2BWP40P140LVT)           0.0127    0.0000     0.1403 f
+  U2839/ZN (NR2OPTPAD2BWP40P140LVT)           0.0161    0.0133     0.1536 r
+  U2838/A1 (ND2OPTPAD4BWP40P140LVT)           0.0161    0.0000     0.1536 r
+  U2838/ZN (ND2OPTPAD4BWP40P140LVT)           0.0197    0.0159     0.1695 f
+  U2154/A2 (ND2OPTD12BWP40P140LVT)            0.0197    0.0000     0.1695 f
+  U2154/ZN (ND2OPTD12BWP40P140LVT)            0.0149    0.0139     0.1834 r
+  U2153/I (INVD16BWP40P140LVT)                0.0149    0.0000     0.1834 r
+  U2153/ZN (INVD16BWP40P140LVT)               0.0200    0.0158     0.1992 f
+  U2183/B1 (INR2D16BWP40P140LVT)              0.0200    0.0000     0.1992 f
+  U2183/ZN (INR2D16BWP40P140LVT)              0.0144    0.0127     0.2119 r
+  D_CACHE/aw_addr_i[6] (ysyx_22050019_dcache_0)         0.0000     0.2119 r
+  D_CACHE/U8528/A2 (NR2D16BWP40P140LVT)       0.0144    0.0000     0.2119 r
+  D_CACHE/U8528/ZN (NR2D16BWP40P140LVT)       0.0159    0.0136     0.2254 f
+  D_CACHE/U17964/A1 (INR2D8BWP40P140LVT)      0.0159    0.0000     0.2254 f
+  D_CACHE/U17964/ZN (INR2D8BWP40P140LVT)      0.0142    0.0235     0.2489 f
+  D_CACHE/U17933/A1 (ND2D16BWP40P140LVT)      0.0142    0.0000     0.2489 f
+  D_CACHE/U17933/ZN (ND2D16BWP40P140LVT)      0.0169    0.0119     0.2608 r
+  D_CACHE/U8575/I (INVD18BWP40P140LVT)        0.0169    0.0000     0.2608 r
+  D_CACHE/U8575/ZN (INVD18BWP40P140LVT)       0.0109    0.0094     0.2702 f
+  D_CACHE/U12768/A1 (ND2OPTD12BWP40P140LVT)   0.0109    0.0000     0.2702 f
+  D_CACHE/U12768/ZN (ND2OPTD12BWP40P140LVT)   0.0127    0.0093     0.2794 r
+  D_CACHE/U4810/A1 (OR2D1BWP40P140LVT)        0.0127    0.0000     0.2794 r
+  D_CACHE/U4810/Z (OR2D1BWP40P140LVT)         0.0125    0.0220     0.3014 r
+  D_CACHE/U17571/B (IOA21D2BWP40P140LVT)      0.0125    0.0000     0.3014 r
+  D_CACHE/U17571/ZN (IOA21D2BWP40P140LVT)     0.0146    0.0120     0.3134 f
+  D_CACHE/U6689/B1 (INR3D2BWP40P140LVT)       0.0146    0.0000     0.3134 f
+  D_CACHE/U6689/ZN (INR3D2BWP40P140LVT)       0.0241    0.0206     0.3340 r
+  D_CACHE/U8320/A3 (ND3OPTPAD2BWP40P140LVT)   0.0241    0.0000     0.3340 r
+  D_CACHE/U8320/ZN (ND3OPTPAD2BWP40P140LVT)   0.0187    0.0186     0.3526 f
+  D_CACHE/U18016/I (INVD2BWP40P140LVT)        0.0187    0.0000     0.3526 f
+  D_CACHE/U18016/ZN (INVD2BWP40P140LVT)       0.0090    0.0087     0.3614 r
+  D_CACHE/U18046/A2 (ND2D2BWP40P140LVT)       0.0090    0.0000     0.3614 r
+  D_CACHE/U18046/ZN (ND2D2BWP40P140LVT)       0.0151    0.0138     0.3752 f
+  D_CACHE/U8286/A1 (NR2OPTPAD2BWP40P140LVT)   0.0151    0.0000     0.3752 f
+  D_CACHE/U8286/ZN (NR2OPTPAD2BWP40P140LVT)   0.0112    0.0098     0.3849 r
+  D_CACHE/U18360/A1 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0112    0.0000     0.3849 r
+  D_CACHE/U18360/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0228    0.0161     0.4010 f
+  D_CACHE/U18041/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0228    0.0000     0.4010 f
+  D_CACHE/U18041/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0324    0.0244     0.4255 f
+  D_CACHE/U12749/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0324    0.0000     0.4255 f
+  D_CACHE/U12749/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0153     0.4408 r
+  D_CACHE/U17607/A3 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0000     0.4408 r
+  D_CACHE/U17607/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0207     0.4615 f
+  D_CACHE/U18247/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0225    0.0000     0.4615 f
+  D_CACHE/U18247/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0151    0.0149     0.4764 r
+  D_CACHE/U18172/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0151    0.0000     0.4764 r
+  D_CACHE/U18172/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0136    0.0115     0.4879 f
+  D_CACHE/U18160/I (INVD6BWP40P140LVT)        0.0136    0.0000     0.4879 f
+  D_CACHE/U18160/ZN (INVD6BWP40P140LVT)       0.0098    0.0092     0.4970 r
+  D_CACHE/U12769/A1 (NR2OPTIBD12BWP40P140LVT)
+                                              0.0098    0.0000     0.4970 r
+  D_CACHE/U12769/ZN (NR2OPTIBD12BWP40P140LVT)
+                                              0.0202    0.0115     0.5085 f
+  D_CACHE/U18551/A1 (AOI21D8BWP40P140LVT)     0.0202    0.0000     0.5085 f
+  D_CACHE/U18551/ZN (AOI21D8BWP40P140LVT)     0.0316    0.0225     0.5309 r
+  D_CACHE/U9802/I (INVD8BWP40P140LVT)         0.0316    0.0000     0.5309 r
+  D_CACHE/U9802/ZN (INVD8BWP40P140LVT)        0.0230    0.0195     0.5505 f
+  D_CACHE/U8463/A2 (NR2OPTIBD4BWP40P140LVT)   0.0230    0.0000     0.5505 f
+  D_CACHE/U8463/ZN (NR2OPTIBD4BWP40P140LVT)   0.0144    0.0155     0.5659 r
+  D_CACHE/U635/A1 (ND2OPTIBD6BWP40P140LVT)    0.0144    0.0000     0.5659 r
+  D_CACHE/U635/ZN (ND2OPTIBD6BWP40P140LVT)    0.0180    0.0134     0.5793 f
+  D_CACHE/U17792/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0180    0.0000     0.5793 f
+  D_CACHE/U17792/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0188    0.0130     0.5923 r
+  D_CACHE/U17583/I (INVD8BWP40P140LVT)        0.0188    0.0000     0.5923 r
+  D_CACHE/U17583/ZN (INVD8BWP40P140LVT)       0.0088    0.0075     0.5998 f
+  D_CACHE/U17881/B1 (INR2D8BWP40P140LVT)      0.0088    0.0000     0.5998 f
+  D_CACHE/U17881/ZN (INR2D8BWP40P140LVT)      0.0177    0.0121     0.6119 r
+  D_CACHE/U8725/A1 (ND2OPTIBD16BWP40P140LVT)
+                                              0.0177    0.0000     0.6119 r
+  D_CACHE/U8725/ZN (ND2OPTIBD16BWP40P140LVT)
+                                              0.0192    0.0146     0.6266 f
+  D_CACHE/U16724/I (INVD9BWP40P140LVT)        0.0192    0.0000     0.6266 f
+  D_CACHE/U16724/ZN (INVD9BWP40P140LVT)       0.0200    0.0170     0.6436 r
+  D_CACHE/U18989/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0200    0.0000     0.6436 r
+  D_CACHE/U18989/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0124    0.0108     0.6543 f
+  D_CACHE/U11529/A1 (ND2D2BWP40P140LVT)       0.0124    0.0000     0.6543 f
+  D_CACHE/U11529/ZN (ND2D2BWP40P140LVT)       0.0123    0.0081     0.6625 r
+  D_CACHE/U11491/I (INVD2BWP40P140LVT)        0.0123    0.0000     0.6625 r
+  D_CACHE/U11491/ZN (INVD2BWP40P140LVT)       0.0079    0.0073     0.6698 f
+  D_CACHE/U11473/A1 (ND3D2BWP40P140LVT)       0.0079    0.0000     0.6698 f
+  D_CACHE/U11473/ZN (ND3D2BWP40P140LVT)       0.0134    0.0065     0.6763 r
+  D_CACHE/r_data_reg_50_/D (DFD1BWP40P140LVT)
+                                              0.0134    0.0000     0.6763 r
+  data arrival time                                                0.6763
+
+  clock CLK_clock (rise edge)                           0.8125     0.8125
+  clock network delay (ideal)                           0.0000     0.8125
+  clock uncertainty                                    -0.1500     0.6625
+  D_CACHE/r_data_reg_50_/CP (DFD1BWP40P140LVT)          0.0000     0.6625 r
+  library setup time                                   -0.0183     0.6442
+  data required time                                               0.6442
+  --------------------------------------------------------------------------
+  data required time                                               0.6442
+  data arrival time                                               -0.6763
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0321
+
+
+1
