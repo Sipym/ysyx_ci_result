@@ -1,0 +1,1907 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22041752
+freq: 250
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+64118.2  64118.2  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+72651  72651  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.93  0.07 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  250.0     384.6      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22041752
+Version: R-2020.09-SP3a
+Date   : Wed Mar 20 22:58:02 2024
+****************************************
+
+Number of ports:                        19577
+Number of nets:                         88256
+Number of cells:                        73080
+Number of combinational cells:          55380
+Number of sequential cells:             17271
+Number of macros/black boxes:               0
+Number of buf/inv:                      13678
+Number of references:                      19
+
+Combinational area:              31341.239819
+Buf/Inv area:                     4121.586035
+Noncombinational area:           32777.009775
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 64118.249593
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------
+ysyx_22041752                     64118.2496    100.0    477.2880      0.0000  0.0000  ysyx_22041752
+U_AXIARBITER_0                     1083.6000      1.7    430.1640    653.4360  0.0000  ysyx_22041752_axiarbiter_0
+U_CLINT_0                           775.9080      1.2    411.1380    364.7700  0.0000  ysyx_22041752_clint_0
+U_DCACHE_0                        24272.2618     37.9     34.5240      0.0000  0.0000  ysyx_22041752_DCACHE_0
+U_DCACHE_0/U_DCACHE_CMP_0          3989.5380      6.2   2551.2480   1438.2900  0.0000  ysyx_22041752_DCACHE_CMP_0
+U_DCACHE_0/U_DCACHE_D_0             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_8
+U_DCACHE_0/U_DCACHE_D_1             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_15
+U_DCACHE_0/U_DCACHE_D_2             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_12
+U_DCACHE_0/U_DCACHE_D_3             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_9
+U_DCACHE_0/U_DCACHE_RDU_0            77.1120      0.1     61.9920     15.1200  0.0000  ysyx_22041752_DCACHE_RDU_0
+U_DCACHE_0/U_DCACHE_TAG_0          4534.2360      7.1   1831.5360   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_4
+U_DCACHE_0/U_DCACHE_TAG_1          4534.2360      7.1   1831.5360   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_6
+U_DCACHE_0/U_DCACHE_TAG_2          4534.2360      7.1   1831.5360   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_7
+U_DCACHE_0/U_DCACHE_TAG_3          4534.2360      7.1   1831.5360   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_5
+U_DCACHE_0/U_DCACHE_V_0             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_10
+U_DCACHE_0/U_DCACHE_V_1             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_13
+U_DCACHE_0/U_DCACHE_V_2             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_14
+U_DCACHE_0/U_DCACHE_V_3             254.2680      0.4    131.4180    122.8500  0.0000  ysyx_22041752_DCACHE_VD_11
+U_EXU_0                            6735.7080     10.5    894.2220    742.7700  0.0000  ysyx_22041752_EXU_0
+U_EXU_0/U_ALU_0                    3893.2740      6.1   1368.4860      0.0000  0.0000  ysyx_22041752_alu_0
+U_EXU_0/U_ALU_0/U_ASER_0            274.1760      0.4    274.1760      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_9
+U_EXU_0/U_ALU_0/U_DIVER_0          1502.8020      2.3    524.9160    257.9220  0.0000  ysyx_22041752_diver_0
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_0
+                                    121.7160      0.2    121.7160      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_7
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_1
+                                    127.3860      0.2    127.3860      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_12
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_2
+                                    140.7420      0.2    140.7420      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_11
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3
+                                    110.3760      0.2    110.3760      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_10
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4
+                                    219.7440      0.3    219.7440      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_8
+U_EXU_0/U_ALU_0/U_MUL_0             747.8100      1.2    243.3060    255.1500  0.0000  ysyx_22041752_mul_0
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_ASER_0
+                                    249.3540      0.4    249.3540      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_13
+U_EXU_0/U_BJT_CAL_0                 149.8140      0.2     81.3960      0.0000  0.0000  ysyx_22041752_bjt_cal_0
+U_EXU_0/U_BJT_CAL_0/U_ASER_1         68.4180      0.1     68.4180      0.0000  0.0000  ysyx_22041752_aser_WIDTH32_3
+U_EXU_0/U_CSR_0                    1055.6280      1.6    450.8280    604.8000  0.0000  ysyx_22041752_csr_0
+U_ICACHE_0                        19865.6639     31.0     89.8380      1.8900  0.0000  ysyx_22041752_ICACHE_0
+U_ICACHE_0/U_ICACHE_CMP_0          1027.2780      1.6    709.6320    317.6460  0.0000  ysyx_22041752_ICACHE_CMP_0
+U_ICACHE_0/U_ICACHE_RDU_0            16.0020      0.0     16.0020      0.0000  0.0000  ysyx_22041752_ICACHE_RDU_0
+U_ICACHE_0/U_ICACHE_TAG_0          4494.0420      7.0   1871.8560   2622.1860  0.0000  ysyx_22041752_ICACHE_TAG_4
+U_ICACHE_0/U_ICACHE_TAG_1          4400.2980      6.9   1820.4480   2579.8500  0.0000  ysyx_22041752_ICACHE_TAG_6
+U_ICACHE_0/U_ICACHE_TAG_2          4494.0420      7.0   1871.8560   2622.1860  0.0000  ysyx_22041752_ICACHE_TAG_7
+U_ICACHE_0/U_ICACHE_TAG_3          4405.3380      6.9   1825.4880   2579.8500  0.0000  ysyx_22041752_ICACHE_TAG_5
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_0
+                                    234.2340      0.4    111.3840    122.8500  0.0000  ysyx_22041752_ICACHE_V_4
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_1
+                                    234.2340      0.4    111.3840    122.8500  0.0000  ysyx_22041752_ICACHE_V_6
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_2
+                                    234.2340      0.4    111.3840    122.8500  0.0000  ysyx_22041752_ICACHE_V_7
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_3
+                                    234.2340      0.4    111.3840    122.8500  0.0000  ysyx_22041752_ICACHE_V_5
+U_IDU_0                            8002.1339     12.5    489.2580    230.5800  0.0000  ysyx_22041752_IDU_0
+U_IDU_0/U_RF_0                     7282.2960     11.4   3532.4100   3749.8860  0.0000  ysyx_22041752_rf_0
+U_IFU_0                             786.6180      1.2    320.4180    380.2680  0.0000  ysyx_22041752_IFU_0
+U_IFU_0/U_ASER_1                     85.9320      0.1     85.9320      0.0000  0.0000  ysyx_22041752_aser_WIDTH32_2
+U_IO_0                              505.3860      0.8    176.5260    328.8600  0.0000  ysyx_22041752_io_0
+U_MEMSPACE_0                        222.7680      0.3    217.0980      5.6700  0.0000  ysyx_22041752_memspace_0
+U_MEU_0                             449.4420      0.7    298.2420    151.2000  0.0000  ysyx_22041752_MEU_0
+U_MMU_0                             717.1920      1.1    261.7020    455.4900  0.0000  ysyx_22041752_mmu_0
+U_WBU_0                             224.2800      0.3     90.0900    134.1900  0.0000  ysyx_22041752_WBU_0
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------
+Total                                                  31341.2398  32777.0098  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22041752
+Version: R-2020.09-SP3a
+Date   : Wed Mar 20 22:57:56 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_323_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_68_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_323_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_323_/Q (DFQD1BWP40P140)
+                                              0.0183    0.0806     0.0806 f
+  U_EXU_0/U57/A2 (NR2D1BWP40P140)             0.0183    0.0000     0.0806 f
+  U_EXU_0/U57/ZN (NR2D1BWP40P140)             0.0183    0.0196     0.1002 r
+  U_EXU_0/U_CSR_0/int_allowin (ysyx_22041752_csr_0)     0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/A1 (AN2D2BWP40P140)     0.0183    0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/Z (AN2D2BWP40P140)      0.0151    0.0351     0.1353 r
+  U_EXU_0/U_CSR_0/int_t_o (ysyx_22041752_csr_0)         0.0000     0.1353 r
+  U_EXU_0/U52/A1 (OAI21D2BWP40P140)           0.0151    0.0000     0.1353 r
+  U_EXU_0/U52/ZN (OAI21D2BWP40P140)           0.0356    0.0247     0.1599 f
+  U_EXU_0/U291/A1 (ND2OPTPAD2BWP40P140)       0.0356    0.0000     0.1599 f
+  U_EXU_0/U291/ZN (ND2OPTPAD2BWP40P140)       0.0274    0.0268     0.1867 r
+  U_EXU_0/U1207/A1 (OAI21D1BWP40P140)         0.0274    0.0000     0.1867 r
+  U_EXU_0/U1207/ZN (OAI21D1BWP40P140)         0.0547    0.0411     0.2278 f
+  U_EXU_0/U_CSR_0/addr[2] (ysyx_22041752_csr_0)         0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/A1 (AN2D1BWP40P140)     0.0547    0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/Z (AN2D1BWP40P140)      0.0141    0.0392     0.2670 f
+  U_EXU_0/U_CSR_0/U18/A1 (INR2D2BWP40P140LVT)
+                                              0.0141    0.0000     0.2670 f
+  U_EXU_0/U_CSR_0/U18/ZN (INR2D2BWP40P140LVT)
+                                              0.0146    0.0229     0.2899 f
+  U_EXU_0/U_CSR_0/U15/I (BUFFD4BWP40P140)     0.0146    0.0000     0.2899 f
+  U_EXU_0/U_CSR_0/U15/Z (BUFFD4BWP40P140)     0.0545    0.0457     0.3356 f
+  U_EXU_0/U_CSR_0/U80/B1 (AOI22D1BWP40P140)   0.0545    0.0000     0.3356 f
+  U_EXU_0/U_CSR_0/U80/ZN (AOI22D1BWP40P140)   0.0288    0.0357     0.3714 r
+  U_EXU_0/U_CSR_0/U27/B (OAI211OPTREPBD1BWP40P140)
+                                              0.0288    0.0000     0.3714 r
+  U_EXU_0/U_CSR_0/U27/ZN (OAI211OPTREPBD1BWP40P140)
+                                              0.0462    0.0382     0.4095 f
+  U_EXU_0/U_CSR_0/rdata[1] (ysyx_22041752_csr_0)        0.0000     0.4095 f
+  U_EXU_0/U797/A2 (ND2D1BWP40P140)            0.0462    0.0000     0.4095 f
+  U_EXU_0/U797/ZN (ND2D1BWP40P140)            0.0384    0.0228     0.4323 r
+  U_EXU_0/U22/A1 (ND3D2BWP40P140)             0.0384    0.0000     0.4323 r
+  U_EXU_0/U22/ZN (ND3D2BWP40P140)             0.1670    0.1070     0.5393 f
+  U_EXU_0/U_ALU_0/alu_src2[1] (ysyx_22041752_alu_0)     0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/divisor[1] (ysyx_22041752_diver_0)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/b[1] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/I (INVD1BWP40P140)
+                                              0.1670    0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/ZN (INVD1BWP40P140)
+                                              0.0380    0.0331     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/A1 (ND2D1BWP40P140)
+                                              0.0380    0.0000     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/ZN (ND2D1BWP40P140)
+                                              0.0297    0.0266     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/A2 (NR2D1BWP40P140)
+                                              0.0297    0.0000     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/ZN (NR2D1BWP40P140)
+                                              0.0236    0.0256     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0236    0.0000     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0246    0.0223     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0246    0.0000     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0258    0.0236     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0258    0.0000     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0235    0.0190     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0235    0.0000     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0249    0.0196     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0249    0.0000     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0233    0.0189     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0233    0.0000     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0250    0.0196     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0250    0.0000     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0234    0.0189     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/A1 (NR2D1BWP40P140)
+                                              0.0234    0.0000     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0232     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0313    0.0000     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0225    0.0168     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0225    0.0000     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0273    0.0226     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/A1 (NR2D1BWP40P140)
+                                              0.0273    0.0000     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0246     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0255     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/ZN (NR2D1BWP40P140)
+                                              0.0387    0.0250     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0387    0.0000     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0300    0.0262     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0300    0.0000     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0317    0.0215     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0317    0.0000     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0336    0.0195     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0336    0.0000     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0190    0.0147     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/A1 (NR2D1BWP40P140)
+                                              0.0190    0.0000     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/ZN (NR2D1BWP40P140)
+                                              0.0403    0.0226     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/A1 (ND2OPTPAD1BWP40P140LVT)
+                                              0.0403    0.0000     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/ZN (ND2OPTPAD1BWP40P140LVT)
+                                              0.0275    0.0237     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/A1 (NR2D1BWP40P140)
+                                              0.0275    0.0000     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/ZN (NR2D1BWP40P140)
+                                              0.0417    0.0322     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0417    0.0000     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0263    0.0202     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/B1 (INR2D2BWP40P140)
+                                              0.0263    0.0000     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/ZN (INR2D2BWP40P140)
+                                              0.0212    0.0197     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/B (HA1D1BWP40P140)
+                                              0.0212    0.0000     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/CO (HA1D1BWP40P140)
+                                              0.0208    0.0374     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/CO (HA1D1BWP40P140)
+                                              0.0208    0.0372     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/CO (HA1D1BWP40P140)
+                                              0.0190    0.0359     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/CO (HA1D1BWP40P140)
+                                              0.0206    0.0377     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/B (HA1D2BWP40P140)
+                                              0.0206    0.0000     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/CO (HA1D2BWP40P140)
+                                              0.0177    0.0389     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/B (HA1D4BWP40P140)
+                                              0.0177    0.0000     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/CO (HA1D4BWP40P140)
+                                              0.0118    0.0311     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/B (HA1D2BWP40P140)
+                                              0.0118    0.0000     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/CO (HA1D2BWP40P140)
+                                              0.0163    0.0356     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0163    0.0000     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0162    0.0141     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0162    0.0000     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0209    0.0147     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/B (HA1D1BWP40P140)
+                                              0.0209    0.0000     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/CO (HA1D1BWP40P140)
+                                              0.0207    0.0372     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/B (HA1D2BWP40P140)
+                                              0.0207    0.0000     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/CO (HA1D2BWP40P140)
+                                              0.0153    0.0368     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/B (HA1D1BWP40P140)
+                                              0.0153    0.0000     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/CO (HA1D1BWP40P140)
+                                              0.0214    0.0365     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/B (HA1D1BWP40P140LVT)
+                                              0.0214    0.0000     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/CO (HA1D1BWP40P140LVT)
+                                              0.0180    0.0302     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/B (HA1D1BWP40P140)
+                                              0.0180    0.0000     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/CO (HA1D1BWP40P140)
+                                              0.0190    0.0355     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/CO (HA1D1BWP40P140)
+                                              0.0208    0.0378     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/S (HA1D1BWP40P140)
+                                              0.0160    0.0390     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/result[61] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/A1 (AOI22D1BWP40P140)
+                                              0.0160    0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/ZN (AOI22D1BWP40P140)
+                                              0.0544    0.0197     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/B (IOA21D1BWP40P140)
+                                              0.0544    0.0000     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/ZN (IOA21D1BWP40P140)
+                                              0.0265    0.0234     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/b[61] (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/I (INVD1BWP40P140)
+                                              0.0265    0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/ZN (INVD1BWP40P140)
+                                              0.0167    0.0175     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/A1 (ND2D1BWP40P140)
+                                              0.0167    0.0000     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/ZN (ND2D1BWP40P140)
+                                              0.0262    0.0213     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/I (INVD1BWP40P140)
+                                              0.0262    0.0000     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/ZN (INVD1BWP40P140)
+                                              0.0125    0.0138     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/B (AOI21D1BWP40P140)
+                                              0.0125    0.0000     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/ZN (AOI21D1BWP40P140)
+                                              0.0319    0.0185     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/A1 (OAI21D1BWP40P140LVT)
+                                              0.0319    0.0000     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/ZN (OAI21D1BWP40P140LVT)
+                                              0.0273    0.0242     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/A1 (AO21D1BWP40P140)
+                                              0.0273    0.0000     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/Z (AO21D1BWP40P140)
+                                              0.0162    0.0341     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/cout (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/A1 (XNR2UD1BWP40P140)
+                                              0.0162    0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/ZN (XNR2UD1BWP40P140)
+                                              0.0436    0.0282     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/A1 (AN2D1BWP40P140)
+                                              0.0436    0.0000     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/Z (AN2D1BWP40P140)
+                                              0.0323    0.0447     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/I (INVD3BWP40P140)
+                                              0.0323    0.0000     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/ZN (INVD3BWP40P140)
+                                              0.0905    0.0635     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U244/A1 (OAI21D1BWP40P140)
+                                              0.0905    0.0000     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U244/ZN (OAI21D1BWP40P140)
+                                              0.0342    0.0332     2.4191 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_68_/D (DFQD1BWP40P140)
+                                              0.0342    0.0000     2.4191 r
+  data arrival time                                                2.4191
+
+  clock CLK_clock (rise edge)                           2.6000     2.6000
+  clock network delay (ideal)                           0.0000     2.6000
+  clock uncertainty                                    -0.1500     2.4500
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_68_/CP (DFQD1BWP40P140)
+                                                        0.0000     2.4500 r
+  library setup time                                   -0.0308     2.4192
+  data required time                                               2.4192
+  --------------------------------------------------------------------------
+  data required time                                               2.4192
+  data arrival time                                               -2.4191
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_323_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_69_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_323_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_323_/Q (DFQD1BWP40P140)
+                                              0.0183    0.0806     0.0806 f
+  U_EXU_0/U57/A2 (NR2D1BWP40P140)             0.0183    0.0000     0.0806 f
+  U_EXU_0/U57/ZN (NR2D1BWP40P140)             0.0183    0.0196     0.1002 r
+  U_EXU_0/U_CSR_0/int_allowin (ysyx_22041752_csr_0)     0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/A1 (AN2D2BWP40P140)     0.0183    0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/Z (AN2D2BWP40P140)      0.0151    0.0351     0.1353 r
+  U_EXU_0/U_CSR_0/int_t_o (ysyx_22041752_csr_0)         0.0000     0.1353 r
+  U_EXU_0/U52/A1 (OAI21D2BWP40P140)           0.0151    0.0000     0.1353 r
+  U_EXU_0/U52/ZN (OAI21D2BWP40P140)           0.0356    0.0247     0.1599 f
+  U_EXU_0/U291/A1 (ND2OPTPAD2BWP40P140)       0.0356    0.0000     0.1599 f
+  U_EXU_0/U291/ZN (ND2OPTPAD2BWP40P140)       0.0274    0.0268     0.1867 r
+  U_EXU_0/U1207/A1 (OAI21D1BWP40P140)         0.0274    0.0000     0.1867 r
+  U_EXU_0/U1207/ZN (OAI21D1BWP40P140)         0.0547    0.0411     0.2278 f
+  U_EXU_0/U_CSR_0/addr[2] (ysyx_22041752_csr_0)         0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/A1 (AN2D1BWP40P140)     0.0547    0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/Z (AN2D1BWP40P140)      0.0141    0.0392     0.2670 f
+  U_EXU_0/U_CSR_0/U18/A1 (INR2D2BWP40P140LVT)
+                                              0.0141    0.0000     0.2670 f
+  U_EXU_0/U_CSR_0/U18/ZN (INR2D2BWP40P140LVT)
+                                              0.0146    0.0229     0.2899 f
+  U_EXU_0/U_CSR_0/U15/I (BUFFD4BWP40P140)     0.0146    0.0000     0.2899 f
+  U_EXU_0/U_CSR_0/U15/Z (BUFFD4BWP40P140)     0.0545    0.0457     0.3356 f
+  U_EXU_0/U_CSR_0/U80/B1 (AOI22D1BWP40P140)   0.0545    0.0000     0.3356 f
+  U_EXU_0/U_CSR_0/U80/ZN (AOI22D1BWP40P140)   0.0288    0.0357     0.3714 r
+  U_EXU_0/U_CSR_0/U27/B (OAI211OPTREPBD1BWP40P140)
+                                              0.0288    0.0000     0.3714 r
+  U_EXU_0/U_CSR_0/U27/ZN (OAI211OPTREPBD1BWP40P140)
+                                              0.0462    0.0382     0.4095 f
+  U_EXU_0/U_CSR_0/rdata[1] (ysyx_22041752_csr_0)        0.0000     0.4095 f
+  U_EXU_0/U797/A2 (ND2D1BWP40P140)            0.0462    0.0000     0.4095 f
+  U_EXU_0/U797/ZN (ND2D1BWP40P140)            0.0384    0.0228     0.4323 r
+  U_EXU_0/U22/A1 (ND3D2BWP40P140)             0.0384    0.0000     0.4323 r
+  U_EXU_0/U22/ZN (ND3D2BWP40P140)             0.1670    0.1070     0.5393 f
+  U_EXU_0/U_ALU_0/alu_src2[1] (ysyx_22041752_alu_0)     0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/divisor[1] (ysyx_22041752_diver_0)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/b[1] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/I (INVD1BWP40P140)
+                                              0.1670    0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/ZN (INVD1BWP40P140)
+                                              0.0380    0.0331     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/A1 (ND2D1BWP40P140)
+                                              0.0380    0.0000     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/ZN (ND2D1BWP40P140)
+                                              0.0297    0.0266     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/A2 (NR2D1BWP40P140)
+                                              0.0297    0.0000     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/ZN (NR2D1BWP40P140)
+                                              0.0236    0.0256     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0236    0.0000     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0246    0.0223     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0246    0.0000     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0258    0.0236     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0258    0.0000     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0235    0.0190     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0235    0.0000     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0249    0.0196     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0249    0.0000     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0233    0.0189     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0233    0.0000     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0250    0.0196     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0250    0.0000     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0234    0.0189     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/A1 (NR2D1BWP40P140)
+                                              0.0234    0.0000     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0232     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0313    0.0000     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0225    0.0168     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0225    0.0000     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0273    0.0226     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/A1 (NR2D1BWP40P140)
+                                              0.0273    0.0000     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0246     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0255     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/ZN (NR2D1BWP40P140)
+                                              0.0387    0.0250     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0387    0.0000     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0300    0.0262     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0300    0.0000     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0317    0.0215     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0317    0.0000     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0336    0.0195     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0336    0.0000     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0190    0.0147     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/A1 (NR2D1BWP40P140)
+                                              0.0190    0.0000     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/ZN (NR2D1BWP40P140)
+                                              0.0403    0.0226     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/A1 (ND2OPTPAD1BWP40P140LVT)
+                                              0.0403    0.0000     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/ZN (ND2OPTPAD1BWP40P140LVT)
+                                              0.0275    0.0237     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/A1 (NR2D1BWP40P140)
+                                              0.0275    0.0000     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/ZN (NR2D1BWP40P140)
+                                              0.0417    0.0322     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0417    0.0000     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0263    0.0202     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/B1 (INR2D2BWP40P140)
+                                              0.0263    0.0000     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/ZN (INR2D2BWP40P140)
+                                              0.0212    0.0197     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/B (HA1D1BWP40P140)
+                                              0.0212    0.0000     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/CO (HA1D1BWP40P140)
+                                              0.0208    0.0374     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/CO (HA1D1BWP40P140)
+                                              0.0208    0.0372     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/CO (HA1D1BWP40P140)
+                                              0.0190    0.0359     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/CO (HA1D1BWP40P140)
+                                              0.0206    0.0377     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/B (HA1D2BWP40P140)
+                                              0.0206    0.0000     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/CO (HA1D2BWP40P140)
+                                              0.0177    0.0389     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/B (HA1D4BWP40P140)
+                                              0.0177    0.0000     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/CO (HA1D4BWP40P140)
+                                              0.0118    0.0311     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/B (HA1D2BWP40P140)
+                                              0.0118    0.0000     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/CO (HA1D2BWP40P140)
+                                              0.0163    0.0356     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0163    0.0000     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0162    0.0141     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0162    0.0000     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0209    0.0147     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/B (HA1D1BWP40P140)
+                                              0.0209    0.0000     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/CO (HA1D1BWP40P140)
+                                              0.0207    0.0372     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/B (HA1D2BWP40P140)
+                                              0.0207    0.0000     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/CO (HA1D2BWP40P140)
+                                              0.0153    0.0368     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/B (HA1D1BWP40P140)
+                                              0.0153    0.0000     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/CO (HA1D1BWP40P140)
+                                              0.0214    0.0365     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/B (HA1D1BWP40P140LVT)
+                                              0.0214    0.0000     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/CO (HA1D1BWP40P140LVT)
+                                              0.0180    0.0302     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/B (HA1D1BWP40P140)
+                                              0.0180    0.0000     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/CO (HA1D1BWP40P140)
+                                              0.0190    0.0355     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/CO (HA1D1BWP40P140)
+                                              0.0208    0.0378     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/S (HA1D1BWP40P140)
+                                              0.0160    0.0390     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/result[61] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/A1 (AOI22D1BWP40P140)
+                                              0.0160    0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/ZN (AOI22D1BWP40P140)
+                                              0.0544    0.0197     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/B (IOA21D1BWP40P140)
+                                              0.0544    0.0000     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/ZN (IOA21D1BWP40P140)
+                                              0.0265    0.0234     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/b[61] (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/I (INVD1BWP40P140)
+                                              0.0265    0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/ZN (INVD1BWP40P140)
+                                              0.0167    0.0175     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/A1 (ND2D1BWP40P140)
+                                              0.0167    0.0000     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/ZN (ND2D1BWP40P140)
+                                              0.0262    0.0213     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/I (INVD1BWP40P140)
+                                              0.0262    0.0000     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/ZN (INVD1BWP40P140)
+                                              0.0125    0.0138     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/B (AOI21D1BWP40P140)
+                                              0.0125    0.0000     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/ZN (AOI21D1BWP40P140)
+                                              0.0319    0.0185     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/A1 (OAI21D1BWP40P140LVT)
+                                              0.0319    0.0000     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/ZN (OAI21D1BWP40P140LVT)
+                                              0.0273    0.0242     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/A1 (AO21D1BWP40P140)
+                                              0.0273    0.0000     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/Z (AO21D1BWP40P140)
+                                              0.0162    0.0341     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/cout (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/A1 (XNR2UD1BWP40P140)
+                                              0.0162    0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/ZN (XNR2UD1BWP40P140)
+                                              0.0436    0.0282     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/A1 (AN2D1BWP40P140)
+                                              0.0436    0.0000     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/Z (AN2D1BWP40P140)
+                                              0.0323    0.0447     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/I (INVD3BWP40P140)
+                                              0.0323    0.0000     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/ZN (INVD3BWP40P140)
+                                              0.0905    0.0635     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U246/A1 (OAI21D1BWP40P140)
+                                              0.0905    0.0000     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U246/ZN (OAI21D1BWP40P140)
+                                              0.0342    0.0332     2.4191 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_69_/D (DFQD1BWP40P140)
+                                              0.0342    0.0000     2.4191 r
+  data arrival time                                                2.4191
+
+  clock CLK_clock (rise edge)                           2.6000     2.6000
+  clock network delay (ideal)                           0.0000     2.6000
+  clock uncertainty                                    -0.1500     2.4500
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_69_/CP (DFQD1BWP40P140)
+                                                        0.0000     2.4500 r
+  library setup time                                   -0.0308     2.4192
+  data required time                                               2.4192
+  --------------------------------------------------------------------------
+  data required time                                               2.4192
+  data arrival time                                               -2.4191
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_323_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_64_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_323_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_323_/Q (DFQD1BWP40P140)
+                                              0.0183    0.0806     0.0806 f
+  U_EXU_0/U57/A2 (NR2D1BWP40P140)             0.0183    0.0000     0.0806 f
+  U_EXU_0/U57/ZN (NR2D1BWP40P140)             0.0183    0.0196     0.1002 r
+  U_EXU_0/U_CSR_0/int_allowin (ysyx_22041752_csr_0)     0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/A1 (AN2D2BWP40P140)     0.0183    0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/Z (AN2D2BWP40P140)      0.0151    0.0351     0.1353 r
+  U_EXU_0/U_CSR_0/int_t_o (ysyx_22041752_csr_0)         0.0000     0.1353 r
+  U_EXU_0/U52/A1 (OAI21D2BWP40P140)           0.0151    0.0000     0.1353 r
+  U_EXU_0/U52/ZN (OAI21D2BWP40P140)           0.0356    0.0247     0.1599 f
+  U_EXU_0/U291/A1 (ND2OPTPAD2BWP40P140)       0.0356    0.0000     0.1599 f
+  U_EXU_0/U291/ZN (ND2OPTPAD2BWP40P140)       0.0274    0.0268     0.1867 r
+  U_EXU_0/U1207/A1 (OAI21D1BWP40P140)         0.0274    0.0000     0.1867 r
+  U_EXU_0/U1207/ZN (OAI21D1BWP40P140)         0.0547    0.0411     0.2278 f
+  U_EXU_0/U_CSR_0/addr[2] (ysyx_22041752_csr_0)         0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/A1 (AN2D1BWP40P140)     0.0547    0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/Z (AN2D1BWP40P140)      0.0141    0.0392     0.2670 f
+  U_EXU_0/U_CSR_0/U18/A1 (INR2D2BWP40P140LVT)
+                                              0.0141    0.0000     0.2670 f
+  U_EXU_0/U_CSR_0/U18/ZN (INR2D2BWP40P140LVT)
+                                              0.0146    0.0229     0.2899 f
+  U_EXU_0/U_CSR_0/U15/I (BUFFD4BWP40P140)     0.0146    0.0000     0.2899 f
+  U_EXU_0/U_CSR_0/U15/Z (BUFFD4BWP40P140)     0.0545    0.0457     0.3356 f
+  U_EXU_0/U_CSR_0/U80/B1 (AOI22D1BWP40P140)   0.0545    0.0000     0.3356 f
+  U_EXU_0/U_CSR_0/U80/ZN (AOI22D1BWP40P140)   0.0288    0.0357     0.3714 r
+  U_EXU_0/U_CSR_0/U27/B (OAI211OPTREPBD1BWP40P140)
+                                              0.0288    0.0000     0.3714 r
+  U_EXU_0/U_CSR_0/U27/ZN (OAI211OPTREPBD1BWP40P140)
+                                              0.0462    0.0382     0.4095 f
+  U_EXU_0/U_CSR_0/rdata[1] (ysyx_22041752_csr_0)        0.0000     0.4095 f
+  U_EXU_0/U797/A2 (ND2D1BWP40P140)            0.0462    0.0000     0.4095 f
+  U_EXU_0/U797/ZN (ND2D1BWP40P140)            0.0384    0.0228     0.4323 r
+  U_EXU_0/U22/A1 (ND3D2BWP40P140)             0.0384    0.0000     0.4323 r
+  U_EXU_0/U22/ZN (ND3D2BWP40P140)             0.1670    0.1070     0.5393 f
+  U_EXU_0/U_ALU_0/alu_src2[1] (ysyx_22041752_alu_0)     0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/divisor[1] (ysyx_22041752_diver_0)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/b[1] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/I (INVD1BWP40P140)
+                                              0.1670    0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/ZN (INVD1BWP40P140)
+                                              0.0380    0.0331     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/A1 (ND2D1BWP40P140)
+                                              0.0380    0.0000     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/ZN (ND2D1BWP40P140)
+                                              0.0297    0.0266     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/A2 (NR2D1BWP40P140)
+                                              0.0297    0.0000     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/ZN (NR2D1BWP40P140)
+                                              0.0236    0.0256     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0236    0.0000     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0246    0.0223     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0246    0.0000     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0258    0.0236     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0258    0.0000     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0235    0.0190     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0235    0.0000     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0249    0.0196     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0249    0.0000     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0233    0.0189     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0233    0.0000     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0250    0.0196     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0250    0.0000     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0234    0.0189     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/A1 (NR2D1BWP40P140)
+                                              0.0234    0.0000     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0232     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0313    0.0000     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0225    0.0168     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0225    0.0000     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0273    0.0226     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/A1 (NR2D1BWP40P140)
+                                              0.0273    0.0000     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0246     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0255     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/ZN (NR2D1BWP40P140)
+                                              0.0387    0.0250     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0387    0.0000     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0300    0.0262     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0300    0.0000     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0317    0.0215     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0317    0.0000     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0336    0.0195     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0336    0.0000     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0190    0.0147     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/A1 (NR2D1BWP40P140)
+                                              0.0190    0.0000     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/ZN (NR2D1BWP40P140)
+                                              0.0403    0.0226     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/A1 (ND2OPTPAD1BWP40P140LVT)
+                                              0.0403    0.0000     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/ZN (ND2OPTPAD1BWP40P140LVT)
+                                              0.0275    0.0237     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/A1 (NR2D1BWP40P140)
+                                              0.0275    0.0000     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/ZN (NR2D1BWP40P140)
+                                              0.0417    0.0322     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0417    0.0000     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0263    0.0202     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/B1 (INR2D2BWP40P140)
+                                              0.0263    0.0000     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/ZN (INR2D2BWP40P140)
+                                              0.0212    0.0197     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/B (HA1D1BWP40P140)
+                                              0.0212    0.0000     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/CO (HA1D1BWP40P140)
+                                              0.0208    0.0374     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/CO (HA1D1BWP40P140)
+                                              0.0208    0.0372     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/CO (HA1D1BWP40P140)
+                                              0.0190    0.0359     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/CO (HA1D1BWP40P140)
+                                              0.0206    0.0377     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/B (HA1D2BWP40P140)
+                                              0.0206    0.0000     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/CO (HA1D2BWP40P140)
+                                              0.0177    0.0389     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/B (HA1D4BWP40P140)
+                                              0.0177    0.0000     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/CO (HA1D4BWP40P140)
+                                              0.0118    0.0311     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/B (HA1D2BWP40P140)
+                                              0.0118    0.0000     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/CO (HA1D2BWP40P140)
+                                              0.0163    0.0356     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0163    0.0000     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0162    0.0141     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0162    0.0000     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0209    0.0147     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/B (HA1D1BWP40P140)
+                                              0.0209    0.0000     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/CO (HA1D1BWP40P140)
+                                              0.0207    0.0372     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/B (HA1D2BWP40P140)
+                                              0.0207    0.0000     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/CO (HA1D2BWP40P140)
+                                              0.0153    0.0368     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/B (HA1D1BWP40P140)
+                                              0.0153    0.0000     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/CO (HA1D1BWP40P140)
+                                              0.0214    0.0365     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/B (HA1D1BWP40P140LVT)
+                                              0.0214    0.0000     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/CO (HA1D1BWP40P140LVT)
+                                              0.0180    0.0302     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/B (HA1D1BWP40P140)
+                                              0.0180    0.0000     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/CO (HA1D1BWP40P140)
+                                              0.0190    0.0355     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/CO (HA1D1BWP40P140)
+                                              0.0208    0.0378     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/S (HA1D1BWP40P140)
+                                              0.0160    0.0390     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/result[61] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/A1 (AOI22D1BWP40P140)
+                                              0.0160    0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/ZN (AOI22D1BWP40P140)
+                                              0.0544    0.0197     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/B (IOA21D1BWP40P140)
+                                              0.0544    0.0000     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/ZN (IOA21D1BWP40P140)
+                                              0.0265    0.0234     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/b[61] (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/I (INVD1BWP40P140)
+                                              0.0265    0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/ZN (INVD1BWP40P140)
+                                              0.0167    0.0175     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/A1 (ND2D1BWP40P140)
+                                              0.0167    0.0000     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/ZN (ND2D1BWP40P140)
+                                              0.0262    0.0213     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/I (INVD1BWP40P140)
+                                              0.0262    0.0000     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/ZN (INVD1BWP40P140)
+                                              0.0125    0.0138     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/B (AOI21D1BWP40P140)
+                                              0.0125    0.0000     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/ZN (AOI21D1BWP40P140)
+                                              0.0319    0.0185     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/A1 (OAI21D1BWP40P140LVT)
+                                              0.0319    0.0000     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/ZN (OAI21D1BWP40P140LVT)
+                                              0.0273    0.0242     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/A1 (AO21D1BWP40P140)
+                                              0.0273    0.0000     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/Z (AO21D1BWP40P140)
+                                              0.0162    0.0341     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/cout (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/A1 (XNR2UD1BWP40P140)
+                                              0.0162    0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/ZN (XNR2UD1BWP40P140)
+                                              0.0436    0.0282     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/A1 (AN2D1BWP40P140)
+                                              0.0436    0.0000     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/Z (AN2D1BWP40P140)
+                                              0.0323    0.0447     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/I (INVD3BWP40P140)
+                                              0.0323    0.0000     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/ZN (INVD3BWP40P140)
+                                              0.0905    0.0635     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U28/A1 (OAI21D1BWP40P140)
+                                              0.0905    0.0000     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U28/ZN (OAI21D1BWP40P140)
+                                              0.0342    0.0332     2.4191 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_64_/D (DFQD1BWP40P140)
+                                              0.0342    0.0000     2.4191 r
+  data arrival time                                                2.4191
+
+  clock CLK_clock (rise edge)                           2.6000     2.6000
+  clock network delay (ideal)                           0.0000     2.6000
+  clock uncertainty                                    -0.1500     2.4500
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_64_/CP (DFQD1BWP40P140)
+                                                        0.0000     2.4500 r
+  library setup time                                   -0.0308     2.4192
+  data required time                                               2.4192
+  --------------------------------------------------------------------------
+  data required time                                               2.4192
+  data arrival time                                               -2.4191
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_323_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_65_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_323_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_323_/Q (DFQD1BWP40P140)
+                                              0.0183    0.0806     0.0806 f
+  U_EXU_0/U57/A2 (NR2D1BWP40P140)             0.0183    0.0000     0.0806 f
+  U_EXU_0/U57/ZN (NR2D1BWP40P140)             0.0183    0.0196     0.1002 r
+  U_EXU_0/U_CSR_0/int_allowin (ysyx_22041752_csr_0)     0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/A1 (AN2D2BWP40P140)     0.0183    0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/Z (AN2D2BWP40P140)      0.0151    0.0351     0.1353 r
+  U_EXU_0/U_CSR_0/int_t_o (ysyx_22041752_csr_0)         0.0000     0.1353 r
+  U_EXU_0/U52/A1 (OAI21D2BWP40P140)           0.0151    0.0000     0.1353 r
+  U_EXU_0/U52/ZN (OAI21D2BWP40P140)           0.0356    0.0247     0.1599 f
+  U_EXU_0/U291/A1 (ND2OPTPAD2BWP40P140)       0.0356    0.0000     0.1599 f
+  U_EXU_0/U291/ZN (ND2OPTPAD2BWP40P140)       0.0274    0.0268     0.1867 r
+  U_EXU_0/U1207/A1 (OAI21D1BWP40P140)         0.0274    0.0000     0.1867 r
+  U_EXU_0/U1207/ZN (OAI21D1BWP40P140)         0.0547    0.0411     0.2278 f
+  U_EXU_0/U_CSR_0/addr[2] (ysyx_22041752_csr_0)         0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/A1 (AN2D1BWP40P140)     0.0547    0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/Z (AN2D1BWP40P140)      0.0141    0.0392     0.2670 f
+  U_EXU_0/U_CSR_0/U18/A1 (INR2D2BWP40P140LVT)
+                                              0.0141    0.0000     0.2670 f
+  U_EXU_0/U_CSR_0/U18/ZN (INR2D2BWP40P140LVT)
+                                              0.0146    0.0229     0.2899 f
+  U_EXU_0/U_CSR_0/U15/I (BUFFD4BWP40P140)     0.0146    0.0000     0.2899 f
+  U_EXU_0/U_CSR_0/U15/Z (BUFFD4BWP40P140)     0.0545    0.0457     0.3356 f
+  U_EXU_0/U_CSR_0/U80/B1 (AOI22D1BWP40P140)   0.0545    0.0000     0.3356 f
+  U_EXU_0/U_CSR_0/U80/ZN (AOI22D1BWP40P140)   0.0288    0.0357     0.3714 r
+  U_EXU_0/U_CSR_0/U27/B (OAI211OPTREPBD1BWP40P140)
+                                              0.0288    0.0000     0.3714 r
+  U_EXU_0/U_CSR_0/U27/ZN (OAI211OPTREPBD1BWP40P140)
+                                              0.0462    0.0382     0.4095 f
+  U_EXU_0/U_CSR_0/rdata[1] (ysyx_22041752_csr_0)        0.0000     0.4095 f
+  U_EXU_0/U797/A2 (ND2D1BWP40P140)            0.0462    0.0000     0.4095 f
+  U_EXU_0/U797/ZN (ND2D1BWP40P140)            0.0384    0.0228     0.4323 r
+  U_EXU_0/U22/A1 (ND3D2BWP40P140)             0.0384    0.0000     0.4323 r
+  U_EXU_0/U22/ZN (ND3D2BWP40P140)             0.1670    0.1070     0.5393 f
+  U_EXU_0/U_ALU_0/alu_src2[1] (ysyx_22041752_alu_0)     0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/divisor[1] (ysyx_22041752_diver_0)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/b[1] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/I (INVD1BWP40P140)
+                                              0.1670    0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/ZN (INVD1BWP40P140)
+                                              0.0380    0.0331     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/A1 (ND2D1BWP40P140)
+                                              0.0380    0.0000     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/ZN (ND2D1BWP40P140)
+                                              0.0297    0.0266     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/A2 (NR2D1BWP40P140)
+                                              0.0297    0.0000     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/ZN (NR2D1BWP40P140)
+                                              0.0236    0.0256     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0236    0.0000     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0246    0.0223     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0246    0.0000     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0258    0.0236     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0258    0.0000     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0235    0.0190     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0235    0.0000     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0249    0.0196     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0249    0.0000     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0233    0.0189     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0233    0.0000     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0250    0.0196     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0250    0.0000     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0234    0.0189     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/A1 (NR2D1BWP40P140)
+                                              0.0234    0.0000     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0232     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0313    0.0000     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0225    0.0168     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0225    0.0000     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0273    0.0226     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/A1 (NR2D1BWP40P140)
+                                              0.0273    0.0000     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0246     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0255     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/ZN (NR2D1BWP40P140)
+                                              0.0387    0.0250     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0387    0.0000     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0300    0.0262     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0300    0.0000     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0317    0.0215     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0317    0.0000     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0336    0.0195     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0336    0.0000     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0190    0.0147     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/A1 (NR2D1BWP40P140)
+                                              0.0190    0.0000     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/ZN (NR2D1BWP40P140)
+                                              0.0403    0.0226     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/A1 (ND2OPTPAD1BWP40P140LVT)
+                                              0.0403    0.0000     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/ZN (ND2OPTPAD1BWP40P140LVT)
+                                              0.0275    0.0237     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/A1 (NR2D1BWP40P140)
+                                              0.0275    0.0000     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/ZN (NR2D1BWP40P140)
+                                              0.0417    0.0322     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0417    0.0000     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0263    0.0202     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/B1 (INR2D2BWP40P140)
+                                              0.0263    0.0000     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/ZN (INR2D2BWP40P140)
+                                              0.0212    0.0197     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/B (HA1D1BWP40P140)
+                                              0.0212    0.0000     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/CO (HA1D1BWP40P140)
+                                              0.0208    0.0374     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/CO (HA1D1BWP40P140)
+                                              0.0208    0.0372     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/CO (HA1D1BWP40P140)
+                                              0.0190    0.0359     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/CO (HA1D1BWP40P140)
+                                              0.0206    0.0377     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/B (HA1D2BWP40P140)
+                                              0.0206    0.0000     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/CO (HA1D2BWP40P140)
+                                              0.0177    0.0389     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/B (HA1D4BWP40P140)
+                                              0.0177    0.0000     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/CO (HA1D4BWP40P140)
+                                              0.0118    0.0311     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/B (HA1D2BWP40P140)
+                                              0.0118    0.0000     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/CO (HA1D2BWP40P140)
+                                              0.0163    0.0356     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0163    0.0000     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0162    0.0141     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0162    0.0000     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0209    0.0147     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/B (HA1D1BWP40P140)
+                                              0.0209    0.0000     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/CO (HA1D1BWP40P140)
+                                              0.0207    0.0372     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/B (HA1D2BWP40P140)
+                                              0.0207    0.0000     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/CO (HA1D2BWP40P140)
+                                              0.0153    0.0368     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/B (HA1D1BWP40P140)
+                                              0.0153    0.0000     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/CO (HA1D1BWP40P140)
+                                              0.0214    0.0365     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/B (HA1D1BWP40P140LVT)
+                                              0.0214    0.0000     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/CO (HA1D1BWP40P140LVT)
+                                              0.0180    0.0302     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/B (HA1D1BWP40P140)
+                                              0.0180    0.0000     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/CO (HA1D1BWP40P140)
+                                              0.0190    0.0355     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/CO (HA1D1BWP40P140)
+                                              0.0208    0.0378     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/S (HA1D1BWP40P140)
+                                              0.0160    0.0390     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/result[61] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/A1 (AOI22D1BWP40P140)
+                                              0.0160    0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/ZN (AOI22D1BWP40P140)
+                                              0.0544    0.0197     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/B (IOA21D1BWP40P140)
+                                              0.0544    0.0000     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/ZN (IOA21D1BWP40P140)
+                                              0.0265    0.0234     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/b[61] (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/I (INVD1BWP40P140)
+                                              0.0265    0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/ZN (INVD1BWP40P140)
+                                              0.0167    0.0175     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/A1 (ND2D1BWP40P140)
+                                              0.0167    0.0000     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/ZN (ND2D1BWP40P140)
+                                              0.0262    0.0213     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/I (INVD1BWP40P140)
+                                              0.0262    0.0000     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/ZN (INVD1BWP40P140)
+                                              0.0125    0.0138     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/B (AOI21D1BWP40P140)
+                                              0.0125    0.0000     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/ZN (AOI21D1BWP40P140)
+                                              0.0319    0.0185     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/A1 (OAI21D1BWP40P140LVT)
+                                              0.0319    0.0000     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/ZN (OAI21D1BWP40P140LVT)
+                                              0.0273    0.0242     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/A1 (AO21D1BWP40P140)
+                                              0.0273    0.0000     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/Z (AO21D1BWP40P140)
+                                              0.0162    0.0341     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/cout (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/A1 (XNR2UD1BWP40P140)
+                                              0.0162    0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/ZN (XNR2UD1BWP40P140)
+                                              0.0436    0.0282     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/A1 (AN2D1BWP40P140)
+                                              0.0436    0.0000     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/Z (AN2D1BWP40P140)
+                                              0.0323    0.0447     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/I (INVD3BWP40P140)
+                                              0.0323    0.0000     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/ZN (INVD3BWP40P140)
+                                              0.0905    0.0635     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U238/A1 (OAI21D1BWP40P140)
+                                              0.0905    0.0000     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U238/ZN (OAI21D1BWP40P140)
+                                              0.0342    0.0332     2.4191 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_65_/D (DFQD1BWP40P140)
+                                              0.0342    0.0000     2.4191 r
+  data arrival time                                                2.4191
+
+  clock CLK_clock (rise edge)                           2.6000     2.6000
+  clock network delay (ideal)                           0.0000     2.6000
+  clock uncertainty                                    -0.1500     2.4500
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_65_/CP (DFQD1BWP40P140)
+                                                        0.0000     2.4500 r
+  library setup time                                   -0.0308     2.4192
+  data required time                                               2.4192
+  --------------------------------------------------------------------------
+  data required time                                               2.4192
+  data arrival time                                               -2.4191
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_323_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_67_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_323_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_323_/Q (DFQD1BWP40P140)
+                                              0.0183    0.0806     0.0806 f
+  U_EXU_0/U57/A2 (NR2D1BWP40P140)             0.0183    0.0000     0.0806 f
+  U_EXU_0/U57/ZN (NR2D1BWP40P140)             0.0183    0.0196     0.1002 r
+  U_EXU_0/U_CSR_0/int_allowin (ysyx_22041752_csr_0)     0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/A1 (AN2D2BWP40P140)     0.0183    0.0000     0.1002 r
+  U_EXU_0/U_CSR_0/U12/Z (AN2D2BWP40P140)      0.0151    0.0351     0.1353 r
+  U_EXU_0/U_CSR_0/int_t_o (ysyx_22041752_csr_0)         0.0000     0.1353 r
+  U_EXU_0/U52/A1 (OAI21D2BWP40P140)           0.0151    0.0000     0.1353 r
+  U_EXU_0/U52/ZN (OAI21D2BWP40P140)           0.0356    0.0247     0.1599 f
+  U_EXU_0/U291/A1 (ND2OPTPAD2BWP40P140)       0.0356    0.0000     0.1599 f
+  U_EXU_0/U291/ZN (ND2OPTPAD2BWP40P140)       0.0274    0.0268     0.1867 r
+  U_EXU_0/U1207/A1 (OAI21D1BWP40P140)         0.0274    0.0000     0.1867 r
+  U_EXU_0/U1207/ZN (OAI21D1BWP40P140)         0.0547    0.0411     0.2278 f
+  U_EXU_0/U_CSR_0/addr[2] (ysyx_22041752_csr_0)         0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/A1 (AN2D1BWP40P140)     0.0547    0.0000     0.2278 f
+  U_EXU_0/U_CSR_0/U32/Z (AN2D1BWP40P140)      0.0141    0.0392     0.2670 f
+  U_EXU_0/U_CSR_0/U18/A1 (INR2D2BWP40P140LVT)
+                                              0.0141    0.0000     0.2670 f
+  U_EXU_0/U_CSR_0/U18/ZN (INR2D2BWP40P140LVT)
+                                              0.0146    0.0229     0.2899 f
+  U_EXU_0/U_CSR_0/U15/I (BUFFD4BWP40P140)     0.0146    0.0000     0.2899 f
+  U_EXU_0/U_CSR_0/U15/Z (BUFFD4BWP40P140)     0.0545    0.0457     0.3356 f
+  U_EXU_0/U_CSR_0/U80/B1 (AOI22D1BWP40P140)   0.0545    0.0000     0.3356 f
+  U_EXU_0/U_CSR_0/U80/ZN (AOI22D1BWP40P140)   0.0288    0.0357     0.3714 r
+  U_EXU_0/U_CSR_0/U27/B (OAI211OPTREPBD1BWP40P140)
+                                              0.0288    0.0000     0.3714 r
+  U_EXU_0/U_CSR_0/U27/ZN (OAI211OPTREPBD1BWP40P140)
+                                              0.0462    0.0382     0.4095 f
+  U_EXU_0/U_CSR_0/rdata[1] (ysyx_22041752_csr_0)        0.0000     0.4095 f
+  U_EXU_0/U797/A2 (ND2D1BWP40P140)            0.0462    0.0000     0.4095 f
+  U_EXU_0/U797/ZN (ND2D1BWP40P140)            0.0384    0.0228     0.4323 r
+  U_EXU_0/U22/A1 (ND3D2BWP40P140)             0.0384    0.0000     0.4323 r
+  U_EXU_0/U22/ZN (ND3D2BWP40P140)             0.1670    0.1070     0.5393 f
+  U_EXU_0/U_ALU_0/alu_src2[1] (ysyx_22041752_alu_0)     0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/divisor[1] (ysyx_22041752_diver_0)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/b[1] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/I (INVD1BWP40P140)
+                                              0.1670    0.0000     0.5393 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U70/ZN (INVD1BWP40P140)
+                                              0.0380    0.0331     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/A1 (ND2D1BWP40P140)
+                                              0.0380    0.0000     0.5724 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U72/ZN (ND2D1BWP40P140)
+                                              0.0297    0.0266     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/A2 (NR2D1BWP40P140)
+                                              0.0297    0.0000     0.5991 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U57/ZN (NR2D1BWP40P140)
+                                              0.0236    0.0256     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0236    0.0000     0.6247 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U47/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0246    0.0223     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0246    0.0000     0.6470 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U26/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0258    0.0236     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0258    0.0000     0.6706 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U25/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0235    0.0190     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0235    0.0000     0.6896 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0249    0.0196     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0249    0.0000     0.7093 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U7/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0233    0.0189     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0233    0.0000     0.7281 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U24/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0250    0.0196     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0250    0.0000     0.7477 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U23/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0234    0.0189     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/A1 (NR2D1BWP40P140)
+                                              0.0234    0.0000     0.7667 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U2/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0232     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0313    0.0000     0.7899 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U6/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     0.8101 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U22/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0225    0.0168     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0225    0.0000     0.8269 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U21/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0273    0.0226     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/A1 (NR2D1BWP40P140)
+                                              0.0273    0.0000     0.8496 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U20/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0246     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.8742 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U37/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9008 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U19/ZN (NR2D1BWP40P140)
+                                              0.0313    0.0255     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/A1 (ND2D1BWP40P140)
+                                              0.0313    0.0000     0.9263 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U41/ZN (ND2D1BWP40P140)
+                                              0.0303    0.0266     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/A1 (NR2D1BWP40P140)
+                                              0.0303    0.0000     0.9529 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U36/ZN (NR2D1BWP40P140)
+                                              0.0387    0.0250     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/A1 (ND2OPTIBD1BWP40P140)
+                                              0.0387    0.0000     0.9779 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U18/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0300    0.0262     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0300    0.0000     1.0041 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U40/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0317    0.0215     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/A1 (ND2OPTIBD1BWP40P140LVT)
+                                              0.0317    0.0000     1.0256 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U17/ZN (ND2OPTIBD1BWP40P140LVT)
+                                              0.0247    0.0202     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0247    0.0000     1.0458 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U16/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0336    0.0195     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0336    0.0000     1.0653 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U5/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0190    0.0147     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/A1 (NR2D1BWP40P140)
+                                              0.0190    0.0000     1.0800 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U28/ZN (NR2D1BWP40P140)
+                                              0.0403    0.0226     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/A1 (ND2OPTPAD1BWP40P140LVT)
+                                              0.0403    0.0000     1.1026 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U4/ZN (ND2OPTPAD1BWP40P140LVT)
+                                              0.0275    0.0237     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/A1 (NR2D1BWP40P140)
+                                              0.0275    0.0000     1.1263 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U50/ZN (NR2D1BWP40P140)
+                                              0.0417    0.0322     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0417    0.0000     1.1586 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0263    0.0202     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/B1 (INR2D2BWP40P140)
+                                              0.0263    0.0000     1.1787 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U11/ZN (INR2D2BWP40P140)
+                                              0.0212    0.0197     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/B (HA1D1BWP40P140)
+                                              0.0212    0.0000     1.1984 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U13/CO (HA1D1BWP40P140)
+                                              0.0208    0.0374     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.2358 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U45/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.2744 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U161/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.2922 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U39/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.3101 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U38/CO (HA1D1BWP40P140)
+                                              0.0208    0.0372     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.3473 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U12/CO (HA1D1BWP40P140)
+                                              0.0228    0.0386     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0228    0.0000     1.3859 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U114/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0197    0.0178     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/B1 (INR2D2BWP40P140)
+                                              0.0197    0.0000     1.4036 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U10/ZN (INR2D2BWP40P140)
+                                              0.0201    0.0179     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/B (HA1D1BWP40P140)
+                                              0.0201    0.0000     1.4216 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U33/CO (HA1D1BWP40P140)
+                                              0.0190    0.0359     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.4575 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U34/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.4987 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U27/CO (HA1D1BWP40P140)
+                                              0.0206    0.0377     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/B (HA1D2BWP40P140)
+                                              0.0206    0.0000     1.5364 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U31/CO (HA1D2BWP40P140)
+                                              0.0177    0.0389     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/B (HA1D4BWP40P140)
+                                              0.0177    0.0000     1.5753 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U30/CO (HA1D4BWP40P140)
+                                              0.0118    0.0311     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/B (HA1D2BWP40P140)
+                                              0.0118    0.0000     1.6064 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U117/CO (HA1D2BWP40P140)
+                                              0.0163    0.0356     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/A1 (ND2OPTPAD2BWP40P140)
+                                              0.0163    0.0000     1.6420 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U166/ZN (ND2OPTPAD2BWP40P140)
+                                              0.0162    0.0141     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0162    0.0000     1.6561 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U165/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0209    0.0147     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/B (HA1D1BWP40P140)
+                                              0.0209    0.0000     1.6708 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U9/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.7081 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U56/CO (HA1D1BWP40P140)
+                                              0.0207    0.0372     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/B (HA1D2BWP40P140)
+                                              0.0207    0.0000     1.7454 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U115/CO (HA1D2BWP40P140)
+                                              0.0153    0.0368     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/B (HA1D1BWP40P140)
+                                              0.0153    0.0000     1.7822 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U15/CO (HA1D1BWP40P140)
+                                              0.0214    0.0365     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/B (HA1D1BWP40P140LVT)
+                                              0.0214    0.0000     1.8187 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U29/CO (HA1D1BWP40P140LVT)
+                                              0.0180    0.0302     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/B (HA1D1BWP40P140)
+                                              0.0180    0.0000     1.8489 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U32/CO (HA1D1BWP40P140)
+                                              0.0190    0.0355     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/A1 (AN2D1BWP40P140)
+                                              0.0190    0.0000     1.8843 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U35/Z (AN2D1BWP40P140)
+                                              0.0231    0.0412     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/B (HA1D1BWP40P140)
+                                              0.0231    0.0000     1.9255 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U44/CO (HA1D1BWP40P140)
+                                              0.0208    0.0378     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     1.9633 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U1/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0007 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U43/CO (HA1D1BWP40P140)
+                                              0.0208    0.0373     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/B (HA1D1BWP40P140)
+                                              0.0208    0.0000     2.0380 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/U14/S (HA1D1BWP40P140)
+                                              0.0160    0.0390     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3/result[61] (ysyx_22041752_aser_WIDTH64_10)
+                                                        0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/A1 (AOI22D1BWP40P140)
+                                              0.0160    0.0000     2.0770 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U21/ZN (AOI22D1BWP40P140)
+                                              0.0544    0.0197     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/B (IOA21D1BWP40P140)
+                                              0.0544    0.0000     2.0967 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U536/ZN (IOA21D1BWP40P140)
+                                              0.0265    0.0234     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/b[61] (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/I (INVD1BWP40P140)
+                                              0.0265    0.0000     2.1200 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U54/ZN (INVD1BWP40P140)
+                                              0.0167    0.0175     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/A1 (ND2D1BWP40P140)
+                                              0.0167    0.0000     2.1375 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U22/ZN (ND2D1BWP40P140)
+                                              0.0262    0.0213     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/I (INVD1BWP40P140)
+                                              0.0262    0.0000     2.1588 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U336/ZN (INVD1BWP40P140)
+                                              0.0125    0.0138     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/B (AOI21D1BWP40P140)
+                                              0.0125    0.0000     2.1727 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U8/ZN (AOI21D1BWP40P140)
+                                              0.0319    0.0185     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/A1 (OAI21D1BWP40P140LVT)
+                                              0.0319    0.0000     2.1912 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U4/ZN (OAI21D1BWP40P140LVT)
+                                              0.0273    0.0242     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/A1 (AO21D1BWP40P140)
+                                              0.0273    0.0000     2.2154 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/U205/Z (AO21D1BWP40P140)
+                                              0.0162    0.0341     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4/cout (ysyx_22041752_aser_WIDTH64_8)
+                                                        0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/A1 (XNR2UD1BWP40P140)
+                                              0.0162    0.0000     2.2495 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U22/ZN (XNR2UD1BWP40P140)
+                                              0.0436    0.0282     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/A1 (AN2D1BWP40P140)
+                                              0.0436    0.0000     2.2777 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U8/Z (AN2D1BWP40P140)
+                                              0.0323    0.0447     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/I (INVD3BWP40P140)
+                                              0.0323    0.0000     2.3224 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/U11/ZN (INVD3BWP40P140)
+                                              0.0905    0.0635     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U241/A1 (OAI21D1BWP40P140)
+                                              0.0905    0.0000     2.3859 f
+  U_EXU_0/U_ALU_0/U_DIVER_0/U241/ZN (OAI21D1BWP40P140)
+                                              0.0342    0.0332     2.4191 r
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_67_/D (DFQD1BWP40P140)
+                                              0.0342    0.0000     2.4191 r
+  data arrival time                                                2.4191
+
+  clock CLK_clock (rise edge)                           2.6000     2.6000
+  clock network delay (ideal)                           0.0000     2.6000
+  clock uncertainty                                    -0.1500     2.4500
+  U_EXU_0/U_ALU_0/U_DIVER_0/result_abs_buffer_reg_67_/CP (DFQD1BWP40P140)
+                                                        0.0000     2.4500 r
+  library setup time                                   -0.0308     2.4192
+  data required time                                               2.4192
+  --------------------------------------------------------------------------
+  data required time                                               2.4192
+  data arrival time                                               -2.4191
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+1
