@@ -1,0 +1,66 @@
+
+dut: ysyx_22050293
+
+################
+#vcs compile log
+################
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 1042
+  Identifier 'has_rd_req' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 1949
+  Identifier 'next_pc' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 2325
+  Identifier 'R_type' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 2325
+  Identifier 'I_type' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 2325
+  Identifier 'S_type' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 2325
+  Identifier 'U_type' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 2325
+  Identifier 'B_type' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Error-[IND] Identifier not declared
+../cpu/ysyx_22050293.v, 2325
+  Identifier 'J_type' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050293.v, 3141
+  Second declaration for identifier 'lb_op' ignored
+  Identifier 'lb_op' previously declared as wire. [../cpu/ysyx_22050293.v, 
+  3061]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050293.v, 3142
+  Second declaration for identifier 'lh_op' ignored
+  Identifier 'lh_op' previously declared as wire. [../cpu/ysyx_22050293.v, 
+  3062]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050293.v, 3143
+  Second declaration for identifier 'lw_op' ignored
+  Identifier 'lw_op' previously declared as wire. [../cpu/ysyx_22050293.v, 
+  3063]
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050293.v, 3144
+  Second declaration for identifier 'ld_op' ignored
+  Identifier 'ld_op' previously declared as wire. [../cpu/ysyx_22050293.v, 
+  3064]
