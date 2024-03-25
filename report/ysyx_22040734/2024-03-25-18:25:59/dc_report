@@ -1,0 +1,1554 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22040734
+freq: 300
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+55871.7  55871.7  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+60586  60586  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.84  0.16 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  300.0     461.5      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22040734
+Version: R-2020.09-SP3a
+Date   : Mon Mar 25 21:54:06 2024
+****************************************
+
+Number of ports:                        21166
+Number of nets:                         79756
+Number of cells:                        61115
+Number of combinational cells:          49574
+Number of sequential cells:             11012
+Number of macros/black boxes:               0
+Number of buf/inv:                      10967
+Number of references:                      26
+
+Combinational area:              30771.846013
+Buf/Inv area:                     3300.948038
+Noncombinational area:           25099.828802
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 55871.674815
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------
+ysyx_22040734                     55871.6748    100.0    560.8260      0.0000  0.0000  ysyx_22040734
+ysyx_22040734_Dcache_u            15372.3776     27.5   7842.7439   7523.2076  0.0000  ysyx_22040734_Dcache_0
+ysyx_22040734_Dcache_u/POWERGATING_clock_N1934_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_219
+ysyx_22040734_Dcache_u/POWERGATING_clock_N1934_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_105
+ysyx_22040734_Dcache_u/POWERGATING_clock_N3921_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_218
+ysyx_22040734_EX_reg_u             1084.1040      1.9     51.9120      0.0000  0.0000  ysyx_22040734_EX_reg_0
+ysyx_22040734_EX_reg_u/ysyx_22040734_ex_reg
+                                   1032.1920      1.8    314.1180    718.0740  0.0000  ysyx_22040734_stl_reg_WIDTH316_RESET_VAL0_0
+ysyx_22040734_ID_reg_u              363.2580      0.7     48.3840      0.0000  0.0000  ysyx_22040734_ID_reg_0
+ysyx_22040734_ID_reg_u/ysyx_22040734_id_reg
+                                    314.8740      0.6     97.1460    217.7280  0.0000  ysyx_22040734_stl_reg_WIDTH96_RESET_VAL0_0
+ysyx_22040734_ID_u                 6481.3138     11.6      0.0000      0.0000  0.0000  ysyx_22040734_ID_stage_0
+ysyx_22040734_ID_u/ysyx_22040734_decoder_u
+                                     33.1380      0.1     33.1380      0.0000  0.0000  ysyx_22040734_decoder_0
+ysyx_22040734_ID_u/ysyx_22040734_imm_ext_u
+                                     32.8860      0.1     32.8860      0.0000  0.0000  ysyx_22040734_imm_ext_0
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u
+                                   6415.2898     11.5   1782.7740   4499.7118  0.0000  ysyx_22040734_regfile_0
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N124_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_153
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N124_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_154
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N125_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_155
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N125_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_156
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N126_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_157
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N126_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_158
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N127_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_159
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N127_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_160
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N128_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_161
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N128_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_162
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N129_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_163
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N129_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_164
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N130_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_165
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N130_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_166
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N131_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_167
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N131_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_168
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N132_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_169
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N132_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_170
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N133_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_171
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N133_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_172
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N134_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_173
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N134_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_174
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N135_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_175
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N135_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_176
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N136_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_177
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N136_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_178
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N137_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_179
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N137_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_180
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N138_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_181
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N138_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_182
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N139_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_183
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N139_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_184
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N140_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_185
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N140_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_186
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N141_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_187
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N141_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_188
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N142_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_189
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N142_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_190
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N143_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_191
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N143_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_192
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N144_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_193
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N144_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_194
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N145_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_195
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N145_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_196
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N146_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_197
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N146_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_198
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N147_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_199
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N147_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_200
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N148_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_201
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N148_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_202
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N149_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_203
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N149_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_204
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N150_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_205
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N150_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_206
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N151_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_207
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N151_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_208
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N152_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_209
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N152_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_210
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N153_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_211
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N153_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_212
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N154_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_213
+ysyx_22040734_ID_u/ysyx_22040734_regfile_u/POWERGATING_clock_N154_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_214
+ysyx_22040734_IF_u                  450.8280      0.8    305.6760    145.1520  0.0000  ysyx_22040734_IF_stage_0
+ysyx_22040734_L_S_reg_u             848.9880      1.5    113.6520      0.0000  0.0000  ysyx_22040734_L_S_reg_0
+ysyx_22040734_L_S_reg_u/ysyx_22040734_ls_reg
+                                    735.3360      1.3    227.3040    508.0320  0.0000  ysyx_22040734_stl_reg_WIDTH224_RESET_VAL0_0
+ysyx_22040734_axi_arbiter_u         331.7580      0.6    331.7580      0.0000  0.0000  ysyx_22040734_axi_arbiter_0
+ysyx_22040734_axi_icache_dut        109.6200      0.2     30.3660     77.1120  0.0000  ysyx_22040734_axi_icache_0
+ysyx_22040734_axi_icache_dut/POWERGATING_clock_N13_0
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_104
+ysyx_22040734_axi_ls_u             1146.0960      2.1    375.3540    764.3160  0.0000  ysyx_22040734_axi_dcache_0
+ysyx_22040734_axi_ls_u/POWERGATING_clock_N42_0
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_215
+ysyx_22040734_axi_ls_u/POWERGATING_clock_n7_0
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_216
+ysyx_22040734_axi_ls_u/POWERGATING_clock_n7_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_217
+ysyx_22040734_cache_dut           12238.2537     21.9   5018.9580   7219.2957  0.0000  ysyx_22040734_Icache_0
+ysyx_22040734_ex_stage_u          13351.7160     23.9    379.2600      0.0000  0.0000  ysyx_22040734_ex_stage_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU
+                                  12530.4480     22.4    575.0640    290.3040  0.0000  ysyx_22040734_ALU_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/POWERGATING_clock_N18_4
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_149
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/POWERGATING_clock_N18_5
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_150
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/POWERGATING_clock_N18_6
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_151
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/POWERGATING_clock_N18_7
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_152
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_ALU_Control
+                                      2.7720      0.0      2.7720      0.0000  0.0000  ysyx_22040734_control_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Adder_main
+                                    220.5000      0.4    220.5000      0.0000  0.0000  ysyx_22040734_Adder_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier
+                                   9123.6600     16.3     68.0400      2.2680  0.0000  ysyx_22040734_mul_top_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u
+                                   9051.0840     16.2   8438.7241      2.2680  0.0000  ysyx_22040734_mul64_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg
+                                    610.0920      1.1      1.1340    589.6800  0.0000  ysyx_22040734_stl_reg_WIDTH264_RESET_VAL0_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_10
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_113
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_11
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_114
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_12
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_115
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_13
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_116
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_14
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_117
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_15
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_118
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_16
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_119
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_17
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_120
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/POWERGATING_clock_i_wen_9
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_112
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_resultValidReg
+                                      2.2680      0.0      0.0000      2.2680  0.0000  ysyx_22040734_stl_reg_WIDTH1_RESET_VAL0_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider
+                                   1909.7820      3.4   1095.8220    601.0200  0.0000  ysyx_22040734_divTop_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_N549_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_121
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_div_valid_5
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_126
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_div_valid_6
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_127
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_div_valid_7
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_128
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_div_valid_8
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_129
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_div_valid_9
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_130
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_n463_4
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_122
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_n463_5
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_123
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_n463_6
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_124
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/POWERGATING_clock_n463_7
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_125
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1
+                                    191.5200      0.3      1.2600      0.0000  0.0000  ysyx_22040734_cla_64_0
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u1
+                                     44.3520      0.1      1.8900      0.0000  0.0000  ysyx_22040734_cla_16_4
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u1/ysyx_22040734_u1
+                                      8.0640      0.0      8.0640      0.0000  0.0000  ysyx_22040734_cla_4_16
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u1/ysyx_22040734_u2
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_18
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u1/ysyx_22040734_u3
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_21
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u1/ysyx_22040734_u4
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_25
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u2
+                                     50.4000      0.1      4.5360      0.0000  0.0000  ysyx_22040734_cla_16_6
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u2/ysyx_22040734_u1
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_22
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u2/ysyx_22040734_u2
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_24
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u2/ysyx_22040734_u3
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_31
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u2/ysyx_22040734_u4
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_19
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u3
+                                     50.4000      0.1      4.5360      0.0000  0.0000  ysyx_22040734_cla_16_7
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u3/ysyx_22040734_u1
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_30
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u3/ysyx_22040734_u2
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_23
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u3/ysyx_22040734_u3
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_29
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u3/ysyx_22040734_u4
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_28
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u4
+                                     45.1080      0.1      1.8900      0.0000  0.0000  ysyx_22040734_cla_16_5
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u4/ysyx_22040734_u1
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_27
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u4/ysyx_22040734_u2
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_20
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u4/ysyx_22040734_u3
+                                     11.4660      0.0     11.4660      0.0000  0.0000  ysyx_22040734_cla_4_26
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_divider/ysyx_22040734_cla_64_u1/ysyx_22040734_u4/ysyx_22040734_u4
+                                      8.8200      0.0      8.8200      0.0000  0.0000  ysyx_22040734_cla_4_17
+ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_shifter
+                                    399.7980      0.7    399.7980      0.0000  0.0000  ysyx_22040734_shifter64_0
+ysyx_22040734_ex_stage_u/ysyx_22040734_bcu_u
+                                    442.0080      0.8    442.0080      0.0000  0.0000  ysyx_22040734_bcu_0
+ysyx_22040734_forwarding_u          280.8540      0.5    120.4560    160.3980  0.0000  ysyx_22040734_forwarding_0
+ysyx_22040734_hazard_detect_u        25.3260      0.0     25.3260      0.0000  0.0000  ysyx_22040734_hazard_detect_0
+ysyx_22040734_ls_u                 2440.1159      4.4     57.9600      0.0000  0.0000  ysyx_22040734_ls_stage_0
+ysyx_22040734_ls_u/ysyx_22040734_CSR_u
+                                   1192.4640      2.1    616.3920    576.0720  0.0000  ysyx_22040734_CSR_0
+ysyx_22040734_ls_u/ysyx_22040734_clint_u
+                                    969.9480      1.7    409.7520    521.6400  0.0000  ysyx_22040734_clint_0
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N402_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_139
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N411_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_140
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N420_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_141
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N429_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_142
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N438_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_143
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N447_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_144
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N456_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_145
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N465_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_146
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N475_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_131
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N484_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_132
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N493_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_133
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N502_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_134
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N511_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_135
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N520_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_136
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N529_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_137
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_N538_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_138
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_n869_0
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_148
+ysyx_22040734_ls_u/ysyx_22040734_clint_u/POWERGATING_clock_n870_0
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22040734_0_147
+ysyx_22040734_ls_u/ysyx_22040734_ls_ctr_u
+                                     93.6180      0.2     93.6180      0.0000  0.0000  ysyx_22040734_ls_ctr_0
+ysyx_22040734_ls_u/ysyx_22040734_lsu_u
+                                    126.1260      0.2    126.1260      0.0000  0.0000  ysyx_22040734_lsu_0
+ysyx_22040734_pipline_ctrl_u          9.1980      0.0      9.1980      0.0000  0.0000  ysyx_22040734_pipline_ctrl_0
+ysyx_22040734_wb_reg_u              684.6840      1.2      0.0000      0.0000  0.0000  ysyx_22040734_WB_reg_0
+ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg
+                                    684.6840      1.2    211.3020    473.3820  0.0000  ysyx_22040734_stl_reg_WIDTH208_RESET_VAL0_0
+ysyx_22040734_wb_stage_u             92.3580      0.2     92.3580      0.0000  0.0000  ysyx_22040734_WB_stage_0
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------
+Total                                                  30771.8460  25099.8288  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22040734
+Version: R-2020.09-SP3a
+Date   : Mon Mar 25 21:54:01 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_200_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/o_dout_reg_63_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_200_/CP (DFCNQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_200_/Q (DFCNQD2BWP40P140)
+                                              0.0237    0.0877     0.0877 f
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout[200] (ysyx_22040734_stl_reg_WIDTH208_RESET_VAL0_0)
+                                                        0.0000     0.0877 f
+  ysyx_22040734_wb_reg_u/instr_wb_reg_o[7] (ysyx_22040734_WB_reg_0)
+                                                        0.0000     0.0877 f
+  ysyx_22040734_forwarding_u/rd_lso_idx[0] (ysyx_22040734_forwarding_0)
+                                                        0.0000     0.0877 f
+  ysyx_22040734_forwarding_u/U37/I (INVD1BWP40P140)
+                                              0.0237    0.0000     0.0877 f
+  ysyx_22040734_forwarding_u/U37/ZN (INVD1BWP40P140)
+                                              0.0152    0.0159     0.1036 r
+  ysyx_22040734_forwarding_u/U39/A1 (ND2D1BWP40P140)
+                                              0.0152    0.0000     0.1036 r
+  ysyx_22040734_forwarding_u/U39/ZN (ND2D1BWP40P140)
+                                              0.0180    0.0162     0.1198 f
+  ysyx_22040734_forwarding_u/U40/A3 (OAI31D1BWP40P140)
+                                              0.0180    0.0000     0.1198 f
+  ysyx_22040734_forwarding_u/U40/ZN (OAI31D1BWP40P140)
+                                              0.0455    0.0322     0.1520 r
+  ysyx_22040734_forwarding_u/U68/A2 (NR4D1BWP40P140)
+                                              0.0455    0.0000     0.1520 r
+  ysyx_22040734_forwarding_u/U68/ZN (NR4D1BWP40P140)
+                                              0.0369    0.0325     0.1845 f
+  ysyx_22040734_forwarding_u/U15/A2 (OA21D2BWP40P140)
+                                              0.0369    0.0000     0.1845 f
+  ysyx_22040734_forwarding_u/U15/Z (OA21D2BWP40P140)
+                                              0.0284    0.0499     0.2343 f
+  ysyx_22040734_forwarding_u/rs2_sel[1] (ysyx_22040734_forwarding_0)
+                                                        0.0000     0.2343 f
+  ysyx_22040734_ex_stage_u/rs2_sel_i[1] (ysyx_22040734_ex_stage_0)
+                                                        0.0000     0.2343 f
+  ysyx_22040734_ex_stage_u/U119/A1 (INR2D1BWP40P140LVT)
+                                              0.0284    0.0000     0.2343 f
+  ysyx_22040734_ex_stage_u/U119/ZN (INR2D1BWP40P140LVT)
+                                              0.0206    0.0317     0.2660 f
+  ysyx_22040734_ex_stage_u/U138/I (INVD1P5BWP40P140)
+                                              0.0206    0.0000     0.2660 f
+  ysyx_22040734_ex_stage_u/U138/ZN (INVD1P5BWP40P140)
+                                              0.0243    0.0217     0.2877 r
+  ysyx_22040734_ex_stage_u/U53/I (INVD8BWP40P140)
+                                              0.0243    0.0000     0.2877 r
+  ysyx_22040734_ex_stage_u/U53/ZN (INVD8BWP40P140)
+                                              0.0390    0.0308     0.3185 f
+  ysyx_22040734_ex_stage_u/U491/A1 (ND2D1BWP40P140)
+                                              0.0390    0.0000     0.3185 f
+  ysyx_22040734_ex_stage_u/U491/ZN (ND2D1BWP40P140)
+                                              0.0156    0.0170     0.3355 r
+  ysyx_22040734_ex_stage_u/U49/A2 (ND3D1BWP40P140LVT)
+                                              0.0156    0.0000     0.3355 r
+  ysyx_22040734_ex_stage_u/U49/ZN (ND3D1BWP40P140LVT)
+                                              0.0468    0.0328     0.3683 f
+  ysyx_22040734_ex_stage_u/U136/A1 (AO22D1BWP40P140)
+                                              0.0468    0.0000     0.3683 f
+  ysyx_22040734_ex_stage_u/U136/Z (AO22D1BWP40P140)
+                                              0.1443    0.1176     0.4859 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/src2[35] (ysyx_22040734_ALU_0)
+                                                        0.0000     0.4859 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/multiplier[35] (ysyx_22040734_mul_top_0)
+                                                        0.0000     0.4859 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/multiplier[35] (ysyx_22040734_mul64_0)
+                                                        0.0000     0.4859 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1355/A2 (ND2D1BWP40P140)
+                                              0.1443    0.0000     0.4859 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1355/ZN (ND2D1BWP40P140)
+                                              0.0467    0.0473     0.5332 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1356/I (INVD1BWP40P140)
+                                              0.0467    0.0000     0.5332 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1356/ZN (INVD1BWP40P140)
+                                              0.0173    0.0163     0.5495 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1359/A1 (NR2D1BWP40P140)
+                                              0.0173    0.0000     0.5495 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1359/ZN (NR2D1BWP40P140)
+                                              0.0238    0.0207     0.5702 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1364/A2 (OAI21D1BWP40P140)
+                                              0.0238    0.0000     0.5702 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1364/ZN (OAI21D1BWP40P140)
+                                              0.0265    0.0235     0.5937 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U265/B (AOI21D1BWP40P140)
+                                              0.0265    0.0000     0.5937 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U265/ZN (AOI21D1BWP40P140)
+                                              0.0310    0.0305     0.6242 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1388/A2 (OAI21D1BWP40P140)
+                                              0.0310    0.0000     0.6242 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U1388/ZN (OAI21D1BWP40P140)
+                                              0.0419    0.0346     0.6588 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U386/I (INVD2BWP40P140)
+                                              0.0419    0.0000     0.6588 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U386/ZN (INVD2BWP40P140)
+                                              0.0403    0.0369     0.6957 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U763/B1 (INR2D1BWP40P140)
+                                              0.0403    0.0000     0.6957 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U763/ZN (INR2D1BWP40P140)
+                                              0.0160    0.0151     0.7109 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U232/A2 (IOA21D1BWP40P140)
+                                              0.0160    0.0000     0.7109 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U232/ZN (IOA21D1BWP40P140)
+                                              0.0292    0.0377     0.7486 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U326/A1 (XOR2UD1BWP40P140)
+                                              0.0292    0.0000     0.7486 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U326/Z (XOR2UD1BWP40P140)
+                                              0.2144    0.1132     0.8619 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U762/A1 (OAI21D1BWP40P140)
+                                              0.2144    0.0000     0.8619 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U762/ZN (OAI21D1BWP40P140)
+                                              0.0666    0.0594     0.9212 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U761/A1 (XOR2UD1BWP40P140)
+                                              0.0666    0.0000     0.9212 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U761/Z (XOR2UD1BWP40P140)
+                                              0.0736    0.0433     0.9645 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U8992/A (FA1D1BWP40P140)
+                                              0.0736    0.0000     0.9645 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U8992/S (FA1D1BWP40P140)
+                                              0.0273    0.0991     1.0635 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U8988/CI (FA1D1BWP40P140)
+                                              0.0273    0.0000     1.0635 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U8988/CO (FA1D1BWP40P140)
+                                              0.0224    0.0513     1.1149 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9051/CI (FA1D1BWP40P140)
+                                              0.0224    0.0000     1.1149 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9051/CO (FA1D1BWP40P140)
+                                              0.0259    0.0527     1.1676 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9087/B (FA1D1BWP40P140)
+                                              0.0259    0.0000     1.1676 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9087/S (FA1D1BWP40P140)
+                                              0.0281    0.0990     1.2666 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9103/CI (FA1D1BWP40P140)
+                                              0.0281    0.0000     1.2666 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9103/S (FA1D1BWP40P140)
+                                              0.0256    0.0832     1.3498 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9062/A1 (NR2D1BWP40P140)
+                                              0.0256    0.0000     1.3498 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9062/ZN (NR2D1BWP40P140)
+                                              0.0312    0.0273     1.3771 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U4594/A2 (OAI21D1BWP40P140)
+                                              0.0312    0.0000     1.3771 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U4594/ZN (OAI21D1BWP40P140)
+                                              0.0349    0.0302     1.4073 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9155/A1 (AOI21D1BWP40P140)
+                                              0.0349    0.0000     1.4073 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U9155/ZN (AOI21D1BWP40P140)
+                                              0.0242    0.0242     1.4316 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U764/B (OAI21D1BWP40P140)
+                                              0.0242    0.0000     1.4316 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U764/ZN (OAI21D1BWP40P140)
+                                              0.0273    0.0274     1.4589 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U983/B (AOI21D1BWP40P140)
+                                              0.0273    0.0000     1.4589 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U983/ZN (AOI21D1BWP40P140)
+                                              0.0378    0.0350     1.4939 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U98/A1 (OAI21D2BWP40P140LVT)
+                                              0.0378    0.0000     1.4939 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U98/ZN (OAI21D2BWP40P140LVT)
+                                              0.0278    0.0223     1.5163 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U97/A1 (AOI21D2BWP40P140)
+                                              0.0278    0.0000     1.5163 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U97/ZN (AOI21D2BWP40P140)
+                                              0.0321    0.0270     1.5433 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U876/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0321    0.0000     1.5433 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U876/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0259    0.0217     1.5650 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U167/A1 (AOI21D2BWP40P140)
+                                              0.0259    0.0000     1.5650 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U167/ZN (AOI21D2BWP40P140)
+                                              0.0279    0.0235     1.5885 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U163/A1 (OAI21D2BWP40P140LVT)
+                                              0.0279    0.0000     1.5885 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U163/ZN (OAI21D2BWP40P140LVT)
+                                              0.0285    0.0208     1.6093 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U162/A1 (AOI21D2BWP40P140)
+                                              0.0285    0.0000     1.6093 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U162/ZN (AOI21D2BWP40P140)
+                                              0.0279    0.0243     1.6335 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U156/A1 (OAI21D2BWP40P140LVT)
+                                              0.0279    0.0000     1.6335 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U156/ZN (OAI21D2BWP40P140LVT)
+                                              0.0285    0.0208     1.6543 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U154/A1 (AOI21D2BWP40P140)
+                                              0.0285    0.0000     1.6543 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U154/ZN (AOI21D2BWP40P140)
+                                              0.0321    0.0272     1.6815 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U945/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0321    0.0000     1.6815 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U945/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0259    0.0217     1.7032 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U84/A1 (AOI21D2BWP40P140)
+                                              0.0259    0.0000     1.7032 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U84/ZN (AOI21D2BWP40P140)
+                                              0.0321    0.0264     1.7296 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U142/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0321    0.0000     1.7296 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U142/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0259    0.0217     1.7513 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U652/A1 (AOI21D2BWP40P140)
+                                              0.0259    0.0000     1.7513 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U652/ZN (AOI21D2BWP40P140)
+                                              0.0279    0.0235     1.7749 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U134/A1 (OAI21D2BWP40P140LVT)
+                                              0.0279    0.0000     1.7749 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U134/ZN (OAI21D2BWP40P140LVT)
+                                              0.0285    0.0208     1.7956 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U46/A1 (AOI21D2BWP40P140)
+                                              0.0285    0.0000     1.7956 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U46/ZN (AOI21D2BWP40P140)
+                                              0.0321    0.0272     1.8228 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U771/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0321    0.0000     1.8228 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U771/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0311    0.0250     1.8479 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U4792/A1 (AOI21D4BWP40P140)
+                                              0.0311    0.0000     1.8479 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U4792/ZN (AOI21D4BWP40P140)
+                                              0.0256    0.0220     1.8699 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U4791/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0256    0.0000     1.8699 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U4791/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0261    0.0208     1.8906 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U125/A1 (AOI21D2BWP40P140LVT)
+                                              0.0261    0.0000     1.8906 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U125/ZN (AOI21D2BWP40P140LVT)
+                                              0.0240    0.0197     1.9104 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U30/A1 (OAI21D2BWP40P140)
+                                              0.0240    0.0000     1.9104 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U30/ZN (OAI21D2BWP40P140)
+                                              0.0328    0.0243     1.9347 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U743/A1 (AOI21D2BWP40P140)
+                                              0.0328    0.0000     1.9347 f
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U743/ZN (AOI21D2BWP40P140)
+                                              0.0216    0.0208     1.9555 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U736/A1 (XNR2UD1BWP40P140)
+                                              0.0216    0.0000     1.9555 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/U736/ZN (XNR2UD1BWP40P140)
+                                              0.0343    0.0260     1.9815 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/i_din[63] (ysyx_22040734_stl_reg_WIDTH264_RESET_VAL0_0)
+                                                        0.0000     1.9815 r
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/o_dout_reg_63_/D (DFCNQD1BWP40P140)
+                                              0.0343    0.0000     1.9815 r
+  data arrival time                                                1.9815
+
+  clock CLK_clock (rise edge)                           2.1667     2.1667
+  clock network delay (ideal)                           0.0000     2.1667
+  clock uncertainty                                    -0.1500     2.0167
+  ysyx_22040734_ex_stage_u/u_ysyx_22040734_ALU/ysyx_22040734_Multiplier/ysyx_22040734_mul64_u/ysyx_22040734_id_reg/o_dout_reg_63_/CP (DFCNQD1BWP40P140)
+                                                        0.0000     2.0167 r
+  library setup time                                   -0.0351     1.9816
+  data required time                                               1.9816
+  --------------------------------------------------------------------------
+  data required time                                               1.9816
+  data arrival time                                               -1.9815
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0001
+
+
+  Startpoint: ysyx_22040734_cache_dut/reqLatch_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_124_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/CP (DFCNQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/Q (DFCNQD1BWP40P140)
+                                              0.0396    0.0922     0.0922 f
+  ysyx_22040734_cache_dut/U439/I (INVD1BWP40P140)
+                                              0.0396    0.0000     0.0922 f
+  ysyx_22040734_cache_dut/U439/ZN (INVD1BWP40P140)
+                                              0.0427    0.0384     0.1306 r
+  ysyx_22040734_cache_dut/U471/A1 (ND3D1BWP40P140)
+                                              0.0427    0.0000     0.1306 r
+  ysyx_22040734_cache_dut/U471/ZN (ND3D1BWP40P140)
+                                              0.2283    0.1455     0.2761 f
+  ysyx_22040734_cache_dut/U85/A2 (NR2D1BWP40P140)
+                                              0.2283    0.0000     0.2761 f
+  ysyx_22040734_cache_dut/U85/ZN (NR2D1BWP40P140)
+                                              0.3489    0.2732     0.5493 r
+  ysyx_22040734_cache_dut/U997/B1 (AOI22D1BWP40P140)
+                                              0.3489    0.0000     0.5493 r
+  ysyx_22040734_cache_dut/U997/ZN (AOI22D1BWP40P140)
+                                              0.0887    0.0599     0.6092 f
+  ysyx_22040734_cache_dut/U998/A4 (ND4D1BWP40P140)
+                                              0.0887    0.0000     0.6092 f
+  ysyx_22040734_cache_dut/U998/ZN (ND4D1BWP40P140)
+                                              0.0309    0.0335     0.6426 r
+  ysyx_22040734_cache_dut/U1004/A3 (OR4D1BWP40P140)
+                                              0.0309    0.0000     0.6426 r
+  ysyx_22040734_cache_dut/U1004/Z (OR4D1BWP40P140)
+                                              0.0122    0.0335     0.6761 r
+  ysyx_22040734_cache_dut/U1005/A2 (NR2D1BWP40P140)
+                                              0.0122    0.0000     0.6761 r
+  ysyx_22040734_cache_dut/U1005/ZN (NR2D1BWP40P140)
+                                              0.0163    0.0147     0.6908 f
+  ysyx_22040734_cache_dut/U1006/A1 (XNR2UD1BWP40P140)
+                                              0.0163    0.0000     0.6908 f
+  ysyx_22040734_cache_dut/U1006/ZN (XNR2UD1BWP40P140)
+                                              0.0340    0.0240     0.7149 f
+  ysyx_22040734_cache_dut/U1007/A2 (NR2D1BWP40P140)
+                                              0.0340    0.0000     0.7149 f
+  ysyx_22040734_cache_dut/U1007/ZN (NR2D1BWP40P140)
+                                              0.0210    0.0234     0.7383 r
+  ysyx_22040734_cache_dut/U1051/B (OAI211D1BWP40P140)
+                                              0.0210    0.0000     0.7383 r
+  ysyx_22040734_cache_dut/U1051/ZN (OAI211D1BWP40P140)
+                                              0.0384    0.0366     0.7750 f
+  ysyx_22040734_cache_dut/U1398/A2 (OR4D1BWP40P140)
+                                              0.0384    0.0000     0.7750 f
+  ysyx_22040734_cache_dut/U1398/Z (OR4D1BWP40P140)
+                                              0.0157    0.0503     0.8253 f
+  ysyx_22040734_cache_dut/U1399/A3 (OR3D1BWP40P140)
+                                              0.0157    0.0000     0.8253 f
+  ysyx_22040734_cache_dut/U1399/Z (OR3D1BWP40P140)
+                                              0.0175    0.0348     0.8601 f
+  ysyx_22040734_cache_dut/U36/A1 (AN2D1BWP40P140)
+                                              0.0175    0.0000     0.8601 f
+  ysyx_22040734_cache_dut/U36/Z (AN2D1BWP40P140)
+                                              0.0185    0.0319     0.8920 f
+  ysyx_22040734_cache_dut/U2352/A1 (OAI21D1BWP40P140)
+                                              0.0185    0.0000     0.8920 f
+  ysyx_22040734_cache_dut/U2352/ZN (OAI21D1BWP40P140)
+                                              0.0248    0.0212     0.9132 r
+  ysyx_22040734_cache_dut/U2354/A1 (AN3D1BWP40P140)
+                                              0.0248    0.0000     0.9132 r
+  ysyx_22040734_cache_dut/U2354/Z (AN3D1BWP40P140)
+                                              0.0210    0.0504     0.9636 r
+  ysyx_22040734_cache_dut/addr_ok_o (ysyx_22040734_Icache_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/cacheAddrOk_i (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/A1 (INR2D1BWP40P140)
+                                              0.0210    0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/ZN (INR2D1BWP40P140)
+                                              0.0182    0.0302     0.9938 r
+  ysyx_22040734_IF_u/if_instr_valid (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/if_instr_valid (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/B1 (IND2D1BWP40P140)
+                                              0.0182    0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/ZN (IND2D1BWP40P140)
+                                              0.0240    0.0202     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/A2 (NR2OPTPAD1BWP40P140)
+                                              0.0240    0.0000     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0369    0.0311     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/I (BUFFD16BWP40P140)
+                                              0.0369    0.0000     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/Z (BUFFD16BWP40P140)
+                                              0.1182    0.0932     1.1383 r
+  ysyx_22040734_pipline_ctrl_u/ls_stall_n (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/stall_n (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/A2 (ND2D1BWP40P140)
+                                              0.1182    0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/ZN (ND2D1BWP40P140)
+                                              0.0519    0.0374     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/B1 (INR2D1BWP40P140)
+                                              0.0519    0.0000     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/ZN (INR2D1BWP40P140)
+                                              0.0293    0.0289     1.2046 r
+  ysyx_22040734_Dcache_u/U206/B1 (INR2D1BWP40P140)
+                                              0.0293    0.0000     1.2046 r
+  ysyx_22040734_Dcache_u/U206/ZN (INR2D1BWP40P140)
+                                              0.0176    0.0174     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/A1 (NR2D1BWP40P140)
+                                              0.0176    0.0000     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/ZN (NR2D1BWP40P140)
+                                              0.0237    0.0206     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/A2 (ND2D1BWP40P140)
+                                              0.0237    0.0000     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/ZN (ND2D1BWP40P140)
+                                              0.0736    0.0500     1.2926 f
+  ysyx_22040734_Dcache_u/U103/A2 (NR2D2BWP40P140)
+                                              0.0736    0.0000     1.2926 f
+  ysyx_22040734_Dcache_u/U103/ZN (NR2D2BWP40P140)
+                                              0.2561    0.1734     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/B1 (AOI22D1BWP40P140)
+                                              0.2561    0.0000     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/ZN (AOI22D1BWP40P140)
+                                              0.0747    0.0547     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/A3 (ND3D1BWP40P140)
+                                              0.0747    0.0000     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/ZN (ND3D1BWP40P140)
+                                              0.0264    0.0293     1.5500 r
+  ysyx_22040734_Dcache_u/U98/B (AOI21D1BWP40P140)
+                                              0.0264    0.0000     1.5500 r
+  ysyx_22040734_Dcache_u/U98/ZN (AOI21D1BWP40P140)
+                                              0.0619    0.0189     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/I1 (MUX2NUD1BWP40P140)
+                                              0.0619    0.0000     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/ZN (MUX2NUD1BWP40P140)
+                                              0.0852    0.0345     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/C (AOI211D1BWP40P140)
+                                              0.0852    0.0000     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/ZN (AOI211D1BWP40P140)
+                                              0.0636    0.0334     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/C (OAI211D1BWP40P140)
+                                              0.0636    0.0000     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/ZN (OAI211D1BWP40P140)
+                                              0.0704    0.0430     1.6798 r
+  ysyx_22040734_Dcache_u/rd_data_o[31] (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ls_sram_rd_data[31] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_sram_rd_data[31] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/B2 (AOI22D1BWP40P140)
+                                              0.0704    0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/ZN (AOI22D1BWP40P140)
+                                              0.0410    0.0375     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/A2 (ND2D1BWP40P140)
+                                              0.0410    0.0000     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/ZN (ND2D1BWP40P140)
+                                              0.0207    0.0229     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/B1 (MOAI22D1BWP40P140)
+                                              0.0207    0.0000     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/ZN (MOAI22D1BWP40P140)
+                                              0.0335    0.0367     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/A1 (ND2OPTIBD2BWP40P140)
+                                              0.0335    0.0000     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/ZN (ND2OPTIBD2BWP40P140)
+                                              0.0559    0.0418     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/B (OAI21D4BWP40P140)
+                                              0.0559    0.0000     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/ZN (OAI21D4BWP40P140)
+                                              0.0452    0.0354     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/C (AOI221D4BWP40P140)
+                                              0.0452    0.0000     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/ZN (AOI221D4BWP40P140)
+                                              0.1048    0.0438     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U78/B (OAI21D1BWP40P140)
+                                              0.1048    0.0000     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U78/ZN (OAI21D1BWP40P140)
+                                              0.0740    0.0370     1.9351 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_res_o[59] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_ls_u/ls_res_o[59] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/lsres_wb_reg_i[59] (ysyx_22040734_WB_reg_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/i_din[124] (ysyx_22040734_stl_reg_WIDTH208_RESET_VAL0_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U133/I1 (MUX2D1BWP40P140)
+                                              0.0740    0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U133/Z (MUX2D1BWP40P140)
+                                              0.0242    0.0485     1.9836 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_124_/D (DFCNQD1BWP40P140)
+                                              0.0242    0.0000     1.9836 r
+  data arrival time                                                1.9836
+
+  clock CLK_clock (rise edge)                           2.1667     2.1667
+  clock network delay (ideal)                           0.0000     2.1667
+  clock uncertainty                                    -0.1500     2.0167
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_124_/CP (DFCNQD1BWP40P140)
+                                                        0.0000     2.0167 r
+  library setup time                                   -0.0329     1.9837
+  data required time                                               1.9837
+  --------------------------------------------------------------------------
+  data required time                                               1.9837
+  data arrival time                                               -1.9836
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0002
+
+
+  Startpoint: ysyx_22040734_cache_dut/reqLatch_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_121_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/CP (DFCNQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/Q (DFCNQD1BWP40P140)
+                                              0.0396    0.0922     0.0922 f
+  ysyx_22040734_cache_dut/U439/I (INVD1BWP40P140)
+                                              0.0396    0.0000     0.0922 f
+  ysyx_22040734_cache_dut/U439/ZN (INVD1BWP40P140)
+                                              0.0427    0.0384     0.1306 r
+  ysyx_22040734_cache_dut/U471/A1 (ND3D1BWP40P140)
+                                              0.0427    0.0000     0.1306 r
+  ysyx_22040734_cache_dut/U471/ZN (ND3D1BWP40P140)
+                                              0.2283    0.1455     0.2761 f
+  ysyx_22040734_cache_dut/U85/A2 (NR2D1BWP40P140)
+                                              0.2283    0.0000     0.2761 f
+  ysyx_22040734_cache_dut/U85/ZN (NR2D1BWP40P140)
+                                              0.3489    0.2732     0.5493 r
+  ysyx_22040734_cache_dut/U997/B1 (AOI22D1BWP40P140)
+                                              0.3489    0.0000     0.5493 r
+  ysyx_22040734_cache_dut/U997/ZN (AOI22D1BWP40P140)
+                                              0.0887    0.0599     0.6092 f
+  ysyx_22040734_cache_dut/U998/A4 (ND4D1BWP40P140)
+                                              0.0887    0.0000     0.6092 f
+  ysyx_22040734_cache_dut/U998/ZN (ND4D1BWP40P140)
+                                              0.0309    0.0335     0.6426 r
+  ysyx_22040734_cache_dut/U1004/A3 (OR4D1BWP40P140)
+                                              0.0309    0.0000     0.6426 r
+  ysyx_22040734_cache_dut/U1004/Z (OR4D1BWP40P140)
+                                              0.0122    0.0335     0.6761 r
+  ysyx_22040734_cache_dut/U1005/A2 (NR2D1BWP40P140)
+                                              0.0122    0.0000     0.6761 r
+  ysyx_22040734_cache_dut/U1005/ZN (NR2D1BWP40P140)
+                                              0.0163    0.0147     0.6908 f
+  ysyx_22040734_cache_dut/U1006/A1 (XNR2UD1BWP40P140)
+                                              0.0163    0.0000     0.6908 f
+  ysyx_22040734_cache_dut/U1006/ZN (XNR2UD1BWP40P140)
+                                              0.0340    0.0240     0.7149 f
+  ysyx_22040734_cache_dut/U1007/A2 (NR2D1BWP40P140)
+                                              0.0340    0.0000     0.7149 f
+  ysyx_22040734_cache_dut/U1007/ZN (NR2D1BWP40P140)
+                                              0.0210    0.0234     0.7383 r
+  ysyx_22040734_cache_dut/U1051/B (OAI211D1BWP40P140)
+                                              0.0210    0.0000     0.7383 r
+  ysyx_22040734_cache_dut/U1051/ZN (OAI211D1BWP40P140)
+                                              0.0384    0.0366     0.7750 f
+  ysyx_22040734_cache_dut/U1398/A2 (OR4D1BWP40P140)
+                                              0.0384    0.0000     0.7750 f
+  ysyx_22040734_cache_dut/U1398/Z (OR4D1BWP40P140)
+                                              0.0157    0.0503     0.8253 f
+  ysyx_22040734_cache_dut/U1399/A3 (OR3D1BWP40P140)
+                                              0.0157    0.0000     0.8253 f
+  ysyx_22040734_cache_dut/U1399/Z (OR3D1BWP40P140)
+                                              0.0175    0.0348     0.8601 f
+  ysyx_22040734_cache_dut/U36/A1 (AN2D1BWP40P140)
+                                              0.0175    0.0000     0.8601 f
+  ysyx_22040734_cache_dut/U36/Z (AN2D1BWP40P140)
+                                              0.0185    0.0319     0.8920 f
+  ysyx_22040734_cache_dut/U2352/A1 (OAI21D1BWP40P140)
+                                              0.0185    0.0000     0.8920 f
+  ysyx_22040734_cache_dut/U2352/ZN (OAI21D1BWP40P140)
+                                              0.0248    0.0212     0.9132 r
+  ysyx_22040734_cache_dut/U2354/A1 (AN3D1BWP40P140)
+                                              0.0248    0.0000     0.9132 r
+  ysyx_22040734_cache_dut/U2354/Z (AN3D1BWP40P140)
+                                              0.0210    0.0504     0.9636 r
+  ysyx_22040734_cache_dut/addr_ok_o (ysyx_22040734_Icache_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/cacheAddrOk_i (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/A1 (INR2D1BWP40P140)
+                                              0.0210    0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/ZN (INR2D1BWP40P140)
+                                              0.0182    0.0302     0.9938 r
+  ysyx_22040734_IF_u/if_instr_valid (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/if_instr_valid (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/B1 (IND2D1BWP40P140)
+                                              0.0182    0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/ZN (IND2D1BWP40P140)
+                                              0.0240    0.0202     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/A2 (NR2OPTPAD1BWP40P140)
+                                              0.0240    0.0000     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0369    0.0311     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/I (BUFFD16BWP40P140)
+                                              0.0369    0.0000     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/Z (BUFFD16BWP40P140)
+                                              0.1182    0.0932     1.1383 r
+  ysyx_22040734_pipline_ctrl_u/ls_stall_n (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/stall_n (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/A2 (ND2D1BWP40P140)
+                                              0.1182    0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/ZN (ND2D1BWP40P140)
+                                              0.0519    0.0374     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/B1 (INR2D1BWP40P140)
+                                              0.0519    0.0000     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/ZN (INR2D1BWP40P140)
+                                              0.0293    0.0289     1.2046 r
+  ysyx_22040734_Dcache_u/U206/B1 (INR2D1BWP40P140)
+                                              0.0293    0.0000     1.2046 r
+  ysyx_22040734_Dcache_u/U206/ZN (INR2D1BWP40P140)
+                                              0.0176    0.0174     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/A1 (NR2D1BWP40P140)
+                                              0.0176    0.0000     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/ZN (NR2D1BWP40P140)
+                                              0.0237    0.0206     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/A2 (ND2D1BWP40P140)
+                                              0.0237    0.0000     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/ZN (ND2D1BWP40P140)
+                                              0.0736    0.0500     1.2926 f
+  ysyx_22040734_Dcache_u/U103/A2 (NR2D2BWP40P140)
+                                              0.0736    0.0000     1.2926 f
+  ysyx_22040734_Dcache_u/U103/ZN (NR2D2BWP40P140)
+                                              0.2561    0.1734     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/B1 (AOI22D1BWP40P140)
+                                              0.2561    0.0000     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/ZN (AOI22D1BWP40P140)
+                                              0.0747    0.0547     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/A3 (ND3D1BWP40P140)
+                                              0.0747    0.0000     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/ZN (ND3D1BWP40P140)
+                                              0.0264    0.0293     1.5500 r
+  ysyx_22040734_Dcache_u/U98/B (AOI21D1BWP40P140)
+                                              0.0264    0.0000     1.5500 r
+  ysyx_22040734_Dcache_u/U98/ZN (AOI21D1BWP40P140)
+                                              0.0619    0.0189     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/I1 (MUX2NUD1BWP40P140)
+                                              0.0619    0.0000     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/ZN (MUX2NUD1BWP40P140)
+                                              0.0852    0.0345     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/C (AOI211D1BWP40P140)
+                                              0.0852    0.0000     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/ZN (AOI211D1BWP40P140)
+                                              0.0636    0.0334     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/C (OAI211D1BWP40P140)
+                                              0.0636    0.0000     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/ZN (OAI211D1BWP40P140)
+                                              0.0704    0.0430     1.6798 r
+  ysyx_22040734_Dcache_u/rd_data_o[31] (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ls_sram_rd_data[31] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_sram_rd_data[31] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/B2 (AOI22D1BWP40P140)
+                                              0.0704    0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/ZN (AOI22D1BWP40P140)
+                                              0.0410    0.0375     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/A2 (ND2D1BWP40P140)
+                                              0.0410    0.0000     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/ZN (ND2D1BWP40P140)
+                                              0.0207    0.0229     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/B1 (MOAI22D1BWP40P140)
+                                              0.0207    0.0000     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/ZN (MOAI22D1BWP40P140)
+                                              0.0335    0.0367     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/A1 (ND2OPTIBD2BWP40P140)
+                                              0.0335    0.0000     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/ZN (ND2OPTIBD2BWP40P140)
+                                              0.0559    0.0418     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/B (OAI21D4BWP40P140)
+                                              0.0559    0.0000     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/ZN (OAI21D4BWP40P140)
+                                              0.0452    0.0354     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/C (AOI221D4BWP40P140)
+                                              0.0452    0.0000     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/ZN (AOI221D4BWP40P140)
+                                              0.1048    0.0438     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U18/B (OAI21D1BWP40P140)
+                                              0.1048    0.0000     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U18/ZN (OAI21D1BWP40P140)
+                                              0.0740    0.0370     1.9351 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_res_o[56] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_ls_u/ls_res_o[56] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/lsres_wb_reg_i[56] (ysyx_22040734_WB_reg_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/i_din[121] (ysyx_22040734_stl_reg_WIDTH208_RESET_VAL0_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U130/I1 (MUX2D1BWP40P140)
+                                              0.0740    0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U130/Z (MUX2D1BWP40P140)
+                                              0.0242    0.0485     1.9836 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_121_/D (DFCNQD1BWP40P140)
+                                              0.0242    0.0000     1.9836 r
+  data arrival time                                                1.9836
+
+  clock CLK_clock (rise edge)                           2.1667     2.1667
+  clock network delay (ideal)                           0.0000     2.1667
+  clock uncertainty                                    -0.1500     2.0167
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_121_/CP (DFCNQD1BWP40P140)
+                                                        0.0000     2.0167 r
+  library setup time                                   -0.0329     1.9837
+  data required time                                               1.9837
+  --------------------------------------------------------------------------
+  data required time                                               1.9837
+  data arrival time                                               -1.9836
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0002
+
+
+  Startpoint: ysyx_22040734_cache_dut/reqLatch_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_119_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/CP (DFCNQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/Q (DFCNQD1BWP40P140)
+                                              0.0396    0.0922     0.0922 f
+  ysyx_22040734_cache_dut/U439/I (INVD1BWP40P140)
+                                              0.0396    0.0000     0.0922 f
+  ysyx_22040734_cache_dut/U439/ZN (INVD1BWP40P140)
+                                              0.0427    0.0384     0.1306 r
+  ysyx_22040734_cache_dut/U471/A1 (ND3D1BWP40P140)
+                                              0.0427    0.0000     0.1306 r
+  ysyx_22040734_cache_dut/U471/ZN (ND3D1BWP40P140)
+                                              0.2283    0.1455     0.2761 f
+  ysyx_22040734_cache_dut/U85/A2 (NR2D1BWP40P140)
+                                              0.2283    0.0000     0.2761 f
+  ysyx_22040734_cache_dut/U85/ZN (NR2D1BWP40P140)
+                                              0.3489    0.2732     0.5493 r
+  ysyx_22040734_cache_dut/U997/B1 (AOI22D1BWP40P140)
+                                              0.3489    0.0000     0.5493 r
+  ysyx_22040734_cache_dut/U997/ZN (AOI22D1BWP40P140)
+                                              0.0887    0.0599     0.6092 f
+  ysyx_22040734_cache_dut/U998/A4 (ND4D1BWP40P140)
+                                              0.0887    0.0000     0.6092 f
+  ysyx_22040734_cache_dut/U998/ZN (ND4D1BWP40P140)
+                                              0.0309    0.0335     0.6426 r
+  ysyx_22040734_cache_dut/U1004/A3 (OR4D1BWP40P140)
+                                              0.0309    0.0000     0.6426 r
+  ysyx_22040734_cache_dut/U1004/Z (OR4D1BWP40P140)
+                                              0.0122    0.0335     0.6761 r
+  ysyx_22040734_cache_dut/U1005/A2 (NR2D1BWP40P140)
+                                              0.0122    0.0000     0.6761 r
+  ysyx_22040734_cache_dut/U1005/ZN (NR2D1BWP40P140)
+                                              0.0163    0.0147     0.6908 f
+  ysyx_22040734_cache_dut/U1006/A1 (XNR2UD1BWP40P140)
+                                              0.0163    0.0000     0.6908 f
+  ysyx_22040734_cache_dut/U1006/ZN (XNR2UD1BWP40P140)
+                                              0.0340    0.0240     0.7149 f
+  ysyx_22040734_cache_dut/U1007/A2 (NR2D1BWP40P140)
+                                              0.0340    0.0000     0.7149 f
+  ysyx_22040734_cache_dut/U1007/ZN (NR2D1BWP40P140)
+                                              0.0210    0.0234     0.7383 r
+  ysyx_22040734_cache_dut/U1051/B (OAI211D1BWP40P140)
+                                              0.0210    0.0000     0.7383 r
+  ysyx_22040734_cache_dut/U1051/ZN (OAI211D1BWP40P140)
+                                              0.0384    0.0366     0.7750 f
+  ysyx_22040734_cache_dut/U1398/A2 (OR4D1BWP40P140)
+                                              0.0384    0.0000     0.7750 f
+  ysyx_22040734_cache_dut/U1398/Z (OR4D1BWP40P140)
+                                              0.0157    0.0503     0.8253 f
+  ysyx_22040734_cache_dut/U1399/A3 (OR3D1BWP40P140)
+                                              0.0157    0.0000     0.8253 f
+  ysyx_22040734_cache_dut/U1399/Z (OR3D1BWP40P140)
+                                              0.0175    0.0348     0.8601 f
+  ysyx_22040734_cache_dut/U36/A1 (AN2D1BWP40P140)
+                                              0.0175    0.0000     0.8601 f
+  ysyx_22040734_cache_dut/U36/Z (AN2D1BWP40P140)
+                                              0.0185    0.0319     0.8920 f
+  ysyx_22040734_cache_dut/U2352/A1 (OAI21D1BWP40P140)
+                                              0.0185    0.0000     0.8920 f
+  ysyx_22040734_cache_dut/U2352/ZN (OAI21D1BWP40P140)
+                                              0.0248    0.0212     0.9132 r
+  ysyx_22040734_cache_dut/U2354/A1 (AN3D1BWP40P140)
+                                              0.0248    0.0000     0.9132 r
+  ysyx_22040734_cache_dut/U2354/Z (AN3D1BWP40P140)
+                                              0.0210    0.0504     0.9636 r
+  ysyx_22040734_cache_dut/addr_ok_o (ysyx_22040734_Icache_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/cacheAddrOk_i (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/A1 (INR2D1BWP40P140)
+                                              0.0210    0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/ZN (INR2D1BWP40P140)
+                                              0.0182    0.0302     0.9938 r
+  ysyx_22040734_IF_u/if_instr_valid (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/if_instr_valid (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/B1 (IND2D1BWP40P140)
+                                              0.0182    0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/ZN (IND2D1BWP40P140)
+                                              0.0240    0.0202     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/A2 (NR2OPTPAD1BWP40P140)
+                                              0.0240    0.0000     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0369    0.0311     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/I (BUFFD16BWP40P140)
+                                              0.0369    0.0000     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/Z (BUFFD16BWP40P140)
+                                              0.1182    0.0932     1.1383 r
+  ysyx_22040734_pipline_ctrl_u/ls_stall_n (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/stall_n (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/A2 (ND2D1BWP40P140)
+                                              0.1182    0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/ZN (ND2D1BWP40P140)
+                                              0.0519    0.0374     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/B1 (INR2D1BWP40P140)
+                                              0.0519    0.0000     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/ZN (INR2D1BWP40P140)
+                                              0.0293    0.0289     1.2046 r
+  ysyx_22040734_Dcache_u/U206/B1 (INR2D1BWP40P140)
+                                              0.0293    0.0000     1.2046 r
+  ysyx_22040734_Dcache_u/U206/ZN (INR2D1BWP40P140)
+                                              0.0176    0.0174     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/A1 (NR2D1BWP40P140)
+                                              0.0176    0.0000     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/ZN (NR2D1BWP40P140)
+                                              0.0237    0.0206     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/A2 (ND2D1BWP40P140)
+                                              0.0237    0.0000     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/ZN (ND2D1BWP40P140)
+                                              0.0736    0.0500     1.2926 f
+  ysyx_22040734_Dcache_u/U103/A2 (NR2D2BWP40P140)
+                                              0.0736    0.0000     1.2926 f
+  ysyx_22040734_Dcache_u/U103/ZN (NR2D2BWP40P140)
+                                              0.2561    0.1734     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/B1 (AOI22D1BWP40P140)
+                                              0.2561    0.0000     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/ZN (AOI22D1BWP40P140)
+                                              0.0747    0.0547     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/A3 (ND3D1BWP40P140)
+                                              0.0747    0.0000     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/ZN (ND3D1BWP40P140)
+                                              0.0264    0.0293     1.5500 r
+  ysyx_22040734_Dcache_u/U98/B (AOI21D1BWP40P140)
+                                              0.0264    0.0000     1.5500 r
+  ysyx_22040734_Dcache_u/U98/ZN (AOI21D1BWP40P140)
+                                              0.0619    0.0189     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/I1 (MUX2NUD1BWP40P140)
+                                              0.0619    0.0000     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/ZN (MUX2NUD1BWP40P140)
+                                              0.0852    0.0345     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/C (AOI211D1BWP40P140)
+                                              0.0852    0.0000     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/ZN (AOI211D1BWP40P140)
+                                              0.0636    0.0334     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/C (OAI211D1BWP40P140)
+                                              0.0636    0.0000     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/ZN (OAI211D1BWP40P140)
+                                              0.0704    0.0430     1.6798 r
+  ysyx_22040734_Dcache_u/rd_data_o[31] (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ls_sram_rd_data[31] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_sram_rd_data[31] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/B2 (AOI22D1BWP40P140)
+                                              0.0704    0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/ZN (AOI22D1BWP40P140)
+                                              0.0410    0.0375     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/A2 (ND2D1BWP40P140)
+                                              0.0410    0.0000     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/ZN (ND2D1BWP40P140)
+                                              0.0207    0.0229     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/B1 (MOAI22D1BWP40P140)
+                                              0.0207    0.0000     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/ZN (MOAI22D1BWP40P140)
+                                              0.0335    0.0367     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/A1 (ND2OPTIBD2BWP40P140)
+                                              0.0335    0.0000     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/ZN (ND2OPTIBD2BWP40P140)
+                                              0.0559    0.0418     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/B (OAI21D4BWP40P140)
+                                              0.0559    0.0000     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/ZN (OAI21D4BWP40P140)
+                                              0.0452    0.0354     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/C (AOI221D4BWP40P140)
+                                              0.0452    0.0000     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/ZN (AOI221D4BWP40P140)
+                                              0.1048    0.0438     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U17/B (OAI21D1BWP40P140)
+                                              0.1048    0.0000     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U17/ZN (OAI21D1BWP40P140)
+                                              0.0740    0.0370     1.9351 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_res_o[54] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_ls_u/ls_res_o[54] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/lsres_wb_reg_i[54] (ysyx_22040734_WB_reg_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/i_din[119] (ysyx_22040734_stl_reg_WIDTH208_RESET_VAL0_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U128/I1 (MUX2D1BWP40P140)
+                                              0.0740    0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U128/Z (MUX2D1BWP40P140)
+                                              0.0242    0.0485     1.9836 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_119_/D (DFCNQD1BWP40P140)
+                                              0.0242    0.0000     1.9836 r
+  data arrival time                                                1.9836
+
+  clock CLK_clock (rise edge)                           2.1667     2.1667
+  clock network delay (ideal)                           0.0000     2.1667
+  clock uncertainty                                    -0.1500     2.0167
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_119_/CP (DFCNQD1BWP40P140)
+                                                        0.0000     2.0167 r
+  library setup time                                   -0.0329     1.9837
+  data required time                                               1.9837
+  --------------------------------------------------------------------------
+  data required time                                               1.9837
+  data arrival time                                               -1.9836
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0002
+
+
+  Startpoint: ysyx_22040734_cache_dut/reqLatch_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_103_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/CP (DFCNQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  ysyx_22040734_cache_dut/reqLatch_reg_6_/Q (DFCNQD1BWP40P140)
+                                              0.0396    0.0922     0.0922 f
+  ysyx_22040734_cache_dut/U439/I (INVD1BWP40P140)
+                                              0.0396    0.0000     0.0922 f
+  ysyx_22040734_cache_dut/U439/ZN (INVD1BWP40P140)
+                                              0.0427    0.0384     0.1306 r
+  ysyx_22040734_cache_dut/U471/A1 (ND3D1BWP40P140)
+                                              0.0427    0.0000     0.1306 r
+  ysyx_22040734_cache_dut/U471/ZN (ND3D1BWP40P140)
+                                              0.2283    0.1455     0.2761 f
+  ysyx_22040734_cache_dut/U85/A2 (NR2D1BWP40P140)
+                                              0.2283    0.0000     0.2761 f
+  ysyx_22040734_cache_dut/U85/ZN (NR2D1BWP40P140)
+                                              0.3489    0.2732     0.5493 r
+  ysyx_22040734_cache_dut/U997/B1 (AOI22D1BWP40P140)
+                                              0.3489    0.0000     0.5493 r
+  ysyx_22040734_cache_dut/U997/ZN (AOI22D1BWP40P140)
+                                              0.0887    0.0599     0.6092 f
+  ysyx_22040734_cache_dut/U998/A4 (ND4D1BWP40P140)
+                                              0.0887    0.0000     0.6092 f
+  ysyx_22040734_cache_dut/U998/ZN (ND4D1BWP40P140)
+                                              0.0309    0.0335     0.6426 r
+  ysyx_22040734_cache_dut/U1004/A3 (OR4D1BWP40P140)
+                                              0.0309    0.0000     0.6426 r
+  ysyx_22040734_cache_dut/U1004/Z (OR4D1BWP40P140)
+                                              0.0122    0.0335     0.6761 r
+  ysyx_22040734_cache_dut/U1005/A2 (NR2D1BWP40P140)
+                                              0.0122    0.0000     0.6761 r
+  ysyx_22040734_cache_dut/U1005/ZN (NR2D1BWP40P140)
+                                              0.0163    0.0147     0.6908 f
+  ysyx_22040734_cache_dut/U1006/A1 (XNR2UD1BWP40P140)
+                                              0.0163    0.0000     0.6908 f
+  ysyx_22040734_cache_dut/U1006/ZN (XNR2UD1BWP40P140)
+                                              0.0340    0.0240     0.7149 f
+  ysyx_22040734_cache_dut/U1007/A2 (NR2D1BWP40P140)
+                                              0.0340    0.0000     0.7149 f
+  ysyx_22040734_cache_dut/U1007/ZN (NR2D1BWP40P140)
+                                              0.0210    0.0234     0.7383 r
+  ysyx_22040734_cache_dut/U1051/B (OAI211D1BWP40P140)
+                                              0.0210    0.0000     0.7383 r
+  ysyx_22040734_cache_dut/U1051/ZN (OAI211D1BWP40P140)
+                                              0.0384    0.0366     0.7750 f
+  ysyx_22040734_cache_dut/U1398/A2 (OR4D1BWP40P140)
+                                              0.0384    0.0000     0.7750 f
+  ysyx_22040734_cache_dut/U1398/Z (OR4D1BWP40P140)
+                                              0.0157    0.0503     0.8253 f
+  ysyx_22040734_cache_dut/U1399/A3 (OR3D1BWP40P140)
+                                              0.0157    0.0000     0.8253 f
+  ysyx_22040734_cache_dut/U1399/Z (OR3D1BWP40P140)
+                                              0.0175    0.0348     0.8601 f
+  ysyx_22040734_cache_dut/U36/A1 (AN2D1BWP40P140)
+                                              0.0175    0.0000     0.8601 f
+  ysyx_22040734_cache_dut/U36/Z (AN2D1BWP40P140)
+                                              0.0185    0.0319     0.8920 f
+  ysyx_22040734_cache_dut/U2352/A1 (OAI21D1BWP40P140)
+                                              0.0185    0.0000     0.8920 f
+  ysyx_22040734_cache_dut/U2352/ZN (OAI21D1BWP40P140)
+                                              0.0248    0.0212     0.9132 r
+  ysyx_22040734_cache_dut/U2354/A1 (AN3D1BWP40P140)
+                                              0.0248    0.0000     0.9132 r
+  ysyx_22040734_cache_dut/U2354/Z (AN3D1BWP40P140)
+                                              0.0210    0.0504     0.9636 r
+  ysyx_22040734_cache_dut/addr_ok_o (ysyx_22040734_Icache_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/cacheAddrOk_i (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/A1 (INR2D1BWP40P140)
+                                              0.0210    0.0000     0.9636 r
+  ysyx_22040734_IF_u/U499/ZN (INR2D1BWP40P140)
+                                              0.0182    0.0302     0.9938 r
+  ysyx_22040734_IF_u/if_instr_valid (ysyx_22040734_IF_stage_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/if_instr_valid (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/B1 (IND2D1BWP40P140)
+                                              0.0182    0.0000     0.9938 r
+  ysyx_22040734_pipline_ctrl_u/U3/ZN (IND2D1BWP40P140)
+                                              0.0240    0.0202     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/A2 (NR2OPTPAD1BWP40P140)
+                                              0.0240    0.0000     1.0140 f
+  ysyx_22040734_pipline_ctrl_u/U1/ZN (NR2OPTPAD1BWP40P140)
+                                              0.0369    0.0311     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/I (BUFFD16BWP40P140)
+                                              0.0369    0.0000     1.0451 r
+  ysyx_22040734_pipline_ctrl_u/U7/Z (BUFFD16BWP40P140)
+                                              0.1182    0.0932     1.1383 r
+  ysyx_22040734_pipline_ctrl_u/ls_stall_n (ysyx_22040734_pipline_ctrl_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/stall_n (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/A2 (ND2D1BWP40P140)
+                                              0.1182    0.0000     1.1383 r
+  ysyx_22040734_Dcache_u/U3983/ZN (ND2D1BWP40P140)
+                                              0.0519    0.0374     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/B1 (INR2D1BWP40P140)
+                                              0.0519    0.0000     1.1757 f
+  ysyx_22040734_Dcache_u/U1561/ZN (INR2D1BWP40P140)
+                                              0.0293    0.0289     1.2046 r
+  ysyx_22040734_Dcache_u/U206/B1 (INR2D1BWP40P140)
+                                              0.0293    0.0000     1.2046 r
+  ysyx_22040734_Dcache_u/U206/ZN (INR2D1BWP40P140)
+                                              0.0176    0.0174     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/A1 (NR2D1BWP40P140)
+                                              0.0176    0.0000     1.2219 f
+  ysyx_22040734_Dcache_u/U13781/ZN (NR2D1BWP40P140)
+                                              0.0237    0.0206     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/A2 (ND2D1BWP40P140)
+                                              0.0237    0.0000     1.2425 r
+  ysyx_22040734_Dcache_u/U1510/ZN (ND2D1BWP40P140)
+                                              0.0736    0.0500     1.2926 f
+  ysyx_22040734_Dcache_u/U103/A2 (NR2D2BWP40P140)
+                                              0.0736    0.0000     1.2926 f
+  ysyx_22040734_Dcache_u/U103/ZN (NR2D2BWP40P140)
+                                              0.2561    0.1734     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/B1 (AOI22D1BWP40P140)
+                                              0.2561    0.0000     1.4660 r
+  ysyx_22040734_Dcache_u/U14088/ZN (AOI22D1BWP40P140)
+                                              0.0747    0.0547     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/A3 (ND3D1BWP40P140)
+                                              0.0747    0.0000     1.5207 f
+  ysyx_22040734_Dcache_u/U14089/ZN (ND3D1BWP40P140)
+                                              0.0264    0.0293     1.5500 r
+  ysyx_22040734_Dcache_u/U98/B (AOI21D1BWP40P140)
+                                              0.0264    0.0000     1.5500 r
+  ysyx_22040734_Dcache_u/U98/ZN (AOI21D1BWP40P140)
+                                              0.0619    0.0189     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/I1 (MUX2NUD1BWP40P140)
+                                              0.0619    0.0000     1.5689 f
+  ysyx_22040734_Dcache_u/U14090/ZN (MUX2NUD1BWP40P140)
+                                              0.0852    0.0345     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/C (AOI211D1BWP40P140)
+                                              0.0852    0.0000     1.6034 r
+  ysyx_22040734_Dcache_u/U14091/ZN (AOI211D1BWP40P140)
+                                              0.0636    0.0334     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/C (OAI211D1BWP40P140)
+                                              0.0636    0.0000     1.6368 f
+  ysyx_22040734_Dcache_u/U14092/ZN (OAI211D1BWP40P140)
+                                              0.0704    0.0430     1.6798 r
+  ysyx_22040734_Dcache_u/rd_data_o[31] (ysyx_22040734_Dcache_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ls_sram_rd_data[31] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_sram_rd_data[31] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/B2 (AOI22D1BWP40P140)
+                                              0.0704    0.0000     1.6798 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U88/ZN (AOI22D1BWP40P140)
+                                              0.0410    0.0375     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/A2 (ND2D1BWP40P140)
+                                              0.0410    0.0000     1.7173 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U89/ZN (ND2D1BWP40P140)
+                                              0.0207    0.0229     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/B1 (MOAI22D1BWP40P140)
+                                              0.0207    0.0000     1.7402 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U97/ZN (MOAI22D1BWP40P140)
+                                              0.0335    0.0367     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/A1 (ND2OPTIBD2BWP40P140)
+                                              0.0335    0.0000     1.7769 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U7/ZN (ND2OPTIBD2BWP40P140)
+                                              0.0559    0.0418     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/B (OAI21D4BWP40P140)
+                                              0.0559    0.0000     1.8188 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U6/ZN (OAI21D4BWP40P140)
+                                              0.0452    0.0354     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/C (AOI221D4BWP40P140)
+                                              0.0452    0.0000     1.8542 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U8/ZN (AOI221D4BWP40P140)
+                                              0.1048    0.0438     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U4/B (OAI21D1BWP40P140)
+                                              0.1048    0.0000     1.8980 f
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/U4/ZN (OAI21D1BWP40P140)
+                                              0.0740    0.0370     1.9351 r
+  ysyx_22040734_ls_u/ysyx_22040734_lsu_u/ls_res_o[38] (ysyx_22040734_lsu_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_ls_u/ls_res_o[38] (ysyx_22040734_ls_stage_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/lsres_wb_reg_i[38] (ysyx_22040734_WB_reg_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/i_din[103] (ysyx_22040734_stl_reg_WIDTH208_RESET_VAL0_0)
+                                                        0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U112/I1 (MUX2D1BWP40P140)
+                                              0.0740    0.0000     1.9351 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/U112/Z (MUX2D1BWP40P140)
+                                              0.0242    0.0485     1.9836 r
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_103_/D (DFCNQD1BWP40P140)
+                                              0.0242    0.0000     1.9836 r
+  data arrival time                                                1.9836
+
+  clock CLK_clock (rise edge)                           2.1667     2.1667
+  clock network delay (ideal)                           0.0000     2.1667
+  clock uncertainty                                    -0.1500     2.0167
+  ysyx_22040734_wb_reg_u/ysyx_22040734_wb_reg/o_dout_reg_103_/CP (DFCNQD1BWP40P140)
+                                                        0.0000     2.0167 r
+  library setup time                                   -0.0329     1.9837
+  data required time                                               1.9837
+  --------------------------------------------------------------------------
+  data required time                                               1.9837
+  data arrival time                                               -1.9836
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0002
+
+
+1
