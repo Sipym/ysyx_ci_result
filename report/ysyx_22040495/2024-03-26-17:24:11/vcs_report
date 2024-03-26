@@ -1,0 +1,21 @@
+
+dut: ysyx_22040495
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello test in flash pass!!
+hello test in mem pass!!
+hello test in sdram pass!!
+memtest test in flash pass!!
+memtest test in mem pass!!
+memtest test in sdram pass!!
+rtthread test in flash pass!!
+rtthread test in mem pass!!
+rtthread test in sdram pass!!
