@@ -1,0 +1,1502 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22041752
+freq: 650
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+83183.7  83183.7  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+94937  94937  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+84.19  15.81 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  650.0     1000.0     0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22041752
+Version: R-2020.09-SP3a
+Date   : Wed Mar 27 22:09:35 2024
+****************************************
+
+Number of ports:                        38751
+Number of nets:                        129140
+Number of cells:                        99101
+Number of combinational cells:          74215
+Number of sequential cells:             20722
+Number of macros/black boxes:               0
+Number of buf/inv:                      15625
+Number of references:                      19
+
+Combinational area:              43323.713765
+Buf/Inv area:                     5398.469988
+Noncombinational area:           39859.973641
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 83183.687407
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+ysyx_22041752                     83183.6874    100.0    519.4980      0.0000  0.0000  ysyx_22041752
+U_AXIARBITER_0                     1523.2140      1.8    554.5260    968.6880  0.0000  ysyx_22041752_axiarbiter_0
+U_CLINT_0                           888.1740      1.1    345.7440    430.1640  0.0000  ysyx_22041752_clint_0
+U_CLINT_0/U_YSYX_22041752_ASER_0     56.0700      0.1     56.0700      0.0000  0.0000  ysyx_22041752_aser_WIDTH32_3
+U_CLINT_0/U_YSYX_22041752_ASER_1     56.1960      0.1     56.1960      0.0000  0.0000  ysyx_22041752_aser_WIDTH32_2
+U_DCACHE_0                        24239.2498     29.1     57.2040      0.0000  0.0000  ysyx_22041752_DCACHE_0
+U_DCACHE_0/U_DCACHE_CMP_0          3909.9060      4.7   2468.7180   1441.1880  0.0000  ysyx_22041752_DCACHE_CMP_0
+U_DCACHE_0/U_DCACHE_D_0             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_10
+U_DCACHE_0/U_DCACHE_D_1             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_15
+U_DCACHE_0/U_DCACHE_D_2             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_13
+U_DCACHE_0/U_DCACHE_D_3             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_9
+U_DCACHE_0/U_DCACHE_RDU_0            83.6640      0.1     66.6540     17.0100  0.0000  ysyx_22041752_DCACHE_RDU_0
+U_DCACHE_0/U_DCACHE_TAG_0          4536.3779      5.5   1833.6780   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_5
+U_DCACHE_0/U_DCACHE_TAG_1          4544.8199      5.5   1842.1200   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_4
+U_DCACHE_0/U_DCACHE_TAG_2          4536.3779      5.5   1833.6780   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_6
+U_DCACHE_0/U_DCACHE_TAG_3          4534.7399      5.5   1832.0400   2702.7000  0.0000  ysyx_22041752_DCACHE_TAG_7
+U_DCACHE_0/U_DCACHE_V_0             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_12
+U_DCACHE_0/U_DCACHE_V_1             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_8
+U_DCACHE_0/U_DCACHE_V_2             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_14
+U_DCACHE_0/U_DCACHE_V_3             254.5200      0.3    131.6700    122.8500  0.0000  ysyx_22041752_DCACHE_VD_11
+U_EXU_0                           23987.8800     28.8   1012.7880    747.1800  0.0000  ysyx_22041752_EXU_0
+U_EXU_0/U_ALU_0                   20913.4800     25.1   1557.9900    248.4720  0.0000  ysyx_22041752_alu_0
+U_EXU_0/U_ALU_0/U_ASER_0            309.5820      0.4    309.5820      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_6
+U_EXU_0/U_ALU_0/U_DIVER_0          1545.8940      1.9    515.2140    259.0560  0.0000  ysyx_22041752_diver_0
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_0
+                                    122.9760      0.1    122.9760      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_8
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_1
+                                    118.5660      0.1    118.5660      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_11
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_2
+                                    139.1040      0.2    139.1040      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_10
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_3
+                                    137.0880      0.2    137.0880      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_9
+U_EXU_0/U_ALU_0/U_DIVER_0/U_ASER_4
+                                    253.8900      0.3    253.8900      0.0000  0.0000  ysyx_22041752_aser_WIDTH64_7
+U_EXU_0/U_ALU_0/U_MUL_0           17251.5420     20.7   4370.8140   6265.6020  0.0000  ysyx_22041752_mul_0
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_0__U_YSYX_22041752_BOOTH2_ENC
+                                     89.8380      0.1     89.8380      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_42
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_10__U_YSYX_22041752_BOOTH2_ENC
+                                    138.9780      0.2    138.9780      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_59
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_11__U_YSYX_22041752_BOOTH2_ENC
+                                    139.7340      0.2    139.7340      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_60
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_12__U_YSYX_22041752_BOOTH2_ENC
+                                    140.4900      0.2    140.4900      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_63
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_13__U_YSYX_22041752_BOOTH2_ENC
+                                    140.9940      0.2    140.9940      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_65
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_14__U_YSYX_22041752_BOOTH2_ENC
+                                    139.6080      0.2    139.6080      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_58
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_15__U_YSYX_22041752_BOOTH2_ENC
+                                    140.1120      0.2    140.1120      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_56
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_16__U_YSYX_22041752_BOOTH2_ENC
+                                    136.9620      0.2    136.9620      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_53
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_17__U_YSYX_22041752_BOOTH2_ENC
+                                    133.8120      0.2    133.8120      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_50
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_18__U_YSYX_22041752_BOOTH2_ENC
+                                    135.3240      0.2    135.3240      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_49
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_19__U_YSYX_22041752_BOOTH2_ENC
+                                    133.0560      0.2    133.0560      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_40
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_1__U_YSYX_22041752_BOOTH2_ENC
+                                    133.0560      0.2    133.0560      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_33
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_20__U_YSYX_22041752_BOOTH2_ENC
+                                    130.4100      0.2    130.4100      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_46
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_21__U_YSYX_22041752_BOOTH2_ENC
+                                    129.7800      0.2    129.7800      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_44
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_22__U_YSYX_22041752_BOOTH2_ENC
+                                    130.1580      0.2    130.1580      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_37
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_23__U_YSYX_22041752_BOOTH2_ENC
+                                    129.2760      0.2    129.2760      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_34
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_24__U_YSYX_22041752_BOOTH2_ENC
+                                    129.0240      0.2    129.0240      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_61
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_25__U_YSYX_22041752_BOOTH2_ENC
+                                    129.0240      0.2    129.0240      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_54
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_26__U_YSYX_22041752_BOOTH2_ENC
+                                    129.1500      0.2    129.1500      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_51
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_27__U_YSYX_22041752_BOOTH2_ENC
+                                    128.5200      0.2    128.5200      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_48
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_28__U_YSYX_22041752_BOOTH2_ENC
+                                    128.1420      0.2    128.1420      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_47
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_29__U_YSYX_22041752_BOOTH2_ENC
+                                    127.5120      0.2    127.5120      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_43
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_2__U_YSYX_22041752_BOOTH2_ENC
+                                    136.9620      0.2    136.9620      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_36
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_30__U_YSYX_22041752_BOOTH2_ENC
+                                    127.6380      0.2    127.6380      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_35
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_31__U_YSYX_22041752_BOOTH2_ENC
+                                    127.2600      0.2    127.2600      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_38
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_32__U_YSYX_22041752_BOOTH2_ENC
+                                     49.6440      0.1     49.6440      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_41
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_3__U_YSYX_22041752_BOOTH2_ENC
+                                    146.1600      0.2    146.1600      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_45
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_4__U_YSYX_22041752_BOOTH2_ENC
+                                    146.5380      0.2    146.5380      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_39
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_5__U_YSYX_22041752_BOOTH2_ENC
+                                    146.7900      0.2    146.7900      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_52
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_6__U_YSYX_22041752_BOOTH2_ENC
+                                    146.0340      0.2    146.0340      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_55
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_7__U_YSYX_22041752_BOOTH2_ENC
+                                    145.2780      0.2    145.2780      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_57
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_8__U_YSYX_22041752_BOOTH2_ENC
+                                    144.5220      0.2    144.5220      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_64
+U_EXU_0/U_ALU_0/U_MUL_0/BOOTH2_9__U_YSYX_22041752_BOOTH2_ENC
+                                    141.8760      0.2    141.8760      0.0000  0.0000  ysyx_22041752_booth2_enc_BIT_WIDTH_X64_62
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_BOOTH2_SWITCH_0
+                                   1105.2720      1.3   1105.2720      0.0000  0.0000  ysyx_22041752_switch_DW128_NUM33_0
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0
+                                   1158.1920      1.4      0.0000      0.0000  0.0000  ysyx_22041752_wallace_array_NUM8_START0_0
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE
+                                    193.0320      0.2      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_8
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      8.6940      0.0      8.6940      0.0000  0.0000  ysyx_22041752_fadder_1b_248
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      8.3160      0.0      8.3160      0.0000  0.0000  ysyx_22041752_fadder_1b_423
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      8.1900      0.0      8.1900      0.0000  0.0000  ysyx_22041752_fadder_1b_414
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_413
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_412
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      3.9060      0.0      3.9060      0.0000  0.0000  ysyx_22041752_fadder_1b_411
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_410
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      4.2840      0.0      4.2840      0.0000  0.0000  ysyx_22041752_fadder_1b_409
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_408
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      3.4020      0.0      3.4020      0.0000  0.0000  ysyx_22041752_fadder_1b_407
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_406
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      3.6540      0.0      3.6540      0.0000  0.0000  ysyx_22041752_fadder_1b_405
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      6.9300      0.0      6.9300      0.0000  0.0000  ysyx_22041752_fadder_1b_422
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_404
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      8.8200      0.0      8.8200      0.0000  0.0000  ysyx_22041752_fadder_1b_403
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      8.4420      0.0      8.4420      0.0000  0.0000  ysyx_22041752_fadder_1b_402
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      8.4420      0.0      8.4420      0.0000  0.0000  ysyx_22041752_fadder_1b_401
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      9.4500      0.0      9.4500      0.0000  0.0000  ysyx_22041752_fadder_1b_400
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      5.6700      0.0      5.6700      0.0000  0.0000  ysyx_22041752_fadder_1b_399
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      3.9060      0.0      3.9060      0.0000  0.0000  ysyx_22041752_fadder_1b_398
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      4.7880      0.0      4.7880      0.0000  0.0000  ysyx_22041752_fadder_1b_397
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      5.1660      0.0      5.1660      0.0000  0.0000  ysyx_22041752_fadder_1b_396
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      7.1820      0.0      7.1820      0.0000  0.0000  ysyx_22041752_fadder_1b_395
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      8.3160      0.0      8.3160      0.0000  0.0000  ysyx_22041752_fadder_1b_421
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_251
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      7.6860      0.0      7.6860      0.0000  0.0000  ysyx_22041752_fadder_1b_420
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      8.5680      0.0      8.5680      0.0000  0.0000  ysyx_22041752_fadder_1b_419
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      8.8200      0.0      8.8200      0.0000  0.0000  ysyx_22041752_fadder_1b_418
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      8.8200      0.0      8.8200      0.0000  0.0000  ysyx_22041752_fadder_1b_417
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      8.1900      0.0      8.1900      0.0000  0.0000  ysyx_22041752_fadder_1b_416
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      8.5680      0.0      8.5680      0.0000  0.0000  ysyx_22041752_fadder_1b_415
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE
+                                    193.4100      0.2      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_15
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_394
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      8.3160      0.0      8.3160      0.0000  0.0000  ysyx_22041752_fadder_1b_393
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      6.6780      0.0      6.6780      0.0000  0.0000  ysyx_22041752_fadder_1b_384
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      7.3080      0.0      7.3080      0.0000  0.0000  ysyx_22041752_fadder_1b_383
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      8.3160      0.0      8.3160      0.0000  0.0000  ysyx_22041752_fadder_1b_382
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      8.1900      0.0      8.1900      0.0000  0.0000  ysyx_22041752_fadder_1b_381
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      6.1740      0.0      6.1740      0.0000  0.0000  ysyx_22041752_fadder_1b_380
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_379
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      3.4020      0.0      3.4020      0.0000  0.0000  ysyx_22041752_fadder_1b_378
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      3.4020      0.0      3.4020      0.0000  0.0000  ysyx_22041752_fadder_1b_377
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      8.8200      0.0      8.8200      0.0000  0.0000  ysyx_22041752_fadder_1b_376
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      7.1820      0.0      7.1820      0.0000  0.0000  ysyx_22041752_fadder_1b_375
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      3.6540      0.0      3.6540      0.0000  0.0000  ysyx_22041752_fadder_1b_392
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                      9.1980      0.0      9.1980      0.0000  0.0000  ysyx_22041752_fadder_1b_374
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      8.0640      0.0      8.0640      0.0000  0.0000  ysyx_22041752_fadder_1b_373
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      6.1740      0.0      6.1740      0.0000  0.0000  ysyx_22041752_fadder_1b_372
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      8.4420      0.0      8.4420      0.0000  0.0000  ysyx_22041752_fadder_1b_371
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      7.9380      0.0      7.9380      0.0000  0.0000  ysyx_22041752_fadder_1b_370
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      8.4420      0.0      8.4420      0.0000  0.0000  ysyx_22041752_fadder_1b_369
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_368
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      5.6700      0.0      5.6700      0.0000  0.0000  ysyx_22041752_fadder_1b_367
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      5.4180      0.0      5.4180      0.0000  0.0000  ysyx_22041752_fadder_1b_366
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      5.9220      0.0      5.9220      0.0000  0.0000  ysyx_22041752_fadder_1b_365
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_391
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_364
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      5.0400      0.0      5.0400      0.0000  0.0000  ysyx_22041752_fadder_1b_390
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_389
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_388
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      4.4100      0.0      4.4100      0.0000  0.0000  ysyx_22041752_fadder_1b_387
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      6.1740      0.0      6.1740      0.0000  0.0000  ysyx_22041752_fadder_1b_386
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_1__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_385
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE
+                                    164.9340      0.2      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_14
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_363
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_362
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_355
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      7.6860      0.0      7.6860      0.0000  0.0000  ysyx_22041752_fadder_1b_354
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      4.4100      0.0      4.4100      0.0000  0.0000  ysyx_22041752_fadder_1b_353
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      5.2920      0.0      5.2920      0.0000  0.0000  ysyx_22041752_fadder_1b_352
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      6.0480      0.0      6.0480      0.0000  0.0000  ysyx_22041752_fadder_1b_351
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      7.0560      0.0      7.0560      0.0000  0.0000  ysyx_22041752_fadder_1b_350
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_349
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      9.8280      0.0      9.8280      0.0000  0.0000  ysyx_22041752_fadder_1b_348
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      8.4420      0.0      8.4420      0.0000  0.0000  ysyx_22041752_fadder_1b_347
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      7.4340      0.0      7.4340      0.0000  0.0000  ysyx_22041752_fadder_1b_346
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_495
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                     10.2060      0.0     10.2060      0.0000  0.0000  ysyx_22041752_fadder_1b_345
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_344
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      5.4180      0.0      5.4180      0.0000  0.0000  ysyx_22041752_fadder_1b_343
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      4.6620      0.0      4.6620      0.0000  0.0000  ysyx_22041752_fadder_1b_342
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_341
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      6.9300      0.0      6.9300      0.0000  0.0000  ysyx_22041752_fadder_1b_340
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      8.5680      0.0      8.5680      0.0000  0.0000  ysyx_22041752_fadder_1b_339
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      7.8120      0.0      7.8120      0.0000  0.0000  ysyx_22041752_fadder_1b_338
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      3.5280      0.0      3.5280      0.0000  0.0000  ysyx_22041752_fadder_1b_337
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      7.5600      0.0      7.5600      0.0000  0.0000  ysyx_22041752_fadder_1b_336
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_361
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_335
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      3.9060      0.0      3.9060      0.0000  0.0000  ysyx_22041752_fadder_1b_317
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_360
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      3.5280      0.0      3.5280      0.0000  0.0000  ysyx_22041752_fadder_1b_359
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22041752_fadder_1b_358
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_357
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_2__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      4.4100      0.0      4.4100      0.0000  0.0000  ysyx_22041752_fadder_1b_356
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE
+                                    138.9780      0.2      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_13
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_327
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_334
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_493
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      3.4020      0.0      3.4020      0.0000  0.0000  ysyx_22041752_fadder_1b_326
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_325
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_492
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      4.7880      0.0      4.7880      0.0000  0.0000  ysyx_22041752_fadder_1b_324
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      5.5440      0.0      5.5440      0.0000  0.0000  ysyx_22041752_fadder_1b_323
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      6.3000      0.0      6.3000      0.0000  0.0000  ysyx_22041752_fadder_1b_322
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      7.9380      0.0      7.9380      0.0000  0.0000  ysyx_22041752_fadder_1b_321
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      3.6540      0.0      3.6540      0.0000  0.0000  ysyx_22041752_fadder_1b_320
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      7.0560      0.0      7.0560      0.0000  0.0000  ysyx_22041752_fadder_1b_319
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_333
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                      9.9540      0.0      9.9540      0.0000  0.0000  ysyx_22041752_fadder_1b_318
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_268
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_491
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_316
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      4.2840      0.0      4.2840      0.0000  0.0000  ysyx_22041752_fadder_1b_315
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      6.8040      0.0      6.8040      0.0000  0.0000  ysyx_22041752_fadder_1b_314
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                     10.0800      0.0     10.0800      0.0000  0.0000  ysyx_22041752_fadder_1b_313
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      8.3160      0.0      8.3160      0.0000  0.0000  ysyx_22041752_fadder_1b_312
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      3.5280      0.0      3.5280      0.0000  0.0000  ysyx_22041752_fadder_1b_311
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      6.9300      0.0      6.9300      0.0000  0.0000  ysyx_22041752_fadder_1b_310
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_286
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_309
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_330
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_332
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_331
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_494
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_329
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_3__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_328
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE
+                                    128.7720      0.2      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_12
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_288
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_489
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_486
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_306
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_305
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_304
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_264
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_303
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      7.0560      0.0      7.0560      0.0000  0.0000  ysyx_22041752_fadder_1b_302
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      8.0640      0.0      8.0640      0.0000  0.0000  ysyx_22041752_fadder_1b_301
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_300
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      6.0480      0.0      6.0480      0.0000  0.0000  ysyx_22041752_fadder_1b_299
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_488
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                      9.7020      0.0      9.7020      0.0000  0.0000  ysyx_22041752_fadder_1b_298
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_297
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_296
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_467
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_295
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      3.5280      0.0      3.5280      0.0000  0.0000  ysyx_22041752_fadder_1b_490
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      8.1900      0.0      8.1900      0.0000  0.0000  ysyx_22041752_fadder_1b_294
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      8.1900      0.0      8.1900      0.0000  0.0000  ysyx_22041752_fadder_1b_293
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      3.5280      0.0      3.5280      0.0000  0.0000  ysyx_22041752_fadder_1b_292
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      7.8120      0.0      7.8120      0.0000  0.0000  ysyx_22041752_fadder_1b_291
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_308
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_290
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_271
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_468
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_307
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_482
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_481
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_4__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_487
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE
+                                    118.4400      0.1      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_11
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_289
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_480
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_484
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_287
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_483
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_466
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_285
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_284
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_283
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      7.3080      0.0      7.3080      0.0000  0.0000  ysyx_22041752_fadder_1b_282
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_281
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      4.9140      0.0      4.9140      0.0000  0.0000  ysyx_22041752_fadder_1b_280
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_479
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                      8.9460      0.0      8.9460      0.0000  0.0000  ysyx_22041752_fadder_1b_279
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_465
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_464
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_472
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_278
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_277
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      7.8120      0.0      7.8120      0.0000  0.0000  ysyx_22041752_fadder_1b_276
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      6.4260      0.0      6.4260      0.0000  0.0000  ysyx_22041752_fadder_1b_275
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_274
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      4.9140      0.0      4.9140      0.0000  0.0000  ysyx_22041752_fadder_1b_273
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_478
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      3.4020      0.0      3.4020      0.0000  0.0000  ysyx_22041752_fadder_1b_272
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_477
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_476
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_475
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_474
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_473
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_5__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_485
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE
+                                    110.7540      0.1      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_10
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_459
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_458
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_449
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_471
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_470
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_469
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_462
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_461
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      6.8040      0.0      6.8040      0.0000  0.0000  ysyx_22041752_fadder_1b_270
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      8.3160      0.0      8.3160      0.0000  0.0000  ysyx_22041752_fadder_1b_269
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_463
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22041752_fadder_1b_267
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_457
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                     10.2060      0.0     10.2060      0.0000  0.0000  ysyx_22041752_fadder_1b_266
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_448
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_447
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_446
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22041752_fadder_1b_265
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      3.0240      0.0      3.0240      0.0000  0.0000  ysyx_22041752_fadder_1b_460
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      6.9300      0.0      6.9300      0.0000  0.0000  ysyx_22041752_fadder_1b_263
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      4.9140      0.0      4.9140      0.0000  0.0000  ysyx_22041752_fadder_1b_262
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_445
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      6.8040      0.0      6.8040      0.0000  0.0000  ysyx_22041752_fadder_1b_261
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_456
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                      7.0560      0.0      7.0560      0.0000  0.0000  ysyx_22041752_fadder_1b_260
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_455
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_454
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_453
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_452
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_451
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_6__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_450
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE
+                                    109.8720      0.1      0.0000      0.0000  0.0000  ysyx_22041752_wallace_tree_BIT_WIDTH33_9
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_0
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_444
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_1
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_443
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_10
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_434
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_11
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_433
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_12
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_432
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_13
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_431
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_14
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_430
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_15
+                                      3.1500      0.0      3.1500      0.0000  0.0000  ysyx_22041752_fadder_1b_259
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_16
+                                      5.0400      0.0      5.0400      0.0000  0.0000  ysyx_22041752_fadder_1b_258
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_17
+                                      5.0400      0.0      5.0400      0.0000  0.0000  ysyx_22041752_fadder_1b_257
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_18
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_429
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_19
+                                      4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22041752_fadder_1b_256
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_2
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_442
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_20
+                                      7.9380      0.0      7.9380      0.0000  0.0000  ysyx_22041752_fadder_1b_255
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_21
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_428
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_22
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_427
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_23
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_426
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_24
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_425
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_25
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_254
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_26
+                                      9.0720      0.0      9.0720      0.0000  0.0000  ysyx_22041752_fadder_1b_253
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_27
+                                      7.3080      0.0      7.3080      0.0000  0.0000  ysyx_22041752_fadder_1b_252
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_28
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_424
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_29
+                                      5.9220      0.0      5.9220      0.0000  0.0000  ysyx_22041752_fadder_1b_250
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_3
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_441
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_30
+                                     14.7420      0.0     14.7420      0.0000  0.0000  ysyx_22041752_fadder_1b_249
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_4
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_440
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_5
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_439
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_6
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_438
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_7
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_437
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_8
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_436
+U_EXU_0/U_ALU_0/U_MUL_0/U_YSYX_22041752_WALLACE_ARRAY_0/WALLACE_ARRAY_7__U_YSYX_22041752_WALLACE_TREE/U_YSYX_22041752_FADDER_1B_9
+                                      2.1420      0.0      2.1420      0.0000  0.0000  ysyx_22041752_fadder_1b_435
+U_EXU_0/U_BJT_CAL_0                 272.5380      0.3    272.5380      0.0000  0.0000  ysyx_22041752_bjt_cal_0
+U_EXU_0/U_CSR_0                    1041.8940      1.3    437.0940    604.8000  0.0000  ysyx_22041752_csr_0
+U_ICACHE_0                        20547.7018     24.7     63.0000      1.8900  0.0000  ysyx_22041752_ICACHE_0
+U_ICACHE_0/U_ICACHE_CMP_0          1304.6040      1.6    977.0040    327.6000  0.0000  ysyx_22041752_ICACHE_CMP_0
+U_ICACHE_0/U_ICACHE_RDU_0            26.7120      0.0     26.7120      0.0000  0.0000  ysyx_22041752_ICACHE_RDU_0
+U_ICACHE_0/U_ICACHE_TAG_0          4588.6680      5.5   2000.1240   2588.5440  0.0000  ysyx_22041752_ICACHE_TAG_4
+U_ICACHE_0/U_ICACHE_TAG_1          4546.0800      5.5   1960.3080   2585.7720  0.0000  ysyx_22041752_ICACHE_TAG_6
+U_ICACHE_0/U_ICACHE_TAG_2          4559.5620      5.5   1979.4600   2580.1020  0.0000  ysyx_22041752_ICACHE_TAG_5
+U_ICACHE_0/U_ICACHE_TAG_3          4536.8820      5.5   1956.7800   2580.1020  0.0000  ysyx_22041752_ICACHE_TAG_7
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_0
+                                    227.9340      0.3    105.0840    122.8500  0.0000  ysyx_22041752_ICACHE_V_5
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_1
+                                    227.5560      0.3    104.5800    122.9760  0.0000  ysyx_22041752_ICACHE_V_4
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_2
+                                    237.3840      0.3    114.4080    122.9760  0.0000  ysyx_22041752_ICACHE_V_7
+U_ICACHE_0/U_YSYX_22041752_ICACHE_V_3
+                                    227.4300      0.3    104.5800    122.8500  0.0000  ysyx_22041752_ICACHE_V_6
+U_IDU_0                            7966.8539      9.6    460.0260    231.0840  0.0000  ysyx_22041752_IDU_0
+U_IDU_0/U_RF_0                     7275.7439      8.7   3039.3720   4236.3719  0.0000  ysyx_22041752_rf_0
+U_IFU_0                            1382.3460      1.7    998.9280    383.4180  0.0000  ysyx_22041752_IFU_0
+U_IO_0                              509.1660      0.6    179.5500    329.6160  0.0000  ysyx_22041752_io_0
+U_MEMSPACE_0                        222.3900      0.3    216.7200      5.6700  0.0000  ysyx_22041752_memspace_0
+U_MEU_0                             446.4180      0.5    295.2180    151.2000  0.0000  ysyx_22041752_MEU_0
+U_MMU_0                             726.0120      0.9    269.2620    456.7500  0.0000  ysyx_22041752_mmu_0
+U_WBU_0                             224.7840      0.3     90.3420    134.4420  0.0000  ysyx_22041752_WBU_0
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+Total                                                  43323.7138  39859.9736  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22041752
+Version: R-2020.09-SP3a
+Date   : Wed Mar 27 22:09:26 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_31_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_ICACHE_0/U_ICACHE_TAG_3/tag_reg_42__16_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_31_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_31_/Q (DFQD2BWP40P140)
+                                              0.0160    0.0806     0.0806 f
+  U_EXU_0/U73/I (INVD2BWP40P140)              0.0160    0.0000     0.0806 f
+  U_EXU_0/U73/ZN (INVD2BWP40P140)             0.0156    0.0149     0.0955 r
+  U_EXU_0/U109/A1 (MOAI22D4BWP40P140LVT)      0.0156    0.0000     0.0955 r
+  U_EXU_0/U109/ZN (MOAI22D4BWP40P140LVT)      0.0444    0.0269     0.1225 f
+  U_EXU_0/U_ALU_0/alu_src1[31] (ysyx_22041752_alu_0)    0.0000     0.1225 f
+  U_EXU_0/U_ALU_0/U951/A1 (INR2D4BWP40P140)   0.0444    0.0000     0.1225 f
+  U_EXU_0/U_ALU_0/U951/ZN (INR2D4BWP40P140)   0.0466    0.0501     0.1726 f
+  U_EXU_0/U_ALU_0/U128/I (INVD2BWP40P140)     0.0466    0.0000     0.1726 f
+  U_EXU_0/U_ALU_0/U128/ZN (INVD2BWP40P140)    0.0175    0.0183     0.1909 r
+  U_EXU_0/U_ALU_0/U412/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0175    0.0000     0.1909 r
+  U_EXU_0/U_ALU_0/U412/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0611    0.0377     0.2287 f
+  U_EXU_0/U_ALU_0/U994/B (OAI21D1BWP40P140)   0.0611    0.0000     0.2287 f
+  U_EXU_0/U_ALU_0/U994/ZN (OAI21D1BWP40P140)
+                                              0.0516    0.0391     0.2677 r
+  U_EXU_0/U_ALU_0/U995/B1 (OAI22D1BWP40P140)
+                                              0.0516    0.0000     0.2677 r
+  U_EXU_0/U_ALU_0/U995/ZN (OAI22D1BWP40P140)
+                                              0.0337    0.0342     0.3019 f
+  U_EXU_0/U_ALU_0/U64/A2 (NR2D1BWP40P140)     0.0337    0.0000     0.3019 f
+  U_EXU_0/U_ALU_0/U64/ZN (NR2D1BWP40P140)     0.0475    0.0407     0.3426 r
+  U_EXU_0/U_ALU_0/U429/A1 (OAI22D1BWP40P140)
+                                              0.0475    0.0000     0.3426 r
+  U_EXU_0/U_ALU_0/U429/ZN (OAI22D1BWP40P140)
+                                              0.0340    0.0293     0.3719 f
+  U_EXU_0/U_ALU_0/U1008/B (AOI211D1BWP40P140LVT)
+                                              0.0340    0.0000     0.3719 f
+  U_EXU_0/U_ALU_0/U1008/ZN (AOI211D1BWP40P140LVT)
+                                              0.0370    0.0314     0.4033 r
+  U_EXU_0/U_ALU_0/U1037/B (OAI21D1BWP40P140LVT)
+                                              0.0370    0.0000     0.4033 r
+  U_EXU_0/U_ALU_0/U1037/ZN (OAI21D1BWP40P140LVT)
+                                              0.0311    0.0277     0.4310 f
+  U_EXU_0/U_ALU_0/U535/A1 (IOA21D1BWP40P140LVT)
+                                              0.0311    0.0000     0.4310 f
+  U_EXU_0/U_ALU_0/U535/ZN (IOA21D1BWP40P140LVT)
+                                              0.0187    0.0310     0.4619 f
+  U_EXU_0/U_ALU_0/U231/A2 (NR2D1BWP40P140)    0.0187    0.0000     0.4619 f
+  U_EXU_0/U_ALU_0/U231/ZN (NR2D1BWP40P140)    0.0245    0.0227     0.4847 r
+  U_EXU_0/U_ALU_0/U728/A1 (OAI21D2BWP40P140LVT)
+                                              0.0245    0.0000     0.4847 r
+  U_EXU_0/U_ALU_0/U728/ZN (OAI21D2BWP40P140LVT)
+                                              0.0196    0.0156     0.5002 f
+  U_EXU_0/U_ALU_0/U531/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0196    0.0000     0.5002 f
+  U_EXU_0/U_ALU_0/U531/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0168    0.0143     0.5145 r
+  U_EXU_0/U_ALU_0/U435/A2 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0168    0.0000     0.5145 r
+  U_EXU_0/U_ALU_0/U435/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0128     0.5273 f
+  U_EXU_0/U_ALU_0/alu_result[0] (ysyx_22041752_alu_0)   0.0000     0.5273 f
+  U_EXU_0/U_BJT_CAL_0/b_taken_real (ysyx_22041752_bjt_cal_0)
+                                                        0.0000     0.5273 f
+  U_EXU_0/U_BJT_CAL_0/U57/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0160    0.0000     0.5273 f
+  U_EXU_0/U_BJT_CAL_0/U57/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0280    0.0205     0.5479 f
+  U_EXU_0/U_BJT_CAL_0/U26/A1 (OAI21D2BWP40P140LVT)
+                                              0.0280    0.0000     0.5479 f
+  U_EXU_0/U_BJT_CAL_0/U26/ZN (OAI21D2BWP40P140LVT)
+                                              0.0206    0.0184     0.5662 r
+  U_EXU_0/U_BJT_CAL_0/pre_error (ysyx_22041752_bjt_cal_0)
+                                                        0.0000     0.5662 r
+  U_EXU_0/U492/A1 (ND2D4BWP40P140LVT)         0.0206    0.0000     0.5662 r
+  U_EXU_0/U492/ZN (ND2D4BWP40P140LVT)         0.0222    0.0155     0.5817 f
+  U_EXU_0/bjpre_error_BAR (ysyx_22041752_EXU_0)         0.0000     0.5817 f
+  U_IFU_0/bjpre_error_BAR (ysyx_22041752_IFU_0)         0.0000     0.5817 f
+  U_IFU_0/U341/I (INVD4BWP40P140LVT)          0.0222    0.0000     0.5817 f
+  U_IFU_0/U341/ZN (INVD4BWP40P140LVT)         0.0101    0.0096     0.5913 r
+  U_IFU_0/U1503/B1 (INR2D4BWP40P140LVT)       0.0101    0.0000     0.5913 r
+  U_IFU_0/U1503/ZN (INR2D4BWP40P140LVT)       0.0114    0.0087     0.6000 f
+  U_IFU_0/inst_en (ysyx_22041752_IFU_0)                 0.0000     0.6000 f
+  U_ICACHE_0/inst_en (ysyx_22041752_ICACHE_0)           0.0000     0.6000 f
+  U_ICACHE_0/U_ICACHE_RDU_0/inst_en (ysyx_22041752_ICACHE_RDU_0)
+                                                        0.0000     0.6000 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U38/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0114    0.0000     0.6000 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U38/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0165    0.0085     0.6085 r
+  U_ICACHE_0/U_ICACHE_RDU_0/U44/I (INVD4BWP40P140LVT)
+                                              0.0165    0.0000     0.6085 r
+  U_ICACHE_0/U_ICACHE_RDU_0/U44/ZN (INVD4BWP40P140LVT)
+                                              0.0086    0.0075     0.6160 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U40/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0086    0.0000     0.6160 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U40/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0177    0.0089     0.6249 r
+  U_ICACHE_0/U_ICACHE_RDU_0/rden[1] (ysyx_22041752_ICACHE_RDU_0)
+                                                        0.0000     0.6249 r
+  U_ICACHE_0/U50/A1 (ND2D4BWP40P140LVT)       0.0177    0.0000     0.6249 r
+  U_ICACHE_0/U50/ZN (ND2D4BWP40P140LVT)       0.0208    0.0152     0.6401 f
+  U_ICACHE_0/U15/I (INVD6BWP40P140LVT)        0.0208    0.0000     0.6401 f
+  U_ICACHE_0/U15/ZN (INVD6BWP40P140LVT)       0.0135    0.0127     0.6528 r
+  U_ICACHE_0/U_ICACHE_TAG_3/en (ysyx_22041752_ICACHE_TAG_7)
+                                                        0.0000     0.6528 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U324/A1 (NR2D3BWP40P140LVT)
+                                              0.0135    0.0000     0.6528 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U324/ZN (NR2D3BWP40P140LVT)
+                                              0.0139    0.0081     0.6609 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U411/A2 (ND2D3BWP40P140)
+                                              0.0139    0.0000     0.6609 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U411/ZN (ND2D3BWP40P140)
+                                              0.0113    0.0115     0.6724 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U165/I (BUFFD6BWP40P140LVT)
+                                              0.0113    0.0000     0.6724 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U165/Z (BUFFD6BWP40P140LVT)
+                                              0.0145    0.0229     0.6953 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U275/B1 (INR2D2BWP40P140)
+                                              0.0145    0.0000     0.6953 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U275/ZN (INR2D2BWP40P140)
+                                              0.0150    0.0123     0.7076 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U527/B1 (INR2D2BWP40P140)
+                                              0.0150    0.0000     0.7076 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U527/ZN (INR2D2BWP40P140)
+                                              0.0947    0.0601     0.7677 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U617/B2 (MOAI22D1BWP40P140)
+                                              0.0947    0.0000     0.7677 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U617/ZN (MOAI22D1BWP40P140)
+                                              0.0627    0.0455     0.8132 r
+  U_ICACHE_0/U_ICACHE_TAG_3/tag_reg_42__16_/D (DFQD1BWP40P140)
+                                              0.0627    0.0000     0.8132 r
+  data arrival time                                                0.8132
+
+  clock CLK_clock (rise edge)                           1.0000     1.0000
+  clock network delay (ideal)                           0.0000     1.0000
+  clock uncertainty                                    -0.1500     0.8500
+  U_ICACHE_0/U_ICACHE_TAG_3/tag_reg_42__16_/CP (DFQD1BWP40P140)
+                                                        0.0000     0.8500 r
+  library setup time                                   -0.0368     0.8132
+  data required time                                               0.8132
+  --------------------------------------------------------------------------
+  data required time                                               0.8132
+  data arrival time                                               -0.8132
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_31_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_ICACHE_0/U_ICACHE_TAG_3/tag_reg_42__1_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_31_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_31_/Q (DFQD2BWP40P140)
+                                              0.0160    0.0806     0.0806 f
+  U_EXU_0/U73/I (INVD2BWP40P140)              0.0160    0.0000     0.0806 f
+  U_EXU_0/U73/ZN (INVD2BWP40P140)             0.0156    0.0149     0.0955 r
+  U_EXU_0/U109/A1 (MOAI22D4BWP40P140LVT)      0.0156    0.0000     0.0955 r
+  U_EXU_0/U109/ZN (MOAI22D4BWP40P140LVT)      0.0444    0.0269     0.1225 f
+  U_EXU_0/U_ALU_0/alu_src1[31] (ysyx_22041752_alu_0)    0.0000     0.1225 f
+  U_EXU_0/U_ALU_0/U951/A1 (INR2D4BWP40P140)   0.0444    0.0000     0.1225 f
+  U_EXU_0/U_ALU_0/U951/ZN (INR2D4BWP40P140)   0.0466    0.0501     0.1726 f
+  U_EXU_0/U_ALU_0/U128/I (INVD2BWP40P140)     0.0466    0.0000     0.1726 f
+  U_EXU_0/U_ALU_0/U128/ZN (INVD2BWP40P140)    0.0175    0.0183     0.1909 r
+  U_EXU_0/U_ALU_0/U412/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0175    0.0000     0.1909 r
+  U_EXU_0/U_ALU_0/U412/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0611    0.0377     0.2287 f
+  U_EXU_0/U_ALU_0/U994/B (OAI21D1BWP40P140)   0.0611    0.0000     0.2287 f
+  U_EXU_0/U_ALU_0/U994/ZN (OAI21D1BWP40P140)
+                                              0.0516    0.0391     0.2677 r
+  U_EXU_0/U_ALU_0/U995/B1 (OAI22D1BWP40P140)
+                                              0.0516    0.0000     0.2677 r
+  U_EXU_0/U_ALU_0/U995/ZN (OAI22D1BWP40P140)
+                                              0.0337    0.0342     0.3019 f
+  U_EXU_0/U_ALU_0/U64/A2 (NR2D1BWP40P140)     0.0337    0.0000     0.3019 f
+  U_EXU_0/U_ALU_0/U64/ZN (NR2D1BWP40P140)     0.0475    0.0407     0.3426 r
+  U_EXU_0/U_ALU_0/U429/A1 (OAI22D1BWP40P140)
+                                              0.0475    0.0000     0.3426 r
+  U_EXU_0/U_ALU_0/U429/ZN (OAI22D1BWP40P140)
+                                              0.0340    0.0293     0.3719 f
+  U_EXU_0/U_ALU_0/U1008/B (AOI211D1BWP40P140LVT)
+                                              0.0340    0.0000     0.3719 f
+  U_EXU_0/U_ALU_0/U1008/ZN (AOI211D1BWP40P140LVT)
+                                              0.0370    0.0314     0.4033 r
+  U_EXU_0/U_ALU_0/U1037/B (OAI21D1BWP40P140LVT)
+                                              0.0370    0.0000     0.4033 r
+  U_EXU_0/U_ALU_0/U1037/ZN (OAI21D1BWP40P140LVT)
+                                              0.0311    0.0277     0.4310 f
+  U_EXU_0/U_ALU_0/U535/A1 (IOA21D1BWP40P140LVT)
+                                              0.0311    0.0000     0.4310 f
+  U_EXU_0/U_ALU_0/U535/ZN (IOA21D1BWP40P140LVT)
+                                              0.0187    0.0310     0.4619 f
+  U_EXU_0/U_ALU_0/U231/A2 (NR2D1BWP40P140)    0.0187    0.0000     0.4619 f
+  U_EXU_0/U_ALU_0/U231/ZN (NR2D1BWP40P140)    0.0245    0.0227     0.4847 r
+  U_EXU_0/U_ALU_0/U728/A1 (OAI21D2BWP40P140LVT)
+                                              0.0245    0.0000     0.4847 r
+  U_EXU_0/U_ALU_0/U728/ZN (OAI21D2BWP40P140LVT)
+                                              0.0196    0.0156     0.5002 f
+  U_EXU_0/U_ALU_0/U531/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0196    0.0000     0.5002 f
+  U_EXU_0/U_ALU_0/U531/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0168    0.0143     0.5145 r
+  U_EXU_0/U_ALU_0/U435/A2 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0168    0.0000     0.5145 r
+  U_EXU_0/U_ALU_0/U435/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0128     0.5273 f
+  U_EXU_0/U_ALU_0/alu_result[0] (ysyx_22041752_alu_0)   0.0000     0.5273 f
+  U_EXU_0/U_BJT_CAL_0/b_taken_real (ysyx_22041752_bjt_cal_0)
+                                                        0.0000     0.5273 f
+  U_EXU_0/U_BJT_CAL_0/U57/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0160    0.0000     0.5273 f
+  U_EXU_0/U_BJT_CAL_0/U57/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0280    0.0205     0.5479 f
+  U_EXU_0/U_BJT_CAL_0/U26/A1 (OAI21D2BWP40P140LVT)
+                                              0.0280    0.0000     0.5479 f
+  U_EXU_0/U_BJT_CAL_0/U26/ZN (OAI21D2BWP40P140LVT)
+                                              0.0206    0.0184     0.5662 r
+  U_EXU_0/U_BJT_CAL_0/pre_error (ysyx_22041752_bjt_cal_0)
+                                                        0.0000     0.5662 r
+  U_EXU_0/U492/A1 (ND2D4BWP40P140LVT)         0.0206    0.0000     0.5662 r
+  U_EXU_0/U492/ZN (ND2D4BWP40P140LVT)         0.0222    0.0155     0.5817 f
+  U_EXU_0/bjpre_error_BAR (ysyx_22041752_EXU_0)         0.0000     0.5817 f
+  U_IFU_0/bjpre_error_BAR (ysyx_22041752_IFU_0)         0.0000     0.5817 f
+  U_IFU_0/U341/I (INVD4BWP40P140LVT)          0.0222    0.0000     0.5817 f
+  U_IFU_0/U341/ZN (INVD4BWP40P140LVT)         0.0101    0.0096     0.5913 r
+  U_IFU_0/U1503/B1 (INR2D4BWP40P140LVT)       0.0101    0.0000     0.5913 r
+  U_IFU_0/U1503/ZN (INR2D4BWP40P140LVT)       0.0114    0.0087     0.6000 f
+  U_IFU_0/inst_en (ysyx_22041752_IFU_0)                 0.0000     0.6000 f
+  U_ICACHE_0/inst_en (ysyx_22041752_ICACHE_0)           0.0000     0.6000 f
+  U_ICACHE_0/U_ICACHE_RDU_0/inst_en (ysyx_22041752_ICACHE_RDU_0)
+                                                        0.0000     0.6000 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U38/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0114    0.0000     0.6000 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U38/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0165    0.0085     0.6085 r
+  U_ICACHE_0/U_ICACHE_RDU_0/U44/I (INVD4BWP40P140LVT)
+                                              0.0165    0.0000     0.6085 r
+  U_ICACHE_0/U_ICACHE_RDU_0/U44/ZN (INVD4BWP40P140LVT)
+                                              0.0086    0.0075     0.6160 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U40/A1 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0086    0.0000     0.6160 f
+  U_ICACHE_0/U_ICACHE_RDU_0/U40/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0177    0.0089     0.6249 r
+  U_ICACHE_0/U_ICACHE_RDU_0/rden[1] (ysyx_22041752_ICACHE_RDU_0)
+                                                        0.0000     0.6249 r
+  U_ICACHE_0/U50/A1 (ND2D4BWP40P140LVT)       0.0177    0.0000     0.6249 r
+  U_ICACHE_0/U50/ZN (ND2D4BWP40P140LVT)       0.0208    0.0152     0.6401 f
+  U_ICACHE_0/U15/I (INVD6BWP40P140LVT)        0.0208    0.0000     0.6401 f
+  U_ICACHE_0/U15/ZN (INVD6BWP40P140LVT)       0.0135    0.0127     0.6528 r
+  U_ICACHE_0/U_ICACHE_TAG_3/en (ysyx_22041752_ICACHE_TAG_7)
+                                                        0.0000     0.6528 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U324/A1 (NR2D3BWP40P140LVT)
+                                              0.0135    0.0000     0.6528 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U324/ZN (NR2D3BWP40P140LVT)
+                                              0.0139    0.0081     0.6609 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U411/A2 (ND2D3BWP40P140)
+                                              0.0139    0.0000     0.6609 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U411/ZN (ND2D3BWP40P140)
+                                              0.0113    0.0115     0.6724 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U165/I (BUFFD6BWP40P140LVT)
+                                              0.0113    0.0000     0.6724 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U165/Z (BUFFD6BWP40P140LVT)
+                                              0.0145    0.0229     0.6953 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U275/B1 (INR2D2BWP40P140)
+                                              0.0145    0.0000     0.6953 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U275/ZN (INR2D2BWP40P140)
+                                              0.0150    0.0123     0.7076 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U527/B1 (INR2D2BWP40P140)
+                                              0.0150    0.0000     0.7076 f
+  U_ICACHE_0/U_ICACHE_TAG_3/U527/ZN (INR2D2BWP40P140)
+                                              0.0947    0.0601     0.7677 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U602/B2 (MOAI22D1BWP40P140)
+                                              0.0947    0.0000     0.7677 r
+  U_ICACHE_0/U_ICACHE_TAG_3/U602/ZN (MOAI22D1BWP40P140)
+                                              0.0627    0.0455     0.8132 r
+  U_ICACHE_0/U_ICACHE_TAG_3/tag_reg_42__1_/D (DFQD1BWP40P140)
+                                              0.0627    0.0000     0.8132 r
+  data arrival time                                                0.8132
+
+  clock CLK_clock (rise edge)                           1.0000     1.0000
+  clock network delay (ideal)                           0.0000     1.0000
+  clock uncertainty                                    -0.1500     0.8500
+  U_ICACHE_0/U_ICACHE_TAG_3/tag_reg_42__1_/CP (DFQD1BWP40P140)
+                                                        0.0000     0.8500 r
+  library setup time                                   -0.0368     0.8132
+  data required time                                               0.8132
+  --------------------------------------------------------------------------
+  data required time                                               0.8132
+  data arrival time                                               -0.8132
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_239_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__12_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_239_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_239_/Q (DFQD4BWP40P140LVT)
+                                              0.0128    0.0564     0.0564 f
+  U_EXU_0/U188/A2 (NR2OPTIBD6BWP40P140LVT)    0.0128    0.0000     0.0564 f
+  U_EXU_0/U188/ZN (NR2OPTIBD6BWP40P140LVT)    0.0169    0.0154     0.0718 r
+  U_EXU_0/U1629/A1 (ND2OPTPAD2BWP40P140LVT)   0.0169    0.0000     0.0718 r
+  U_EXU_0/U1629/ZN (ND2OPTPAD2BWP40P140LVT)   0.0119    0.0105     0.0822 f
+  U_EXU_0/U884/A2 (OR2D4BWP40P140LVT)         0.0119    0.0000     0.0822 f
+  U_EXU_0/U884/Z (OR2D4BWP40P140LVT)          0.0129    0.0246     0.1068 f
+  U_EXU_0/U1753/A1 (OR2D4BWP40P140LVT)        0.0129    0.0000     0.1068 f
+  U_EXU_0/U1753/Z (OR2D4BWP40P140LVT)         0.0127    0.0232     0.1300 f
+  U_EXU_0/U490/I (BUFFD12BWP40P140LVT)        0.0127    0.0000     0.1300 f
+  U_EXU_0/U490/Z (BUFFD12BWP40P140LVT)        0.0409    0.0372     0.1672 f
+  U_EXU_0/U498/A2 (OAI21D1BWP40P140LVT)       0.0409    0.0000     0.1672 f
+  U_EXU_0/U498/ZN (OAI21D1BWP40P140LVT)       0.0245    0.0241     0.1913 r
+  U_EXU_0/U_ALU_0/alu_src2[15] (ysyx_22041752_alu_0)    0.0000     0.1913 r
+  U_EXU_0/U_ALU_0/U82/I (INVD2BWP40P140)      0.0245    0.0000     0.1913 r
+  U_EXU_0/U_ALU_0/U82/ZN (INVD2BWP40P140)     0.0132    0.0127     0.2040 f
+  U_EXU_0/U_ALU_0/U84/I (INVD2BWP40P140)      0.0132    0.0000     0.2040 f
+  U_EXU_0/U_ALU_0/U84/ZN (INVD2BWP40P140)     0.0325    0.0246     0.2286 r
+  U_EXU_0/U_ALU_0/U750/A1 (OR2D1BWP40P140)    0.0325    0.0000     0.2286 r
+  U_EXU_0/U_ALU_0/U750/Z (OR2D1BWP40P140)     0.0170    0.0323     0.2609 r
+  U_EXU_0/U_ALU_0/U847/A1 (ND2D1BWP40P140)    0.0170    0.0000     0.2609 r
+  U_EXU_0/U_ALU_0/U847/ZN (ND2D1BWP40P140)    0.0261    0.0216     0.2825 f
+  U_EXU_0/U_ALU_0/U12/A1 (NR2OPTIBD1BWP40P140)
+                                              0.0261    0.0000     0.2825 f
+  U_EXU_0/U_ALU_0/U12/ZN (NR2OPTIBD1BWP40P140)
+                                              0.0243    0.0225     0.3050 r
+  U_EXU_0/U_ALU_0/U755/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0243    0.0000     0.3050 r
+  U_EXU_0/U_ALU_0/U755/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0259    0.0226     0.3276 f
+  U_EXU_0/U_ALU_0/U387/A1 (NR2D1BWP40P140)    0.0259    0.0000     0.3276 f
+  U_EXU_0/U_ALU_0/U387/ZN (NR2D1BWP40P140)    0.0256    0.0234     0.3510 r
+  U_EXU_0/U_ALU_0/U55/A2 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0256    0.0000     0.3510 r
+  U_EXU_0/U_ALU_0/U55/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0390    0.0302     0.3812 f
+  U_EXU_0/U_ALU_0/U240/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0390    0.0000     0.3812 f
+  U_EXU_0/U_ALU_0/U240/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0217    0.0215     0.4027 r
+  U_EXU_0/U_ALU_0/U238/A1 (AOI21D2BWP40P140LVT)
+                                              0.0217    0.0000     0.4027 r
+  U_EXU_0/U_ALU_0/U238/ZN (AOI21D2BWP40P140LVT)
+                                              0.0211    0.0171     0.4198 f
+  U_EXU_0/U_ALU_0/U112/A1 (OAI21D2BWP40P140LVT)
+                                              0.0211    0.0000     0.4198 f
+  U_EXU_0/U_ALU_0/U112/ZN (OAI21D2BWP40P140LVT)
+                                              0.0189    0.0158     0.4356 r
+  U_EXU_0/U_ALU_0/U101/A1 (AOI21D2BWP40P140LVT)
+                                              0.0189    0.0000     0.4356 r
+  U_EXU_0/U_ALU_0/U101/ZN (AOI21D2BWP40P140LVT)
+                                              0.0234    0.0184     0.4540 f
+  U_EXU_0/U_ALU_0/U58/A1 (OAI21D2BWP40P140LVT)
+                                              0.0234    0.0000     0.4540 f
+  U_EXU_0/U_ALU_0/U58/ZN (OAI21D2BWP40P140LVT)
+                                              0.0196    0.0163     0.4703 r
+  U_EXU_0/U_ALU_0/U232/A1 (AOI21D2BWP40P140LVT)
+                                              0.0196    0.0000     0.4703 r
+  U_EXU_0/U_ALU_0/U232/ZN (AOI21D2BWP40P140LVT)
+                                              0.0241    0.0190     0.4892 f
+  U_EXU_0/U_ALU_0/U132/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0241    0.0000     0.4892 f
+  U_EXU_0/U_ALU_0/U132/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0198    0.0183     0.5075 r
+  U_EXU_0/U_ALU_0/U89/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0198    0.0000     0.5075 r
+  U_EXU_0/U_ALU_0/U89/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0308    0.0239     0.5315 r
+  U_EXU_0/U_ALU_0/mem_result[31] (ysyx_22041752_alu_0)
+                                                        0.0000     0.5315 r
+  U_EXU_0/data_addr[31] (ysyx_22041752_EXU_0)           0.0000     0.5315 r
+  U_MEMSPACE_0/es_data_addr_i[31] (ysyx_22041752_memspace_0)
+                                                        0.0000     0.5315 r
+  U_MEMSPACE_0/U13/I (INVD3BWP40P140LVT)      0.0308    0.0000     0.5315 r
+  U_MEMSPACE_0/U13/ZN (INVD3BWP40P140LVT)     0.0124    0.0103     0.5417 f
+  U_MEMSPACE_0/U11/A1 (NR2D3BWP40P140LVT)     0.0124    0.0000     0.5417 f
+  U_MEMSPACE_0/U11/ZN (NR2D3BWP40P140LVT)     0.0141    0.0115     0.5533 r
+  U_MEMSPACE_0/dcache_en_o (ysyx_22041752_memspace_0)   0.0000     0.5533 r
+  U_DCACHE_0/data_en (ysyx_22041752_DCACHE_0)           0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/data_en (ysyx_22041752_DCACHE_RDU_0)
+                                                        0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/U5/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0141    0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/U5/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0194    0.0108     0.5641 f
+  U_DCACHE_0/U_DCACHE_RDU_0/U6/B1 (INR2D4BWP40P140LVT)
+                                              0.0194    0.0000     0.5641 f
+  U_DCACHE_0/U_DCACHE_RDU_0/U6/ZN (INR2D4BWP40P140LVT)
+                                              0.0194    0.0164     0.5805 r
+  U_DCACHE_0/U_DCACHE_RDU_0/rs_to_cs_bus[2] (ysyx_22041752_DCACHE_RDU_0)
+                                                        0.0000     0.5805 r
+  U_DCACHE_0/U18/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0194    0.0000     0.5805 r
+  U_DCACHE_0/U18/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0290    0.0184     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/en (ysyx_22041752_DCACHE_TAG_5)
+                                                        0.0000     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U127/A1 (NR2D3BWP40P140LVT)
+                                              0.0290    0.0000     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U127/ZN (NR2D3BWP40P140LVT)
+                                              0.0274    0.0237     0.6225 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U10/A1 (ND2D3BWP40P140LVT)
+                                              0.0274    0.0000     0.6225 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U10/ZN (ND2D3BWP40P140LVT)
+                                              0.0463    0.0337     0.6562 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U138/B1 (INR2D1BWP40P140)
+                                              0.0463    0.0000     0.6562 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U138/ZN (INR2D1BWP40P140)
+                                              0.0336    0.0323     0.6885 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0336    0.0000     0.6885 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.1533    0.0850     0.7735 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U1592/B2 (MOAI22D1BWP40P140)
+                                              0.1533    0.0000     0.7735 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U1592/ZN (MOAI22D1BWP40P140)
+                                              0.0628    0.0603     0.8338 f
+  U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__12_/D (DFQD1BWP40P140)
+                                              0.0628    0.0000     0.8338 f
+  data arrival time                                                0.8338
+
+  clock CLK_clock (rise edge)                           1.0000     1.0000
+  clock network delay (ideal)                           0.0000     1.0000
+  clock uncertainty                                    -0.1500     0.8500
+  U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__12_/CP (DFQD1BWP40P140)
+                                                        0.0000     0.8500 r
+  library setup time                                   -0.0162     0.8338
+  data required time                                               0.8338
+  --------------------------------------------------------------------------
+  data required time                                               0.8338
+  data arrival time                                               -0.8338
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_239_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__1_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_239_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_239_/Q (DFQD4BWP40P140LVT)
+                                              0.0128    0.0564     0.0564 f
+  U_EXU_0/U188/A2 (NR2OPTIBD6BWP40P140LVT)    0.0128    0.0000     0.0564 f
+  U_EXU_0/U188/ZN (NR2OPTIBD6BWP40P140LVT)    0.0169    0.0154     0.0718 r
+  U_EXU_0/U1629/A1 (ND2OPTPAD2BWP40P140LVT)   0.0169    0.0000     0.0718 r
+  U_EXU_0/U1629/ZN (ND2OPTPAD2BWP40P140LVT)   0.0119    0.0105     0.0822 f
+  U_EXU_0/U884/A2 (OR2D4BWP40P140LVT)         0.0119    0.0000     0.0822 f
+  U_EXU_0/U884/Z (OR2D4BWP40P140LVT)          0.0129    0.0246     0.1068 f
+  U_EXU_0/U1753/A1 (OR2D4BWP40P140LVT)        0.0129    0.0000     0.1068 f
+  U_EXU_0/U1753/Z (OR2D4BWP40P140LVT)         0.0127    0.0232     0.1300 f
+  U_EXU_0/U490/I (BUFFD12BWP40P140LVT)        0.0127    0.0000     0.1300 f
+  U_EXU_0/U490/Z (BUFFD12BWP40P140LVT)        0.0409    0.0372     0.1672 f
+  U_EXU_0/U498/A2 (OAI21D1BWP40P140LVT)       0.0409    0.0000     0.1672 f
+  U_EXU_0/U498/ZN (OAI21D1BWP40P140LVT)       0.0245    0.0241     0.1913 r
+  U_EXU_0/U_ALU_0/alu_src2[15] (ysyx_22041752_alu_0)    0.0000     0.1913 r
+  U_EXU_0/U_ALU_0/U82/I (INVD2BWP40P140)      0.0245    0.0000     0.1913 r
+  U_EXU_0/U_ALU_0/U82/ZN (INVD2BWP40P140)     0.0132    0.0127     0.2040 f
+  U_EXU_0/U_ALU_0/U84/I (INVD2BWP40P140)      0.0132    0.0000     0.2040 f
+  U_EXU_0/U_ALU_0/U84/ZN (INVD2BWP40P140)     0.0325    0.0246     0.2286 r
+  U_EXU_0/U_ALU_0/U750/A1 (OR2D1BWP40P140)    0.0325    0.0000     0.2286 r
+  U_EXU_0/U_ALU_0/U750/Z (OR2D1BWP40P140)     0.0170    0.0323     0.2609 r
+  U_EXU_0/U_ALU_0/U847/A1 (ND2D1BWP40P140)    0.0170    0.0000     0.2609 r
+  U_EXU_0/U_ALU_0/U847/ZN (ND2D1BWP40P140)    0.0261    0.0216     0.2825 f
+  U_EXU_0/U_ALU_0/U12/A1 (NR2OPTIBD1BWP40P140)
+                                              0.0261    0.0000     0.2825 f
+  U_EXU_0/U_ALU_0/U12/ZN (NR2OPTIBD1BWP40P140)
+                                              0.0243    0.0225     0.3050 r
+  U_EXU_0/U_ALU_0/U755/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0243    0.0000     0.3050 r
+  U_EXU_0/U_ALU_0/U755/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0259    0.0226     0.3276 f
+  U_EXU_0/U_ALU_0/U387/A1 (NR2D1BWP40P140)    0.0259    0.0000     0.3276 f
+  U_EXU_0/U_ALU_0/U387/ZN (NR2D1BWP40P140)    0.0256    0.0234     0.3510 r
+  U_EXU_0/U_ALU_0/U55/A2 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0256    0.0000     0.3510 r
+  U_EXU_0/U_ALU_0/U55/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0390    0.0302     0.3812 f
+  U_EXU_0/U_ALU_0/U240/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0390    0.0000     0.3812 f
+  U_EXU_0/U_ALU_0/U240/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0217    0.0215     0.4027 r
+  U_EXU_0/U_ALU_0/U238/A1 (AOI21D2BWP40P140LVT)
+                                              0.0217    0.0000     0.4027 r
+  U_EXU_0/U_ALU_0/U238/ZN (AOI21D2BWP40P140LVT)
+                                              0.0211    0.0171     0.4198 f
+  U_EXU_0/U_ALU_0/U112/A1 (OAI21D2BWP40P140LVT)
+                                              0.0211    0.0000     0.4198 f
+  U_EXU_0/U_ALU_0/U112/ZN (OAI21D2BWP40P140LVT)
+                                              0.0189    0.0158     0.4356 r
+  U_EXU_0/U_ALU_0/U101/A1 (AOI21D2BWP40P140LVT)
+                                              0.0189    0.0000     0.4356 r
+  U_EXU_0/U_ALU_0/U101/ZN (AOI21D2BWP40P140LVT)
+                                              0.0234    0.0184     0.4540 f
+  U_EXU_0/U_ALU_0/U58/A1 (OAI21D2BWP40P140LVT)
+                                              0.0234    0.0000     0.4540 f
+  U_EXU_0/U_ALU_0/U58/ZN (OAI21D2BWP40P140LVT)
+                                              0.0196    0.0163     0.4703 r
+  U_EXU_0/U_ALU_0/U232/A1 (AOI21D2BWP40P140LVT)
+                                              0.0196    0.0000     0.4703 r
+  U_EXU_0/U_ALU_0/U232/ZN (AOI21D2BWP40P140LVT)
+                                              0.0241    0.0190     0.4892 f
+  U_EXU_0/U_ALU_0/U132/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0241    0.0000     0.4892 f
+  U_EXU_0/U_ALU_0/U132/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0198    0.0183     0.5075 r
+  U_EXU_0/U_ALU_0/U89/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0198    0.0000     0.5075 r
+  U_EXU_0/U_ALU_0/U89/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0308    0.0239     0.5315 r
+  U_EXU_0/U_ALU_0/mem_result[31] (ysyx_22041752_alu_0)
+                                                        0.0000     0.5315 r
+  U_EXU_0/data_addr[31] (ysyx_22041752_EXU_0)           0.0000     0.5315 r
+  U_MEMSPACE_0/es_data_addr_i[31] (ysyx_22041752_memspace_0)
+                                                        0.0000     0.5315 r
+  U_MEMSPACE_0/U13/I (INVD3BWP40P140LVT)      0.0308    0.0000     0.5315 r
+  U_MEMSPACE_0/U13/ZN (INVD3BWP40P140LVT)     0.0124    0.0103     0.5417 f
+  U_MEMSPACE_0/U11/A1 (NR2D3BWP40P140LVT)     0.0124    0.0000     0.5417 f
+  U_MEMSPACE_0/U11/ZN (NR2D3BWP40P140LVT)     0.0141    0.0115     0.5533 r
+  U_MEMSPACE_0/dcache_en_o (ysyx_22041752_memspace_0)   0.0000     0.5533 r
+  U_DCACHE_0/data_en (ysyx_22041752_DCACHE_0)           0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/data_en (ysyx_22041752_DCACHE_RDU_0)
+                                                        0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/U5/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0141    0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/U5/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0194    0.0108     0.5641 f
+  U_DCACHE_0/U_DCACHE_RDU_0/U6/B1 (INR2D4BWP40P140LVT)
+                                              0.0194    0.0000     0.5641 f
+  U_DCACHE_0/U_DCACHE_RDU_0/U6/ZN (INR2D4BWP40P140LVT)
+                                              0.0194    0.0164     0.5805 r
+  U_DCACHE_0/U_DCACHE_RDU_0/rs_to_cs_bus[2] (ysyx_22041752_DCACHE_RDU_0)
+                                                        0.0000     0.5805 r
+  U_DCACHE_0/U18/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0194    0.0000     0.5805 r
+  U_DCACHE_0/U18/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0290    0.0184     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/en (ysyx_22041752_DCACHE_TAG_5)
+                                                        0.0000     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U127/A1 (NR2D3BWP40P140LVT)
+                                              0.0290    0.0000     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U127/ZN (NR2D3BWP40P140LVT)
+                                              0.0274    0.0237     0.6225 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U10/A1 (ND2D3BWP40P140LVT)
+                                              0.0274    0.0000     0.6225 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U10/ZN (ND2D3BWP40P140LVT)
+                                              0.0463    0.0337     0.6562 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U138/B1 (INR2D1BWP40P140)
+                                              0.0463    0.0000     0.6562 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U138/ZN (INR2D1BWP40P140)
+                                              0.0336    0.0323     0.6885 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0336    0.0000     0.6885 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.1533    0.0850     0.7735 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U1559/B2 (MOAI22D1BWP40P140)
+                                              0.1533    0.0000     0.7735 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U1559/ZN (MOAI22D1BWP40P140)
+                                              0.0628    0.0603     0.8338 f
+  U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__1_/D (DFQD1BWP40P140)
+                                              0.0628    0.0000     0.8338 f
+  data arrival time                                                0.8338
+
+  clock CLK_clock (rise edge)                           1.0000     1.0000
+  clock network delay (ideal)                           0.0000     1.0000
+  clock uncertainty                                    -0.1500     0.8500
+  U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__1_/CP (DFQD1BWP40P140)
+                                                        0.0000     0.8500 r
+  library setup time                                   -0.0162     0.8338
+  data required time                                               0.8338
+  --------------------------------------------------------------------------
+  data required time                                               0.8338
+  data arrival time                                               -0.8338
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+  Startpoint: U_EXU_0/ds_to_es_bus_r_reg_239_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__7_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  U_EXU_0/ds_to_es_bus_r_reg_239_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  U_EXU_0/ds_to_es_bus_r_reg_239_/Q (DFQD4BWP40P140LVT)
+                                              0.0128    0.0564     0.0564 f
+  U_EXU_0/U188/A2 (NR2OPTIBD6BWP40P140LVT)    0.0128    0.0000     0.0564 f
+  U_EXU_0/U188/ZN (NR2OPTIBD6BWP40P140LVT)    0.0169    0.0154     0.0718 r
+  U_EXU_0/U1629/A1 (ND2OPTPAD2BWP40P140LVT)   0.0169    0.0000     0.0718 r
+  U_EXU_0/U1629/ZN (ND2OPTPAD2BWP40P140LVT)   0.0119    0.0105     0.0822 f
+  U_EXU_0/U884/A2 (OR2D4BWP40P140LVT)         0.0119    0.0000     0.0822 f
+  U_EXU_0/U884/Z (OR2D4BWP40P140LVT)          0.0129    0.0246     0.1068 f
+  U_EXU_0/U1753/A1 (OR2D4BWP40P140LVT)        0.0129    0.0000     0.1068 f
+  U_EXU_0/U1753/Z (OR2D4BWP40P140LVT)         0.0127    0.0232     0.1300 f
+  U_EXU_0/U490/I (BUFFD12BWP40P140LVT)        0.0127    0.0000     0.1300 f
+  U_EXU_0/U490/Z (BUFFD12BWP40P140LVT)        0.0409    0.0372     0.1672 f
+  U_EXU_0/U498/A2 (OAI21D1BWP40P140LVT)       0.0409    0.0000     0.1672 f
+  U_EXU_0/U498/ZN (OAI21D1BWP40P140LVT)       0.0245    0.0241     0.1913 r
+  U_EXU_0/U_ALU_0/alu_src2[15] (ysyx_22041752_alu_0)    0.0000     0.1913 r
+  U_EXU_0/U_ALU_0/U82/I (INVD2BWP40P140)      0.0245    0.0000     0.1913 r
+  U_EXU_0/U_ALU_0/U82/ZN (INVD2BWP40P140)     0.0132    0.0127     0.2040 f
+  U_EXU_0/U_ALU_0/U84/I (INVD2BWP40P140)      0.0132    0.0000     0.2040 f
+  U_EXU_0/U_ALU_0/U84/ZN (INVD2BWP40P140)     0.0325    0.0246     0.2286 r
+  U_EXU_0/U_ALU_0/U750/A1 (OR2D1BWP40P140)    0.0325    0.0000     0.2286 r
+  U_EXU_0/U_ALU_0/U750/Z (OR2D1BWP40P140)     0.0170    0.0323     0.2609 r
+  U_EXU_0/U_ALU_0/U847/A1 (ND2D1BWP40P140)    0.0170    0.0000     0.2609 r
+  U_EXU_0/U_ALU_0/U847/ZN (ND2D1BWP40P140)    0.0261    0.0216     0.2825 f
+  U_EXU_0/U_ALU_0/U12/A1 (NR2OPTIBD1BWP40P140)
+                                              0.0261    0.0000     0.2825 f
+  U_EXU_0/U_ALU_0/U12/ZN (NR2OPTIBD1BWP40P140)
+                                              0.0243    0.0225     0.3050 r
+  U_EXU_0/U_ALU_0/U755/A2 (ND2OPTIBD1BWP40P140)
+                                              0.0243    0.0000     0.3050 r
+  U_EXU_0/U_ALU_0/U755/ZN (ND2OPTIBD1BWP40P140)
+                                              0.0259    0.0226     0.3276 f
+  U_EXU_0/U_ALU_0/U387/A1 (NR2D1BWP40P140)    0.0259    0.0000     0.3276 f
+  U_EXU_0/U_ALU_0/U387/ZN (NR2D1BWP40P140)    0.0256    0.0234     0.3510 r
+  U_EXU_0/U_ALU_0/U55/A2 (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0256    0.0000     0.3510 r
+  U_EXU_0/U_ALU_0/U55/ZN (AOI21OPTREPBD1BWP40P140LVT)
+                                              0.0390    0.0302     0.3812 f
+  U_EXU_0/U_ALU_0/U240/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0390    0.0000     0.3812 f
+  U_EXU_0/U_ALU_0/U240/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0217    0.0215     0.4027 r
+  U_EXU_0/U_ALU_0/U238/A1 (AOI21D2BWP40P140LVT)
+                                              0.0217    0.0000     0.4027 r
+  U_EXU_0/U_ALU_0/U238/ZN (AOI21D2BWP40P140LVT)
+                                              0.0211    0.0171     0.4198 f
+  U_EXU_0/U_ALU_0/U112/A1 (OAI21D2BWP40P140LVT)
+                                              0.0211    0.0000     0.4198 f
+  U_EXU_0/U_ALU_0/U112/ZN (OAI21D2BWP40P140LVT)
+                                              0.0189    0.0158     0.4356 r
+  U_EXU_0/U_ALU_0/U101/A1 (AOI21D2BWP40P140LVT)
+                                              0.0189    0.0000     0.4356 r
+  U_EXU_0/U_ALU_0/U101/ZN (AOI21D2BWP40P140LVT)
+                                              0.0234    0.0184     0.4540 f
+  U_EXU_0/U_ALU_0/U58/A1 (OAI21D2BWP40P140LVT)
+                                              0.0234    0.0000     0.4540 f
+  U_EXU_0/U_ALU_0/U58/ZN (OAI21D2BWP40P140LVT)
+                                              0.0196    0.0163     0.4703 r
+  U_EXU_0/U_ALU_0/U232/A1 (AOI21D2BWP40P140LVT)
+                                              0.0196    0.0000     0.4703 r
+  U_EXU_0/U_ALU_0/U232/ZN (AOI21D2BWP40P140LVT)
+                                              0.0241    0.0190     0.4892 f
+  U_EXU_0/U_ALU_0/U132/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0241    0.0000     0.4892 f
+  U_EXU_0/U_ALU_0/U132/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0198    0.0183     0.5075 r
+  U_EXU_0/U_ALU_0/U89/A1 (XNR2OPTND2BWP40P140LVT)
+                                              0.0198    0.0000     0.5075 r
+  U_EXU_0/U_ALU_0/U89/ZN (XNR2OPTND2BWP40P140LVT)
+                                              0.0308    0.0239     0.5315 r
+  U_EXU_0/U_ALU_0/mem_result[31] (ysyx_22041752_alu_0)
+                                                        0.0000     0.5315 r
+  U_EXU_0/data_addr[31] (ysyx_22041752_EXU_0)           0.0000     0.5315 r
+  U_MEMSPACE_0/es_data_addr_i[31] (ysyx_22041752_memspace_0)
+                                                        0.0000     0.5315 r
+  U_MEMSPACE_0/U13/I (INVD3BWP40P140LVT)      0.0308    0.0000     0.5315 r
+  U_MEMSPACE_0/U13/ZN (INVD3BWP40P140LVT)     0.0124    0.0103     0.5417 f
+  U_MEMSPACE_0/U11/A1 (NR2D3BWP40P140LVT)     0.0124    0.0000     0.5417 f
+  U_MEMSPACE_0/U11/ZN (NR2D3BWP40P140LVT)     0.0141    0.0115     0.5533 r
+  U_MEMSPACE_0/dcache_en_o (ysyx_22041752_memspace_0)   0.0000     0.5533 r
+  U_DCACHE_0/data_en (ysyx_22041752_DCACHE_0)           0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/data_en (ysyx_22041752_DCACHE_RDU_0)
+                                                        0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/U5/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0141    0.0000     0.5533 r
+  U_DCACHE_0/U_DCACHE_RDU_0/U5/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0194    0.0108     0.5641 f
+  U_DCACHE_0/U_DCACHE_RDU_0/U6/B1 (INR2D4BWP40P140LVT)
+                                              0.0194    0.0000     0.5641 f
+  U_DCACHE_0/U_DCACHE_RDU_0/U6/ZN (INR2D4BWP40P140LVT)
+                                              0.0194    0.0164     0.5805 r
+  U_DCACHE_0/U_DCACHE_RDU_0/rs_to_cs_bus[2] (ysyx_22041752_DCACHE_RDU_0)
+                                                        0.0000     0.5805 r
+  U_DCACHE_0/U18/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0194    0.0000     0.5805 r
+  U_DCACHE_0/U18/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0290    0.0184     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/en (ysyx_22041752_DCACHE_TAG_5)
+                                                        0.0000     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U127/A1 (NR2D3BWP40P140LVT)
+                                              0.0290    0.0000     0.5988 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U127/ZN (NR2D3BWP40P140LVT)
+                                              0.0274    0.0237     0.6225 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U10/A1 (ND2D3BWP40P140LVT)
+                                              0.0274    0.0000     0.6225 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U10/ZN (ND2D3BWP40P140LVT)
+                                              0.0463    0.0337     0.6562 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U138/B1 (INR2D1BWP40P140)
+                                              0.0463    0.0000     0.6562 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U138/ZN (INR2D1BWP40P140)
+                                              0.0336    0.0323     0.6885 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U8/A1 (NR2OPTPAD1BWP40P140)
+                                              0.0336    0.0000     0.6885 r
+  U_DCACHE_0/U_DCACHE_TAG_0/U8/ZN (NR2OPTPAD1BWP40P140)
+                                              0.1533    0.0850     0.7735 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U1587/B2 (MOAI22D1BWP40P140)
+                                              0.1533    0.0000     0.7735 f
+  U_DCACHE_0/U_DCACHE_TAG_0/U1587/ZN (MOAI22D1BWP40P140)
+                                              0.0628    0.0603     0.8338 f
+  U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__7_/D (DFQD1BWP40P140)
+                                              0.0628    0.0000     0.8338 f
+  data arrival time                                                0.8338
+
+  clock CLK_clock (rise edge)                           1.0000     1.0000
+  clock network delay (ideal)                           0.0000     1.0000
+  clock uncertainty                                    -0.1500     0.8500
+  U_DCACHE_0/U_DCACHE_TAG_0/tag_reg_2__7_/CP (DFQD1BWP40P140)
+                                                        0.0000     0.8500 r
+  library setup time                                   -0.0162     0.8338
+  data required time                                               0.8338
+  --------------------------------------------------------------------------
+  data required time                                               0.8338
+  data arrival time                                               -0.8338
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+1
