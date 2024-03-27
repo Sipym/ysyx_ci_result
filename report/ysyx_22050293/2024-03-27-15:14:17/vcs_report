@@ -1,0 +1,11 @@
+
+dut: ysyx_22050293
+
+################
+#vcs compile log
+################
+Warning-[IPDW] Identifier previously declared
+../cpu/ysyx_22050293.v, 2697
+  Second declaration for identifier 'bj_stop' ignored
+  Identifier 'bj_stop' previously declared as wire. [../cpu/ysyx_22050293.v, 
+  2222]
