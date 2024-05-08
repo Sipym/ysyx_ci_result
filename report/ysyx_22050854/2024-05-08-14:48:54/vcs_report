@@ -1,0 +1,84 @@
+
+dut: ysyx_22050854
+
+################
+#vcs compile log
+################
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 153
+  Illegal combination of structural and procedural drivers.
+  Variable "Last_Jump_Suspend" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 153: reg 
+  Last_Jump_Suspend;
+  The first driver is at "../cpu/ysyx_22050854.v", 365: ysyx_22050854_Reg #(1,
+  1'b0) Inst_Reg1(clock, reset, 1'b1, Last_Jump_Suspend, ((jump & Suspend_IFU)
+  & (~last_JumpAndDataBlock)));
+  The second driver is at "../cpu/ysyx_22050854.v", 283: Last_Jump_Suspend <= 
+  1'b0;
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 155
+  Illegal combination of structural and procedural drivers.
+  Variable "Last_DataBlock_Suspend" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 155: reg 
+  Last_DataBlock_Suspend;
+  The first driver is at "../cpu/ysyx_22050854.v", 368: ysyx_22050854_Reg #(1,
+  1'b0) Inst_Reg3(clock, reset, 1'b1, Last_DataBlock_Suspend, 
+  ((Data_Conflict_Block & (~JumpAndDataBlock)) & Suspend_IFU));
+  The second driver is at "../cpu/ysyx_22050854.v", 287: 
+  Last_DataBlock_Suspend <= 1'b0;
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 157
+  Illegal combination of structural and procedural drivers.
+  Variable "Last_JumpAndBlock_Suspend" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 157: reg 
+  Last_JumpAndBlock_Suspend;
+  The first driver is at "../cpu/ysyx_22050854.v", 371: ysyx_22050854_Reg #(1,
+  1'b0) Inst_Reg5(clock, reset, 1'b1, Last_JumpAndBlock_Suspend, 
+  (last_JumpAndDataBlock & Suspend_IFU));
+  The second driver is at "../cpu/ysyx_22050854.v", 291: 
+  Last_JumpAndBlock_Suspend <= 1'b0;
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 161
+  Illegal combination of structural and procedural drivers.
+  Variable "Last_LSU_IFU_Suspend" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 161: reg 
+  Last_LSU_IFU_Suspend;
+  The first driver is at "../cpu/ysyx_22050854.v", 388: ysyx_22050854_Reg #(1,
+  1'b0) Inst_Reg7(clock, reset, 1'b1, Last_LSU_IFU_Suspend, 
+  (((last_Suspend_LSU & (~Suspend_LSU)) & Suspend_IFU) & (~Icache_data_ok)));
+  The second driver is at "../cpu/ysyx_22050854.v", 303: Last_LSU_IFU_Suspend 
+  <= 1'b0;
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 2503
+  Illegal combination of structural and procedural drivers.
+  Variable "reg_DoubleRequest" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 2503: reg 
+  reg_DoubleRequest;
+  The first driver is at "../cpu/ysyx_22050854.v", 2524: ysyx_22050854_Reg 
+  #(1, 1'b0) Inst_reg_DoubleRequest(clock, reset, Double_request, 
+  reg_DoubleRequest, Double_request);
+  The second driver is at "../cpu/ysyx_22050854.v", 2642: reg_DoubleRequest <=
+  1'b0;
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 2509
+  Illegal combination of structural and procedural drivers.
+  Variable "reg_secondRequest" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 2509: reg 
+  reg_secondRequest;
+  The first driver is at "../cpu/ysyx_22050854.v", 2531: ysyx_22050854_Reg 
+  #(1, 1'b0) Inst_Second_Request(clock, reset, is_second_request, 
+  reg_secondRequest, is_second_request);
+  The second driver is at "../cpu/ysyx_22050854.v", 2638: reg_secondRequest <=
+  1'b0;
