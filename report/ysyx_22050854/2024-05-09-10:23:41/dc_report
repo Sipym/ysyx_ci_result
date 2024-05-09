@@ -1,0 +1,113 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22050854
+freq: 100
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:374: Net Last_Jump_Suspend or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:382: Net Last_DataBlock_Suspend or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:390: Net Last_JumpAndBlock_Suspend or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:397: Net Last_ALU_IFU_Suspend or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:412: Net Last_LSU_IFU_Suspend or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Error:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:374: Net 'Last_Jump_Suspend' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
+Error:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:382: Net 'Last_DataBlock_Suspend' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
+Error:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:390: Net 'Last_JumpAndBlock_Suspend' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
+Error:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:397: Net 'Last_ALU_IFU_Suspend' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
+Error:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22050854/ysyx_22050854.v:412: Net 'Last_LSU_IFU_Suspend' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
+Error: Can't find design 'ysyx_22050854'. (UID-109)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: can't read "INPUT_REG": no such variable
+Error: Can't find designs matching '*'. (UID-109)
+Error: Value for list 'design_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: can't read "clk_name_tmp": no such variable
+Error: Current design is not defined. (UID-4)
+Error: Can't find clocks matching '*CLK_clock'. (UID-109)
+Error: Value for list '-group' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clocks matching '*'. (UID-109)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clocks matching '*'. (UID-109)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'objects' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'objects' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list '<object_list>' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: No files or designs were specified. (UID-22)
+Error: No files or designs were specified. (UID-22)
+Error: gzip: ../../netlist/ysyx_22050854.syn.v: No such file or directory
+Error: Current design is not defined. (UID-4)
+Error: Can't find objects matching '*'. (UID-109)
+Error: divide by zero
+****** Message Summary:58 Errors(s) 5 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total  std  mem  ipio  sub_harden
+0.0    0.0  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std  mem  ipio  sub_harden
+0      0    0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+ 
+
+#========================================================================
+# Timing
+#========================================================================
+group  org_freq  over_freq  wns  tns  num 
+
+
+#####################
+AREA REPORT
+#####################
+Error: Current design is not defined. (UID-4)
+0
+
+#####################
+TIME REPORT
+#####################
+Error: Current design is not defined. (UID-4)
+0
