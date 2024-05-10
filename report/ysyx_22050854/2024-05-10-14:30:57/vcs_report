@@ -1,0 +1,19 @@
+
+dut: ysyx_22050854
+
+################
+#vcs compile log
+################
+Error-[ICPSD] Illegal combination of drivers
+../cpu/ysyx_22050854.v, 160
+  Illegal combination of structural and procedural drivers.
+  Variable "PC_ALU_LSU_Suspend" is driven by an invalid combination of 
+  structural and procedural drivers. Variables driven by a structural driver 
+  cannot have any other drivers.
+  This variable is declared at "../cpu/ysyx_22050854.v", 160: reg [31:0] 
+  PC_ALU_LSU_Suspend;
+  The first driver is at "../cpu/ysyx_22050854.v", 372: ysyx_22050854_Reg 
+  #(32, 32'b0) Inst_Reg5(clock, reset, (EXEreg_pc + 32'd4), 
+  PC_ALU_LSU_Suspend, (Suspend_ALU & Suspend_IFU));
+  The second driver is at "../cpu/ysyx_22050854.v", 377: PC_ALU_LSU_Suspend <=
+  32'b0;
