@@ -1,0 +1,1677 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22050854
+freq: 200
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+77106.6  77106.6  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+92473  92473  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.96  0.04 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  200.0     307.7      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22050854
+Version: R-2020.09-SP3a
+Date   : Mon May 13 10:52:15 2024
+****************************************
+
+Number of ports:                        34168
+Number of nets:                        123787
+Number of cells:                       109530
+Number of combinational cells:          72920
+Number of sequential cells:             19553
+Number of macros/black boxes:               0
+Number of buf/inv:                      16291
+Number of references:                     171
+
+Combinational area:              39441.150058
+Buf/Inv area:                     4323.438066
+Noncombinational area:           37665.431576
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 77106.581634
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ------------------------------------------------------------------------
+ysyx_22050854                     77106.5816    100.0   3157.8120   1216.0260  0.0000  ysyx_22050854
+CSR_gprRd_gen                         2.8980      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY3_KEY_LEN10_DATA_LEN1_0
+CSR_gprRd_gen/i0                      2.8980      0.0      2.8980      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN10_DATA_LEN1_HAS_DEFAULT0_0
+CSRfile_inst                       1906.6320      2.5    788.1300   1088.6400  0.0000  ysyx_22050854_CSRegister_0
+CSRfile_inst/gen_csr_raddr            9.9540      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY8_KEY_LEN12_DATA_LEN4_4
+CSRfile_inst/gen_csr_raddr/i0         9.9540      0.0      9.9540      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN12_DATA_LEN4_HAS_DEFAULT1_4
+CSRfile_inst/gen_csraddr1             9.9540      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY8_KEY_LEN12_DATA_LEN4_3
+CSRfile_inst/gen_csraddr1/i0          9.9540      0.0      9.9540      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN12_DATA_LEN4_HAS_DEFAULT1_3
+CSRfile_inst/gen_csraddr2             9.9540      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY8_KEY_LEN12_DATA_LEN4_5
+CSRfile_inst/gen_csraddr2/i0          9.9540      0.0      9.9540      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN12_DATA_LEN4_HAS_DEFAULT1_5
+EXEreg_gen0                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_26
+EXEreg_gen1                         178.4160      0.2     57.4560    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_14
+EXEreg_gen10                          9.7020      0.0      3.6540      6.0480  0.0000  ysyx_22050854_Reg_3_0_9
+EXEreg_gen11                          3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050854_Reg_1_0_27
+EXEreg_gen13                          3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050854_Reg_1_0_33
+EXEreg_gen14                          3.4020      0.0      1.3860      2.0160  0.0000  ysyx_22050854_Reg_1_0_38
+EXEreg_gen2                         178.7940      0.2     57.4560    121.3380  0.0000  ysyx_22050854_Reg_64_0000000000000000_15
+EXEreg_gen20                          3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050854_Reg_1_0_39
+EXEreg_gen21                        178.6680      0.2     57.7080    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_16
+EXEreg_gen22                          3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050854_Reg_1_0_32
+EXEreg_gen23                        178.7940      0.2     57.8340    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_17
+EXEreg_gen24                          2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_45
+EXEreg_gen3                          13.1040      0.0      5.0400      8.0640  0.0000  ysyx_22050854_Reg_4_f_0
+EXEreg_gen4                          11.8440      0.0      4.2840      7.5600  0.0000  ysyx_22050854_Reg_4_0_2
+EXEreg_gen5                           9.8280      0.0      3.7800      6.0480  0.0000  ysyx_22050854_Reg_3_0_6
+EXEreg_gen6                           3.5280      0.0      1.5120      2.0160  0.0000  ysyx_22050854_Reg_1_0_41
+EXEreg_gen7                          14.6160      0.0      5.1660      9.4500  0.0000  ysyx_22050854_Reg_5_00_3
+EXEreg_gen9                           3.5280      0.0      1.5120      2.0160  0.0000  ysyx_22050854_Reg_1_0_47
+EXEreg_genPC                         89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_21
+EXEreg_geninst                       89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_17
+GEN_AXI_signal                      463.5540      0.6    156.4920     95.2560  0.0000  ysyx_22050854_AXI_arbiter_0
+GEN_AXI_signal/Inst_Double_is_Device
+                                      3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050854_Reg_1_0_51
+GEN_AXI_signal/Inst_Reg_Device_arsize
+                                      6.0480      0.0      2.2680      3.7800  0.0000  ysyx_22050854_Reg_3_0_8
+GEN_AXI_signal/Inst_Reg_addr_DoubleRequest
+                                     89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_12
+GEN_AXI_signal/Inst_SecondRequest_addr
+                                     89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_23
+GEN_AXI_signal/Inst_SecondRequest_arid
+                                     11.7180      0.0      4.1580      7.5600  0.0000  ysyx_22050854_Reg_4_0_3
+GEN_AXI_signal/Inst_SecondRequest_arlen
+                                      3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050854_Reg_8_00_0
+GEN_AXI_signal/Inst_SecondRequest_arsize
+                                      6.0480      0.0      2.2680      3.7800  0.0000  ysyx_22050854_Reg_3_0_7
+GEN_AXI_signal/Inst_SecondRequest_burst
+                                      3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050854_Reg_2_0_0
+IDreg_gen0                           89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_13
+Inst_Reg0                            89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_18
+Inst_Reg2                            89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_22
+Inst_Reg4                            89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_14
+Inst_Reg5                            89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_19
+Inst_Reg6                            89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_15
+MEMreg_gen0                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_50
+MEMreg_gen1                         153.2160      0.2     32.2560    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_18
+MEMreg_gen10                          2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_43
+MEMreg_gen11                        129.2760      0.2      0.2520    129.0240  0.0000  ysyx_22050854_Reg_64_0000000000000000_20
+MEMreg_gen2                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_44
+MEMreg_gen3                          10.3320      0.0      0.2520     10.0800  0.0000  ysyx_22050854_Reg_5_00_4
+MEMreg_gen5                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_36
+MEMreg_gen6                           6.3000      0.0      0.2520      6.0480  0.0000  ysyx_22050854_Reg_3_0_5
+MEMreg_gen7                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_30
+MEMreg_gen8                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_49
+MEMreg_gen9                         129.2760      0.2      0.2520    129.0240  0.0000  ysyx_22050854_Reg_64_0000000000000000_19
+MEMreg_geninst                       64.7640      0.1      0.2520     64.5120  0.0000  ysyx_22050854_Reg_32_00000000_20
+WBreg_gen0                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_35
+WBreg_gen1                          153.2160      0.2     32.2560    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_12
+WBreg_gen10                         129.2760      0.2      0.2520    129.0240  0.0000  ysyx_22050854_Reg_64_0000000000000000_11
+WBreg_gen2                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_29
+WBreg_gen3                           10.3320      0.0      0.2520     10.0800  0.0000  ysyx_22050854_Reg_5_00_5
+WBreg_gen4                          129.2760      0.2      0.2520    129.0240  0.0000  ysyx_22050854_Reg_64_0000000000000000_21
+WBreg_gen5                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_48
+WBreg_gen6                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_42
+WBreg_gen7                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_34
+WBreg_gen8                          129.2760      0.2      0.2520    129.0240  0.0000  ysyx_22050854_Reg_64_0000000000000000_13
+WBreg_gen9                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_28
+WBreg_geninst                        64.7640      0.1      0.2520     64.5120  0.0000  ysyx_22050854_Reg_32_00000000_16
+alu1                               7285.9500      9.4   1474.7040      0.0000  0.0000  ysyx_22050854_alu_0
+alu1/gen_alu_out                    184.7160      0.2      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY8_KEY_LEN3_DATA_LEN64_0
+alu1/gen_alu_out/i0                 184.7160      0.2    184.7160      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN3_DATA_LEN64_HAS_DEFAULT0_0
+alu1/gen_alu_temp                   279.8460      0.4      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN4_DATA_LEN64_0
+alu1/gen_alu_temp/i0                279.8460      0.4    279.8460      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN4_DATA_LEN64_HAS_DEFAULT1_0
+alu1/gen_alu_temp_32                 43.4700      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY3_KEY_LEN4_DATA_LEN32_0
+alu1/gen_alu_temp_32/i0              43.4700      0.1     43.4700      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN4_DATA_LEN32_HAS_DEFAULT0_0
+alu1/gen_mul_signed                   2.5200      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY5_KEY_LEN4_DATA_LEN2_0
+alu1/gen_mul_signed/i0                2.5200      0.0      2.5200      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY5_KEY_LEN4_DATA_LEN2_HAS_DEFAULT0_0
+alu1/gen_op_mul                       1.3860      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY5_KEY_LEN4_DATA_LEN1_0
+alu1/gen_op_mul/i0                    1.3860      0.0      1.3860      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY5_KEY_LEN4_DATA_LEN1_HAS_DEFAULT0_0
+alu1/shift_divider_1               3070.9980      4.0   2114.7840    956.2140  0.0000  ysyx_22050854_divider_1_0
+alu1/shiftadd_multiplier           2228.3100      2.9   1479.4920    748.8180  0.0000  ysyx_22050854_multiplier_v1_0
+csrwdata_gen                        118.6920      0.2      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY6_KEY_LEN10_DATA_LEN64_0
+csrwdata_gen/i0                     118.6920      0.2    118.6920      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY6_KEY_LEN10_DATA_LEN64_HAS_DEFAULT0_0
+csrwr_t_gen                           2.0160      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY6_KEY_LEN10_DATA_LEN1_0
+csrwr_t_gen/i0                        2.0160      0.0      2.0160      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY6_KEY_LEN10_DATA_LEN1_HAS_DEFAULT0_0
+data_cache_inst                   30454.1997     39.5  15217.6499  15236.5498  0.0000  ysyx_22050854_Dcache_0
+gen_Dcache_wr_wstb                    2.2680      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN3_DATA_LEN8_0
+gen_Dcache_wr_wstb/i0                 2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN3_DATA_LEN8_HAS_DEFAULT0_0
+gen_awsize                            1.0080      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN3_DATA_LEN3_0
+gen_awsize/i0                         1.0080      0.0      1.0080      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN3_DATA_LEN3_HAS_DEFAULT0_0
+gen_device_data_32                   30.7440      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN8_DATA_LEN32_0
+gen_device_data_32/i0                30.7440      0.0     30.7440      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN8_DATA_LEN32_HAS_DEFAULT0_0
+gen_imm                              39.0600      0.1      0.0000      0.0000  0.0000  ysyx_22050854_imm_gen_0
+gen_imm/imm_gen                      39.0600      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY6_KEY_LEN3_DATA_LEN64_0
+gen_imm/imm_gen/i0                   39.0600      0.1     39.0600      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY6_KEY_LEN3_DATA_LEN64_HAS_DEFAULT1_0
+gen_pc                              383.5440      0.5    266.2380     60.4800  0.0000  ysyx_22050854_pc_0
+gen_pc/gen_PC3src                     7.6860      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0
+gen_pc/gen_PC3src/i0                  7.6860      0.0      7.6860      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0
+gen_pc/gen_PCsrc1                    16.8840      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2
+gen_pc/gen_PCsrc1/i0                 16.8840      0.0     16.8840      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2
+gen_pc/gen_PCsrc2                    32.2560      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_3
+gen_pc/gen_PCsrc2/i0                 32.2560      0.0     32.2560      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_3
+gen_read_mem_data                   148.5540      0.2      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0
+gen_read_mem_data/i0                148.5540      0.2    148.5540      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0
+gen_real_storememdata_right          33.8940      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN3_DATA_LEN64_0
+gen_real_storememdata_right/i0       33.8940      0.0     33.8940      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN3_DATA_LEN64_HAS_DEFAULT0_0
+gen_src                             107.9820      0.1      0.0000      0.0000  0.0000  ysyx_22050854_src_gen_0
+gen_src/src1_gen                     49.3920      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY2_KEY_LEN1_DATA_LEN64_0
+gen_src/src1_gen/i0                  49.3920      0.1     49.3920      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN64_HAS_DEFAULT1_0
+gen_src/src2_gen                     58.5900      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0
+gen_src/src2_gen/i0                  58.5900      0.1     58.5900      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0
+icache_inst                       21716.7299     28.2   9442.0621  12274.6679  0.0000  ysyx_22050854_Icache_0
+instr_decode                         89.5860      0.1     21.7980      0.0000  0.0000  ysyx_22050854_IDU_0
+instr_decode/ALUctr_gen              22.1760      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY119_KEY_LEN9_DATA_LEN4_0
+instr_decode/ALUctr_gen/i0           22.1760      0.0     22.1760      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY119_KEY_LEN9_DATA_LEN4_HAS_DEFAULT1_0
+instr_decode/ALUext_gen              12.2220      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY35_KEY_LEN10_DATA_LEN3_0
+instr_decode/ALUext_gen/i0           12.2220      0.0     12.2220      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY35_KEY_LEN10_DATA_LEN3_HAS_DEFAULT0_0
+instr_decode/ALUsrc1_gen              2.5200      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN5_DATA_LEN1_0
+instr_decode/ALUsrc1_gen/i0           2.5200      0.0      2.5200      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN5_DATA_LEN1_HAS_DEFAULT1_0
+instr_decode/ALUsrc2_gen              3.2760      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN5_DATA_LEN2_0
+instr_decode/ALUsrc2_gen/i0           3.2760      0.0      3.2760      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN5_DATA_LEN2_HAS_DEFAULT1_0
+instr_decode/Branch_gen               4.0320      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY22_KEY_LEN8_DATA_LEN3_0
+instr_decode/Branch_gen/i0            4.0320      0.0      4.0320      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY22_KEY_LEN8_DATA_LEN3_HAS_DEFAULT0_0
+instr_decode/ExtOP_gen                6.8040      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY9_KEY_LEN5_DATA_LEN3_0
+instr_decode/ExtOP_gen/i0             6.8040      0.0      6.8040      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY9_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0
+instr_decode/MemOP_gen                2.7720      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN8_DATA_LEN3_0
+instr_decode/MemOP_gen/i0             2.7720      0.0      2.7720      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN8_DATA_LEN3_HAS_DEFAULT1_0
+instr_decode/No_branch_gen            4.5360      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN7_DATA_LEN1_0
+instr_decode/No_branch_gen/i0         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN7_DATA_LEN1_HAS_DEFAULT1_0
+instr_decode/RegWr_gen                4.1580      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY13_KEY_LEN7_DATA_LEN1_0
+instr_decode/RegWr_gen/i0             4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY13_KEY_LEN7_DATA_LEN1_HAS_DEFAULT1_0
+instr_decode/gen_64M_ctr              5.2920      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY13_KEY_LEN9_DATA_LEN4_0
+instr_decode/gen_64M_ctr/i0           5.2920      0.0      5.2920      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY13_KEY_LEN9_DATA_LEN4_HAS_DEFAULT1_0
+jumpandblock                          2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_40
+record_lastSuspend                    2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_46
+record_last_Suspend_IFU               2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_37
+record_last_Suspend_LSU               2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_31
+regfile_inst                       7282.9260      9.4   3533.1660   3749.7600  0.0000  ysyx_22050854_RegisterFile_0
+--------------------------------  ----------  -------  ----------  ----------  ------  ------------------------------------------------------------------------
+Total                                                  39441.1501  37665.4316  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22050854
+Version: R-2020.09-SP3a
+Date   : Mon May 13 10:52:08 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: IDreg_gen0/dout_reg_23_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/rd_addr_reg_8_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  IDreg_gen0/dout_reg_23_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  IDreg_gen0/dout_reg_23_/Q (DFQD1BWP40P140)
+                                              0.0637    0.1067     0.1067 f
+  IDreg_gen0/dout[23] (ysyx_22050854_Reg_32_00000000_13)
+                                                        0.0000     0.1067 f
+  instr_decode/instr[23] (ysyx_22050854_IDU_0)          0.0000     0.1067 f
+  instr_decode/U21/I (BUFFD1BWP40P140)        0.0637    0.0000     0.1067 f
+  instr_decode/U21/Z (BUFFD1BWP40P140)        0.0273    0.0501     0.1568 f
+  instr_decode/rs2[3] (ysyx_22050854_IDU_0)             0.0000     0.1568 f
+  regfile_inst/raddrb[3] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.1568 f
+  regfile_inst/U2325/I (INVD1BWP40P140)       0.0273    0.0000     0.1568 f
+  regfile_inst/U2325/ZN (INVD1BWP40P140)      0.0152    0.0163     0.1731 r
+  regfile_inst/U37/A1 (ND2OPTIBD2BWP40P140)   0.0152    0.0000     0.1731 r
+  regfile_inst/U37/ZN (ND2OPTIBD2BWP40P140)   0.0528    0.0357     0.2087 f
+  regfile_inst/U105/A2 (NR2D1BWP40P140)       0.0528    0.0000     0.2087 f
+  regfile_inst/U105/ZN (NR2D1BWP40P140)       0.4594    0.2826     0.4913 r
+  regfile_inst/U3989/A2 (AOI22D1BWP40P140)    0.4594    0.0000     0.4913 r
+  regfile_inst/U3989/ZN (AOI22D1BWP40P140)    0.0931    0.0437     0.5350 f
+  regfile_inst/U3992/A2 (ND4D1BWP40P140)      0.0931    0.0000     0.5350 f
+  regfile_inst/U3992/ZN (ND4D1BWP40P140)      0.0315    0.0290     0.5640 r
+  regfile_inst/U4003/A2 (OR4D1BWP40P140)      0.0315    0.0000     0.5640 r
+  regfile_inst/U4003/Z (OR4D1BWP40P140)       0.0123    0.0360     0.6000 r
+  regfile_inst/rdata2[6] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.6000 r
+  U6038/A2 (AOI22D1BWP40P140)                 0.0123    0.0000     0.6000 r
+  U6038/ZN (AOI22D1BWP40P140)                 0.0732    0.0180     0.6180 f
+  U6039/C (OAI211D1BWP40P140)                 0.0732    0.0000     0.6180 f
+  U6039/ZN (OAI211D1BWP40P140)                0.0360    0.0325     0.6505 r
+  U6040/C (AOI211D1BWP40P140)                 0.0360    0.0000     0.6505 r
+  U6040/ZN (AOI211D1BWP40P140)                0.0524    0.0236     0.6742 f
+  U4098/C (OAI211D1BWP40P140LVT)              0.0524    0.0000     0.6742 f
+  U4098/ZN (OAI211D1BWP40P140LVT)             0.0488    0.0260     0.7001 r
+  gen_src/src2[6] (ysyx_22050854_src_gen_0)             0.0000     0.7001 r
+  gen_src/src2_gen/lut[138] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/lut[138] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/A1 (AO22D1BWP40P140)
+                                              0.0488    0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/Z (AO22D1BWP40P140)
+                                              0.0446    0.0562     0.7564 r
+  gen_src/src2_gen/i0/out[6] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7564 r
+  gen_src/src2_gen/out[6] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7564 r
+  gen_src/alu_src2[6] (ysyx_22050854_src_gen_0)         0.0000     0.7564 r
+  U5040/I (INVD1BWP40P140)                    0.0446    0.0000     0.7564 r
+  U5040/ZN (INVD1BWP40P140)                   0.0201    0.0196     0.7760 f
+  U5525/A1 (NR2D1BWP40P140)                   0.0201    0.0000     0.7760 f
+  U5525/ZN (NR2D1BWP40P140)                   0.0190    0.0170     0.7930 r
+  U5526/I (INVD1BWP40P140)                    0.0190    0.0000     0.7930 r
+  U5526/ZN (INVD1BWP40P140)                   0.0149    0.0145     0.8075 f
+  U4084/A1 (AOI21D1BWP40P140)                 0.0149    0.0000     0.8075 f
+  U4084/ZN (AOI21D1BWP40P140)                 0.0208    0.0181     0.8256 r
+  U5531/A1 (OAI21D1BWP40P140)                 0.0208    0.0000     0.8256 r
+  U5531/ZN (OAI21D1BWP40P140)                 0.0266    0.0210     0.8466 f
+  U4275/B (AOI21D1BWP40P140)                  0.0266    0.0000     0.8466 f
+  U4275/ZN (AOI21D1BWP40P140)                 0.0219    0.0263     0.8729 r
+  U4380/A2 (OAI21D1BWP40P140)                 0.0219    0.0000     0.8729 r
+  U4380/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     0.8957 f
+  U4076/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     0.8957 f
+  U4076/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     0.9175 r
+  U5537/A1 (OAI21D1BWP40P140)                 0.0225    0.0000     0.9175 r
+  U5537/ZN (OAI21D1BWP40P140)                 0.0255    0.0212     0.9387 f
+  U5539/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9387 f
+  U5539/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     0.9598 r
+  U5542/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     0.9598 r
+  U5542/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     0.9809 f
+  U5544/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9809 f
+  U5544/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0020 r
+  U5547/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0020 r
+  U5547/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     1.0230 f
+  U5797/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     1.0230 f
+  U5797/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0441 r
+  U4031/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0441 r
+  U4031/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.0652 f
+  U3831/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.0652 f
+  U3831/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0863 r
+  U4038/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0863 r
+  U4038/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1074 f
+  U5562/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1074 f
+  U5562/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1285 r
+  U5565/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1285 r
+  U5565/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1495 f
+  U5567/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1495 f
+  U5567/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1707 r
+  U5568/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1707 r
+  U5568/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     1.1934 f
+  U5569/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     1.1934 f
+  U5569/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     1.2153 r
+  U5571/A2 (OAI21D1BWP40P140)                 0.0225    0.0000     1.2153 r
+  U5571/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2382 f
+  U5573/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2382 f
+  U5573/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.2600 r
+  U5574/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.2600 r
+  U5574/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2830 f
+  U4381/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2830 f
+  U4381/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3048 r
+  U5577/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3048 r
+  U5577/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.3278 f
+  U5579/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3278 f
+  U5579/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3496 r
+  U5581/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3496 r
+  U5581/ZN (OAI21D1BWP40P140)                 0.0259    0.0230     1.3726 f
+  U4065/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3726 f
+  U4065/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.3938 r
+  U5596/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.3938 r
+  U5596/ZN (OAI21D1BWP40P140)                 0.0259    0.0228     1.4166 f
+  U5632/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.4166 f
+  U5632/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.4378 r
+  U5678/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.4378 r
+  U5678/ZN (OAI21D1BWP40P140)                 0.0251    0.0211     1.4589 f
+  U5681/A1 (AOI21D1BWP40P140)                 0.0251    0.0000     1.4589 f
+  U5681/ZN (AOI21D1BWP40P140)                 0.0219    0.0210     1.4799 r
+  U4039/A1 (OAI21D1BWP40P140)                 0.0219    0.0000     1.4799 r
+  U4039/ZN (OAI21D1BWP40P140)                 0.0327    0.0257     1.5055 f
+  U8379/A1 (AOI21D2BWP40P140)                 0.0327    0.0000     1.5055 f
+  U8379/ZN (AOI21D2BWP40P140)                 0.0205    0.0200     1.5255 r
+  U4055/A1 (OAI21D2BWP40P140)                 0.0205    0.0000     1.5255 r
+  U4055/ZN (OAI21D2BWP40P140)                 0.0238    0.0178     1.5434 f
+  U4047/A1 (AOI21D2BWP40P140)                 0.0238    0.0000     1.5434 f
+  U4047/ZN (AOI21D2BWP40P140)                 0.0200    0.0179     1.5613 r
+  U4051/A1 (OAI21D2BWP40P140LVT)              0.0200    0.0000     1.5613 r
+  U4051/ZN (OAI21D2BWP40P140LVT)              0.0211    0.0145     1.5758 f
+  U3829/A1 (AOI21D2BWP40P140)                 0.0211    0.0000     1.5758 f
+  U3829/ZN (AOI21D2BWP40P140)                 0.0204    0.0175     1.5932 r
+  U3828/A1 (NR2OPTPAD1BWP40P140)              0.0204    0.0000     1.5932 r
+  U3828/ZN (NR2OPTPAD1BWP40P140)              0.0172    0.0143     1.6075 f
+  U4046/B1 (OAI22OPTPBD1BWP40P140)            0.0172    0.0000     1.6075 f
+  U4046/ZN (OAI22OPTPBD1BWP40P140)            0.0263    0.0231     1.6306 r
+  gen_pc/pc_zero_less[0] (ysyx_22050854_pc_0)           0.0000     1.6306 r
+  gen_pc/gen_PC3src/key[0] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0263    0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0109     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0000     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0155    0.0133     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0155    0.0000     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0217    0.0161     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/A1 (XNR2OPTND4BWP40P140)
+                                              0.0217    0.0000     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/ZN (XNR2OPTND4BWP40P140)
+                                              0.0810    0.0436     1.7145 f
+  gen_pc/gen_PC3src/i0/out[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PC3src/out[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/A1 (INR2D1BWP40P140)
+                                              0.0810    0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/ZN (INR2D1BWP40P140)
+                                              0.0156    0.0460     1.7605 f
+  gen_pc/gen_PCsrc1/i0/out[5] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7605 f
+  gen_pc/gen_PCsrc1/out[5] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7605 f
+  gen_pc/U286/A1 (AO22D1BWP40P140)            0.0156    0.0000     1.7605 f
+  gen_pc/U286/Z (AO22D1BWP40P140)             0.0245    0.0359     1.7964 f
+  gen_pc/U48/A1 (NR2OPTPAD1BWP40P140)         0.0245    0.0000     1.7964 f
+  gen_pc/U48/ZN (NR2OPTPAD1BWP40P140)         0.0293    0.0258     1.8222 r
+  gen_pc/U66/A1 (OAI21D2BWP40P140)            0.0293    0.0000     1.8222 r
+  gen_pc/U66/ZN (OAI21D2BWP40P140)            0.0277    0.0227     1.8449 f
+  gen_pc/U300/A2 (AOI21D1BWP40P140)           0.0277    0.0000     1.8449 f
+  gen_pc/U300/ZN (AOI21D1BWP40P140)           0.0235    0.0228     1.8677 r
+  gen_pc/U104/B (OAI21D1BWP40P140)            0.0235    0.0000     1.8677 r
+  gen_pc/U104/ZN (OAI21D1BWP40P140)           0.0598    0.0466     1.9144 f
+  gen_pc/U301/I (INVD2BWP40P140)              0.0598    0.0000     1.9144 f
+  gen_pc/U301/ZN (INVD2BWP40P140)             0.0310    0.0318     1.9462 r
+  gen_pc/U198/A1 (OAI21D1BWP40P140)           0.0310    0.0000     1.9462 r
+  gen_pc/U198/ZN (OAI21D1BWP40P140)           0.0353    0.0298     1.9760 f
+  gen_pc/U318/A1 (XNR2UD1BWP40P140)           0.0353    0.0000     1.9760 f
+  gen_pc/U318/ZN (XNR2UD1BWP40P140)           0.0302    0.0307     2.0067 f
+  gen_pc/U320/A1 (IND2D1BWP40P140)            0.0302    0.0000     2.0067 f
+  gen_pc/U320/ZN (IND2D1BWP40P140)            0.0973    0.0791     2.0858 f
+  gen_pc/next_pc[14] (ysyx_22050854_pc_0)               0.0000     2.0858 f
+  U6009/A2 (NR2OPTPAD1BWP40P140)              0.0973    0.0000     2.0858 f
+  U6009/ZN (NR2OPTPAD1BWP40P140)              0.0285    0.0268     2.1125 r
+  U6010/A3 (ND3D1BWP40P140)                   0.0285    0.0000     2.1125 r
+  U6010/ZN (ND3D1BWP40P140)                   0.0413    0.0345     2.1470 f
+  U6014/A1 (NR4D1BWP40P140)                   0.0413    0.0000     2.1470 f
+  U6014/ZN (NR4D1BWP40P140)                   0.0343    0.0257     2.1727 r
+  U4041/A1 (ND3OPTPAD2BWP40P140)              0.0343    0.0000     2.1727 r
+  U4041/ZN (ND3OPTPAD2BWP40P140)              0.0278    0.0241     2.1968 f
+  U5798/A1 (NR2OPTPAD2BWP40P140)              0.0278    0.0000     2.1968 f
+  U5798/ZN (NR2OPTPAD2BWP40P140)              0.0354    0.0291     2.2259 r
+  U6019/A1 (NR2D3BWP40P140)                   0.0354    0.0000     2.2259 r
+  U6019/ZN (NR2D3BWP40P140)                   0.0173    0.0166     2.2425 f
+  U3961/B1 (IND2D2BWP40P140)                  0.0173    0.0000     2.2425 f
+  U3961/ZN (IND2D2BWP40P140)                  0.0207    0.0145     2.2570 r
+  U3960/A1 (OR2D1BWP40P140)                   0.0207    0.0000     2.2570 r
+  U3960/Z (OR2D1BWP40P140)                    0.0216    0.0335     2.2905 r
+  U3959/I (INVD3BWP40P140)                    0.0216    0.0000     2.2905 r
+  U3959/ZN (INVD3BWP40P140)                   0.0479    0.0354     2.3259 f
+  U8378/B1 (AOI22D1BWP40P140)                 0.0479    0.0000     2.3259 f
+  U8378/ZN (AOI22D1BWP40P140)                 0.0382    0.0337     2.3596 r
+  U3819/B1 (IND3D1BWP40P140)                  0.0382    0.0000     2.3596 r
+  U3819/ZN (IND3D1BWP40P140)                  0.0353    0.0324     2.3920 f
+  U8380/B (AO21D2BWP40P140)                   0.0353    0.0000     2.3920 f
+  U8380/Z (AO21D2BWP40P140)                   0.0271    0.0540     2.4460 f
+  icache_inst/index[5] (ysyx_22050854_Icache_0)         0.0000     2.4460 f
+  icache_inst/U1745/A2 (NR2D1BWP40P140)       0.0271    0.0000     2.4460 f
+  icache_inst/U1745/ZN (NR2D1BWP40P140)       0.0474    0.0395     2.4855 r
+  icache_inst/U109/A1 (ND2D1BWP40P140)        0.0474    0.0000     2.4855 r
+  icache_inst/U109/ZN (ND2D1BWP40P140)        0.0929    0.0689     2.5544 f
+  icache_inst/U1913/B1 (INR2D1BWP40P140)      0.0929    0.0000     2.5544 f
+  icache_inst/U1913/ZN (INR2D1BWP40P140)      0.0634    0.0597     2.6140 r
+  icache_inst/U93/I (INVD1BWP40P140)          0.0634    0.0000     2.6140 r
+  icache_inst/U93/ZN (INVD1BWP40P140)         0.0329    0.0318     2.6458 f
+  icache_inst/U349/I (INVD2BWP40P140)         0.0329    0.0000     2.6458 f
+  icache_inst/U349/ZN (INVD2BWP40P140)        0.0815    0.0597     2.7055 r
+  icache_inst/U3964/B1 (AOI22D1BWP40P140)     0.0815    0.0000     2.7055 r
+  icache_inst/U3964/ZN (AOI22D1BWP40P140)     0.0444    0.0397     2.7451 f
+  icache_inst/U3966/A1 (ND2D1BWP40P140)       0.0444    0.0000     2.7451 f
+  icache_inst/U3966/ZN (ND2D1BWP40P140)       0.0202    0.0181     2.7633 r
+  icache_inst/U3970/A1 (NR2D1BWP40P140)       0.0202    0.0000     2.7633 r
+  icache_inst/U3970/ZN (NR2D1BWP40P140)       0.0128    0.0123     2.7755 f
+  icache_inst/U3971/A3 (ND3D1BWP40P140)       0.0128    0.0000     2.7755 f
+  icache_inst/U3971/ZN (ND3D1BWP40P140)       0.0167    0.0151     2.7907 r
+  icache_inst/U3999/A3 (NR4D1BWP40P140)       0.0167    0.0000     2.7907 r
+  icache_inst/U3999/ZN (NR4D1BWP40P140)       0.0302    0.0246     2.8153 f
+  icache_inst/U4000/A1 (XNR2UD1BWP40P140)     0.0302    0.0000     2.8153 f
+  icache_inst/U4000/ZN (XNR2UD1BWP40P140)     0.0327    0.0291     2.8444 f
+  icache_inst/U773/A1 (NR2D1BWP40P140)        0.0327    0.0000     2.8444 f
+  icache_inst/U773/ZN (NR2D1BWP40P140)        0.0198    0.0201     2.8645 r
+  icache_inst/U4369/A1 (ND3D1BWP40P140)       0.0198    0.0000     2.8645 r
+  icache_inst/U4369/ZN (ND3D1BWP40P140)       0.0397    0.0296     2.8941 f
+  icache_inst/U4370/A4 (NR4D1BWP40P140)       0.0397    0.0000     2.8941 f
+  icache_inst/U4370/ZN (NR4D1BWP40P140)       0.0287    0.0376     2.9317 r
+  icache_inst/U199/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0287    0.0000     2.9317 r
+  icache_inst/U199/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0211    0.0166     2.9483 f
+  icache_inst/U138/A1 (INR2D2BWP40P140)       0.0211    0.0000     2.9483 f
+  icache_inst/U138/ZN (INR2D2BWP40P140)       0.0180    0.0286     2.9769 f
+  icache_inst/U357/A2 (ND2D2BWP40P140)        0.0180    0.0000     2.9769 f
+  icache_inst/U357/ZN (ND2D2BWP40P140)        0.0176    0.0148     2.9917 r
+  icache_inst/U16341/A1 (ND3OPTPAD2BWP40P140)
+                                              0.0176    0.0000     2.9917 r
+  icache_inst/U16341/ZN (ND3OPTPAD2BWP40P140)
+                                              0.0265    0.0185     3.0102 f
+  icache_inst/U126/I (BUFFD6BWP40P140)        0.0265    0.0000     3.0102 f
+  icache_inst/U126/Z (BUFFD6BWP40P140)        0.0266    0.0366     3.0468 f
+  icache_inst/U16353/B1 (OAI22D1BWP40P140)    0.0266    0.0000     3.0468 f
+  icache_inst/U16353/ZN (OAI22D1BWP40P140)    0.0287    0.0256     3.0724 r
+  icache_inst/rd_addr_reg_8_/D (DFD1BWP40P140)
+                                              0.0287    0.0000     3.0724 r
+  data arrival time                                                3.0724
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  icache_inst/rd_addr_reg_8_/CP (DFD1BWP40P140)         0.0000     3.1000 r
+  library setup time                                   -0.0273     3.0727
+  data required time                                               3.0727
+  --------------------------------------------------------------------------
+  data required time                                               3.0727
+  data arrival time                                               -3.0724
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0003
+
+
+  Startpoint: IDreg_gen0/dout_reg_23_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/rd_addr_reg_7_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  IDreg_gen0/dout_reg_23_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  IDreg_gen0/dout_reg_23_/Q (DFQD1BWP40P140)
+                                              0.0637    0.1067     0.1067 f
+  IDreg_gen0/dout[23] (ysyx_22050854_Reg_32_00000000_13)
+                                                        0.0000     0.1067 f
+  instr_decode/instr[23] (ysyx_22050854_IDU_0)          0.0000     0.1067 f
+  instr_decode/U21/I (BUFFD1BWP40P140)        0.0637    0.0000     0.1067 f
+  instr_decode/U21/Z (BUFFD1BWP40P140)        0.0273    0.0501     0.1568 f
+  instr_decode/rs2[3] (ysyx_22050854_IDU_0)             0.0000     0.1568 f
+  regfile_inst/raddrb[3] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.1568 f
+  regfile_inst/U2325/I (INVD1BWP40P140)       0.0273    0.0000     0.1568 f
+  regfile_inst/U2325/ZN (INVD1BWP40P140)      0.0152    0.0163     0.1731 r
+  regfile_inst/U37/A1 (ND2OPTIBD2BWP40P140)   0.0152    0.0000     0.1731 r
+  regfile_inst/U37/ZN (ND2OPTIBD2BWP40P140)   0.0528    0.0357     0.2087 f
+  regfile_inst/U105/A2 (NR2D1BWP40P140)       0.0528    0.0000     0.2087 f
+  regfile_inst/U105/ZN (NR2D1BWP40P140)       0.4594    0.2826     0.4913 r
+  regfile_inst/U3989/A2 (AOI22D1BWP40P140)    0.4594    0.0000     0.4913 r
+  regfile_inst/U3989/ZN (AOI22D1BWP40P140)    0.0931    0.0437     0.5350 f
+  regfile_inst/U3992/A2 (ND4D1BWP40P140)      0.0931    0.0000     0.5350 f
+  regfile_inst/U3992/ZN (ND4D1BWP40P140)      0.0315    0.0290     0.5640 r
+  regfile_inst/U4003/A2 (OR4D1BWP40P140)      0.0315    0.0000     0.5640 r
+  regfile_inst/U4003/Z (OR4D1BWP40P140)       0.0123    0.0360     0.6000 r
+  regfile_inst/rdata2[6] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.6000 r
+  U6038/A2 (AOI22D1BWP40P140)                 0.0123    0.0000     0.6000 r
+  U6038/ZN (AOI22D1BWP40P140)                 0.0732    0.0180     0.6180 f
+  U6039/C (OAI211D1BWP40P140)                 0.0732    0.0000     0.6180 f
+  U6039/ZN (OAI211D1BWP40P140)                0.0360    0.0325     0.6505 r
+  U6040/C (AOI211D1BWP40P140)                 0.0360    0.0000     0.6505 r
+  U6040/ZN (AOI211D1BWP40P140)                0.0524    0.0236     0.6742 f
+  U4098/C (OAI211D1BWP40P140LVT)              0.0524    0.0000     0.6742 f
+  U4098/ZN (OAI211D1BWP40P140LVT)             0.0488    0.0260     0.7001 r
+  gen_src/src2[6] (ysyx_22050854_src_gen_0)             0.0000     0.7001 r
+  gen_src/src2_gen/lut[138] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/lut[138] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/A1 (AO22D1BWP40P140)
+                                              0.0488    0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/Z (AO22D1BWP40P140)
+                                              0.0446    0.0562     0.7564 r
+  gen_src/src2_gen/i0/out[6] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7564 r
+  gen_src/src2_gen/out[6] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7564 r
+  gen_src/alu_src2[6] (ysyx_22050854_src_gen_0)         0.0000     0.7564 r
+  U5040/I (INVD1BWP40P140)                    0.0446    0.0000     0.7564 r
+  U5040/ZN (INVD1BWP40P140)                   0.0201    0.0196     0.7760 f
+  U5525/A1 (NR2D1BWP40P140)                   0.0201    0.0000     0.7760 f
+  U5525/ZN (NR2D1BWP40P140)                   0.0190    0.0170     0.7930 r
+  U5526/I (INVD1BWP40P140)                    0.0190    0.0000     0.7930 r
+  U5526/ZN (INVD1BWP40P140)                   0.0149    0.0145     0.8075 f
+  U4084/A1 (AOI21D1BWP40P140)                 0.0149    0.0000     0.8075 f
+  U4084/ZN (AOI21D1BWP40P140)                 0.0208    0.0181     0.8256 r
+  U5531/A1 (OAI21D1BWP40P140)                 0.0208    0.0000     0.8256 r
+  U5531/ZN (OAI21D1BWP40P140)                 0.0266    0.0210     0.8466 f
+  U4275/B (AOI21D1BWP40P140)                  0.0266    0.0000     0.8466 f
+  U4275/ZN (AOI21D1BWP40P140)                 0.0219    0.0263     0.8729 r
+  U4380/A2 (OAI21D1BWP40P140)                 0.0219    0.0000     0.8729 r
+  U4380/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     0.8957 f
+  U4076/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     0.8957 f
+  U4076/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     0.9175 r
+  U5537/A1 (OAI21D1BWP40P140)                 0.0225    0.0000     0.9175 r
+  U5537/ZN (OAI21D1BWP40P140)                 0.0255    0.0212     0.9387 f
+  U5539/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9387 f
+  U5539/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     0.9598 r
+  U5542/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     0.9598 r
+  U5542/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     0.9809 f
+  U5544/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9809 f
+  U5544/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0020 r
+  U5547/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0020 r
+  U5547/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     1.0230 f
+  U5797/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     1.0230 f
+  U5797/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0441 r
+  U4031/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0441 r
+  U4031/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.0652 f
+  U3831/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.0652 f
+  U3831/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0863 r
+  U4038/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0863 r
+  U4038/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1074 f
+  U5562/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1074 f
+  U5562/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1285 r
+  U5565/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1285 r
+  U5565/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1495 f
+  U5567/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1495 f
+  U5567/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1707 r
+  U5568/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1707 r
+  U5568/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     1.1934 f
+  U5569/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     1.1934 f
+  U5569/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     1.2153 r
+  U5571/A2 (OAI21D1BWP40P140)                 0.0225    0.0000     1.2153 r
+  U5571/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2382 f
+  U5573/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2382 f
+  U5573/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.2600 r
+  U5574/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.2600 r
+  U5574/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2830 f
+  U4381/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2830 f
+  U4381/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3048 r
+  U5577/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3048 r
+  U5577/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.3278 f
+  U5579/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3278 f
+  U5579/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3496 r
+  U5581/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3496 r
+  U5581/ZN (OAI21D1BWP40P140)                 0.0259    0.0230     1.3726 f
+  U4065/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3726 f
+  U4065/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.3938 r
+  U5596/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.3938 r
+  U5596/ZN (OAI21D1BWP40P140)                 0.0259    0.0228     1.4166 f
+  U5632/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.4166 f
+  U5632/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.4378 r
+  U5678/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.4378 r
+  U5678/ZN (OAI21D1BWP40P140)                 0.0251    0.0211     1.4589 f
+  U5681/A1 (AOI21D1BWP40P140)                 0.0251    0.0000     1.4589 f
+  U5681/ZN (AOI21D1BWP40P140)                 0.0219    0.0210     1.4799 r
+  U4039/A1 (OAI21D1BWP40P140)                 0.0219    0.0000     1.4799 r
+  U4039/ZN (OAI21D1BWP40P140)                 0.0327    0.0257     1.5055 f
+  U8379/A1 (AOI21D2BWP40P140)                 0.0327    0.0000     1.5055 f
+  U8379/ZN (AOI21D2BWP40P140)                 0.0205    0.0200     1.5255 r
+  U4055/A1 (OAI21D2BWP40P140)                 0.0205    0.0000     1.5255 r
+  U4055/ZN (OAI21D2BWP40P140)                 0.0238    0.0178     1.5434 f
+  U4047/A1 (AOI21D2BWP40P140)                 0.0238    0.0000     1.5434 f
+  U4047/ZN (AOI21D2BWP40P140)                 0.0200    0.0179     1.5613 r
+  U4051/A1 (OAI21D2BWP40P140LVT)              0.0200    0.0000     1.5613 r
+  U4051/ZN (OAI21D2BWP40P140LVT)              0.0211    0.0145     1.5758 f
+  U3829/A1 (AOI21D2BWP40P140)                 0.0211    0.0000     1.5758 f
+  U3829/ZN (AOI21D2BWP40P140)                 0.0204    0.0175     1.5932 r
+  U3828/A1 (NR2OPTPAD1BWP40P140)              0.0204    0.0000     1.5932 r
+  U3828/ZN (NR2OPTPAD1BWP40P140)              0.0172    0.0143     1.6075 f
+  U4046/B1 (OAI22OPTPBD1BWP40P140)            0.0172    0.0000     1.6075 f
+  U4046/ZN (OAI22OPTPBD1BWP40P140)            0.0263    0.0231     1.6306 r
+  gen_pc/pc_zero_less[0] (ysyx_22050854_pc_0)           0.0000     1.6306 r
+  gen_pc/gen_PC3src/key[0] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0263    0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0109     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0000     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0155    0.0133     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0155    0.0000     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0217    0.0161     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/A1 (XNR2OPTND4BWP40P140)
+                                              0.0217    0.0000     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/ZN (XNR2OPTND4BWP40P140)
+                                              0.0810    0.0436     1.7145 f
+  gen_pc/gen_PC3src/i0/out[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PC3src/out[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/A1 (INR2D1BWP40P140)
+                                              0.0810    0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/ZN (INR2D1BWP40P140)
+                                              0.0156    0.0460     1.7605 f
+  gen_pc/gen_PCsrc1/i0/out[5] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7605 f
+  gen_pc/gen_PCsrc1/out[5] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7605 f
+  gen_pc/U286/A1 (AO22D1BWP40P140)            0.0156    0.0000     1.7605 f
+  gen_pc/U286/Z (AO22D1BWP40P140)             0.0245    0.0359     1.7964 f
+  gen_pc/U48/A1 (NR2OPTPAD1BWP40P140)         0.0245    0.0000     1.7964 f
+  gen_pc/U48/ZN (NR2OPTPAD1BWP40P140)         0.0293    0.0258     1.8222 r
+  gen_pc/U66/A1 (OAI21D2BWP40P140)            0.0293    0.0000     1.8222 r
+  gen_pc/U66/ZN (OAI21D2BWP40P140)            0.0277    0.0227     1.8449 f
+  gen_pc/U300/A2 (AOI21D1BWP40P140)           0.0277    0.0000     1.8449 f
+  gen_pc/U300/ZN (AOI21D1BWP40P140)           0.0235    0.0228     1.8677 r
+  gen_pc/U104/B (OAI21D1BWP40P140)            0.0235    0.0000     1.8677 r
+  gen_pc/U104/ZN (OAI21D1BWP40P140)           0.0598    0.0466     1.9144 f
+  gen_pc/U301/I (INVD2BWP40P140)              0.0598    0.0000     1.9144 f
+  gen_pc/U301/ZN (INVD2BWP40P140)             0.0310    0.0318     1.9462 r
+  gen_pc/U198/A1 (OAI21D1BWP40P140)           0.0310    0.0000     1.9462 r
+  gen_pc/U198/ZN (OAI21D1BWP40P140)           0.0353    0.0298     1.9760 f
+  gen_pc/U318/A1 (XNR2UD1BWP40P140)           0.0353    0.0000     1.9760 f
+  gen_pc/U318/ZN (XNR2UD1BWP40P140)           0.0302    0.0307     2.0067 f
+  gen_pc/U320/A1 (IND2D1BWP40P140)            0.0302    0.0000     2.0067 f
+  gen_pc/U320/ZN (IND2D1BWP40P140)            0.0973    0.0791     2.0858 f
+  gen_pc/next_pc[14] (ysyx_22050854_pc_0)               0.0000     2.0858 f
+  U6009/A2 (NR2OPTPAD1BWP40P140)              0.0973    0.0000     2.0858 f
+  U6009/ZN (NR2OPTPAD1BWP40P140)              0.0285    0.0268     2.1125 r
+  U6010/A3 (ND3D1BWP40P140)                   0.0285    0.0000     2.1125 r
+  U6010/ZN (ND3D1BWP40P140)                   0.0413    0.0345     2.1470 f
+  U6014/A1 (NR4D1BWP40P140)                   0.0413    0.0000     2.1470 f
+  U6014/ZN (NR4D1BWP40P140)                   0.0343    0.0257     2.1727 r
+  U4041/A1 (ND3OPTPAD2BWP40P140)              0.0343    0.0000     2.1727 r
+  U4041/ZN (ND3OPTPAD2BWP40P140)              0.0278    0.0241     2.1968 f
+  U5798/A1 (NR2OPTPAD2BWP40P140)              0.0278    0.0000     2.1968 f
+  U5798/ZN (NR2OPTPAD2BWP40P140)              0.0354    0.0291     2.2259 r
+  U6019/A1 (NR2D3BWP40P140)                   0.0354    0.0000     2.2259 r
+  U6019/ZN (NR2D3BWP40P140)                   0.0173    0.0166     2.2425 f
+  U3961/B1 (IND2D2BWP40P140)                  0.0173    0.0000     2.2425 f
+  U3961/ZN (IND2D2BWP40P140)                  0.0207    0.0145     2.2570 r
+  U3960/A1 (OR2D1BWP40P140)                   0.0207    0.0000     2.2570 r
+  U3960/Z (OR2D1BWP40P140)                    0.0216    0.0335     2.2905 r
+  U3959/I (INVD3BWP40P140)                    0.0216    0.0000     2.2905 r
+  U3959/ZN (INVD3BWP40P140)                   0.0479    0.0354     2.3259 f
+  U8378/B1 (AOI22D1BWP40P140)                 0.0479    0.0000     2.3259 f
+  U8378/ZN (AOI22D1BWP40P140)                 0.0382    0.0337     2.3596 r
+  U3819/B1 (IND3D1BWP40P140)                  0.0382    0.0000     2.3596 r
+  U3819/ZN (IND3D1BWP40P140)                  0.0353    0.0324     2.3920 f
+  U8380/B (AO21D2BWP40P140)                   0.0353    0.0000     2.3920 f
+  U8380/Z (AO21D2BWP40P140)                   0.0271    0.0540     2.4460 f
+  icache_inst/index[5] (ysyx_22050854_Icache_0)         0.0000     2.4460 f
+  icache_inst/U1745/A2 (NR2D1BWP40P140)       0.0271    0.0000     2.4460 f
+  icache_inst/U1745/ZN (NR2D1BWP40P140)       0.0474    0.0395     2.4855 r
+  icache_inst/U109/A1 (ND2D1BWP40P140)        0.0474    0.0000     2.4855 r
+  icache_inst/U109/ZN (ND2D1BWP40P140)        0.0929    0.0689     2.5544 f
+  icache_inst/U1913/B1 (INR2D1BWP40P140)      0.0929    0.0000     2.5544 f
+  icache_inst/U1913/ZN (INR2D1BWP40P140)      0.0634    0.0597     2.6140 r
+  icache_inst/U93/I (INVD1BWP40P140)          0.0634    0.0000     2.6140 r
+  icache_inst/U93/ZN (INVD1BWP40P140)         0.0329    0.0318     2.6458 f
+  icache_inst/U349/I (INVD2BWP40P140)         0.0329    0.0000     2.6458 f
+  icache_inst/U349/ZN (INVD2BWP40P140)        0.0815    0.0597     2.7055 r
+  icache_inst/U3964/B1 (AOI22D1BWP40P140)     0.0815    0.0000     2.7055 r
+  icache_inst/U3964/ZN (AOI22D1BWP40P140)     0.0444    0.0397     2.7451 f
+  icache_inst/U3966/A1 (ND2D1BWP40P140)       0.0444    0.0000     2.7451 f
+  icache_inst/U3966/ZN (ND2D1BWP40P140)       0.0202    0.0181     2.7633 r
+  icache_inst/U3970/A1 (NR2D1BWP40P140)       0.0202    0.0000     2.7633 r
+  icache_inst/U3970/ZN (NR2D1BWP40P140)       0.0128    0.0123     2.7755 f
+  icache_inst/U3971/A3 (ND3D1BWP40P140)       0.0128    0.0000     2.7755 f
+  icache_inst/U3971/ZN (ND3D1BWP40P140)       0.0167    0.0151     2.7907 r
+  icache_inst/U3999/A3 (NR4D1BWP40P140)       0.0167    0.0000     2.7907 r
+  icache_inst/U3999/ZN (NR4D1BWP40P140)       0.0302    0.0246     2.8153 f
+  icache_inst/U4000/A1 (XNR2UD1BWP40P140)     0.0302    0.0000     2.8153 f
+  icache_inst/U4000/ZN (XNR2UD1BWP40P140)     0.0327    0.0291     2.8444 f
+  icache_inst/U773/A1 (NR2D1BWP40P140)        0.0327    0.0000     2.8444 f
+  icache_inst/U773/ZN (NR2D1BWP40P140)        0.0198    0.0201     2.8645 r
+  icache_inst/U4369/A1 (ND3D1BWP40P140)       0.0198    0.0000     2.8645 r
+  icache_inst/U4369/ZN (ND3D1BWP40P140)       0.0397    0.0296     2.8941 f
+  icache_inst/U4370/A4 (NR4D1BWP40P140)       0.0397    0.0000     2.8941 f
+  icache_inst/U4370/ZN (NR4D1BWP40P140)       0.0287    0.0376     2.9317 r
+  icache_inst/U199/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0287    0.0000     2.9317 r
+  icache_inst/U199/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0211    0.0166     2.9483 f
+  icache_inst/U138/A1 (INR2D2BWP40P140)       0.0211    0.0000     2.9483 f
+  icache_inst/U138/ZN (INR2D2BWP40P140)       0.0180    0.0286     2.9769 f
+  icache_inst/U357/A2 (ND2D2BWP40P140)        0.0180    0.0000     2.9769 f
+  icache_inst/U357/ZN (ND2D2BWP40P140)        0.0176    0.0148     2.9917 r
+  icache_inst/U16341/A1 (ND3OPTPAD2BWP40P140)
+                                              0.0176    0.0000     2.9917 r
+  icache_inst/U16341/ZN (ND3OPTPAD2BWP40P140)
+                                              0.0265    0.0185     3.0102 f
+  icache_inst/U126/I (BUFFD6BWP40P140)        0.0265    0.0000     3.0102 f
+  icache_inst/U126/Z (BUFFD6BWP40P140)        0.0266    0.0366     3.0468 f
+  icache_inst/U16350/B1 (OAI22D1BWP40P140)    0.0266    0.0000     3.0468 f
+  icache_inst/U16350/ZN (OAI22D1BWP40P140)    0.0287    0.0256     3.0724 r
+  icache_inst/rd_addr_reg_7_/D (DFD1BWP40P140)
+                                              0.0287    0.0000     3.0724 r
+  data arrival time                                                3.0724
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  icache_inst/rd_addr_reg_7_/CP (DFD1BWP40P140)         0.0000     3.1000 r
+  library setup time                                   -0.0273     3.0727
+  data required time                                               3.0727
+  --------------------------------------------------------------------------
+  data required time                                               3.0727
+  data arrival time                                               -3.0724
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0003
+
+
+  Startpoint: IDreg_gen0/dout_reg_23_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/rd_addr_reg_6_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  IDreg_gen0/dout_reg_23_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  IDreg_gen0/dout_reg_23_/Q (DFQD1BWP40P140)
+                                              0.0637    0.1067     0.1067 f
+  IDreg_gen0/dout[23] (ysyx_22050854_Reg_32_00000000_13)
+                                                        0.0000     0.1067 f
+  instr_decode/instr[23] (ysyx_22050854_IDU_0)          0.0000     0.1067 f
+  instr_decode/U21/I (BUFFD1BWP40P140)        0.0637    0.0000     0.1067 f
+  instr_decode/U21/Z (BUFFD1BWP40P140)        0.0273    0.0501     0.1568 f
+  instr_decode/rs2[3] (ysyx_22050854_IDU_0)             0.0000     0.1568 f
+  regfile_inst/raddrb[3] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.1568 f
+  regfile_inst/U2325/I (INVD1BWP40P140)       0.0273    0.0000     0.1568 f
+  regfile_inst/U2325/ZN (INVD1BWP40P140)      0.0152    0.0163     0.1731 r
+  regfile_inst/U37/A1 (ND2OPTIBD2BWP40P140)   0.0152    0.0000     0.1731 r
+  regfile_inst/U37/ZN (ND2OPTIBD2BWP40P140)   0.0528    0.0357     0.2087 f
+  regfile_inst/U105/A2 (NR2D1BWP40P140)       0.0528    0.0000     0.2087 f
+  regfile_inst/U105/ZN (NR2D1BWP40P140)       0.4594    0.2826     0.4913 r
+  regfile_inst/U3989/A2 (AOI22D1BWP40P140)    0.4594    0.0000     0.4913 r
+  regfile_inst/U3989/ZN (AOI22D1BWP40P140)    0.0931    0.0437     0.5350 f
+  regfile_inst/U3992/A2 (ND4D1BWP40P140)      0.0931    0.0000     0.5350 f
+  regfile_inst/U3992/ZN (ND4D1BWP40P140)      0.0315    0.0290     0.5640 r
+  regfile_inst/U4003/A2 (OR4D1BWP40P140)      0.0315    0.0000     0.5640 r
+  regfile_inst/U4003/Z (OR4D1BWP40P140)       0.0123    0.0360     0.6000 r
+  regfile_inst/rdata2[6] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.6000 r
+  U6038/A2 (AOI22D1BWP40P140)                 0.0123    0.0000     0.6000 r
+  U6038/ZN (AOI22D1BWP40P140)                 0.0732    0.0180     0.6180 f
+  U6039/C (OAI211D1BWP40P140)                 0.0732    0.0000     0.6180 f
+  U6039/ZN (OAI211D1BWP40P140)                0.0360    0.0325     0.6505 r
+  U6040/C (AOI211D1BWP40P140)                 0.0360    0.0000     0.6505 r
+  U6040/ZN (AOI211D1BWP40P140)                0.0524    0.0236     0.6742 f
+  U4098/C (OAI211D1BWP40P140LVT)              0.0524    0.0000     0.6742 f
+  U4098/ZN (OAI211D1BWP40P140LVT)             0.0488    0.0260     0.7001 r
+  gen_src/src2[6] (ysyx_22050854_src_gen_0)             0.0000     0.7001 r
+  gen_src/src2_gen/lut[138] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/lut[138] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/A1 (AO22D1BWP40P140)
+                                              0.0488    0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/Z (AO22D1BWP40P140)
+                                              0.0446    0.0562     0.7564 r
+  gen_src/src2_gen/i0/out[6] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7564 r
+  gen_src/src2_gen/out[6] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7564 r
+  gen_src/alu_src2[6] (ysyx_22050854_src_gen_0)         0.0000     0.7564 r
+  U5040/I (INVD1BWP40P140)                    0.0446    0.0000     0.7564 r
+  U5040/ZN (INVD1BWP40P140)                   0.0201    0.0196     0.7760 f
+  U5525/A1 (NR2D1BWP40P140)                   0.0201    0.0000     0.7760 f
+  U5525/ZN (NR2D1BWP40P140)                   0.0190    0.0170     0.7930 r
+  U5526/I (INVD1BWP40P140)                    0.0190    0.0000     0.7930 r
+  U5526/ZN (INVD1BWP40P140)                   0.0149    0.0145     0.8075 f
+  U4084/A1 (AOI21D1BWP40P140)                 0.0149    0.0000     0.8075 f
+  U4084/ZN (AOI21D1BWP40P140)                 0.0208    0.0181     0.8256 r
+  U5531/A1 (OAI21D1BWP40P140)                 0.0208    0.0000     0.8256 r
+  U5531/ZN (OAI21D1BWP40P140)                 0.0266    0.0210     0.8466 f
+  U4275/B (AOI21D1BWP40P140)                  0.0266    0.0000     0.8466 f
+  U4275/ZN (AOI21D1BWP40P140)                 0.0219    0.0263     0.8729 r
+  U4380/A2 (OAI21D1BWP40P140)                 0.0219    0.0000     0.8729 r
+  U4380/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     0.8957 f
+  U4076/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     0.8957 f
+  U4076/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     0.9175 r
+  U5537/A1 (OAI21D1BWP40P140)                 0.0225    0.0000     0.9175 r
+  U5537/ZN (OAI21D1BWP40P140)                 0.0255    0.0212     0.9387 f
+  U5539/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9387 f
+  U5539/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     0.9598 r
+  U5542/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     0.9598 r
+  U5542/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     0.9809 f
+  U5544/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9809 f
+  U5544/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0020 r
+  U5547/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0020 r
+  U5547/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     1.0230 f
+  U5797/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     1.0230 f
+  U5797/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0441 r
+  U4031/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0441 r
+  U4031/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.0652 f
+  U3831/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.0652 f
+  U3831/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0863 r
+  U4038/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0863 r
+  U4038/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1074 f
+  U5562/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1074 f
+  U5562/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1285 r
+  U5565/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1285 r
+  U5565/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1495 f
+  U5567/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1495 f
+  U5567/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1707 r
+  U5568/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1707 r
+  U5568/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     1.1934 f
+  U5569/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     1.1934 f
+  U5569/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     1.2153 r
+  U5571/A2 (OAI21D1BWP40P140)                 0.0225    0.0000     1.2153 r
+  U5571/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2382 f
+  U5573/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2382 f
+  U5573/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.2600 r
+  U5574/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.2600 r
+  U5574/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2830 f
+  U4381/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2830 f
+  U4381/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3048 r
+  U5577/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3048 r
+  U5577/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.3278 f
+  U5579/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3278 f
+  U5579/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3496 r
+  U5581/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3496 r
+  U5581/ZN (OAI21D1BWP40P140)                 0.0259    0.0230     1.3726 f
+  U4065/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3726 f
+  U4065/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.3938 r
+  U5596/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.3938 r
+  U5596/ZN (OAI21D1BWP40P140)                 0.0259    0.0228     1.4166 f
+  U5632/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.4166 f
+  U5632/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.4378 r
+  U5678/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.4378 r
+  U5678/ZN (OAI21D1BWP40P140)                 0.0251    0.0211     1.4589 f
+  U5681/A1 (AOI21D1BWP40P140)                 0.0251    0.0000     1.4589 f
+  U5681/ZN (AOI21D1BWP40P140)                 0.0219    0.0210     1.4799 r
+  U4039/A1 (OAI21D1BWP40P140)                 0.0219    0.0000     1.4799 r
+  U4039/ZN (OAI21D1BWP40P140)                 0.0327    0.0257     1.5055 f
+  U8379/A1 (AOI21D2BWP40P140)                 0.0327    0.0000     1.5055 f
+  U8379/ZN (AOI21D2BWP40P140)                 0.0205    0.0200     1.5255 r
+  U4055/A1 (OAI21D2BWP40P140)                 0.0205    0.0000     1.5255 r
+  U4055/ZN (OAI21D2BWP40P140)                 0.0238    0.0178     1.5434 f
+  U4047/A1 (AOI21D2BWP40P140)                 0.0238    0.0000     1.5434 f
+  U4047/ZN (AOI21D2BWP40P140)                 0.0200    0.0179     1.5613 r
+  U4051/A1 (OAI21D2BWP40P140LVT)              0.0200    0.0000     1.5613 r
+  U4051/ZN (OAI21D2BWP40P140LVT)              0.0211    0.0145     1.5758 f
+  U3829/A1 (AOI21D2BWP40P140)                 0.0211    0.0000     1.5758 f
+  U3829/ZN (AOI21D2BWP40P140)                 0.0204    0.0175     1.5932 r
+  U3828/A1 (NR2OPTPAD1BWP40P140)              0.0204    0.0000     1.5932 r
+  U3828/ZN (NR2OPTPAD1BWP40P140)              0.0172    0.0143     1.6075 f
+  U4046/B1 (OAI22OPTPBD1BWP40P140)            0.0172    0.0000     1.6075 f
+  U4046/ZN (OAI22OPTPBD1BWP40P140)            0.0263    0.0231     1.6306 r
+  gen_pc/pc_zero_less[0] (ysyx_22050854_pc_0)           0.0000     1.6306 r
+  gen_pc/gen_PC3src/key[0] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0263    0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0109     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0000     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0155    0.0133     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0155    0.0000     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0217    0.0161     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/A1 (XNR2OPTND4BWP40P140)
+                                              0.0217    0.0000     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/ZN (XNR2OPTND4BWP40P140)
+                                              0.0810    0.0436     1.7145 f
+  gen_pc/gen_PC3src/i0/out[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PC3src/out[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/A1 (INR2D1BWP40P140)
+                                              0.0810    0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/ZN (INR2D1BWP40P140)
+                                              0.0156    0.0460     1.7605 f
+  gen_pc/gen_PCsrc1/i0/out[5] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7605 f
+  gen_pc/gen_PCsrc1/out[5] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7605 f
+  gen_pc/U286/A1 (AO22D1BWP40P140)            0.0156    0.0000     1.7605 f
+  gen_pc/U286/Z (AO22D1BWP40P140)             0.0245    0.0359     1.7964 f
+  gen_pc/U48/A1 (NR2OPTPAD1BWP40P140)         0.0245    0.0000     1.7964 f
+  gen_pc/U48/ZN (NR2OPTPAD1BWP40P140)         0.0293    0.0258     1.8222 r
+  gen_pc/U66/A1 (OAI21D2BWP40P140)            0.0293    0.0000     1.8222 r
+  gen_pc/U66/ZN (OAI21D2BWP40P140)            0.0277    0.0227     1.8449 f
+  gen_pc/U300/A2 (AOI21D1BWP40P140)           0.0277    0.0000     1.8449 f
+  gen_pc/U300/ZN (AOI21D1BWP40P140)           0.0235    0.0228     1.8677 r
+  gen_pc/U104/B (OAI21D1BWP40P140)            0.0235    0.0000     1.8677 r
+  gen_pc/U104/ZN (OAI21D1BWP40P140)           0.0598    0.0466     1.9144 f
+  gen_pc/U301/I (INVD2BWP40P140)              0.0598    0.0000     1.9144 f
+  gen_pc/U301/ZN (INVD2BWP40P140)             0.0310    0.0318     1.9462 r
+  gen_pc/U198/A1 (OAI21D1BWP40P140)           0.0310    0.0000     1.9462 r
+  gen_pc/U198/ZN (OAI21D1BWP40P140)           0.0353    0.0298     1.9760 f
+  gen_pc/U318/A1 (XNR2UD1BWP40P140)           0.0353    0.0000     1.9760 f
+  gen_pc/U318/ZN (XNR2UD1BWP40P140)           0.0302    0.0307     2.0067 f
+  gen_pc/U320/A1 (IND2D1BWP40P140)            0.0302    0.0000     2.0067 f
+  gen_pc/U320/ZN (IND2D1BWP40P140)            0.0973    0.0791     2.0858 f
+  gen_pc/next_pc[14] (ysyx_22050854_pc_0)               0.0000     2.0858 f
+  U6009/A2 (NR2OPTPAD1BWP40P140)              0.0973    0.0000     2.0858 f
+  U6009/ZN (NR2OPTPAD1BWP40P140)              0.0285    0.0268     2.1125 r
+  U6010/A3 (ND3D1BWP40P140)                   0.0285    0.0000     2.1125 r
+  U6010/ZN (ND3D1BWP40P140)                   0.0413    0.0345     2.1470 f
+  U6014/A1 (NR4D1BWP40P140)                   0.0413    0.0000     2.1470 f
+  U6014/ZN (NR4D1BWP40P140)                   0.0343    0.0257     2.1727 r
+  U4041/A1 (ND3OPTPAD2BWP40P140)              0.0343    0.0000     2.1727 r
+  U4041/ZN (ND3OPTPAD2BWP40P140)              0.0278    0.0241     2.1968 f
+  U5798/A1 (NR2OPTPAD2BWP40P140)              0.0278    0.0000     2.1968 f
+  U5798/ZN (NR2OPTPAD2BWP40P140)              0.0354    0.0291     2.2259 r
+  U6019/A1 (NR2D3BWP40P140)                   0.0354    0.0000     2.2259 r
+  U6019/ZN (NR2D3BWP40P140)                   0.0173    0.0166     2.2425 f
+  U3961/B1 (IND2D2BWP40P140)                  0.0173    0.0000     2.2425 f
+  U3961/ZN (IND2D2BWP40P140)                  0.0207    0.0145     2.2570 r
+  U3960/A1 (OR2D1BWP40P140)                   0.0207    0.0000     2.2570 r
+  U3960/Z (OR2D1BWP40P140)                    0.0216    0.0335     2.2905 r
+  U3959/I (INVD3BWP40P140)                    0.0216    0.0000     2.2905 r
+  U3959/ZN (INVD3BWP40P140)                   0.0479    0.0354     2.3259 f
+  U8378/B1 (AOI22D1BWP40P140)                 0.0479    0.0000     2.3259 f
+  U8378/ZN (AOI22D1BWP40P140)                 0.0382    0.0337     2.3596 r
+  U3819/B1 (IND3D1BWP40P140)                  0.0382    0.0000     2.3596 r
+  U3819/ZN (IND3D1BWP40P140)                  0.0353    0.0324     2.3920 f
+  U8380/B (AO21D2BWP40P140)                   0.0353    0.0000     2.3920 f
+  U8380/Z (AO21D2BWP40P140)                   0.0271    0.0540     2.4460 f
+  icache_inst/index[5] (ysyx_22050854_Icache_0)         0.0000     2.4460 f
+  icache_inst/U1745/A2 (NR2D1BWP40P140)       0.0271    0.0000     2.4460 f
+  icache_inst/U1745/ZN (NR2D1BWP40P140)       0.0474    0.0395     2.4855 r
+  icache_inst/U109/A1 (ND2D1BWP40P140)        0.0474    0.0000     2.4855 r
+  icache_inst/U109/ZN (ND2D1BWP40P140)        0.0929    0.0689     2.5544 f
+  icache_inst/U1913/B1 (INR2D1BWP40P140)      0.0929    0.0000     2.5544 f
+  icache_inst/U1913/ZN (INR2D1BWP40P140)      0.0634    0.0597     2.6140 r
+  icache_inst/U93/I (INVD1BWP40P140)          0.0634    0.0000     2.6140 r
+  icache_inst/U93/ZN (INVD1BWP40P140)         0.0329    0.0318     2.6458 f
+  icache_inst/U349/I (INVD2BWP40P140)         0.0329    0.0000     2.6458 f
+  icache_inst/U349/ZN (INVD2BWP40P140)        0.0815    0.0597     2.7055 r
+  icache_inst/U3964/B1 (AOI22D1BWP40P140)     0.0815    0.0000     2.7055 r
+  icache_inst/U3964/ZN (AOI22D1BWP40P140)     0.0444    0.0397     2.7451 f
+  icache_inst/U3966/A1 (ND2D1BWP40P140)       0.0444    0.0000     2.7451 f
+  icache_inst/U3966/ZN (ND2D1BWP40P140)       0.0202    0.0181     2.7633 r
+  icache_inst/U3970/A1 (NR2D1BWP40P140)       0.0202    0.0000     2.7633 r
+  icache_inst/U3970/ZN (NR2D1BWP40P140)       0.0128    0.0123     2.7755 f
+  icache_inst/U3971/A3 (ND3D1BWP40P140)       0.0128    0.0000     2.7755 f
+  icache_inst/U3971/ZN (ND3D1BWP40P140)       0.0167    0.0151     2.7907 r
+  icache_inst/U3999/A3 (NR4D1BWP40P140)       0.0167    0.0000     2.7907 r
+  icache_inst/U3999/ZN (NR4D1BWP40P140)       0.0302    0.0246     2.8153 f
+  icache_inst/U4000/A1 (XNR2UD1BWP40P140)     0.0302    0.0000     2.8153 f
+  icache_inst/U4000/ZN (XNR2UD1BWP40P140)     0.0327    0.0291     2.8444 f
+  icache_inst/U773/A1 (NR2D1BWP40P140)        0.0327    0.0000     2.8444 f
+  icache_inst/U773/ZN (NR2D1BWP40P140)        0.0198    0.0201     2.8645 r
+  icache_inst/U4369/A1 (ND3D1BWP40P140)       0.0198    0.0000     2.8645 r
+  icache_inst/U4369/ZN (ND3D1BWP40P140)       0.0397    0.0296     2.8941 f
+  icache_inst/U4370/A4 (NR4D1BWP40P140)       0.0397    0.0000     2.8941 f
+  icache_inst/U4370/ZN (NR4D1BWP40P140)       0.0287    0.0376     2.9317 r
+  icache_inst/U199/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0287    0.0000     2.9317 r
+  icache_inst/U199/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0211    0.0166     2.9483 f
+  icache_inst/U138/A1 (INR2D2BWP40P140)       0.0211    0.0000     2.9483 f
+  icache_inst/U138/ZN (INR2D2BWP40P140)       0.0180    0.0286     2.9769 f
+  icache_inst/U357/A2 (ND2D2BWP40P140)        0.0180    0.0000     2.9769 f
+  icache_inst/U357/ZN (ND2D2BWP40P140)        0.0176    0.0148     2.9917 r
+  icache_inst/U16341/A1 (ND3OPTPAD2BWP40P140)
+                                              0.0176    0.0000     2.9917 r
+  icache_inst/U16341/ZN (ND3OPTPAD2BWP40P140)
+                                              0.0265    0.0185     3.0102 f
+  icache_inst/U126/I (BUFFD6BWP40P140)        0.0265    0.0000     3.0102 f
+  icache_inst/U126/Z (BUFFD6BWP40P140)        0.0266    0.0366     3.0468 f
+  icache_inst/U16348/B1 (OAI22D1BWP40P140)    0.0266    0.0000     3.0468 f
+  icache_inst/U16348/ZN (OAI22D1BWP40P140)    0.0287    0.0256     3.0724 r
+  icache_inst/rd_addr_reg_6_/D (DFD1BWP40P140)
+                                              0.0287    0.0000     3.0724 r
+  data arrival time                                                3.0724
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  icache_inst/rd_addr_reg_6_/CP (DFD1BWP40P140)         0.0000     3.1000 r
+  library setup time                                   -0.0273     3.0727
+  data required time                                               3.0727
+  --------------------------------------------------------------------------
+  data required time                                               3.0727
+  data arrival time                                               -3.0724
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0003
+
+
+  Startpoint: IDreg_gen0/dout_reg_23_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/rd_addr_reg_5_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  IDreg_gen0/dout_reg_23_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  IDreg_gen0/dout_reg_23_/Q (DFQD1BWP40P140)
+                                              0.0637    0.1067     0.1067 f
+  IDreg_gen0/dout[23] (ysyx_22050854_Reg_32_00000000_13)
+                                                        0.0000     0.1067 f
+  instr_decode/instr[23] (ysyx_22050854_IDU_0)          0.0000     0.1067 f
+  instr_decode/U21/I (BUFFD1BWP40P140)        0.0637    0.0000     0.1067 f
+  instr_decode/U21/Z (BUFFD1BWP40P140)        0.0273    0.0501     0.1568 f
+  instr_decode/rs2[3] (ysyx_22050854_IDU_0)             0.0000     0.1568 f
+  regfile_inst/raddrb[3] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.1568 f
+  regfile_inst/U2325/I (INVD1BWP40P140)       0.0273    0.0000     0.1568 f
+  regfile_inst/U2325/ZN (INVD1BWP40P140)      0.0152    0.0163     0.1731 r
+  regfile_inst/U37/A1 (ND2OPTIBD2BWP40P140)   0.0152    0.0000     0.1731 r
+  regfile_inst/U37/ZN (ND2OPTIBD2BWP40P140)   0.0528    0.0357     0.2087 f
+  regfile_inst/U105/A2 (NR2D1BWP40P140)       0.0528    0.0000     0.2087 f
+  regfile_inst/U105/ZN (NR2D1BWP40P140)       0.4594    0.2826     0.4913 r
+  regfile_inst/U3989/A2 (AOI22D1BWP40P140)    0.4594    0.0000     0.4913 r
+  regfile_inst/U3989/ZN (AOI22D1BWP40P140)    0.0931    0.0437     0.5350 f
+  regfile_inst/U3992/A2 (ND4D1BWP40P140)      0.0931    0.0000     0.5350 f
+  regfile_inst/U3992/ZN (ND4D1BWP40P140)      0.0315    0.0290     0.5640 r
+  regfile_inst/U4003/A2 (OR4D1BWP40P140)      0.0315    0.0000     0.5640 r
+  regfile_inst/U4003/Z (OR4D1BWP40P140)       0.0123    0.0360     0.6000 r
+  regfile_inst/rdata2[6] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.6000 r
+  U6038/A2 (AOI22D1BWP40P140)                 0.0123    0.0000     0.6000 r
+  U6038/ZN (AOI22D1BWP40P140)                 0.0732    0.0180     0.6180 f
+  U6039/C (OAI211D1BWP40P140)                 0.0732    0.0000     0.6180 f
+  U6039/ZN (OAI211D1BWP40P140)                0.0360    0.0325     0.6505 r
+  U6040/C (AOI211D1BWP40P140)                 0.0360    0.0000     0.6505 r
+  U6040/ZN (AOI211D1BWP40P140)                0.0524    0.0236     0.6742 f
+  U4098/C (OAI211D1BWP40P140LVT)              0.0524    0.0000     0.6742 f
+  U4098/ZN (OAI211D1BWP40P140LVT)             0.0488    0.0260     0.7001 r
+  gen_src/src2[6] (ysyx_22050854_src_gen_0)             0.0000     0.7001 r
+  gen_src/src2_gen/lut[138] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/lut[138] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/A1 (AO22D1BWP40P140)
+                                              0.0488    0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/Z (AO22D1BWP40P140)
+                                              0.0446    0.0562     0.7564 r
+  gen_src/src2_gen/i0/out[6] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7564 r
+  gen_src/src2_gen/out[6] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7564 r
+  gen_src/alu_src2[6] (ysyx_22050854_src_gen_0)         0.0000     0.7564 r
+  U5040/I (INVD1BWP40P140)                    0.0446    0.0000     0.7564 r
+  U5040/ZN (INVD1BWP40P140)                   0.0201    0.0196     0.7760 f
+  U5525/A1 (NR2D1BWP40P140)                   0.0201    0.0000     0.7760 f
+  U5525/ZN (NR2D1BWP40P140)                   0.0190    0.0170     0.7930 r
+  U5526/I (INVD1BWP40P140)                    0.0190    0.0000     0.7930 r
+  U5526/ZN (INVD1BWP40P140)                   0.0149    0.0145     0.8075 f
+  U4084/A1 (AOI21D1BWP40P140)                 0.0149    0.0000     0.8075 f
+  U4084/ZN (AOI21D1BWP40P140)                 0.0208    0.0181     0.8256 r
+  U5531/A1 (OAI21D1BWP40P140)                 0.0208    0.0000     0.8256 r
+  U5531/ZN (OAI21D1BWP40P140)                 0.0266    0.0210     0.8466 f
+  U4275/B (AOI21D1BWP40P140)                  0.0266    0.0000     0.8466 f
+  U4275/ZN (AOI21D1BWP40P140)                 0.0219    0.0263     0.8729 r
+  U4380/A2 (OAI21D1BWP40P140)                 0.0219    0.0000     0.8729 r
+  U4380/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     0.8957 f
+  U4076/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     0.8957 f
+  U4076/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     0.9175 r
+  U5537/A1 (OAI21D1BWP40P140)                 0.0225    0.0000     0.9175 r
+  U5537/ZN (OAI21D1BWP40P140)                 0.0255    0.0212     0.9387 f
+  U5539/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9387 f
+  U5539/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     0.9598 r
+  U5542/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     0.9598 r
+  U5542/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     0.9809 f
+  U5544/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9809 f
+  U5544/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0020 r
+  U5547/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0020 r
+  U5547/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     1.0230 f
+  U5797/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     1.0230 f
+  U5797/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0441 r
+  U4031/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0441 r
+  U4031/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.0652 f
+  U3831/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.0652 f
+  U3831/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0863 r
+  U4038/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0863 r
+  U4038/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1074 f
+  U5562/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1074 f
+  U5562/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1285 r
+  U5565/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1285 r
+  U5565/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1495 f
+  U5567/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1495 f
+  U5567/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1707 r
+  U5568/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1707 r
+  U5568/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     1.1934 f
+  U5569/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     1.1934 f
+  U5569/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     1.2153 r
+  U5571/A2 (OAI21D1BWP40P140)                 0.0225    0.0000     1.2153 r
+  U5571/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2382 f
+  U5573/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2382 f
+  U5573/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.2600 r
+  U5574/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.2600 r
+  U5574/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2830 f
+  U4381/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2830 f
+  U4381/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3048 r
+  U5577/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3048 r
+  U5577/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.3278 f
+  U5579/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3278 f
+  U5579/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3496 r
+  U5581/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3496 r
+  U5581/ZN (OAI21D1BWP40P140)                 0.0259    0.0230     1.3726 f
+  U4065/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3726 f
+  U4065/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.3938 r
+  U5596/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.3938 r
+  U5596/ZN (OAI21D1BWP40P140)                 0.0259    0.0228     1.4166 f
+  U5632/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.4166 f
+  U5632/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.4378 r
+  U5678/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.4378 r
+  U5678/ZN (OAI21D1BWP40P140)                 0.0251    0.0211     1.4589 f
+  U5681/A1 (AOI21D1BWP40P140)                 0.0251    0.0000     1.4589 f
+  U5681/ZN (AOI21D1BWP40P140)                 0.0219    0.0210     1.4799 r
+  U4039/A1 (OAI21D1BWP40P140)                 0.0219    0.0000     1.4799 r
+  U4039/ZN (OAI21D1BWP40P140)                 0.0327    0.0257     1.5055 f
+  U8379/A1 (AOI21D2BWP40P140)                 0.0327    0.0000     1.5055 f
+  U8379/ZN (AOI21D2BWP40P140)                 0.0205    0.0200     1.5255 r
+  U4055/A1 (OAI21D2BWP40P140)                 0.0205    0.0000     1.5255 r
+  U4055/ZN (OAI21D2BWP40P140)                 0.0238    0.0178     1.5434 f
+  U4047/A1 (AOI21D2BWP40P140)                 0.0238    0.0000     1.5434 f
+  U4047/ZN (AOI21D2BWP40P140)                 0.0200    0.0179     1.5613 r
+  U4051/A1 (OAI21D2BWP40P140LVT)              0.0200    0.0000     1.5613 r
+  U4051/ZN (OAI21D2BWP40P140LVT)              0.0211    0.0145     1.5758 f
+  U3829/A1 (AOI21D2BWP40P140)                 0.0211    0.0000     1.5758 f
+  U3829/ZN (AOI21D2BWP40P140)                 0.0204    0.0175     1.5932 r
+  U3828/A1 (NR2OPTPAD1BWP40P140)              0.0204    0.0000     1.5932 r
+  U3828/ZN (NR2OPTPAD1BWP40P140)              0.0172    0.0143     1.6075 f
+  U4046/B1 (OAI22OPTPBD1BWP40P140)            0.0172    0.0000     1.6075 f
+  U4046/ZN (OAI22OPTPBD1BWP40P140)            0.0263    0.0231     1.6306 r
+  gen_pc/pc_zero_less[0] (ysyx_22050854_pc_0)           0.0000     1.6306 r
+  gen_pc/gen_PC3src/key[0] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0263    0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0109     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0000     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0155    0.0133     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0155    0.0000     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0217    0.0161     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/A1 (XNR2OPTND4BWP40P140)
+                                              0.0217    0.0000     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/ZN (XNR2OPTND4BWP40P140)
+                                              0.0810    0.0436     1.7145 f
+  gen_pc/gen_PC3src/i0/out[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PC3src/out[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/A1 (INR2D1BWP40P140)
+                                              0.0810    0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/ZN (INR2D1BWP40P140)
+                                              0.0156    0.0460     1.7605 f
+  gen_pc/gen_PCsrc1/i0/out[5] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7605 f
+  gen_pc/gen_PCsrc1/out[5] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7605 f
+  gen_pc/U286/A1 (AO22D1BWP40P140)            0.0156    0.0000     1.7605 f
+  gen_pc/U286/Z (AO22D1BWP40P140)             0.0245    0.0359     1.7964 f
+  gen_pc/U48/A1 (NR2OPTPAD1BWP40P140)         0.0245    0.0000     1.7964 f
+  gen_pc/U48/ZN (NR2OPTPAD1BWP40P140)         0.0293    0.0258     1.8222 r
+  gen_pc/U66/A1 (OAI21D2BWP40P140)            0.0293    0.0000     1.8222 r
+  gen_pc/U66/ZN (OAI21D2BWP40P140)            0.0277    0.0227     1.8449 f
+  gen_pc/U300/A2 (AOI21D1BWP40P140)           0.0277    0.0000     1.8449 f
+  gen_pc/U300/ZN (AOI21D1BWP40P140)           0.0235    0.0228     1.8677 r
+  gen_pc/U104/B (OAI21D1BWP40P140)            0.0235    0.0000     1.8677 r
+  gen_pc/U104/ZN (OAI21D1BWP40P140)           0.0598    0.0466     1.9144 f
+  gen_pc/U301/I (INVD2BWP40P140)              0.0598    0.0000     1.9144 f
+  gen_pc/U301/ZN (INVD2BWP40P140)             0.0310    0.0318     1.9462 r
+  gen_pc/U198/A1 (OAI21D1BWP40P140)           0.0310    0.0000     1.9462 r
+  gen_pc/U198/ZN (OAI21D1BWP40P140)           0.0353    0.0298     1.9760 f
+  gen_pc/U318/A1 (XNR2UD1BWP40P140)           0.0353    0.0000     1.9760 f
+  gen_pc/U318/ZN (XNR2UD1BWP40P140)           0.0302    0.0307     2.0067 f
+  gen_pc/U320/A1 (IND2D1BWP40P140)            0.0302    0.0000     2.0067 f
+  gen_pc/U320/ZN (IND2D1BWP40P140)            0.0973    0.0791     2.0858 f
+  gen_pc/next_pc[14] (ysyx_22050854_pc_0)               0.0000     2.0858 f
+  U6009/A2 (NR2OPTPAD1BWP40P140)              0.0973    0.0000     2.0858 f
+  U6009/ZN (NR2OPTPAD1BWP40P140)              0.0285    0.0268     2.1125 r
+  U6010/A3 (ND3D1BWP40P140)                   0.0285    0.0000     2.1125 r
+  U6010/ZN (ND3D1BWP40P140)                   0.0413    0.0345     2.1470 f
+  U6014/A1 (NR4D1BWP40P140)                   0.0413    0.0000     2.1470 f
+  U6014/ZN (NR4D1BWP40P140)                   0.0343    0.0257     2.1727 r
+  U4041/A1 (ND3OPTPAD2BWP40P140)              0.0343    0.0000     2.1727 r
+  U4041/ZN (ND3OPTPAD2BWP40P140)              0.0278    0.0241     2.1968 f
+  U5798/A1 (NR2OPTPAD2BWP40P140)              0.0278    0.0000     2.1968 f
+  U5798/ZN (NR2OPTPAD2BWP40P140)              0.0354    0.0291     2.2259 r
+  U6019/A1 (NR2D3BWP40P140)                   0.0354    0.0000     2.2259 r
+  U6019/ZN (NR2D3BWP40P140)                   0.0173    0.0166     2.2425 f
+  U3961/B1 (IND2D2BWP40P140)                  0.0173    0.0000     2.2425 f
+  U3961/ZN (IND2D2BWP40P140)                  0.0207    0.0145     2.2570 r
+  U3960/A1 (OR2D1BWP40P140)                   0.0207    0.0000     2.2570 r
+  U3960/Z (OR2D1BWP40P140)                    0.0216    0.0335     2.2905 r
+  U3959/I (INVD3BWP40P140)                    0.0216    0.0000     2.2905 r
+  U3959/ZN (INVD3BWP40P140)                   0.0479    0.0354     2.3259 f
+  U8378/B1 (AOI22D1BWP40P140)                 0.0479    0.0000     2.3259 f
+  U8378/ZN (AOI22D1BWP40P140)                 0.0382    0.0337     2.3596 r
+  U3819/B1 (IND3D1BWP40P140)                  0.0382    0.0000     2.3596 r
+  U3819/ZN (IND3D1BWP40P140)                  0.0353    0.0324     2.3920 f
+  U8380/B (AO21D2BWP40P140)                   0.0353    0.0000     2.3920 f
+  U8380/Z (AO21D2BWP40P140)                   0.0271    0.0540     2.4460 f
+  icache_inst/index[5] (ysyx_22050854_Icache_0)         0.0000     2.4460 f
+  icache_inst/U1745/A2 (NR2D1BWP40P140)       0.0271    0.0000     2.4460 f
+  icache_inst/U1745/ZN (NR2D1BWP40P140)       0.0474    0.0395     2.4855 r
+  icache_inst/U109/A1 (ND2D1BWP40P140)        0.0474    0.0000     2.4855 r
+  icache_inst/U109/ZN (ND2D1BWP40P140)        0.0929    0.0689     2.5544 f
+  icache_inst/U1913/B1 (INR2D1BWP40P140)      0.0929    0.0000     2.5544 f
+  icache_inst/U1913/ZN (INR2D1BWP40P140)      0.0634    0.0597     2.6140 r
+  icache_inst/U93/I (INVD1BWP40P140)          0.0634    0.0000     2.6140 r
+  icache_inst/U93/ZN (INVD1BWP40P140)         0.0329    0.0318     2.6458 f
+  icache_inst/U349/I (INVD2BWP40P140)         0.0329    0.0000     2.6458 f
+  icache_inst/U349/ZN (INVD2BWP40P140)        0.0815    0.0597     2.7055 r
+  icache_inst/U3964/B1 (AOI22D1BWP40P140)     0.0815    0.0000     2.7055 r
+  icache_inst/U3964/ZN (AOI22D1BWP40P140)     0.0444    0.0397     2.7451 f
+  icache_inst/U3966/A1 (ND2D1BWP40P140)       0.0444    0.0000     2.7451 f
+  icache_inst/U3966/ZN (ND2D1BWP40P140)       0.0202    0.0181     2.7633 r
+  icache_inst/U3970/A1 (NR2D1BWP40P140)       0.0202    0.0000     2.7633 r
+  icache_inst/U3970/ZN (NR2D1BWP40P140)       0.0128    0.0123     2.7755 f
+  icache_inst/U3971/A3 (ND3D1BWP40P140)       0.0128    0.0000     2.7755 f
+  icache_inst/U3971/ZN (ND3D1BWP40P140)       0.0167    0.0151     2.7907 r
+  icache_inst/U3999/A3 (NR4D1BWP40P140)       0.0167    0.0000     2.7907 r
+  icache_inst/U3999/ZN (NR4D1BWP40P140)       0.0302    0.0246     2.8153 f
+  icache_inst/U4000/A1 (XNR2UD1BWP40P140)     0.0302    0.0000     2.8153 f
+  icache_inst/U4000/ZN (XNR2UD1BWP40P140)     0.0327    0.0291     2.8444 f
+  icache_inst/U773/A1 (NR2D1BWP40P140)        0.0327    0.0000     2.8444 f
+  icache_inst/U773/ZN (NR2D1BWP40P140)        0.0198    0.0201     2.8645 r
+  icache_inst/U4369/A1 (ND3D1BWP40P140)       0.0198    0.0000     2.8645 r
+  icache_inst/U4369/ZN (ND3D1BWP40P140)       0.0397    0.0296     2.8941 f
+  icache_inst/U4370/A4 (NR4D1BWP40P140)       0.0397    0.0000     2.8941 f
+  icache_inst/U4370/ZN (NR4D1BWP40P140)       0.0287    0.0376     2.9317 r
+  icache_inst/U199/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0287    0.0000     2.9317 r
+  icache_inst/U199/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0211    0.0166     2.9483 f
+  icache_inst/U138/A1 (INR2D2BWP40P140)       0.0211    0.0000     2.9483 f
+  icache_inst/U138/ZN (INR2D2BWP40P140)       0.0180    0.0286     2.9769 f
+  icache_inst/U357/A2 (ND2D2BWP40P140)        0.0180    0.0000     2.9769 f
+  icache_inst/U357/ZN (ND2D2BWP40P140)        0.0176    0.0148     2.9917 r
+  icache_inst/U16341/A1 (ND3OPTPAD2BWP40P140)
+                                              0.0176    0.0000     2.9917 r
+  icache_inst/U16341/ZN (ND3OPTPAD2BWP40P140)
+                                              0.0265    0.0185     3.0102 f
+  icache_inst/U126/I (BUFFD6BWP40P140)        0.0265    0.0000     3.0102 f
+  icache_inst/U126/Z (BUFFD6BWP40P140)        0.0266    0.0366     3.0468 f
+  icache_inst/U16346/B1 (OAI22D1BWP40P140)    0.0266    0.0000     3.0468 f
+  icache_inst/U16346/ZN (OAI22D1BWP40P140)    0.0287    0.0256     3.0724 r
+  icache_inst/rd_addr_reg_5_/D (DFD1BWP40P140)
+                                              0.0287    0.0000     3.0724 r
+  data arrival time                                                3.0724
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  icache_inst/rd_addr_reg_5_/CP (DFD1BWP40P140)         0.0000     3.1000 r
+  library setup time                                   -0.0273     3.0727
+  data required time                                               3.0727
+  --------------------------------------------------------------------------
+  data required time                                               3.0727
+  data arrival time                                               -3.0724
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0003
+
+
+  Startpoint: IDreg_gen0/dout_reg_23_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/rd_addr_reg_4_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  IDreg_gen0/dout_reg_23_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  IDreg_gen0/dout_reg_23_/Q (DFQD1BWP40P140)
+                                              0.0637    0.1067     0.1067 f
+  IDreg_gen0/dout[23] (ysyx_22050854_Reg_32_00000000_13)
+                                                        0.0000     0.1067 f
+  instr_decode/instr[23] (ysyx_22050854_IDU_0)          0.0000     0.1067 f
+  instr_decode/U21/I (BUFFD1BWP40P140)        0.0637    0.0000     0.1067 f
+  instr_decode/U21/Z (BUFFD1BWP40P140)        0.0273    0.0501     0.1568 f
+  instr_decode/rs2[3] (ysyx_22050854_IDU_0)             0.0000     0.1568 f
+  regfile_inst/raddrb[3] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.1568 f
+  regfile_inst/U2325/I (INVD1BWP40P140)       0.0273    0.0000     0.1568 f
+  regfile_inst/U2325/ZN (INVD1BWP40P140)      0.0152    0.0163     0.1731 r
+  regfile_inst/U37/A1 (ND2OPTIBD2BWP40P140)   0.0152    0.0000     0.1731 r
+  regfile_inst/U37/ZN (ND2OPTIBD2BWP40P140)   0.0528    0.0357     0.2087 f
+  regfile_inst/U105/A2 (NR2D1BWP40P140)       0.0528    0.0000     0.2087 f
+  regfile_inst/U105/ZN (NR2D1BWP40P140)       0.4594    0.2826     0.4913 r
+  regfile_inst/U3989/A2 (AOI22D1BWP40P140)    0.4594    0.0000     0.4913 r
+  regfile_inst/U3989/ZN (AOI22D1BWP40P140)    0.0931    0.0437     0.5350 f
+  regfile_inst/U3992/A2 (ND4D1BWP40P140)      0.0931    0.0000     0.5350 f
+  regfile_inst/U3992/ZN (ND4D1BWP40P140)      0.0315    0.0290     0.5640 r
+  regfile_inst/U4003/A2 (OR4D1BWP40P140)      0.0315    0.0000     0.5640 r
+  regfile_inst/U4003/Z (OR4D1BWP40P140)       0.0123    0.0360     0.6000 r
+  regfile_inst/rdata2[6] (ysyx_22050854_RegisterFile_0)
+                                                        0.0000     0.6000 r
+  U6038/A2 (AOI22D1BWP40P140)                 0.0123    0.0000     0.6000 r
+  U6038/ZN (AOI22D1BWP40P140)                 0.0732    0.0180     0.6180 f
+  U6039/C (OAI211D1BWP40P140)                 0.0732    0.0000     0.6180 f
+  U6039/ZN (OAI211D1BWP40P140)                0.0360    0.0325     0.6505 r
+  U6040/C (AOI211D1BWP40P140)                 0.0360    0.0000     0.6505 r
+  U6040/ZN (AOI211D1BWP40P140)                0.0524    0.0236     0.6742 f
+  U4098/C (OAI211D1BWP40P140LVT)              0.0524    0.0000     0.6742 f
+  U4098/ZN (OAI211D1BWP40P140LVT)             0.0488    0.0260     0.7001 r
+  gen_src/src2[6] (ysyx_22050854_src_gen_0)             0.0000     0.7001 r
+  gen_src/src2_gen/lut[138] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/lut[138] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/A1 (AO22D1BWP40P140)
+                                              0.0488    0.0000     0.7001 r
+  gen_src/src2_gen/i0/U14/Z (AO22D1BWP40P140)
+                                              0.0446    0.0562     0.7564 r
+  gen_src/src2_gen/i0/out[6] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.7564 r
+  gen_src/src2_gen/out[6] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.7564 r
+  gen_src/alu_src2[6] (ysyx_22050854_src_gen_0)         0.0000     0.7564 r
+  U5040/I (INVD1BWP40P140)                    0.0446    0.0000     0.7564 r
+  U5040/ZN (INVD1BWP40P140)                   0.0201    0.0196     0.7760 f
+  U5525/A1 (NR2D1BWP40P140)                   0.0201    0.0000     0.7760 f
+  U5525/ZN (NR2D1BWP40P140)                   0.0190    0.0170     0.7930 r
+  U5526/I (INVD1BWP40P140)                    0.0190    0.0000     0.7930 r
+  U5526/ZN (INVD1BWP40P140)                   0.0149    0.0145     0.8075 f
+  U4084/A1 (AOI21D1BWP40P140)                 0.0149    0.0000     0.8075 f
+  U4084/ZN (AOI21D1BWP40P140)                 0.0208    0.0181     0.8256 r
+  U5531/A1 (OAI21D1BWP40P140)                 0.0208    0.0000     0.8256 r
+  U5531/ZN (OAI21D1BWP40P140)                 0.0266    0.0210     0.8466 f
+  U4275/B (AOI21D1BWP40P140)                  0.0266    0.0000     0.8466 f
+  U4275/ZN (AOI21D1BWP40P140)                 0.0219    0.0263     0.8729 r
+  U4380/A2 (OAI21D1BWP40P140)                 0.0219    0.0000     0.8729 r
+  U4380/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     0.8957 f
+  U4076/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     0.8957 f
+  U4076/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     0.9175 r
+  U5537/A1 (OAI21D1BWP40P140)                 0.0225    0.0000     0.9175 r
+  U5537/ZN (OAI21D1BWP40P140)                 0.0255    0.0212     0.9387 f
+  U5539/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9387 f
+  U5539/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     0.9598 r
+  U5542/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     0.9598 r
+  U5542/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     0.9809 f
+  U5544/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     0.9809 f
+  U5544/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0020 r
+  U5547/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0020 r
+  U5547/ZN (OAI21D1BWP40P140)                 0.0255    0.0211     1.0230 f
+  U5797/A1 (AOI21D1BWP40P140)                 0.0255    0.0000     1.0230 f
+  U5797/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0441 r
+  U4031/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0441 r
+  U4031/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.0652 f
+  U3831/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.0652 f
+  U3831/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.0863 r
+  U4038/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.0863 r
+  U4038/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1074 f
+  U5562/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1074 f
+  U5562/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1285 r
+  U5565/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1285 r
+  U5565/ZN (OAI21D1BWP40P140)                 0.0256    0.0211     1.1495 f
+  U5567/A1 (AOI21D1BWP40P140)                 0.0256    0.0000     1.1495 f
+  U5567/ZN (AOI21D1BWP40P140)                 0.0220    0.0211     1.1707 r
+  U5568/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.1707 r
+  U5568/ZN (OAI21D1BWP40P140)                 0.0258    0.0228     1.1934 f
+  U5569/A2 (AOI21D1BWP40P140)                 0.0258    0.0000     1.1934 f
+  U5569/ZN (AOI21D1BWP40P140)                 0.0225    0.0218     1.2153 r
+  U5571/A2 (OAI21D1BWP40P140)                 0.0225    0.0000     1.2153 r
+  U5571/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2382 f
+  U5573/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2382 f
+  U5573/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.2600 r
+  U5574/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.2600 r
+  U5574/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.2830 f
+  U4381/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.2830 f
+  U4381/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3048 r
+  U5577/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3048 r
+  U5577/ZN (OAI21D1BWP40P140)                 0.0259    0.0229     1.3278 f
+  U5579/A2 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3278 f
+  U5579/ZN (AOI21D1BWP40P140)                 0.0226    0.0218     1.3496 r
+  U5581/A2 (OAI21D1BWP40P140)                 0.0226    0.0000     1.3496 r
+  U5581/ZN (OAI21D1BWP40P140)                 0.0259    0.0230     1.3726 f
+  U4065/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.3726 f
+  U4065/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.3938 r
+  U5596/A2 (OAI21D1BWP40P140)                 0.0220    0.0000     1.3938 r
+  U5596/ZN (OAI21D1BWP40P140)                 0.0259    0.0228     1.4166 f
+  U5632/A1 (AOI21D1BWP40P140)                 0.0259    0.0000     1.4166 f
+  U5632/ZN (AOI21D1BWP40P140)                 0.0220    0.0212     1.4378 r
+  U5678/A1 (OAI21D1BWP40P140)                 0.0220    0.0000     1.4378 r
+  U5678/ZN (OAI21D1BWP40P140)                 0.0251    0.0211     1.4589 f
+  U5681/A1 (AOI21D1BWP40P140)                 0.0251    0.0000     1.4589 f
+  U5681/ZN (AOI21D1BWP40P140)                 0.0219    0.0210     1.4799 r
+  U4039/A1 (OAI21D1BWP40P140)                 0.0219    0.0000     1.4799 r
+  U4039/ZN (OAI21D1BWP40P140)                 0.0327    0.0257     1.5055 f
+  U8379/A1 (AOI21D2BWP40P140)                 0.0327    0.0000     1.5055 f
+  U8379/ZN (AOI21D2BWP40P140)                 0.0205    0.0200     1.5255 r
+  U4055/A1 (OAI21D2BWP40P140)                 0.0205    0.0000     1.5255 r
+  U4055/ZN (OAI21D2BWP40P140)                 0.0238    0.0178     1.5434 f
+  U4047/A1 (AOI21D2BWP40P140)                 0.0238    0.0000     1.5434 f
+  U4047/ZN (AOI21D2BWP40P140)                 0.0200    0.0179     1.5613 r
+  U4051/A1 (OAI21D2BWP40P140LVT)              0.0200    0.0000     1.5613 r
+  U4051/ZN (OAI21D2BWP40P140LVT)              0.0211    0.0145     1.5758 f
+  U3829/A1 (AOI21D2BWP40P140)                 0.0211    0.0000     1.5758 f
+  U3829/ZN (AOI21D2BWP40P140)                 0.0204    0.0175     1.5932 r
+  U3828/A1 (NR2OPTPAD1BWP40P140)              0.0204    0.0000     1.5932 r
+  U3828/ZN (NR2OPTPAD1BWP40P140)              0.0172    0.0143     1.6075 f
+  U4046/B1 (OAI22OPTPBD1BWP40P140)            0.0172    0.0000     1.6075 f
+  U4046/ZN (OAI22OPTPBD1BWP40P140)            0.0263    0.0231     1.6306 r
+  gen_pc/pc_zero_less[0] (ysyx_22050854_pc_0)           0.0000     1.6306 r
+  gen_pc/gen_PC3src/key[0] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0263    0.0000     1.6306 r
+  gen_pc/gen_PC3src/i0/U9/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0109     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/A1 (NR2OPTPAD1BWP40P140LVT)
+                                              0.0124    0.0000     1.6416 f
+  gen_pc/gen_PC3src/i0/U3/ZN (NR2OPTPAD1BWP40P140LVT)
+                                              0.0155    0.0133     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/A1 (NR2OPTPAD2BWP40P140)
+                                              0.0155    0.0000     1.6548 r
+  gen_pc/gen_PC3src/i0/U12/ZN (NR2OPTPAD2BWP40P140)
+                                              0.0217    0.0161     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/A1 (XNR2OPTND4BWP40P140)
+                                              0.0217    0.0000     1.6709 f
+  gen_pc/gen_PC3src/i0/U11/ZN (XNR2OPTND4BWP40P140)
+                                              0.0810    0.0436     1.7145 f
+  gen_pc/gen_PC3src/i0/out[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PC3src/out[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/A1 (INR2D1BWP40P140)
+                                              0.0810    0.0000     1.7145 f
+  gen_pc/gen_PCsrc1/i0/U27/ZN (INR2D1BWP40P140)
+                                              0.0156    0.0460     1.7605 f
+  gen_pc/gen_PCsrc1/i0/out[5] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     1.7605 f
+  gen_pc/gen_PCsrc1/out[5] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     1.7605 f
+  gen_pc/U286/A1 (AO22D1BWP40P140)            0.0156    0.0000     1.7605 f
+  gen_pc/U286/Z (AO22D1BWP40P140)             0.0245    0.0359     1.7964 f
+  gen_pc/U48/A1 (NR2OPTPAD1BWP40P140)         0.0245    0.0000     1.7964 f
+  gen_pc/U48/ZN (NR2OPTPAD1BWP40P140)         0.0293    0.0258     1.8222 r
+  gen_pc/U66/A1 (OAI21D2BWP40P140)            0.0293    0.0000     1.8222 r
+  gen_pc/U66/ZN (OAI21D2BWP40P140)            0.0277    0.0227     1.8449 f
+  gen_pc/U300/A2 (AOI21D1BWP40P140)           0.0277    0.0000     1.8449 f
+  gen_pc/U300/ZN (AOI21D1BWP40P140)           0.0235    0.0228     1.8677 r
+  gen_pc/U104/B (OAI21D1BWP40P140)            0.0235    0.0000     1.8677 r
+  gen_pc/U104/ZN (OAI21D1BWP40P140)           0.0598    0.0466     1.9144 f
+  gen_pc/U301/I (INVD2BWP40P140)              0.0598    0.0000     1.9144 f
+  gen_pc/U301/ZN (INVD2BWP40P140)             0.0310    0.0318     1.9462 r
+  gen_pc/U198/A1 (OAI21D1BWP40P140)           0.0310    0.0000     1.9462 r
+  gen_pc/U198/ZN (OAI21D1BWP40P140)           0.0353    0.0298     1.9760 f
+  gen_pc/U318/A1 (XNR2UD1BWP40P140)           0.0353    0.0000     1.9760 f
+  gen_pc/U318/ZN (XNR2UD1BWP40P140)           0.0302    0.0307     2.0067 f
+  gen_pc/U320/A1 (IND2D1BWP40P140)            0.0302    0.0000     2.0067 f
+  gen_pc/U320/ZN (IND2D1BWP40P140)            0.0973    0.0791     2.0858 f
+  gen_pc/next_pc[14] (ysyx_22050854_pc_0)               0.0000     2.0858 f
+  U6009/A2 (NR2OPTPAD1BWP40P140)              0.0973    0.0000     2.0858 f
+  U6009/ZN (NR2OPTPAD1BWP40P140)              0.0285    0.0268     2.1125 r
+  U6010/A3 (ND3D1BWP40P140)                   0.0285    0.0000     2.1125 r
+  U6010/ZN (ND3D1BWP40P140)                   0.0413    0.0345     2.1470 f
+  U6014/A1 (NR4D1BWP40P140)                   0.0413    0.0000     2.1470 f
+  U6014/ZN (NR4D1BWP40P140)                   0.0343    0.0257     2.1727 r
+  U4041/A1 (ND3OPTPAD2BWP40P140)              0.0343    0.0000     2.1727 r
+  U4041/ZN (ND3OPTPAD2BWP40P140)              0.0278    0.0241     2.1968 f
+  U5798/A1 (NR2OPTPAD2BWP40P140)              0.0278    0.0000     2.1968 f
+  U5798/ZN (NR2OPTPAD2BWP40P140)              0.0354    0.0291     2.2259 r
+  U6019/A1 (NR2D3BWP40P140)                   0.0354    0.0000     2.2259 r
+  U6019/ZN (NR2D3BWP40P140)                   0.0173    0.0166     2.2425 f
+  U3961/B1 (IND2D2BWP40P140)                  0.0173    0.0000     2.2425 f
+  U3961/ZN (IND2D2BWP40P140)                  0.0207    0.0145     2.2570 r
+  U3960/A1 (OR2D1BWP40P140)                   0.0207    0.0000     2.2570 r
+  U3960/Z (OR2D1BWP40P140)                    0.0216    0.0335     2.2905 r
+  U3959/I (INVD3BWP40P140)                    0.0216    0.0000     2.2905 r
+  U3959/ZN (INVD3BWP40P140)                   0.0479    0.0354     2.3259 f
+  U8378/B1 (AOI22D1BWP40P140)                 0.0479    0.0000     2.3259 f
+  U8378/ZN (AOI22D1BWP40P140)                 0.0382    0.0337     2.3596 r
+  U3819/B1 (IND3D1BWP40P140)                  0.0382    0.0000     2.3596 r
+  U3819/ZN (IND3D1BWP40P140)                  0.0353    0.0324     2.3920 f
+  U8380/B (AO21D2BWP40P140)                   0.0353    0.0000     2.3920 f
+  U8380/Z (AO21D2BWP40P140)                   0.0271    0.0540     2.4460 f
+  icache_inst/index[5] (ysyx_22050854_Icache_0)         0.0000     2.4460 f
+  icache_inst/U1745/A2 (NR2D1BWP40P140)       0.0271    0.0000     2.4460 f
+  icache_inst/U1745/ZN (NR2D1BWP40P140)       0.0474    0.0395     2.4855 r
+  icache_inst/U109/A1 (ND2D1BWP40P140)        0.0474    0.0000     2.4855 r
+  icache_inst/U109/ZN (ND2D1BWP40P140)        0.0929    0.0689     2.5544 f
+  icache_inst/U1913/B1 (INR2D1BWP40P140)      0.0929    0.0000     2.5544 f
+  icache_inst/U1913/ZN (INR2D1BWP40P140)      0.0634    0.0597     2.6140 r
+  icache_inst/U93/I (INVD1BWP40P140)          0.0634    0.0000     2.6140 r
+  icache_inst/U93/ZN (INVD1BWP40P140)         0.0329    0.0318     2.6458 f
+  icache_inst/U349/I (INVD2BWP40P140)         0.0329    0.0000     2.6458 f
+  icache_inst/U349/ZN (INVD2BWP40P140)        0.0815    0.0597     2.7055 r
+  icache_inst/U3964/B1 (AOI22D1BWP40P140)     0.0815    0.0000     2.7055 r
+  icache_inst/U3964/ZN (AOI22D1BWP40P140)     0.0444    0.0397     2.7451 f
+  icache_inst/U3966/A1 (ND2D1BWP40P140)       0.0444    0.0000     2.7451 f
+  icache_inst/U3966/ZN (ND2D1BWP40P140)       0.0202    0.0181     2.7633 r
+  icache_inst/U3970/A1 (NR2D1BWP40P140)       0.0202    0.0000     2.7633 r
+  icache_inst/U3970/ZN (NR2D1BWP40P140)       0.0128    0.0123     2.7755 f
+  icache_inst/U3971/A3 (ND3D1BWP40P140)       0.0128    0.0000     2.7755 f
+  icache_inst/U3971/ZN (ND3D1BWP40P140)       0.0167    0.0151     2.7907 r
+  icache_inst/U3999/A3 (NR4D1BWP40P140)       0.0167    0.0000     2.7907 r
+  icache_inst/U3999/ZN (NR4D1BWP40P140)       0.0302    0.0246     2.8153 f
+  icache_inst/U4000/A1 (XNR2UD1BWP40P140)     0.0302    0.0000     2.8153 f
+  icache_inst/U4000/ZN (XNR2UD1BWP40P140)     0.0327    0.0291     2.8444 f
+  icache_inst/U773/A1 (NR2D1BWP40P140)        0.0327    0.0000     2.8444 f
+  icache_inst/U773/ZN (NR2D1BWP40P140)        0.0198    0.0201     2.8645 r
+  icache_inst/U4369/A1 (ND3D1BWP40P140)       0.0198    0.0000     2.8645 r
+  icache_inst/U4369/ZN (ND3D1BWP40P140)       0.0397    0.0296     2.8941 f
+  icache_inst/U4370/A4 (NR4D1BWP40P140)       0.0397    0.0000     2.8941 f
+  icache_inst/U4370/ZN (NR4D1BWP40P140)       0.0287    0.0376     2.9317 r
+  icache_inst/U199/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0287    0.0000     2.9317 r
+  icache_inst/U199/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0211    0.0166     2.9483 f
+  icache_inst/U138/A1 (INR2D2BWP40P140)       0.0211    0.0000     2.9483 f
+  icache_inst/U138/ZN (INR2D2BWP40P140)       0.0180    0.0286     2.9769 f
+  icache_inst/U357/A2 (ND2D2BWP40P140)        0.0180    0.0000     2.9769 f
+  icache_inst/U357/ZN (ND2D2BWP40P140)        0.0176    0.0148     2.9917 r
+  icache_inst/U16341/A1 (ND3OPTPAD2BWP40P140)
+                                              0.0176    0.0000     2.9917 r
+  icache_inst/U16341/ZN (ND3OPTPAD2BWP40P140)
+                                              0.0265    0.0185     3.0102 f
+  icache_inst/U126/I (BUFFD6BWP40P140)        0.0265    0.0000     3.0102 f
+  icache_inst/U126/Z (BUFFD6BWP40P140)        0.0266    0.0366     3.0468 f
+  icache_inst/U16343/B1 (OAI22D1BWP40P140)    0.0266    0.0000     3.0468 f
+  icache_inst/U16343/ZN (OAI22D1BWP40P140)    0.0287    0.0256     3.0724 r
+  icache_inst/rd_addr_reg_4_/D (DFD1BWP40P140)
+                                              0.0287    0.0000     3.0724 r
+  data arrival time                                                3.0724
+
+  clock CLK_clock (rise edge)                           3.2500     3.2500
+  clock network delay (ideal)                           0.0000     3.2500
+  clock uncertainty                                    -0.1500     3.1000
+  icache_inst/rd_addr_reg_4_/CP (DFD1BWP40P140)         0.0000     3.1000 r
+  library setup time                                   -0.0273     3.0727
+  data required time                                               3.0727
+  --------------------------------------------------------------------------
+  data required time                                               3.0727
+  data arrival time                                               -3.0724
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0003
+
+
+1
