@@ -1,0 +1,1892 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22050854
+freq: 600
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+87725.9  87725.9  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total   std     mem  ipio  sub_harden
+100871  100871  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+74.27  25.73 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns     tns       num
+CLK_clock  600.0     923.1      -0.341  -348.370  1842 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22050854
+Version: R-2020.09-SP3a
+Date   : Mon May 13 22:41:37 2024
+****************************************
+
+Number of ports:                        34168
+Number of nets:                        132528
+Number of cells:                       117993
+Number of combinational cells:          81318
+Number of sequential cells:             19553
+Number of macros/black boxes:               0
+Number of buf/inv:                      18585
+Number of references:                     336
+
+Combinational area:              49854.293831
+Buf/Inv area:                     6139.980067
+Noncombinational area:           37871.567563
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 87725.861393
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ------------------------------------------------------------------------
+ysyx_22050854                     87725.8614    100.0   4923.7020   1270.9620  0.0000  ysyx_22050854
+CSR_gprRd_gen                         4.4100      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY3_KEY_LEN10_DATA_LEN1_0
+CSR_gprRd_gen/i0                      4.4100      0.0      4.4100      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN10_DATA_LEN1_HAS_DEFAULT0_0
+CSRfile_inst                       1993.6980      2.3    861.4620   1096.8300  0.0000  ysyx_22050854_CSRegister_0
+CSRfile_inst/gen_csr_raddr           14.2380      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY8_KEY_LEN12_DATA_LEN4_4
+CSRfile_inst/gen_csr_raddr/i0        14.2380      0.0     14.2380      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN12_DATA_LEN4_HAS_DEFAULT1_4
+CSRfile_inst/gen_csraddr1            10.5840      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY8_KEY_LEN12_DATA_LEN4_3
+CSRfile_inst/gen_csraddr1/i0         10.5840      0.0     10.5840      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN12_DATA_LEN4_HAS_DEFAULT1_3
+CSRfile_inst/gen_csraddr2            10.5840      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY8_KEY_LEN12_DATA_LEN4_5
+CSRfile_inst/gen_csraddr2/i0         10.5840      0.0     10.5840      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN12_DATA_LEN4_HAS_DEFAULT1_5
+EXEreg_gen0                           2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_26
+EXEreg_gen1                         204.2460      0.2     59.0940    145.1520  0.0000  ysyx_22050854_Reg_64_0000000000000000_14
+EXEreg_gen10                          9.0720      0.0      3.4020      5.6700  0.0000  ysyx_22050854_Reg_3_0_9
+EXEreg_gen11                          3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050854_Reg_1_0_27
+EXEreg_gen13                          3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050854_Reg_1_0_36
+EXEreg_gen14                          3.0240      0.0      1.1340      1.8900  0.0000  ysyx_22050854_Reg_1_0_33
+EXEreg_gen2                         207.1440      0.2     60.6060    146.5380  0.0000  ysyx_22050854_Reg_64_0000000000000000_15
+EXEreg_gen20                          3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050854_Reg_1_0_41
+EXEreg_gen21                        178.7940      0.2     57.8340    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_16
+EXEreg_gen22                          3.4020      0.0      1.2600      2.1420  0.0000  ysyx_22050854_Reg_1_0_47
+EXEreg_gen23                        195.1740      0.2     58.0860    137.0880  0.0000  ysyx_22050854_Reg_64_0000000000000000_17
+EXEreg_gen24                          2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_32
+EXEreg_gen3                          14.8680      0.0      5.7960      9.0720  0.0000  ysyx_22050854_Reg_4_f_0
+EXEreg_gen4                          11.8440      0.0      4.2840      7.5600  0.0000  ysyx_22050854_Reg_4_0_2
+EXEreg_gen5                           9.5760      0.0      3.5280      6.0480  0.0000  ysyx_22050854_Reg_3_0_6
+EXEreg_gen6                           3.1500      0.0      1.2600      1.8900  0.0000  ysyx_22050854_Reg_1_0_40
+EXEreg_gen7                          16.5060      0.0      5.1660     11.3400  0.0000  ysyx_22050854_Reg_5_00_3
+EXEreg_gen9                           3.5280      0.0      1.2600      2.2680  0.0000  ysyx_22050854_Reg_1_0_46
+EXEreg_genPC                         89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_14
+EXEreg_geninst                       89.4600      0.1     28.9800     60.4800  0.0000  ysyx_22050854_Reg_32_00000000_16
+GEN_AXI_signal                      503.3700      0.6    178.1640     91.6020  0.0000  ysyx_22050854_AXI_arbiter_0
+GEN_AXI_signal/Inst_Double_is_Device
+                                      3.4020      0.0      1.2600      2.1420  0.0000  ysyx_22050854_Reg_1_0_29
+GEN_AXI_signal/Inst_Reg_Device_arsize
+                                      7.0560      0.0      2.7720      4.2840  0.0000  ysyx_22050854_Reg_3_0_8
+GEN_AXI_signal/Inst_Reg_addr_DoubleRequest
+                                     99.5400      0.1     30.9960     68.5440  0.0000  ysyx_22050854_Reg_32_00000000_20
+GEN_AXI_signal/Inst_SecondRequest_addr
+                                     96.0120      0.1     34.2720     61.7400  0.0000  ysyx_22050854_Reg_32_00000000_17
+GEN_AXI_signal/Inst_SecondRequest_arid
+                                     13.2300      0.0      4.6620      8.5680  0.0000  ysyx_22050854_Reg_4_0_3
+GEN_AXI_signal/Inst_SecondRequest_arlen
+                                      3.6540      0.0      1.5120      2.1420  0.0000  ysyx_22050854_Reg_8_00_0
+GEN_AXI_signal/Inst_SecondRequest_arsize
+                                      7.0560      0.0      2.7720      4.2840  0.0000  ysyx_22050854_Reg_3_0_7
+GEN_AXI_signal/Inst_SecondRequest_burst
+                                      3.6540      0.0      1.5120      2.1420  0.0000  ysyx_22050854_Reg_2_0_0
+IDreg_gen0                          101.1780      0.1     30.1140     71.0640  0.0000  ysyx_22050854_Reg_32_00000000_22
+Inst_Reg0                            94.3740      0.1     30.1140     64.2600  0.0000  ysyx_22050854_Reg_32_00000000_18
+Inst_Reg2                            93.8700      0.1     29.6100     64.2600  0.0000  ysyx_22050854_Reg_32_00000000_21
+Inst_Reg4                            93.7440      0.1     29.6100     64.1340  0.0000  ysyx_22050854_Reg_32_00000000_19
+Inst_Reg5                            90.4680      0.1     29.4840     60.9840  0.0000  ysyx_22050854_Reg_32_00000000_15
+Inst_Reg6                            90.8460      0.1     29.8620     60.9840  0.0000  ysyx_22050854_Reg_32_00000000_13
+MEMreg_gen0                           2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_28
+MEMreg_gen1                         154.7280      0.2     32.6340    122.0940  0.0000  ysyx_22050854_Reg_64_0000000000000000_18
+MEMreg_gen10                          2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_35
+MEMreg_gen11                        153.5940      0.2     32.6340    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_20
+MEMreg_gen2                           2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_31
+MEMreg_gen3                          13.8600      0.0      2.5200     11.3400  0.0000  ysyx_22050854_Reg_5_00_4
+MEMreg_gen5                           2.7720      0.0      0.5040      2.2680  0.0000  ysyx_22050854_Reg_1_0_50
+MEMreg_gen6                           7.9380      0.0      1.5120      6.4260  0.0000  ysyx_22050854_Reg_3_0_5
+MEMreg_gen7                           2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_51
+MEMreg_gen8                           2.7720      0.0      0.5040      2.2680  0.0000  ysyx_22050854_Reg_1_0_43
+MEMreg_gen9                         153.5940      0.2     32.6340    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_19
+MEMreg_geninst                       64.7640      0.1      0.2520     64.5120  0.0000  ysyx_22050854_Reg_32_00000000_23
+WBreg_gen0                            2.7720      0.0      0.2520      2.5200  0.0000  ysyx_22050854_Reg_1_0_30
+WBreg_gen1                          153.9720      0.2     33.0120    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_12
+WBreg_gen10                         153.5940      0.2     32.6340    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_11
+WBreg_gen2                            2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_34
+WBreg_gen3                           13.8600      0.0      2.5200     11.3400  0.0000  ysyx_22050854_Reg_5_00_5
+WBreg_gen4                          153.5940      0.2     32.6340    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_21
+WBreg_gen5                            2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_44
+WBreg_gen6                            2.3940      0.0      0.5040      1.8900  0.0000  ysyx_22050854_Reg_1_0_42
+WBreg_gen7                            2.7720      0.0      0.5040      2.2680  0.0000  ysyx_22050854_Reg_1_0_49
+WBreg_gen8                          153.2160      0.2     32.2560    120.9600  0.0000  ysyx_22050854_Reg_64_0000000000000000_13
+WBreg_gen9                            2.7720      0.0      0.5040      2.2680  0.0000  ysyx_22050854_Reg_1_0_48
+WBreg_geninst                        77.3640      0.1     16.5060     60.8580  0.0000  ysyx_22050854_Reg_32_00000000_12
+alu1                               9203.1660     10.5   2674.2240      0.0000  0.0000  ysyx_22050854_alu_0
+alu1/gen_alu_out                    376.6140      0.4      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY8_KEY_LEN3_DATA_LEN64_0
+alu1/gen_alu_out/i0                 376.6140      0.4    376.6140      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY8_KEY_LEN3_DATA_LEN64_HAS_DEFAULT0_0
+alu1/gen_alu_temp                   423.9900      0.5      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN4_DATA_LEN64_0
+alu1/gen_alu_temp/i0                423.9900      0.5    423.9900      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN4_DATA_LEN64_HAS_DEFAULT1_0
+alu1/gen_alu_temp_32                 59.3460      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY3_KEY_LEN4_DATA_LEN32_0
+alu1/gen_alu_temp_32/i0              59.3460      0.1     59.3460      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN4_DATA_LEN32_HAS_DEFAULT0_0
+alu1/gen_mul_signed                   2.5200      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY5_KEY_LEN4_DATA_LEN2_0
+alu1/gen_mul_signed/i0                2.5200      0.0      2.5200      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY5_KEY_LEN4_DATA_LEN2_HAS_DEFAULT0_0
+alu1/gen_op_mul                       1.5120      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY5_KEY_LEN4_DATA_LEN1_0
+alu1/gen_op_mul/i0                    1.5120      0.0      1.5120      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY5_KEY_LEN4_DATA_LEN1_HAS_DEFAULT0_0
+alu1/shift_divider_1               3415.8600      3.9   2421.8460    994.0140  0.0000  ysyx_22050854_divider_1_0
+alu1/shiftadd_multiplier           2249.1000      2.6   1498.3920    750.7080  0.0000  ysyx_22050854_multiplier_v1_0
+csrwdata_gen                        119.1960      0.1      0.7560      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY6_KEY_LEN10_DATA_LEN64_0
+csrwdata_gen/i0                     118.4400      0.1    118.4400      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY6_KEY_LEN10_DATA_LEN64_HAS_DEFAULT0_0
+csrwr_t_gen                           2.0160      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY6_KEY_LEN10_DATA_LEN1_0
+csrwr_t_gen/i0                        2.0160      0.0      2.0160      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY6_KEY_LEN10_DATA_LEN1_HAS_DEFAULT0_0
+data_cache_inst                   31460.8137     35.9  16203.5999  15257.2138  0.0000  ysyx_22050854_Dcache_0
+gen_Dcache_wr_wstb                    2.2680      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN3_DATA_LEN8_0
+gen_Dcache_wr_wstb/i0                 2.2680      0.0      2.2680      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN3_DATA_LEN8_HAS_DEFAULT0_0
+gen_awsize                            1.0080      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN3_DATA_LEN3_0
+gen_awsize/i0                         1.0080      0.0      1.0080      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN3_DATA_LEN3_HAS_DEFAULT0_0
+gen_device_data_32                   33.6420      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN8_DATA_LEN32_0
+gen_device_data_32/i0                33.6420      0.0     33.6420      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN8_DATA_LEN32_HAS_DEFAULT0_0
+gen_imm                              51.7860      0.1      0.0000      0.0000  0.0000  ysyx_22050854_imm_gen_0
+gen_imm/imm_gen                      51.7860      0.1      0.3780      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY6_KEY_LEN3_DATA_LEN64_0
+gen_imm/imm_gen/i0                   51.4080      0.1     51.4080      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY6_KEY_LEN3_DATA_LEN64_HAS_DEFAULT1_0
+gen_pc                              848.1060      1.0    652.9320     64.0080  0.0000  ysyx_22050854_pc_0
+gen_pc/gen_PC3src                    24.9480      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0
+gen_pc/gen_PC3src/i0                 24.9480      0.0     24.9480      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0
+gen_pc/gen_PCsrc1                    73.9620      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2
+gen_pc/gen_PCsrc1/i0                 73.9620      0.1     73.9620      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2
+gen_pc/gen_PCsrc2                    32.2560      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_3
+gen_pc/gen_PCsrc2/i0                 32.2560      0.0     32.2560      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_3
+gen_read_mem_data                   545.9580      0.6      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0
+gen_read_mem_data/i0                545.9580      0.6    545.9580      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0
+gen_real_storememdata_right          33.8940      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY4_KEY_LEN3_DATA_LEN64_0
+gen_real_storememdata_right/i0       33.8940      0.0     33.8940      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY4_KEY_LEN3_DATA_LEN64_HAS_DEFAULT0_0
+gen_src                             299.3760      0.3      0.0000      0.0000  0.0000  ysyx_22050854_src_gen_0
+gen_src/src1_gen                    128.3940      0.1      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY2_KEY_LEN1_DATA_LEN64_0
+gen_src/src1_gen/i0                 128.3940      0.1    128.3940      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN64_HAS_DEFAULT1_0
+gen_src/src2_gen                    170.9820      0.2      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0
+gen_src/src2_gen/i0                 170.9820      0.2    170.9820      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0
+icache_inst                       25792.7037     29.4  13500.5219  12292.1819  0.0000  ysyx_22050854_Icache_0
+instr_decode                        137.2140      0.2     44.1000      0.0000  0.0000  ysyx_22050854_IDU_0
+instr_decode/ALUctr_gen              26.4600      0.0      1.5120      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY119_KEY_LEN9_DATA_LEN4_0
+instr_decode/ALUctr_gen/i0           24.9480      0.0     24.9480      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY119_KEY_LEN9_DATA_LEN4_HAS_DEFAULT1_0
+instr_decode/ALUext_gen              12.6000      0.0      0.3780      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY35_KEY_LEN10_DATA_LEN3_0
+instr_decode/ALUext_gen/i0           12.2220      0.0     12.2220      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY35_KEY_LEN10_DATA_LEN3_HAS_DEFAULT0_0
+instr_decode/ALUsrc1_gen              7.8120      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN5_DATA_LEN1_0
+instr_decode/ALUsrc1_gen/i0           7.8120      0.0      7.8120      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN5_DATA_LEN1_HAS_DEFAULT1_0
+instr_decode/ALUsrc2_gen              7.4340      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN5_DATA_LEN2_0
+instr_decode/ALUsrc2_gen/i0           7.4340      0.0      7.4340      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN5_DATA_LEN2_HAS_DEFAULT1_0
+instr_decode/Branch_gen               7.3080      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKey_NR_KEY22_KEY_LEN8_DATA_LEN3_0
+instr_decode/Branch_gen/i0            7.3080      0.0      7.3080      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY22_KEY_LEN8_DATA_LEN3_HAS_DEFAULT0_0
+instr_decode/ExtOP_gen               13.2300      0.0      0.3780      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY9_KEY_LEN5_DATA_LEN3_0
+instr_decode/ExtOP_gen/i0            12.8520      0.0     12.8520      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY9_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0
+instr_decode/MemOP_gen                2.7720      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN8_DATA_LEN3_0
+instr_decode/MemOP_gen/i0             2.7720      0.0      2.7720      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN8_DATA_LEN3_HAS_DEFAULT1_0
+instr_decode/No_branch_gen            5.2920      0.0      0.7560      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY11_KEY_LEN7_DATA_LEN1_0
+instr_decode/No_branch_gen/i0         4.5360      0.0      4.5360      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY11_KEY_LEN7_DATA_LEN1_HAS_DEFAULT1_0
+instr_decode/RegWr_gen                4.1580      0.0      0.0000      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY13_KEY_LEN7_DATA_LEN1_0
+instr_decode/RegWr_gen/i0             4.1580      0.0      4.1580      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY13_KEY_LEN7_DATA_LEN1_HAS_DEFAULT1_0
+instr_decode/gen_64M_ctr              6.0480      0.0      0.7560      0.0000  0.0000  ysyx_22050854_MuxKeyWithDefault_NR_KEY13_KEY_LEN9_DATA_LEN4_0
+instr_decode/gen_64M_ctr/i0           5.2920      0.0      5.2920      0.0000  0.0000  ysyx_22050854_MuxKeyInternal_NR_KEY13_KEY_LEN9_DATA_LEN4_HAS_DEFAULT1_0
+jumpandblock                          2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_39
+record_lastSuspend                    2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_45
+record_last_Suspend_IFU               2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_38
+record_last_Suspend_LSU               2.2680      0.0      0.2520      2.0160  0.0000  ysyx_22050854_Reg_1_0_37
+regfile_inst                       7587.2160      8.6   3836.3220   3750.8940  0.0000  ysyx_22050854_RegisterFile_0
+--------------------------------  ----------  -------  ----------  ----------  ------  ------------------------------------------------------------------------
+Total                                                  49854.2938  37871.5676  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22050854
+Version: R-2020.09-SP3a
+Date   : Mon May 13 22:41:28 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: data_cache_inst/state_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/rd_addr_reg_17_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data_cache_inst/state_reg_6_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  data_cache_inst/state_reg_6_/Q (DFQD4BWP40P140LVT)
+                                              0.0120    0.0558     0.0558 f
+  data_cache_inst/U4985/A2 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0120    0.0000     0.0558 f
+  data_cache_inst/U4985/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0128    0.0123     0.0681 r
+  data_cache_inst/U5065/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0128    0.0000     0.0681 r
+  data_cache_inst/U5065/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0236    0.0172     0.0853 f
+  data_cache_inst/U5063/A2 (NR3D8BWP40P140LVT)
+                                              0.0236    0.0000     0.0853 f
+  data_cache_inst/U5063/ZN (NR3D8BWP40P140LVT)
+                                              0.0226    0.0212     0.1065 r
+  data_cache_inst/U4990/I (INVD16BWP40P140LVT)
+                                              0.0226    0.0000     0.1065 r
+  data_cache_inst/U4990/ZN (INVD16BWP40P140LVT)
+                                              0.0175    0.0150     0.1215 f
+  data_cache_inst/U26581/I (INVD18BWP40P140LVT)
+                                              0.0175    0.0000     0.1215 f
+  data_cache_inst/U26581/ZN (INVD18BWP40P140LVT)
+                                              0.0127    0.0118     0.1333 r
+  data_cache_inst/U4840/I (INVD16BWP40P140LVT)
+                                              0.0127    0.0000     0.1333 r
+  data_cache_inst/U4840/ZN (INVD16BWP40P140LVT)
+                                              0.0079    0.0070     0.1403 f
+  data_cache_inst/U4870/A1 (ND2D16BWP40P140LVT)
+                                              0.0079    0.0000     0.1403 f
+  data_cache_inst/U4870/ZN (ND2D16BWP40P140LVT)
+                                              0.0149    0.0095     0.1499 r
+  data_cache_inst/U4825/I (INVD12BWP40P140LVT)
+                                              0.0149    0.0000     0.1499 r
+  data_cache_inst/U4825/ZN (INVD12BWP40P140LVT)
+                                              0.0082    0.0071     0.1570 f
+  data_cache_inst/U4909/A1 (ND2OPTPAD6BWP40P140LVT)
+                                              0.0082    0.0000     0.1570 f
+  data_cache_inst/U4909/ZN (ND2OPTPAD6BWP40P140LVT)
+                                              0.0415    0.0072     0.1642 r
+  data_cache_inst/U26251/A2 (ND2OPTPAD4BWP40P140LVT)
+                                              0.0415    0.0000     0.1642 r
+  data_cache_inst/U26251/ZN (ND2OPTPAD4BWP40P140LVT)
+                                              0.0125    0.0091     0.1733 f
+  data_cache_inst/U26501/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0125    0.0000     0.1733 f
+  data_cache_inst/U26501/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0117    0.0108     0.1841 r
+  data_cache_inst/U26500/A1 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0117    0.0000     0.1841 r
+  data_cache_inst/U26500/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0208    0.0136     0.1977 f
+  data_cache_inst/rdata_15_ (ysyx_22050854_Dcache_0)    0.0000     0.1977 f
+  U4850/A1 (ND2D2BWP40P140LVT)                0.0208    0.0000     0.1977 f
+  U4850/ZN (ND2D2BWP40P140LVT)                0.0183    0.0120     0.2096 r
+  U11417/A1 (ND2OPTPAD4BWP40P140LVT)          0.0183    0.0000     0.2096 r
+  U11417/ZN (ND2OPTPAD4BWP40P140LVT)          0.0174    0.0142     0.2238 f
+  gen_read_mem_data/lut[2317] (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.2238 f
+  gen_read_mem_data/i0/lut[2317] (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.2238 f
+  gen_read_mem_data/i0/U518/A1 (ND2D4BWP40P140LVT)
+                                              0.0174    0.0000     0.2238 f
+  gen_read_mem_data/i0/U518/ZN (ND2D4BWP40P140LVT)
+                                              0.0128    0.0104     0.2342 r
+  gen_read_mem_data/i0/U463/A2 (ND3OPTPAD6BWP40P140LVT)
+                                              0.0128    0.0000     0.2342 r
+  gen_read_mem_data/i0/U463/ZN (ND3OPTPAD6BWP40P140LVT)
+                                              0.0224    0.0187     0.2529 f
+  gen_read_mem_data/i0/U221/A1 (NR2OPTPAD8BWP40P140LVT)
+                                              0.0224    0.0000     0.2529 f
+  gen_read_mem_data/i0/U221/ZN (NR2OPTPAD8BWP40P140LVT)
+                                              0.0150    0.0135     0.2665 r
+  gen_read_mem_data/i0/U227/A1 (ND2OPTPAD12BWP40P140LVT)
+                                              0.0150    0.0000     0.2665 r
+  gen_read_mem_data/i0/U227/ZN (ND2OPTPAD12BWP40P140LVT)
+                                              0.0181    0.0145     0.2809 f
+  gen_read_mem_data/i0/U271/I (INVD12BWP40P140LVT)
+                                              0.0181    0.0000     0.2809 f
+  gen_read_mem_data/i0/U271/ZN (INVD12BWP40P140LVT)
+                                              0.0117    0.0109     0.2918 r
+  gen_read_mem_data/i0/U245/A1 (INR2D16BWP40P140LVT)
+                                              0.0117    0.0000     0.2918 r
+  gen_read_mem_data/i0/U245/ZN (INR2D16BWP40P140LVT)
+                                              0.0227    0.0310     0.3228 r
+  gen_read_mem_data/i0/U213/I (INVD18BWP40P140LVT)
+                                              0.0227    0.0000     0.3228 r
+  gen_read_mem_data/i0/U213/ZN (INVD18BWP40P140LVT)
+                                              0.0128    0.0110     0.3337 f
+  gen_read_mem_data/i0/U228/I (INVD18BWP40P140LVT)
+                                              0.0128    0.0000     0.3337 f
+  gen_read_mem_data/i0/U228/ZN (INVD18BWP40P140LVT)
+                                              0.0082    0.0077     0.3415 r
+  gen_read_mem_data/i0/U374/I (INVD18BWP40P140LVT)
+                                              0.0082    0.0000     0.3415 r
+  gen_read_mem_data/i0/U374/ZN (INVD18BWP40P140LVT)
+                                              0.0105    0.0087     0.3501 f
+  gen_read_mem_data/i0/U491/B1 (INR2D16BWP40P140LVT)
+                                              0.0105    0.0000     0.3501 f
+  gen_read_mem_data/i0/U491/ZN (INR2D16BWP40P140LVT)
+                                              0.0125    0.0102     0.3603 r
+  gen_read_mem_data/i0/out_36__BAR (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.3603 r
+  gen_read_mem_data/out_36__BAR (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.3603 r
+  U11331/I (INVD6BWP40P140LVT)                0.0125    0.0000     0.3603 r
+  U11331/ZN (INVD6BWP40P140LVT)               0.0069    0.0062     0.3665 f
+  U4844/A1 (ND2D4BWP40P140LVT)                0.0069    0.0000     0.3665 f
+  U4844/ZN (ND2D4BWP40P140LVT)                0.0133    0.0063     0.3728 r
+  U10864/A1 (ND2OPTPAD4BWP40P140LVT)          0.0133    0.0000     0.3728 r
+  U10864/ZN (ND2OPTPAD4BWP40P140LVT)          0.0105    0.0092     0.3820 f
+  gen_src/src2[36] (ysyx_22050854_src_gen_0)            0.0000     0.3820 f
+  gen_src/src2_gen/lut[168] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.3820 f
+  gen_src/src2_gen/i0/lut[168] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.3820 f
+  gen_src/src2_gen/i0/U150/A1 (AO21D4BWP40P140LVT)
+                                              0.0105    0.0000     0.3820 f
+  gen_src/src2_gen/i0/U150/Z (AO21D4BWP40P140LVT)
+                                              0.0217    0.0303     0.4122 f
+  gen_src/src2_gen/i0/out[36] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.4122 f
+  gen_src/src2_gen/out[36] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.4122 f
+  gen_src/alu_src2[36] (ysyx_22050854_src_gen_0)        0.0000     0.4122 f
+  U11281/A1 (ND2D6BWP40P140LVT)               0.0217    0.0000     0.4122 f
+  U11281/ZN (ND2D6BWP40P140LVT)               0.0103    0.0097     0.4219 r
+  U10914/A1 (ND3OPTPAD6BWP40P140LVT)          0.0103    0.0000     0.4219 r
+  U10914/ZN (ND3OPTPAD6BWP40P140LVT)          0.0200    0.0147     0.4366 f
+  U8798/A2 (NR2OPTPAD4BWP40P140LVT)           0.0200    0.0000     0.4366 f
+  U8798/ZN (NR2OPTPAD4BWP40P140LVT)           0.0101    0.0111     0.4477 r
+  U11327/A1 (ND3OPTPAD4BWP40P140LVT)          0.0101    0.0000     0.4477 r
+  U11327/ZN (ND3OPTPAD4BWP40P140LVT)          0.0217    0.0155     0.4632 f
+  U11181/A1 (NR2OPTPAD2BWP40P140LVT)          0.0217    0.0000     0.4632 f
+  U11181/ZN (NR2OPTPAD2BWP40P140LVT)          0.0119    0.0111     0.4743 r
+  U11565/A1 (AOI21D2BWP40P140LVT)             0.0119    0.0000     0.4743 r
+  U11565/ZN (AOI21D2BWP40P140LVT)             0.0193    0.0148     0.4891 f
+  U11347/A3 (ND3OPTPAD2BWP40P140LVT)          0.0193    0.0000     0.4891 f
+  U11347/ZN (ND3OPTPAD2BWP40P140LVT)          0.0184    0.0164     0.5055 r
+  U11414/A1 (ND2OPTPAD4BWP40P140LVT)          0.0184    0.0000     0.5055 r
+  U11414/ZN (ND2OPTPAD4BWP40P140LVT)          0.0158    0.0132     0.5187 f
+  gen_pc/pc_zero_less[0] (ysyx_22050854_pc_0)           0.0000     0.5187 f
+  gen_pc/gen_PC3src/key[0] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.5187 f
+  gen_pc/gen_PC3src/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.5187 f
+  gen_pc/gen_PC3src/i0/U24/A2 (ND2D4BWP40P140LVT)
+                                              0.0158    0.0000     0.5187 f
+  gen_pc/gen_PC3src/i0/U24/ZN (ND2D4BWP40P140LVT)
+                                              0.0122    0.0114     0.5301 r
+  gen_pc/gen_PC3src/i0/U28/A2 (ND3OPTPAD6BWP40P140LVT)
+                                              0.0122    0.0000     0.5301 r
+  gen_pc/gen_PC3src/i0/U28/ZN (ND3OPTPAD6BWP40P140LVT)
+                                              0.0224    0.0187     0.5488 f
+  gen_pc/gen_PC3src/i0/U17/I (INVD8BWP40P140LVT)
+                                              0.0224    0.0000     0.5488 f
+  gen_pc/gen_PC3src/i0/U17/ZN (INVD8BWP40P140LVT)
+                                              0.0124    0.0117     0.5605 r
+  gen_pc/gen_PC3src/i0/U29/I (INVD18BWP40P140LVT)
+                                              0.0124    0.0000     0.5605 r
+  gen_pc/gen_PC3src/i0/U29/ZN (INVD18BWP40P140LVT)
+                                              0.0247    0.0183     0.5787 f
+  gen_pc/gen_PC3src/i0/out[2] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.5787 f
+  gen_pc/gen_PC3src/out[2] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.5787 f
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5787 f
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5787 f
+  gen_pc/gen_PCsrc1/i0/U7/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0247    0.0000     0.5787 f
+  gen_pc/gen_PCsrc1/i0/U7/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0138    0.0129     0.5916 r
+  gen_pc/gen_PCsrc1/i0/U29/I (INVD6BWP40P140LVT)
+                                              0.0138    0.0000     0.5916 r
+  gen_pc/gen_PCsrc1/i0/U29/ZN (INVD6BWP40P140LVT)
+                                              0.0098    0.0086     0.6002 f
+  gen_pc/gen_PCsrc1/i0/out_7_ (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.6002 f
+  gen_pc/gen_PCsrc1/out_7_ (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.6002 f
+  gen_pc/U446/B1 (INR2D8BWP40P140LVT)         0.0098    0.0000     0.6002 f
+  gen_pc/U446/ZN (INR2D8BWP40P140LVT)         0.0177    0.0135     0.6137 r
+  gen_pc/U563/A2 (NR2D8BWP40P140LVT)          0.0177    0.0000     0.6137 r
+  gen_pc/U563/ZN (NR2D8BWP40P140LVT)          0.0128    0.0116     0.6253 f
+  gen_pc/U596/A1 (ND2OPTIBD4BWP40P140LVT)     0.0128    0.0000     0.6253 f
+  gen_pc/U596/ZN (ND2OPTIBD4BWP40P140LVT)     0.0189    0.0144     0.6398 r
+  gen_pc/U569/A2 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0189    0.0000     0.6398 r
+  gen_pc/U569/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0215    0.0193     0.6591 f
+  gen_pc/U274/A1 (ND2OPTPAD6BWP40P140LVT)     0.0215    0.0000     0.6591 f
+  gen_pc/U274/ZN (ND2OPTPAD6BWP40P140LVT)     0.0125    0.0111     0.6702 r
+  gen_pc/U327/A1 (ND2OPTPAD12BWP40P140LVT)    0.0125    0.0000     0.6702 r
+  gen_pc/U327/ZN (ND2OPTPAD12BWP40P140LVT)    0.0192    0.0149     0.6851 f
+  gen_pc/U314/I (INVD9BWP40P140LVT)           0.0192    0.0000     0.6851 f
+  gen_pc/U314/ZN (INVD9BWP40P140LVT)          0.0203    0.0172     0.7023 r
+  gen_pc/U380/A2 (OAI21D6BWP40P140LVT)        0.0203    0.0000     0.7023 r
+  gen_pc/U380/ZN (OAI21D6BWP40P140LVT)        0.0224    0.0185     0.7208 f
+  gen_pc/U575/A1 (XNR2OPTND4BWP40P140LVT)     0.0224    0.0000     0.7208 f
+  gen_pc/U575/ZN (XNR2OPTND4BWP40P140LVT)     0.0300    0.0213     0.7421 f
+  gen_pc/U570/A1 (OAI21D6BWP40P140LVT)        0.0300    0.0000     0.7421 f
+  gen_pc/U570/ZN (OAI21D6BWP40P140LVT)        0.0218    0.0172     0.7593 r
+  gen_pc/next_pc[31] (ysyx_22050854_pc_0)               0.0000     0.7593 r
+  U4801/A1 (ND2OPTIBD6BWP40P140LVT)           0.0218    0.0000     0.7593 r
+  U4801/ZN (ND2OPTIBD6BWP40P140LVT)           0.0153    0.0120     0.7714 f
+  U8864/A1 (NR3D4BWP40P140LVT)                0.0153    0.0000     0.7714 f
+  U8864/ZN (NR3D4BWP40P140LVT)                0.0219    0.0154     0.7867 r
+  U11375/A3 (ND3OPTPAD6BWP40P140LVT)          0.0219    0.0000     0.7867 r
+  U11375/ZN (ND3OPTPAD6BWP40P140LVT)          0.0271    0.0233     0.8100 f
+  U4752/A1 (NR2OPTPAD8BWP40P140LVT)           0.0271    0.0000     0.8100 f
+  U4752/ZN (NR2OPTPAD8BWP40P140LVT)           0.0236    0.0208     0.8308 r
+  U5107/B1 (INR2D8BWP40P140LVT)               0.0236    0.0000     0.8308 r
+  U5107/ZN (INR2D8BWP40P140LVT)               0.0288    0.0223     0.8531 f
+  U5099/B1 (AOI22D8BWP40P140LVT)              0.0288    0.0000     0.8531 f
+  U5099/ZN (AOI22D8BWP40P140LVT)              0.0322    0.0241     0.8772 r
+  U10877/A2 (ND2OPTIBD16BWP40P140LVT)         0.0322    0.0000     0.8772 r
+  U10877/ZN (ND2OPTIBD16BWP40P140LVT)         0.0376    0.0288     0.9060 f
+  icache_inst/index[4] (ysyx_22050854_Icache_0)         0.0000     0.9060 f
+  icache_inst/U13358/I (INVD12BWP40P140LVT)   0.0376    0.0000     0.9060 f
+  icache_inst/U13358/ZN (INVD12BWP40P140LVT)
+                                              0.0122    0.0107     0.9167 r
+  icache_inst/U9423/A1 (ND2D16BWP40P140LVT)   0.0122    0.0000     0.9167 r
+  icache_inst/U9423/ZN (ND2D16BWP40P140LVT)   0.0346    0.0236     0.9403 f
+  icache_inst/U6542/A1 (NR2D16BWP40P140LVT)   0.0346    0.0000     0.9403 f
+  icache_inst/U6542/ZN (NR2D16BWP40P140LVT)   0.0446    0.0347     0.9750 r
+  icache_inst/U6540/A2 (ND2D8BWP40P140LVT)    0.0446    0.0000     0.9750 r
+  icache_inst/U6540/ZN (ND2D8BWP40P140LVT)    0.0281    0.0241     0.9991 f
+  icache_inst/U809/I (BUFFD2BWP40P140)        0.0281    0.0000     0.9991 f
+  icache_inst/U809/Z (BUFFD2BWP40P140)        0.0127    0.0280     1.0271 f
+  icache_inst/U18867/A1 (IAO21D2BWP40P140LVT)
+                                              0.0127    0.0000     1.0271 f
+  icache_inst/U18867/ZN (IAO21D2BWP40P140LVT)
+                                              0.0125    0.0266     1.0537 f
+  icache_inst/U8877/A1 (ND3OPTPAD2BWP40P140LVT)
+                                              0.0125    0.0000     1.0537 f
+  icache_inst/U8877/ZN (ND3OPTPAD2BWP40P140LVT)
+                                              0.0186    0.0089     1.0626 r
+  icache_inst/U6477/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0186    0.0000     1.0626 r
+  icache_inst/U6477/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0118    0.0090     1.0716 f
+  icache_inst/U20022/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0118    0.0000     1.0716 f
+  icache_inst/U20022/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0166    0.0078     1.0794 r
+  icache_inst/U19033/A1 (NR3OPTPAD2BWP40P140LVT)
+                                              0.0166    0.0000     1.0794 r
+  icache_inst/U19033/ZN (NR3OPTPAD2BWP40P140LVT)
+                                              0.0177    0.0110     1.0904 f
+  icache_inst/U299/A1 (ND2D3BWP40P140LVT)     0.0177    0.0000     1.0904 f
+  icache_inst/U299/ZN (ND2D3BWP40P140LVT)     0.0123    0.0097     1.1001 r
+  icache_inst/U8230/A2 (NR2D4BWP40P140LVT)    0.0123    0.0000     1.1001 r
+  icache_inst/U8230/ZN (NR2D4BWP40P140LVT)    0.0120    0.0108     1.1109 f
+  icache_inst/U8229/A1 (XOR2OPTND4BWP40P140LVT)
+                                              0.0120    0.0000     1.1109 f
+  icache_inst/U8229/Z (XOR2OPTND4BWP40P140LVT)
+                                              0.0310    0.0175     1.1283 f
+  icache_inst/U19094/A2 (ND2D4BWP40P140LVT)   0.0310    0.0000     1.1283 f
+  icache_inst/U19094/ZN (ND2D4BWP40P140LVT)   0.0125    0.0122     1.1406 r
+  icache_inst/U19873/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0125    0.0000     1.1406 r
+  icache_inst/U19873/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0135    0.0126     1.1531 f
+  icache_inst/U19553/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0135    0.0000     1.1531 f
+  icache_inst/U19553/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0128    0.0119     1.1650 r
+  icache_inst/U14181/A1 (NR2OPTIBD6BWP40P140LVT)
+                                              0.0128    0.0000     1.1650 r
+  icache_inst/U14181/ZN (NR2OPTIBD6BWP40P140LVT)
+                                              0.0146    0.0106     1.1756 f
+  icache_inst/U13855/I (INVD8BWP40P140LVT)    0.0146    0.0000     1.1756 f
+  icache_inst/U13855/ZN (INVD8BWP40P140LVT)   0.0101    0.0095     1.1850 r
+  icache_inst/U12697/I (INVD16BWP40P140LVT)   0.0101    0.0000     1.1850 r
+  icache_inst/U12697/ZN (INVD16BWP40P140LVT)
+                                              0.0149    0.0121     1.1971 f
+  icache_inst/U6730/A2 (NR3D8BWP40P140LVT)    0.0149    0.0000     1.1971 f
+  icache_inst/U6730/ZN (NR3D8BWP40P140LVT)    0.0212    0.0175     1.2146 r
+  icache_inst/U6441/I (INVD16BWP40P140LVT)    0.0212    0.0000     1.2146 r
+  icache_inst/U6441/ZN (INVD16BWP40P140LVT)   0.0129    0.0110     1.2257 f
+  icache_inst/U8111/I (INVD18BWP40P140LVT)    0.0129    0.0000     1.2257 f
+  icache_inst/U8111/ZN (INVD18BWP40P140LVT)   0.0127    0.0114     1.2371 r
+  icache_inst/U20066/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0127    0.0000     1.2371 r
+  icache_inst/U20066/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0160    0.0097     1.2468 f
+  icache_inst/U20078/B (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0160    0.0000     1.2468 f
+  icache_inst/U20078/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0201    0.0083     1.2551 r
+  icache_inst/rd_addr_reg_17_/D (DFD1BWP40P140LVT)
+                                              0.0201    0.0000     1.2551 r
+  data arrival time                                                1.2551
+
+  clock CLK_clock (rise edge)                           1.0833     1.0833
+  clock network delay (ideal)                           0.0000     1.0833
+  clock uncertainty                                    -0.1500     0.9333
+  icache_inst/rd_addr_reg_17_/CP (DFD1BWP40P140LVT)     0.0000     0.9333 r
+  library setup time                                   -0.0195     0.9139
+  data required time                                               0.9139
+  --------------------------------------------------------------------------
+  data required time                                               0.9139
+  data arrival time                                               -1.2551
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.3412
+
+
+  Startpoint: data_cache_inst/state_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/ram1_addr_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data_cache_inst/state_reg_6_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  data_cache_inst/state_reg_6_/Q (DFQD4BWP40P140LVT)
+                                              0.0113    0.0498     0.0498 r
+  data_cache_inst/U4985/A2 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0113    0.0000     0.0498 r
+  data_cache_inst/U4985/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0143    0.0127     0.0625 f
+  data_cache_inst/U5065/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0143    0.0000     0.0625 f
+  data_cache_inst/U5065/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0147    0.0097     0.0723 r
+  data_cache_inst/U5063/A2 (NR3D8BWP40P140LVT)
+                                              0.0147    0.0000     0.0723 r
+  data_cache_inst/U5063/ZN (NR3D8BWP40P140LVT)
+                                              0.0239    0.0179     0.0902 f
+  data_cache_inst/U4990/I (INVD16BWP40P140LVT)
+                                              0.0239    0.0000     0.0902 f
+  data_cache_inst/U4990/ZN (INVD16BWP40P140LVT)
+                                              0.0154    0.0144     0.1046 r
+  data_cache_inst/U26581/I (INVD18BWP40P140LVT)
+                                              0.0154    0.0000     0.1046 r
+  data_cache_inst/U26581/ZN (INVD18BWP40P140LVT)
+                                              0.0140    0.0120     0.1166 f
+  data_cache_inst/U4840/I (INVD16BWP40P140LVT)
+                                              0.0140    0.0000     0.1166 f
+  data_cache_inst/U4840/ZN (INVD16BWP40P140LVT)
+                                              0.0070    0.0067     0.1234 r
+  data_cache_inst/U4870/A1 (ND2D16BWP40P140LVT)
+                                              0.0070    0.0000     0.1234 r
+  data_cache_inst/U4870/ZN (ND2D16BWP40P140LVT)
+                                              0.0268    0.0181     0.1415 f
+  data_cache_inst/U4825/I (INVD12BWP40P140LVT)
+                                              0.0268    0.0000     0.1415 f
+  data_cache_inst/U4825/ZN (INVD12BWP40P140LVT)
+                                              0.0094    0.0085     0.1500 r
+  data_cache_inst/U12954/A1 (AOI22D2BWP40P140LVT)
+                                              0.0094    0.0000     0.1500 r
+  data_cache_inst/U12954/ZN (AOI22D2BWP40P140LVT)
+                                              0.0673    0.0209     0.1709 f
+  data_cache_inst/U26247/A3 (ND3OPTPAD4BWP40P140LVT)
+                                              0.0673    0.0000     0.1709 f
+  data_cache_inst/U26247/ZN (ND3OPTPAD4BWP40P140LVT)
+                                              0.0241    0.0231     0.1939 r
+  data_cache_inst/rdata_63_ (ysyx_22050854_Dcache_0)    0.0000     0.1939 r
+  U8812/A1 (ND2OPTPAD4BWP40P140LVT)           0.0241    0.0000     0.1939 r
+  U8812/ZN (ND2OPTPAD4BWP40P140LVT)           0.0152    0.0129     0.2069 f
+  U11366/A1 (ND2OPTPAD6BWP40P140LVT)          0.0152    0.0000     0.2069 f
+  U11366/ZN (ND2OPTPAD6BWP40P140LVT)          0.0161    0.0110     0.2179 r
+  gen_read_mem_data/lut[77] (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/lut[77] (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/B1 (AOI22D6BWP40P140LVT)
+                                              0.0161    0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/ZN (AOI22D6BWP40P140LVT)
+                                              0.0312    0.0197     0.2375 f
+  gen_read_mem_data/i0/U438/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0312    0.0000     0.2375 f
+  gen_read_mem_data/i0/U438/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0149    0.0150     0.2526 r
+  gen_read_mem_data/i0/U429/A1 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0149    0.0000     0.2526 r
+  gen_read_mem_data/i0/U429/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0147    0.0103     0.2629 f
+  gen_read_mem_data/i0/U499/B1 (INR2D8BWP40P140LVT)
+                                              0.0147    0.0000     0.2629 f
+  gen_read_mem_data/i0/U499/ZN (INR2D8BWP40P140LVT)
+                                              0.0241    0.0187     0.2816 r
+  gen_read_mem_data/i0/U472/A1 (NR2OPTPAD8BWP40P140LVT)
+                                              0.0241    0.0000     0.2816 r
+  gen_read_mem_data/i0/U472/ZN (NR2OPTPAD8BWP40P140LVT)
+                                              0.0141    0.0122     0.2938 f
+  gen_read_mem_data/i0/U250/I (INVD16BWP40P140LVT)
+                                              0.0141    0.0000     0.2938 f
+  gen_read_mem_data/i0/U250/ZN (INVD16BWP40P140LVT)
+                                              0.0119    0.0110     0.3048 r
+  gen_read_mem_data/i0/U245/B1 (INR2D16BWP40P140LVT)
+                                              0.0119    0.0000     0.3048 r
+  gen_read_mem_data/i0/U245/ZN (INR2D16BWP40P140LVT)
+                                              0.0174    0.0125     0.3172 f
+  gen_read_mem_data/i0/U213/I (INVD18BWP40P140LVT)
+                                              0.0174    0.0000     0.3172 f
+  gen_read_mem_data/i0/U213/ZN (INVD18BWP40P140LVT)
+                                              0.0104    0.0097     0.3270 r
+  gen_read_mem_data/i0/U228/I (INVD18BWP40P140LVT)
+                                              0.0104    0.0000     0.3270 r
+  gen_read_mem_data/i0/U228/ZN (INVD18BWP40P140LVT)
+                                              0.0090    0.0078     0.3348 f
+  gen_read_mem_data/i0/U374/I (INVD18BWP40P140LVT)
+                                              0.0090    0.0000     0.3348 f
+  gen_read_mem_data/i0/U374/ZN (INVD18BWP40P140LVT)
+                                              0.0095    0.0084     0.3432 r
+  gen_read_mem_data/i0/U491/B1 (INR2D16BWP40P140LVT)
+                                              0.0095    0.0000     0.3432 r
+  gen_read_mem_data/i0/U491/ZN (INR2D16BWP40P140LVT)
+                                              0.0113    0.0072     0.3504 f
+  gen_read_mem_data/i0/out_36__BAR (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.3504 f
+  gen_read_mem_data/out_36__BAR (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.3504 f
+  U11331/I (INVD6BWP40P140LVT)                0.0113    0.0000     0.3504 f
+  U11331/ZN (INVD6BWP40P140LVT)               0.0058    0.0059     0.3563 r
+  U4844/A1 (ND2D4BWP40P140LVT)                0.0058    0.0000     0.3563 r
+  U4844/ZN (ND2D4BWP40P140LVT)                0.0175    0.0108     0.3672 f
+  U10864/A1 (ND2OPTPAD4BWP40P140LVT)          0.0175    0.0000     0.3672 f
+  U10864/ZN (ND2OPTPAD4BWP40P140LVT)          0.0115    0.0081     0.3753 r
+  gen_src/src2[36] (ysyx_22050854_src_gen_0)            0.0000     0.3753 r
+  gen_src/src2_gen/lut[168] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/lut[168] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/A1 (AO21D4BWP40P140LVT)
+                                              0.0115    0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/Z (AO21D4BWP40P140LVT)
+                                              0.0197    0.0328     0.4080 r
+  gen_src/src2_gen/i0/out[36] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.4080 r
+  gen_src/src2_gen/out[36] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.4080 r
+  gen_src/alu_src2[36] (ysyx_22050854_src_gen_0)        0.0000     0.4080 r
+  U11355/A1 (XNR2OPTND4BWP40P140LVT)          0.0197    0.0000     0.4080 r
+  U11355/ZN (XNR2OPTND4BWP40P140LVT)          0.0213    0.0191     0.4271 r
+  U7738/A1 (ND3OPTPAD4BWP40P140LVT)           0.0213    0.0000     0.4271 r
+  U7738/ZN (ND3OPTPAD4BWP40P140LVT)           0.0182    0.0148     0.4419 f
+  U7893/A1 (NR3D2BWP40P140LVT)                0.0182    0.0000     0.4419 f
+  U7893/ZN (NR3D2BWP40P140LVT)                0.0190    0.0152     0.4571 r
+  U11346/A1 (ND2OPTPAD4BWP40P140LVT)          0.0190    0.0000     0.4571 r
+  U11346/ZN (ND2OPTPAD4BWP40P140LVT)          0.0149    0.0125     0.4696 f
+  U11398/A4 (NR4D4BWP40P140LVT)               0.0149    0.0000     0.4696 f
+  U11398/ZN (NR4D4BWP40P140LVT)               0.0267    0.0272     0.4968 r
+  gen_pc/pc_zero_less[1] (ysyx_22050854_pc_0)           0.0000     0.4968 r
+  gen_pc/gen_PC3src/key[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/key[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/I (INVD2BWP40P140LVT)
+                                              0.0267    0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/ZN (INVD2BWP40P140LVT)
+                                              0.0108    0.0091     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0108    0.0000     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0094     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/A1 (ND2D4BWP40P140LVT)
+                                              0.0126    0.0000     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/ZN (ND2D4BWP40P140LVT)
+                                              0.0232    0.0171     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/A3 (ND3OPTPAD6BWP40P140LVT)
+                                              0.0232    0.0000     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/ZN (ND3OPTPAD6BWP40P140LVT)
+                                              0.0161    0.0149     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/I (INVD8BWP40P140LVT)
+                                              0.0161    0.0000     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/ZN (INVD8BWP40P140LVT)
+                                              0.0125    0.0108     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/I (INVD18BWP40P140LVT)
+                                              0.0125    0.0000     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/ZN (INVD18BWP40P140LVT)
+                                              0.0207    0.0162     0.5743 r
+  gen_pc/gen_PC3src/i0/out[2] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PC3src/out[2] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0207    0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0186    0.0144     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/I (INVD6BWP40P140LVT)
+                                              0.0186    0.0000     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/ZN (INVD6BWP40P140LVT)
+                                              0.0101    0.0096     0.5982 r
+  gen_pc/gen_PCsrc1/i0/out_7_ (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5982 r
+  gen_pc/gen_PCsrc1/out_7_ (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5982 r
+  gen_pc/U446/B1 (INR2D8BWP40P140LVT)         0.0101    0.0000     0.5982 r
+  gen_pc/U446/ZN (INR2D8BWP40P140LVT)         0.0141    0.0095     0.6078 f
+  gen_pc/U563/A2 (NR2D8BWP40P140LVT)          0.0141    0.0000     0.6078 f
+  gen_pc/U563/ZN (NR2D8BWP40P140LVT)          0.0156    0.0144     0.6222 r
+  gen_pc/U596/A1 (ND2OPTIBD4BWP40P140LVT)     0.0156    0.0000     0.6222 r
+  gen_pc/U596/ZN (ND2OPTIBD4BWP40P140LVT)     0.0276    0.0201     0.6423 f
+  gen_pc/U569/A2 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0276    0.0000     0.6423 f
+  gen_pc/U569/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0202    0.0182     0.6606 r
+  gen_pc/U274/A1 (ND2OPTPAD6BWP40P140LVT)     0.0202    0.0000     0.6606 r
+  gen_pc/U274/ZN (ND2OPTPAD6BWP40P140LVT)     0.0168    0.0140     0.6746 f
+  gen_pc/U327/A1 (ND2OPTPAD12BWP40P140LVT)    0.0168    0.0000     0.6746 f
+  gen_pc/U327/ZN (ND2OPTPAD12BWP40P140LVT)    0.0135    0.0110     0.6856 r
+  gen_pc/U314/I (INVD9BWP40P140LVT)           0.0135    0.0000     0.6856 r
+  gen_pc/U314/ZN (INVD9BWP40P140LVT)          0.0211    0.0163     0.7019 f
+  gen_pc/U549/A1 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0211    0.0000     0.7019 f
+  gen_pc/U549/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0170    0.0154     0.7174 r
+  gen_pc/U378/A1 (XNR2OPTND4BWP40P140LVT)     0.0170    0.0000     0.7174 r
+  gen_pc/U378/ZN (XNR2OPTND4BWP40P140LVT)     0.0286    0.0207     0.7381 r
+  gen_pc/U624/A1 (OAI21D8BWP40P140LVT)        0.0286    0.0000     0.7381 r
+  gen_pc/U624/ZN (OAI21D8BWP40P140LVT)        0.0352    0.0204     0.7585 f
+  gen_pc/next_pc[26] (ysyx_22050854_pc_0)               0.0000     0.7585 f
+  U5091/B1 (INR2D8BWP40P140LVT)               0.0352    0.0000     0.7585 f
+  U5091/ZN (INR2D8BWP40P140LVT)               0.0156    0.0139     0.7724 r
+  U7724/A2 (ND2D6BWP40P140LVT)                0.0156    0.0000     0.7724 r
+  U7724/ZN (ND2D6BWP40P140LVT)                0.0168    0.0152     0.7876 f
+  U11213/B1 (INR2D8BWP40P140LVT)              0.0168    0.0000     0.7876 f
+  U11213/ZN (INR2D8BWP40P140LVT)              0.0161    0.0136     0.8012 r
+  U11205/B1 (INR2D4BWP40P140LVT)              0.0161    0.0000     0.8012 r
+  U11205/ZN (INR2D4BWP40P140LVT)              0.0117    0.0096     0.8108 f
+  U3936/A1 (ND2D3BWP40P140LVT)                0.0117    0.0000     0.8108 f
+  U3936/ZN (ND2D3BWP40P140LVT)                0.0120    0.0099     0.8207 r
+  U10931/A1 (INR2D16BWP40P140LVT)             0.0120    0.0000     0.8207 r
+  U10931/ZN (INR2D16BWP40P140LVT)             0.0196    0.0289     0.8496 r
+  U4753/A1 (NR2D8BWP40P140LVT)                0.0196    0.0000     0.8496 r
+  U4753/ZN (NR2D8BWP40P140LVT)                0.0158    0.0084     0.8580 f
+  U5268/A1 (NR2OPTIBD8BWP40P140LVT)           0.0158    0.0000     0.8580 f
+  U5268/ZN (NR2OPTIBD8BWP40P140LVT)           0.0186    0.0142     0.8723 r
+  U5352/A1 (ND3OPTPAD16BWP40P140LVT)          0.0186    0.0000     0.8723 r
+  U5352/ZN (ND3OPTPAD16BWP40P140LVT)          0.0423    0.0289     0.9012 f
+  icache_inst/index[2] (ysyx_22050854_Icache_0)         0.0000     0.9012 f
+  icache_inst/U6917/I (INVD18BWP40P140LVT)    0.0423    0.0000     0.9012 f
+  icache_inst/U6917/ZN (INVD18BWP40P140LVT)   0.0153    0.0135     0.9148 r
+  icache_inst/U8685/I (INVD18BWP40P140LVT)    0.0153    0.0000     0.9148 r
+  icache_inst/U8685/ZN (INVD18BWP40P140LVT)   0.0110    0.0095     0.9243 f
+  icache_inst/U8756/A1 (ND2D16BWP40P140LVT)   0.0110    0.0000     0.9243 f
+  icache_inst/U8756/ZN (ND2D16BWP40P140LVT)   0.0128    0.0090     0.9333 r
+  icache_inst/U9437/I (INVD18BWP40P140LVT)    0.0128    0.0000     0.9333 r
+  icache_inst/U9437/ZN (INVD18BWP40P140LVT)   0.0175    0.0141     0.9474 f
+  icache_inst/U19688/A1 (INR2D8BWP40P140LVT)
+                                              0.0175    0.0000     0.9474 f
+  icache_inst/U19688/ZN (INR2D8BWP40P140LVT)
+                                              0.0141    0.0239     0.9712 f
+  icache_inst/U8773/I (INVD12BWP40P140LVT)    0.0141    0.0000     0.9712 f
+  icache_inst/U8773/ZN (INVD12BWP40P140LVT)   0.0089    0.0084     0.9796 r
+  icache_inst/U19589/I (INVD18BWP40P140LVT)   0.0089    0.0000     0.9796 r
+  icache_inst/U19589/ZN (INVD18BWP40P140LVT)
+                                              0.0212    0.0154     0.9950 f
+  icache_inst/U8708/B1 (AOI22D4BWP40P140LVT)
+                                              0.0212    0.0000     0.9950 f
+  icache_inst/U8708/ZN (AOI22D4BWP40P140LVT)
+                                              0.0201    0.0182     1.0132 r
+  icache_inst/U1281/A2 (ND3D2BWP40P140LVT)    0.0201    0.0000     1.0132 r
+  icache_inst/U1281/ZN (ND3D2BWP40P140LVT)    0.0306    0.0244     1.0376 f
+  icache_inst/U6477/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0306    0.0000     1.0376 f
+  icache_inst/U6477/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0133     1.0510 r
+  icache_inst/U20022/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0000     1.0510 r
+  icache_inst/U20022/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0092     1.0602 f
+  icache_inst/U19033/A1 (NR3OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0000     1.0602 f
+  icache_inst/U19033/ZN (NR3OPTPAD2BWP40P140LVT)
+                                              0.0185    0.0146     1.0748 r
+  icache_inst/U299/A1 (ND2D3BWP40P140LVT)     0.0185    0.0000     1.0748 r
+  icache_inst/U299/ZN (ND2D3BWP40P140LVT)     0.0191    0.0153     1.0901 f
+  icache_inst/U8230/A2 (NR2D4BWP40P140LVT)    0.0191    0.0000     1.0901 f
+  icache_inst/U8230/ZN (NR2D4BWP40P140LVT)    0.0177    0.0162     1.1064 r
+  icache_inst/U8229/A1 (XOR2OPTND4BWP40P140LVT)
+                                              0.0177    0.0000     1.1064 r
+  icache_inst/U8229/Z (XOR2OPTND4BWP40P140LVT)
+                                              0.0284    0.0188     1.1252 r
+  icache_inst/U19094/A2 (ND2D4BWP40P140LVT)   0.0284    0.0000     1.1252 r
+  icache_inst/U19094/ZN (ND2D4BWP40P140LVT)   0.0171    0.0155     1.1407 f
+  icache_inst/U19873/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0171    0.0000     1.1407 f
+  icache_inst/U19873/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0133    0.0138     1.1545 r
+  icache_inst/U19553/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0133    0.0000     1.1545 r
+  icache_inst/U19553/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0171    0.0140     1.1685 f
+  icache_inst/U14181/A1 (NR2OPTIBD6BWP40P140LVT)
+                                              0.0171    0.0000     1.1685 f
+  icache_inst/U14181/ZN (NR2OPTIBD6BWP40P140LVT)
+                                              0.0181    0.0150     1.1835 r
+  icache_inst/U13855/I (INVD8BWP40P140LVT)    0.0181    0.0000     1.1835 r
+  icache_inst/U13855/ZN (INVD8BWP40P140LVT)   0.0121    0.0104     1.1940 f
+  icache_inst/U12697/I (INVD16BWP40P140LVT)   0.0121    0.0000     1.1940 f
+  icache_inst/U12697/ZN (INVD16BWP40P140LVT)
+                                              0.0135    0.0118     1.2058 r
+  icache_inst/U19435/A1 (AOI21D8BWP40P140LVT)
+                                              0.0135    0.0000     1.2058 r
+  icache_inst/U19435/ZN (AOI21D8BWP40P140LVT)
+                                              0.0235    0.0171     1.2229 f
+  icache_inst/U19839/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0235    0.0000     1.2229 f
+  icache_inst/U19839/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0117     1.2346 r
+  icache_inst/U19452/B1 (INR2D2BWP40P140LVT)
+                                              0.0126    0.0000     1.2346 r
+  icache_inst/U19452/ZN (INR2D2BWP40P140LVT)
+                                              0.0135    0.0103     1.2449 f
+  icache_inst/U20097/A1 (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0135    0.0000     1.2449 f
+  icache_inst/U20097/ZN (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0214    0.0099     1.2549 r
+  icache_inst/ram1_addr_reg_0_/D (DFD1BWP40P140LVT)
+                                              0.0214    0.0000     1.2549 r
+  data arrival time                                                1.2549
+
+  clock CLK_clock (rise edge)                           1.0833     1.0833
+  clock network delay (ideal)                           0.0000     1.0833
+  clock uncertainty                                    -0.1500     0.9333
+  icache_inst/ram1_addr_reg_0_/CP (DFD1BWP40P140LVT)    0.0000     0.9333 r
+  library setup time                                   -0.0197     0.9136
+  data required time                                               0.9136
+  --------------------------------------------------------------------------
+  data required time                                               0.9136
+  data arrival time                                               -1.2549
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.3412
+
+
+  Startpoint: data_cache_inst/state_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/ram1_addr_reg_3_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data_cache_inst/state_reg_6_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  data_cache_inst/state_reg_6_/Q (DFQD4BWP40P140LVT)
+                                              0.0113    0.0498     0.0498 r
+  data_cache_inst/U4985/A2 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0113    0.0000     0.0498 r
+  data_cache_inst/U4985/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0143    0.0127     0.0625 f
+  data_cache_inst/U5065/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0143    0.0000     0.0625 f
+  data_cache_inst/U5065/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0147    0.0097     0.0723 r
+  data_cache_inst/U5063/A2 (NR3D8BWP40P140LVT)
+                                              0.0147    0.0000     0.0723 r
+  data_cache_inst/U5063/ZN (NR3D8BWP40P140LVT)
+                                              0.0239    0.0179     0.0902 f
+  data_cache_inst/U4990/I (INVD16BWP40P140LVT)
+                                              0.0239    0.0000     0.0902 f
+  data_cache_inst/U4990/ZN (INVD16BWP40P140LVT)
+                                              0.0154    0.0144     0.1046 r
+  data_cache_inst/U26581/I (INVD18BWP40P140LVT)
+                                              0.0154    0.0000     0.1046 r
+  data_cache_inst/U26581/ZN (INVD18BWP40P140LVT)
+                                              0.0140    0.0120     0.1166 f
+  data_cache_inst/U4840/I (INVD16BWP40P140LVT)
+                                              0.0140    0.0000     0.1166 f
+  data_cache_inst/U4840/ZN (INVD16BWP40P140LVT)
+                                              0.0070    0.0067     0.1234 r
+  data_cache_inst/U4870/A1 (ND2D16BWP40P140LVT)
+                                              0.0070    0.0000     0.1234 r
+  data_cache_inst/U4870/ZN (ND2D16BWP40P140LVT)
+                                              0.0268    0.0181     0.1415 f
+  data_cache_inst/U4825/I (INVD12BWP40P140LVT)
+                                              0.0268    0.0000     0.1415 f
+  data_cache_inst/U4825/ZN (INVD12BWP40P140LVT)
+                                              0.0094    0.0085     0.1500 r
+  data_cache_inst/U12954/A1 (AOI22D2BWP40P140LVT)
+                                              0.0094    0.0000     0.1500 r
+  data_cache_inst/U12954/ZN (AOI22D2BWP40P140LVT)
+                                              0.0673    0.0209     0.1709 f
+  data_cache_inst/U26247/A3 (ND3OPTPAD4BWP40P140LVT)
+                                              0.0673    0.0000     0.1709 f
+  data_cache_inst/U26247/ZN (ND3OPTPAD4BWP40P140LVT)
+                                              0.0241    0.0231     0.1939 r
+  data_cache_inst/rdata_63_ (ysyx_22050854_Dcache_0)    0.0000     0.1939 r
+  U8812/A1 (ND2OPTPAD4BWP40P140LVT)           0.0241    0.0000     0.1939 r
+  U8812/ZN (ND2OPTPAD4BWP40P140LVT)           0.0152    0.0129     0.2069 f
+  U11366/A1 (ND2OPTPAD6BWP40P140LVT)          0.0152    0.0000     0.2069 f
+  U11366/ZN (ND2OPTPAD6BWP40P140LVT)          0.0161    0.0110     0.2179 r
+  gen_read_mem_data/lut[77] (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/lut[77] (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/B1 (AOI22D6BWP40P140LVT)
+                                              0.0161    0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/ZN (AOI22D6BWP40P140LVT)
+                                              0.0312    0.0197     0.2375 f
+  gen_read_mem_data/i0/U438/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0312    0.0000     0.2375 f
+  gen_read_mem_data/i0/U438/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0149    0.0150     0.2526 r
+  gen_read_mem_data/i0/U429/A1 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0149    0.0000     0.2526 r
+  gen_read_mem_data/i0/U429/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0147    0.0103     0.2629 f
+  gen_read_mem_data/i0/U499/B1 (INR2D8BWP40P140LVT)
+                                              0.0147    0.0000     0.2629 f
+  gen_read_mem_data/i0/U499/ZN (INR2D8BWP40P140LVT)
+                                              0.0241    0.0187     0.2816 r
+  gen_read_mem_data/i0/U472/A1 (NR2OPTPAD8BWP40P140LVT)
+                                              0.0241    0.0000     0.2816 r
+  gen_read_mem_data/i0/U472/ZN (NR2OPTPAD8BWP40P140LVT)
+                                              0.0141    0.0122     0.2938 f
+  gen_read_mem_data/i0/U250/I (INVD16BWP40P140LVT)
+                                              0.0141    0.0000     0.2938 f
+  gen_read_mem_data/i0/U250/ZN (INVD16BWP40P140LVT)
+                                              0.0119    0.0110     0.3048 r
+  gen_read_mem_data/i0/U245/B1 (INR2D16BWP40P140LVT)
+                                              0.0119    0.0000     0.3048 r
+  gen_read_mem_data/i0/U245/ZN (INR2D16BWP40P140LVT)
+                                              0.0174    0.0125     0.3172 f
+  gen_read_mem_data/i0/U213/I (INVD18BWP40P140LVT)
+                                              0.0174    0.0000     0.3172 f
+  gen_read_mem_data/i0/U213/ZN (INVD18BWP40P140LVT)
+                                              0.0104    0.0097     0.3270 r
+  gen_read_mem_data/i0/U228/I (INVD18BWP40P140LVT)
+                                              0.0104    0.0000     0.3270 r
+  gen_read_mem_data/i0/U228/ZN (INVD18BWP40P140LVT)
+                                              0.0090    0.0078     0.3348 f
+  gen_read_mem_data/i0/U374/I (INVD18BWP40P140LVT)
+                                              0.0090    0.0000     0.3348 f
+  gen_read_mem_data/i0/U374/ZN (INVD18BWP40P140LVT)
+                                              0.0095    0.0084     0.3432 r
+  gen_read_mem_data/i0/U491/B1 (INR2D16BWP40P140LVT)
+                                              0.0095    0.0000     0.3432 r
+  gen_read_mem_data/i0/U491/ZN (INR2D16BWP40P140LVT)
+                                              0.0113    0.0072     0.3504 f
+  gen_read_mem_data/i0/out_36__BAR (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.3504 f
+  gen_read_mem_data/out_36__BAR (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.3504 f
+  U11331/I (INVD6BWP40P140LVT)                0.0113    0.0000     0.3504 f
+  U11331/ZN (INVD6BWP40P140LVT)               0.0058    0.0059     0.3563 r
+  U4844/A1 (ND2D4BWP40P140LVT)                0.0058    0.0000     0.3563 r
+  U4844/ZN (ND2D4BWP40P140LVT)                0.0175    0.0108     0.3672 f
+  U10864/A1 (ND2OPTPAD4BWP40P140LVT)          0.0175    0.0000     0.3672 f
+  U10864/ZN (ND2OPTPAD4BWP40P140LVT)          0.0115    0.0081     0.3753 r
+  gen_src/src2[36] (ysyx_22050854_src_gen_0)            0.0000     0.3753 r
+  gen_src/src2_gen/lut[168] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/lut[168] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/A1 (AO21D4BWP40P140LVT)
+                                              0.0115    0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/Z (AO21D4BWP40P140LVT)
+                                              0.0197    0.0328     0.4080 r
+  gen_src/src2_gen/i0/out[36] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.4080 r
+  gen_src/src2_gen/out[36] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.4080 r
+  gen_src/alu_src2[36] (ysyx_22050854_src_gen_0)        0.0000     0.4080 r
+  U11355/A1 (XNR2OPTND4BWP40P140LVT)          0.0197    0.0000     0.4080 r
+  U11355/ZN (XNR2OPTND4BWP40P140LVT)          0.0213    0.0191     0.4271 r
+  U7738/A1 (ND3OPTPAD4BWP40P140LVT)           0.0213    0.0000     0.4271 r
+  U7738/ZN (ND3OPTPAD4BWP40P140LVT)           0.0182    0.0148     0.4419 f
+  U7893/A1 (NR3D2BWP40P140LVT)                0.0182    0.0000     0.4419 f
+  U7893/ZN (NR3D2BWP40P140LVT)                0.0190    0.0152     0.4571 r
+  U11346/A1 (ND2OPTPAD4BWP40P140LVT)          0.0190    0.0000     0.4571 r
+  U11346/ZN (ND2OPTPAD4BWP40P140LVT)          0.0149    0.0125     0.4696 f
+  U11398/A4 (NR4D4BWP40P140LVT)               0.0149    0.0000     0.4696 f
+  U11398/ZN (NR4D4BWP40P140LVT)               0.0267    0.0272     0.4968 r
+  gen_pc/pc_zero_less[1] (ysyx_22050854_pc_0)           0.0000     0.4968 r
+  gen_pc/gen_PC3src/key[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/key[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/I (INVD2BWP40P140LVT)
+                                              0.0267    0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/ZN (INVD2BWP40P140LVT)
+                                              0.0108    0.0091     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0108    0.0000     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0094     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/A1 (ND2D4BWP40P140LVT)
+                                              0.0126    0.0000     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/ZN (ND2D4BWP40P140LVT)
+                                              0.0232    0.0171     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/A3 (ND3OPTPAD6BWP40P140LVT)
+                                              0.0232    0.0000     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/ZN (ND3OPTPAD6BWP40P140LVT)
+                                              0.0161    0.0149     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/I (INVD8BWP40P140LVT)
+                                              0.0161    0.0000     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/ZN (INVD8BWP40P140LVT)
+                                              0.0125    0.0108     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/I (INVD18BWP40P140LVT)
+                                              0.0125    0.0000     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/ZN (INVD18BWP40P140LVT)
+                                              0.0207    0.0162     0.5743 r
+  gen_pc/gen_PC3src/i0/out[2] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PC3src/out[2] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0207    0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0186    0.0144     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/I (INVD6BWP40P140LVT)
+                                              0.0186    0.0000     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/ZN (INVD6BWP40P140LVT)
+                                              0.0101    0.0096     0.5982 r
+  gen_pc/gen_PCsrc1/i0/out_7_ (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5982 r
+  gen_pc/gen_PCsrc1/out_7_ (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5982 r
+  gen_pc/U446/B1 (INR2D8BWP40P140LVT)         0.0101    0.0000     0.5982 r
+  gen_pc/U446/ZN (INR2D8BWP40P140LVT)         0.0141    0.0095     0.6078 f
+  gen_pc/U563/A2 (NR2D8BWP40P140LVT)          0.0141    0.0000     0.6078 f
+  gen_pc/U563/ZN (NR2D8BWP40P140LVT)          0.0156    0.0144     0.6222 r
+  gen_pc/U596/A1 (ND2OPTIBD4BWP40P140LVT)     0.0156    0.0000     0.6222 r
+  gen_pc/U596/ZN (ND2OPTIBD4BWP40P140LVT)     0.0276    0.0201     0.6423 f
+  gen_pc/U569/A2 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0276    0.0000     0.6423 f
+  gen_pc/U569/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0202    0.0182     0.6606 r
+  gen_pc/U274/A1 (ND2OPTPAD6BWP40P140LVT)     0.0202    0.0000     0.6606 r
+  gen_pc/U274/ZN (ND2OPTPAD6BWP40P140LVT)     0.0168    0.0140     0.6746 f
+  gen_pc/U327/A1 (ND2OPTPAD12BWP40P140LVT)    0.0168    0.0000     0.6746 f
+  gen_pc/U327/ZN (ND2OPTPAD12BWP40P140LVT)    0.0135    0.0110     0.6856 r
+  gen_pc/U314/I (INVD9BWP40P140LVT)           0.0135    0.0000     0.6856 r
+  gen_pc/U314/ZN (INVD9BWP40P140LVT)          0.0211    0.0163     0.7019 f
+  gen_pc/U549/A1 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0211    0.0000     0.7019 f
+  gen_pc/U549/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0170    0.0154     0.7174 r
+  gen_pc/U378/A1 (XNR2OPTND4BWP40P140LVT)     0.0170    0.0000     0.7174 r
+  gen_pc/U378/ZN (XNR2OPTND4BWP40P140LVT)     0.0286    0.0207     0.7381 r
+  gen_pc/U624/A1 (OAI21D8BWP40P140LVT)        0.0286    0.0000     0.7381 r
+  gen_pc/U624/ZN (OAI21D8BWP40P140LVT)        0.0352    0.0204     0.7585 f
+  gen_pc/next_pc[26] (ysyx_22050854_pc_0)               0.0000     0.7585 f
+  U5091/B1 (INR2D8BWP40P140LVT)               0.0352    0.0000     0.7585 f
+  U5091/ZN (INR2D8BWP40P140LVT)               0.0156    0.0139     0.7724 r
+  U7724/A2 (ND2D6BWP40P140LVT)                0.0156    0.0000     0.7724 r
+  U7724/ZN (ND2D6BWP40P140LVT)                0.0168    0.0152     0.7876 f
+  U11213/B1 (INR2D8BWP40P140LVT)              0.0168    0.0000     0.7876 f
+  U11213/ZN (INR2D8BWP40P140LVT)              0.0161    0.0136     0.8012 r
+  U11205/B1 (INR2D4BWP40P140LVT)              0.0161    0.0000     0.8012 r
+  U11205/ZN (INR2D4BWP40P140LVT)              0.0117    0.0096     0.8108 f
+  U3936/A1 (ND2D3BWP40P140LVT)                0.0117    0.0000     0.8108 f
+  U3936/ZN (ND2D3BWP40P140LVT)                0.0120    0.0099     0.8207 r
+  U10931/A1 (INR2D16BWP40P140LVT)             0.0120    0.0000     0.8207 r
+  U10931/ZN (INR2D16BWP40P140LVT)             0.0196    0.0289     0.8496 r
+  U4753/A1 (NR2D8BWP40P140LVT)                0.0196    0.0000     0.8496 r
+  U4753/ZN (NR2D8BWP40P140LVT)                0.0158    0.0084     0.8580 f
+  U5268/A1 (NR2OPTIBD8BWP40P140LVT)           0.0158    0.0000     0.8580 f
+  U5268/ZN (NR2OPTIBD8BWP40P140LVT)           0.0186    0.0142     0.8723 r
+  U5352/A1 (ND3OPTPAD16BWP40P140LVT)          0.0186    0.0000     0.8723 r
+  U5352/ZN (ND3OPTPAD16BWP40P140LVT)          0.0423    0.0289     0.9012 f
+  icache_inst/index[2] (ysyx_22050854_Icache_0)         0.0000     0.9012 f
+  icache_inst/U6917/I (INVD18BWP40P140LVT)    0.0423    0.0000     0.9012 f
+  icache_inst/U6917/ZN (INVD18BWP40P140LVT)   0.0153    0.0135     0.9148 r
+  icache_inst/U8685/I (INVD18BWP40P140LVT)    0.0153    0.0000     0.9148 r
+  icache_inst/U8685/ZN (INVD18BWP40P140LVT)   0.0110    0.0095     0.9243 f
+  icache_inst/U8756/A1 (ND2D16BWP40P140LVT)   0.0110    0.0000     0.9243 f
+  icache_inst/U8756/ZN (ND2D16BWP40P140LVT)   0.0128    0.0090     0.9333 r
+  icache_inst/U9437/I (INVD18BWP40P140LVT)    0.0128    0.0000     0.9333 r
+  icache_inst/U9437/ZN (INVD18BWP40P140LVT)   0.0175    0.0141     0.9474 f
+  icache_inst/U19688/A1 (INR2D8BWP40P140LVT)
+                                              0.0175    0.0000     0.9474 f
+  icache_inst/U19688/ZN (INR2D8BWP40P140LVT)
+                                              0.0141    0.0239     0.9712 f
+  icache_inst/U8773/I (INVD12BWP40P140LVT)    0.0141    0.0000     0.9712 f
+  icache_inst/U8773/ZN (INVD12BWP40P140LVT)   0.0089    0.0084     0.9796 r
+  icache_inst/U19589/I (INVD18BWP40P140LVT)   0.0089    0.0000     0.9796 r
+  icache_inst/U19589/ZN (INVD18BWP40P140LVT)
+                                              0.0212    0.0154     0.9950 f
+  icache_inst/U8708/B1 (AOI22D4BWP40P140LVT)
+                                              0.0212    0.0000     0.9950 f
+  icache_inst/U8708/ZN (AOI22D4BWP40P140LVT)
+                                              0.0201    0.0182     1.0132 r
+  icache_inst/U1281/A2 (ND3D2BWP40P140LVT)    0.0201    0.0000     1.0132 r
+  icache_inst/U1281/ZN (ND3D2BWP40P140LVT)    0.0306    0.0244     1.0376 f
+  icache_inst/U6477/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0306    0.0000     1.0376 f
+  icache_inst/U6477/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0133     1.0510 r
+  icache_inst/U20022/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0000     1.0510 r
+  icache_inst/U20022/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0092     1.0602 f
+  icache_inst/U19033/A1 (NR3OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0000     1.0602 f
+  icache_inst/U19033/ZN (NR3OPTPAD2BWP40P140LVT)
+                                              0.0185    0.0146     1.0748 r
+  icache_inst/U299/A1 (ND2D3BWP40P140LVT)     0.0185    0.0000     1.0748 r
+  icache_inst/U299/ZN (ND2D3BWP40P140LVT)     0.0191    0.0153     1.0901 f
+  icache_inst/U8230/A2 (NR2D4BWP40P140LVT)    0.0191    0.0000     1.0901 f
+  icache_inst/U8230/ZN (NR2D4BWP40P140LVT)    0.0177    0.0162     1.1064 r
+  icache_inst/U8229/A1 (XOR2OPTND4BWP40P140LVT)
+                                              0.0177    0.0000     1.1064 r
+  icache_inst/U8229/Z (XOR2OPTND4BWP40P140LVT)
+                                              0.0284    0.0188     1.1252 r
+  icache_inst/U19094/A2 (ND2D4BWP40P140LVT)   0.0284    0.0000     1.1252 r
+  icache_inst/U19094/ZN (ND2D4BWP40P140LVT)   0.0171    0.0155     1.1407 f
+  icache_inst/U19873/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0171    0.0000     1.1407 f
+  icache_inst/U19873/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0133    0.0138     1.1545 r
+  icache_inst/U19553/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0133    0.0000     1.1545 r
+  icache_inst/U19553/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0171    0.0140     1.1685 f
+  icache_inst/U14181/A1 (NR2OPTIBD6BWP40P140LVT)
+                                              0.0171    0.0000     1.1685 f
+  icache_inst/U14181/ZN (NR2OPTIBD6BWP40P140LVT)
+                                              0.0181    0.0150     1.1835 r
+  icache_inst/U13855/I (INVD8BWP40P140LVT)    0.0181    0.0000     1.1835 r
+  icache_inst/U13855/ZN (INVD8BWP40P140LVT)   0.0121    0.0104     1.1940 f
+  icache_inst/U12697/I (INVD16BWP40P140LVT)   0.0121    0.0000     1.1940 f
+  icache_inst/U12697/ZN (INVD16BWP40P140LVT)
+                                              0.0135    0.0118     1.2058 r
+  icache_inst/U19435/A1 (AOI21D8BWP40P140LVT)
+                                              0.0135    0.0000     1.2058 r
+  icache_inst/U19435/ZN (AOI21D8BWP40P140LVT)
+                                              0.0235    0.0171     1.2229 f
+  icache_inst/U20093/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0235    0.0000     1.2229 f
+  icache_inst/U20093/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0117     1.2346 r
+  icache_inst/U19458/B1 (INR2D2BWP40P140LVT)
+                                              0.0126    0.0000     1.2346 r
+  icache_inst/U19458/ZN (INR2D2BWP40P140LVT)
+                                              0.0135    0.0103     1.2449 f
+  icache_inst/U20106/A1 (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0135    0.0000     1.2449 f
+  icache_inst/U20106/ZN (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0214    0.0099     1.2549 r
+  icache_inst/ram1_addr_reg_3_/D (DFD1BWP40P140LVT)
+                                              0.0214    0.0000     1.2549 r
+  data arrival time                                                1.2549
+
+  clock CLK_clock (rise edge)                           1.0833     1.0833
+  clock network delay (ideal)                           0.0000     1.0833
+  clock uncertainty                                    -0.1500     0.9333
+  icache_inst/ram1_addr_reg_3_/CP (DFD1BWP40P140LVT)    0.0000     0.9333 r
+  library setup time                                   -0.0197     0.9136
+  data required time                                               0.9136
+  --------------------------------------------------------------------------
+  data required time                                               0.9136
+  data arrival time                                               -1.2549
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.3412
+
+
+  Startpoint: data_cache_inst/state_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/ram1_addr_reg_2_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data_cache_inst/state_reg_6_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  data_cache_inst/state_reg_6_/Q (DFQD4BWP40P140LVT)
+                                              0.0113    0.0498     0.0498 r
+  data_cache_inst/U4985/A2 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0113    0.0000     0.0498 r
+  data_cache_inst/U4985/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0143    0.0127     0.0625 f
+  data_cache_inst/U5065/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0143    0.0000     0.0625 f
+  data_cache_inst/U5065/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0147    0.0097     0.0723 r
+  data_cache_inst/U5063/A2 (NR3D8BWP40P140LVT)
+                                              0.0147    0.0000     0.0723 r
+  data_cache_inst/U5063/ZN (NR3D8BWP40P140LVT)
+                                              0.0239    0.0179     0.0902 f
+  data_cache_inst/U4990/I (INVD16BWP40P140LVT)
+                                              0.0239    0.0000     0.0902 f
+  data_cache_inst/U4990/ZN (INVD16BWP40P140LVT)
+                                              0.0154    0.0144     0.1046 r
+  data_cache_inst/U26581/I (INVD18BWP40P140LVT)
+                                              0.0154    0.0000     0.1046 r
+  data_cache_inst/U26581/ZN (INVD18BWP40P140LVT)
+                                              0.0140    0.0120     0.1166 f
+  data_cache_inst/U4840/I (INVD16BWP40P140LVT)
+                                              0.0140    0.0000     0.1166 f
+  data_cache_inst/U4840/ZN (INVD16BWP40P140LVT)
+                                              0.0070    0.0067     0.1234 r
+  data_cache_inst/U4870/A1 (ND2D16BWP40P140LVT)
+                                              0.0070    0.0000     0.1234 r
+  data_cache_inst/U4870/ZN (ND2D16BWP40P140LVT)
+                                              0.0268    0.0181     0.1415 f
+  data_cache_inst/U4825/I (INVD12BWP40P140LVT)
+                                              0.0268    0.0000     0.1415 f
+  data_cache_inst/U4825/ZN (INVD12BWP40P140LVT)
+                                              0.0094    0.0085     0.1500 r
+  data_cache_inst/U12954/A1 (AOI22D2BWP40P140LVT)
+                                              0.0094    0.0000     0.1500 r
+  data_cache_inst/U12954/ZN (AOI22D2BWP40P140LVT)
+                                              0.0673    0.0209     0.1709 f
+  data_cache_inst/U26247/A3 (ND3OPTPAD4BWP40P140LVT)
+                                              0.0673    0.0000     0.1709 f
+  data_cache_inst/U26247/ZN (ND3OPTPAD4BWP40P140LVT)
+                                              0.0241    0.0231     0.1939 r
+  data_cache_inst/rdata_63_ (ysyx_22050854_Dcache_0)    0.0000     0.1939 r
+  U8812/A1 (ND2OPTPAD4BWP40P140LVT)           0.0241    0.0000     0.1939 r
+  U8812/ZN (ND2OPTPAD4BWP40P140LVT)           0.0152    0.0129     0.2069 f
+  U11366/A1 (ND2OPTPAD6BWP40P140LVT)          0.0152    0.0000     0.2069 f
+  U11366/ZN (ND2OPTPAD6BWP40P140LVT)          0.0161    0.0110     0.2179 r
+  gen_read_mem_data/lut[77] (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/lut[77] (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/B1 (AOI22D6BWP40P140LVT)
+                                              0.0161    0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/ZN (AOI22D6BWP40P140LVT)
+                                              0.0312    0.0197     0.2375 f
+  gen_read_mem_data/i0/U438/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0312    0.0000     0.2375 f
+  gen_read_mem_data/i0/U438/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0149    0.0150     0.2526 r
+  gen_read_mem_data/i0/U429/A1 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0149    0.0000     0.2526 r
+  gen_read_mem_data/i0/U429/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0147    0.0103     0.2629 f
+  gen_read_mem_data/i0/U499/B1 (INR2D8BWP40P140LVT)
+                                              0.0147    0.0000     0.2629 f
+  gen_read_mem_data/i0/U499/ZN (INR2D8BWP40P140LVT)
+                                              0.0241    0.0187     0.2816 r
+  gen_read_mem_data/i0/U472/A1 (NR2OPTPAD8BWP40P140LVT)
+                                              0.0241    0.0000     0.2816 r
+  gen_read_mem_data/i0/U472/ZN (NR2OPTPAD8BWP40P140LVT)
+                                              0.0141    0.0122     0.2938 f
+  gen_read_mem_data/i0/U250/I (INVD16BWP40P140LVT)
+                                              0.0141    0.0000     0.2938 f
+  gen_read_mem_data/i0/U250/ZN (INVD16BWP40P140LVT)
+                                              0.0119    0.0110     0.3048 r
+  gen_read_mem_data/i0/U245/B1 (INR2D16BWP40P140LVT)
+                                              0.0119    0.0000     0.3048 r
+  gen_read_mem_data/i0/U245/ZN (INR2D16BWP40P140LVT)
+                                              0.0174    0.0125     0.3172 f
+  gen_read_mem_data/i0/U213/I (INVD18BWP40P140LVT)
+                                              0.0174    0.0000     0.3172 f
+  gen_read_mem_data/i0/U213/ZN (INVD18BWP40P140LVT)
+                                              0.0104    0.0097     0.3270 r
+  gen_read_mem_data/i0/U228/I (INVD18BWP40P140LVT)
+                                              0.0104    0.0000     0.3270 r
+  gen_read_mem_data/i0/U228/ZN (INVD18BWP40P140LVT)
+                                              0.0090    0.0078     0.3348 f
+  gen_read_mem_data/i0/U374/I (INVD18BWP40P140LVT)
+                                              0.0090    0.0000     0.3348 f
+  gen_read_mem_data/i0/U374/ZN (INVD18BWP40P140LVT)
+                                              0.0095    0.0084     0.3432 r
+  gen_read_mem_data/i0/U491/B1 (INR2D16BWP40P140LVT)
+                                              0.0095    0.0000     0.3432 r
+  gen_read_mem_data/i0/U491/ZN (INR2D16BWP40P140LVT)
+                                              0.0113    0.0072     0.3504 f
+  gen_read_mem_data/i0/out_36__BAR (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.3504 f
+  gen_read_mem_data/out_36__BAR (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.3504 f
+  U11331/I (INVD6BWP40P140LVT)                0.0113    0.0000     0.3504 f
+  U11331/ZN (INVD6BWP40P140LVT)               0.0058    0.0059     0.3563 r
+  U4844/A1 (ND2D4BWP40P140LVT)                0.0058    0.0000     0.3563 r
+  U4844/ZN (ND2D4BWP40P140LVT)                0.0175    0.0108     0.3672 f
+  U10864/A1 (ND2OPTPAD4BWP40P140LVT)          0.0175    0.0000     0.3672 f
+  U10864/ZN (ND2OPTPAD4BWP40P140LVT)          0.0115    0.0081     0.3753 r
+  gen_src/src2[36] (ysyx_22050854_src_gen_0)            0.0000     0.3753 r
+  gen_src/src2_gen/lut[168] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/lut[168] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/A1 (AO21D4BWP40P140LVT)
+                                              0.0115    0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/Z (AO21D4BWP40P140LVT)
+                                              0.0197    0.0328     0.4080 r
+  gen_src/src2_gen/i0/out[36] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.4080 r
+  gen_src/src2_gen/out[36] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.4080 r
+  gen_src/alu_src2[36] (ysyx_22050854_src_gen_0)        0.0000     0.4080 r
+  U11355/A1 (XNR2OPTND4BWP40P140LVT)          0.0197    0.0000     0.4080 r
+  U11355/ZN (XNR2OPTND4BWP40P140LVT)          0.0213    0.0191     0.4271 r
+  U7738/A1 (ND3OPTPAD4BWP40P140LVT)           0.0213    0.0000     0.4271 r
+  U7738/ZN (ND3OPTPAD4BWP40P140LVT)           0.0182    0.0148     0.4419 f
+  U7893/A1 (NR3D2BWP40P140LVT)                0.0182    0.0000     0.4419 f
+  U7893/ZN (NR3D2BWP40P140LVT)                0.0190    0.0152     0.4571 r
+  U11346/A1 (ND2OPTPAD4BWP40P140LVT)          0.0190    0.0000     0.4571 r
+  U11346/ZN (ND2OPTPAD4BWP40P140LVT)          0.0149    0.0125     0.4696 f
+  U11398/A4 (NR4D4BWP40P140LVT)               0.0149    0.0000     0.4696 f
+  U11398/ZN (NR4D4BWP40P140LVT)               0.0267    0.0272     0.4968 r
+  gen_pc/pc_zero_less[1] (ysyx_22050854_pc_0)           0.0000     0.4968 r
+  gen_pc/gen_PC3src/key[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/key[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/I (INVD2BWP40P140LVT)
+                                              0.0267    0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/ZN (INVD2BWP40P140LVT)
+                                              0.0108    0.0091     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0108    0.0000     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0094     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/A1 (ND2D4BWP40P140LVT)
+                                              0.0126    0.0000     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/ZN (ND2D4BWP40P140LVT)
+                                              0.0232    0.0171     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/A3 (ND3OPTPAD6BWP40P140LVT)
+                                              0.0232    0.0000     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/ZN (ND3OPTPAD6BWP40P140LVT)
+                                              0.0161    0.0149     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/I (INVD8BWP40P140LVT)
+                                              0.0161    0.0000     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/ZN (INVD8BWP40P140LVT)
+                                              0.0125    0.0108     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/I (INVD18BWP40P140LVT)
+                                              0.0125    0.0000     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/ZN (INVD18BWP40P140LVT)
+                                              0.0207    0.0162     0.5743 r
+  gen_pc/gen_PC3src/i0/out[2] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PC3src/out[2] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0207    0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0186    0.0144     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/I (INVD6BWP40P140LVT)
+                                              0.0186    0.0000     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/ZN (INVD6BWP40P140LVT)
+                                              0.0101    0.0096     0.5982 r
+  gen_pc/gen_PCsrc1/i0/out_7_ (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5982 r
+  gen_pc/gen_PCsrc1/out_7_ (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5982 r
+  gen_pc/U446/B1 (INR2D8BWP40P140LVT)         0.0101    0.0000     0.5982 r
+  gen_pc/U446/ZN (INR2D8BWP40P140LVT)         0.0141    0.0095     0.6078 f
+  gen_pc/U563/A2 (NR2D8BWP40P140LVT)          0.0141    0.0000     0.6078 f
+  gen_pc/U563/ZN (NR2D8BWP40P140LVT)          0.0156    0.0144     0.6222 r
+  gen_pc/U596/A1 (ND2OPTIBD4BWP40P140LVT)     0.0156    0.0000     0.6222 r
+  gen_pc/U596/ZN (ND2OPTIBD4BWP40P140LVT)     0.0276    0.0201     0.6423 f
+  gen_pc/U569/A2 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0276    0.0000     0.6423 f
+  gen_pc/U569/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0202    0.0182     0.6606 r
+  gen_pc/U274/A1 (ND2OPTPAD6BWP40P140LVT)     0.0202    0.0000     0.6606 r
+  gen_pc/U274/ZN (ND2OPTPAD6BWP40P140LVT)     0.0168    0.0140     0.6746 f
+  gen_pc/U327/A1 (ND2OPTPAD12BWP40P140LVT)    0.0168    0.0000     0.6746 f
+  gen_pc/U327/ZN (ND2OPTPAD12BWP40P140LVT)    0.0135    0.0110     0.6856 r
+  gen_pc/U314/I (INVD9BWP40P140LVT)           0.0135    0.0000     0.6856 r
+  gen_pc/U314/ZN (INVD9BWP40P140LVT)          0.0211    0.0163     0.7019 f
+  gen_pc/U549/A1 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0211    0.0000     0.7019 f
+  gen_pc/U549/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0170    0.0154     0.7174 r
+  gen_pc/U378/A1 (XNR2OPTND4BWP40P140LVT)     0.0170    0.0000     0.7174 r
+  gen_pc/U378/ZN (XNR2OPTND4BWP40P140LVT)     0.0286    0.0207     0.7381 r
+  gen_pc/U624/A1 (OAI21D8BWP40P140LVT)        0.0286    0.0000     0.7381 r
+  gen_pc/U624/ZN (OAI21D8BWP40P140LVT)        0.0352    0.0204     0.7585 f
+  gen_pc/next_pc[26] (ysyx_22050854_pc_0)               0.0000     0.7585 f
+  U5091/B1 (INR2D8BWP40P140LVT)               0.0352    0.0000     0.7585 f
+  U5091/ZN (INR2D8BWP40P140LVT)               0.0156    0.0139     0.7724 r
+  U7724/A2 (ND2D6BWP40P140LVT)                0.0156    0.0000     0.7724 r
+  U7724/ZN (ND2D6BWP40P140LVT)                0.0168    0.0152     0.7876 f
+  U11213/B1 (INR2D8BWP40P140LVT)              0.0168    0.0000     0.7876 f
+  U11213/ZN (INR2D8BWP40P140LVT)              0.0161    0.0136     0.8012 r
+  U11205/B1 (INR2D4BWP40P140LVT)              0.0161    0.0000     0.8012 r
+  U11205/ZN (INR2D4BWP40P140LVT)              0.0117    0.0096     0.8108 f
+  U3936/A1 (ND2D3BWP40P140LVT)                0.0117    0.0000     0.8108 f
+  U3936/ZN (ND2D3BWP40P140LVT)                0.0120    0.0099     0.8207 r
+  U10931/A1 (INR2D16BWP40P140LVT)             0.0120    0.0000     0.8207 r
+  U10931/ZN (INR2D16BWP40P140LVT)             0.0196    0.0289     0.8496 r
+  U4753/A1 (NR2D8BWP40P140LVT)                0.0196    0.0000     0.8496 r
+  U4753/ZN (NR2D8BWP40P140LVT)                0.0158    0.0084     0.8580 f
+  U5268/A1 (NR2OPTIBD8BWP40P140LVT)           0.0158    0.0000     0.8580 f
+  U5268/ZN (NR2OPTIBD8BWP40P140LVT)           0.0186    0.0142     0.8723 r
+  U5352/A1 (ND3OPTPAD16BWP40P140LVT)          0.0186    0.0000     0.8723 r
+  U5352/ZN (ND3OPTPAD16BWP40P140LVT)          0.0423    0.0289     0.9012 f
+  icache_inst/index[2] (ysyx_22050854_Icache_0)         0.0000     0.9012 f
+  icache_inst/U6917/I (INVD18BWP40P140LVT)    0.0423    0.0000     0.9012 f
+  icache_inst/U6917/ZN (INVD18BWP40P140LVT)   0.0153    0.0135     0.9148 r
+  icache_inst/U8685/I (INVD18BWP40P140LVT)    0.0153    0.0000     0.9148 r
+  icache_inst/U8685/ZN (INVD18BWP40P140LVT)   0.0110    0.0095     0.9243 f
+  icache_inst/U8756/A1 (ND2D16BWP40P140LVT)   0.0110    0.0000     0.9243 f
+  icache_inst/U8756/ZN (ND2D16BWP40P140LVT)   0.0128    0.0090     0.9333 r
+  icache_inst/U9437/I (INVD18BWP40P140LVT)    0.0128    0.0000     0.9333 r
+  icache_inst/U9437/ZN (INVD18BWP40P140LVT)   0.0175    0.0141     0.9474 f
+  icache_inst/U19688/A1 (INR2D8BWP40P140LVT)
+                                              0.0175    0.0000     0.9474 f
+  icache_inst/U19688/ZN (INR2D8BWP40P140LVT)
+                                              0.0141    0.0239     0.9712 f
+  icache_inst/U8773/I (INVD12BWP40P140LVT)    0.0141    0.0000     0.9712 f
+  icache_inst/U8773/ZN (INVD12BWP40P140LVT)   0.0089    0.0084     0.9796 r
+  icache_inst/U19589/I (INVD18BWP40P140LVT)   0.0089    0.0000     0.9796 r
+  icache_inst/U19589/ZN (INVD18BWP40P140LVT)
+                                              0.0212    0.0154     0.9950 f
+  icache_inst/U8708/B1 (AOI22D4BWP40P140LVT)
+                                              0.0212    0.0000     0.9950 f
+  icache_inst/U8708/ZN (AOI22D4BWP40P140LVT)
+                                              0.0201    0.0182     1.0132 r
+  icache_inst/U1281/A2 (ND3D2BWP40P140LVT)    0.0201    0.0000     1.0132 r
+  icache_inst/U1281/ZN (ND3D2BWP40P140LVT)    0.0306    0.0244     1.0376 f
+  icache_inst/U6477/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0306    0.0000     1.0376 f
+  icache_inst/U6477/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0133     1.0510 r
+  icache_inst/U20022/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0000     1.0510 r
+  icache_inst/U20022/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0092     1.0602 f
+  icache_inst/U19033/A1 (NR3OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0000     1.0602 f
+  icache_inst/U19033/ZN (NR3OPTPAD2BWP40P140LVT)
+                                              0.0185    0.0146     1.0748 r
+  icache_inst/U299/A1 (ND2D3BWP40P140LVT)     0.0185    0.0000     1.0748 r
+  icache_inst/U299/ZN (ND2D3BWP40P140LVT)     0.0191    0.0153     1.0901 f
+  icache_inst/U8230/A2 (NR2D4BWP40P140LVT)    0.0191    0.0000     1.0901 f
+  icache_inst/U8230/ZN (NR2D4BWP40P140LVT)    0.0177    0.0162     1.1064 r
+  icache_inst/U8229/A1 (XOR2OPTND4BWP40P140LVT)
+                                              0.0177    0.0000     1.1064 r
+  icache_inst/U8229/Z (XOR2OPTND4BWP40P140LVT)
+                                              0.0284    0.0188     1.1252 r
+  icache_inst/U19094/A2 (ND2D4BWP40P140LVT)   0.0284    0.0000     1.1252 r
+  icache_inst/U19094/ZN (ND2D4BWP40P140LVT)   0.0171    0.0155     1.1407 f
+  icache_inst/U19873/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0171    0.0000     1.1407 f
+  icache_inst/U19873/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0133    0.0138     1.1545 r
+  icache_inst/U19553/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0133    0.0000     1.1545 r
+  icache_inst/U19553/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0171    0.0140     1.1685 f
+  icache_inst/U14181/A1 (NR2OPTIBD6BWP40P140LVT)
+                                              0.0171    0.0000     1.1685 f
+  icache_inst/U14181/ZN (NR2OPTIBD6BWP40P140LVT)
+                                              0.0181    0.0150     1.1835 r
+  icache_inst/U13855/I (INVD8BWP40P140LVT)    0.0181    0.0000     1.1835 r
+  icache_inst/U13855/ZN (INVD8BWP40P140LVT)   0.0121    0.0104     1.1940 f
+  icache_inst/U12697/I (INVD16BWP40P140LVT)   0.0121    0.0000     1.1940 f
+  icache_inst/U12697/ZN (INVD16BWP40P140LVT)
+                                              0.0135    0.0118     1.2058 r
+  icache_inst/U19435/A1 (AOI21D8BWP40P140LVT)
+                                              0.0135    0.0000     1.2058 r
+  icache_inst/U19435/ZN (AOI21D8BWP40P140LVT)
+                                              0.0235    0.0171     1.2229 f
+  icache_inst/U19434/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0235    0.0000     1.2229 f
+  icache_inst/U19434/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0117     1.2346 r
+  icache_inst/U19457/B1 (INR2D2BWP40P140LVT)
+                                              0.0126    0.0000     1.2346 r
+  icache_inst/U19457/ZN (INR2D2BWP40P140LVT)
+                                              0.0135    0.0103     1.2449 f
+  icache_inst/U20092/A1 (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0135    0.0000     1.2449 f
+  icache_inst/U20092/ZN (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0214    0.0099     1.2549 r
+  icache_inst/ram1_addr_reg_2_/D (DFD1BWP40P140LVT)
+                                              0.0214    0.0000     1.2549 r
+  data arrival time                                                1.2549
+
+  clock CLK_clock (rise edge)                           1.0833     1.0833
+  clock network delay (ideal)                           0.0000     1.0833
+  clock uncertainty                                    -0.1500     0.9333
+  icache_inst/ram1_addr_reg_2_/CP (DFD1BWP40P140LVT)    0.0000     0.9333 r
+  library setup time                                   -0.0197     0.9136
+  data required time                                               0.9136
+  --------------------------------------------------------------------------
+  data required time                                               0.9136
+  data arrival time                                               -1.2549
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.3412
+
+
+  Startpoint: data_cache_inst/state_reg_6_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: icache_inst/ram2_addr_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data_cache_inst/state_reg_6_/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000 #   0.0000 r
+  data_cache_inst/state_reg_6_/Q (DFQD4BWP40P140LVT)
+                                              0.0113    0.0498     0.0498 r
+  data_cache_inst/U4985/A2 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0113    0.0000     0.0498 r
+  data_cache_inst/U4985/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0143    0.0127     0.0625 f
+  data_cache_inst/U5065/A1 (ND3OPTPAD8BWP40P140LVT)
+                                              0.0143    0.0000     0.0625 f
+  data_cache_inst/U5065/ZN (ND3OPTPAD8BWP40P140LVT)
+                                              0.0147    0.0097     0.0723 r
+  data_cache_inst/U5063/A2 (NR3D8BWP40P140LVT)
+                                              0.0147    0.0000     0.0723 r
+  data_cache_inst/U5063/ZN (NR3D8BWP40P140LVT)
+                                              0.0239    0.0179     0.0902 f
+  data_cache_inst/U4990/I (INVD16BWP40P140LVT)
+                                              0.0239    0.0000     0.0902 f
+  data_cache_inst/U4990/ZN (INVD16BWP40P140LVT)
+                                              0.0154    0.0144     0.1046 r
+  data_cache_inst/U26581/I (INVD18BWP40P140LVT)
+                                              0.0154    0.0000     0.1046 r
+  data_cache_inst/U26581/ZN (INVD18BWP40P140LVT)
+                                              0.0140    0.0120     0.1166 f
+  data_cache_inst/U4840/I (INVD16BWP40P140LVT)
+                                              0.0140    0.0000     0.1166 f
+  data_cache_inst/U4840/ZN (INVD16BWP40P140LVT)
+                                              0.0070    0.0067     0.1234 r
+  data_cache_inst/U4870/A1 (ND2D16BWP40P140LVT)
+                                              0.0070    0.0000     0.1234 r
+  data_cache_inst/U4870/ZN (ND2D16BWP40P140LVT)
+                                              0.0268    0.0181     0.1415 f
+  data_cache_inst/U4825/I (INVD12BWP40P140LVT)
+                                              0.0268    0.0000     0.1415 f
+  data_cache_inst/U4825/ZN (INVD12BWP40P140LVT)
+                                              0.0094    0.0085     0.1500 r
+  data_cache_inst/U12954/A1 (AOI22D2BWP40P140LVT)
+                                              0.0094    0.0000     0.1500 r
+  data_cache_inst/U12954/ZN (AOI22D2BWP40P140LVT)
+                                              0.0673    0.0209     0.1709 f
+  data_cache_inst/U26247/A3 (ND3OPTPAD4BWP40P140LVT)
+                                              0.0673    0.0000     0.1709 f
+  data_cache_inst/U26247/ZN (ND3OPTPAD4BWP40P140LVT)
+                                              0.0241    0.0231     0.1939 r
+  data_cache_inst/rdata_63_ (ysyx_22050854_Dcache_0)    0.0000     0.1939 r
+  U8812/A1 (ND2OPTPAD4BWP40P140LVT)           0.0241    0.0000     0.1939 r
+  U8812/ZN (ND2OPTPAD4BWP40P140LVT)           0.0152    0.0129     0.2069 f
+  U11366/A1 (ND2OPTPAD6BWP40P140LVT)          0.0152    0.0000     0.2069 f
+  U11366/ZN (ND2OPTPAD6BWP40P140LVT)          0.0161    0.0110     0.2179 r
+  gen_read_mem_data/lut[77] (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/lut[77] (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/B1 (AOI22D6BWP40P140LVT)
+                                              0.0161    0.0000     0.2179 r
+  gen_read_mem_data/i0/U214/ZN (AOI22D6BWP40P140LVT)
+                                              0.0312    0.0197     0.2375 f
+  gen_read_mem_data/i0/U438/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0312    0.0000     0.2375 f
+  gen_read_mem_data/i0/U438/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0149    0.0150     0.2526 r
+  gen_read_mem_data/i0/U429/A1 (NR2OPTPAD4BWP40P140LVT)
+                                              0.0149    0.0000     0.2526 r
+  gen_read_mem_data/i0/U429/ZN (NR2OPTPAD4BWP40P140LVT)
+                                              0.0147    0.0103     0.2629 f
+  gen_read_mem_data/i0/U499/B1 (INR2D8BWP40P140LVT)
+                                              0.0147    0.0000     0.2629 f
+  gen_read_mem_data/i0/U499/ZN (INR2D8BWP40P140LVT)
+                                              0.0241    0.0187     0.2816 r
+  gen_read_mem_data/i0/U472/A1 (NR2OPTPAD8BWP40P140LVT)
+                                              0.0241    0.0000     0.2816 r
+  gen_read_mem_data/i0/U472/ZN (NR2OPTPAD8BWP40P140LVT)
+                                              0.0141    0.0122     0.2938 f
+  gen_read_mem_data/i0/U250/I (INVD16BWP40P140LVT)
+                                              0.0141    0.0000     0.2938 f
+  gen_read_mem_data/i0/U250/ZN (INVD16BWP40P140LVT)
+                                              0.0119    0.0110     0.3048 r
+  gen_read_mem_data/i0/U245/B1 (INR2D16BWP40P140LVT)
+                                              0.0119    0.0000     0.3048 r
+  gen_read_mem_data/i0/U245/ZN (INR2D16BWP40P140LVT)
+                                              0.0174    0.0125     0.3172 f
+  gen_read_mem_data/i0/U213/I (INVD18BWP40P140LVT)
+                                              0.0174    0.0000     0.3172 f
+  gen_read_mem_data/i0/U213/ZN (INVD18BWP40P140LVT)
+                                              0.0104    0.0097     0.3270 r
+  gen_read_mem_data/i0/U228/I (INVD18BWP40P140LVT)
+                                              0.0104    0.0000     0.3270 r
+  gen_read_mem_data/i0/U228/ZN (INVD18BWP40P140LVT)
+                                              0.0090    0.0078     0.3348 f
+  gen_read_mem_data/i0/U374/I (INVD18BWP40P140LVT)
+                                              0.0090    0.0000     0.3348 f
+  gen_read_mem_data/i0/U374/ZN (INVD18BWP40P140LVT)
+                                              0.0095    0.0084     0.3432 r
+  gen_read_mem_data/i0/U491/B1 (INR2D16BWP40P140LVT)
+                                              0.0095    0.0000     0.3432 r
+  gen_read_mem_data/i0/U491/ZN (INR2D16BWP40P140LVT)
+                                              0.0113    0.0072     0.3504 f
+  gen_read_mem_data/i0/out_36__BAR (ysyx_22050854_MuxKeyInternal_NR_KEY41_KEY_LEN6_DATA_LEN64_HAS_DEFAULT0_0)
+                                                        0.0000     0.3504 f
+  gen_read_mem_data/out_36__BAR (ysyx_22050854_MuxKey_NR_KEY41_KEY_LEN6_DATA_LEN64_0)
+                                                        0.0000     0.3504 f
+  U11331/I (INVD6BWP40P140LVT)                0.0113    0.0000     0.3504 f
+  U11331/ZN (INVD6BWP40P140LVT)               0.0058    0.0059     0.3563 r
+  U4844/A1 (ND2D4BWP40P140LVT)                0.0058    0.0000     0.3563 r
+  U4844/ZN (ND2D4BWP40P140LVT)                0.0175    0.0108     0.3672 f
+  U10864/A1 (ND2OPTPAD4BWP40P140LVT)          0.0175    0.0000     0.3672 f
+  U10864/ZN (ND2OPTPAD4BWP40P140LVT)          0.0115    0.0081     0.3753 r
+  gen_src/src2[36] (ysyx_22050854_src_gen_0)            0.0000     0.3753 r
+  gen_src/src2_gen/lut[168] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/lut[168] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/A1 (AO21D4BWP40P140LVT)
+                                              0.0115    0.0000     0.3753 r
+  gen_src/src2_gen/i0/U150/Z (AO21D4BWP40P140LVT)
+                                              0.0197    0.0328     0.4080 r
+  gen_src/src2_gen/i0/out[36] (ysyx_22050854_MuxKeyInternal_NR_KEY3_KEY_LEN2_DATA_LEN64_HAS_DEFAULT1_0)
+                                                        0.0000     0.4080 r
+  gen_src/src2_gen/out[36] (ysyx_22050854_MuxKeyWithDefault_NR_KEY3_KEY_LEN2_DATA_LEN64_0)
+                                                        0.0000     0.4080 r
+  gen_src/alu_src2[36] (ysyx_22050854_src_gen_0)        0.0000     0.4080 r
+  U11355/A1 (XNR2OPTND4BWP40P140LVT)          0.0197    0.0000     0.4080 r
+  U11355/ZN (XNR2OPTND4BWP40P140LVT)          0.0213    0.0191     0.4271 r
+  U7738/A1 (ND3OPTPAD4BWP40P140LVT)           0.0213    0.0000     0.4271 r
+  U7738/ZN (ND3OPTPAD4BWP40P140LVT)           0.0182    0.0148     0.4419 f
+  U7893/A1 (NR3D2BWP40P140LVT)                0.0182    0.0000     0.4419 f
+  U7893/ZN (NR3D2BWP40P140LVT)                0.0190    0.0152     0.4571 r
+  U11346/A1 (ND2OPTPAD4BWP40P140LVT)          0.0190    0.0000     0.4571 r
+  U11346/ZN (ND2OPTPAD4BWP40P140LVT)          0.0149    0.0125     0.4696 f
+  U11398/A4 (NR4D4BWP40P140LVT)               0.0149    0.0000     0.4696 f
+  U11398/ZN (NR4D4BWP40P140LVT)               0.0267    0.0272     0.4968 r
+  gen_pc/pc_zero_less[1] (ysyx_22050854_pc_0)           0.0000     0.4968 r
+  gen_pc/gen_PC3src/key[1] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/key[1] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/I (INVD2BWP40P140LVT)
+                                              0.0267    0.0000     0.4968 r
+  gen_pc/gen_PC3src/i0/U19/ZN (INVD2BWP40P140LVT)
+                                              0.0108    0.0091     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0108    0.0000     0.5059 f
+  gen_pc/gen_PC3src/i0/U18/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0094     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/A1 (ND2D4BWP40P140LVT)
+                                              0.0126    0.0000     0.5153 r
+  gen_pc/gen_PC3src/i0/U1/ZN (ND2D4BWP40P140LVT)
+                                              0.0232    0.0171     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/A3 (ND3OPTPAD6BWP40P140LVT)
+                                              0.0232    0.0000     0.5324 f
+  gen_pc/gen_PC3src/i0/U28/ZN (ND3OPTPAD6BWP40P140LVT)
+                                              0.0161    0.0149     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/I (INVD8BWP40P140LVT)
+                                              0.0161    0.0000     0.5473 r
+  gen_pc/gen_PC3src/i0/U17/ZN (INVD8BWP40P140LVT)
+                                              0.0125    0.0108     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/I (INVD18BWP40P140LVT)
+                                              0.0125    0.0000     0.5581 f
+  gen_pc/gen_PC3src/i0/U29/ZN (INVD18BWP40P140LVT)
+                                              0.0207    0.0162     0.5743 r
+  gen_pc/gen_PC3src/i0/out[2] (ysyx_22050854_MuxKeyInternal_NR_KEY20_KEY_LEN5_DATA_LEN3_HAS_DEFAULT1_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PC3src/out[2] (ysyx_22050854_MuxKeyWithDefault_NR_KEY20_KEY_LEN5_DATA_LEN3_0)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/key[0] (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/key[0] (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/A1 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0207    0.0000     0.5743 r
+  gen_pc/gen_PCsrc1/i0/U7/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0186    0.0144     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/I (INVD6BWP40P140LVT)
+                                              0.0186    0.0000     0.5887 f
+  gen_pc/gen_PCsrc1/i0/U29/ZN (INVD6BWP40P140LVT)
+                                              0.0101    0.0096     0.5982 r
+  gen_pc/gen_PCsrc1/i0/out_7_ (ysyx_22050854_MuxKeyInternal_NR_KEY2_KEY_LEN1_DATA_LEN32_HAS_DEFAULT0_2)
+                                                        0.0000     0.5982 r
+  gen_pc/gen_PCsrc1/out_7_ (ysyx_22050854_MuxKey_NR_KEY2_KEY_LEN1_DATA_LEN32_2)
+                                                        0.0000     0.5982 r
+  gen_pc/U446/B1 (INR2D8BWP40P140LVT)         0.0101    0.0000     0.5982 r
+  gen_pc/U446/ZN (INR2D8BWP40P140LVT)         0.0141    0.0095     0.6078 f
+  gen_pc/U563/A2 (NR2D8BWP40P140LVT)          0.0141    0.0000     0.6078 f
+  gen_pc/U563/ZN (NR2D8BWP40P140LVT)          0.0156    0.0144     0.6222 r
+  gen_pc/U596/A1 (ND2OPTIBD4BWP40P140LVT)     0.0156    0.0000     0.6222 r
+  gen_pc/U596/ZN (ND2OPTIBD4BWP40P140LVT)     0.0276    0.0201     0.6423 f
+  gen_pc/U569/A2 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0276    0.0000     0.6423 f
+  gen_pc/U569/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0202    0.0182     0.6606 r
+  gen_pc/U274/A1 (ND2OPTPAD6BWP40P140LVT)     0.0202    0.0000     0.6606 r
+  gen_pc/U274/ZN (ND2OPTPAD6BWP40P140LVT)     0.0168    0.0140     0.6746 f
+  gen_pc/U327/A1 (ND2OPTPAD12BWP40P140LVT)    0.0168    0.0000     0.6746 f
+  gen_pc/U327/ZN (ND2OPTPAD12BWP40P140LVT)    0.0135    0.0110     0.6856 r
+  gen_pc/U314/I (INVD9BWP40P140LVT)           0.0135    0.0000     0.6856 r
+  gen_pc/U314/ZN (INVD9BWP40P140LVT)          0.0211    0.0163     0.7019 f
+  gen_pc/U549/A1 (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0211    0.0000     0.7019 f
+  gen_pc/U549/ZN (OAI21OPTREPBD6BWP40P140LVT)
+                                              0.0170    0.0154     0.7174 r
+  gen_pc/U378/A1 (XNR2OPTND4BWP40P140LVT)     0.0170    0.0000     0.7174 r
+  gen_pc/U378/ZN (XNR2OPTND4BWP40P140LVT)     0.0286    0.0207     0.7381 r
+  gen_pc/U624/A1 (OAI21D8BWP40P140LVT)        0.0286    0.0000     0.7381 r
+  gen_pc/U624/ZN (OAI21D8BWP40P140LVT)        0.0352    0.0204     0.7585 f
+  gen_pc/next_pc[26] (ysyx_22050854_pc_0)               0.0000     0.7585 f
+  U5091/B1 (INR2D8BWP40P140LVT)               0.0352    0.0000     0.7585 f
+  U5091/ZN (INR2D8BWP40P140LVT)               0.0156    0.0139     0.7724 r
+  U7724/A2 (ND2D6BWP40P140LVT)                0.0156    0.0000     0.7724 r
+  U7724/ZN (ND2D6BWP40P140LVT)                0.0168    0.0152     0.7876 f
+  U11213/B1 (INR2D8BWP40P140LVT)              0.0168    0.0000     0.7876 f
+  U11213/ZN (INR2D8BWP40P140LVT)              0.0161    0.0136     0.8012 r
+  U11205/B1 (INR2D4BWP40P140LVT)              0.0161    0.0000     0.8012 r
+  U11205/ZN (INR2D4BWP40P140LVT)              0.0117    0.0096     0.8108 f
+  U3936/A1 (ND2D3BWP40P140LVT)                0.0117    0.0000     0.8108 f
+  U3936/ZN (ND2D3BWP40P140LVT)                0.0120    0.0099     0.8207 r
+  U10931/A1 (INR2D16BWP40P140LVT)             0.0120    0.0000     0.8207 r
+  U10931/ZN (INR2D16BWP40P140LVT)             0.0196    0.0289     0.8496 r
+  U4753/A1 (NR2D8BWP40P140LVT)                0.0196    0.0000     0.8496 r
+  U4753/ZN (NR2D8BWP40P140LVT)                0.0158    0.0084     0.8580 f
+  U5268/A1 (NR2OPTIBD8BWP40P140LVT)           0.0158    0.0000     0.8580 f
+  U5268/ZN (NR2OPTIBD8BWP40P140LVT)           0.0186    0.0142     0.8723 r
+  U5352/A1 (ND3OPTPAD16BWP40P140LVT)          0.0186    0.0000     0.8723 r
+  U5352/ZN (ND3OPTPAD16BWP40P140LVT)          0.0423    0.0289     0.9012 f
+  icache_inst/index[2] (ysyx_22050854_Icache_0)         0.0000     0.9012 f
+  icache_inst/U6917/I (INVD18BWP40P140LVT)    0.0423    0.0000     0.9012 f
+  icache_inst/U6917/ZN (INVD18BWP40P140LVT)   0.0153    0.0135     0.9148 r
+  icache_inst/U8685/I (INVD18BWP40P140LVT)    0.0153    0.0000     0.9148 r
+  icache_inst/U8685/ZN (INVD18BWP40P140LVT)   0.0110    0.0095     0.9243 f
+  icache_inst/U8756/A1 (ND2D16BWP40P140LVT)   0.0110    0.0000     0.9243 f
+  icache_inst/U8756/ZN (ND2D16BWP40P140LVT)   0.0128    0.0090     0.9333 r
+  icache_inst/U9437/I (INVD18BWP40P140LVT)    0.0128    0.0000     0.9333 r
+  icache_inst/U9437/ZN (INVD18BWP40P140LVT)   0.0175    0.0141     0.9474 f
+  icache_inst/U19688/A1 (INR2D8BWP40P140LVT)
+                                              0.0175    0.0000     0.9474 f
+  icache_inst/U19688/ZN (INR2D8BWP40P140LVT)
+                                              0.0141    0.0239     0.9712 f
+  icache_inst/U8773/I (INVD12BWP40P140LVT)    0.0141    0.0000     0.9712 f
+  icache_inst/U8773/ZN (INVD12BWP40P140LVT)   0.0089    0.0084     0.9796 r
+  icache_inst/U19589/I (INVD18BWP40P140LVT)   0.0089    0.0000     0.9796 r
+  icache_inst/U19589/ZN (INVD18BWP40P140LVT)
+                                              0.0212    0.0154     0.9950 f
+  icache_inst/U8708/B1 (AOI22D4BWP40P140LVT)
+                                              0.0212    0.0000     0.9950 f
+  icache_inst/U8708/ZN (AOI22D4BWP40P140LVT)
+                                              0.0201    0.0182     1.0132 r
+  icache_inst/U1281/A2 (ND3D2BWP40P140LVT)    0.0201    0.0000     1.0132 r
+  icache_inst/U1281/ZN (ND3D2BWP40P140LVT)    0.0306    0.0244     1.0376 f
+  icache_inst/U6477/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0306    0.0000     1.0376 f
+  icache_inst/U6477/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0133     1.0510 r
+  icache_inst/U20022/A1 (ND2OPTPAD2BWP40P140LVT)
+                                              0.0113    0.0000     1.0510 r
+  icache_inst/U20022/ZN (ND2OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0092     1.0602 f
+  icache_inst/U19033/A1 (NR3OPTPAD2BWP40P140LVT)
+                                              0.0130    0.0000     1.0602 f
+  icache_inst/U19033/ZN (NR3OPTPAD2BWP40P140LVT)
+                                              0.0185    0.0146     1.0748 r
+  icache_inst/U299/A1 (ND2D3BWP40P140LVT)     0.0185    0.0000     1.0748 r
+  icache_inst/U299/ZN (ND2D3BWP40P140LVT)     0.0191    0.0153     1.0901 f
+  icache_inst/U8230/A2 (NR2D4BWP40P140LVT)    0.0191    0.0000     1.0901 f
+  icache_inst/U8230/ZN (NR2D4BWP40P140LVT)    0.0177    0.0162     1.1064 r
+  icache_inst/U8229/A1 (XOR2OPTND4BWP40P140LVT)
+                                              0.0177    0.0000     1.1064 r
+  icache_inst/U8229/Z (XOR2OPTND4BWP40P140LVT)
+                                              0.0284    0.0188     1.1252 r
+  icache_inst/U19094/A2 (ND2D4BWP40P140LVT)   0.0284    0.0000     1.1252 r
+  icache_inst/U19094/ZN (ND2D4BWP40P140LVT)   0.0171    0.0155     1.1407 f
+  icache_inst/U19873/A2 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0171    0.0000     1.1407 f
+  icache_inst/U19873/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0133    0.0138     1.1545 r
+  icache_inst/U19553/A2 (ND2OPTIBD4BWP40P140LVT)
+                                              0.0133    0.0000     1.1545 r
+  icache_inst/U19553/ZN (ND2OPTIBD4BWP40P140LVT)
+                                              0.0171    0.0140     1.1685 f
+  icache_inst/U14181/A1 (NR2OPTIBD6BWP40P140LVT)
+                                              0.0171    0.0000     1.1685 f
+  icache_inst/U14181/ZN (NR2OPTIBD6BWP40P140LVT)
+                                              0.0181    0.0150     1.1835 r
+  icache_inst/U13855/I (INVD8BWP40P140LVT)    0.0181    0.0000     1.1835 r
+  icache_inst/U13855/ZN (INVD8BWP40P140LVT)   0.0121    0.0104     1.1940 f
+  icache_inst/U12697/I (INVD16BWP40P140LVT)   0.0121    0.0000     1.1940 f
+  icache_inst/U12697/ZN (INVD16BWP40P140LVT)
+                                              0.0135    0.0118     1.2058 r
+  icache_inst/U19435/A1 (AOI21D8BWP40P140LVT)
+                                              0.0135    0.0000     1.2058 r
+  icache_inst/U19435/ZN (AOI21D8BWP40P140LVT)
+                                              0.0235    0.0171     1.2229 f
+  icache_inst/U19839/A1 (NR2OPTPAD2BWP40P140LVT)
+                                              0.0235    0.0000     1.2229 f
+  icache_inst/U19839/ZN (NR2OPTPAD2BWP40P140LVT)
+                                              0.0126    0.0117     1.2346 r
+  icache_inst/U19452/B1 (INR2D2BWP40P140LVT)
+                                              0.0126    0.0000     1.2346 r
+  icache_inst/U19452/ZN (INR2D2BWP40P140LVT)
+                                              0.0135    0.0103     1.2449 f
+  icache_inst/U19460/A1 (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0135    0.0000     1.2449 f
+  icache_inst/U19460/ZN (OAI22OPTPBD2BWP40P140LVT)
+                                              0.0208    0.0099     1.2549 r
+  icache_inst/ram2_addr_reg_0_/D (DFD1BWP40P140LVT)
+                                              0.0208    0.0000     1.2549 r
+  data arrival time                                                1.2549
+
+  clock CLK_clock (rise edge)                           1.0833     1.0833
+  clock network delay (ideal)                           0.0000     1.0833
+  clock uncertainty                                    -0.1500     0.9333
+  icache_inst/ram2_addr_reg_0_/CP (DFD1BWP40P140LVT)    0.0000     0.9333 r
+  library setup time                                   -0.0196     0.9138
+  data required time                                               0.9138
+  --------------------------------------------------------------------------
+  data required time                                               0.9138
+  data arrival time                                               -1.2549
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.3411
+
+
+1
