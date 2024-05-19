@@ -1,0 +1,13 @@
+
+dut: ysyx_22050612
+
+################
+#vcs compile log
+################
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5018
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rdata
+  Source info: rdata = (({clint_r_offset[15:3], {3 {1'b0}}} == 16'b0) ? 
+  {32'b0, msip} : (({clint_r_offset[15:3], {3 {1'b0}}} == 16'h4000) ? mtimecmp
+  : (({clint_r_offset[15:3 ...
