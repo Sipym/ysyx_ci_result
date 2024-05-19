@@ -1,0 +1,143 @@
+
+dut: ysyx_22050612
+
+################
+#vcs compile log
+################
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4829
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = (((!rst) && awvalid_mem) && (!w_clint_space));
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4830
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = (((!rst) && awvalid_mem) && w_clint_space);
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4838
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b1;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4839
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4843
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4844
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4848
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4849
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4853
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4854
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b1;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4858
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4859
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4863
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4864
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4868
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid
+  Source info: awvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 4869
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : awvalid_clint
+  Source info: awvalid_clint = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5002
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rvalid
+  Source info: rvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5003
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rresp
+  Source info: rresp = 2'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5007
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rdata
+  Source info: rdata = (({clint_r_offset[15:3], {3 {1'b0}}} == 16'b0) ? 
+  {32'b0, msip} : (({clint_r_offset[15:3], {3 {1'b0}}} == 16'h4000) ? mtimecmp
+  : (({clint_r_offset[15:3 ...
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5011
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rvalid
+  Source info: rvalid = 1'b1;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5012
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rresp
+  Source info: rresp = 2'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5016
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rvalid
+  Source info: rvalid = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5017
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : rresp
+  Source info: rresp = 2'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5059
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : wready
+  Source info: wready = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5063
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : wready
+  Source info: wready = 1'b1;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5067
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : wready
+  Source info: wready = 1'b0;
+Error-[IBLHS-NT] Illegal behavioral left hand side
+../cpu/ysyx_22050612.v, 5071
+  Net type cannot be used on the left side of this assignment.
+  The offending expression is : wready
+  Source info: wready = 1'b0;
