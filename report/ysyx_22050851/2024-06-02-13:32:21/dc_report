@@ -1,0 +1,2269 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22050851
+freq: 100
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+****** Message Summary:0 Errors(s) 0 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total    std      mem  ipio  sub_harden
+59286.5  59286.5  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+77905  77905  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.95  0.05 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  100.0     153.8      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22050851
+Version: R-2020.09-SP3a
+Date   : Sun Jun  2 14:26:03 2024
+****************************************
+
+Number of ports:                        18418
+Number of nets:                         94408
+Number of cells:                        78885
+Number of combinational cells:          68813
+Number of sequential cells:              9092
+Number of macros/black boxes:               0
+Number of buf/inv:                      14077
+Number of references:                      17
+
+Combinational area:              42097.355899
+Buf/Inv area:                     4304.412044
+Noncombinational area:           17189.171870
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 59286.527769
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+ysyx_22050851                     59286.5278    100.0    633.5280      0.0000  0.0000  ysyx_22050851
+clint                              2089.9620      3.5   1611.6660    478.2960  0.0000  ysyx_22050851_CLINT_0
+csrregs                            1766.5200      3.0    914.0040    852.5160  0.0000  ysyx_22050851_ControlRegisterFile_0
+dCache                            12979.6380     21.9   8345.8620   4411.5120  0.0000  ysyx_22050851_Cache_1_0
+dCache/POWERGATING_clock_io_writeReq_ready_0
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22050851_0_6
+dCache/POWERGATING_clock_io_writeReq_ready_1
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22050851_0_7
+dCache/POWERGATING_clock_io_writeReq_ready_2
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22050851_0_5
+dCache/POWERGATING_clock_io_writeReq_ready_3
+                                      2.1420      0.0      0.2520      1.8900  0.0000  POWERMODULE_HIGH_ysyx_22050851_0_4
+dCache/cachePolicy_0                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_27
+dCache/cachePolicy_1                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_17
+dCache/cachePolicy_2                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_28
+dCache/cachePolicy_3                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_18
+dCache/cachePolicy_4                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_29
+dCache/cachePolicy_5                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_19
+dCache/cachePolicy_6                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_31
+dCache/cachePolicy_7                 26.7120      0.0     13.4820     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_30
+divider                            2498.8320      4.2   1996.0920    502.7400  0.0000  ysyx_22050851_R2Divider_0
+exe                                2594.2140      4.4    774.3960    512.1900  0.0000  ysyx_22050851_InstructionExecuteUnit_0
+exe/alu                            1307.6280      2.2   1033.5780      0.0000  0.0000  ysyx_22050851_ALU_0
+exe/alu/adder                       274.0500      0.5    274.0500      0.0000  0.0000  ysyx_22050851_FastAdder_0
+iCache                            10118.3039     17.1   5876.7660   4023.8100  0.0000  ysyx_22050851_Cache_0
+iCache/cachePolicy_0                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_20
+iCache/cachePolicy_1                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_21
+iCache/cachePolicy_2                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_22
+iCache/cachePolicy_3                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_23
+iCache/cachePolicy_4                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_24
+iCache/cachePolicy_5                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_25
+iCache/cachePolicy_6                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_26
+iCache/cachePolicy_7                 27.2160      0.0     13.9860     13.2300  0.0000  ysyx_22050851_PLRUCachePolicy_16
+idu                                2436.0840      4.1   1767.7800    563.2200  0.0000  ysyx_22050851_InstructionDecodeUnit_0
+idu/controlDecoder                  105.0840      0.2    105.0840      0.0000  0.0000  ysyx_22050851_InstContorlDecoder_0
+ifu                                1281.4200      2.2    846.7200    434.7000  0.0000  ysyx_22050851_InstructionFetchUnit_0
+interConnect                        494.9280      0.8      0.0000      0.0000  0.0000  ysyx_22050851_AxiInterConnect_0
+interConnect/arbiter                243.9360      0.4    234.4860      9.4500  0.0000  ysyx_22050851_AxiArbiter_0
+interConnect/crossbar               250.9920      0.4    243.4320      7.5600  0.0000  ysyx_22050851_AxiCrossbar_0
+memu                               1313.6760      2.2    620.0460    693.6300  0.0000  ysyx_22050851_MemRWUnit_0
+multiplier                         9297.4140     15.7   9045.0360    252.3780  0.0000  ysyx_22050851_SimpleMultiplier_0
+regs                              10763.9279     18.2   7014.1680   3749.7600  0.0000  ysyx_22050851_RegisterFile_0
+wbu                                1018.0800      1.7    539.9100    478.1700  0.0000  ysyx_22050851_WriteBackUnit_0
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                  42097.3559  17189.1719  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22050851
+Version: R-2020.09-SP3a
+Date   : Sun Jun  2 14:25:54 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Wire Load Model Mode: top
+
+  Startpoint: multiplier/inReg_multiplicand_reg_21_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: dCache/status_reg_4_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  multiplier/inReg_multiplicand_reg_21_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  multiplier/inReg_multiplicand_reg_21_/Q (DFQD2BWP40P140)
+                                              0.3031    0.2382     0.2382 f
+  multiplier/U915/A2 (XNR2D2BWP40P140)        0.3031    0.0000     0.2382 f
+  multiplier/U915/ZN (XNR2D2BWP40P140)        0.1578    0.1857     0.4239 f
+  multiplier/U1058/A2 (ND2OPTPAD1BWP40P140)   0.1578    0.0000     0.4239 f
+  multiplier/U1058/ZN (ND2OPTPAD1BWP40P140)   0.2776    0.2161     0.6399 r
+  multiplier/U3015/A1 (OAI22D1BWP40P140)      0.2776    0.0000     0.6399 r
+  multiplier/U3015/ZN (OAI22D1BWP40P140)      0.0935    0.0723     0.7123 f
+  multiplier/U3048/B (FA1D1BWP40P140)         0.0935    0.0000     0.7123 f
+  multiplier/U3048/CO (FA1D1BWP40P140)        0.0241    0.0768     0.7891 f
+  multiplier/U3021/CI (FA1D1BWP40P140)        0.0241    0.0000     0.7891 f
+  multiplier/U3021/CO (FA1D1BWP40P140)        0.0230    0.0502     0.8392 f
+  multiplier/U3156/CI (FA1D1BWP40P140)        0.0230    0.0000     0.8392 f
+  multiplier/U3156/CO (FA1D1BWP40P140)        0.0259    0.0530     0.8922 f
+  multiplier/U3342/B (FA1D1BWP40P140)         0.0259    0.0000     0.8922 f
+  multiplier/U3342/CO (FA1D1BWP40P140)        0.0259    0.0595     0.9517 f
+  multiplier/U3418/B (FA1D1BWP40P140)         0.0259    0.0000     0.9517 f
+  multiplier/U3418/CO (FA1D1BWP40P140)        0.0260    0.0595     1.0111 f
+  multiplier/U3426/B (FA1D1BWP40P140)         0.0260    0.0000     1.0111 f
+  multiplier/U3426/S (FA1D1BWP40P140)         0.0281    0.0990     1.1102 r
+  multiplier/U3470/CI (FA1D1BWP40P140)        0.0281    0.0000     1.1102 r
+  multiplier/U3470/S (FA1D1BWP40P140)         0.0297    0.0870     1.1971 f
+  multiplier/U1149/A1 (NR2D1BWP40P140)        0.0297    0.0000     1.1971 f
+  multiplier/U1149/ZN (NR2D1BWP40P140)        0.0317    0.0286     1.2257 r
+  multiplier/U3521/A1 (OAI21D1BWP40P140)      0.0317    0.0000     1.2257 r
+  multiplier/U3521/ZN (OAI21D1BWP40P140)      0.0337    0.0289     1.2545 f
+  multiplier/U3524/A1 (AOI21D1BWP40P140)      0.0337    0.0000     1.2545 f
+  multiplier/U3524/ZN (AOI21D1BWP40P140)      0.0308    0.0286     1.2832 r
+  multiplier/U3526/A1 (OAI21D1BWP40P140)      0.0308    0.0000     1.2832 r
+  multiplier/U3526/ZN (OAI21D1BWP40P140)      0.0274    0.0235     1.3067 f
+  multiplier/U3527/B (AOI21D1BWP40P140)       0.0274    0.0000     1.3067 f
+  multiplier/U3527/ZN (AOI21D1BWP40P140)      0.0307    0.0308     1.3375 r
+  multiplier/U3738/A1 (OAI21D1BWP40P140)      0.0307    0.0000     1.3375 r
+  multiplier/U3738/ZN (OAI21D1BWP40P140)      0.0336    0.0286     1.3661 f
+  multiplier/U4037/A1 (AOI21D1BWP40P140)      0.0336    0.0000     1.3661 f
+  multiplier/U4037/ZN (AOI21D1BWP40P140)      0.0305    0.0284     1.3944 r
+  multiplier/U1247/A1 (OAI21D1BWP40P140)      0.0305    0.0000     1.3944 r
+  multiplier/U1247/ZN (OAI21D1BWP40P140)      0.0335    0.0285     1.4230 f
+  multiplier/U274/A1 (AOI21D1BWP40P140)       0.0335    0.0000     1.4230 f
+  multiplier/U274/ZN (AOI21D1BWP40P140)       0.0305    0.0283     1.4513 r
+  multiplier/U777/A2 (OAI21D1BWP40P140)       0.0305    0.0000     1.4513 r
+  multiplier/U777/ZN (OAI21D1BWP40P140)       0.0348    0.0300     1.4813 f
+  multiplier/U36/A1 (AOI21D1BWP40P140)        0.0348    0.0000     1.4813 f
+  multiplier/U36/ZN (AOI21D1BWP40P140)        0.0310    0.0289     1.5103 r
+  multiplier/U9/A1 (OAI21D1BWP40P140LVT)      0.0310    0.0000     1.5103 r
+  multiplier/U9/ZN (OAI21D1BWP40P140LVT)      0.0362    0.0288     1.5391 f
+  multiplier/U364/A1 (AOI21D1BWP40P140)       0.0362    0.0000     1.5391 f
+  multiplier/U364/ZN (AOI21D1BWP40P140)       0.0464    0.0393     1.5784 r
+  multiplier/U345/A1 (OAI21D2BWP40P140)       0.0464    0.0000     1.5784 r
+  multiplier/U345/ZN (OAI21D2BWP40P140)       0.0304    0.0263     1.6047 f
+  multiplier/U780/A1 (AOI21D1BWP40P140)       0.0304    0.0000     1.6047 f
+  multiplier/U780/ZN (AOI21D1BWP40P140)       0.0388    0.0333     1.6380 r
+  multiplier/U344/A1 (OAI21D1BWP40P140)       0.0388    0.0000     1.6380 r
+  multiplier/U344/ZN (OAI21D1BWP40P140)       0.0441    0.0370     1.6749 f
+  multiplier/U880/A1 (AOI21D1BWP40P140)       0.0441    0.0000     1.6749 f
+  multiplier/U880/ZN (AOI21D1BWP40P140)       0.0484    0.0420     1.7170 r
+  multiplier/U305/A1 (OAI21D2BWP40P140LVT)    0.0484    0.0000     1.7170 r
+  multiplier/U305/ZN (OAI21D2BWP40P140LVT)    0.0294    0.0233     1.7403 f
+  multiplier/U304/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     1.7403 f
+  multiplier/U304/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     1.7664 r
+  multiplier/U888/A1 (OAI21D1BWP40P140)       0.0289    0.0000     1.7664 r
+  multiplier/U888/ZN (OAI21D1BWP40P140)       0.0434    0.0343     1.8007 f
+  multiplier/U348/A1 (AOI21D1BWP40P140)       0.0434    0.0000     1.8007 f
+  multiplier/U348/ZN (AOI21D1BWP40P140)       0.0484    0.0419     1.8426 r
+  multiplier/U295/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0484    0.0000     1.8426 r
+  multiplier/U295/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0269     1.8695 f
+  multiplier/U292/A1 (AOI21D2BWP40P140)       0.0363    0.0000     1.8695 f
+  multiplier/U292/ZN (AOI21D2BWP40P140)       0.0252    0.0239     1.8934 r
+  multiplier/U367/A1 (OAI21D1BWP40P140)       0.0252    0.0000     1.8934 r
+  multiplier/U367/ZN (OAI21D1BWP40P140)       0.0488    0.0366     1.9299 f
+  multiplier/U291/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     1.9299 f
+  multiplier/U291/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0415    0.0373     1.9672 r
+  multiplier/U914/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0415    0.0000     1.9672 r
+  multiplier/U914/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0233    0.0208     1.9880 f
+  multiplier/U909/A1 (AOI21D1BWP40P140)       0.0233    0.0000     1.9880 f
+  multiplier/U909/ZN (AOI21D1BWP40P140)       0.0456    0.0356     2.0236 r
+  multiplier/U246/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0456    0.0000     2.0236 r
+  multiplier/U246/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0268     2.0504 f
+  multiplier/U244/A1 (AOI21D2BWP40P140)       0.0363    0.0000     2.0504 f
+  multiplier/U244/ZN (AOI21D2BWP40P140)       0.0252    0.0239     2.0743 r
+  multiplier/U920/A1 (OAI21D1BWP40P140)       0.0252    0.0000     2.0743 r
+  multiplier/U920/ZN (OAI21D1BWP40P140)       0.0488    0.0366     2.1108 f
+  multiplier/U170/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     2.1108 f
+  multiplier/U170/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0346    0.0334     2.1442 r
+  multiplier/U98/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0346    0.0000     2.1442 r
+  multiplier/U98/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0315    0.0234     2.1677 f
+  multiplier/U840/A1 (AOI21D1BWP40P140)       0.0315    0.0000     2.1677 f
+  multiplier/U840/ZN (AOI21D1BWP40P140)       0.0389    0.0336     2.2013 r
+  multiplier/U842/A1 (OAI21D1BWP40P140)       0.0389    0.0000     2.2013 r
+  multiplier/U842/ZN (OAI21D1BWP40P140)       0.0441    0.0370     2.2383 f
+  multiplier/U843/A1 (AOI21D1BWP40P140)       0.0441    0.0000     2.2383 f
+  multiplier/U843/ZN (AOI21D1BWP40P140)       0.0484    0.0420     2.2803 r
+  multiplier/U93/A1 (OAI21D2BWP40P140LVT)     0.0484    0.0000     2.2803 r
+  multiplier/U93/ZN (OAI21D2BWP40P140LVT)     0.0294    0.0233     2.3036 f
+  multiplier/U92/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     2.3036 f
+  multiplier/U92/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     2.3297 r
+  multiplier/U307/A1 (OAI21D1BWP40P140)       0.0289    0.0000     2.3297 r
+  multiplier/U307/ZN (OAI21D1BWP40P140)       0.0436    0.0345     2.3642 f
+  multiplier/U89/A1 (AOI21D1BWP40P140LVT)     0.0436    0.0000     2.3642 f
+  multiplier/U89/ZN (AOI21D1BWP40P140LVT)     0.0421    0.0355     2.3997 r
+  multiplier/U88/A1 (OAI21D2BWP40P140LVT)     0.0421    0.0000     2.3997 r
+  multiplier/U88/ZN (OAI21D2BWP40P140LVT)     0.0259    0.0207     2.4204 f
+  multiplier/U283/A1 (AOI21D1BWP40P140)       0.0259    0.0000     2.4204 f
+  multiplier/U283/ZN (AOI21D1BWP40P140)       0.0382    0.0318     2.4523 r
+  multiplier/U287/A1 (OAI21D1BWP40P140)       0.0382    0.0000     2.4523 r
+  multiplier/U287/ZN (OAI21D1BWP40P140)       0.0496    0.0403     2.4925 f
+  multiplier/U34/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0496    0.0000     2.4925 f
+  multiplier/U34/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0332     2.5257 r
+  multiplier/U30/A1 (OAI21D2BWP40P140)        0.0340    0.0000     2.5257 r
+  multiplier/U30/ZN (OAI21D2BWP40P140)        0.0294    0.0243     2.5500 f
+  multiplier/U784/A1 (AOI21D1BWP40P140)       0.0294    0.0000     2.5500 f
+  multiplier/U784/ZN (AOI21D1BWP40P140)       0.0386    0.0330     2.5829 r
+  multiplier/U288/A1 (OAI21D1BWP40P140)       0.0386    0.0000     2.5829 r
+  multiplier/U288/ZN (OAI21D1BWP40P140)       0.0443    0.0371     2.6200 f
+  multiplier/U29/A1 (AOI21D1BWP40P140LVT)     0.0443    0.0000     2.6200 f
+  multiplier/U29/ZN (AOI21D1BWP40P140LVT)     0.0401    0.0344     2.6544 r
+  multiplier/U15/A1 (OAI21D1P5BWP40P140)      0.0401    0.0000     2.6544 r
+  multiplier/U15/ZN (OAI21D1P5BWP40P140)      0.0285    0.0240     2.6785 f
+  multiplier/U9188/CI (FA1D1BWP40P140)        0.0285    0.0000     2.6785 f
+  multiplier/U9188/CO (FA1D1BWP40P140)        0.0225    0.0518     2.7303 f
+  multiplier/U9193/CI (FA1D1BWP40P140)        0.0225    0.0000     2.7303 f
+  multiplier/U9193/CO (FA1D1BWP40P140)        0.0223    0.0496     2.7798 f
+  multiplier/U9196/CI (FA1D1BWP40P140)        0.0223    0.0000     2.7798 f
+  multiplier/U9196/CO (FA1D1BWP40P140)        0.0183    0.0459     2.8257 f
+  multiplier/U8617/A2 (XOR2UD1BWP40P140)      0.0183    0.0000     2.8257 f
+  multiplier/U8617/Z (XOR2UD1BWP40P140)       0.0267    0.0364     2.8621 f
+  multiplier/U8627/I0 (MUX2NUD1BWP40P140)     0.0267    0.0000     2.8621 f
+  multiplier/U8627/ZN (MUX2NUD1BWP40P140)     0.0687    0.0272     2.8893 r
+  multiplier/U28/I (INVD1BWP40P140)           0.0687    0.0000     2.8893 r
+  multiplier/U28/ZN (INVD1BWP40P140)          0.0220    0.0190     2.9084 f
+  multiplier/output_bits_resultHigh[63] (ysyx_22050851_SimpleMultiplier_0)
+                                                        0.0000     2.9084 f
+  wbu/fromMultiplier_bits_resultHigh[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9084 f
+  wbu/U9/A1 (ND2D1BWP40P140)                  0.0220    0.0000     2.9084 f
+  wbu/U9/ZN (ND2D1BWP40P140)                  0.0357    0.0133     2.9216 r
+  wbu/U3/A1 (ND2D1BWP40P140LVT)               0.0357    0.0000     2.9216 r
+  wbu/U3/ZN (ND2D1BWP40P140LVT)               0.0195    0.0165     2.9381 f
+  wbu/U529/B (AOI21D1BWP40P140)               0.0195    0.0000     2.9381 f
+  wbu/U529/ZN (AOI21D1BWP40P140)              0.0410    0.0242     2.9623 r
+  wbu/U8/B (IOA21D1BWP40P140)                 0.0410    0.0000     2.9623 r
+  wbu/U8/ZN (IOA21D1BWP40P140)                0.0419    0.0356     2.9980 f
+  wbu/toDecode_data[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9980 f
+  exe/fromWbu_data[63] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     2.9980 f
+  exe/U937/A1 (AOI21D1BWP40P140)              0.0419    0.0000     2.9980 f
+  exe/U937/ZN (AOI21D1BWP40P140)              0.0526    0.0300     3.0279 r
+  exe/U6/B (OAI211OPTREPBD2BWP40P140)         0.0526    0.0000     3.0279 r
+  exe/U6/ZN (OAI211OPTREPBD2BWP40P140)        0.0968    0.0692     3.0972 f
+  exe/alu/io_in_bits_inA[63] (ysyx_22050851_ALU_0)      0.0000     3.0972 f
+  exe/alu/U2028/A1 (NR2OPTPAD2BWP40P140)      0.0968    0.0000     3.0972 f
+  exe/alu/U2028/ZN (NR2OPTPAD2BWP40P140)      0.0335    0.0318     3.1290 r
+  exe/alu/U22/A1 (OR2D1BWP40P140)             0.0335    0.0000     3.1290 r
+  exe/alu/U22/Z (OR2D1BWP40P140)              0.0266    0.0400     3.1690 r
+  exe/alu/U524/I (INVD1BWP40P140)             0.0266    0.0000     3.1690 r
+  exe/alu/U524/ZN (INVD1BWP40P140)            0.0603    0.0447     3.2136 f
+  exe/alu/U107/A1 (ND2D2BWP40P140)            0.0603    0.0000     3.2136 f
+  exe/alu/U107/ZN (ND2D2BWP40P140)            0.0940    0.0292     3.2428 r
+  exe/alu/U2027/I (INVD3BWP40P140)            0.0940    0.0000     3.2428 r
+  exe/alu/U2027/ZN (INVD3BWP40P140)           0.0393    0.0346     3.2775 f
+  exe/alu/U1628/B (AOI211D1BWP40P140)         0.0393    0.0000     3.2775 f
+  exe/alu/U1628/ZN (AOI211D1BWP40P140)        0.0585    0.0399     3.3173 r
+  exe/alu/U59/B (OAI21D1BWP40P140)            0.0585    0.0000     3.3173 r
+  exe/alu/U59/ZN (OAI21D1BWP40P140)           0.0321    0.0344     3.3517 f
+  exe/alu/U1629/C (AOI211D1BWP40P140)         0.0321    0.0000     3.3517 f
+  exe/alu/U1629/ZN (AOI211D1BWP40P140)        0.0763    0.0390     3.3907 r
+  exe/alu/U1630/C (OAI211D1BWP40P140)         0.0763    0.0000     3.3907 r
+  exe/alu/U1630/ZN (OAI211D1BWP40P140)        0.0704    0.0659     3.4566 f
+  exe/alu/io_out_bits_out[18] (ysyx_22050851_ALU_0)     0.0000     3.4566 f
+  exe/U49/A1 (AO22D1BWP40P140)                0.0704    0.0000     3.4566 f
+  exe/U49/Z (AO22D1BWP40P140)                 0.0286    0.0536     3.5102 f
+  exe/toDecode_data[18] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     3.5102 f
+  idu/fromExe_data[18] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     3.5102 f
+  idu/U632/A2 (ND2D1BWP40P140)                0.0286    0.0000     3.5102 f
+  idu/U632/ZN (ND2D1BWP40P140)                0.0352    0.0163     3.5264 r
+  idu/U17/A1 (ND2D1BWP40P140)                 0.0352    0.0000     3.5264 r
+  idu/U17/ZN (ND2D1BWP40P140)                 0.0751    0.0556     3.5820 f
+  idu/U175/A1 (OR2D1BWP40P140)                0.0751    0.0000     3.5820 f
+  idu/U175/Z (OR2D1BWP40P140)                 0.0210    0.0456     3.6276 f
+  idu/U2054/A2 (AOI21D1BWP40P140)             0.0210    0.0000     3.6276 f
+  idu/U2054/ZN (AOI21D1BWP40P140)             0.0227    0.0208     3.6485 r
+  idu/U2055/B (OAI21D1BWP40P140)              0.0227    0.0000     3.6485 r
+  idu/U2055/ZN (OAI21D1BWP40P140)             0.0337    0.0315     3.6800 f
+  idu/U119/A2 (AOI21D1BWP40P140)              0.0337    0.0000     3.6800 f
+  idu/U119/ZN (AOI21D1BWP40P140)              0.0306    0.0288     3.7087 r
+  idu/U398/A1 (OAI21D1BWP40P140)              0.0306    0.0000     3.7087 r
+  idu/U398/ZN (OAI21D1BWP40P140)              0.0259    0.0235     3.7322 f
+  idu/U113/B (AOI21D1BWP40P140)               0.0259    0.0000     3.7322 f
+  idu/U113/ZN (AOI21D1BWP40P140)              0.0284    0.0303     3.7625 r
+  idu/U112/A1 (OAI21D1BWP40P140)              0.0284    0.0000     3.7625 r
+  idu/U112/ZN (OAI21D1BWP40P140)              0.0414    0.0333     3.7958 f
+  idu/U725/A1 (AOI21D1BWP40P140)              0.0414    0.0000     3.7958 f
+  idu/U725/ZN (AOI21D1BWP40P140)              0.0256    0.0256     3.8214 r
+  idu/U2085/B (OAI21D1BWP40P140)              0.0256    0.0000     3.8214 r
+  idu/U2085/ZN (OAI21D1BWP40P140)             0.0365    0.0323     3.8537 f
+  idu/U111/A1 (AOI21D1BWP40P140)              0.0365    0.0000     3.8537 f
+  idu/U111/ZN (AOI21D1BWP40P140)              0.0246    0.0246     3.8783 r
+  idu/U11/B (OAI21D1BWP40P140)                0.0246    0.0000     3.8783 r
+  idu/U11/ZN (OAI21D1BWP40P140)               0.1214    0.0761     3.9544 f
+  idu/U1159/A1 (AOI21D1BWP40P140)             0.1214    0.0000     3.9544 f
+  idu/U1159/ZN (AOI21D1BWP40P140)             0.0503    0.0483     4.0027 r
+  idu/U2866/A1 (XOR2UD1BWP40P140)             0.0503    0.0000     4.0027 r
+  idu/U2866/Z (XOR2UD1BWP40P140)              0.0274    0.0174     4.0202 f
+  idu/U1391/A1 (IOA21D1BWP40P140)             0.0274    0.0000     4.0202 f
+  idu/U1391/ZN (IOA21D1BWP40P140)             0.0311    0.0407     4.0609 f
+  idu/U1169/I (INVD1BWP40P140)                0.0311    0.0000     4.0609 f
+  idu/U1169/ZN (INVD1BWP40P140)               0.0131    0.0145     4.0754 r
+  idu/U3104/I0 (MUX2NUD1BWP40P140)            0.0131    0.0000     4.0754 r
+  idu/U3104/ZN (MUX2NUD1BWP40P140)            0.1501    0.0595     4.1348 f
+  idu/decodeBack_branchPc[54] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/fromDecode_branchPc[54] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/U365/A1 (XOR2UD1BWP40P140)              0.1501    0.0000     4.1348 f
+  ifu/U365/Z (XOR2UD1BWP40P140)               0.0370    0.0576     4.1924 f
+  ifu/U27/A2 (NR2D1BWP40P140)                 0.0370    0.0000     4.1924 f
+  ifu/U27/ZN (NR2D1BWP40P140)                 0.0206    0.0233     4.2158 r
+  ifu/U376/A1 (ND3D1BWP40P140)                0.0206    0.0000     4.2158 r
+  ifu/U376/ZN (ND3D1BWP40P140)                0.0320    0.0251     4.2409 f
+  ifu/U54/A2 (NR2D1BWP40P140)                 0.0320    0.0000     4.2409 f
+  ifu/U54/ZN (NR2D1BWP40P140)                 0.0200    0.0222     4.2631 r
+  ifu/U397/A1 (ND3D1BWP40P140)                0.0200    0.0000     4.2631 r
+  ifu/U397/ZN (ND3D1BWP40P140)                0.0311    0.0250     4.2881 f
+  ifu/U48/A2 (NR2D1BWP40P140)                 0.0311    0.0000     4.2881 f
+  ifu/U48/ZN (NR2D1BWP40P140)                 0.0199    0.0218     4.3099 r
+  ifu/U399/A2 (ND3D1BWP40P140)                0.0199    0.0000     4.3099 r
+  ifu/U399/ZN (ND3D1BWP40P140)                0.0344    0.0272     4.3372 f
+  ifu/U75/A2 (NR2D1BWP40P140)                 0.0344    0.0000     4.3372 f
+  ifu/U75/ZN (NR2D1BWP40P140)                 0.0206    0.0228     4.3600 r
+  ifu/U401/A1 (INR2D1BWP40P140)               0.0206    0.0000     4.3600 r
+  ifu/U401/ZN (INR2D1BWP40P140)               0.0203    0.0301     4.3901 r
+  ifu/U20/A1 (INR2D1BWP40P140)                0.0203    0.0000     4.3901 r
+  ifu/U20/ZN (INR2D1BWP40P140)                0.0260    0.0340     4.4241 r
+  ifu/U16/A1 (IND2D1BWP40P140LVT)             0.0260    0.0000     4.4241 r
+  ifu/U16/ZN (IND2D1BWP40P140LVT)             0.0155    0.0253     4.4494 r
+  ifu/U12/I (INVD3BWP40P140)                  0.0155    0.0000     4.4494 r
+  ifu/U12/ZN (INVD3BWP40P140)                 0.0248    0.0200     4.4694 f
+  ifu/U14/I (INVD12BWP40P140)                 0.0248    0.0000     4.4694 f
+  ifu/U14/ZN (INVD12BWP40P140)                0.0416    0.0330     4.5023 r
+  ifu/U6/S (MUX2ND2BWP40P140)                 0.0416    0.0000     4.5023 r
+  ifu/U6/ZN (MUX2ND2BWP40P140)                0.0323    0.0596     4.5619 f
+  ifu/iCacheIO_addr[7] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.5619 f
+  iCache/io_addr[7] (ysyx_22050851_Cache_0)             0.0000     4.5619 f
+  iCache/U257/A1 (NR2D1BWP40P140)             0.0323    0.0000     4.5619 f
+  iCache/U257/ZN (NR2D1BWP40P140)             0.0550    0.0437     4.6056 r
+  iCache/U132/A1 (ND2OPTPAD1BWP40P140)        0.0550    0.0000     4.6056 r
+  iCache/U132/ZN (ND2OPTPAD1BWP40P140)        0.4718    0.2844     4.8900 f
+  iCache/U137/I (BUFFD1BWP40P140)             0.4718    0.0000     4.8900 f
+  iCache/U137/Z (BUFFD1BWP40P140)             0.4559    0.3568     5.2468 f
+  iCache/U2996/A1 (OAI22D1BWP40P140)          0.4559    0.0000     5.2468 f
+  iCache/U2996/ZN (OAI22D1BWP40P140)          0.1067    0.0647     5.3115 r
+  iCache/U490/A1 (NR2D1BWP40P140)             0.1067    0.0000     5.3115 r
+  iCache/U490/ZN (NR2D1BWP40P140)             0.0294    0.0219     5.3334 f
+  iCache/U3000/A1 (ND3D1BWP40P140)            0.0294    0.0000     5.3334 f
+  iCache/U3000/ZN (ND3D1BWP40P140)            0.0347    0.0196     5.3531 r
+  iCache/U3001/A1 (XOR2UD1BWP40P140)          0.0347    0.0000     5.3531 r
+  iCache/U3001/Z (XOR2UD1BWP40P140)           0.0653    0.0205     5.3736 f
+  iCache/U3002/A4 (NR4D1BWP40P140)            0.0653    0.0000     5.3736 f
+  iCache/U3002/ZN (NR4D1BWP40P140)            0.0298    0.0399     5.4135 r
+  iCache/U3025/A1 (ND3D1BWP40P140)            0.0298    0.0000     5.4135 r
+  iCache/U3025/ZN (ND3D1BWP40P140)            0.0382    0.0310     5.4445 f
+  iCache/U3076/A2 (NR4D1BWP40P140)            0.0382    0.0000     5.4445 f
+  iCache/U3076/ZN (NR4D1BWP40P140)            0.0308    0.0319     5.4764 r
+  iCache/U315/A1 (NR2D1BWP40P140)             0.0308    0.0000     5.4764 r
+  iCache/U315/ZN (NR2D1BWP40P140)             0.0189    0.0182     5.4947 f
+  iCache/U158/A1 (ND2D1BWP40P140)             0.0189    0.0000     5.4947 f
+  iCache/U158/ZN (ND2D1BWP40P140)             0.0196    0.0176     5.5123 r
+  iCache/U109/A1 (OAI31D1BWP40P140LVT)        0.0196    0.0000     5.5123 r
+  iCache/U109/ZN (OAI31D1BWP40P140LVT)        0.0715    0.0312     5.5435 f
+  iCache/axiIO_arvalid (ysyx_22050851_Cache_0)          0.0000     5.5435 f
+  interConnect/slaveIO_1_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/slaveIO_1_arvalid (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/U153/A1 (NR2OPTIBD1BWP40P140LVT)
+                                              0.0715    0.0000     5.5435 f
+  interConnect/arbiter/U153/ZN (NR2OPTIBD1BWP40P140LVT)
+                                              0.0355    0.0328     5.5763 r
+  interConnect/arbiter/U55/A1 (OAI21D2BWP40P140)
+                                              0.0355    0.0000     5.5763 r
+  interConnect/arbiter/U55/ZN (OAI21D2BWP40P140)
+                                              0.0315    0.0271     5.6033 f
+  interConnect/arbiter/U180/A1 (ND2D1BWP40P140)
+                                              0.0315    0.0000     5.6033 f
+  interConnect/arbiter/U180/ZN (ND2D1BWP40P140)
+                                              0.0233    0.0236     5.6269 r
+  interConnect/arbiter/U32/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0233    0.0000     5.6269 r
+  interConnect/arbiter/U32/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0249    0.0191     5.6461 f
+  interConnect/arbiter/U413/I (INVD3BWP40P140)
+                                              0.0249    0.0000     5.6461 f
+  interConnect/arbiter/U413/ZN (INVD3BWP40P140)
+                                              0.0310    0.0267     5.6728 r
+  interConnect/arbiter/U52/I (INVD6BWP40P140)
+                                              0.0310    0.0000     5.6728 r
+  interConnect/arbiter/U52/ZN (INVD6BWP40P140)
+                                              0.1142    0.0761     5.7489 f
+  interConnect/arbiter/U45/S (MUX2NUD1BWP40P140)
+                                              0.1142    0.0000     5.7489 f
+  interConnect/arbiter/U45/ZN (MUX2NUD1BWP40P140)
+                                              0.0563    0.0622     5.8111 f
+  interConnect/arbiter/masterIO_awaddr[24] (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/slaveIO_awaddr[24] (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/U171/A3 (OR4D1BWP40P140)
+                                              0.0563    0.0000     5.8111 f
+  interConnect/crossbar/U171/Z (OR4D1BWP40P140)
+                                              0.0159    0.0510     5.8621 f
+  interConnect/crossbar/U172/A4 (OR4D1BWP40P140)
+                                              0.0159    0.0000     5.8621 f
+  interConnect/crossbar/U172/Z (OR4D1BWP40P140)
+                                              0.0152    0.0354     5.8976 f
+  interConnect/crossbar/U339/I0 (MUX2NUD1BWP40P140)
+                                              0.0152    0.0000     5.8976 f
+  interConnect/crossbar/U339/ZN (MUX2NUD1BWP40P140)
+                                              0.0312    0.0276     5.9252 r
+  interConnect/crossbar/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0312    0.0000     5.9252 r
+  interConnect/crossbar/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0295    0.0233     5.9485 f
+  interConnect/crossbar/U17/B1 (INR2D1BWP40P140)
+                                              0.0295    0.0000     5.9485 f
+  interConnect/crossbar/U17/ZN (INR2D1BWP40P140)
+                                              0.0188    0.0188     5.9673 r
+  interConnect/crossbar/U22/I (INVD1BWP40P140)
+                                              0.0188    0.0000     5.9673 r
+  interConnect/crossbar/U22/ZN (INVD1BWP40P140)
+                                              0.0194    0.0179     5.9852 f
+  interConnect/crossbar/U418/A1 (NR2D1BWP40P140)
+                                              0.0194    0.0000     5.9852 f
+  interConnect/crossbar/U418/ZN (NR2D1BWP40P140)
+                                              0.0289    0.0244     6.0095 r
+  interConnect/crossbar/masterIO_0_arvalid (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0095 r
+  interConnect/masterIO_0_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0095 r
+  clint/slaveIO_arvalid (ysyx_22050851_CLINT_0)         0.0000     6.0095 r
+  clint/U1788/A1 (NR2D1BWP40P140)             0.0289    0.0000     6.0095 r
+  clint/U1788/ZN (NR2D1BWP40P140)             0.0172    0.0172     6.0267 f
+  clint/slaveIO_awready (ysyx_22050851_CLINT_0)         0.0000     6.0267 f
+  interConnect/masterIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/masterIO_0_awready (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/U389/I0 (MUX2NUD1BWP40P140)
+                                              0.0172    0.0000     6.0267 f
+  interConnect/crossbar/U389/ZN (MUX2NUD1BWP40P140)
+                                              0.0899    0.0524     6.0792 r
+  interConnect/crossbar/slaveIO_awready_BAR (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/masterIO_awready_BAR (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/U4/A1 (NR2OPTIBD2BWP40P140)
+                                              0.0899    0.0000     6.0792 r
+  interConnect/arbiter/U4/ZN (NR2OPTIBD2BWP40P140)
+                                              0.0402    0.0356     6.1148 f
+  interConnect/arbiter/slaveIO_0_awready (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.1148 f
+  interConnect/slaveIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.1148 f
+  dCache/axiIO_awready (ysyx_22050851_Cache_1_0)        0.0000     6.1148 f
+  dCache/U5240/I (INVD1BWP40P140)             0.0402    0.0000     6.1148 f
+  dCache/U5240/ZN (INVD1BWP40P140)            0.0195    0.0210     6.1357 r
+  dCache/U5242/A1 (NR2D1BWP40P140)            0.0195    0.0000     6.1357 r
+  dCache/U5242/ZN (NR2D1BWP40P140)            0.0223    0.0186     6.1543 f
+  dCache/U7633/B (AOI211D1BWP40P140)          0.0223    0.0000     6.1543 f
+  dCache/U7633/ZN (AOI211D1BWP40P140)         0.0429    0.0406     6.1949 r
+  dCache/U7634/A2 (ND2D1BWP40P140)            0.0429    0.0000     6.1949 r
+  dCache/U7634/ZN (ND2D1BWP40P140)            0.0275    0.0270     6.2219 f
+  dCache/U162/A3 (OR4D1BWP40P140)             0.0275    0.0000     6.2219 f
+  dCache/U162/Z (OR4D1BWP40P140)              0.0315    0.0571     6.2790 f
+  dCache/U9555/I (INVD1BWP40P140)             0.0315    0.0000     6.2790 f
+  dCache/U9555/ZN (INVD1BWP40P140)            0.0139    0.0153     6.2943 r
+  dCache/U73/A1 (ND2D1BWP40P140)              0.0139    0.0000     6.2943 r
+  dCache/U73/ZN (ND2D1BWP40P140)              0.0199    0.0162     6.3105 f
+  dCache/U77/B (IOA21D1BWP40P140)             0.0199    0.0000     6.3105 f
+  dCache/U77/ZN (IOA21D1BWP40P140)            0.0153    0.0122     6.3228 r
+  dCache/status_reg_4_/D (DFQD1BWP40P140)     0.0153    0.0000     6.3228 r
+  data arrival time                                                6.3228
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  dCache/status_reg_4_/CP (DFQD1BWP40P140)              0.0000     6.3500 r
+  library setup time                                   -0.0268     6.3232
+  data required time                                               6.3232
+  --------------------------------------------------------------------------
+  data required time                                               6.3232
+  data arrival time                                               -6.3228
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0004
+
+
+  Startpoint: multiplier/inReg_multiplicand_reg_21_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: clint/counter_reg_15_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  multiplier/inReg_multiplicand_reg_21_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  multiplier/inReg_multiplicand_reg_21_/Q (DFQD2BWP40P140)
+                                              0.3031    0.2382     0.2382 f
+  multiplier/U915/A2 (XNR2D2BWP40P140)        0.3031    0.0000     0.2382 f
+  multiplier/U915/ZN (XNR2D2BWP40P140)        0.1578    0.1857     0.4239 f
+  multiplier/U1058/A2 (ND2OPTPAD1BWP40P140)   0.1578    0.0000     0.4239 f
+  multiplier/U1058/ZN (ND2OPTPAD1BWP40P140)   0.2776    0.2161     0.6399 r
+  multiplier/U3015/A1 (OAI22D1BWP40P140)      0.2776    0.0000     0.6399 r
+  multiplier/U3015/ZN (OAI22D1BWP40P140)      0.0935    0.0723     0.7123 f
+  multiplier/U3048/B (FA1D1BWP40P140)         0.0935    0.0000     0.7123 f
+  multiplier/U3048/CO (FA1D1BWP40P140)        0.0241    0.0768     0.7891 f
+  multiplier/U3021/CI (FA1D1BWP40P140)        0.0241    0.0000     0.7891 f
+  multiplier/U3021/CO (FA1D1BWP40P140)        0.0230    0.0502     0.8392 f
+  multiplier/U3156/CI (FA1D1BWP40P140)        0.0230    0.0000     0.8392 f
+  multiplier/U3156/CO (FA1D1BWP40P140)        0.0259    0.0530     0.8922 f
+  multiplier/U3342/B (FA1D1BWP40P140)         0.0259    0.0000     0.8922 f
+  multiplier/U3342/CO (FA1D1BWP40P140)        0.0259    0.0595     0.9517 f
+  multiplier/U3418/B (FA1D1BWP40P140)         0.0259    0.0000     0.9517 f
+  multiplier/U3418/CO (FA1D1BWP40P140)        0.0260    0.0595     1.0111 f
+  multiplier/U3426/B (FA1D1BWP40P140)         0.0260    0.0000     1.0111 f
+  multiplier/U3426/S (FA1D1BWP40P140)         0.0281    0.0990     1.1102 r
+  multiplier/U3470/CI (FA1D1BWP40P140)        0.0281    0.0000     1.1102 r
+  multiplier/U3470/S (FA1D1BWP40P140)         0.0297    0.0870     1.1971 f
+  multiplier/U1149/A1 (NR2D1BWP40P140)        0.0297    0.0000     1.1971 f
+  multiplier/U1149/ZN (NR2D1BWP40P140)        0.0317    0.0286     1.2257 r
+  multiplier/U3521/A1 (OAI21D1BWP40P140)      0.0317    0.0000     1.2257 r
+  multiplier/U3521/ZN (OAI21D1BWP40P140)      0.0337    0.0289     1.2545 f
+  multiplier/U3524/A1 (AOI21D1BWP40P140)      0.0337    0.0000     1.2545 f
+  multiplier/U3524/ZN (AOI21D1BWP40P140)      0.0308    0.0286     1.2832 r
+  multiplier/U3526/A1 (OAI21D1BWP40P140)      0.0308    0.0000     1.2832 r
+  multiplier/U3526/ZN (OAI21D1BWP40P140)      0.0274    0.0235     1.3067 f
+  multiplier/U3527/B (AOI21D1BWP40P140)       0.0274    0.0000     1.3067 f
+  multiplier/U3527/ZN (AOI21D1BWP40P140)      0.0307    0.0308     1.3375 r
+  multiplier/U3738/A1 (OAI21D1BWP40P140)      0.0307    0.0000     1.3375 r
+  multiplier/U3738/ZN (OAI21D1BWP40P140)      0.0336    0.0286     1.3661 f
+  multiplier/U4037/A1 (AOI21D1BWP40P140)      0.0336    0.0000     1.3661 f
+  multiplier/U4037/ZN (AOI21D1BWP40P140)      0.0305    0.0284     1.3944 r
+  multiplier/U1247/A1 (OAI21D1BWP40P140)      0.0305    0.0000     1.3944 r
+  multiplier/U1247/ZN (OAI21D1BWP40P140)      0.0335    0.0285     1.4230 f
+  multiplier/U274/A1 (AOI21D1BWP40P140)       0.0335    0.0000     1.4230 f
+  multiplier/U274/ZN (AOI21D1BWP40P140)       0.0305    0.0283     1.4513 r
+  multiplier/U777/A2 (OAI21D1BWP40P140)       0.0305    0.0000     1.4513 r
+  multiplier/U777/ZN (OAI21D1BWP40P140)       0.0348    0.0300     1.4813 f
+  multiplier/U36/A1 (AOI21D1BWP40P140)        0.0348    0.0000     1.4813 f
+  multiplier/U36/ZN (AOI21D1BWP40P140)        0.0310    0.0289     1.5103 r
+  multiplier/U9/A1 (OAI21D1BWP40P140LVT)      0.0310    0.0000     1.5103 r
+  multiplier/U9/ZN (OAI21D1BWP40P140LVT)      0.0362    0.0288     1.5391 f
+  multiplier/U364/A1 (AOI21D1BWP40P140)       0.0362    0.0000     1.5391 f
+  multiplier/U364/ZN (AOI21D1BWP40P140)       0.0464    0.0393     1.5784 r
+  multiplier/U345/A1 (OAI21D2BWP40P140)       0.0464    0.0000     1.5784 r
+  multiplier/U345/ZN (OAI21D2BWP40P140)       0.0304    0.0263     1.6047 f
+  multiplier/U780/A1 (AOI21D1BWP40P140)       0.0304    0.0000     1.6047 f
+  multiplier/U780/ZN (AOI21D1BWP40P140)       0.0388    0.0333     1.6380 r
+  multiplier/U344/A1 (OAI21D1BWP40P140)       0.0388    0.0000     1.6380 r
+  multiplier/U344/ZN (OAI21D1BWP40P140)       0.0441    0.0370     1.6749 f
+  multiplier/U880/A1 (AOI21D1BWP40P140)       0.0441    0.0000     1.6749 f
+  multiplier/U880/ZN (AOI21D1BWP40P140)       0.0484    0.0420     1.7170 r
+  multiplier/U305/A1 (OAI21D2BWP40P140LVT)    0.0484    0.0000     1.7170 r
+  multiplier/U305/ZN (OAI21D2BWP40P140LVT)    0.0294    0.0233     1.7403 f
+  multiplier/U304/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     1.7403 f
+  multiplier/U304/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     1.7664 r
+  multiplier/U888/A1 (OAI21D1BWP40P140)       0.0289    0.0000     1.7664 r
+  multiplier/U888/ZN (OAI21D1BWP40P140)       0.0434    0.0343     1.8007 f
+  multiplier/U348/A1 (AOI21D1BWP40P140)       0.0434    0.0000     1.8007 f
+  multiplier/U348/ZN (AOI21D1BWP40P140)       0.0484    0.0419     1.8426 r
+  multiplier/U295/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0484    0.0000     1.8426 r
+  multiplier/U295/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0269     1.8695 f
+  multiplier/U292/A1 (AOI21D2BWP40P140)       0.0363    0.0000     1.8695 f
+  multiplier/U292/ZN (AOI21D2BWP40P140)       0.0252    0.0239     1.8934 r
+  multiplier/U367/A1 (OAI21D1BWP40P140)       0.0252    0.0000     1.8934 r
+  multiplier/U367/ZN (OAI21D1BWP40P140)       0.0488    0.0366     1.9299 f
+  multiplier/U291/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     1.9299 f
+  multiplier/U291/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0415    0.0373     1.9672 r
+  multiplier/U914/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0415    0.0000     1.9672 r
+  multiplier/U914/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0233    0.0208     1.9880 f
+  multiplier/U909/A1 (AOI21D1BWP40P140)       0.0233    0.0000     1.9880 f
+  multiplier/U909/ZN (AOI21D1BWP40P140)       0.0456    0.0356     2.0236 r
+  multiplier/U246/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0456    0.0000     2.0236 r
+  multiplier/U246/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0268     2.0504 f
+  multiplier/U244/A1 (AOI21D2BWP40P140)       0.0363    0.0000     2.0504 f
+  multiplier/U244/ZN (AOI21D2BWP40P140)       0.0252    0.0239     2.0743 r
+  multiplier/U920/A1 (OAI21D1BWP40P140)       0.0252    0.0000     2.0743 r
+  multiplier/U920/ZN (OAI21D1BWP40P140)       0.0488    0.0366     2.1108 f
+  multiplier/U170/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     2.1108 f
+  multiplier/U170/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0346    0.0334     2.1442 r
+  multiplier/U98/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0346    0.0000     2.1442 r
+  multiplier/U98/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0315    0.0234     2.1677 f
+  multiplier/U840/A1 (AOI21D1BWP40P140)       0.0315    0.0000     2.1677 f
+  multiplier/U840/ZN (AOI21D1BWP40P140)       0.0389    0.0336     2.2013 r
+  multiplier/U842/A1 (OAI21D1BWP40P140)       0.0389    0.0000     2.2013 r
+  multiplier/U842/ZN (OAI21D1BWP40P140)       0.0441    0.0370     2.2383 f
+  multiplier/U843/A1 (AOI21D1BWP40P140)       0.0441    0.0000     2.2383 f
+  multiplier/U843/ZN (AOI21D1BWP40P140)       0.0484    0.0420     2.2803 r
+  multiplier/U93/A1 (OAI21D2BWP40P140LVT)     0.0484    0.0000     2.2803 r
+  multiplier/U93/ZN (OAI21D2BWP40P140LVT)     0.0294    0.0233     2.3036 f
+  multiplier/U92/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     2.3036 f
+  multiplier/U92/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     2.3297 r
+  multiplier/U307/A1 (OAI21D1BWP40P140)       0.0289    0.0000     2.3297 r
+  multiplier/U307/ZN (OAI21D1BWP40P140)       0.0436    0.0345     2.3642 f
+  multiplier/U89/A1 (AOI21D1BWP40P140LVT)     0.0436    0.0000     2.3642 f
+  multiplier/U89/ZN (AOI21D1BWP40P140LVT)     0.0421    0.0355     2.3997 r
+  multiplier/U88/A1 (OAI21D2BWP40P140LVT)     0.0421    0.0000     2.3997 r
+  multiplier/U88/ZN (OAI21D2BWP40P140LVT)     0.0259    0.0207     2.4204 f
+  multiplier/U283/A1 (AOI21D1BWP40P140)       0.0259    0.0000     2.4204 f
+  multiplier/U283/ZN (AOI21D1BWP40P140)       0.0382    0.0318     2.4523 r
+  multiplier/U287/A1 (OAI21D1BWP40P140)       0.0382    0.0000     2.4523 r
+  multiplier/U287/ZN (OAI21D1BWP40P140)       0.0496    0.0403     2.4925 f
+  multiplier/U34/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0496    0.0000     2.4925 f
+  multiplier/U34/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0332     2.5257 r
+  multiplier/U30/A1 (OAI21D2BWP40P140)        0.0340    0.0000     2.5257 r
+  multiplier/U30/ZN (OAI21D2BWP40P140)        0.0294    0.0243     2.5500 f
+  multiplier/U784/A1 (AOI21D1BWP40P140)       0.0294    0.0000     2.5500 f
+  multiplier/U784/ZN (AOI21D1BWP40P140)       0.0386    0.0330     2.5829 r
+  multiplier/U288/A1 (OAI21D1BWP40P140)       0.0386    0.0000     2.5829 r
+  multiplier/U288/ZN (OAI21D1BWP40P140)       0.0443    0.0371     2.6200 f
+  multiplier/U29/A1 (AOI21D1BWP40P140LVT)     0.0443    0.0000     2.6200 f
+  multiplier/U29/ZN (AOI21D1BWP40P140LVT)     0.0401    0.0344     2.6544 r
+  multiplier/U15/A1 (OAI21D1P5BWP40P140)      0.0401    0.0000     2.6544 r
+  multiplier/U15/ZN (OAI21D1P5BWP40P140)      0.0285    0.0240     2.6785 f
+  multiplier/U9188/CI (FA1D1BWP40P140)        0.0285    0.0000     2.6785 f
+  multiplier/U9188/CO (FA1D1BWP40P140)        0.0225    0.0518     2.7303 f
+  multiplier/U9193/CI (FA1D1BWP40P140)        0.0225    0.0000     2.7303 f
+  multiplier/U9193/CO (FA1D1BWP40P140)        0.0223    0.0496     2.7798 f
+  multiplier/U9196/CI (FA1D1BWP40P140)        0.0223    0.0000     2.7798 f
+  multiplier/U9196/CO (FA1D1BWP40P140)        0.0183    0.0459     2.8257 f
+  multiplier/U8617/A2 (XOR2UD1BWP40P140)      0.0183    0.0000     2.8257 f
+  multiplier/U8617/Z (XOR2UD1BWP40P140)       0.0267    0.0364     2.8621 f
+  multiplier/U8627/I0 (MUX2NUD1BWP40P140)     0.0267    0.0000     2.8621 f
+  multiplier/U8627/ZN (MUX2NUD1BWP40P140)     0.0687    0.0272     2.8893 r
+  multiplier/U28/I (INVD1BWP40P140)           0.0687    0.0000     2.8893 r
+  multiplier/U28/ZN (INVD1BWP40P140)          0.0220    0.0190     2.9084 f
+  multiplier/output_bits_resultHigh[63] (ysyx_22050851_SimpleMultiplier_0)
+                                                        0.0000     2.9084 f
+  wbu/fromMultiplier_bits_resultHigh[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9084 f
+  wbu/U9/A1 (ND2D1BWP40P140)                  0.0220    0.0000     2.9084 f
+  wbu/U9/ZN (ND2D1BWP40P140)                  0.0357    0.0133     2.9216 r
+  wbu/U3/A1 (ND2D1BWP40P140LVT)               0.0357    0.0000     2.9216 r
+  wbu/U3/ZN (ND2D1BWP40P140LVT)               0.0195    0.0165     2.9381 f
+  wbu/U529/B (AOI21D1BWP40P140)               0.0195    0.0000     2.9381 f
+  wbu/U529/ZN (AOI21D1BWP40P140)              0.0410    0.0242     2.9623 r
+  wbu/U8/B (IOA21D1BWP40P140)                 0.0410    0.0000     2.9623 r
+  wbu/U8/ZN (IOA21D1BWP40P140)                0.0419    0.0356     2.9980 f
+  wbu/toDecode_data[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9980 f
+  exe/fromWbu_data[63] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     2.9980 f
+  exe/U937/A1 (AOI21D1BWP40P140)              0.0419    0.0000     2.9980 f
+  exe/U937/ZN (AOI21D1BWP40P140)              0.0526    0.0300     3.0279 r
+  exe/U6/B (OAI211OPTREPBD2BWP40P140)         0.0526    0.0000     3.0279 r
+  exe/U6/ZN (OAI211OPTREPBD2BWP40P140)        0.0968    0.0692     3.0972 f
+  exe/alu/io_in_bits_inA[63] (ysyx_22050851_ALU_0)      0.0000     3.0972 f
+  exe/alu/U2028/A1 (NR2OPTPAD2BWP40P140)      0.0968    0.0000     3.0972 f
+  exe/alu/U2028/ZN (NR2OPTPAD2BWP40P140)      0.0335    0.0318     3.1290 r
+  exe/alu/U22/A1 (OR2D1BWP40P140)             0.0335    0.0000     3.1290 r
+  exe/alu/U22/Z (OR2D1BWP40P140)              0.0266    0.0400     3.1690 r
+  exe/alu/U524/I (INVD1BWP40P140)             0.0266    0.0000     3.1690 r
+  exe/alu/U524/ZN (INVD1BWP40P140)            0.0603    0.0447     3.2136 f
+  exe/alu/U107/A1 (ND2D2BWP40P140)            0.0603    0.0000     3.2136 f
+  exe/alu/U107/ZN (ND2D2BWP40P140)            0.0940    0.0292     3.2428 r
+  exe/alu/U2027/I (INVD3BWP40P140)            0.0940    0.0000     3.2428 r
+  exe/alu/U2027/ZN (INVD3BWP40P140)           0.0393    0.0346     3.2775 f
+  exe/alu/U1628/B (AOI211D1BWP40P140)         0.0393    0.0000     3.2775 f
+  exe/alu/U1628/ZN (AOI211D1BWP40P140)        0.0585    0.0399     3.3173 r
+  exe/alu/U59/B (OAI21D1BWP40P140)            0.0585    0.0000     3.3173 r
+  exe/alu/U59/ZN (OAI21D1BWP40P140)           0.0321    0.0344     3.3517 f
+  exe/alu/U1629/C (AOI211D1BWP40P140)         0.0321    0.0000     3.3517 f
+  exe/alu/U1629/ZN (AOI211D1BWP40P140)        0.0763    0.0390     3.3907 r
+  exe/alu/U1630/C (OAI211D1BWP40P140)         0.0763    0.0000     3.3907 r
+  exe/alu/U1630/ZN (OAI211D1BWP40P140)        0.0704    0.0659     3.4566 f
+  exe/alu/io_out_bits_out[18] (ysyx_22050851_ALU_0)     0.0000     3.4566 f
+  exe/U49/A1 (AO22D1BWP40P140)                0.0704    0.0000     3.4566 f
+  exe/U49/Z (AO22D1BWP40P140)                 0.0286    0.0536     3.5102 f
+  exe/toDecode_data[18] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     3.5102 f
+  idu/fromExe_data[18] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     3.5102 f
+  idu/U632/A2 (ND2D1BWP40P140)                0.0286    0.0000     3.5102 f
+  idu/U632/ZN (ND2D1BWP40P140)                0.0352    0.0163     3.5264 r
+  idu/U17/A1 (ND2D1BWP40P140)                 0.0352    0.0000     3.5264 r
+  idu/U17/ZN (ND2D1BWP40P140)                 0.0751    0.0556     3.5820 f
+  idu/U175/A1 (OR2D1BWP40P140)                0.0751    0.0000     3.5820 f
+  idu/U175/Z (OR2D1BWP40P140)                 0.0210    0.0456     3.6276 f
+  idu/U2054/A2 (AOI21D1BWP40P140)             0.0210    0.0000     3.6276 f
+  idu/U2054/ZN (AOI21D1BWP40P140)             0.0227    0.0208     3.6485 r
+  idu/U2055/B (OAI21D1BWP40P140)              0.0227    0.0000     3.6485 r
+  idu/U2055/ZN (OAI21D1BWP40P140)             0.0337    0.0315     3.6800 f
+  idu/U119/A2 (AOI21D1BWP40P140)              0.0337    0.0000     3.6800 f
+  idu/U119/ZN (AOI21D1BWP40P140)              0.0306    0.0288     3.7087 r
+  idu/U398/A1 (OAI21D1BWP40P140)              0.0306    0.0000     3.7087 r
+  idu/U398/ZN (OAI21D1BWP40P140)              0.0259    0.0235     3.7322 f
+  idu/U113/B (AOI21D1BWP40P140)               0.0259    0.0000     3.7322 f
+  idu/U113/ZN (AOI21D1BWP40P140)              0.0284    0.0303     3.7625 r
+  idu/U112/A1 (OAI21D1BWP40P140)              0.0284    0.0000     3.7625 r
+  idu/U112/ZN (OAI21D1BWP40P140)              0.0414    0.0333     3.7958 f
+  idu/U725/A1 (AOI21D1BWP40P140)              0.0414    0.0000     3.7958 f
+  idu/U725/ZN (AOI21D1BWP40P140)              0.0256    0.0256     3.8214 r
+  idu/U2085/B (OAI21D1BWP40P140)              0.0256    0.0000     3.8214 r
+  idu/U2085/ZN (OAI21D1BWP40P140)             0.0365    0.0323     3.8537 f
+  idu/U111/A1 (AOI21D1BWP40P140)              0.0365    0.0000     3.8537 f
+  idu/U111/ZN (AOI21D1BWP40P140)              0.0246    0.0246     3.8783 r
+  idu/U11/B (OAI21D1BWP40P140)                0.0246    0.0000     3.8783 r
+  idu/U11/ZN (OAI21D1BWP40P140)               0.1214    0.0761     3.9544 f
+  idu/U1159/A1 (AOI21D1BWP40P140)             0.1214    0.0000     3.9544 f
+  idu/U1159/ZN (AOI21D1BWP40P140)             0.0503    0.0483     4.0027 r
+  idu/U2866/A1 (XOR2UD1BWP40P140)             0.0503    0.0000     4.0027 r
+  idu/U2866/Z (XOR2UD1BWP40P140)              0.0274    0.0174     4.0202 f
+  idu/U1391/A1 (IOA21D1BWP40P140)             0.0274    0.0000     4.0202 f
+  idu/U1391/ZN (IOA21D1BWP40P140)             0.0311    0.0407     4.0609 f
+  idu/U1169/I (INVD1BWP40P140)                0.0311    0.0000     4.0609 f
+  idu/U1169/ZN (INVD1BWP40P140)               0.0131    0.0145     4.0754 r
+  idu/U3104/I0 (MUX2NUD1BWP40P140)            0.0131    0.0000     4.0754 r
+  idu/U3104/ZN (MUX2NUD1BWP40P140)            0.1501    0.0595     4.1348 f
+  idu/decodeBack_branchPc[54] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/fromDecode_branchPc[54] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/U365/A1 (XOR2UD1BWP40P140)              0.1501    0.0000     4.1348 f
+  ifu/U365/Z (XOR2UD1BWP40P140)               0.0370    0.0576     4.1924 f
+  ifu/U27/A2 (NR2D1BWP40P140)                 0.0370    0.0000     4.1924 f
+  ifu/U27/ZN (NR2D1BWP40P140)                 0.0206    0.0233     4.2158 r
+  ifu/U376/A1 (ND3D1BWP40P140)                0.0206    0.0000     4.2158 r
+  ifu/U376/ZN (ND3D1BWP40P140)                0.0320    0.0251     4.2409 f
+  ifu/U54/A2 (NR2D1BWP40P140)                 0.0320    0.0000     4.2409 f
+  ifu/U54/ZN (NR2D1BWP40P140)                 0.0200    0.0222     4.2631 r
+  ifu/U397/A1 (ND3D1BWP40P140)                0.0200    0.0000     4.2631 r
+  ifu/U397/ZN (ND3D1BWP40P140)                0.0311    0.0250     4.2881 f
+  ifu/U48/A2 (NR2D1BWP40P140)                 0.0311    0.0000     4.2881 f
+  ifu/U48/ZN (NR2D1BWP40P140)                 0.0199    0.0218     4.3099 r
+  ifu/U399/A2 (ND3D1BWP40P140)                0.0199    0.0000     4.3099 r
+  ifu/U399/ZN (ND3D1BWP40P140)                0.0344    0.0272     4.3372 f
+  ifu/U75/A2 (NR2D1BWP40P140)                 0.0344    0.0000     4.3372 f
+  ifu/U75/ZN (NR2D1BWP40P140)                 0.0206    0.0228     4.3600 r
+  ifu/U401/A1 (INR2D1BWP40P140)               0.0206    0.0000     4.3600 r
+  ifu/U401/ZN (INR2D1BWP40P140)               0.0203    0.0301     4.3901 r
+  ifu/U20/A1 (INR2D1BWP40P140)                0.0203    0.0000     4.3901 r
+  ifu/U20/ZN (INR2D1BWP40P140)                0.0260    0.0340     4.4241 r
+  ifu/U16/A1 (IND2D1BWP40P140LVT)             0.0260    0.0000     4.4241 r
+  ifu/U16/ZN (IND2D1BWP40P140LVT)             0.0155    0.0253     4.4494 r
+  ifu/U12/I (INVD3BWP40P140)                  0.0155    0.0000     4.4494 r
+  ifu/U12/ZN (INVD3BWP40P140)                 0.0248    0.0200     4.4694 f
+  ifu/U14/I (INVD12BWP40P140)                 0.0248    0.0000     4.4694 f
+  ifu/U14/ZN (INVD12BWP40P140)                0.0416    0.0330     4.5023 r
+  ifu/U6/S (MUX2ND2BWP40P140)                 0.0416    0.0000     4.5023 r
+  ifu/U6/ZN (MUX2ND2BWP40P140)                0.0323    0.0596     4.5619 f
+  ifu/iCacheIO_addr[7] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.5619 f
+  iCache/io_addr[7] (ysyx_22050851_Cache_0)             0.0000     4.5619 f
+  iCache/U257/A1 (NR2D1BWP40P140)             0.0323    0.0000     4.5619 f
+  iCache/U257/ZN (NR2D1BWP40P140)             0.0550    0.0437     4.6056 r
+  iCache/U132/A1 (ND2OPTPAD1BWP40P140)        0.0550    0.0000     4.6056 r
+  iCache/U132/ZN (ND2OPTPAD1BWP40P140)        0.4718    0.2844     4.8900 f
+  iCache/U137/I (BUFFD1BWP40P140)             0.4718    0.0000     4.8900 f
+  iCache/U137/Z (BUFFD1BWP40P140)             0.4559    0.3568     5.2468 f
+  iCache/U2996/A1 (OAI22D1BWP40P140)          0.4559    0.0000     5.2468 f
+  iCache/U2996/ZN (OAI22D1BWP40P140)          0.1067    0.0647     5.3115 r
+  iCache/U490/A1 (NR2D1BWP40P140)             0.1067    0.0000     5.3115 r
+  iCache/U490/ZN (NR2D1BWP40P140)             0.0294    0.0219     5.3334 f
+  iCache/U3000/A1 (ND3D1BWP40P140)            0.0294    0.0000     5.3334 f
+  iCache/U3000/ZN (ND3D1BWP40P140)            0.0347    0.0196     5.3531 r
+  iCache/U3001/A1 (XOR2UD1BWP40P140)          0.0347    0.0000     5.3531 r
+  iCache/U3001/Z (XOR2UD1BWP40P140)           0.0653    0.0205     5.3736 f
+  iCache/U3002/A4 (NR4D1BWP40P140)            0.0653    0.0000     5.3736 f
+  iCache/U3002/ZN (NR4D1BWP40P140)            0.0298    0.0399     5.4135 r
+  iCache/U3025/A1 (ND3D1BWP40P140)            0.0298    0.0000     5.4135 r
+  iCache/U3025/ZN (ND3D1BWP40P140)            0.0382    0.0310     5.4445 f
+  iCache/U3076/A2 (NR4D1BWP40P140)            0.0382    0.0000     5.4445 f
+  iCache/U3076/ZN (NR4D1BWP40P140)            0.0308    0.0319     5.4764 r
+  iCache/U315/A1 (NR2D1BWP40P140)             0.0308    0.0000     5.4764 r
+  iCache/U315/ZN (NR2D1BWP40P140)             0.0189    0.0182     5.4947 f
+  iCache/U158/A1 (ND2D1BWP40P140)             0.0189    0.0000     5.4947 f
+  iCache/U158/ZN (ND2D1BWP40P140)             0.0196    0.0176     5.5123 r
+  iCache/U109/A1 (OAI31D1BWP40P140LVT)        0.0196    0.0000     5.5123 r
+  iCache/U109/ZN (OAI31D1BWP40P140LVT)        0.0715    0.0312     5.5435 f
+  iCache/axiIO_arvalid (ysyx_22050851_Cache_0)          0.0000     5.5435 f
+  interConnect/slaveIO_1_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/slaveIO_1_arvalid (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/U153/A1 (NR2OPTIBD1BWP40P140LVT)
+                                              0.0715    0.0000     5.5435 f
+  interConnect/arbiter/U153/ZN (NR2OPTIBD1BWP40P140LVT)
+                                              0.0355    0.0328     5.5763 r
+  interConnect/arbiter/U55/A1 (OAI21D2BWP40P140)
+                                              0.0355    0.0000     5.5763 r
+  interConnect/arbiter/U55/ZN (OAI21D2BWP40P140)
+                                              0.0315    0.0271     5.6033 f
+  interConnect/arbiter/U180/A1 (ND2D1BWP40P140)
+                                              0.0315    0.0000     5.6033 f
+  interConnect/arbiter/U180/ZN (ND2D1BWP40P140)
+                                              0.0233    0.0236     5.6269 r
+  interConnect/arbiter/U32/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0233    0.0000     5.6269 r
+  interConnect/arbiter/U32/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0249    0.0191     5.6461 f
+  interConnect/arbiter/U413/I (INVD3BWP40P140)
+                                              0.0249    0.0000     5.6461 f
+  interConnect/arbiter/U413/ZN (INVD3BWP40P140)
+                                              0.0310    0.0267     5.6728 r
+  interConnect/arbiter/U52/I (INVD6BWP40P140)
+                                              0.0310    0.0000     5.6728 r
+  interConnect/arbiter/U52/ZN (INVD6BWP40P140)
+                                              0.1142    0.0761     5.7489 f
+  interConnect/arbiter/U45/S (MUX2NUD1BWP40P140)
+                                              0.1142    0.0000     5.7489 f
+  interConnect/arbiter/U45/ZN (MUX2NUD1BWP40P140)
+                                              0.0563    0.0622     5.8111 f
+  interConnect/arbiter/masterIO_awaddr[24] (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/slaveIO_awaddr[24] (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/U171/A3 (OR4D1BWP40P140)
+                                              0.0563    0.0000     5.8111 f
+  interConnect/crossbar/U171/Z (OR4D1BWP40P140)
+                                              0.0159    0.0510     5.8621 f
+  interConnect/crossbar/U172/A4 (OR4D1BWP40P140)
+                                              0.0159    0.0000     5.8621 f
+  interConnect/crossbar/U172/Z (OR4D1BWP40P140)
+                                              0.0152    0.0354     5.8976 f
+  interConnect/crossbar/U339/I0 (MUX2NUD1BWP40P140)
+                                              0.0152    0.0000     5.8976 f
+  interConnect/crossbar/U339/ZN (MUX2NUD1BWP40P140)
+                                              0.0312    0.0276     5.9252 r
+  interConnect/crossbar/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0312    0.0000     5.9252 r
+  interConnect/crossbar/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0295    0.0233     5.9485 f
+  interConnect/crossbar/U17/B1 (INR2D1BWP40P140)
+                                              0.0295    0.0000     5.9485 f
+  interConnect/crossbar/U17/ZN (INR2D1BWP40P140)
+                                              0.0188    0.0188     5.9673 r
+  interConnect/crossbar/U22/I (INVD1BWP40P140)
+                                              0.0188    0.0000     5.9673 r
+  interConnect/crossbar/U22/ZN (INVD1BWP40P140)
+                                              0.0194    0.0179     5.9852 f
+  interConnect/crossbar/U418/A1 (NR2D1BWP40P140)
+                                              0.0194    0.0000     5.9852 f
+  interConnect/crossbar/U418/ZN (NR2D1BWP40P140)
+                                              0.0289    0.0244     6.0095 r
+  interConnect/crossbar/masterIO_0_arvalid (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0095 r
+  interConnect/masterIO_0_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0095 r
+  clint/slaveIO_arvalid (ysyx_22050851_CLINT_0)         0.0000     6.0095 r
+  clint/U873/A1 (ND2OPTIBD2BWP40P140)         0.0289    0.0000     6.0095 r
+  clint/U873/ZN (ND2OPTIBD2BWP40P140)         0.0281    0.0230     6.0325 f
+  clint/U1086/B1 (IND2D1BWP40P140)            0.0281    0.0000     6.0325 f
+  clint/U1086/ZN (IND2D1BWP40P140)            0.0242    0.0237     6.0562 r
+  clint/U875/A1 (ND2D1BWP40P140)              0.0242    0.0000     6.0562 r
+  clint/U875/ZN (ND2D1BWP40P140)              0.0447    0.0346     6.0908 f
+  clint/U447/A1 (NR2OPTPAD1BWP40P140LVT)      0.0447    0.0000     6.0908 f
+  clint/U447/ZN (NR2OPTPAD1BWP40P140LVT)      0.0313    0.0282     6.1190 r
+  clint/U17/A1 (ND2D1BWP40P140)               0.0313    0.0000     6.1190 r
+  clint/U17/ZN (ND2D1BWP40P140)               0.0509    0.0399     6.1589 f
+  clint/U1158/A1 (NR2OPTPAD2BWP40P140)        0.0509    0.0000     6.1589 f
+  clint/U1158/ZN (NR2OPTPAD2BWP40P140)        0.0263    0.0263     6.1851 r
+  clint/U1094/A1 (ND2OPTPAD2BWP40P140)        0.0263    0.0000     6.1851 r
+  clint/U1094/ZN (ND2OPTPAD2BWP40P140)        0.0205    0.0188     6.2039 f
+  clint/U1167/B1 (INR2D1BWP40P140)            0.0205    0.0000     6.2039 f
+  clint/U1167/ZN (INR2D1BWP40P140)            0.0429    0.0330     6.2369 r
+  clint/U11/A1 (ND3D2BWP40P140)               0.0429    0.0000     6.2369 r
+  clint/U11/ZN (ND3D2BWP40P140)               0.0409    0.0326     6.2696 f
+  clint/U1772/A1 (XOR2D1BWP40P140)            0.0409    0.0000     6.2696 f
+  clint/U1772/Z (XOR2D1BWP40P140)             0.0136    0.0307     6.3003 f
+  clint/U1773/A1 (NR2D1BWP40P140)             0.0136    0.0000     6.3003 f
+  clint/U1773/ZN (NR2D1BWP40P140)             0.0234    0.0142     6.3144 r
+  clint/counter_reg_15_/D (DFKCNQD1BWP40P140)
+                                              0.0234    0.0000     6.3144 r
+  data arrival time                                                6.3144
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  clint/counter_reg_15_/CP (DFKCNQD1BWP40P140)          0.0000     6.3500 r
+  library setup time                                   -0.0345     6.3155
+  data required time                                               6.3155
+  --------------------------------------------------------------------------
+  data required time                                               6.3155
+  data arrival time                                               -6.3144
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0010
+
+
+  Startpoint: multiplier/inReg_multiplicand_reg_21_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: dCache/status_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  multiplier/inReg_multiplicand_reg_21_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  multiplier/inReg_multiplicand_reg_21_/Q (DFQD2BWP40P140)
+                                              0.3031    0.2382     0.2382 f
+  multiplier/U915/A2 (XNR2D2BWP40P140)        0.3031    0.0000     0.2382 f
+  multiplier/U915/ZN (XNR2D2BWP40P140)        0.1578    0.1857     0.4239 f
+  multiplier/U1058/A2 (ND2OPTPAD1BWP40P140)   0.1578    0.0000     0.4239 f
+  multiplier/U1058/ZN (ND2OPTPAD1BWP40P140)   0.2776    0.2161     0.6399 r
+  multiplier/U3015/A1 (OAI22D1BWP40P140)      0.2776    0.0000     0.6399 r
+  multiplier/U3015/ZN (OAI22D1BWP40P140)      0.0935    0.0723     0.7123 f
+  multiplier/U3048/B (FA1D1BWP40P140)         0.0935    0.0000     0.7123 f
+  multiplier/U3048/CO (FA1D1BWP40P140)        0.0241    0.0768     0.7891 f
+  multiplier/U3021/CI (FA1D1BWP40P140)        0.0241    0.0000     0.7891 f
+  multiplier/U3021/CO (FA1D1BWP40P140)        0.0230    0.0502     0.8392 f
+  multiplier/U3156/CI (FA1D1BWP40P140)        0.0230    0.0000     0.8392 f
+  multiplier/U3156/CO (FA1D1BWP40P140)        0.0259    0.0530     0.8922 f
+  multiplier/U3342/B (FA1D1BWP40P140)         0.0259    0.0000     0.8922 f
+  multiplier/U3342/CO (FA1D1BWP40P140)        0.0259    0.0595     0.9517 f
+  multiplier/U3418/B (FA1D1BWP40P140)         0.0259    0.0000     0.9517 f
+  multiplier/U3418/CO (FA1D1BWP40P140)        0.0260    0.0595     1.0111 f
+  multiplier/U3426/B (FA1D1BWP40P140)         0.0260    0.0000     1.0111 f
+  multiplier/U3426/S (FA1D1BWP40P140)         0.0281    0.0990     1.1102 r
+  multiplier/U3470/CI (FA1D1BWP40P140)        0.0281    0.0000     1.1102 r
+  multiplier/U3470/S (FA1D1BWP40P140)         0.0297    0.0870     1.1971 f
+  multiplier/U1149/A1 (NR2D1BWP40P140)        0.0297    0.0000     1.1971 f
+  multiplier/U1149/ZN (NR2D1BWP40P140)        0.0317    0.0286     1.2257 r
+  multiplier/U3521/A1 (OAI21D1BWP40P140)      0.0317    0.0000     1.2257 r
+  multiplier/U3521/ZN (OAI21D1BWP40P140)      0.0337    0.0289     1.2545 f
+  multiplier/U3524/A1 (AOI21D1BWP40P140)      0.0337    0.0000     1.2545 f
+  multiplier/U3524/ZN (AOI21D1BWP40P140)      0.0308    0.0286     1.2832 r
+  multiplier/U3526/A1 (OAI21D1BWP40P140)      0.0308    0.0000     1.2832 r
+  multiplier/U3526/ZN (OAI21D1BWP40P140)      0.0274    0.0235     1.3067 f
+  multiplier/U3527/B (AOI21D1BWP40P140)       0.0274    0.0000     1.3067 f
+  multiplier/U3527/ZN (AOI21D1BWP40P140)      0.0307    0.0308     1.3375 r
+  multiplier/U3738/A1 (OAI21D1BWP40P140)      0.0307    0.0000     1.3375 r
+  multiplier/U3738/ZN (OAI21D1BWP40P140)      0.0336    0.0286     1.3661 f
+  multiplier/U4037/A1 (AOI21D1BWP40P140)      0.0336    0.0000     1.3661 f
+  multiplier/U4037/ZN (AOI21D1BWP40P140)      0.0305    0.0284     1.3944 r
+  multiplier/U1247/A1 (OAI21D1BWP40P140)      0.0305    0.0000     1.3944 r
+  multiplier/U1247/ZN (OAI21D1BWP40P140)      0.0335    0.0285     1.4230 f
+  multiplier/U274/A1 (AOI21D1BWP40P140)       0.0335    0.0000     1.4230 f
+  multiplier/U274/ZN (AOI21D1BWP40P140)       0.0305    0.0283     1.4513 r
+  multiplier/U777/A2 (OAI21D1BWP40P140)       0.0305    0.0000     1.4513 r
+  multiplier/U777/ZN (OAI21D1BWP40P140)       0.0348    0.0300     1.4813 f
+  multiplier/U36/A1 (AOI21D1BWP40P140)        0.0348    0.0000     1.4813 f
+  multiplier/U36/ZN (AOI21D1BWP40P140)        0.0310    0.0289     1.5103 r
+  multiplier/U9/A1 (OAI21D1BWP40P140LVT)      0.0310    0.0000     1.5103 r
+  multiplier/U9/ZN (OAI21D1BWP40P140LVT)      0.0362    0.0288     1.5391 f
+  multiplier/U364/A1 (AOI21D1BWP40P140)       0.0362    0.0000     1.5391 f
+  multiplier/U364/ZN (AOI21D1BWP40P140)       0.0464    0.0393     1.5784 r
+  multiplier/U345/A1 (OAI21D2BWP40P140)       0.0464    0.0000     1.5784 r
+  multiplier/U345/ZN (OAI21D2BWP40P140)       0.0304    0.0263     1.6047 f
+  multiplier/U780/A1 (AOI21D1BWP40P140)       0.0304    0.0000     1.6047 f
+  multiplier/U780/ZN (AOI21D1BWP40P140)       0.0388    0.0333     1.6380 r
+  multiplier/U344/A1 (OAI21D1BWP40P140)       0.0388    0.0000     1.6380 r
+  multiplier/U344/ZN (OAI21D1BWP40P140)       0.0441    0.0370     1.6749 f
+  multiplier/U880/A1 (AOI21D1BWP40P140)       0.0441    0.0000     1.6749 f
+  multiplier/U880/ZN (AOI21D1BWP40P140)       0.0484    0.0420     1.7170 r
+  multiplier/U305/A1 (OAI21D2BWP40P140LVT)    0.0484    0.0000     1.7170 r
+  multiplier/U305/ZN (OAI21D2BWP40P140LVT)    0.0294    0.0233     1.7403 f
+  multiplier/U304/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     1.7403 f
+  multiplier/U304/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     1.7664 r
+  multiplier/U888/A1 (OAI21D1BWP40P140)       0.0289    0.0000     1.7664 r
+  multiplier/U888/ZN (OAI21D1BWP40P140)       0.0434    0.0343     1.8007 f
+  multiplier/U348/A1 (AOI21D1BWP40P140)       0.0434    0.0000     1.8007 f
+  multiplier/U348/ZN (AOI21D1BWP40P140)       0.0484    0.0419     1.8426 r
+  multiplier/U295/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0484    0.0000     1.8426 r
+  multiplier/U295/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0269     1.8695 f
+  multiplier/U292/A1 (AOI21D2BWP40P140)       0.0363    0.0000     1.8695 f
+  multiplier/U292/ZN (AOI21D2BWP40P140)       0.0252    0.0239     1.8934 r
+  multiplier/U367/A1 (OAI21D1BWP40P140)       0.0252    0.0000     1.8934 r
+  multiplier/U367/ZN (OAI21D1BWP40P140)       0.0488    0.0366     1.9299 f
+  multiplier/U291/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     1.9299 f
+  multiplier/U291/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0415    0.0373     1.9672 r
+  multiplier/U914/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0415    0.0000     1.9672 r
+  multiplier/U914/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0233    0.0208     1.9880 f
+  multiplier/U909/A1 (AOI21D1BWP40P140)       0.0233    0.0000     1.9880 f
+  multiplier/U909/ZN (AOI21D1BWP40P140)       0.0456    0.0356     2.0236 r
+  multiplier/U246/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0456    0.0000     2.0236 r
+  multiplier/U246/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0268     2.0504 f
+  multiplier/U244/A1 (AOI21D2BWP40P140)       0.0363    0.0000     2.0504 f
+  multiplier/U244/ZN (AOI21D2BWP40P140)       0.0252    0.0239     2.0743 r
+  multiplier/U920/A1 (OAI21D1BWP40P140)       0.0252    0.0000     2.0743 r
+  multiplier/U920/ZN (OAI21D1BWP40P140)       0.0488    0.0366     2.1108 f
+  multiplier/U170/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     2.1108 f
+  multiplier/U170/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0346    0.0334     2.1442 r
+  multiplier/U98/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0346    0.0000     2.1442 r
+  multiplier/U98/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0315    0.0234     2.1677 f
+  multiplier/U840/A1 (AOI21D1BWP40P140)       0.0315    0.0000     2.1677 f
+  multiplier/U840/ZN (AOI21D1BWP40P140)       0.0389    0.0336     2.2013 r
+  multiplier/U842/A1 (OAI21D1BWP40P140)       0.0389    0.0000     2.2013 r
+  multiplier/U842/ZN (OAI21D1BWP40P140)       0.0441    0.0370     2.2383 f
+  multiplier/U843/A1 (AOI21D1BWP40P140)       0.0441    0.0000     2.2383 f
+  multiplier/U843/ZN (AOI21D1BWP40P140)       0.0484    0.0420     2.2803 r
+  multiplier/U93/A1 (OAI21D2BWP40P140LVT)     0.0484    0.0000     2.2803 r
+  multiplier/U93/ZN (OAI21D2BWP40P140LVT)     0.0294    0.0233     2.3036 f
+  multiplier/U92/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     2.3036 f
+  multiplier/U92/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     2.3297 r
+  multiplier/U307/A1 (OAI21D1BWP40P140)       0.0289    0.0000     2.3297 r
+  multiplier/U307/ZN (OAI21D1BWP40P140)       0.0436    0.0345     2.3642 f
+  multiplier/U89/A1 (AOI21D1BWP40P140LVT)     0.0436    0.0000     2.3642 f
+  multiplier/U89/ZN (AOI21D1BWP40P140LVT)     0.0421    0.0355     2.3997 r
+  multiplier/U88/A1 (OAI21D2BWP40P140LVT)     0.0421    0.0000     2.3997 r
+  multiplier/U88/ZN (OAI21D2BWP40P140LVT)     0.0259    0.0207     2.4204 f
+  multiplier/U283/A1 (AOI21D1BWP40P140)       0.0259    0.0000     2.4204 f
+  multiplier/U283/ZN (AOI21D1BWP40P140)       0.0382    0.0318     2.4523 r
+  multiplier/U287/A1 (OAI21D1BWP40P140)       0.0382    0.0000     2.4523 r
+  multiplier/U287/ZN (OAI21D1BWP40P140)       0.0496    0.0403     2.4925 f
+  multiplier/U34/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0496    0.0000     2.4925 f
+  multiplier/U34/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0332     2.5257 r
+  multiplier/U30/A1 (OAI21D2BWP40P140)        0.0340    0.0000     2.5257 r
+  multiplier/U30/ZN (OAI21D2BWP40P140)        0.0294    0.0243     2.5500 f
+  multiplier/U784/A1 (AOI21D1BWP40P140)       0.0294    0.0000     2.5500 f
+  multiplier/U784/ZN (AOI21D1BWP40P140)       0.0386    0.0330     2.5829 r
+  multiplier/U288/A1 (OAI21D1BWP40P140)       0.0386    0.0000     2.5829 r
+  multiplier/U288/ZN (OAI21D1BWP40P140)       0.0443    0.0371     2.6200 f
+  multiplier/U29/A1 (AOI21D1BWP40P140LVT)     0.0443    0.0000     2.6200 f
+  multiplier/U29/ZN (AOI21D1BWP40P140LVT)     0.0401    0.0344     2.6544 r
+  multiplier/U15/A1 (OAI21D1P5BWP40P140)      0.0401    0.0000     2.6544 r
+  multiplier/U15/ZN (OAI21D1P5BWP40P140)      0.0285    0.0240     2.6785 f
+  multiplier/U9188/CI (FA1D1BWP40P140)        0.0285    0.0000     2.6785 f
+  multiplier/U9188/CO (FA1D1BWP40P140)        0.0225    0.0518     2.7303 f
+  multiplier/U9193/CI (FA1D1BWP40P140)        0.0225    0.0000     2.7303 f
+  multiplier/U9193/CO (FA1D1BWP40P140)        0.0223    0.0496     2.7798 f
+  multiplier/U9196/CI (FA1D1BWP40P140)        0.0223    0.0000     2.7798 f
+  multiplier/U9196/CO (FA1D1BWP40P140)        0.0183    0.0459     2.8257 f
+  multiplier/U8617/A2 (XOR2UD1BWP40P140)      0.0183    0.0000     2.8257 f
+  multiplier/U8617/Z (XOR2UD1BWP40P140)       0.0267    0.0364     2.8621 f
+  multiplier/U8627/I0 (MUX2NUD1BWP40P140)     0.0267    0.0000     2.8621 f
+  multiplier/U8627/ZN (MUX2NUD1BWP40P140)     0.0687    0.0272     2.8893 r
+  multiplier/U28/I (INVD1BWP40P140)           0.0687    0.0000     2.8893 r
+  multiplier/U28/ZN (INVD1BWP40P140)          0.0220    0.0190     2.9084 f
+  multiplier/output_bits_resultHigh[63] (ysyx_22050851_SimpleMultiplier_0)
+                                                        0.0000     2.9084 f
+  wbu/fromMultiplier_bits_resultHigh[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9084 f
+  wbu/U9/A1 (ND2D1BWP40P140)                  0.0220    0.0000     2.9084 f
+  wbu/U9/ZN (ND2D1BWP40P140)                  0.0357    0.0133     2.9216 r
+  wbu/U3/A1 (ND2D1BWP40P140LVT)               0.0357    0.0000     2.9216 r
+  wbu/U3/ZN (ND2D1BWP40P140LVT)               0.0195    0.0165     2.9381 f
+  wbu/U529/B (AOI21D1BWP40P140)               0.0195    0.0000     2.9381 f
+  wbu/U529/ZN (AOI21D1BWP40P140)              0.0410    0.0242     2.9623 r
+  wbu/U8/B (IOA21D1BWP40P140)                 0.0410    0.0000     2.9623 r
+  wbu/U8/ZN (IOA21D1BWP40P140)                0.0419    0.0356     2.9980 f
+  wbu/toDecode_data[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9980 f
+  exe/fromWbu_data[63] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     2.9980 f
+  exe/U937/A1 (AOI21D1BWP40P140)              0.0419    0.0000     2.9980 f
+  exe/U937/ZN (AOI21D1BWP40P140)              0.0526    0.0300     3.0279 r
+  exe/U6/B (OAI211OPTREPBD2BWP40P140)         0.0526    0.0000     3.0279 r
+  exe/U6/ZN (OAI211OPTREPBD2BWP40P140)        0.0968    0.0692     3.0972 f
+  exe/alu/io_in_bits_inA[63] (ysyx_22050851_ALU_0)      0.0000     3.0972 f
+  exe/alu/U2028/A1 (NR2OPTPAD2BWP40P140)      0.0968    0.0000     3.0972 f
+  exe/alu/U2028/ZN (NR2OPTPAD2BWP40P140)      0.0335    0.0318     3.1290 r
+  exe/alu/U22/A1 (OR2D1BWP40P140)             0.0335    0.0000     3.1290 r
+  exe/alu/U22/Z (OR2D1BWP40P140)              0.0266    0.0400     3.1690 r
+  exe/alu/U524/I (INVD1BWP40P140)             0.0266    0.0000     3.1690 r
+  exe/alu/U524/ZN (INVD1BWP40P140)            0.0603    0.0447     3.2136 f
+  exe/alu/U107/A1 (ND2D2BWP40P140)            0.0603    0.0000     3.2136 f
+  exe/alu/U107/ZN (ND2D2BWP40P140)            0.0940    0.0292     3.2428 r
+  exe/alu/U2027/I (INVD3BWP40P140)            0.0940    0.0000     3.2428 r
+  exe/alu/U2027/ZN (INVD3BWP40P140)           0.0393    0.0346     3.2775 f
+  exe/alu/U1628/B (AOI211D1BWP40P140)         0.0393    0.0000     3.2775 f
+  exe/alu/U1628/ZN (AOI211D1BWP40P140)        0.0585    0.0399     3.3173 r
+  exe/alu/U59/B (OAI21D1BWP40P140)            0.0585    0.0000     3.3173 r
+  exe/alu/U59/ZN (OAI21D1BWP40P140)           0.0321    0.0344     3.3517 f
+  exe/alu/U1629/C (AOI211D1BWP40P140)         0.0321    0.0000     3.3517 f
+  exe/alu/U1629/ZN (AOI211D1BWP40P140)        0.0763    0.0390     3.3907 r
+  exe/alu/U1630/C (OAI211D1BWP40P140)         0.0763    0.0000     3.3907 r
+  exe/alu/U1630/ZN (OAI211D1BWP40P140)        0.0704    0.0659     3.4566 f
+  exe/alu/io_out_bits_out[18] (ysyx_22050851_ALU_0)     0.0000     3.4566 f
+  exe/U49/A1 (AO22D1BWP40P140)                0.0704    0.0000     3.4566 f
+  exe/U49/Z (AO22D1BWP40P140)                 0.0286    0.0536     3.5102 f
+  exe/toDecode_data[18] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     3.5102 f
+  idu/fromExe_data[18] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     3.5102 f
+  idu/U632/A2 (ND2D1BWP40P140)                0.0286    0.0000     3.5102 f
+  idu/U632/ZN (ND2D1BWP40P140)                0.0352    0.0163     3.5264 r
+  idu/U17/A1 (ND2D1BWP40P140)                 0.0352    0.0000     3.5264 r
+  idu/U17/ZN (ND2D1BWP40P140)                 0.0751    0.0556     3.5820 f
+  idu/U175/A1 (OR2D1BWP40P140)                0.0751    0.0000     3.5820 f
+  idu/U175/Z (OR2D1BWP40P140)                 0.0210    0.0456     3.6276 f
+  idu/U2054/A2 (AOI21D1BWP40P140)             0.0210    0.0000     3.6276 f
+  idu/U2054/ZN (AOI21D1BWP40P140)             0.0227    0.0208     3.6485 r
+  idu/U2055/B (OAI21D1BWP40P140)              0.0227    0.0000     3.6485 r
+  idu/U2055/ZN (OAI21D1BWP40P140)             0.0337    0.0315     3.6800 f
+  idu/U119/A2 (AOI21D1BWP40P140)              0.0337    0.0000     3.6800 f
+  idu/U119/ZN (AOI21D1BWP40P140)              0.0306    0.0288     3.7087 r
+  idu/U398/A1 (OAI21D1BWP40P140)              0.0306    0.0000     3.7087 r
+  idu/U398/ZN (OAI21D1BWP40P140)              0.0259    0.0235     3.7322 f
+  idu/U113/B (AOI21D1BWP40P140)               0.0259    0.0000     3.7322 f
+  idu/U113/ZN (AOI21D1BWP40P140)              0.0284    0.0303     3.7625 r
+  idu/U112/A1 (OAI21D1BWP40P140)              0.0284    0.0000     3.7625 r
+  idu/U112/ZN (OAI21D1BWP40P140)              0.0414    0.0333     3.7958 f
+  idu/U725/A1 (AOI21D1BWP40P140)              0.0414    0.0000     3.7958 f
+  idu/U725/ZN (AOI21D1BWP40P140)              0.0256    0.0256     3.8214 r
+  idu/U2085/B (OAI21D1BWP40P140)              0.0256    0.0000     3.8214 r
+  idu/U2085/ZN (OAI21D1BWP40P140)             0.0365    0.0323     3.8537 f
+  idu/U111/A1 (AOI21D1BWP40P140)              0.0365    0.0000     3.8537 f
+  idu/U111/ZN (AOI21D1BWP40P140)              0.0246    0.0246     3.8783 r
+  idu/U11/B (OAI21D1BWP40P140)                0.0246    0.0000     3.8783 r
+  idu/U11/ZN (OAI21D1BWP40P140)               0.1214    0.0761     3.9544 f
+  idu/U1159/A1 (AOI21D1BWP40P140)             0.1214    0.0000     3.9544 f
+  idu/U1159/ZN (AOI21D1BWP40P140)             0.0503    0.0483     4.0027 r
+  idu/U2866/A1 (XOR2UD1BWP40P140)             0.0503    0.0000     4.0027 r
+  idu/U2866/Z (XOR2UD1BWP40P140)              0.0274    0.0174     4.0202 f
+  idu/U1391/A1 (IOA21D1BWP40P140)             0.0274    0.0000     4.0202 f
+  idu/U1391/ZN (IOA21D1BWP40P140)             0.0311    0.0407     4.0609 f
+  idu/U1169/I (INVD1BWP40P140)                0.0311    0.0000     4.0609 f
+  idu/U1169/ZN (INVD1BWP40P140)               0.0131    0.0145     4.0754 r
+  idu/U3104/I0 (MUX2NUD1BWP40P140)            0.0131    0.0000     4.0754 r
+  idu/U3104/ZN (MUX2NUD1BWP40P140)            0.1501    0.0595     4.1348 f
+  idu/decodeBack_branchPc[54] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/fromDecode_branchPc[54] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/U365/A1 (XOR2UD1BWP40P140)              0.1501    0.0000     4.1348 f
+  ifu/U365/Z (XOR2UD1BWP40P140)               0.0370    0.0576     4.1924 f
+  ifu/U27/A2 (NR2D1BWP40P140)                 0.0370    0.0000     4.1924 f
+  ifu/U27/ZN (NR2D1BWP40P140)                 0.0206    0.0233     4.2158 r
+  ifu/U376/A1 (ND3D1BWP40P140)                0.0206    0.0000     4.2158 r
+  ifu/U376/ZN (ND3D1BWP40P140)                0.0320    0.0251     4.2409 f
+  ifu/U54/A2 (NR2D1BWP40P140)                 0.0320    0.0000     4.2409 f
+  ifu/U54/ZN (NR2D1BWP40P140)                 0.0200    0.0222     4.2631 r
+  ifu/U397/A1 (ND3D1BWP40P140)                0.0200    0.0000     4.2631 r
+  ifu/U397/ZN (ND3D1BWP40P140)                0.0311    0.0250     4.2881 f
+  ifu/U48/A2 (NR2D1BWP40P140)                 0.0311    0.0000     4.2881 f
+  ifu/U48/ZN (NR2D1BWP40P140)                 0.0199    0.0218     4.3099 r
+  ifu/U399/A2 (ND3D1BWP40P140)                0.0199    0.0000     4.3099 r
+  ifu/U399/ZN (ND3D1BWP40P140)                0.0344    0.0272     4.3372 f
+  ifu/U75/A2 (NR2D1BWP40P140)                 0.0344    0.0000     4.3372 f
+  ifu/U75/ZN (NR2D1BWP40P140)                 0.0206    0.0228     4.3600 r
+  ifu/U401/A1 (INR2D1BWP40P140)               0.0206    0.0000     4.3600 r
+  ifu/U401/ZN (INR2D1BWP40P140)               0.0203    0.0301     4.3901 r
+  ifu/U20/A1 (INR2D1BWP40P140)                0.0203    0.0000     4.3901 r
+  ifu/U20/ZN (INR2D1BWP40P140)                0.0260    0.0340     4.4241 r
+  ifu/U16/A1 (IND2D1BWP40P140LVT)             0.0260    0.0000     4.4241 r
+  ifu/U16/ZN (IND2D1BWP40P140LVT)             0.0155    0.0253     4.4494 r
+  ifu/U12/I (INVD3BWP40P140)                  0.0155    0.0000     4.4494 r
+  ifu/U12/ZN (INVD3BWP40P140)                 0.0248    0.0200     4.4694 f
+  ifu/U14/I (INVD12BWP40P140)                 0.0248    0.0000     4.4694 f
+  ifu/U14/ZN (INVD12BWP40P140)                0.0416    0.0330     4.5023 r
+  ifu/U6/S (MUX2ND2BWP40P140)                 0.0416    0.0000     4.5023 r
+  ifu/U6/ZN (MUX2ND2BWP40P140)                0.0323    0.0596     4.5619 f
+  ifu/iCacheIO_addr[7] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.5619 f
+  iCache/io_addr[7] (ysyx_22050851_Cache_0)             0.0000     4.5619 f
+  iCache/U257/A1 (NR2D1BWP40P140)             0.0323    0.0000     4.5619 f
+  iCache/U257/ZN (NR2D1BWP40P140)             0.0550    0.0437     4.6056 r
+  iCache/U132/A1 (ND2OPTPAD1BWP40P140)        0.0550    0.0000     4.6056 r
+  iCache/U132/ZN (ND2OPTPAD1BWP40P140)        0.4718    0.2844     4.8900 f
+  iCache/U137/I (BUFFD1BWP40P140)             0.4718    0.0000     4.8900 f
+  iCache/U137/Z (BUFFD1BWP40P140)             0.4559    0.3568     5.2468 f
+  iCache/U2996/A1 (OAI22D1BWP40P140)          0.4559    0.0000     5.2468 f
+  iCache/U2996/ZN (OAI22D1BWP40P140)          0.1067    0.0647     5.3115 r
+  iCache/U490/A1 (NR2D1BWP40P140)             0.1067    0.0000     5.3115 r
+  iCache/U490/ZN (NR2D1BWP40P140)             0.0294    0.0219     5.3334 f
+  iCache/U3000/A1 (ND3D1BWP40P140)            0.0294    0.0000     5.3334 f
+  iCache/U3000/ZN (ND3D1BWP40P140)            0.0347    0.0196     5.3531 r
+  iCache/U3001/A1 (XOR2UD1BWP40P140)          0.0347    0.0000     5.3531 r
+  iCache/U3001/Z (XOR2UD1BWP40P140)           0.0653    0.0205     5.3736 f
+  iCache/U3002/A4 (NR4D1BWP40P140)            0.0653    0.0000     5.3736 f
+  iCache/U3002/ZN (NR4D1BWP40P140)            0.0298    0.0399     5.4135 r
+  iCache/U3025/A1 (ND3D1BWP40P140)            0.0298    0.0000     5.4135 r
+  iCache/U3025/ZN (ND3D1BWP40P140)            0.0382    0.0310     5.4445 f
+  iCache/U3076/A2 (NR4D1BWP40P140)            0.0382    0.0000     5.4445 f
+  iCache/U3076/ZN (NR4D1BWP40P140)            0.0308    0.0319     5.4764 r
+  iCache/U315/A1 (NR2D1BWP40P140)             0.0308    0.0000     5.4764 r
+  iCache/U315/ZN (NR2D1BWP40P140)             0.0189    0.0182     5.4947 f
+  iCache/U158/A1 (ND2D1BWP40P140)             0.0189    0.0000     5.4947 f
+  iCache/U158/ZN (ND2D1BWP40P140)             0.0196    0.0176     5.5123 r
+  iCache/U109/A1 (OAI31D1BWP40P140LVT)        0.0196    0.0000     5.5123 r
+  iCache/U109/ZN (OAI31D1BWP40P140LVT)        0.0715    0.0312     5.5435 f
+  iCache/axiIO_arvalid (ysyx_22050851_Cache_0)          0.0000     5.5435 f
+  interConnect/slaveIO_1_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/slaveIO_1_arvalid (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/U153/A1 (NR2OPTIBD1BWP40P140LVT)
+                                              0.0715    0.0000     5.5435 f
+  interConnect/arbiter/U153/ZN (NR2OPTIBD1BWP40P140LVT)
+                                              0.0355    0.0328     5.5763 r
+  interConnect/arbiter/U55/A1 (OAI21D2BWP40P140)
+                                              0.0355    0.0000     5.5763 r
+  interConnect/arbiter/U55/ZN (OAI21D2BWP40P140)
+                                              0.0315    0.0271     5.6033 f
+  interConnect/arbiter/U180/A1 (ND2D1BWP40P140)
+                                              0.0315    0.0000     5.6033 f
+  interConnect/arbiter/U180/ZN (ND2D1BWP40P140)
+                                              0.0233    0.0236     5.6269 r
+  interConnect/arbiter/U32/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0233    0.0000     5.6269 r
+  interConnect/arbiter/U32/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0249    0.0191     5.6461 f
+  interConnect/arbiter/U413/I (INVD3BWP40P140)
+                                              0.0249    0.0000     5.6461 f
+  interConnect/arbiter/U413/ZN (INVD3BWP40P140)
+                                              0.0310    0.0267     5.6728 r
+  interConnect/arbiter/U52/I (INVD6BWP40P140)
+                                              0.0310    0.0000     5.6728 r
+  interConnect/arbiter/U52/ZN (INVD6BWP40P140)
+                                              0.1142    0.0761     5.7489 f
+  interConnect/arbiter/U45/S (MUX2NUD1BWP40P140)
+                                              0.1142    0.0000     5.7489 f
+  interConnect/arbiter/U45/ZN (MUX2NUD1BWP40P140)
+                                              0.0563    0.0622     5.8111 f
+  interConnect/arbiter/masterIO_awaddr[24] (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/slaveIO_awaddr[24] (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/U171/A3 (OR4D1BWP40P140)
+                                              0.0563    0.0000     5.8111 f
+  interConnect/crossbar/U171/Z (OR4D1BWP40P140)
+                                              0.0159    0.0510     5.8621 f
+  interConnect/crossbar/U172/A4 (OR4D1BWP40P140)
+                                              0.0159    0.0000     5.8621 f
+  interConnect/crossbar/U172/Z (OR4D1BWP40P140)
+                                              0.0152    0.0354     5.8976 f
+  interConnect/crossbar/U339/I0 (MUX2NUD1BWP40P140)
+                                              0.0152    0.0000     5.8976 f
+  interConnect/crossbar/U339/ZN (MUX2NUD1BWP40P140)
+                                              0.0312    0.0276     5.9252 r
+  interConnect/crossbar/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0312    0.0000     5.9252 r
+  interConnect/crossbar/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0295    0.0233     5.9485 f
+  interConnect/crossbar/U17/B1 (INR2D1BWP40P140)
+                                              0.0295    0.0000     5.9485 f
+  interConnect/crossbar/U17/ZN (INR2D1BWP40P140)
+                                              0.0188    0.0188     5.9673 r
+  interConnect/crossbar/U22/I (INVD1BWP40P140)
+                                              0.0188    0.0000     5.9673 r
+  interConnect/crossbar/U22/ZN (INVD1BWP40P140)
+                                              0.0194    0.0179     5.9852 f
+  interConnect/crossbar/U418/A1 (NR2D1BWP40P140)
+                                              0.0194    0.0000     5.9852 f
+  interConnect/crossbar/U418/ZN (NR2D1BWP40P140)
+                                              0.0289    0.0244     6.0095 r
+  interConnect/crossbar/masterIO_0_arvalid (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0095 r
+  interConnect/masterIO_0_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0095 r
+  clint/slaveIO_arvalid (ysyx_22050851_CLINT_0)         0.0000     6.0095 r
+  clint/U1788/A1 (NR2D1BWP40P140)             0.0289    0.0000     6.0095 r
+  clint/U1788/ZN (NR2D1BWP40P140)             0.0172    0.0172     6.0267 f
+  clint/slaveIO_awready (ysyx_22050851_CLINT_0)         0.0000     6.0267 f
+  interConnect/masterIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/masterIO_0_awready (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/U389/I0 (MUX2NUD1BWP40P140)
+                                              0.0172    0.0000     6.0267 f
+  interConnect/crossbar/U389/ZN (MUX2NUD1BWP40P140)
+                                              0.0899    0.0524     6.0792 r
+  interConnect/crossbar/slaveIO_awready_BAR (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/masterIO_awready_BAR (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/U4/A1 (NR2OPTIBD2BWP40P140)
+                                              0.0899    0.0000     6.0792 r
+  interConnect/arbiter/U4/ZN (NR2OPTIBD2BWP40P140)
+                                              0.0402    0.0356     6.1148 f
+  interConnect/arbiter/slaveIO_0_awready (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.1148 f
+  interConnect/slaveIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.1148 f
+  dCache/axiIO_awready (ysyx_22050851_Cache_1_0)        0.0000     6.1148 f
+  dCache/U5240/I (INVD1BWP40P140)             0.0402    0.0000     6.1148 f
+  dCache/U5240/ZN (INVD1BWP40P140)            0.0195    0.0210     6.1357 r
+  dCache/U5242/A1 (NR2D1BWP40P140)            0.0195    0.0000     6.1357 r
+  dCache/U5242/ZN (NR2D1BWP40P140)            0.0223    0.0186     6.1543 f
+  dCache/U7633/B (AOI211D1BWP40P140)          0.0223    0.0000     6.1543 f
+  dCache/U7633/ZN (AOI211D1BWP40P140)         0.0429    0.0406     6.1949 r
+  dCache/U7634/A2 (ND2D1BWP40P140)            0.0429    0.0000     6.1949 r
+  dCache/U7634/ZN (ND2D1BWP40P140)            0.0275    0.0270     6.2219 f
+  dCache/U162/A3 (OR4D1BWP40P140)             0.0275    0.0000     6.2219 f
+  dCache/U162/Z (OR4D1BWP40P140)              0.0315    0.0571     6.2790 f
+  dCache/U9347/A1 (OAI22D1BWP40P140)          0.0315    0.0000     6.2790 f
+  dCache/U9347/ZN (OAI22D1BWP40P140)          0.0832    0.0203     6.2994 r
+  dCache/status_reg_0_/D (DFQD1BWP40P140)     0.0832    0.0000     6.2994 r
+  data arrival time                                                6.2994
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  dCache/status_reg_0_/CP (DFQD1BWP40P140)              0.0000     6.3500 r
+  library setup time                                   -0.0401     6.3099
+  data required time                                               6.3099
+  --------------------------------------------------------------------------
+  data required time                                               6.3099
+  data arrival time                                               -6.2994
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0105
+
+
+  Startpoint: multiplier/inReg_multiplicand_reg_21_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: dCache/status_reg_3_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  multiplier/inReg_multiplicand_reg_21_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  multiplier/inReg_multiplicand_reg_21_/Q (DFQD2BWP40P140)
+                                              0.3031    0.2382     0.2382 f
+  multiplier/U915/A2 (XNR2D2BWP40P140)        0.3031    0.0000     0.2382 f
+  multiplier/U915/ZN (XNR2D2BWP40P140)        0.1578    0.1857     0.4239 f
+  multiplier/U1058/A2 (ND2OPTPAD1BWP40P140)   0.1578    0.0000     0.4239 f
+  multiplier/U1058/ZN (ND2OPTPAD1BWP40P140)   0.2776    0.2161     0.6399 r
+  multiplier/U3015/A1 (OAI22D1BWP40P140)      0.2776    0.0000     0.6399 r
+  multiplier/U3015/ZN (OAI22D1BWP40P140)      0.0935    0.0723     0.7123 f
+  multiplier/U3048/B (FA1D1BWP40P140)         0.0935    0.0000     0.7123 f
+  multiplier/U3048/CO (FA1D1BWP40P140)        0.0241    0.0768     0.7891 f
+  multiplier/U3021/CI (FA1D1BWP40P140)        0.0241    0.0000     0.7891 f
+  multiplier/U3021/CO (FA1D1BWP40P140)        0.0230    0.0502     0.8392 f
+  multiplier/U3156/CI (FA1D1BWP40P140)        0.0230    0.0000     0.8392 f
+  multiplier/U3156/CO (FA1D1BWP40P140)        0.0259    0.0530     0.8922 f
+  multiplier/U3342/B (FA1D1BWP40P140)         0.0259    0.0000     0.8922 f
+  multiplier/U3342/CO (FA1D1BWP40P140)        0.0259    0.0595     0.9517 f
+  multiplier/U3418/B (FA1D1BWP40P140)         0.0259    0.0000     0.9517 f
+  multiplier/U3418/CO (FA1D1BWP40P140)        0.0260    0.0595     1.0111 f
+  multiplier/U3426/B (FA1D1BWP40P140)         0.0260    0.0000     1.0111 f
+  multiplier/U3426/S (FA1D1BWP40P140)         0.0281    0.0990     1.1102 r
+  multiplier/U3470/CI (FA1D1BWP40P140)        0.0281    0.0000     1.1102 r
+  multiplier/U3470/S (FA1D1BWP40P140)         0.0297    0.0870     1.1971 f
+  multiplier/U1149/A1 (NR2D1BWP40P140)        0.0297    0.0000     1.1971 f
+  multiplier/U1149/ZN (NR2D1BWP40P140)        0.0317    0.0286     1.2257 r
+  multiplier/U3521/A1 (OAI21D1BWP40P140)      0.0317    0.0000     1.2257 r
+  multiplier/U3521/ZN (OAI21D1BWP40P140)      0.0337    0.0289     1.2545 f
+  multiplier/U3524/A1 (AOI21D1BWP40P140)      0.0337    0.0000     1.2545 f
+  multiplier/U3524/ZN (AOI21D1BWP40P140)      0.0308    0.0286     1.2832 r
+  multiplier/U3526/A1 (OAI21D1BWP40P140)      0.0308    0.0000     1.2832 r
+  multiplier/U3526/ZN (OAI21D1BWP40P140)      0.0274    0.0235     1.3067 f
+  multiplier/U3527/B (AOI21D1BWP40P140)       0.0274    0.0000     1.3067 f
+  multiplier/U3527/ZN (AOI21D1BWP40P140)      0.0307    0.0308     1.3375 r
+  multiplier/U3738/A1 (OAI21D1BWP40P140)      0.0307    0.0000     1.3375 r
+  multiplier/U3738/ZN (OAI21D1BWP40P140)      0.0336    0.0286     1.3661 f
+  multiplier/U4037/A1 (AOI21D1BWP40P140)      0.0336    0.0000     1.3661 f
+  multiplier/U4037/ZN (AOI21D1BWP40P140)      0.0305    0.0284     1.3944 r
+  multiplier/U1247/A1 (OAI21D1BWP40P140)      0.0305    0.0000     1.3944 r
+  multiplier/U1247/ZN (OAI21D1BWP40P140)      0.0335    0.0285     1.4230 f
+  multiplier/U274/A1 (AOI21D1BWP40P140)       0.0335    0.0000     1.4230 f
+  multiplier/U274/ZN (AOI21D1BWP40P140)       0.0305    0.0283     1.4513 r
+  multiplier/U777/A2 (OAI21D1BWP40P140)       0.0305    0.0000     1.4513 r
+  multiplier/U777/ZN (OAI21D1BWP40P140)       0.0348    0.0300     1.4813 f
+  multiplier/U36/A1 (AOI21D1BWP40P140)        0.0348    0.0000     1.4813 f
+  multiplier/U36/ZN (AOI21D1BWP40P140)        0.0310    0.0289     1.5103 r
+  multiplier/U9/A1 (OAI21D1BWP40P140LVT)      0.0310    0.0000     1.5103 r
+  multiplier/U9/ZN (OAI21D1BWP40P140LVT)      0.0362    0.0288     1.5391 f
+  multiplier/U364/A1 (AOI21D1BWP40P140)       0.0362    0.0000     1.5391 f
+  multiplier/U364/ZN (AOI21D1BWP40P140)       0.0464    0.0393     1.5784 r
+  multiplier/U345/A1 (OAI21D2BWP40P140)       0.0464    0.0000     1.5784 r
+  multiplier/U345/ZN (OAI21D2BWP40P140)       0.0304    0.0263     1.6047 f
+  multiplier/U780/A1 (AOI21D1BWP40P140)       0.0304    0.0000     1.6047 f
+  multiplier/U780/ZN (AOI21D1BWP40P140)       0.0388    0.0333     1.6380 r
+  multiplier/U344/A1 (OAI21D1BWP40P140)       0.0388    0.0000     1.6380 r
+  multiplier/U344/ZN (OAI21D1BWP40P140)       0.0441    0.0370     1.6749 f
+  multiplier/U880/A1 (AOI21D1BWP40P140)       0.0441    0.0000     1.6749 f
+  multiplier/U880/ZN (AOI21D1BWP40P140)       0.0484    0.0420     1.7170 r
+  multiplier/U305/A1 (OAI21D2BWP40P140LVT)    0.0484    0.0000     1.7170 r
+  multiplier/U305/ZN (OAI21D2BWP40P140LVT)    0.0294    0.0233     1.7403 f
+  multiplier/U304/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     1.7403 f
+  multiplier/U304/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     1.7664 r
+  multiplier/U888/A1 (OAI21D1BWP40P140)       0.0289    0.0000     1.7664 r
+  multiplier/U888/ZN (OAI21D1BWP40P140)       0.0434    0.0343     1.8007 f
+  multiplier/U348/A1 (AOI21D1BWP40P140)       0.0434    0.0000     1.8007 f
+  multiplier/U348/ZN (AOI21D1BWP40P140)       0.0484    0.0419     1.8426 r
+  multiplier/U295/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0484    0.0000     1.8426 r
+  multiplier/U295/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0269     1.8695 f
+  multiplier/U292/A1 (AOI21D2BWP40P140)       0.0363    0.0000     1.8695 f
+  multiplier/U292/ZN (AOI21D2BWP40P140)       0.0252    0.0239     1.8934 r
+  multiplier/U367/A1 (OAI21D1BWP40P140)       0.0252    0.0000     1.8934 r
+  multiplier/U367/ZN (OAI21D1BWP40P140)       0.0488    0.0366     1.9299 f
+  multiplier/U291/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     1.9299 f
+  multiplier/U291/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0415    0.0373     1.9672 r
+  multiplier/U914/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0415    0.0000     1.9672 r
+  multiplier/U914/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0233    0.0208     1.9880 f
+  multiplier/U909/A1 (AOI21D1BWP40P140)       0.0233    0.0000     1.9880 f
+  multiplier/U909/ZN (AOI21D1BWP40P140)       0.0456    0.0356     2.0236 r
+  multiplier/U246/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0456    0.0000     2.0236 r
+  multiplier/U246/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0268     2.0504 f
+  multiplier/U244/A1 (AOI21D2BWP40P140)       0.0363    0.0000     2.0504 f
+  multiplier/U244/ZN (AOI21D2BWP40P140)       0.0252    0.0239     2.0743 r
+  multiplier/U920/A1 (OAI21D1BWP40P140)       0.0252    0.0000     2.0743 r
+  multiplier/U920/ZN (OAI21D1BWP40P140)       0.0488    0.0366     2.1108 f
+  multiplier/U170/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     2.1108 f
+  multiplier/U170/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0346    0.0334     2.1442 r
+  multiplier/U98/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0346    0.0000     2.1442 r
+  multiplier/U98/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0315    0.0234     2.1677 f
+  multiplier/U840/A1 (AOI21D1BWP40P140)       0.0315    0.0000     2.1677 f
+  multiplier/U840/ZN (AOI21D1BWP40P140)       0.0389    0.0336     2.2013 r
+  multiplier/U842/A1 (OAI21D1BWP40P140)       0.0389    0.0000     2.2013 r
+  multiplier/U842/ZN (OAI21D1BWP40P140)       0.0441    0.0370     2.2383 f
+  multiplier/U843/A1 (AOI21D1BWP40P140)       0.0441    0.0000     2.2383 f
+  multiplier/U843/ZN (AOI21D1BWP40P140)       0.0484    0.0420     2.2803 r
+  multiplier/U93/A1 (OAI21D2BWP40P140LVT)     0.0484    0.0000     2.2803 r
+  multiplier/U93/ZN (OAI21D2BWP40P140LVT)     0.0294    0.0233     2.3036 f
+  multiplier/U92/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     2.3036 f
+  multiplier/U92/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     2.3297 r
+  multiplier/U307/A1 (OAI21D1BWP40P140)       0.0289    0.0000     2.3297 r
+  multiplier/U307/ZN (OAI21D1BWP40P140)       0.0436    0.0345     2.3642 f
+  multiplier/U89/A1 (AOI21D1BWP40P140LVT)     0.0436    0.0000     2.3642 f
+  multiplier/U89/ZN (AOI21D1BWP40P140LVT)     0.0421    0.0355     2.3997 r
+  multiplier/U88/A1 (OAI21D2BWP40P140LVT)     0.0421    0.0000     2.3997 r
+  multiplier/U88/ZN (OAI21D2BWP40P140LVT)     0.0259    0.0207     2.4204 f
+  multiplier/U283/A1 (AOI21D1BWP40P140)       0.0259    0.0000     2.4204 f
+  multiplier/U283/ZN (AOI21D1BWP40P140)       0.0382    0.0318     2.4523 r
+  multiplier/U287/A1 (OAI21D1BWP40P140)       0.0382    0.0000     2.4523 r
+  multiplier/U287/ZN (OAI21D1BWP40P140)       0.0496    0.0403     2.4925 f
+  multiplier/U34/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0496    0.0000     2.4925 f
+  multiplier/U34/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0332     2.5257 r
+  multiplier/U30/A1 (OAI21D2BWP40P140)        0.0340    0.0000     2.5257 r
+  multiplier/U30/ZN (OAI21D2BWP40P140)        0.0294    0.0243     2.5500 f
+  multiplier/U784/A1 (AOI21D1BWP40P140)       0.0294    0.0000     2.5500 f
+  multiplier/U784/ZN (AOI21D1BWP40P140)       0.0386    0.0330     2.5829 r
+  multiplier/U288/A1 (OAI21D1BWP40P140)       0.0386    0.0000     2.5829 r
+  multiplier/U288/ZN (OAI21D1BWP40P140)       0.0443    0.0371     2.6200 f
+  multiplier/U29/A1 (AOI21D1BWP40P140LVT)     0.0443    0.0000     2.6200 f
+  multiplier/U29/ZN (AOI21D1BWP40P140LVT)     0.0401    0.0344     2.6544 r
+  multiplier/U15/A1 (OAI21D1P5BWP40P140)      0.0401    0.0000     2.6544 r
+  multiplier/U15/ZN (OAI21D1P5BWP40P140)      0.0285    0.0240     2.6785 f
+  multiplier/U9188/CI (FA1D1BWP40P140)        0.0285    0.0000     2.6785 f
+  multiplier/U9188/CO (FA1D1BWP40P140)        0.0225    0.0518     2.7303 f
+  multiplier/U9193/CI (FA1D1BWP40P140)        0.0225    0.0000     2.7303 f
+  multiplier/U9193/CO (FA1D1BWP40P140)        0.0223    0.0496     2.7798 f
+  multiplier/U9196/CI (FA1D1BWP40P140)        0.0223    0.0000     2.7798 f
+  multiplier/U9196/CO (FA1D1BWP40P140)        0.0183    0.0459     2.8257 f
+  multiplier/U8617/A2 (XOR2UD1BWP40P140)      0.0183    0.0000     2.8257 f
+  multiplier/U8617/Z (XOR2UD1BWP40P140)       0.0267    0.0364     2.8621 f
+  multiplier/U8627/I0 (MUX2NUD1BWP40P140)     0.0267    0.0000     2.8621 f
+  multiplier/U8627/ZN (MUX2NUD1BWP40P140)     0.0687    0.0272     2.8893 r
+  multiplier/U28/I (INVD1BWP40P140)           0.0687    0.0000     2.8893 r
+  multiplier/U28/ZN (INVD1BWP40P140)          0.0220    0.0190     2.9084 f
+  multiplier/output_bits_resultHigh[63] (ysyx_22050851_SimpleMultiplier_0)
+                                                        0.0000     2.9084 f
+  wbu/fromMultiplier_bits_resultHigh[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9084 f
+  wbu/U9/A1 (ND2D1BWP40P140)                  0.0220    0.0000     2.9084 f
+  wbu/U9/ZN (ND2D1BWP40P140)                  0.0357    0.0133     2.9216 r
+  wbu/U3/A1 (ND2D1BWP40P140LVT)               0.0357    0.0000     2.9216 r
+  wbu/U3/ZN (ND2D1BWP40P140LVT)               0.0195    0.0165     2.9381 f
+  wbu/U529/B (AOI21D1BWP40P140)               0.0195    0.0000     2.9381 f
+  wbu/U529/ZN (AOI21D1BWP40P140)              0.0410    0.0242     2.9623 r
+  wbu/U8/B (IOA21D1BWP40P140)                 0.0410    0.0000     2.9623 r
+  wbu/U8/ZN (IOA21D1BWP40P140)                0.0419    0.0356     2.9980 f
+  wbu/toDecode_data[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9980 f
+  exe/fromWbu_data[63] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     2.9980 f
+  exe/U937/A1 (AOI21D1BWP40P140)              0.0419    0.0000     2.9980 f
+  exe/U937/ZN (AOI21D1BWP40P140)              0.0526    0.0300     3.0279 r
+  exe/U6/B (OAI211OPTREPBD2BWP40P140)         0.0526    0.0000     3.0279 r
+  exe/U6/ZN (OAI211OPTREPBD2BWP40P140)        0.0968    0.0692     3.0972 f
+  exe/alu/io_in_bits_inA[63] (ysyx_22050851_ALU_0)      0.0000     3.0972 f
+  exe/alu/U2028/A1 (NR2OPTPAD2BWP40P140)      0.0968    0.0000     3.0972 f
+  exe/alu/U2028/ZN (NR2OPTPAD2BWP40P140)      0.0335    0.0318     3.1290 r
+  exe/alu/U22/A1 (OR2D1BWP40P140)             0.0335    0.0000     3.1290 r
+  exe/alu/U22/Z (OR2D1BWP40P140)              0.0266    0.0400     3.1690 r
+  exe/alu/U524/I (INVD1BWP40P140)             0.0266    0.0000     3.1690 r
+  exe/alu/U524/ZN (INVD1BWP40P140)            0.0603    0.0447     3.2136 f
+  exe/alu/U107/A1 (ND2D2BWP40P140)            0.0603    0.0000     3.2136 f
+  exe/alu/U107/ZN (ND2D2BWP40P140)            0.0940    0.0292     3.2428 r
+  exe/alu/U2027/I (INVD3BWP40P140)            0.0940    0.0000     3.2428 r
+  exe/alu/U2027/ZN (INVD3BWP40P140)           0.0393    0.0346     3.2775 f
+  exe/alu/U1628/B (AOI211D1BWP40P140)         0.0393    0.0000     3.2775 f
+  exe/alu/U1628/ZN (AOI211D1BWP40P140)        0.0585    0.0399     3.3173 r
+  exe/alu/U59/B (OAI21D1BWP40P140)            0.0585    0.0000     3.3173 r
+  exe/alu/U59/ZN (OAI21D1BWP40P140)           0.0321    0.0344     3.3517 f
+  exe/alu/U1629/C (AOI211D1BWP40P140)         0.0321    0.0000     3.3517 f
+  exe/alu/U1629/ZN (AOI211D1BWP40P140)        0.0763    0.0390     3.3907 r
+  exe/alu/U1630/C (OAI211D1BWP40P140)         0.0763    0.0000     3.3907 r
+  exe/alu/U1630/ZN (OAI211D1BWP40P140)        0.0704    0.0659     3.4566 f
+  exe/alu/io_out_bits_out[18] (ysyx_22050851_ALU_0)     0.0000     3.4566 f
+  exe/U49/A1 (AO22D1BWP40P140)                0.0704    0.0000     3.4566 f
+  exe/U49/Z (AO22D1BWP40P140)                 0.0286    0.0536     3.5102 f
+  exe/toDecode_data[18] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     3.5102 f
+  idu/fromExe_data[18] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     3.5102 f
+  idu/U632/A2 (ND2D1BWP40P140)                0.0286    0.0000     3.5102 f
+  idu/U632/ZN (ND2D1BWP40P140)                0.0352    0.0163     3.5264 r
+  idu/U17/A1 (ND2D1BWP40P140)                 0.0352    0.0000     3.5264 r
+  idu/U17/ZN (ND2D1BWP40P140)                 0.0751    0.0556     3.5820 f
+  idu/U175/A1 (OR2D1BWP40P140)                0.0751    0.0000     3.5820 f
+  idu/U175/Z (OR2D1BWP40P140)                 0.0210    0.0456     3.6276 f
+  idu/U2054/A2 (AOI21D1BWP40P140)             0.0210    0.0000     3.6276 f
+  idu/U2054/ZN (AOI21D1BWP40P140)             0.0227    0.0208     3.6485 r
+  idu/U2055/B (OAI21D1BWP40P140)              0.0227    0.0000     3.6485 r
+  idu/U2055/ZN (OAI21D1BWP40P140)             0.0337    0.0315     3.6800 f
+  idu/U119/A2 (AOI21D1BWP40P140)              0.0337    0.0000     3.6800 f
+  idu/U119/ZN (AOI21D1BWP40P140)              0.0306    0.0288     3.7087 r
+  idu/U398/A1 (OAI21D1BWP40P140)              0.0306    0.0000     3.7087 r
+  idu/U398/ZN (OAI21D1BWP40P140)              0.0259    0.0235     3.7322 f
+  idu/U113/B (AOI21D1BWP40P140)               0.0259    0.0000     3.7322 f
+  idu/U113/ZN (AOI21D1BWP40P140)              0.0284    0.0303     3.7625 r
+  idu/U112/A1 (OAI21D1BWP40P140)              0.0284    0.0000     3.7625 r
+  idu/U112/ZN (OAI21D1BWP40P140)              0.0414    0.0333     3.7958 f
+  idu/U725/A1 (AOI21D1BWP40P140)              0.0414    0.0000     3.7958 f
+  idu/U725/ZN (AOI21D1BWP40P140)              0.0256    0.0256     3.8214 r
+  idu/U2085/B (OAI21D1BWP40P140)              0.0256    0.0000     3.8214 r
+  idu/U2085/ZN (OAI21D1BWP40P140)             0.0365    0.0323     3.8537 f
+  idu/U111/A1 (AOI21D1BWP40P140)              0.0365    0.0000     3.8537 f
+  idu/U111/ZN (AOI21D1BWP40P140)              0.0246    0.0246     3.8783 r
+  idu/U11/B (OAI21D1BWP40P140)                0.0246    0.0000     3.8783 r
+  idu/U11/ZN (OAI21D1BWP40P140)               0.1214    0.0761     3.9544 f
+  idu/U1159/A1 (AOI21D1BWP40P140)             0.1214    0.0000     3.9544 f
+  idu/U1159/ZN (AOI21D1BWP40P140)             0.0503    0.0483     4.0027 r
+  idu/U2866/A1 (XOR2UD1BWP40P140)             0.0503    0.0000     4.0027 r
+  idu/U2866/Z (XOR2UD1BWP40P140)              0.0274    0.0174     4.0202 f
+  idu/U1391/A1 (IOA21D1BWP40P140)             0.0274    0.0000     4.0202 f
+  idu/U1391/ZN (IOA21D1BWP40P140)             0.0311    0.0407     4.0609 f
+  idu/U1169/I (INVD1BWP40P140)                0.0311    0.0000     4.0609 f
+  idu/U1169/ZN (INVD1BWP40P140)               0.0131    0.0145     4.0754 r
+  idu/U3104/I0 (MUX2NUD1BWP40P140)            0.0131    0.0000     4.0754 r
+  idu/U3104/ZN (MUX2NUD1BWP40P140)            0.1501    0.0595     4.1348 f
+  idu/decodeBack_branchPc[54] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/fromDecode_branchPc[54] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/U365/A1 (XOR2UD1BWP40P140)              0.1501    0.0000     4.1348 f
+  ifu/U365/Z (XOR2UD1BWP40P140)               0.0370    0.0576     4.1924 f
+  ifu/U27/A2 (NR2D1BWP40P140)                 0.0370    0.0000     4.1924 f
+  ifu/U27/ZN (NR2D1BWP40P140)                 0.0206    0.0233     4.2158 r
+  ifu/U376/A1 (ND3D1BWP40P140)                0.0206    0.0000     4.2158 r
+  ifu/U376/ZN (ND3D1BWP40P140)                0.0320    0.0251     4.2409 f
+  ifu/U54/A2 (NR2D1BWP40P140)                 0.0320    0.0000     4.2409 f
+  ifu/U54/ZN (NR2D1BWP40P140)                 0.0200    0.0222     4.2631 r
+  ifu/U397/A1 (ND3D1BWP40P140)                0.0200    0.0000     4.2631 r
+  ifu/U397/ZN (ND3D1BWP40P140)                0.0311    0.0250     4.2881 f
+  ifu/U48/A2 (NR2D1BWP40P140)                 0.0311    0.0000     4.2881 f
+  ifu/U48/ZN (NR2D1BWP40P140)                 0.0199    0.0218     4.3099 r
+  ifu/U399/A2 (ND3D1BWP40P140)                0.0199    0.0000     4.3099 r
+  ifu/U399/ZN (ND3D1BWP40P140)                0.0344    0.0272     4.3372 f
+  ifu/U75/A2 (NR2D1BWP40P140)                 0.0344    0.0000     4.3372 f
+  ifu/U75/ZN (NR2D1BWP40P140)                 0.0206    0.0228     4.3600 r
+  ifu/U401/A1 (INR2D1BWP40P140)               0.0206    0.0000     4.3600 r
+  ifu/U401/ZN (INR2D1BWP40P140)               0.0203    0.0301     4.3901 r
+  ifu/U20/A1 (INR2D1BWP40P140)                0.0203    0.0000     4.3901 r
+  ifu/U20/ZN (INR2D1BWP40P140)                0.0260    0.0340     4.4241 r
+  ifu/U16/A1 (IND2D1BWP40P140LVT)             0.0260    0.0000     4.4241 r
+  ifu/U16/ZN (IND2D1BWP40P140LVT)             0.0155    0.0253     4.4494 r
+  ifu/U12/I (INVD3BWP40P140)                  0.0155    0.0000     4.4494 r
+  ifu/U12/ZN (INVD3BWP40P140)                 0.0248    0.0200     4.4694 f
+  ifu/U14/I (INVD12BWP40P140)                 0.0248    0.0000     4.4694 f
+  ifu/U14/ZN (INVD12BWP40P140)                0.0416    0.0330     4.5023 r
+  ifu/U6/S (MUX2ND2BWP40P140)                 0.0416    0.0000     4.5023 r
+  ifu/U6/ZN (MUX2ND2BWP40P140)                0.0323    0.0596     4.5619 f
+  ifu/iCacheIO_addr[7] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.5619 f
+  iCache/io_addr[7] (ysyx_22050851_Cache_0)             0.0000     4.5619 f
+  iCache/U257/A1 (NR2D1BWP40P140)             0.0323    0.0000     4.5619 f
+  iCache/U257/ZN (NR2D1BWP40P140)             0.0550    0.0437     4.6056 r
+  iCache/U132/A1 (ND2OPTPAD1BWP40P140)        0.0550    0.0000     4.6056 r
+  iCache/U132/ZN (ND2OPTPAD1BWP40P140)        0.4718    0.2844     4.8900 f
+  iCache/U137/I (BUFFD1BWP40P140)             0.4718    0.0000     4.8900 f
+  iCache/U137/Z (BUFFD1BWP40P140)             0.4559    0.3568     5.2468 f
+  iCache/U2996/A1 (OAI22D1BWP40P140)          0.4559    0.0000     5.2468 f
+  iCache/U2996/ZN (OAI22D1BWP40P140)          0.1067    0.0647     5.3115 r
+  iCache/U490/A1 (NR2D1BWP40P140)             0.1067    0.0000     5.3115 r
+  iCache/U490/ZN (NR2D1BWP40P140)             0.0294    0.0219     5.3334 f
+  iCache/U3000/A1 (ND3D1BWP40P140)            0.0294    0.0000     5.3334 f
+  iCache/U3000/ZN (ND3D1BWP40P140)            0.0347    0.0196     5.3531 r
+  iCache/U3001/A1 (XOR2UD1BWP40P140)          0.0347    0.0000     5.3531 r
+  iCache/U3001/Z (XOR2UD1BWP40P140)           0.0653    0.0205     5.3736 f
+  iCache/U3002/A4 (NR4D1BWP40P140)            0.0653    0.0000     5.3736 f
+  iCache/U3002/ZN (NR4D1BWP40P140)            0.0298    0.0399     5.4135 r
+  iCache/U3025/A1 (ND3D1BWP40P140)            0.0298    0.0000     5.4135 r
+  iCache/U3025/ZN (ND3D1BWP40P140)            0.0382    0.0310     5.4445 f
+  iCache/U3076/A2 (NR4D1BWP40P140)            0.0382    0.0000     5.4445 f
+  iCache/U3076/ZN (NR4D1BWP40P140)            0.0308    0.0319     5.4764 r
+  iCache/U315/A1 (NR2D1BWP40P140)             0.0308    0.0000     5.4764 r
+  iCache/U315/ZN (NR2D1BWP40P140)             0.0189    0.0182     5.4947 f
+  iCache/U158/A1 (ND2D1BWP40P140)             0.0189    0.0000     5.4947 f
+  iCache/U158/ZN (ND2D1BWP40P140)             0.0196    0.0176     5.5123 r
+  iCache/U109/A1 (OAI31D1BWP40P140LVT)        0.0196    0.0000     5.5123 r
+  iCache/U109/ZN (OAI31D1BWP40P140LVT)        0.0715    0.0312     5.5435 f
+  iCache/axiIO_arvalid (ysyx_22050851_Cache_0)          0.0000     5.5435 f
+  interConnect/slaveIO_1_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/slaveIO_1_arvalid (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/U153/A1 (NR2OPTIBD1BWP40P140LVT)
+                                              0.0715    0.0000     5.5435 f
+  interConnect/arbiter/U153/ZN (NR2OPTIBD1BWP40P140LVT)
+                                              0.0355    0.0328     5.5763 r
+  interConnect/arbiter/U55/A1 (OAI21D2BWP40P140)
+                                              0.0355    0.0000     5.5763 r
+  interConnect/arbiter/U55/ZN (OAI21D2BWP40P140)
+                                              0.0315    0.0271     5.6033 f
+  interConnect/arbiter/U180/A1 (ND2D1BWP40P140)
+                                              0.0315    0.0000     5.6033 f
+  interConnect/arbiter/U180/ZN (ND2D1BWP40P140)
+                                              0.0233    0.0236     5.6269 r
+  interConnect/arbiter/U32/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0233    0.0000     5.6269 r
+  interConnect/arbiter/U32/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0249    0.0191     5.6461 f
+  interConnect/arbiter/U413/I (INVD3BWP40P140)
+                                              0.0249    0.0000     5.6461 f
+  interConnect/arbiter/U413/ZN (INVD3BWP40P140)
+                                              0.0310    0.0267     5.6728 r
+  interConnect/arbiter/U52/I (INVD6BWP40P140)
+                                              0.0310    0.0000     5.6728 r
+  interConnect/arbiter/U52/ZN (INVD6BWP40P140)
+                                              0.1142    0.0761     5.7489 f
+  interConnect/arbiter/U45/S (MUX2NUD1BWP40P140)
+                                              0.1142    0.0000     5.7489 f
+  interConnect/arbiter/U45/ZN (MUX2NUD1BWP40P140)
+                                              0.0563    0.0622     5.8111 f
+  interConnect/arbiter/masterIO_awaddr[24] (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/slaveIO_awaddr[24] (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/U171/A3 (OR4D1BWP40P140)
+                                              0.0563    0.0000     5.8111 f
+  interConnect/crossbar/U171/Z (OR4D1BWP40P140)
+                                              0.0159    0.0510     5.8621 f
+  interConnect/crossbar/U172/A4 (OR4D1BWP40P140)
+                                              0.0159    0.0000     5.8621 f
+  interConnect/crossbar/U172/Z (OR4D1BWP40P140)
+                                              0.0152    0.0354     5.8976 f
+  interConnect/crossbar/U339/I0 (MUX2NUD1BWP40P140)
+                                              0.0152    0.0000     5.8976 f
+  interConnect/crossbar/U339/ZN (MUX2NUD1BWP40P140)
+                                              0.0312    0.0276     5.9252 r
+  interConnect/crossbar/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0312    0.0000     5.9252 r
+  interConnect/crossbar/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0295    0.0233     5.9485 f
+  interConnect/crossbar/U17/B1 (INR2D1BWP40P140)
+                                              0.0295    0.0000     5.9485 f
+  interConnect/crossbar/U17/ZN (INR2D1BWP40P140)
+                                              0.0188    0.0188     5.9673 r
+  interConnect/crossbar/U22/I (INVD1BWP40P140)
+                                              0.0188    0.0000     5.9673 r
+  interConnect/crossbar/U22/ZN (INVD1BWP40P140)
+                                              0.0194    0.0179     5.9852 f
+  interConnect/crossbar/U418/A1 (NR2D1BWP40P140)
+                                              0.0194    0.0000     5.9852 f
+  interConnect/crossbar/U418/ZN (NR2D1BWP40P140)
+                                              0.0289    0.0244     6.0095 r
+  interConnect/crossbar/masterIO_0_arvalid (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0095 r
+  interConnect/masterIO_0_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0095 r
+  clint/slaveIO_arvalid (ysyx_22050851_CLINT_0)         0.0000     6.0095 r
+  clint/U1788/A1 (NR2D1BWP40P140)             0.0289    0.0000     6.0095 r
+  clint/U1788/ZN (NR2D1BWP40P140)             0.0172    0.0172     6.0267 f
+  clint/slaveIO_awready (ysyx_22050851_CLINT_0)         0.0000     6.0267 f
+  interConnect/masterIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/masterIO_0_awready (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/U389/I0 (MUX2NUD1BWP40P140)
+                                              0.0172    0.0000     6.0267 f
+  interConnect/crossbar/U389/ZN (MUX2NUD1BWP40P140)
+                                              0.0899    0.0524     6.0792 r
+  interConnect/crossbar/slaveIO_awready_BAR (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/masterIO_awready_BAR (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/U4/A1 (NR2OPTIBD2BWP40P140)
+                                              0.0899    0.0000     6.0792 r
+  interConnect/arbiter/U4/ZN (NR2OPTIBD2BWP40P140)
+                                              0.0402    0.0356     6.1148 f
+  interConnect/arbiter/slaveIO_0_awready (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.1148 f
+  interConnect/slaveIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.1148 f
+  dCache/axiIO_awready (ysyx_22050851_Cache_1_0)        0.0000     6.1148 f
+  dCache/U5240/I (INVD1BWP40P140)             0.0402    0.0000     6.1148 f
+  dCache/U5240/ZN (INVD1BWP40P140)            0.0195    0.0210     6.1357 r
+  dCache/U5242/A1 (NR2D1BWP40P140)            0.0195    0.0000     6.1357 r
+  dCache/U5242/ZN (NR2D1BWP40P140)            0.0223    0.0186     6.1543 f
+  dCache/U7633/B (AOI211D1BWP40P140)          0.0223    0.0000     6.1543 f
+  dCache/U7633/ZN (AOI211D1BWP40P140)         0.0429    0.0406     6.1949 r
+  dCache/U7634/A2 (ND2D1BWP40P140)            0.0429    0.0000     6.1949 r
+  dCache/U7634/ZN (ND2D1BWP40P140)            0.0275    0.0270     6.2219 f
+  dCache/U162/A3 (OR4D1BWP40P140)             0.0275    0.0000     6.2219 f
+  dCache/U162/Z (OR4D1BWP40P140)              0.0315    0.0571     6.2790 f
+  dCache/U7648/A1 (OAI21D1BWP40P140)          0.0315    0.0000     6.2790 f
+  dCache/U7648/ZN (OAI21D1BWP40P140)          0.0317    0.0220     6.3010 r
+  dCache/status_reg_3_/D (DFQD1BWP40P140)     0.0317    0.0000     6.3010 r
+  data arrival time                                                6.3010
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  dCache/status_reg_3_/CP (DFQD1BWP40P140)              0.0000     6.3500 r
+  library setup time                                   -0.0303     6.3197
+  data required time                                               6.3197
+  --------------------------------------------------------------------------
+  data required time                                               6.3197
+  data arrival time                                               -6.3010
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0187
+
+
+  Startpoint: multiplier/inReg_multiplicand_reg_21_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: dCache/status_reg_1_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  multiplier/inReg_multiplicand_reg_21_/CP (DFQD2BWP40P140)
+                                              0.0000    0.0000 #   0.0000 r
+  multiplier/inReg_multiplicand_reg_21_/Q (DFQD2BWP40P140)
+                                              0.3031    0.2382     0.2382 f
+  multiplier/U915/A2 (XNR2D2BWP40P140)        0.3031    0.0000     0.2382 f
+  multiplier/U915/ZN (XNR2D2BWP40P140)        0.1578    0.1857     0.4239 f
+  multiplier/U1058/A2 (ND2OPTPAD1BWP40P140)   0.1578    0.0000     0.4239 f
+  multiplier/U1058/ZN (ND2OPTPAD1BWP40P140)   0.2776    0.2161     0.6399 r
+  multiplier/U3015/A1 (OAI22D1BWP40P140)      0.2776    0.0000     0.6399 r
+  multiplier/U3015/ZN (OAI22D1BWP40P140)      0.0935    0.0723     0.7123 f
+  multiplier/U3048/B (FA1D1BWP40P140)         0.0935    0.0000     0.7123 f
+  multiplier/U3048/CO (FA1D1BWP40P140)        0.0241    0.0768     0.7891 f
+  multiplier/U3021/CI (FA1D1BWP40P140)        0.0241    0.0000     0.7891 f
+  multiplier/U3021/CO (FA1D1BWP40P140)        0.0230    0.0502     0.8392 f
+  multiplier/U3156/CI (FA1D1BWP40P140)        0.0230    0.0000     0.8392 f
+  multiplier/U3156/CO (FA1D1BWP40P140)        0.0259    0.0530     0.8922 f
+  multiplier/U3342/B (FA1D1BWP40P140)         0.0259    0.0000     0.8922 f
+  multiplier/U3342/CO (FA1D1BWP40P140)        0.0259    0.0595     0.9517 f
+  multiplier/U3418/B (FA1D1BWP40P140)         0.0259    0.0000     0.9517 f
+  multiplier/U3418/CO (FA1D1BWP40P140)        0.0260    0.0595     1.0111 f
+  multiplier/U3426/B (FA1D1BWP40P140)         0.0260    0.0000     1.0111 f
+  multiplier/U3426/S (FA1D1BWP40P140)         0.0281    0.0990     1.1102 r
+  multiplier/U3470/CI (FA1D1BWP40P140)        0.0281    0.0000     1.1102 r
+  multiplier/U3470/S (FA1D1BWP40P140)         0.0297    0.0870     1.1971 f
+  multiplier/U1149/A1 (NR2D1BWP40P140)        0.0297    0.0000     1.1971 f
+  multiplier/U1149/ZN (NR2D1BWP40P140)        0.0317    0.0286     1.2257 r
+  multiplier/U3521/A1 (OAI21D1BWP40P140)      0.0317    0.0000     1.2257 r
+  multiplier/U3521/ZN (OAI21D1BWP40P140)      0.0337    0.0289     1.2545 f
+  multiplier/U3524/A1 (AOI21D1BWP40P140)      0.0337    0.0000     1.2545 f
+  multiplier/U3524/ZN (AOI21D1BWP40P140)      0.0308    0.0286     1.2832 r
+  multiplier/U3526/A1 (OAI21D1BWP40P140)      0.0308    0.0000     1.2832 r
+  multiplier/U3526/ZN (OAI21D1BWP40P140)      0.0274    0.0235     1.3067 f
+  multiplier/U3527/B (AOI21D1BWP40P140)       0.0274    0.0000     1.3067 f
+  multiplier/U3527/ZN (AOI21D1BWP40P140)      0.0307    0.0308     1.3375 r
+  multiplier/U3738/A1 (OAI21D1BWP40P140)      0.0307    0.0000     1.3375 r
+  multiplier/U3738/ZN (OAI21D1BWP40P140)      0.0336    0.0286     1.3661 f
+  multiplier/U4037/A1 (AOI21D1BWP40P140)      0.0336    0.0000     1.3661 f
+  multiplier/U4037/ZN (AOI21D1BWP40P140)      0.0305    0.0284     1.3944 r
+  multiplier/U1247/A1 (OAI21D1BWP40P140)      0.0305    0.0000     1.3944 r
+  multiplier/U1247/ZN (OAI21D1BWP40P140)      0.0335    0.0285     1.4230 f
+  multiplier/U274/A1 (AOI21D1BWP40P140)       0.0335    0.0000     1.4230 f
+  multiplier/U274/ZN (AOI21D1BWP40P140)       0.0305    0.0283     1.4513 r
+  multiplier/U777/A2 (OAI21D1BWP40P140)       0.0305    0.0000     1.4513 r
+  multiplier/U777/ZN (OAI21D1BWP40P140)       0.0348    0.0300     1.4813 f
+  multiplier/U36/A1 (AOI21D1BWP40P140)        0.0348    0.0000     1.4813 f
+  multiplier/U36/ZN (AOI21D1BWP40P140)        0.0310    0.0289     1.5103 r
+  multiplier/U9/A1 (OAI21D1BWP40P140LVT)      0.0310    0.0000     1.5103 r
+  multiplier/U9/ZN (OAI21D1BWP40P140LVT)      0.0362    0.0288     1.5391 f
+  multiplier/U364/A1 (AOI21D1BWP40P140)       0.0362    0.0000     1.5391 f
+  multiplier/U364/ZN (AOI21D1BWP40P140)       0.0464    0.0393     1.5784 r
+  multiplier/U345/A1 (OAI21D2BWP40P140)       0.0464    0.0000     1.5784 r
+  multiplier/U345/ZN (OAI21D2BWP40P140)       0.0304    0.0263     1.6047 f
+  multiplier/U780/A1 (AOI21D1BWP40P140)       0.0304    0.0000     1.6047 f
+  multiplier/U780/ZN (AOI21D1BWP40P140)       0.0388    0.0333     1.6380 r
+  multiplier/U344/A1 (OAI21D1BWP40P140)       0.0388    0.0000     1.6380 r
+  multiplier/U344/ZN (OAI21D1BWP40P140)       0.0441    0.0370     1.6749 f
+  multiplier/U880/A1 (AOI21D1BWP40P140)       0.0441    0.0000     1.6749 f
+  multiplier/U880/ZN (AOI21D1BWP40P140)       0.0484    0.0420     1.7170 r
+  multiplier/U305/A1 (OAI21D2BWP40P140LVT)    0.0484    0.0000     1.7170 r
+  multiplier/U305/ZN (OAI21D2BWP40P140LVT)    0.0294    0.0233     1.7403 f
+  multiplier/U304/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     1.7403 f
+  multiplier/U304/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     1.7664 r
+  multiplier/U888/A1 (OAI21D1BWP40P140)       0.0289    0.0000     1.7664 r
+  multiplier/U888/ZN (OAI21D1BWP40P140)       0.0434    0.0343     1.8007 f
+  multiplier/U348/A1 (AOI21D1BWP40P140)       0.0434    0.0000     1.8007 f
+  multiplier/U348/ZN (AOI21D1BWP40P140)       0.0484    0.0419     1.8426 r
+  multiplier/U295/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0484    0.0000     1.8426 r
+  multiplier/U295/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0269     1.8695 f
+  multiplier/U292/A1 (AOI21D2BWP40P140)       0.0363    0.0000     1.8695 f
+  multiplier/U292/ZN (AOI21D2BWP40P140)       0.0252    0.0239     1.8934 r
+  multiplier/U367/A1 (OAI21D1BWP40P140)       0.0252    0.0000     1.8934 r
+  multiplier/U367/ZN (OAI21D1BWP40P140)       0.0488    0.0366     1.9299 f
+  multiplier/U291/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     1.9299 f
+  multiplier/U291/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0415    0.0373     1.9672 r
+  multiplier/U914/A1 (OAI21OPTREPBD2BWP40P140)
+                                              0.0415    0.0000     1.9672 r
+  multiplier/U914/ZN (OAI21OPTREPBD2BWP40P140)
+                                              0.0233    0.0208     1.9880 f
+  multiplier/U909/A1 (AOI21D1BWP40P140)       0.0233    0.0000     1.9880 f
+  multiplier/U909/ZN (AOI21D1BWP40P140)       0.0456    0.0356     2.0236 r
+  multiplier/U246/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0456    0.0000     2.0236 r
+  multiplier/U246/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0363    0.0268     2.0504 f
+  multiplier/U244/A1 (AOI21D2BWP40P140)       0.0363    0.0000     2.0504 f
+  multiplier/U244/ZN (AOI21D2BWP40P140)       0.0252    0.0239     2.0743 r
+  multiplier/U920/A1 (OAI21D1BWP40P140)       0.0252    0.0000     2.0743 r
+  multiplier/U920/ZN (OAI21D1BWP40P140)       0.0488    0.0366     2.1108 f
+  multiplier/U170/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0488    0.0000     2.1108 f
+  multiplier/U170/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0346    0.0334     2.1442 r
+  multiplier/U98/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0346    0.0000     2.1442 r
+  multiplier/U98/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0315    0.0234     2.1677 f
+  multiplier/U840/A1 (AOI21D1BWP40P140)       0.0315    0.0000     2.1677 f
+  multiplier/U840/ZN (AOI21D1BWP40P140)       0.0389    0.0336     2.2013 r
+  multiplier/U842/A1 (OAI21D1BWP40P140)       0.0389    0.0000     2.2013 r
+  multiplier/U842/ZN (OAI21D1BWP40P140)       0.0441    0.0370     2.2383 f
+  multiplier/U843/A1 (AOI21D1BWP40P140)       0.0441    0.0000     2.2383 f
+  multiplier/U843/ZN (AOI21D1BWP40P140)       0.0484    0.0420     2.2803 r
+  multiplier/U93/A1 (OAI21D2BWP40P140LVT)     0.0484    0.0000     2.2803 r
+  multiplier/U93/ZN (OAI21D2BWP40P140LVT)     0.0294    0.0233     2.3036 f
+  multiplier/U92/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0294    0.0000     2.3036 f
+  multiplier/U92/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0289    0.0261     2.3297 r
+  multiplier/U307/A1 (OAI21D1BWP40P140)       0.0289    0.0000     2.3297 r
+  multiplier/U307/ZN (OAI21D1BWP40P140)       0.0436    0.0345     2.3642 f
+  multiplier/U89/A1 (AOI21D1BWP40P140LVT)     0.0436    0.0000     2.3642 f
+  multiplier/U89/ZN (AOI21D1BWP40P140LVT)     0.0421    0.0355     2.3997 r
+  multiplier/U88/A1 (OAI21D2BWP40P140LVT)     0.0421    0.0000     2.3997 r
+  multiplier/U88/ZN (OAI21D2BWP40P140LVT)     0.0259    0.0207     2.4204 f
+  multiplier/U283/A1 (AOI21D1BWP40P140)       0.0259    0.0000     2.4204 f
+  multiplier/U283/ZN (AOI21D1BWP40P140)       0.0382    0.0318     2.4523 r
+  multiplier/U287/A1 (OAI21D1BWP40P140)       0.0382    0.0000     2.4523 r
+  multiplier/U287/ZN (OAI21D1BWP40P140)       0.0496    0.0403     2.4925 f
+  multiplier/U34/A1 (AOI21OPTREPBD1BWP40P140)
+                                              0.0496    0.0000     2.4925 f
+  multiplier/U34/ZN (AOI21OPTREPBD1BWP40P140)
+                                              0.0340    0.0332     2.5257 r
+  multiplier/U30/A1 (OAI21D2BWP40P140)        0.0340    0.0000     2.5257 r
+  multiplier/U30/ZN (OAI21D2BWP40P140)        0.0294    0.0243     2.5500 f
+  multiplier/U784/A1 (AOI21D1BWP40P140)       0.0294    0.0000     2.5500 f
+  multiplier/U784/ZN (AOI21D1BWP40P140)       0.0386    0.0330     2.5829 r
+  multiplier/U288/A1 (OAI21D1BWP40P140)       0.0386    0.0000     2.5829 r
+  multiplier/U288/ZN (OAI21D1BWP40P140)       0.0443    0.0371     2.6200 f
+  multiplier/U29/A1 (AOI21D1BWP40P140LVT)     0.0443    0.0000     2.6200 f
+  multiplier/U29/ZN (AOI21D1BWP40P140LVT)     0.0401    0.0344     2.6544 r
+  multiplier/U15/A1 (OAI21D1P5BWP40P140)      0.0401    0.0000     2.6544 r
+  multiplier/U15/ZN (OAI21D1P5BWP40P140)      0.0285    0.0240     2.6785 f
+  multiplier/U9188/CI (FA1D1BWP40P140)        0.0285    0.0000     2.6785 f
+  multiplier/U9188/CO (FA1D1BWP40P140)        0.0225    0.0518     2.7303 f
+  multiplier/U9193/CI (FA1D1BWP40P140)        0.0225    0.0000     2.7303 f
+  multiplier/U9193/CO (FA1D1BWP40P140)        0.0223    0.0496     2.7798 f
+  multiplier/U9196/CI (FA1D1BWP40P140)        0.0223    0.0000     2.7798 f
+  multiplier/U9196/CO (FA1D1BWP40P140)        0.0183    0.0459     2.8257 f
+  multiplier/U8617/A2 (XOR2UD1BWP40P140)      0.0183    0.0000     2.8257 f
+  multiplier/U8617/Z (XOR2UD1BWP40P140)       0.0267    0.0364     2.8621 f
+  multiplier/U8627/I0 (MUX2NUD1BWP40P140)     0.0267    0.0000     2.8621 f
+  multiplier/U8627/ZN (MUX2NUD1BWP40P140)     0.0687    0.0272     2.8893 r
+  multiplier/U28/I (INVD1BWP40P140)           0.0687    0.0000     2.8893 r
+  multiplier/U28/ZN (INVD1BWP40P140)          0.0220    0.0190     2.9084 f
+  multiplier/output_bits_resultHigh[63] (ysyx_22050851_SimpleMultiplier_0)
+                                                        0.0000     2.9084 f
+  wbu/fromMultiplier_bits_resultHigh[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9084 f
+  wbu/U9/A1 (ND2D1BWP40P140)                  0.0220    0.0000     2.9084 f
+  wbu/U9/ZN (ND2D1BWP40P140)                  0.0357    0.0133     2.9216 r
+  wbu/U3/A1 (ND2D1BWP40P140LVT)               0.0357    0.0000     2.9216 r
+  wbu/U3/ZN (ND2D1BWP40P140LVT)               0.0195    0.0165     2.9381 f
+  wbu/U529/B (AOI21D1BWP40P140)               0.0195    0.0000     2.9381 f
+  wbu/U529/ZN (AOI21D1BWP40P140)              0.0410    0.0242     2.9623 r
+  wbu/U8/B (IOA21D1BWP40P140)                 0.0410    0.0000     2.9623 r
+  wbu/U8/ZN (IOA21D1BWP40P140)                0.0419    0.0356     2.9980 f
+  wbu/toDecode_data[63] (ysyx_22050851_WriteBackUnit_0)
+                                                        0.0000     2.9980 f
+  exe/fromWbu_data[63] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     2.9980 f
+  exe/U937/A1 (AOI21D1BWP40P140)              0.0419    0.0000     2.9980 f
+  exe/U937/ZN (AOI21D1BWP40P140)              0.0526    0.0300     3.0279 r
+  exe/U6/B (OAI211OPTREPBD2BWP40P140)         0.0526    0.0000     3.0279 r
+  exe/U6/ZN (OAI211OPTREPBD2BWP40P140)        0.0968    0.0692     3.0972 f
+  exe/alu/io_in_bits_inA[63] (ysyx_22050851_ALU_0)      0.0000     3.0972 f
+  exe/alu/U2028/A1 (NR2OPTPAD2BWP40P140)      0.0968    0.0000     3.0972 f
+  exe/alu/U2028/ZN (NR2OPTPAD2BWP40P140)      0.0335    0.0318     3.1290 r
+  exe/alu/U22/A1 (OR2D1BWP40P140)             0.0335    0.0000     3.1290 r
+  exe/alu/U22/Z (OR2D1BWP40P140)              0.0266    0.0400     3.1690 r
+  exe/alu/U524/I (INVD1BWP40P140)             0.0266    0.0000     3.1690 r
+  exe/alu/U524/ZN (INVD1BWP40P140)            0.0603    0.0447     3.2136 f
+  exe/alu/U107/A1 (ND2D2BWP40P140)            0.0603    0.0000     3.2136 f
+  exe/alu/U107/ZN (ND2D2BWP40P140)            0.0940    0.0292     3.2428 r
+  exe/alu/U2027/I (INVD3BWP40P140)            0.0940    0.0000     3.2428 r
+  exe/alu/U2027/ZN (INVD3BWP40P140)           0.0393    0.0346     3.2775 f
+  exe/alu/U1628/B (AOI211D1BWP40P140)         0.0393    0.0000     3.2775 f
+  exe/alu/U1628/ZN (AOI211D1BWP40P140)        0.0585    0.0399     3.3173 r
+  exe/alu/U59/B (OAI21D1BWP40P140)            0.0585    0.0000     3.3173 r
+  exe/alu/U59/ZN (OAI21D1BWP40P140)           0.0321    0.0344     3.3517 f
+  exe/alu/U1629/C (AOI211D1BWP40P140)         0.0321    0.0000     3.3517 f
+  exe/alu/U1629/ZN (AOI211D1BWP40P140)        0.0763    0.0390     3.3907 r
+  exe/alu/U1630/C (OAI211D1BWP40P140)         0.0763    0.0000     3.3907 r
+  exe/alu/U1630/ZN (OAI211D1BWP40P140)        0.0704    0.0659     3.4566 f
+  exe/alu/io_out_bits_out[18] (ysyx_22050851_ALU_0)     0.0000     3.4566 f
+  exe/U49/A1 (AO22D1BWP40P140)                0.0704    0.0000     3.4566 f
+  exe/U49/Z (AO22D1BWP40P140)                 0.0286    0.0536     3.5102 f
+  exe/toDecode_data[18] (ysyx_22050851_InstructionExecuteUnit_0)
+                                                        0.0000     3.5102 f
+  idu/fromExe_data[18] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     3.5102 f
+  idu/U632/A2 (ND2D1BWP40P140)                0.0286    0.0000     3.5102 f
+  idu/U632/ZN (ND2D1BWP40P140)                0.0352    0.0163     3.5264 r
+  idu/U17/A1 (ND2D1BWP40P140)                 0.0352    0.0000     3.5264 r
+  idu/U17/ZN (ND2D1BWP40P140)                 0.0751    0.0556     3.5820 f
+  idu/U175/A1 (OR2D1BWP40P140)                0.0751    0.0000     3.5820 f
+  idu/U175/Z (OR2D1BWP40P140)                 0.0210    0.0456     3.6276 f
+  idu/U2054/A2 (AOI21D1BWP40P140)             0.0210    0.0000     3.6276 f
+  idu/U2054/ZN (AOI21D1BWP40P140)             0.0227    0.0208     3.6485 r
+  idu/U2055/B (OAI21D1BWP40P140)              0.0227    0.0000     3.6485 r
+  idu/U2055/ZN (OAI21D1BWP40P140)             0.0337    0.0315     3.6800 f
+  idu/U119/A2 (AOI21D1BWP40P140)              0.0337    0.0000     3.6800 f
+  idu/U119/ZN (AOI21D1BWP40P140)              0.0306    0.0288     3.7087 r
+  idu/U398/A1 (OAI21D1BWP40P140)              0.0306    0.0000     3.7087 r
+  idu/U398/ZN (OAI21D1BWP40P140)              0.0259    0.0235     3.7322 f
+  idu/U113/B (AOI21D1BWP40P140)               0.0259    0.0000     3.7322 f
+  idu/U113/ZN (AOI21D1BWP40P140)              0.0284    0.0303     3.7625 r
+  idu/U112/A1 (OAI21D1BWP40P140)              0.0284    0.0000     3.7625 r
+  idu/U112/ZN (OAI21D1BWP40P140)              0.0414    0.0333     3.7958 f
+  idu/U725/A1 (AOI21D1BWP40P140)              0.0414    0.0000     3.7958 f
+  idu/U725/ZN (AOI21D1BWP40P140)              0.0256    0.0256     3.8214 r
+  idu/U2085/B (OAI21D1BWP40P140)              0.0256    0.0000     3.8214 r
+  idu/U2085/ZN (OAI21D1BWP40P140)             0.0365    0.0323     3.8537 f
+  idu/U111/A1 (AOI21D1BWP40P140)              0.0365    0.0000     3.8537 f
+  idu/U111/ZN (AOI21D1BWP40P140)              0.0246    0.0246     3.8783 r
+  idu/U11/B (OAI21D1BWP40P140)                0.0246    0.0000     3.8783 r
+  idu/U11/ZN (OAI21D1BWP40P140)               0.1214    0.0761     3.9544 f
+  idu/U1159/A1 (AOI21D1BWP40P140)             0.1214    0.0000     3.9544 f
+  idu/U1159/ZN (AOI21D1BWP40P140)             0.0503    0.0483     4.0027 r
+  idu/U2866/A1 (XOR2UD1BWP40P140)             0.0503    0.0000     4.0027 r
+  idu/U2866/Z (XOR2UD1BWP40P140)              0.0274    0.0174     4.0202 f
+  idu/U1391/A1 (IOA21D1BWP40P140)             0.0274    0.0000     4.0202 f
+  idu/U1391/ZN (IOA21D1BWP40P140)             0.0311    0.0407     4.0609 f
+  idu/U1169/I (INVD1BWP40P140)                0.0311    0.0000     4.0609 f
+  idu/U1169/ZN (INVD1BWP40P140)               0.0131    0.0145     4.0754 r
+  idu/U3104/I0 (MUX2NUD1BWP40P140)            0.0131    0.0000     4.0754 r
+  idu/U3104/ZN (MUX2NUD1BWP40P140)            0.1501    0.0595     4.1348 f
+  idu/decodeBack_branchPc[54] (ysyx_22050851_InstructionDecodeUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/fromDecode_branchPc[54] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.1348 f
+  ifu/U365/A1 (XOR2UD1BWP40P140)              0.1501    0.0000     4.1348 f
+  ifu/U365/Z (XOR2UD1BWP40P140)               0.0370    0.0576     4.1924 f
+  ifu/U27/A2 (NR2D1BWP40P140)                 0.0370    0.0000     4.1924 f
+  ifu/U27/ZN (NR2D1BWP40P140)                 0.0206    0.0233     4.2158 r
+  ifu/U376/A1 (ND3D1BWP40P140)                0.0206    0.0000     4.2158 r
+  ifu/U376/ZN (ND3D1BWP40P140)                0.0320    0.0251     4.2409 f
+  ifu/U54/A2 (NR2D1BWP40P140)                 0.0320    0.0000     4.2409 f
+  ifu/U54/ZN (NR2D1BWP40P140)                 0.0200    0.0222     4.2631 r
+  ifu/U397/A1 (ND3D1BWP40P140)                0.0200    0.0000     4.2631 r
+  ifu/U397/ZN (ND3D1BWP40P140)                0.0311    0.0250     4.2881 f
+  ifu/U48/A2 (NR2D1BWP40P140)                 0.0311    0.0000     4.2881 f
+  ifu/U48/ZN (NR2D1BWP40P140)                 0.0199    0.0218     4.3099 r
+  ifu/U399/A2 (ND3D1BWP40P140)                0.0199    0.0000     4.3099 r
+  ifu/U399/ZN (ND3D1BWP40P140)                0.0344    0.0272     4.3372 f
+  ifu/U75/A2 (NR2D1BWP40P140)                 0.0344    0.0000     4.3372 f
+  ifu/U75/ZN (NR2D1BWP40P140)                 0.0206    0.0228     4.3600 r
+  ifu/U401/A1 (INR2D1BWP40P140)               0.0206    0.0000     4.3600 r
+  ifu/U401/ZN (INR2D1BWP40P140)               0.0203    0.0301     4.3901 r
+  ifu/U20/A1 (INR2D1BWP40P140)                0.0203    0.0000     4.3901 r
+  ifu/U20/ZN (INR2D1BWP40P140)                0.0260    0.0340     4.4241 r
+  ifu/U16/A1 (IND2D1BWP40P140LVT)             0.0260    0.0000     4.4241 r
+  ifu/U16/ZN (IND2D1BWP40P140LVT)             0.0155    0.0253     4.4494 r
+  ifu/U12/I (INVD3BWP40P140)                  0.0155    0.0000     4.4494 r
+  ifu/U12/ZN (INVD3BWP40P140)                 0.0248    0.0200     4.4694 f
+  ifu/U14/I (INVD12BWP40P140)                 0.0248    0.0000     4.4694 f
+  ifu/U14/ZN (INVD12BWP40P140)                0.0416    0.0330     4.5023 r
+  ifu/U6/S (MUX2ND2BWP40P140)                 0.0416    0.0000     4.5023 r
+  ifu/U6/ZN (MUX2ND2BWP40P140)                0.0323    0.0596     4.5619 f
+  ifu/iCacheIO_addr[7] (ysyx_22050851_InstructionFetchUnit_0)
+                                                        0.0000     4.5619 f
+  iCache/io_addr[7] (ysyx_22050851_Cache_0)             0.0000     4.5619 f
+  iCache/U257/A1 (NR2D1BWP40P140)             0.0323    0.0000     4.5619 f
+  iCache/U257/ZN (NR2D1BWP40P140)             0.0550    0.0437     4.6056 r
+  iCache/U132/A1 (ND2OPTPAD1BWP40P140)        0.0550    0.0000     4.6056 r
+  iCache/U132/ZN (ND2OPTPAD1BWP40P140)        0.4718    0.2844     4.8900 f
+  iCache/U137/I (BUFFD1BWP40P140)             0.4718    0.0000     4.8900 f
+  iCache/U137/Z (BUFFD1BWP40P140)             0.4559    0.3568     5.2468 f
+  iCache/U2996/A1 (OAI22D1BWP40P140)          0.4559    0.0000     5.2468 f
+  iCache/U2996/ZN (OAI22D1BWP40P140)          0.1067    0.0647     5.3115 r
+  iCache/U490/A1 (NR2D1BWP40P140)             0.1067    0.0000     5.3115 r
+  iCache/U490/ZN (NR2D1BWP40P140)             0.0294    0.0219     5.3334 f
+  iCache/U3000/A1 (ND3D1BWP40P140)            0.0294    0.0000     5.3334 f
+  iCache/U3000/ZN (ND3D1BWP40P140)            0.0347    0.0196     5.3531 r
+  iCache/U3001/A1 (XOR2UD1BWP40P140)          0.0347    0.0000     5.3531 r
+  iCache/U3001/Z (XOR2UD1BWP40P140)           0.0653    0.0205     5.3736 f
+  iCache/U3002/A4 (NR4D1BWP40P140)            0.0653    0.0000     5.3736 f
+  iCache/U3002/ZN (NR4D1BWP40P140)            0.0298    0.0399     5.4135 r
+  iCache/U3025/A1 (ND3D1BWP40P140)            0.0298    0.0000     5.4135 r
+  iCache/U3025/ZN (ND3D1BWP40P140)            0.0382    0.0310     5.4445 f
+  iCache/U3076/A2 (NR4D1BWP40P140)            0.0382    0.0000     5.4445 f
+  iCache/U3076/ZN (NR4D1BWP40P140)            0.0308    0.0319     5.4764 r
+  iCache/U315/A1 (NR2D1BWP40P140)             0.0308    0.0000     5.4764 r
+  iCache/U315/ZN (NR2D1BWP40P140)             0.0189    0.0182     5.4947 f
+  iCache/U158/A1 (ND2D1BWP40P140)             0.0189    0.0000     5.4947 f
+  iCache/U158/ZN (ND2D1BWP40P140)             0.0196    0.0176     5.5123 r
+  iCache/U109/A1 (OAI31D1BWP40P140LVT)        0.0196    0.0000     5.5123 r
+  iCache/U109/ZN (OAI31D1BWP40P140LVT)        0.0715    0.0312     5.5435 f
+  iCache/axiIO_arvalid (ysyx_22050851_Cache_0)          0.0000     5.5435 f
+  interConnect/slaveIO_1_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/slaveIO_1_arvalid (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.5435 f
+  interConnect/arbiter/U153/A1 (NR2OPTIBD1BWP40P140LVT)
+                                              0.0715    0.0000     5.5435 f
+  interConnect/arbiter/U153/ZN (NR2OPTIBD1BWP40P140LVT)
+                                              0.0355    0.0328     5.5763 r
+  interConnect/arbiter/U55/A1 (OAI21D2BWP40P140)
+                                              0.0355    0.0000     5.5763 r
+  interConnect/arbiter/U55/ZN (OAI21D2BWP40P140)
+                                              0.0315    0.0271     5.6033 f
+  interConnect/arbiter/U180/A1 (ND2D1BWP40P140)
+                                              0.0315    0.0000     5.6033 f
+  interConnect/arbiter/U180/ZN (ND2D1BWP40P140)
+                                              0.0233    0.0236     5.6269 r
+  interConnect/arbiter/U32/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0233    0.0000     5.6269 r
+  interConnect/arbiter/U32/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0249    0.0191     5.6461 f
+  interConnect/arbiter/U413/I (INVD3BWP40P140)
+                                              0.0249    0.0000     5.6461 f
+  interConnect/arbiter/U413/ZN (INVD3BWP40P140)
+                                              0.0310    0.0267     5.6728 r
+  interConnect/arbiter/U52/I (INVD6BWP40P140)
+                                              0.0310    0.0000     5.6728 r
+  interConnect/arbiter/U52/ZN (INVD6BWP40P140)
+                                              0.1142    0.0761     5.7489 f
+  interConnect/arbiter/U45/S (MUX2NUD1BWP40P140)
+                                              0.1142    0.0000     5.7489 f
+  interConnect/arbiter/U45/ZN (MUX2NUD1BWP40P140)
+                                              0.0563    0.0622     5.8111 f
+  interConnect/arbiter/masterIO_awaddr[24] (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/slaveIO_awaddr[24] (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     5.8111 f
+  interConnect/crossbar/U171/A3 (OR4D1BWP40P140)
+                                              0.0563    0.0000     5.8111 f
+  interConnect/crossbar/U171/Z (OR4D1BWP40P140)
+                                              0.0159    0.0510     5.8621 f
+  interConnect/crossbar/U172/A4 (OR4D1BWP40P140)
+                                              0.0159    0.0000     5.8621 f
+  interConnect/crossbar/U172/Z (OR4D1BWP40P140)
+                                              0.0152    0.0354     5.8976 f
+  interConnect/crossbar/U339/I0 (MUX2NUD1BWP40P140)
+                                              0.0152    0.0000     5.8976 f
+  interConnect/crossbar/U339/ZN (MUX2NUD1BWP40P140)
+                                              0.0312    0.0276     5.9252 r
+  interConnect/crossbar/U3/A1 (ND2OPTIBD2BWP40P140LVT)
+                                              0.0312    0.0000     5.9252 r
+  interConnect/crossbar/U3/ZN (ND2OPTIBD2BWP40P140LVT)
+                                              0.0295    0.0233     5.9485 f
+  interConnect/crossbar/U17/B1 (INR2D1BWP40P140)
+                                              0.0295    0.0000     5.9485 f
+  interConnect/crossbar/U17/ZN (INR2D1BWP40P140)
+                                              0.0188    0.0188     5.9673 r
+  interConnect/crossbar/U22/I (INVD1BWP40P140)
+                                              0.0188    0.0000     5.9673 r
+  interConnect/crossbar/U22/ZN (INVD1BWP40P140)
+                                              0.0194    0.0179     5.9852 f
+  interConnect/crossbar/U418/A1 (NR2D1BWP40P140)
+                                              0.0194    0.0000     5.9852 f
+  interConnect/crossbar/U418/ZN (NR2D1BWP40P140)
+                                              0.0289    0.0244     6.0095 r
+  interConnect/crossbar/masterIO_0_arvalid (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0095 r
+  interConnect/masterIO_0_arvalid (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0095 r
+  clint/slaveIO_arvalid (ysyx_22050851_CLINT_0)         0.0000     6.0095 r
+  clint/U1788/A1 (NR2D1BWP40P140)             0.0289    0.0000     6.0095 r
+  clint/U1788/ZN (NR2D1BWP40P140)             0.0172    0.0172     6.0267 f
+  clint/slaveIO_awready (ysyx_22050851_CLINT_0)         0.0000     6.0267 f
+  interConnect/masterIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/masterIO_0_awready (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0267 f
+  interConnect/crossbar/U389/I0 (MUX2NUD1BWP40P140)
+                                              0.0172    0.0000     6.0267 f
+  interConnect/crossbar/U389/ZN (MUX2NUD1BWP40P140)
+                                              0.0899    0.0524     6.0792 r
+  interConnect/crossbar/slaveIO_awready_BAR (ysyx_22050851_AxiCrossbar_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/masterIO_awready_BAR (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.0792 r
+  interConnect/arbiter/U4/A1 (NR2OPTIBD2BWP40P140)
+                                              0.0899    0.0000     6.0792 r
+  interConnect/arbiter/U4/ZN (NR2OPTIBD2BWP40P140)
+                                              0.0402    0.0356     6.1148 f
+  interConnect/arbiter/slaveIO_0_awready (ysyx_22050851_AxiArbiter_0)
+                                                        0.0000     6.1148 f
+  interConnect/slaveIO_0_awready (ysyx_22050851_AxiInterConnect_0)
+                                                        0.0000     6.1148 f
+  dCache/axiIO_awready (ysyx_22050851_Cache_1_0)        0.0000     6.1148 f
+  dCache/U5240/I (INVD1BWP40P140)             0.0402    0.0000     6.1148 f
+  dCache/U5240/ZN (INVD1BWP40P140)            0.0195    0.0210     6.1357 r
+  dCache/U5242/A1 (NR2D1BWP40P140)            0.0195    0.0000     6.1357 r
+  dCache/U5242/ZN (NR2D1BWP40P140)            0.0223    0.0186     6.1543 f
+  dCache/U7633/B (AOI211D1BWP40P140)          0.0223    0.0000     6.1543 f
+  dCache/U7633/ZN (AOI211D1BWP40P140)         0.0429    0.0406     6.1949 r
+  dCache/U7634/A2 (ND2D1BWP40P140)            0.0429    0.0000     6.1949 r
+  dCache/U7634/ZN (ND2D1BWP40P140)            0.0275    0.0270     6.2219 f
+  dCache/U162/A3 (OR4D1BWP40P140)             0.0275    0.0000     6.2219 f
+  dCache/U162/Z (OR4D1BWP40P140)              0.0315    0.0571     6.2790 f
+  dCache/U7658/A1 (OAI21D1BWP40P140)          0.0315    0.0000     6.2790 f
+  dCache/U7658/ZN (OAI21D1BWP40P140)          0.0317    0.0220     6.3010 r
+  dCache/status_reg_1_/D (DFQD1BWP40P140)     0.0317    0.0000     6.3010 r
+  data arrival time                                                6.3010
+
+  clock CLK_clock (rise edge)                           6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  clock uncertainty                                    -0.1500     6.3500
+  dCache/status_reg_1_/CP (DFQD1BWP40P140)              0.0000     6.3500 r
+  library setup time                                   -0.0303     6.3197
+  data required time                                               6.3197
+  --------------------------------------------------------------------------
+  data required time                                               6.3197
+  data arrival time                                               -6.3010
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0187
+
+
+1
