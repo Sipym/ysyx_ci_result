@@ -1,0 +1,43 @@
+
+dut: Top
+
+################
+#vcs compile log
+################
+Error-[XMRE] Cross-module reference resolution error
+../tb/asic_system.sv, 522
+  Error found while trying to resolve cross-module reference.
+  token 'u0_asic_top'.  Originating module 'asic_system', first module hit 
+  'asic_system'.
+  Source info: $fsdbDumpvars(0, asic_system.u0_asic_top.u0_soc_top, "+mda");
+  
+Warning-[UNGB] Unnamed generate block
+  Unnamed generate block at:
+  "../new_ip/common/rtl/cdc/cdc_sync.sv", 27
+  "../new_ip/common/rtl/cdc/cdc_sync.sv", 28
+  "../new_ip/common/rtl/cdc/cdc_sync.sv", 35
+  "../new_ip/sram/rtl/axi4_sram_fsm.sv", 272
+  "../new_ip/common/rtl/cdc/cdc_sync.sv", 60
+  "../new_ip/common/rtl/cdc/cdc_sync.sv", 61
+  "../new_ip/common/rtl/cdc/cdc_sync.sv", 68
+  "../new_ip/spi/rtl/spi_core.sv", 346
+  "../new_ip/spi/rtl/spi_core.sv", 370
+  "../new_ip/spi/rtl/spi_core.sv", 394
+  "../new_ip/common/rtl/lfsr.sv", 30
+  "../new_ip/common/rtl/lfsr.sv", 33
+  "../new_ip/common/rtl/lfsr.sv", 36
+  "../new_ip/common/rtl/lfsr.sv", 34
+  "../new_ip/common/rtl/lfsr.sv", 31
+  "../new_ip/rcu/rtl/apb4_rcu.sv", 110
+  "../new_ip/rcu/rtl/apb4_rcu.sv", 103
+  "../new_ip/common/rtl/clkrst/rst_sync.sv", 23
+  "../new_ip/common/rtl/clkrst/rst_sync.sv", 24
+  "../new_ip/common/rtl/clkrst/rst_sync.sv", 31
+  VCS has encountered unnamed generate blocks. Accessing declarations in 
+  unnamed generate blocks will result in cross module reference resolution 
+  errors (XMRE).
+  Next steps:
+     1. Label all the unnamed generate blocks (preferred).
+     2. Or, use -v2k_generate compile switch to enable cross module reference 
+  for unnamed generate blocks. This switch will be obsolete in future VCS 
+  versions.
