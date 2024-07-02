@@ -1,0 +1,65 @@
+
+dut: Top
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello prog in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Jul  2 16:26 2024
+Default strobe period is 1e-05 seconds
+Begin Power Up Sequence
+Waiting for START_condition
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+rcu0_clk_cfg_i = 000
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'mem_Q128_bottom.vmf' could not be opened. No such file or 
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+../old_ip/spiFlash/N25Q128A13E_VG12/code/N25Qxxx.v, 3755
+  Cannot open file 'mem_Q128_bottom.vmf' passed as argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+STOP condition                   1
+****************** SLAVE STOP condition detected
+STOP CONDITION WITHOUT PAGE WRITE                   1
+END DATA TRANSMISSION
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+$finish called from file "../tb/asic_system.sv", line 503.
+$finish at simulation time 40000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 40000000000000 fs
+CPU Time:    143.250 seconds;       Data structure size:  37.2Mb
+Tue Jul  2 16:28:30 2024
+======================================================
+
