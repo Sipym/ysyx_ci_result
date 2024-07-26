@@ -1,0 +1,12 @@
+
+dut: ysyx_22888888
+
+################
+#vcs compile log
+################
+Error-[SFCOR] Source file cannot be opened
+  Source file "../cpu/Topsyn.sv" cannot be opened for reading due to 'No such 
+  file or directory'.
+  Please fix above issue and compile again.
+  
+  
