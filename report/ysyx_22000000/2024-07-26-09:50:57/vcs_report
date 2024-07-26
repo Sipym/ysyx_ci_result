@@ -1,0 +1,13 @@
+
+dut: Top
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello prog in sdram pass!!
