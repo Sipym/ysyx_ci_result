@@ -1,0 +1,559 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: ysyx_22888888
+freq: 1500
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22888888/ysyx_22888888.sv:564: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22888888/ysyx_22888888.sv:566: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22888888/ysyx_22888888.sv:568: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22888888/ysyx_22888888.sv:570: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22888888/ysyx_22888888.sv:581: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22888888/ysyx_22888888.sv:583: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+****** Message Summary:0 Errors(s) 6 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total   std     mem  ipio  sub_harden
+9105.9  9105.9  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std    mem  ipio  sub_harden
+10242  10242  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+48.21  51.79 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns     tns     num
+CLK_clock  1500.1    2307.9     -0.035  -4.894  240 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : ysyx_22888888
+Version: R-2020.09-SP3a
+Date   : Fri Jul 26 15:16:58 2024
+****************************************
+
+Number of ports:                         3052
+Number of nets:                         13168
+Number of cells:                        10360
+Number of combinational cells:           8352
+Number of sequential cells:              1890
+Number of macros/black boxes:               0
+Number of buf/inv:                       2267
+Number of references:                       6
+
+Combinational area:               5327.783981
+Buf/Inv area:                      861.840002
+Noncombinational area:            3778.109945
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  9105.893926
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------------------------------
+ysyx_22888888                     9105.8939    100.0    73.9620     0.0000  0.0000  ysyx_22888888
+npc                               9031.9319     99.2    10.7100   612.4860  0.0000  NPC_0
+npc/POWERGATING_clock__exu_io_in_valid_T_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_67
+npc/POWERGATING_clock__exu_io_in_valid_T_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_68
+npc/POWERGATING_clock__exu_io_in_valid_T_2
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_69
+npc/POWERGATING_clock__exu_io_in_valid_T_3
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_70
+npc/POWERGATING_clock__idu_io_in_valid_T_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_6
+npc/POWERGATING_clock__idu_io_in_valid_T_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_1
+npc/POWERGATING_clock__lsu_io_in_valid_T_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_64
+npc/POWERGATING_clock__lsu_io_in_valid_T_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_65
+npc/POWERGATING_clock__lsu_io_in_valid_T_2
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_66
+npc/POWERGATING_clock__lsu_io_out_valid_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_62
+npc/POWERGATING_clock__lsu_io_out_valid_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_63
+npc/POWERGATING_clock_n76_0          1.8900      0.0     0.0000     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_71
+npc/clint                          341.7120      3.8   185.5980   152.3340  0.0000  AXI4CLINT_0
+npc/clint/POWERGATING_clock_cnt_0__2
+                                     1.8900      0.0     0.0000     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_1_13_0
+npc/clint/POWERGATING_clock_cnt_0__3
+                                     1.8900      0.0     0.0000     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_0_12_0
+npc/deq_q                          198.4500      2.2    74.0880   120.0780  0.0000  Queue1_IF2ID_0
+npc/deq_q/POWERGATING_clock_do_enq_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_39
+npc/deq_q/POWERGATING_clock_do_enq_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_40
+npc/exu                           1389.1500     15.3  1389.1500     0.0000  0.0000  EXU_0
+npc/icache                        2539.2780     27.9   230.4540   148.3020  0.0000  Cache_0
+npc/icache/POWERGATING_clock_s1_in_ready_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_38
+npc/icache/data_0_ext              444.9060      4.9   178.5420   266.3640  0.0000  data_4x32_4
+npc/icache/data_1_ext              449.5680      4.9   183.2040   266.3640  0.0000  data_4x32_5
+npc/icache/data_2_ext              448.8120      4.9   180.9360   267.8760  0.0000  data_4x32_6
+npc/icache/data_3_ext              450.5760      4.9   200.3400   250.2360  0.0000  data_4x32_7
+npc/icache/tag_ext                 364.5180      4.0   160.9020   203.6160  0.0000  tag_4x26_0
+npc/idu                           2555.7840     28.1  1616.4540   907.2000  0.0000  IDU_0
+npc/idu/POWERGATING_clock_N70_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_60
+npc/idu/POWERGATING_clock_N71_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_59
+npc/idu/POWERGATING_clock_N72_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_58
+npc/idu/POWERGATING_clock_N73_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_57
+npc/idu/POWERGATING_clock_N74_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_56
+npc/idu/POWERGATING_clock_N75_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_55
+npc/idu/POWERGATING_clock_N76_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_54
+npc/idu/POWERGATING_clock_N77_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_53
+npc/idu/POWERGATING_clock_N78_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_52
+npc/idu/POWERGATING_clock_N79_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_51
+npc/idu/POWERGATING_clock_N80_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_50
+npc/idu/POWERGATING_clock_N81_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_49
+npc/idu/POWERGATING_clock_N82_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_48
+npc/idu/POWERGATING_clock_N83_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_47
+npc/idu/POWERGATING_clock_N84_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_46
+npc/ifu                            187.8660      2.1   115.9200    69.8040  0.0000  IFU_0
+npc/ifu/POWERGATING_clock_N1_0       2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_61
+npc/lsu                            929.7540     10.2   525.7980   391.3560  0.0000  LSU_0
+npc/lsu/POWERGATING_clock_N397_0     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_42
+npc/lsu/POWERGATING_clock_N403_0     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_41
+npc/lsu/POWERGATING_clock_mcycle_0__1
+                                     1.8900      0.0     0.0000     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_0_11_0
+npc/lsu/POWERGATING_clock_n886_0     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_43
+npc/lsu/POWERGATING_clock_n886_1     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_44
+npc/lsu/POWERGATING_clock_n886_2     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_ysyx_22888888_0_45
+npc/wbu                             24.4440      0.3    24.4440     0.0000  0.0000  WBU_0
+npc/xbar                           100.5480      1.1    91.8540     8.6940  0.0000  AXI4CrossbarNto1_0
+npc/xbar2                          116.2980      1.3    76.6080    39.6900  0.0000  AXI4Crossbar1toN_0
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------------------------------
+Total                                                 5327.7840  3778.1099  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : ysyx_22888888
+Version: R-2020.09-SP3a
+Date   : Fri Jul 26 15:16:57 2024
+****************************************
+
+Wire Load Model Mode: top
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_isAdd_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc2_reg_12_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/Q (DFQD4BWP40P140LVT)
+                                              0.0210    0.0619     0.0619 f
+  npc/exu/io_in_bits_decode_aluop_isAdd (EXU_0)         0.0000     0.0619 f
+  npc/exu/U1500/I (INVD16BWP40P140LVT)        0.0210    0.0000     0.0619 f
+  npc/exu/U1500/ZN (INVD16BWP40P140LVT)       0.0198    0.0171     0.0790 r
+  npc/exu/U563/I (INVD16BWP40P140LVT)         0.0198    0.0000     0.0790 r
+  npc/exu/U563/ZN (INVD16BWP40P140LVT)        0.0137    0.0118     0.0908 f
+  npc/exu/U267/A1 (XNR2OPTND8BWP40P140LVT)    0.0137    0.0000     0.0908 f
+  npc/exu/U267/ZN (XNR2OPTND8BWP40P140LVT)    0.0310    0.0188     0.1096 f
+  npc/exu/U906/B1 (INR2D6BWP40P140LVT)        0.0310    0.0000     0.1096 f
+  npc/exu/U906/ZN (INR2D6BWP40P140LVT)        0.0141    0.0127     0.1223 r
+  npc/exu/U1622/A2 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0141    0.0000     0.1223 r
+  npc/exu/U1622/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0160    0.0159     0.1383 f
+  npc/exu/U1680/B (AOI21D2BWP40P140LVT)       0.0160    0.0000     0.1383 f
+  npc/exu/U1680/ZN (AOI21D2BWP40P140LVT)      0.0173    0.0181     0.1563 r
+  npc/exu/U1545/B (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0173    0.0000     0.1563 r
+  npc/exu/U1545/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0196    0.0168     0.1731 f
+  npc/exu/U1655/I (BUFFD3BWP40P140LVT)        0.0196    0.0000     0.1731 f
+  npc/exu/U1655/Z (BUFFD3BWP40P140LVT)        0.0238    0.0318     0.2050 f
+  npc/exu/U678/I (INVD8BWP40P140LVT)          0.0238    0.0000     0.2050 f
+  npc/exu/U678/ZN (INVD8BWP40P140LVT)         0.0125    0.0118     0.2168 r
+  npc/exu/U618/A1 (OAI21D4BWP40P140LVT)       0.0125    0.0000     0.2168 r
+  npc/exu/U618/ZN (OAI21D4BWP40P140LVT)       0.0257    0.0164     0.2331 f
+  npc/exu/U863/A1 (XNR2OPTND4BWP40P140LVT)    0.0257    0.0000     0.2331 f
+  npc/exu/U863/ZN (XNR2OPTND4BWP40P140LVT)    0.0241    0.0141     0.2473 r
+  npc/exu/U857/A1 (ND2OPTPAD4BWP40P140LVT)    0.0241    0.0000     0.2473 r
+  npc/exu/U857/ZN (ND2OPTPAD4BWP40P140LVT)    0.0132    0.0112     0.2585 f
+  npc/exu/U491/A1 (ND3OPTPAD4BWP40P140LVT)    0.0132    0.0000     0.2585 f
+  npc/exu/U491/ZN (ND3OPTPAD4BWP40P140LVT)    0.0202    0.0111     0.2696 r
+  npc/exu/io_fw_res[12] (EXU_0)                         0.0000     0.2696 r
+  npc/idu/io_exFw_res[12] (IDU_0)                       0.0000     0.2696 r
+  npc/idu/U684/I (INVD4BWP40P140LVT)          0.0202    0.0000     0.2696 r
+  npc/idu/U684/ZN (INVD4BWP40P140LVT)         0.0077    0.0064     0.2760 f
+  npc/idu/U1734/A1 (NR2OPTPAD2BWP40P140LVT)   0.0077    0.0000     0.2760 f
+  npc/idu/U1734/ZN (NR2OPTPAD2BWP40P140LVT)   0.0096    0.0083     0.2843 r
+  npc/idu/U1732/A1 (NR2OPTPAD2BWP40P140LVT)   0.0096    0.0000     0.2843 r
+  npc/idu/U1732/ZN (NR2OPTPAD2BWP40P140LVT)   0.0124    0.0075     0.2918 f
+  npc/idu/U1963/B (IOA21D2BWP40P140LVT)       0.0124    0.0000     0.2918 f
+  npc/idu/U1963/ZN (IOA21D2BWP40P140LVT)      0.0112    0.0071     0.2989 r
+  npc/idu/io_out_bits_src2[12] (IDU_0)                  0.0000     0.2989 r
+  npc/exu_io_in_bits_rsrc2_reg_12_/D (DFQD2BWP40P140LVT)
+                                              0.0112    0.0000     0.2989 r
+  data arrival time                                                0.2989
+
+  clock CLK_clock (rise edge)                           0.4333     0.4333
+  clock network delay (ideal)                           0.0000     0.4333
+  clock uncertainty                                    -0.1500     0.2833
+  npc/exu_io_in_bits_rsrc2_reg_12_/CP (DFQD2BWP40P140LVT)
+                                                        0.0000     0.2833 r
+  library setup time                                   -0.0198     0.2635
+  data required time                                               0.2635
+  --------------------------------------------------------------------------
+  data required time                                               0.2635
+  data arrival time                                               -0.2989
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0354
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_isAdd_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc3_reg_8_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/Q (DFQD4BWP40P140LVT)
+                                              0.0210    0.0619     0.0619 f
+  npc/exu/io_in_bits_decode_aluop_isAdd (EXU_0)         0.0000     0.0619 f
+  npc/exu/U1500/I (INVD16BWP40P140LVT)        0.0210    0.0000     0.0619 f
+  npc/exu/U1500/ZN (INVD16BWP40P140LVT)       0.0198    0.0171     0.0790 r
+  npc/exu/U563/I (INVD16BWP40P140LVT)         0.0198    0.0000     0.0790 r
+  npc/exu/U563/ZN (INVD16BWP40P140LVT)        0.0137    0.0118     0.0908 f
+  npc/exu/U267/A1 (XNR2OPTND8BWP40P140LVT)    0.0137    0.0000     0.0908 f
+  npc/exu/U267/ZN (XNR2OPTND8BWP40P140LVT)    0.0310    0.0188     0.1096 f
+  npc/exu/U906/B1 (INR2D6BWP40P140LVT)        0.0310    0.0000     0.1096 f
+  npc/exu/U906/ZN (INR2D6BWP40P140LVT)        0.0141    0.0127     0.1223 r
+  npc/exu/U1622/A2 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0141    0.0000     0.1223 r
+  npc/exu/U1622/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0160    0.0159     0.1383 f
+  npc/exu/U1680/B (AOI21D2BWP40P140LVT)       0.0160    0.0000     0.1383 f
+  npc/exu/U1680/ZN (AOI21D2BWP40P140LVT)      0.0173    0.0181     0.1563 r
+  npc/exu/U1545/B (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0173    0.0000     0.1563 r
+  npc/exu/U1545/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0196    0.0168     0.1731 f
+  npc/exu/U1655/I (BUFFD3BWP40P140LVT)        0.0196    0.0000     0.1731 f
+  npc/exu/U1655/Z (BUFFD3BWP40P140LVT)        0.0238    0.0318     0.2050 f
+  npc/exu/U1240/A1 (AOI21D4BWP40P140LVT)      0.0238    0.0000     0.2050 f
+  npc/exu/U1240/ZN (AOI21D4BWP40P140LVT)      0.0240    0.0178     0.2227 r
+  npc/exu/U1728/A1 (XOR2OPTND4BWP40P140LVT)   0.0240    0.0000     0.2227 r
+  npc/exu/U1728/Z (XOR2OPTND4BWP40P140LVT)    0.0246    0.0208     0.2435 r
+  npc/exu/U959/A1 (ND2OPTPAD4BWP40P140LVT)    0.0246    0.0000     0.2435 r
+  npc/exu/U959/ZN (ND2OPTPAD4BWP40P140LVT)    0.0133    0.0113     0.2548 f
+  npc/exu/U833/A1 (ND3D4BWP40P140LVT)         0.0133    0.0000     0.2548 f
+  npc/exu/U833/ZN (ND3D4BWP40P140LVT)         0.0151    0.0095     0.2643 r
+  npc/exu/io_fw_res[8] (EXU_0)                          0.0000     0.2643 r
+  npc/idu/io_exFw_res[8] (IDU_0)                        0.0000     0.2643 r
+  npc/idu/U1366/A1 (ND2OPTPAD4BWP40P140LVT)   0.0151    0.0000     0.2643 r
+  npc/idu/U1366/ZN (ND2OPTPAD4BWP40P140LVT)   0.0115    0.0099     0.2742 f
+  npc/idu/U1331/A1 (ND2D4BWP40P140LVT)        0.0115    0.0000     0.2742 f
+  npc/idu/U1331/ZN (ND2D4BWP40P140LVT)        0.0089    0.0075     0.2817 r
+  npc/idu/U752/A1 (NR2D4BWP40P140LVT)         0.0089    0.0000     0.2817 r
+  npc/idu/U752/ZN (NR2D4BWP40P140LVT)         0.0105    0.0071     0.2889 f
+  npc/idu/U1332/A1 (OAI21D2BWP40P140LVT)      0.0105    0.0000     0.2889 f
+  npc/idu/U1332/ZN (OAI21D2BWP40P140LVT)      0.0126    0.0099     0.2987 r
+  npc/idu/io_out_bits_src3[8] (IDU_0)                   0.0000     0.2987 r
+  npc/exu_io_in_bits_rsrc3_reg_8_/D (DFQD2BWP40P140LVT)
+                                              0.0126    0.0000     0.2987 r
+  data arrival time                                                0.2987
+
+  clock CLK_clock (rise edge)                           0.4333     0.4333
+  clock network delay (ideal)                           0.0000     0.4333
+  clock uncertainty                                    -0.1500     0.2833
+  npc/exu_io_in_bits_rsrc3_reg_8_/CP (DFQD2BWP40P140LVT)
+                                                        0.0000     0.2833 r
+  library setup time                                   -0.0201     0.2633
+  data required time                                               0.2633
+  --------------------------------------------------------------------------
+  data required time                                               0.2633
+  data arrival time                                               -0.2987
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0354
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_isAdd_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc3_reg_14_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/Q (DFQD4BWP40P140LVT)
+                                              0.0210    0.0619     0.0619 f
+  npc/exu/io_in_bits_decode_aluop_isAdd (EXU_0)         0.0000     0.0619 f
+  npc/exu/U1500/I (INVD16BWP40P140LVT)        0.0210    0.0000     0.0619 f
+  npc/exu/U1500/ZN (INVD16BWP40P140LVT)       0.0198    0.0171     0.0790 r
+  npc/exu/U563/I (INVD16BWP40P140LVT)         0.0198    0.0000     0.0790 r
+  npc/exu/U563/ZN (INVD16BWP40P140LVT)        0.0137    0.0118     0.0908 f
+  npc/exu/U267/A1 (XNR2OPTND8BWP40P140LVT)    0.0137    0.0000     0.0908 f
+  npc/exu/U267/ZN (XNR2OPTND8BWP40P140LVT)    0.0310    0.0188     0.1096 f
+  npc/exu/U906/B1 (INR2D6BWP40P140LVT)        0.0310    0.0000     0.1096 f
+  npc/exu/U906/ZN (INR2D6BWP40P140LVT)        0.0141    0.0127     0.1223 r
+  npc/exu/U1622/A2 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0141    0.0000     0.1223 r
+  npc/exu/U1622/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0160    0.0159     0.1383 f
+  npc/exu/U1680/B (AOI21D2BWP40P140LVT)       0.0160    0.0000     0.1383 f
+  npc/exu/U1680/ZN (AOI21D2BWP40P140LVT)      0.0173    0.0181     0.1563 r
+  npc/exu/U1545/B (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0173    0.0000     0.1563 r
+  npc/exu/U1545/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0196    0.0168     0.1731 f
+  npc/exu/U1655/I (BUFFD3BWP40P140LVT)        0.0196    0.0000     0.1731 f
+  npc/exu/U1655/Z (BUFFD3BWP40P140LVT)        0.0238    0.0318     0.2050 f
+  npc/exu/U678/I (INVD8BWP40P140LVT)          0.0238    0.0000     0.2050 f
+  npc/exu/U678/ZN (INVD8BWP40P140LVT)         0.0125    0.0118     0.2168 r
+  npc/exu/U850/A1 (OAI21D6BWP40P140LVT)       0.0125    0.0000     0.2168 r
+  npc/exu/U850/ZN (OAI21D6BWP40P140LVT)       0.0225    0.0140     0.2308 f
+  npc/exu/U1104/A1 (XNR2OPTND4BWP40P140LVT)   0.0225    0.0000     0.2308 f
+  npc/exu/U1104/ZN (XNR2OPTND4BWP40P140LVT)   0.0248    0.0134     0.2442 r
+  npc/exu/U514/A1 (ND2OPTPAD4BWP40P140LVT)    0.0248    0.0000     0.2442 r
+  npc/exu/U514/ZN (ND2OPTPAD4BWP40P140LVT)    0.0153    0.0130     0.2572 f
+  npc/exu/U511/A1 (ND3OPTPAD6BWP40P140LVT)    0.0153    0.0000     0.2572 f
+  npc/exu/U511/ZN (ND3OPTPAD6BWP40P140LVT)    0.0153    0.0098     0.2670 r
+  npc/exu/io_fw_res[14] (EXU_0)                         0.0000     0.2670 r
+  npc/idu/io_exFw_res[14] (IDU_0)                       0.0000     0.2670 r
+  npc/idu/U1333/A1 (ND2OPTPAD6BWP40P140LVT)   0.0153    0.0000     0.2670 r
+  npc/idu/U1333/ZN (ND2OPTPAD6BWP40P140LVT)   0.0109    0.0095     0.2765 f
+  npc/idu/U1346/A1 (ND2OPTPAD4BWP40P140LVT)   0.0109    0.0000     0.2765 f
+  npc/idu/U1346/ZN (ND2OPTPAD4BWP40P140LVT)   0.0093    0.0063     0.2828 r
+  npc/idu/U657/A1 (NR2OPTPAD2BWP40P140LVT)    0.0093    0.0000     0.2828 r
+  npc/idu/U657/ZN (NR2OPTPAD2BWP40P140LVT)    0.0129    0.0074     0.2902 f
+  npc/idu/U682/A1 (OAI21D2BWP40P140LVT)       0.0129    0.0000     0.2902 f
+  npc/idu/U682/ZN (OAI21D2BWP40P140LVT)       0.0126    0.0104     0.3005 r
+  npc/idu/io_out_bits_src3[14] (IDU_0)                  0.0000     0.3005 r
+  npc/exu_io_in_bits_rsrc3_reg_14_/D (DFD1BWP40P140LVT)
+                                              0.0126    0.0000     0.3005 r
+  data arrival time                                                0.3005
+
+  clock CLK_clock (rise edge)                           0.4333     0.4333
+  clock network delay (ideal)                           0.0000     0.4333
+  clock uncertainty                                    -0.1500     0.2833
+  npc/exu_io_in_bits_rsrc3_reg_14_/CP (DFD1BWP40P140LVT)
+                                                        0.0000     0.2833 r
+  library setup time                                   -0.0182     0.2651
+  data required time                                               0.2651
+  --------------------------------------------------------------------------
+  data required time                                               0.2651
+  data arrival time                                               -0.3005
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0354
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_isAdd_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc3_reg_30_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/Q (DFQD4BWP40P140LVT)
+                                              0.0210    0.0619     0.0619 f
+  npc/exu/io_in_bits_decode_aluop_isAdd (EXU_0)         0.0000     0.0619 f
+  npc/exu/U1500/I (INVD16BWP40P140LVT)        0.0210    0.0000     0.0619 f
+  npc/exu/U1500/ZN (INVD16BWP40P140LVT)       0.0198    0.0171     0.0790 r
+  npc/exu/U1073/I (INVD12BWP40P140LVT)        0.0198    0.0000     0.0790 r
+  npc/exu/U1073/ZN (INVD12BWP40P140LVT)       0.0188    0.0156     0.0946 f
+  npc/exu/U897/A1 (ND2OPTPAD2BWP40P140LVT)    0.0188    0.0000     0.0946 f
+  npc/exu/U897/ZN (ND2OPTPAD2BWP40P140LVT)    0.0193    0.0161     0.1107 r
+  npc/exu/U896/A2 (ND2OPTPAD4BWP40P140LVT)    0.0193    0.0000     0.1107 r
+  npc/exu/U896/ZN (ND2OPTPAD4BWP40P140LVT)    0.0147    0.0111     0.1218 f
+  npc/exu/U1211/A1 (ND2OPTPAD6BWP40P140LVT)   0.0147    0.0000     0.1218 f
+  npc/exu/U1211/ZN (ND2OPTPAD6BWP40P140LVT)   0.0124    0.0090     0.1308 r
+  npc/exu/U508/A2 (AOI211OPTREPBD4BWP40P140LVT)
+                                              0.0124    0.0000     0.1308 r
+  npc/exu/U508/ZN (AOI211OPTREPBD4BWP40P140LVT)
+                                              0.0233    0.0180     0.1488 f
+  npc/exu/U1545/A1 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0233    0.0000     0.1488 f
+  npc/exu/U1545/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0192    0.0179     0.1666 r
+  npc/exu/U946/A1 (ND2OPTPAD2BWP40P140LVT)    0.0192    0.0000     0.1666 r
+  npc/exu/U946/ZN (ND2OPTPAD2BWP40P140LVT)    0.0181    0.0151     0.1818 f
+  npc/exu/U1506/A1 (ND2OPTPAD4BWP40P140LVT)   0.0181    0.0000     0.1818 f
+  npc/exu/U1506/ZN (ND2OPTPAD4BWP40P140LVT)   0.0153    0.0127     0.1944 r
+  npc/exu/U1157/I (INVD8BWP40P140LVT)         0.0153    0.0000     0.1944 r
+  npc/exu/U1157/ZN (INVD8BWP40P140LVT)        0.0130    0.0112     0.2057 f
+  npc/exu/U967/I (INVD2BWP40P140LVT)          0.0130    0.0000     0.2057 f
+  npc/exu/U967/ZN (INVD2BWP40P140LVT)         0.0105    0.0097     0.2154 r
+  npc/exu/U1066/A1 (ND2OPTIBD2BWP40P140LVT)   0.0105    0.0000     0.2154 r
+  npc/exu/U1066/ZN (ND2OPTIBD2BWP40P140LVT)   0.0214    0.0150     0.2304 f
+  npc/exu/U561/A1 (ND2OPTPAD4BWP40P140LVT)    0.0214    0.0000     0.2304 f
+  npc/exu/U561/ZN (ND2OPTPAD4BWP40P140LVT)    0.0122    0.0105     0.2410 r
+  npc/exu/U794/A1 (XNR2OPTND4BWP40P140LVT)    0.0122    0.0000     0.2410 r
+  npc/exu/U794/ZN (XNR2OPTND4BWP40P140LVT)    0.0315    0.0187     0.2596 r
+  npc/exu/U1145/A1 (ND2OPTPAD6BWP40P140LVT)   0.0315    0.0000     0.2596 r
+  npc/exu/U1145/ZN (ND2OPTPAD6BWP40P140LVT)   0.0148    0.0123     0.2719 f
+  npc/exu/U603/A1 (ND2D6BWP40P140LVT)         0.0148    0.0000     0.2719 f
+  npc/exu/U603/ZN (ND2D6BWP40P140LVT)         0.0118    0.0093     0.2812 r
+  npc/exu/io_fw_res[30] (EXU_0)                         0.0000     0.2812 r
+  npc/idu/io_exFw_res[30] (IDU_0)                       0.0000     0.2812 r
+  npc/idu/U659/A1 (ND2OPTPAD4BWP40P140LVT)    0.0118    0.0000     0.2812 r
+  npc/idu/U659/ZN (ND2OPTPAD4BWP40P140LVT)    0.0140    0.0081     0.2892 f
+  npc/idu/U1967/B (OAI211OPTREPBD2BWP40P140LVT)
+                                              0.0140    0.0000     0.2892 f
+  npc/idu/U1967/ZN (OAI211OPTREPBD2BWP40P140LVT)
+                                              0.0205    0.0083     0.2975 r
+  npc/idu/io_out_bits_src3[30] (IDU_0)                  0.0000     0.2975 r
+  npc/exu_io_in_bits_rsrc3_reg_30_/D (DFQD2BWP40P140LVT)
+                                              0.0205    0.0000     0.2975 r
+  data arrival time                                                0.2975
+
+  clock CLK_clock (rise edge)                           0.4333     0.4333
+  clock network delay (ideal)                           0.0000     0.4333
+  clock uncertainty                                    -0.1500     0.2833
+  npc/exu_io_in_bits_rsrc3_reg_30_/CP (DFQD2BWP40P140LVT)
+                                                        0.0000     0.2833 r
+  library setup time                                   -0.0212     0.2621
+  data required time                                               0.2621
+  --------------------------------------------------------------------------
+  data required time                                               0.2621
+  data arrival time                                               -0.2975
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0354
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_isAdd_reg
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc2_reg_9_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/CP (DFQD4BWP40P140LVT)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_isAdd_reg/Q (DFQD4BWP40P140LVT)
+                                              0.0210    0.0619     0.0619 f
+  npc/exu/io_in_bits_decode_aluop_isAdd (EXU_0)         0.0000     0.0619 f
+  npc/exu/U1500/I (INVD16BWP40P140LVT)        0.0210    0.0000     0.0619 f
+  npc/exu/U1500/ZN (INVD16BWP40P140LVT)       0.0198    0.0171     0.0790 r
+  npc/exu/U563/I (INVD16BWP40P140LVT)         0.0198    0.0000     0.0790 r
+  npc/exu/U563/ZN (INVD16BWP40P140LVT)        0.0137    0.0118     0.0908 f
+  npc/exu/U267/A1 (XNR2OPTND8BWP40P140LVT)    0.0137    0.0000     0.0908 f
+  npc/exu/U267/ZN (XNR2OPTND8BWP40P140LVT)    0.0310    0.0188     0.1096 f
+  npc/exu/U906/B1 (INR2D6BWP40P140LVT)        0.0310    0.0000     0.1096 f
+  npc/exu/U906/ZN (INR2D6BWP40P140LVT)        0.0141    0.0127     0.1223 r
+  npc/exu/U1622/A2 (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0141    0.0000     0.1223 r
+  npc/exu/U1622/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0160    0.0159     0.1383 f
+  npc/exu/U1680/B (AOI21D2BWP40P140LVT)       0.0160    0.0000     0.1383 f
+  npc/exu/U1680/ZN (AOI21D2BWP40P140LVT)      0.0173    0.0181     0.1563 r
+  npc/exu/U1545/B (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0173    0.0000     0.1563 r
+  npc/exu/U1545/ZN (OAI21OPTREPBD2BWP40P140LVT)
+                                              0.0196    0.0168     0.1731 f
+  npc/exu/U1655/I (BUFFD3BWP40P140LVT)        0.0196    0.0000     0.1731 f
+  npc/exu/U1655/Z (BUFFD3BWP40P140LVT)        0.0238    0.0318     0.2050 f
+  npc/exu/U678/I (INVD8BWP40P140LVT)          0.0238    0.0000     0.2050 f
+  npc/exu/U678/ZN (INVD8BWP40P140LVT)         0.0125    0.0118     0.2168 r
+  npc/exu/U848/A1 (OAI21D4BWP40P140LVT)       0.0125    0.0000     0.2168 r
+  npc/exu/U848/ZN (OAI21D4BWP40P140LVT)       0.0260    0.0164     0.2331 f
+  npc/exu/U1557/A1 (XNR2OPTND4BWP40P140LVT)   0.0260    0.0000     0.2331 f
+  npc/exu/U1557/ZN (XNR2OPTND4BWP40P140LVT)   0.0276    0.0140     0.2471 r
+  npc/exu/U1552/A1 (ND2OPTPAD4BWP40P140LVT)   0.0276    0.0000     0.2471 r
+  npc/exu/U1552/ZN (ND2OPTPAD4BWP40P140LVT)   0.0139    0.0117     0.2589 f
+  npc/exu/U494/A1 (ND2OPTPAD4BWP40P140LVT)    0.0139    0.0000     0.2589 f
+  npc/exu/U494/ZN (ND2OPTPAD4BWP40P140LVT)    0.0132    0.0088     0.2676 r
+  npc/exu/io_fw_res[9] (EXU_0)                          0.0000     0.2676 r
+  npc/idu/io_exFw_res[9] (IDU_0)                        0.0000     0.2676 r
+  npc/idu/U1151/A1 (ND2OPTPAD4BWP40P140LVT)   0.0132    0.0000     0.2676 r
+  npc/idu/U1151/ZN (ND2OPTPAD4BWP40P140LVT)   0.0111    0.0097     0.2773 f
+  npc/idu/U644/A1 (ND2D4BWP40P140LVT)         0.0111    0.0000     0.2773 f
+  npc/idu/U644/ZN (ND2D4BWP40P140LVT)         0.0090    0.0075     0.2847 r
+  npc/idu/U638/A1 (ND2OPTPAD2BWP40P140LVT)    0.0090    0.0000     0.2847 r
+  npc/idu/U638/ZN (ND2OPTPAD2BWP40P140LVT)    0.0103    0.0089     0.2936 f
+  npc/idu/U627/A1 (ND2OPTPAD2BWP40P140LVT)    0.0103    0.0000     0.2936 f
+  npc/idu/U627/ZN (ND2OPTPAD2BWP40P140LVT)    0.0090    0.0064     0.3001 r
+  npc/idu/io_out_bits_src2[9] (IDU_0)                   0.0000     0.3001 r
+  npc/exu_io_in_bits_rsrc2_reg_9_/D (DFD2BWP40P140LVT)
+                                              0.0090    0.0000     0.3001 r
+  data arrival time                                                0.3001
+
+  clock CLK_clock (rise edge)                           0.4333     0.4333
+  clock network delay (ideal)                           0.0000     0.4333
+  clock uncertainty                                    -0.1500     0.2833
+  npc/exu_io_in_bits_rsrc2_reg_9_/CP (DFD2BWP40P140LVT)
+                                                        0.0000     0.2833 r
+  library setup time                                   -0.0187     0.2647
+  data required time                                               0.2647
+  --------------------------------------------------------------------------
+  data required time                                               0.2647
+  data arrival time                                               -0.3001
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0354
+
+
+1
