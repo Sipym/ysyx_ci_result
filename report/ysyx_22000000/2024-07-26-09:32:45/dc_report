@@ -1,0 +1,801 @@
+#####################
+SYNTHESIS INFORMATION
+#####################
+top: Top
+freq: 400
+corner: MAX
+retime: off
+
+#####################
+RUN LOG
+#####################
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22000000/Topsyn.sv:578: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22000000/Topsyn.sv:580: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22000000/Topsyn.sv:582: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22000000/Topsyn.sv:584: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22000000/Topsyn.sv:595: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /home/liaoyuchi/Desktop/ysyx_ci_env/ysyx_ci_result/submit/ysyx_22000000/Topsyn.sv:597: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+****** Message Summary:0 Errors(s) 6 Warning(s) ******
+
+#####################
+STATISTICS REPORT
+#####################
+#========================================================================
+# Area
+#========================================================================
+total   std     mem  ipio  sub_harden
+6856.0  6856.0  0.0  0.0   0.0 
+
+#========================================================================
+# Cell Count
+#========================================================================
+total  std   mem  ipio  sub_harden
+7815   7815  0    0     0 
+
+#========================================================================
+# Vt/Cl ratio(area)
+#========================================================================
+SVT40  LVT40
+99.78  0.22 
+
+#========================================================================
+# Timing
+#========================================================================
+group      org_freq  over_freq  wns    tns    num
+CLK_clock  400.0     615.4      0.000  0.000  0 
+
+
+#####################
+AREA REPORT
+#####################
+ 
+****************************************
+Report : area
+Design : Top
+Version: R-2020.09-SP3a
+Date   : Fri Jul 26 09:39:54 2024
+****************************************
+
+Number of ports:                         3035
+Number of nets:                         10444
+Number of cells:                         7920
+Number of combinational cells:           5992
+Number of sequential cells:              1823
+Number of macros/black boxes:               0
+Number of buf/inv:                       1310
+Number of references:                       5
+
+Combinational area:               3408.300015
+Buf/Inv area:                      412.776002
+Noncombinational area:            3447.737974
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  6856.037989
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------
+Top                               6856.0380    100.0    79.6320     0.0000  0.0000  Top
+npc                               6776.4060     98.8     6.4260   572.5440  0.0000  NPC_0
+npc/POWERGATING_clock__exu_io_in_valid_T_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_64
+npc/POWERGATING_clock__exu_io_in_valid_T_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_65
+npc/POWERGATING_clock__exu_io_in_valid_T_2
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_66
+npc/POWERGATING_clock__exu_io_in_valid_T_3
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_67
+npc/POWERGATING_clock__idu_io_in_valid_T_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_35
+npc/POWERGATING_clock__idu_io_in_valid_T_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_34
+npc/POWERGATING_clock__lsu_io_in_valid_T_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_61
+npc/POWERGATING_clock__lsu_io_in_valid_T_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_62
+npc/POWERGATING_clock__lsu_io_in_valid_T_2
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_63
+npc/POWERGATING_clock__lsu_io_out_valid_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_59
+npc/POWERGATING_clock__lsu_io_out_valid_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_60
+npc/clint                          283.5000      4.1   153.0900   126.6300  0.0000  AXI4CLINT_0
+npc/clint/POWERGATING_clock_cnt_0__2
+                                     1.8900      0.0     0.0000     1.8900  0.0000  POWERMODULE_HIGH_Top_0_1_3_0
+npc/clint/POWERGATING_clock_cnt_0__3
+                                     1.8900      0.0     0.0000     1.8900  0.0000  POWERMODULE_HIGH_Top_0_0_2_0
+npc/deq_q                          183.8340      2.7    58.5900   120.9600  0.0000  Queue1_IF2ID_0
+npc/deq_q/POWERGATING_clock_do_enq_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_39
+npc/deq_q/POWERGATING_clock_do_enq_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_40
+npc/exu                            641.4660      9.4   641.4660     0.0000  0.0000  EXU_0
+npc/icache                        1880.6760     27.4   384.1740   487.7460  0.0000  Cache_0
+npc/icache/POWERGATING_clock_s1_in_ready_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_37
+npc/icache/POWERGATING_clock_s1_in_ready_1
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_38
+npc/icache/data_0_ext              207.3960      3.0    86.4360   120.9600  0.0000  data_2x32_4
+npc/icache/data_1_ext              207.3960      3.0    86.4360   120.9600  0.0000  data_2x32_5
+npc/icache/data_2_ext              207.3960      3.0    86.4360   120.9600  0.0000  data_2x32_6
+npc/icache/data_3_ext              207.1440      3.0    86.1840   120.9600  0.0000  data_2x32_7
+npc/icache/tag_ext                 175.1400      2.6    73.0800   102.0600  0.0000  tag_2x27_0
+npc/idu                           1907.6400     27.8   939.9600   935.5500  0.0000  IDU_0
+npc/idu/POWERGATING_clock_N72_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_58
+npc/idu/POWERGATING_clock_N73_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_57
+npc/idu/POWERGATING_clock_N74_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_56
+npc/idu/POWERGATING_clock_N75_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_55
+npc/idu/POWERGATING_clock_N76_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_54
+npc/idu/POWERGATING_clock_N77_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_53
+npc/idu/POWERGATING_clock_N78_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_52
+npc/idu/POWERGATING_clock_N79_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_51
+npc/idu/POWERGATING_clock_N80_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_50
+npc/idu/POWERGATING_clock_N81_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_49
+npc/idu/POWERGATING_clock_N82_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_48
+npc/idu/POWERGATING_clock_N83_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_47
+npc/idu/POWERGATING_clock_N84_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_46
+npc/idu/POWERGATING_clock_N85_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_45
+npc/idu/POWERGATING_clock_N86_0      2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_44
+npc/ifu                            156.8700      2.3    98.2800    58.5900  0.0000  IFU_0
+npc/lsu                            929.2500     13.6   476.7840   446.0400  0.0000  LSU_0
+npc/lsu/POWERGATING_clock_n742_0     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_41
+npc/lsu/POWERGATING_clock_n742_1     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_42
+npc/lsu/POWERGATING_clock_n742_2     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_43
+npc/wbu                             14.1120      0.2    14.1120     0.0000  0.0000  WBU_0
+npc/xbar                            69.8040      1.0    64.1340     5.6700  0.0000  AXI4CrossbarNto1_0
+npc/xbar2                          106.7220      1.6    64.5120    40.0680  0.0000  AXI4Crossbar1toN_0
+npc/xbar2/POWERGATING_clock_io_in_arvalid_0
+                                     2.1420      0.0     0.2520     1.8900  0.0000  POWERMODULE_HIGH_Top_0_36
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------
+Total                                                 3408.3000  3447.7380  0.0000
+
+1
+
+#####################
+TIME REPORT
+#####################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -max_paths 5
+        -transition_time
+Design : Top
+Version: R-2020.09-SP3a
+Date   : Fri Jul 26 09:39:53 2024
+****************************************
+
+Wire Load Model Mode: top
+
+  Startpoint: npc/clint/cnt_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/clint/cnt_reg_63_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/clint/cnt_reg_0_/CP (DFQD1BWP40P140)    0.0000    0.0000     0.0000 r
+  npc/clint/cnt_reg_0_/Q (DFQD1BWP40P140)     0.0283    0.0704     0.0704 r
+  npc/clint/U24/A2 (ND2D1BWP40P140)           0.0283    0.0000     0.0704 r
+  npc/clint/U24/ZN (ND2D1BWP40P140)           0.0268    0.0251     0.0956 f
+  npc/clint/U4/A2 (NR2D1BWP40P140)            0.0268    0.0000     0.0956 f
+  npc/clint/U4/ZN (NR2D1BWP40P140)            0.0242    0.0252     0.1208 r
+  npc/clint/U15/A2 (ND2D1BWP40P140)           0.0242    0.0000     0.1208 r
+  npc/clint/U15/ZN (ND2D1BWP40P140)           0.0262    0.0240     0.1449 f
+  npc/clint/U26/A1 (NR2OPTIBD1BWP40P140)      0.0262    0.0000     0.1449 f
+  npc/clint/U26/ZN (NR2OPTIBD1BWP40P140)      0.0252    0.0231     0.1680 r
+  npc/clint/U34/A1 (ND2D1BWP40P140)           0.0252    0.0000     0.1680 r
+  npc/clint/U34/ZN (ND2D1BWP40P140)           0.0359    0.0296     0.1976 f
+  npc/clint/U22/A1 (NR2D1BWP40P140)           0.0359    0.0000     0.1976 f
+  npc/clint/U22/ZN (NR2D1BWP40P140)           0.0339    0.0314     0.2290 r
+  npc/clint/U5/A1 (ND2OPTIBD1BWP40P140)       0.0339    0.0000     0.2290 r
+  npc/clint/U5/ZN (ND2OPTIBD1BWP40P140)       0.0347    0.0299     0.2589 f
+  npc/clint/U3/A1 (NR2OPTIBD1BWP40P140)       0.0347    0.0000     0.2589 f
+  npc/clint/U3/ZN (NR2OPTIBD1BWP40P140)       0.0336    0.0310     0.2899 r
+  npc/clint/U12/A1 (ND2OPTIBD1BWP40P140)      0.0336    0.0000     0.2899 r
+  npc/clint/U12/ZN (ND2OPTIBD1BWP40P140)      0.0402    0.0333     0.3232 f
+  npc/clint/U14/A1 (NR2OPTIBD2BWP40P140)      0.0402    0.0000     0.3232 f
+  npc/clint/U14/ZN (NR2OPTIBD2BWP40P140)      0.0274    0.0260     0.3492 r
+  npc/clint/U13/A1 (ND2OPTPAD2BWP40P140)      0.0274    0.0000     0.3492 r
+  npc/clint/U13/ZN (ND2OPTPAD2BWP40P140)      0.0205    0.0189     0.3681 f
+  npc/clint/U16/A1 (NR2OPTPAD2BWP40P140)      0.0205    0.0000     0.3681 f
+  npc/clint/U16/ZN (NR2OPTPAD2BWP40P140)      0.0159    0.0153     0.3834 r
+  npc/clint/U37/A1 (ND2D1BWP40P140)           0.0159    0.0000     0.3834 r
+  npc/clint/U37/ZN (ND2D1BWP40P140)           0.0404    0.0302     0.4136 f
+  npc/clint/U6/A1 (NR2OPTIBD2BWP40P140)       0.0404    0.0000     0.4136 f
+  npc/clint/U6/ZN (NR2OPTIBD2BWP40P140)       0.0274    0.0261     0.4397 r
+  npc/clint/U17/A1 (ND2OPTPAD2BWP40P140)      0.0274    0.0000     0.4397 r
+  npc/clint/U17/ZN (ND2OPTPAD2BWP40P140)      0.0205    0.0189     0.4585 f
+  npc/clint/U19/A1 (NR2OPTPAD2BWP40P140)      0.0205    0.0000     0.4585 f
+  npc/clint/U19/ZN (NR2OPTPAD2BWP40P140)      0.0180    0.0168     0.4753 r
+  npc/clint/U18/A1 (ND2OPTPAD2BWP40P140)      0.0180    0.0000     0.4753 r
+  npc/clint/U18/ZN (ND2OPTPAD2BWP40P140)      0.0188    0.0166     0.4919 f
+  npc/clint/U21/A1 (NR2OPTPAD2BWP40P140)      0.0188    0.0000     0.4919 f
+  npc/clint/U21/ZN (NR2OPTPAD2BWP40P140)      0.0177    0.0164     0.5083 r
+  npc/clint/U20/A1 (ND2OPTPAD2BWP40P140)      0.0177    0.0000     0.5083 r
+  npc/clint/U20/ZN (ND2OPTPAD2BWP40P140)      0.0187    0.0165     0.5248 f
+  npc/clint/U23/A1 (NR2OPTPAD2BWP40P140)      0.0187    0.0000     0.5248 f
+  npc/clint/U23/ZN (NR2OPTPAD2BWP40P140)      0.0156    0.0148     0.5396 r
+  npc/clint/U64/A1 (ND2D1BWP40P140)           0.0156    0.0000     0.5396 r
+  npc/clint/U64/ZN (ND2D1BWP40P140)           0.0347    0.0268     0.5664 f
+  npc/clint/U46/A1 (NR2OPTPAD1BWP40P140)      0.0347    0.0000     0.5664 f
+  npc/clint/U46/ZN (NR2OPTPAD1BWP40P140)      0.0288    0.0280     0.5944 r
+  npc/clint/U71/A1 (AN2D2BWP40P140)           0.0288    0.0000     0.5944 r
+  npc/clint/U71/Z (AN2D2BWP40P140)            0.0150    0.0377     0.6321 r
+  npc/clint/U72/B (HA1D1BWP40P140)            0.0150    0.0000     0.6321 r
+  npc/clint/U72/CO (HA1D1BWP40P140)           0.0207    0.0361     0.6682 r
+  npc/clint/U73/B (HA1D1BWP40P140)            0.0207    0.0000     0.6682 r
+  npc/clint/U73/CO (HA1D1BWP40P140)           0.0195    0.0366     0.7047 r
+  npc/clint/U49/I (INVD1BWP40P140)            0.0195    0.0000     0.7047 r
+  npc/clint/U49/ZN (INVD1BWP40P140)           0.0115    0.0118     0.7165 f
+  npc/clint/U48/A1 (NR2OPTPAD1BWP40P140)      0.0115    0.0000     0.7165 f
+  npc/clint/U48/ZN (NR2OPTPAD1BWP40P140)      0.0262    0.0206     0.7371 r
+  npc/clint/U74/B (HA1D1BWP40P140)            0.0262    0.0000     0.7371 r
+  npc/clint/U74/CO (HA1D1BWP40P140)           0.0207    0.0385     0.7756 r
+  npc/clint/U75/B (HA1D1BWP40P140)            0.0207    0.0000     0.7756 r
+  npc/clint/U75/CO (HA1D1BWP40P140)           0.0207    0.0373     0.8129 r
+  npc/clint/U76/B (HA1D1BWP40P140)            0.0207    0.0000     0.8129 r
+  npc/clint/U76/CO (HA1D1BWP40P140)           0.0207    0.0373     0.8502 r
+  npc/clint/U77/B (HA1D1BWP40P140)            0.0207    0.0000     0.8502 r
+  npc/clint/U77/CO (HA1D1BWP40P140)           0.0207    0.0373     0.8876 r
+  npc/clint/U78/B (HA1D1BWP40P140)            0.0207    0.0000     0.8876 r
+  npc/clint/U78/CO (HA1D1BWP40P140)           0.0207    0.0373     0.9249 r
+  npc/clint/U178/B (HA1D1BWP40P140)           0.0207    0.0000     0.9249 r
+  npc/clint/U178/CO (HA1D1BWP40P140)          0.0207    0.0373     0.9622 r
+  npc/clint/U79/B (HA1D1BWP40P140)            0.0207    0.0000     0.9622 r
+  npc/clint/U79/CO (HA1D1BWP40P140)           0.0255    0.0403     1.0025 r
+  npc/clint/U50/B (HA1D4BWP40P140)            0.0255    0.0000     1.0025 r
+  npc/clint/U50/CO (HA1D4BWP40P140)           0.0116    0.0330     1.0355 r
+  npc/clint/U80/B (HA1D1BWP40P140)            0.0116    0.0000     1.0355 r
+  npc/clint/U80/CO (HA1D1BWP40P140)           0.0255    0.0382     1.0736 r
+  npc/clint/U51/B (HA1D4BWP40P140)            0.0255    0.0000     1.0736 r
+  npc/clint/U51/CO (HA1D4BWP40P140)           0.0116    0.0330     1.1066 r
+  npc/clint/U81/B (HA1D1BWP40P140)            0.0116    0.0000     1.1066 r
+  npc/clint/U81/CO (HA1D1BWP40P140)           0.0255    0.0382     1.1448 r
+  npc/clint/U7/B (HA1D4BWP40P140)             0.0255    0.0000     1.1448 r
+  npc/clint/U7/CO (HA1D4BWP40P140)            0.0116    0.0330     1.1778 r
+  npc/clint/U82/B (HA1D1BWP40P140)            0.0116    0.0000     1.1778 r
+  npc/clint/U82/CO (HA1D1BWP40P140)           0.0195    0.0345     1.2122 r
+  npc/clint/U53/I (INVD1BWP40P140)            0.0195    0.0000     1.2122 r
+  npc/clint/U53/ZN (INVD1BWP40P140)           0.0115    0.0118     1.2241 f
+  npc/clint/U52/A1 (NR2OPTPAD1BWP40P140)      0.0115    0.0000     1.2241 f
+  npc/clint/U52/ZN (NR2OPTPAD1BWP40P140)      0.0262    0.0206     1.2446 r
+  npc/clint/U83/B (HA1D1BWP40P140)            0.0262    0.0000     1.2446 r
+  npc/clint/U83/CO (HA1D1BWP40P140)           0.0255    0.0415     1.2861 r
+  npc/clint/U54/B (HA1D4BWP40P140)            0.0255    0.0000     1.2861 r
+  npc/clint/U54/CO (HA1D4BWP40P140)           0.0116    0.0330     1.3191 r
+  npc/clint/U86/B (HA1D1BWP40P140)            0.0116    0.0000     1.3191 r
+  npc/clint/U86/CO (HA1D1BWP40P140)           0.0255    0.0382     1.3573 r
+  npc/clint/U55/B (HA1D4BWP40P140)            0.0255    0.0000     1.3573 r
+  npc/clint/U55/CO (HA1D4BWP40P140)           0.0116    0.0330     1.3903 r
+  npc/clint/U87/B (HA1D1BWP40P140)            0.0116    0.0000     1.3903 r
+  npc/clint/U87/CO (HA1D1BWP40P140)           0.0160    0.0316     1.4219 r
+  npc/clint/U88/A1 (XOR2UD1BWP40P140)         0.0160    0.0000     1.4219 r
+  npc/clint/U88/Z (XOR2UD1BWP40P140)          0.0329    0.0223     1.4442 r
+  npc/clint/cnt_reg_63_/D (DFQD1BWP40P140)    0.0329    0.0000     1.4442 r
+  data arrival time                                                1.4442
+
+  clock CLK_clock (rise edge)                           1.6250     1.6250
+  clock network delay (ideal)                           0.0000     1.6250
+  clock uncertainty                                    -0.1500     1.4750
+  npc/clint/cnt_reg_63_/CP (DFQD1BWP40P140)             0.0000     1.4750 r
+  library setup time                                   -0.0305     1.4445
+  data required time                                               1.4445
+  --------------------------------------------------------------------------
+  data required time                                               1.4445
+  data arrival time                                               -1.4442
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0003
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/lsu_io_in_bits_rres_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0143    0.0696     0.0696 f
+  npc/exu/io_in_bits_decode_aluop[0] (EXU_0)            0.0000     0.0696 f
+  npc/exu/U28/I (INVD2BWP40P140)              0.0143    0.0000     0.0696 f
+  npc/exu/U28/ZN (INVD2BWP40P140)             0.0146    0.0138     0.0835 r
+  npc/exu/U211/A2 (ND2OPTPAD2BWP40P140)       0.0146    0.0000     0.0835 r
+  npc/exu/U211/ZN (ND2OPTPAD2BWP40P140)       0.0169    0.0154     0.0989 f
+  npc/exu/U4/I (INVD3BWP40P140)               0.0169    0.0000     0.0989 f
+  npc/exu/U4/ZN (INVD3BWP40P140)              0.0474    0.0343     0.1331 r
+  npc/exu/U269/A1 (ND2OPTPAD2BWP40P140)       0.0474    0.0000     0.1331 r
+  npc/exu/U269/ZN (ND2OPTPAD2BWP40P140)       0.2036    0.1309     0.2641 f
+  npc/exu/U204/A1 (XOR2UD1BWP40P140)          0.2036    0.0000     0.2641 f
+  npc/exu/U204/Z (XOR2UD1BWP40P140)           0.0489    0.0708     0.3349 f
+  npc/exu/U206/A1 (ND2D1BWP40P140)            0.0489    0.0000     0.3349 f
+  npc/exu/U206/ZN (ND2D1BWP40P140)            0.0221    0.0225     0.3574 r
+  npc/exu/U207/I (INVD1BWP40P140)             0.0221    0.0000     0.3574 r
+  npc/exu/U207/ZN (INVD1BWP40P140)            0.0120    0.0124     0.3697 f
+  npc/exu/U38/B (AOI21D1BWP40P140)            0.0120    0.0000     0.3697 f
+  npc/exu/U38/ZN (AOI21D1BWP40P140)           0.0478    0.0347     0.4045 r
+  npc/exu/U9/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0478    0.0000     0.4045 r
+  npc/exu/U9/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0319    0.0241     0.4286 f
+  npc/exu/U216/A1 (AOI21D1BWP40P140)          0.0319    0.0000     0.4286 f
+  npc/exu/U216/ZN (AOI21D1BWP40P140)          0.0467    0.0385     0.4671 r
+  npc/exu/U2/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0467    0.0000     0.4671 r
+  npc/exu/U2/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0370    0.0268     0.4939 f
+  npc/exu/U220/A1 (AOI21D2BWP40P140)          0.0370    0.0000     0.4939 f
+  npc/exu/U220/ZN (AOI21D2BWP40P140)          0.0324    0.0296     0.5235 r
+  npc/exu/U43/A1 (OAI21OPTREPBD2BWP40P140)    0.0324    0.0000     0.5235 r
+  npc/exu/U43/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0251     0.5486 f
+  npc/exu/U42/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.5486 f
+  npc/exu/U42/ZN (AOI21D4BWP40P140)           0.0232    0.0204     0.5690 r
+  npc/exu/U224/A1 (OAI21D2BWP40P140)          0.0232    0.0000     0.5690 r
+  npc/exu/U224/ZN (OAI21D2BWP40P140)          0.0333    0.0241     0.5931 f
+  npc/exu/U226/A1 (AOI21D2BWP40P140)          0.0333    0.0000     0.5931 f
+  npc/exu/U226/ZN (AOI21D2BWP40P140)          0.0321    0.0287     0.6218 r
+  npc/exu/U51/A1 (OAI21OPTREPBD2BWP40P140)    0.0321    0.0000     0.6218 r
+  npc/exu/U51/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0250     0.6468 f
+  npc/exu/U45/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.6468 f
+  npc/exu/U45/ZN (AOI21D4BWP40P140)           0.0232    0.0204     0.6673 r
+  npc/exu/U230/A1 (OAI21D2BWP40P140)          0.0232    0.0000     0.6673 r
+  npc/exu/U230/ZN (OAI21D2BWP40P140)          0.0299    0.0218     0.6890 f
+  npc/exu/U32/A1 (AOI21D1BWP40P140)           0.0299    0.0000     0.6890 f
+  npc/exu/U32/ZN (AOI21D1BWP40P140)           0.0456    0.0373     0.7263 r
+  npc/exu/U322/A1 (OAI21D2BWP40P140)          0.0456    0.0000     0.7263 r
+  npc/exu/U322/ZN (OAI21D2BWP40P140)          0.0399    0.0341     0.7604 f
+  npc/exu/U198/A1 (AOI21D4BWP40P140)          0.0399    0.0000     0.7604 f
+  npc/exu/U198/ZN (AOI21D4BWP40P140)          0.0256    0.0239     0.7843 r
+  npc/exu/U168/A1 (OAI21OPTREPBD2BWP40P140)   0.0256    0.0000     0.7843 r
+  npc/exu/U168/ZN (OAI21OPTREPBD2BWP40P140)   0.0263    0.0207     0.8050 f
+  npc/exu/U326/A1 (AOI21D2BWP40P140)          0.0263    0.0000     0.8050 f
+  npc/exu/U326/ZN (AOI21D2BWP40P140)          0.0321    0.0265     0.8315 r
+  npc/exu/U200/A1 (OAI21OPTREPBD2BWP40P140)   0.0321    0.0000     0.8315 r
+  npc/exu/U200/ZN (OAI21OPTREPBD2BWP40P140)   0.0314    0.0250     0.8566 f
+  npc/exu/U199/A1 (AOI21D4BWP40P140)          0.0314    0.0000     0.8566 f
+  npc/exu/U199/ZN (AOI21D4BWP40P140)          0.0233    0.0204     0.8770 r
+  npc/exu/U7/A1 (OAI21D2BWP40P140)            0.0233    0.0000     0.8770 r
+  npc/exu/U7/ZN (OAI21D2BWP40P140)            0.0399    0.0286     0.9056 f
+  npc/exu/U11/A1 (AOI21D4BWP40P140)           0.0399    0.0000     0.9056 f
+  npc/exu/U11/ZN (AOI21D4BWP40P140)           0.0256    0.0239     0.9296 r
+  npc/exu/U10/A1 (OAI21OPTREPBD2BWP40P140)    0.0256    0.0000     0.9296 r
+  npc/exu/U10/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0239     0.9534 f
+  npc/exu/U13/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.9534 f
+  npc/exu/U13/ZN (AOI21D4BWP40P140)           0.0256    0.0221     0.9755 r
+  npc/exu/U12/A1 (OAI21OPTREPBD2BWP40P140)    0.0256    0.0000     0.9755 r
+  npc/exu/U12/ZN (OAI21OPTREPBD2BWP40P140)    0.0263    0.0207     0.9962 f
+  npc/exu/U335/A1 (AOI21D2BWP40P140)          0.0263    0.0000     0.9962 f
+  npc/exu/U335/ZN (AOI21D2BWP40P140)          0.0277    0.0234     1.0196 r
+  npc/exu/U337/A1 (OAI21D2BWP40P140)          0.0277    0.0000     1.0196 r
+  npc/exu/U337/ZN (OAI21D2BWP40P140)          0.0308    0.0234     1.0430 f
+  npc/exu/U24/A1 (AO21D1BWP40P140)            0.0308    0.0000     1.0430 f
+  npc/exu/U24/Z (AO21D1BWP40P140)             0.0182    0.0345     1.0775 f
+  npc/exu/U1046/CI (FA1D1BWP40P140)           0.0182    0.0000     1.0775 f
+  npc/exu/U1046/CO (FA1D1BWP40P140)           0.0222    0.0480     1.1255 f
+  npc/exu/U1069/CI (FA1D1BWP40P140)           0.0222    0.0000     1.1255 f
+  npc/exu/U1069/CO (FA1D1BWP40P140)           0.0223    0.0495     1.1750 f
+  npc/exu/U1086/CI (FA1D1BWP40P140)           0.0223    0.0000     1.1750 f
+  npc/exu/U1086/CO (FA1D1BWP40P140)           0.0223    0.0495     1.2245 f
+  npc/exu/U1096/CI (FA1D1BWP40P140)           0.0223    0.0000     1.2245 f
+  npc/exu/U1096/CO (FA1D1BWP40P140)           0.0289    0.0548     1.2792 f
+  npc/exu/U101/A1 (XNR2UD1BWP40P140)          0.0289    0.0000     1.2792 f
+  npc/exu/U101/ZN (XNR2UD1BWP40P140)          0.0438    0.0231     1.3023 r
+  npc/exu/U342/A2 (OAI211D1BWP40P140)         0.0438    0.0000     1.3023 r
+  npc/exu/U342/ZN (OAI211D1BWP40P140)         0.0377    0.0318     1.3341 f
+  npc/exu/U345/A1 (AOI211D1BWP40P140)         0.0377    0.0000     1.3341 f
+  npc/exu/U345/ZN (AOI211D1BWP40P140)         0.0367    0.0318     1.3659 r
+  npc/exu/U173/B (AO211D1BWP40P140)           0.0367    0.0000     1.3659 r
+  npc/exu/U173/Z (AO211D1BWP40P140)           0.0198    0.0386     1.4045 r
+  npc/exu/U108/A2 (IOA21D1BWP40P140)          0.0198    0.0000     1.4045 r
+  npc/exu/U108/ZN (IOA21D1BWP40P140)          0.0239    0.0354     1.4399 r
+  npc/exu/io_out_bits_res[0] (EXU_0)                    0.0000     1.4399 r
+  npc/lsu_io_in_bits_rres_reg_0_/D (DFKCNQD1BWP40P140)
+                                              0.0239    0.0000     1.4399 r
+  data arrival time                                                1.4399
+
+  clock CLK_clock (rise edge)                           1.6250     1.6250
+  clock network delay (ideal)                           0.0000     1.6250
+  clock uncertainty                                    -0.1500     1.4750
+  npc/lsu_io_in_bits_rres_reg_0_/CP (DFKCNQD1BWP40P140)
+                                                        0.0000     1.4750 r
+  library setup time                                   -0.0346     1.4404
+  data required time                                               1.4404
+  --------------------------------------------------------------------------
+  data required time                                               1.4404
+  data arrival time                                               -1.4399
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0005
+
+
+  Startpoint: npc/idu_io_in_bits_rinst_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc3_reg_31_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/idu_io_in_bits_rinst_reg_2_/CP (DFQD1BWP40P140)
+                                              0.0000    0.0000     0.0000 r
+  npc/idu_io_in_bits_rinst_reg_2_/Q (DFQD1BWP40P140)
+                                              0.0390    0.0929     0.0929 f
+  npc/idu/io_in_bits_inst[2] (IDU_0)                    0.0000     0.0929 f
+  npc/idu/U139/A2 (OR2D1BWP40P140)            0.0390    0.0000     0.0929 f
+  npc/idu/U139/Z (OR2D1BWP40P140)             0.0158    0.0362     0.1291 f
+  npc/idu/U235/B1 (INR2D1BWP40P140)           0.0158    0.0000     0.1291 f
+  npc/idu/U235/ZN (INR2D1BWP40P140)           0.0289    0.0234     0.1525 r
+  npc/idu/U359/B1 (IND2D1BWP40P140)           0.0289    0.0000     0.1525 r
+  npc/idu/U359/ZN (IND2D1BWP40P140)           0.0495    0.0383     0.1908 f
+  npc/idu/U18/B1 (INR2D1BWP40P140)            0.0495    0.0000     0.1908 f
+  npc/idu/U18/ZN (INR2D1BWP40P140)            0.0529    0.0458     0.2366 r
+  npc/idu/U1791/A1 (AN2D1BWP40P140)           0.0529    0.0000     0.2366 r
+  npc/idu/U1791/Z (AN2D1BWP40P140)            0.0185    0.0440     0.2805 r
+  npc/idu/U236/A1 (ND2D1BWP40P140)            0.0185    0.0000     0.2805 r
+  npc/idu/U236/ZN (ND2D1BWP40P140)            0.0252    0.0212     0.3018 f
+  npc/idu/U237/I (INVD1BWP40P140)             0.0252    0.0000     0.3018 f
+  npc/idu/U237/ZN (INVD1BWP40P140)            0.0170    0.0176     0.3193 r
+  npc/idu/U1790/A1 (AOI21D1BWP40P140)         0.0170    0.0000     0.3193 r
+  npc/idu/U1790/ZN (AOI21D1BWP40P140)         0.0379    0.0292     0.3486 f
+  npc/idu/U1789/A1 (OAI21D1BWP40P140)         0.0379    0.0000     0.3486 f
+  npc/idu/U1789/ZN (OAI21D1BWP40P140)         0.0370    0.0338     0.3823 r
+  npc/idu/U321/A1 (AOI21D1BWP40P140)          0.0370    0.0000     0.3823 r
+  npc/idu/U321/ZN (AOI21D1BWP40P140)          0.0405    0.0348     0.4172 f
+  npc/idu/U325/A1 (OAI21D1BWP40P140)          0.0405    0.0000     0.4172 f
+  npc/idu/U325/ZN (OAI21D1BWP40P140)          0.0374    0.0345     0.4517 r
+  npc/idu/U1788/A1 (AOI21D1BWP40P140)         0.0374    0.0000     0.4517 r
+  npc/idu/U1788/ZN (AOI21D1BWP40P140)         0.0406    0.0350     0.4866 f
+  npc/idu/U1787/A1 (OAI21D1BWP40P140)         0.0406    0.0000     0.4866 f
+  npc/idu/U1787/ZN (OAI21D1BWP40P140)         0.0375    0.0345     0.5211 r
+  npc/idu/U76/A1 (AOI21D1BWP40P140)           0.0375    0.0000     0.5211 r
+  npc/idu/U76/ZN (AOI21D1BWP40P140)           0.0406    0.0350     0.5561 f
+  npc/idu/U366/A1 (OAI21D1BWP40P140)          0.0406    0.0000     0.5561 f
+  npc/idu/U366/ZN (OAI21D1BWP40P140)          0.0375    0.0345     0.5906 r
+  npc/idu/U1786/A1 (AOI21D1BWP40P140)         0.0375    0.0000     0.5906 r
+  npc/idu/U1786/ZN (AOI21D1BWP40P140)         0.0406    0.0350     0.6256 f
+  npc/idu/U80/A1 (OAI21D1BWP40P140)           0.0406    0.0000     0.6256 f
+  npc/idu/U80/ZN (OAI21D1BWP40P140)           0.0375    0.0345     0.6601 r
+  npc/idu/U74/A1 (AOI21D1BWP40P140)           0.0375    0.0000     0.6601 r
+  npc/idu/U74/ZN (AOI21D1BWP40P140)           0.0477    0.0394     0.6994 f
+  npc/idu/U420/A1 (OAI21D2BWP40P140)          0.0477    0.0000     0.6994 f
+  npc/idu/U420/ZN (OAI21D2BWP40P140)          0.0356    0.0250     0.7244 r
+  npc/idu/U72/A1 (AOI21D1BWP40P140)           0.0356    0.0000     0.7244 r
+  npc/idu/U72/ZN (AOI21D1BWP40P140)           0.0402    0.0345     0.7589 f
+  npc/idu/U75/A1 (OAI21D1BWP40P140)           0.0402    0.0000     0.7589 f
+  npc/idu/U75/ZN (OAI21D1BWP40P140)           0.0405    0.0347     0.7936 r
+  npc/idu/U17/A1 (AOI21D1BWP40P140LVT)        0.0405    0.0000     0.7936 r
+  npc/idu/U17/ZN (AOI21D1BWP40P140LVT)        0.0353    0.0291     0.8227 f
+  npc/idu/U16/A1 (OAI21D1BWP40P140)           0.0353    0.0000     0.8227 f
+  npc/idu/U16/ZN (OAI21D1BWP40P140)           0.0403    0.0330     0.8558 r
+  npc/idu/U71/A1 (AOI21D1BWP40P140)           0.0403    0.0000     0.8558 r
+  npc/idu/U71/ZN (AOI21D1BWP40P140)           0.0414    0.0358     0.8916 f
+  npc/idu/U15/A1 (OAI21D1BWP40P140LVT)        0.0414    0.0000     0.8916 f
+  npc/idu/U15/ZN (OAI21D1BWP40P140LVT)        0.0390    0.0296     0.9212 r
+  npc/idu/U10/A1 (AOI21D1BWP40P140LVT)        0.0390    0.0000     0.9212 r
+  npc/idu/U10/ZN (AOI21D1BWP40P140LVT)        0.0407    0.0325     0.9537 f
+  npc/idu/U1405/A1 (OAI21D2BWP40P140)         0.0407    0.0000     0.9537 f
+  npc/idu/U1405/ZN (OAI21D2BWP40P140)         0.0357    0.0237     0.9774 r
+  npc/idu/U7/A1 (AOI21D1BWP40P140LVT)         0.0357    0.0000     0.9774 r
+  npc/idu/U7/ZN (AOI21D1BWP40P140LVT)         0.0345    0.0284     1.0058 f
+  npc/idu/U69/A1 (OAI22D1BWP40P140)           0.0345    0.0000     1.0058 f
+  npc/idu/U69/ZN (OAI22D1BWP40P140)           0.0416    0.0276     1.0334 r
+  npc/idu/U66/CI (FA1D1BWP40P140)             0.0416    0.0000     1.0334 r
+  npc/idu/U66/CO (FA1D1BWP40P140)             0.0298    0.0504     1.0837 r
+  npc/idu/U1576/CI (FA1D1BWP40P140)           0.0298    0.0000     1.0837 r
+  npc/idu/U1576/CO (FA1D1BWP40P140)           0.0298    0.0473     1.1311 r
+  npc/idu/U1592/CI (FA1D1BWP40P140)           0.0298    0.0000     1.1311 r
+  npc/idu/U1592/CO (FA1D1BWP40P140)           0.0298    0.0473     1.1784 r
+  npc/idu/U1607/CI (FA1D1BWP40P140)           0.0298    0.0000     1.1784 r
+  npc/idu/U1607/CO (FA1D1BWP40P140)           0.0298    0.0473     1.2257 r
+  npc/idu/U173/CI (FA1D1BWP40P140)            0.0298    0.0000     1.2257 r
+  npc/idu/U173/CO (FA1D1BWP40P140)            0.0298    0.0473     1.2730 r
+  npc/idu/U1636/CI (FA1D1BWP40P140)           0.0298    0.0000     1.2730 r
+  npc/idu/U1636/CO (FA1D1BWP40P140)           0.0298    0.0473     1.3203 r
+  npc/idu/U1652/CI (FA1D1BWP40P140)           0.0298    0.0000     1.3203 r
+  npc/idu/U1652/CO (FA1D1BWP40P140)           0.0255    0.0438     1.3642 r
+  npc/idu/U1653/A2 (XOR2UD1BWP40P140)         0.0255    0.0000     1.3642 r
+  npc/idu/U1653/Z (XOR2UD1BWP40P140)          0.0339    0.0347     1.3988 r
+  npc/idu/U1654/B1 (IND2D1BWP40P140)          0.0339    0.0000     1.3988 r
+  npc/idu/U1654/ZN (IND2D1BWP40P140)          0.0220    0.0203     1.4191 f
+  npc/idu/U9/C (OAI211D1BWP40P140)            0.0220    0.0000     1.4191 f
+  npc/idu/U9/ZN (OAI211D1BWP40P140)           0.0623    0.0186     1.4377 r
+  npc/idu/io_out_bits_src3[31] (IDU_0)                  0.0000     1.4377 r
+  npc/exu_io_in_bits_rsrc3_reg_31_/D (DFQD1BWP40P140)
+                                              0.0623    0.0000     1.4377 r
+  data arrival time                                                1.4377
+
+  clock CLK_clock (rise edge)                           1.6250     1.6250
+  clock network delay (ideal)                           0.0000     1.6250
+  clock uncertainty                                    -0.1500     1.4750
+  npc/exu_io_in_bits_rsrc3_reg_31_/CP (DFQD1BWP40P140)
+                                                        0.0000     1.4750 r
+  library setup time                                   -0.0367     1.4383
+  data required time                                               1.4383
+  --------------------------------------------------------------------------
+  data required time                                               1.4383
+  data arrival time                                               -1.4377
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0006
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc3_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0143    0.0696     0.0696 f
+  npc/exu/io_in_bits_decode_aluop[0] (EXU_0)            0.0000     0.0696 f
+  npc/exu/U28/I (INVD2BWP40P140)              0.0143    0.0000     0.0696 f
+  npc/exu/U28/ZN (INVD2BWP40P140)             0.0146    0.0138     0.0835 r
+  npc/exu/U211/A2 (ND2OPTPAD2BWP40P140)       0.0146    0.0000     0.0835 r
+  npc/exu/U211/ZN (ND2OPTPAD2BWP40P140)       0.0169    0.0154     0.0989 f
+  npc/exu/U4/I (INVD3BWP40P140)               0.0169    0.0000     0.0989 f
+  npc/exu/U4/ZN (INVD3BWP40P140)              0.0474    0.0343     0.1331 r
+  npc/exu/U269/A1 (ND2OPTPAD2BWP40P140)       0.0474    0.0000     0.1331 r
+  npc/exu/U269/ZN (ND2OPTPAD2BWP40P140)       0.2036    0.1309     0.2641 f
+  npc/exu/U204/A1 (XOR2UD1BWP40P140)          0.2036    0.0000     0.2641 f
+  npc/exu/U204/Z (XOR2UD1BWP40P140)           0.0489    0.0708     0.3349 f
+  npc/exu/U206/A1 (ND2D1BWP40P140)            0.0489    0.0000     0.3349 f
+  npc/exu/U206/ZN (ND2D1BWP40P140)            0.0221    0.0225     0.3574 r
+  npc/exu/U207/I (INVD1BWP40P140)             0.0221    0.0000     0.3574 r
+  npc/exu/U207/ZN (INVD1BWP40P140)            0.0120    0.0124     0.3697 f
+  npc/exu/U38/B (AOI21D1BWP40P140)            0.0120    0.0000     0.3697 f
+  npc/exu/U38/ZN (AOI21D1BWP40P140)           0.0478    0.0347     0.4045 r
+  npc/exu/U9/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0478    0.0000     0.4045 r
+  npc/exu/U9/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0319    0.0241     0.4286 f
+  npc/exu/U216/A1 (AOI21D1BWP40P140)          0.0319    0.0000     0.4286 f
+  npc/exu/U216/ZN (AOI21D1BWP40P140)          0.0467    0.0385     0.4671 r
+  npc/exu/U2/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0467    0.0000     0.4671 r
+  npc/exu/U2/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0370    0.0268     0.4939 f
+  npc/exu/U220/A1 (AOI21D2BWP40P140)          0.0370    0.0000     0.4939 f
+  npc/exu/U220/ZN (AOI21D2BWP40P140)          0.0324    0.0296     0.5235 r
+  npc/exu/U43/A1 (OAI21OPTREPBD2BWP40P140)    0.0324    0.0000     0.5235 r
+  npc/exu/U43/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0251     0.5486 f
+  npc/exu/U42/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.5486 f
+  npc/exu/U42/ZN (AOI21D4BWP40P140)           0.0232    0.0204     0.5690 r
+  npc/exu/U224/A1 (OAI21D2BWP40P140)          0.0232    0.0000     0.5690 r
+  npc/exu/U224/ZN (OAI21D2BWP40P140)          0.0333    0.0241     0.5931 f
+  npc/exu/U226/A1 (AOI21D2BWP40P140)          0.0333    0.0000     0.5931 f
+  npc/exu/U226/ZN (AOI21D2BWP40P140)          0.0321    0.0287     0.6218 r
+  npc/exu/U51/A1 (OAI21OPTREPBD2BWP40P140)    0.0321    0.0000     0.6218 r
+  npc/exu/U51/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0250     0.6468 f
+  npc/exu/U45/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.6468 f
+  npc/exu/U45/ZN (AOI21D4BWP40P140)           0.0232    0.0204     0.6673 r
+  npc/exu/U230/A1 (OAI21D2BWP40P140)          0.0232    0.0000     0.6673 r
+  npc/exu/U230/ZN (OAI21D2BWP40P140)          0.0299    0.0218     0.6890 f
+  npc/exu/U32/A1 (AOI21D1BWP40P140)           0.0299    0.0000     0.6890 f
+  npc/exu/U32/ZN (AOI21D1BWP40P140)           0.0456    0.0373     0.7263 r
+  npc/exu/U322/A1 (OAI21D2BWP40P140)          0.0456    0.0000     0.7263 r
+  npc/exu/U322/ZN (OAI21D2BWP40P140)          0.0399    0.0341     0.7604 f
+  npc/exu/U198/A1 (AOI21D4BWP40P140)          0.0399    0.0000     0.7604 f
+  npc/exu/U198/ZN (AOI21D4BWP40P140)          0.0256    0.0239     0.7843 r
+  npc/exu/U168/A1 (OAI21OPTREPBD2BWP40P140)   0.0256    0.0000     0.7843 r
+  npc/exu/U168/ZN (OAI21OPTREPBD2BWP40P140)   0.0263    0.0207     0.8050 f
+  npc/exu/U326/A1 (AOI21D2BWP40P140)          0.0263    0.0000     0.8050 f
+  npc/exu/U326/ZN (AOI21D2BWP40P140)          0.0321    0.0265     0.8315 r
+  npc/exu/U200/A1 (OAI21OPTREPBD2BWP40P140)   0.0321    0.0000     0.8315 r
+  npc/exu/U200/ZN (OAI21OPTREPBD2BWP40P140)   0.0314    0.0250     0.8566 f
+  npc/exu/U199/A1 (AOI21D4BWP40P140)          0.0314    0.0000     0.8566 f
+  npc/exu/U199/ZN (AOI21D4BWP40P140)          0.0233    0.0204     0.8770 r
+  npc/exu/U7/A1 (OAI21D2BWP40P140)            0.0233    0.0000     0.8770 r
+  npc/exu/U7/ZN (OAI21D2BWP40P140)            0.0399    0.0286     0.9056 f
+  npc/exu/U11/A1 (AOI21D4BWP40P140)           0.0399    0.0000     0.9056 f
+  npc/exu/U11/ZN (AOI21D4BWP40P140)           0.0256    0.0239     0.9296 r
+  npc/exu/U10/A1 (OAI21OPTREPBD2BWP40P140)    0.0256    0.0000     0.9296 r
+  npc/exu/U10/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0239     0.9534 f
+  npc/exu/U13/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.9534 f
+  npc/exu/U13/ZN (AOI21D4BWP40P140)           0.0256    0.0221     0.9755 r
+  npc/exu/U12/A1 (OAI21OPTREPBD2BWP40P140)    0.0256    0.0000     0.9755 r
+  npc/exu/U12/ZN (OAI21OPTREPBD2BWP40P140)    0.0263    0.0207     0.9962 f
+  npc/exu/U335/A1 (AOI21D2BWP40P140)          0.0263    0.0000     0.9962 f
+  npc/exu/U335/ZN (AOI21D2BWP40P140)          0.0277    0.0234     1.0196 r
+  npc/exu/U337/A1 (OAI21D2BWP40P140)          0.0277    0.0000     1.0196 r
+  npc/exu/U337/ZN (OAI21D2BWP40P140)          0.0308    0.0234     1.0430 f
+  npc/exu/U24/A1 (AO21D1BWP40P140)            0.0308    0.0000     1.0430 f
+  npc/exu/U24/Z (AO21D1BWP40P140)             0.0182    0.0345     1.0775 f
+  npc/exu/U1046/CI (FA1D1BWP40P140)           0.0182    0.0000     1.0775 f
+  npc/exu/U1046/CO (FA1D1BWP40P140)           0.0222    0.0480     1.1255 f
+  npc/exu/U1069/CI (FA1D1BWP40P140)           0.0222    0.0000     1.1255 f
+  npc/exu/U1069/CO (FA1D1BWP40P140)           0.0223    0.0495     1.1750 f
+  npc/exu/U1086/CI (FA1D1BWP40P140)           0.0223    0.0000     1.1750 f
+  npc/exu/U1086/CO (FA1D1BWP40P140)           0.0223    0.0495     1.2245 f
+  npc/exu/U1096/CI (FA1D1BWP40P140)           0.0223    0.0000     1.2245 f
+  npc/exu/U1096/CO (FA1D1BWP40P140)           0.0289    0.0548     1.2792 f
+  npc/exu/U101/A1 (XNR2UD1BWP40P140)          0.0289    0.0000     1.2792 f
+  npc/exu/U101/ZN (XNR2UD1BWP40P140)          0.0438    0.0231     1.3023 r
+  npc/exu/U342/A2 (OAI211D1BWP40P140)         0.0438    0.0000     1.3023 r
+  npc/exu/U342/ZN (OAI211D1BWP40P140)         0.0377    0.0318     1.3341 f
+  npc/exu/U345/A1 (AOI211D1BWP40P140)         0.0377    0.0000     1.3341 f
+  npc/exu/U345/ZN (AOI211D1BWP40P140)         0.0367    0.0318     1.3659 r
+  npc/exu/U173/B (AO211D1BWP40P140)           0.0367    0.0000     1.3659 r
+  npc/exu/U173/Z (AO211D1BWP40P140)           0.0198    0.0386     1.4045 r
+  npc/exu/io_fw_res[0] (EXU_0)                          0.0000     1.4045 r
+  npc/idu/io_exFw_res[0] (IDU_0)                        0.0000     1.4045 r
+  npc/idu/U1143/I (INVD2BWP40P140)            0.0198    0.0000     1.4045 r
+  npc/idu/U1143/ZN (INVD2BWP40P140)           0.0121    0.0117     1.4161 f
+  npc/idu/U240/A1 (OAI21D1BWP40P140)          0.0121    0.0000     1.4161 f
+  npc/idu/U240/ZN (OAI21D1BWP40P140)          0.0497    0.0161     1.4323 r
+  npc/idu/io_out_bits_src3[0] (IDU_0)                   0.0000     1.4323 r
+  npc/exu_io_in_bits_rsrc3_reg_0_/CN (DFKCNQD1BWP40P140)
+                                              0.0497    0.0000     1.4323 r
+  data arrival time                                                1.4323
+
+  clock CLK_clock (rise edge)                           1.6250     1.6250
+  clock network delay (ideal)                           0.0000     1.6250
+  clock uncertainty                                    -0.1500     1.4750
+  npc/exu_io_in_bits_rsrc3_reg_0_/CP (DFKCNQD1BWP40P140)
+                                                        0.0000     1.4750 r
+  library setup time                                   -0.0406     1.4344
+  data required time                                               1.4344
+  --------------------------------------------------------------------------
+  data required time                                               1.4344
+  data arrival time                                               -1.4323
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0021
+
+
+  Startpoint: npc/exu_io_in_bits_rdecode_aluop_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK_clock)
+  Endpoint: npc/exu_io_in_bits_rsrc1_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK_clock)
+  Path Group: CLK_clock
+  Path Type: max
+
+  Point                                        Trans      Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_clock (rise edge)                           0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  npc/exu_io_in_bits_rdecode_aluop_reg_0_/CP (DFQD4BWP40P140)
+                                              0.0000    0.0000     0.0000 r
+  npc/exu_io_in_bits_rdecode_aluop_reg_0_/Q (DFQD4BWP40P140)
+                                              0.0143    0.0696     0.0696 f
+  npc/exu/io_in_bits_decode_aluop[0] (EXU_0)            0.0000     0.0696 f
+  npc/exu/U28/I (INVD2BWP40P140)              0.0143    0.0000     0.0696 f
+  npc/exu/U28/ZN (INVD2BWP40P140)             0.0146    0.0138     0.0835 r
+  npc/exu/U211/A2 (ND2OPTPAD2BWP40P140)       0.0146    0.0000     0.0835 r
+  npc/exu/U211/ZN (ND2OPTPAD2BWP40P140)       0.0169    0.0154     0.0989 f
+  npc/exu/U4/I (INVD3BWP40P140)               0.0169    0.0000     0.0989 f
+  npc/exu/U4/ZN (INVD3BWP40P140)              0.0474    0.0343     0.1331 r
+  npc/exu/U269/A1 (ND2OPTPAD2BWP40P140)       0.0474    0.0000     0.1331 r
+  npc/exu/U269/ZN (ND2OPTPAD2BWP40P140)       0.2036    0.1309     0.2641 f
+  npc/exu/U204/A1 (XOR2UD1BWP40P140)          0.2036    0.0000     0.2641 f
+  npc/exu/U204/Z (XOR2UD1BWP40P140)           0.0489    0.0708     0.3349 f
+  npc/exu/U206/A1 (ND2D1BWP40P140)            0.0489    0.0000     0.3349 f
+  npc/exu/U206/ZN (ND2D1BWP40P140)            0.0221    0.0225     0.3574 r
+  npc/exu/U207/I (INVD1BWP40P140)             0.0221    0.0000     0.3574 r
+  npc/exu/U207/ZN (INVD1BWP40P140)            0.0120    0.0124     0.3697 f
+  npc/exu/U38/B (AOI21D1BWP40P140)            0.0120    0.0000     0.3697 f
+  npc/exu/U38/ZN (AOI21D1BWP40P140)           0.0478    0.0347     0.4045 r
+  npc/exu/U9/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0478    0.0000     0.4045 r
+  npc/exu/U9/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0319    0.0241     0.4286 f
+  npc/exu/U216/A1 (AOI21D1BWP40P140)          0.0319    0.0000     0.4286 f
+  npc/exu/U216/ZN (AOI21D1BWP40P140)          0.0467    0.0385     0.4671 r
+  npc/exu/U2/A1 (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0467    0.0000     0.4671 r
+  npc/exu/U2/ZN (OAI21OPTREPBD1BWP40P140LVT)
+                                              0.0370    0.0268     0.4939 f
+  npc/exu/U220/A1 (AOI21D2BWP40P140)          0.0370    0.0000     0.4939 f
+  npc/exu/U220/ZN (AOI21D2BWP40P140)          0.0324    0.0296     0.5235 r
+  npc/exu/U43/A1 (OAI21OPTREPBD2BWP40P140)    0.0324    0.0000     0.5235 r
+  npc/exu/U43/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0251     0.5486 f
+  npc/exu/U42/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.5486 f
+  npc/exu/U42/ZN (AOI21D4BWP40P140)           0.0232    0.0204     0.5690 r
+  npc/exu/U224/A1 (OAI21D2BWP40P140)          0.0232    0.0000     0.5690 r
+  npc/exu/U224/ZN (OAI21D2BWP40P140)          0.0333    0.0241     0.5931 f
+  npc/exu/U226/A1 (AOI21D2BWP40P140)          0.0333    0.0000     0.5931 f
+  npc/exu/U226/ZN (AOI21D2BWP40P140)          0.0321    0.0287     0.6218 r
+  npc/exu/U51/A1 (OAI21OPTREPBD2BWP40P140)    0.0321    0.0000     0.6218 r
+  npc/exu/U51/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0250     0.6468 f
+  npc/exu/U45/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.6468 f
+  npc/exu/U45/ZN (AOI21D4BWP40P140)           0.0232    0.0204     0.6673 r
+  npc/exu/U230/A1 (OAI21D2BWP40P140)          0.0232    0.0000     0.6673 r
+  npc/exu/U230/ZN (OAI21D2BWP40P140)          0.0299    0.0218     0.6890 f
+  npc/exu/U32/A1 (AOI21D1BWP40P140)           0.0299    0.0000     0.6890 f
+  npc/exu/U32/ZN (AOI21D1BWP40P140)           0.0456    0.0373     0.7263 r
+  npc/exu/U322/A1 (OAI21D2BWP40P140)          0.0456    0.0000     0.7263 r
+  npc/exu/U322/ZN (OAI21D2BWP40P140)          0.0399    0.0341     0.7604 f
+  npc/exu/U198/A1 (AOI21D4BWP40P140)          0.0399    0.0000     0.7604 f
+  npc/exu/U198/ZN (AOI21D4BWP40P140)          0.0256    0.0239     0.7843 r
+  npc/exu/U168/A1 (OAI21OPTREPBD2BWP40P140)   0.0256    0.0000     0.7843 r
+  npc/exu/U168/ZN (OAI21OPTREPBD2BWP40P140)   0.0263    0.0207     0.8050 f
+  npc/exu/U326/A1 (AOI21D2BWP40P140)          0.0263    0.0000     0.8050 f
+  npc/exu/U326/ZN (AOI21D2BWP40P140)          0.0321    0.0265     0.8315 r
+  npc/exu/U200/A1 (OAI21OPTREPBD2BWP40P140)   0.0321    0.0000     0.8315 r
+  npc/exu/U200/ZN (OAI21OPTREPBD2BWP40P140)   0.0314    0.0250     0.8566 f
+  npc/exu/U199/A1 (AOI21D4BWP40P140)          0.0314    0.0000     0.8566 f
+  npc/exu/U199/ZN (AOI21D4BWP40P140)          0.0233    0.0204     0.8770 r
+  npc/exu/U7/A1 (OAI21D2BWP40P140)            0.0233    0.0000     0.8770 r
+  npc/exu/U7/ZN (OAI21D2BWP40P140)            0.0399    0.0286     0.9056 f
+  npc/exu/U11/A1 (AOI21D4BWP40P140)           0.0399    0.0000     0.9056 f
+  npc/exu/U11/ZN (AOI21D4BWP40P140)           0.0256    0.0239     0.9296 r
+  npc/exu/U10/A1 (OAI21OPTREPBD2BWP40P140)    0.0256    0.0000     0.9296 r
+  npc/exu/U10/ZN (OAI21OPTREPBD2BWP40P140)    0.0314    0.0239     0.9534 f
+  npc/exu/U13/A1 (AOI21D4BWP40P140)           0.0314    0.0000     0.9534 f
+  npc/exu/U13/ZN (AOI21D4BWP40P140)           0.0256    0.0221     0.9755 r
+  npc/exu/U12/A1 (OAI21OPTREPBD2BWP40P140)    0.0256    0.0000     0.9755 r
+  npc/exu/U12/ZN (OAI21OPTREPBD2BWP40P140)    0.0263    0.0207     0.9962 f
+  npc/exu/U335/A1 (AOI21D2BWP40P140)          0.0263    0.0000     0.9962 f
+  npc/exu/U335/ZN (AOI21D2BWP40P140)          0.0277    0.0234     1.0196 r
+  npc/exu/U337/A1 (OAI21D2BWP40P140)          0.0277    0.0000     1.0196 r
+  npc/exu/U337/ZN (OAI21D2BWP40P140)          0.0308    0.0234     1.0430 f
+  npc/exu/U24/A1 (AO21D1BWP40P140)            0.0308    0.0000     1.0430 f
+  npc/exu/U24/Z (AO21D1BWP40P140)             0.0182    0.0345     1.0775 f
+  npc/exu/U1046/CI (FA1D1BWP40P140)           0.0182    0.0000     1.0775 f
+  npc/exu/U1046/CO (FA1D1BWP40P140)           0.0222    0.0480     1.1255 f
+  npc/exu/U1069/CI (FA1D1BWP40P140)           0.0222    0.0000     1.1255 f
+  npc/exu/U1069/CO (FA1D1BWP40P140)           0.0223    0.0495     1.1750 f
+  npc/exu/U1086/CI (FA1D1BWP40P140)           0.0223    0.0000     1.1750 f
+  npc/exu/U1086/CO (FA1D1BWP40P140)           0.0223    0.0495     1.2245 f
+  npc/exu/U1096/CI (FA1D1BWP40P140)           0.0223    0.0000     1.2245 f
+  npc/exu/U1096/CO (FA1D1BWP40P140)           0.0289    0.0548     1.2792 f
+  npc/exu/U101/A1 (XNR2UD1BWP40P140)          0.0289    0.0000     1.2792 f
+  npc/exu/U101/ZN (XNR2UD1BWP40P140)          0.0438    0.0231     1.3023 r
+  npc/exu/U342/A2 (OAI211D1BWP40P140)         0.0438    0.0000     1.3023 r
+  npc/exu/U342/ZN (OAI211D1BWP40P140)         0.0377    0.0318     1.3341 f
+  npc/exu/U345/A1 (AOI211D1BWP40P140)         0.0377    0.0000     1.3341 f
+  npc/exu/U345/ZN (AOI211D1BWP40P140)         0.0367    0.0318     1.3659 r
+  npc/exu/U173/B (AO211D1BWP40P140)           0.0367    0.0000     1.3659 r
+  npc/exu/U173/Z (AO211D1BWP40P140)           0.0198    0.0386     1.4045 r
+  npc/exu/io_fw_res[0] (EXU_0)                          0.0000     1.4045 r
+  npc/idu/io_exFw_res[0] (IDU_0)                        0.0000     1.4045 r
+  npc/idu/U1143/I (INVD2BWP40P140)            0.0198    0.0000     1.4045 r
+  npc/idu/U1143/ZN (INVD2BWP40P140)           0.0121    0.0117     1.4161 f
+  npc/idu/U26/A1 (OAI21D1BWP40P140)           0.0121    0.0000     1.4161 f
+  npc/idu/U26/ZN (OAI21D1BWP40P140)           0.0500    0.0157     1.4318 r
+  npc/idu/io_out_bits_src1[0] (IDU_0)                   0.0000     1.4318 r
+  npc/exu_io_in_bits_rsrc1_reg_0_/D (DFKCNQD1BWP40P140)
+                                              0.0500    0.0000     1.4318 r
+  data arrival time                                                1.4318
+
+  clock CLK_clock (rise edge)                           1.6250     1.6250
+  clock network delay (ideal)                           0.0000     1.6250
+  clock uncertainty                                    -0.1500     1.4750
+  npc/exu_io_in_bits_rsrc1_reg_0_/CP (DFKCNQD1BWP40P140)
+                                                        0.0000     1.4750 r
+  library setup time                                   -0.0392     1.4358
+  data required time                                               1.4358
+  --------------------------------------------------------------------------
+  data required time                                               1.4358
+  data arrival time                                               -1.4318
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0040
+
+
+1
