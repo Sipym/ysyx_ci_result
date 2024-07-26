@@ -1,0 +1,55 @@
+
+dut: Top
+
+################
+#vcs compile log
+################
+all clear
+
+
+#####################
+#vcs program test
+#####################
+hello prog in sdram pass!!
+memtest prog in sdram fail!!
+======================================================
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Jul 26 11:10 2024
+Default strobe period is 1e-05 seconds
+Begin Power Up Sequence
+Waiting for START_condition
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q128A13E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 3V
+==============================================
+[0.0 ns ns] ==INFO== Load sdram content.
+rcu0_clk_cfg_i = 000
+[0.0 ns ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ns] ==INFO== 2. Load memory content from file: "mem_Q128_bottom.vmf".
+[0.0 ns ns] ==INFO== Power up: polling allowed.
+[0.0 ns ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0.0 ns ns] ==INFO== Protocol selected is extended
+[0.0 ns ps] ==INFO== Single Transfer Rate selected
+[1.0 ns ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+STOP condition                   1
+****************** SLAVE STOP condition detected
+STOP CONDITION WITHOUT PAGE WRITE                   1
+END DATA TRANSMISSION
+[150.0 ns ns] ==INFO== Power up: device fully accessible.
+[150.0 ns ns] ==INFO== Protocol selected is extended
+[150.0 ns ps] ==INFO== Single Transfer Rate selected
+Loading program of size: 4541 bytes, expect 128 '#'
+Loading.....
+########################################################################################################################################$finish called from file "../tb/asic_system.sv", line 506.
+$finish at simulation time 60000000.0 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 60000000000000 fs
+CPU Time:    228.040 seconds;       Data structure size:  37.2Mb
+Fri Jul 26 11:14:09 2024
+======================================================
+
